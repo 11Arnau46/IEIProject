@@ -27,6 +27,10 @@
         }
         .form-group {
             margin: 10px 0;
+            margin-right: 20px;
+        }
+        .tipos{
+            width: 103%;
         }
         label {
             display: block;
@@ -68,6 +72,10 @@
             border-radius: 5px;
             height: 100px;
         }
+        img.img {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -92,7 +100,7 @@
     
     <div class="form-group">
         <label for="tipo">Tipo:</label>
-        <select id="tipo">
+        <select id="tipo" class="tipos">
             <option value="puente">Puente</option>
             <option value="edificio">Edificio</option>
             <option value="museo">Museo</option>
@@ -106,7 +114,7 @@
     
     <div id="mapa">
         <!-- Aquí iría el mapa embebido -->
-        <img src="https://via.placeholder.com/600x300.png?text=Mapa" alt="Mapa de monumentos">
+        <img class="img"   src="https://via.placeholder.com/600x300.png?text=Mapa" alt="Mapa de monumentos">
     </div>
     
     <div id="resultados">
