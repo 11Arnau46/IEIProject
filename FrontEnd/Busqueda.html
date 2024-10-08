@@ -13,24 +13,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
         h1 {
             text-align: center;
         }
         .form-group {
             margin: 10px 0;
-            margin-right: 20px;
-        }
-        .tipos{
-            width: 103%;
         }
         label {
             display: block;
@@ -42,6 +40,7 @@
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box;
         }
         .buttons {
             text-align: center;
@@ -62,7 +61,7 @@
         }
         #mapa {
             width: 100%;
-            height: 300px;
+            height: 200px;
             margin-top: 20px;
         }
         #resultados {
@@ -70,11 +69,22 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            height: 100px;
         }
         img.img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
+        }
+        .navegacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 768px) {
+            #mapa {
+                height: 300px;
+            }
         }
     </style>
 </head>
@@ -82,7 +92,8 @@
 
 <div class="container">
     <h1>Buscador de monumentos de interés cultural</h1>
-    
+    <a href="Carga.html" class="navegacion">Carga del almacén de datos class</a>
+
     <div class="form-group">
         <label for="localidad">Localidad:</label>
         <input type="text" id="localidad" placeholder="Añadir texto">
@@ -113,8 +124,7 @@
     </div>
     
     <div id="mapa">
-        <!-- Aquí iría el mapa embebido -->
-        <img class="img"   src="https://via.placeholder.com/600x300.png?text=Mapa" alt="Mapa de monumentos">
+        <img class="img" src="https://via.placeholder.com/600x300.png?text=Mapa" alt="Mapa de monumentos">
     </div>
     
     <div id="resultados">

@@ -13,14 +13,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
-            width: 600px;
+            width: 100%;
+            max-width: 600px;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
         h1 {
             text-align: center;
@@ -57,7 +59,17 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            height: 100px;
+        }
+        .navegacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .container {
+                max-width: 700px;
+            }
         }
     </style>
 </head>
@@ -65,6 +77,7 @@
 
 <div class="container">
     <h1>Carga del almacén de datos</h1>
+    <a href="Busqueda.html" class="navegacion">Buscador de monumentos</a>
     
     <div class="form-group">
         <label for="fuente">Seleccione fuente:</label>
