@@ -23,17 +23,18 @@ data = {
 
 # Función para clasificar el tipo de monumento basado en la denominación
 def get_tipo_monumento(denominacion):
-    if "Yacimiento" in denominacion:
+    denominacion = denominacion.lower()
+    if "yacimiento" in denominacion:
         return "Yacimiento arquelógico"
-    elif "Monasterio" in denominacion or "Convento" in denominacion:
+    elif "monasterio" in denominacion or "convento" in denominacion:
         return "Monasterio-Convento"
-    elif "Iglesia" in denominacion or "Ermita" in denominacion or "Catedral" in denominacion or "Basílica" in denominacion:
+    elif "iglesia" in denominacion or "ermita" in denominacion or "catedral" in denominacion or "basílica" in denominacion:
         return "Iglesia-Ermita"
-    elif "Castillo" in denominacion or "Fortaleza" in denominacion or "Torre" in denominacion:
+    elif "castillo" in denominacion or "fortaleza" in denominacion or "torre" in denominacion:
         return "Castillo-Fortaleza-Torre"
-    elif "Jardín" in denominacion or "Palacio" in denominacion:
+    elif "jardín" in denominacion or "palacio" in denominacion:
         return "Edificio Singular"
-    elif denominacion.startswith("Puente"):
+    elif "puente" in denominacion:
         return "Puente"
     else:
         return "Otros"
@@ -44,17 +45,17 @@ for _, row in df.iterrows():
     tipo_monumento = get_tipo_monumento(nombre)
     clasificacion = row['CLASIFICACION']
     
-    # Asignar valores adicionales, si no están disponibles se asigna None
-    tipo_construccion = None  # No hay columna para esto en el CSV, puedes agregar un valor si se conoce la lógica
-    codigo_postal = None  # No hay columna para esto en el CSV
-    descripcion = None  # No hay columna para esto en el CSV
-    periodo_historico = None  # No hay columna para esto en el CSV
-    latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else None
-    longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else None
-    web = None  # No hay columna para esto en el CSV
-    localidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else None
-    provincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else None
-    municipio = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else None
+    # Asignar valores adicionales, si no están disponibles se asigna pd.NA
+    tipo_construccion = pd.NA  # No hay columna para esto en el CSV, puedes agregar un valor si se conoce la lógica
+    codigo_postal = pd.NA  # No hay columna para esto en el CSV
+    descripcion = pd.NA  # No hay columna para esto en el CSV
+    periodo_historico = pd.NA  # No hay columna para esto en el CSV
+    latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA
+    longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
+    web = pd.NA  # No hay columna para esto en el CSV
+    localidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
+    provincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
+    municipio = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
 
     # Añadir los datos al diccionario
     data['nombre'].append(nombre)
@@ -77,8 +78,5 @@ df_result = pd.DataFrame(data)
 # Mostrar el DataFrame resultante
 print(df_result.head())
 
-# Guardar el DataFrame a un archivo CSV (opcional)
-df_result.to_csv('../Resultados/CSVtoJSON.csv', index=False, encoding='utf-8')
-
 # Guardar los datos en formato JSON (opcional)
-df_result.to_json('../Resultados/CSVtoJSON.json', orient='records', lines=True, force_ascii=False)
+df_result.to_json('../Resultados/CSVtoJSON.json', orient='records', lines=True, force_ascii=False, default_handler=str)
