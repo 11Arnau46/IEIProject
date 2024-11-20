@@ -1,8 +1,14 @@
+import xml.etree.ElementTree as ET
 import pandas as pd
+import html
+import re
 
-# Leer el archivo CSV
-csv_path = '../Fuentes_de_datos/Comunitat_Valenciana/vcl.csv'
-df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
+# Path to the XML file
+xml_path = '../Fuentes_de_datos/Castilla_i_leon/cle.xml'
+
+# Parse the XML file
+tree = ET.parse(xml_path)
+root = tree.getroot()
 
 # Diccionario para almacenar los datos extraídos
 data = {
@@ -21,42 +27,64 @@ data = {
     'municipio': []
 }
 
-# Función para clasificar el tipo de monumento basado en la denominación
+# Function to classify the type of monument based on its name
 def get_tipo_monumento(denominacion):
-    if "Yacimiento" in denominacion:
-        return "Yacimiento arquelógico"
-    elif "Monasterio" in denominacion or "Convento" in denominacion:
+    denominacion = denominacion.lower()
+    if "yacimiento" in denominacion:
+        return "Yacimiento arqueológico"
+    elif "monasterio" in denominacion or "convento" in denominacion:
         return "Monasterio-Convento"
-    elif "Iglesia" in denominacion or "Ermita" in denominacion or "Catedral" in denominacion or "Basílica" in denominacion:
+    elif "iglesia" in denominacion or "ermita" in denominacion or "catedral" in denominacion or "basílica" in denominacion:
         return "Iglesia-Ermita"
-    elif "Castillo" in denominacion or "Fortaleza" in denominacion or "Torre" in denominacion:
+    elif "castillo" in denominacion or "fortaleza" in denominacion or "torre" in denominacion:
         return "Castillo-Fortaleza-Torre"
-    elif "Jardín" in denominacion or "Palacio" in denominacion:
+    elif "jardín" in denominacion or "palacio" in denominacion:
         return "Edificio Singular"
-    elif denominacion.startswith("Puente"):
+    elif "puente" in denominacion:
         return "Puente"
     else:
         return "Otros"
 
-# Extraer información de cada fila del CSV
-for _, row in df.iterrows():
-    nombre = row['DENOMINACION']
-    tipo_monumento = get_tipo_monumento(nombre)
-    clasificacion = row['CLASIFICACION']
-    
-    # Asignar valores adicionales, si no están disponibles se asigna None
-    tipo_construccion = None  # No hay columna para esto en el CSV, puedes agregar un valor si se conoce la lógica
-    codigo_postal = None  # No hay columna para esto en el CSV
-    descripcion = None  # No hay columna para esto en el CSV
-    periodo_historico = None  # No hay columna para esto en el CSV
-    latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else None
-    longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else None
-    web = None  # No hay columna para esto en el CSV
-    localidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else None
-    provincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else None
-    municipio = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else None
+# Function to remove HTML tags and clean text
+def clean_text(text):
+    # Decode HTML entities
+    text = html.unescape(text)
+    # Remove HTML tags
+    text = re.sub(r'<[^>]*>', '', text)
+    # Remove or replace newline characters
+    text = text.replace('\n', ' ').replace('\r', ' ').strip()
+    # Replace multiple spaces with a single space
+    text = re.sub(r'\s+', ' ', text)
+    return text
 
-    # Añadir los datos al diccionario
+# Process each <monumento> in the XML
+for monumento in root.findall('monumento'):
+    # Safely extract text or set to null if missing
+    nombre = monumento.findtext('nombre', default=None)
+    tipo_monumento = get_tipo_monumento(nombre) if nombre else None
+    clasificacion = monumento.findtext('clasificacion', default=None)
+    tipo_construccion = monumento.findtext('tipoConstruccion', default=None)
+    codigo_postal = monumento.findtext('codigoPostal', default=None)
+
+    # Process and clean 'descripcion'
+    descripcion_raw = monumento.findtext('Descripcion', default=None)
+    descripcion = clean_text(descripcion_raw) if descripcion_raw else None
+
+    # Extract multiple <periodoHistorico> as a comma-separated string
+    periodo_historico_elements = monumento.findall('periodoHistorico')
+    periodo_historico = ', '.join([ph.text for ph in periodo_historico_elements if ph.text]) if periodo_historico_elements else None
+
+    # Extract nested fields
+    poblacion = monumento.find('poblacion')
+    localidad = poblacion.findtext('localidad', default=None) if poblacion else None
+    provincia = poblacion.findtext('provincia', default=None) if poblacion else None
+    municipio = poblacion.findtext('municipio', default=None) if poblacion else None
+
+    coordenadas = monumento.find('coordenadas')
+    latitud = coordenadas.findtext('latitud', default=None) if coordenadas else None
+    longitud = coordenadas.findtext('longitud', default=None) if coordenadas else None
+
+    # Add data to the dictionary
     data['nombre'].append(nombre)
     data['tipoMonumento'].append(tipo_monumento)
     data['clasificacion'].append(clasificacion)
@@ -66,19 +94,21 @@ for _, row in df.iterrows():
     data['periodoHistorico'].append(periodo_historico)
     data['latitud'].append(latitud)
     data['longitud'].append(longitud)
-    data['web'].append(web)
+    data['web'].append(None)  # Placeholder, not in XML
     data['localidad'].append(localidad)
     data['provincia'].append(provincia)
     data['municipio'].append(municipio)
 
-# Crear un DataFrame con los datos extraídos
+# Create a DataFrame
 df_result = pd.DataFrame(data)
 
-# Mostrar el DataFrame resultante
+# Save as JSON with None explicitly converted to null
+df_result.to_json(
+    '../Resultados/XMLtoJSON.json',
+    orient='records',
+    force_ascii=False,
+    default_handler=str
+)
+
+# Print the DataFrame
 print(df_result.head())
-
-# Guardar el DataFrame a un archivo CSV (opcional)
-df_result.to_csv('../Resultados/CSVtoJSON.csv', index=False, encoding='utf-8')
-
-# Guardar los datos en formato JSON (opcional)
-df_result.to_json('../Resultados/CSVtoJSON.json', orient='records', lines=True, force_ascii=False)
