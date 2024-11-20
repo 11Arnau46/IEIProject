@@ -65,6 +65,7 @@ for _, row in df.iterrows():
     data['codigo_postal'].append(codigo_postal)
     data['descripcion'].append(descripcion)
     data['periodoHistorico'].append(periodo_historico)
+    #REALIZAR CONVERSION DESDE UTM A WGS CON SELENIUM A ALGUNA WEB
     data['latitud'].append(latitud)
     data['longitud'].append(longitud)
     data['web'].append(web)
@@ -77,6 +78,8 @@ df_result = pd.DataFrame(data)
 
 # Mostrar el DataFrame resultante
 print(df_result.head())
+
+
 
 # Guardar los datos en formato JSON (opcional)
 df_result.to_json('../Resultados/CSVtoJSON.json', orient='records', force_ascii=False, default_handler=str)
