@@ -79,4 +79,4 @@ df_result = pd.DataFrame(data)
 print(df_result.head())
 
 # Guardar los datos en formato JSON (opcional)
-df_result.to_json('../Resultados/CSVtoJSON.json', orient='records', lines=True, force_ascii=False, default_handler=str)
+df_result.to_json('../Resultados/CSVtoJSON.json', orient='records', force_ascii=False, default_handler=str)
