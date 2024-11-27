@@ -6,72 +6,67 @@ df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
 
 # Diccionario para almacenar los datos extraídos
 data = {
-    'nombre': [],
+    'nomMonumento': [],
     'tipoMonumento': [],
-    'clasificacion': [],
-    'tipoConstruccion': [],
+    'direccion': [],
     'codigo_postal': [],
-    'descripcion': [],
-    'periodoHistorico': [],
-    'latitud': [],
     'longitud': [],
-    'web': [],
-    'localidad': [],
-    'provincia': [],
-    'municipio': []
+    'latitud': [],
+    'descripcion': [],
+    'codLocalidad': [],
+    'nomLocalidad': [],
+    'codProvincia': [],
+    'nomProvincia': []
 }
 
 # Función para clasificar el tipo de monumento basado en la denominación
 def get_tipo_monumento(denominacion):
     denominacion = denominacion.lower()
-    if "yacimiento" in denominacion:
-        return "Yacimiento arquelógico"
-    elif "monasterio" in denominacion or "convento" in denominacion:
-        return "Monasterio-Convento"
-    elif "iglesia" in denominacion or "ermita" in denominacion or "catedral" in denominacion or "basílica" in denominacion:
-        return "Iglesia-Ermita"
-    elif "castillo" in denominacion or "fortaleza" in denominacion or "torre" in denominacion:
-        return "Castillo-Fortaleza-Torre"
-    elif "jardín" in denominacion or "palacio" in denominacion:
-        return "Edificio Singular"
-    elif "puente" in denominacion:
-        return "Puente"
-    else:
-        return "Otros"
+    palabras_clave = {
+        "Yacimiento arquelógico": ["yacimiento", "Yacimiento"],
+        "Monasterio-Convento": ["monasterio", "Monasterio", "convento", "Convento"],
+        "Iglesia-Ermita": ["iglesia", "Iglesia", "ermita", "Ermita", "catedral", "Catedral", "basílica", "Basílica"],
+        "Castillo-Fortaleza-Torre": ["castillo", "Castillo", "fortaleza", "Fortaleza", "torre", "Torre"],
+        "Edificio Singular": ["jardín", "Jardín", "palacio", "Palacio"],
+        "Puente": ["puente", "Puente"]
+    }
+    
+    for tipo, keywords in palabras_clave.items():
+        if any(keyword in denominacion for keyword in keywords):
+            return tipo
+    return "Otros"
 
 # Extraer información de cada fila del CSV
 for _, row in df.iterrows():
-    nombre = row['DENOMINACION']
-    tipo_monumento = get_tipo_monumento(nombre)
-    clasificacion = row['CLASIFICACION']
+    nomMonumento = row['DENOMINACION']
+    tipoMonumento = get_tipo_monumento(nomMonumento)
+
+    # Hay que extraerlo de la web
+    direccion = pd.NA 
+    codigo_postal = pd.NA
     
-    # Asignar valores adicionales, si no están disponibles se asigna pd.NA
-    tipo_construccion = pd.NA  # No hay columna para esto en el CSV, puedes agregar un valor si se conoce la lógica
-    codigo_postal = pd.NA  # No hay columna para esto en el CSV
-    descripcion = pd.NA  # No hay columna para esto en el CSV
-    periodo_historico = pd.NA  # No hay columna para esto en el CSV
-    latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA
+    # Hay que tranformar
+    latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA 
     longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
-    web = pd.NA  # No hay columna para esto en el CSV
-    localidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
-    provincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
-    municipio = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
+    
+    descripcion = row['CLASIFICACION']
+    codLocalidad = pd.NA # Hay que generarlo
+    nomLocalidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
+    codProvincia = pd.NA # Hay que generarlo
+    nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
 
     # Añadir los datos al diccionario
-    data['nombre'].append(nombre)
-    data['tipoMonumento'].append(tipo_monumento)
-    data['clasificacion'].append(clasificacion)
-    data['tipoConstruccion'].append(tipo_construccion)
+    data['nomMonumento'].append(nomMonumento)
+    data['tipoMonumento'].append(tipoMonumento)
+    data['direccion'].append(direccion)
     data['codigo_postal'].append(codigo_postal)
-    data['descripcion'].append(descripcion)
-    data['periodoHistorico'].append(periodo_historico)
-    #REALIZAR CONVERSION DESDE UTM A WGS CON SELENIUM A ALGUNA WEB
     data['latitud'].append(latitud)
     data['longitud'].append(longitud)
-    data['web'].append(web)
-    data['localidad'].append(localidad)
-    data['provincia'].append(provincia)
-    data['municipio'].append(municipio)
+    data['descripcion'].append(descripcion)
+    data['codLocalidad'].append(codLocalidad)
+    data['nomLocalidad'].append(nomLocalidad)
+    data['codProvincia'].append(codProvincia)
+    data['nomProvincia'].append(nomProvincia)
 
 # Crear un DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
@@ -79,7 +74,11 @@ df_result = pd.DataFrame(data)
 # Mostrar el DataFrame resultante
 print(df_result.head())
 
-
-
-# Guardar los datos en formato JSON (opcional)
-df_result.to_json('../Resultados/CSVtoJSON.json', orient='records', force_ascii=False, default_handler=str)
+# Guardar los datos en formato JSON con formato legible
+df_result.to_json(
+    '../Resultados/CSVtoJSON.json',
+    orient='records',
+    force_ascii=False,
+    indent=4,
+    default_handler=str
+)
