@@ -1,7 +1,7 @@
 [
     {
         "nomMonumento":"Ermita de La Antigua - Santa María de Zumarraga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Beloki Hiribidea, s\/n",
         "codigo_postal":"20700",
         "longitud":"-2.303607169311588",
@@ -14,7 +14,7 @@
     },
     {
         "nomMonumento":"Monasterio de Zenarruza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"CL Zenarruza 11",
         "codigo_postal":"48279",
         "longitud":"-2.561749469311503",
@@ -27,7 +27,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Antón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Ribera, 24",
         "codigo_postal":"48005",
         "longitud":"-2.9232169344180736",
@@ -40,7 +40,7 @@
     },
     {
         "nomMonumento":"Catedral de Santiago",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de Santiago, 1",
         "codigo_postal":"48005",
         "longitud":"-2.9238770104754663",
@@ -53,7 +53,7 @@
     },
     {
         "nomMonumento":"Ermita de San Pelaio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio San Pelaio",
         "codigo_postal":"48130",
         "longitud":"-2.783827059835864",
@@ -66,7 +66,7 @@
     },
     {
         "nomMonumento":"Basílica de Begoña",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Virgen de Begoña, 38",
         "codigo_postal":"48006",
         "longitud":"-2.91408392",
@@ -79,7 +79,7 @@
     },
     {
         "nomMonumento":"Palacio de la Diputación de Bizkaia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Gran Vía Don Diego López de Haro 25",
         "codigo_postal":"48009",
         "longitud":"-2.9320655",
@@ -92,7 +92,7 @@
     },
     {
         "nomMonumento":"San Juan de Gaztelugatxe",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Isla de Gaztelugatxe (carretera Bermeo-Bakio)",
         "codigo_postal":"48370",
         "longitud":"-2.78498138629152",
@@ -105,7 +105,7 @@
     },
     {
         "nomMonumento":"Iglesia de Andra Mari",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Elexalde",
         "codigo_postal":"48960",
         "longitud":"-2.8328195999999934",
@@ -118,7 +118,7 @@
     },
     {
         "nomMonumento":"Castillo de Butrón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Butrón s\/n",
         "codigo_postal":"48110",
         "longitud":"-2.913674658166552",
@@ -131,7 +131,7 @@
     },
     {
         "nomMonumento":"Torre de Doña Otxanda",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Calle Fundadora de las Siervas de Jesús, 24",
         "codigo_postal":"01001",
         "longitud":"-2.674561400000016",
@@ -144,7 +144,7 @@
     },
     {
         "nomMonumento":"Torre de Los Anda",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Calle Correría, 110  Plaza de la Burullería",
         "codigo_postal":"01001",
         "longitud":"-2.6737552",
@@ -157,7 +157,7 @@
     },
     {
         "nomMonumento":"Santuario de Arantzazu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Barrio de Arantzazu",
         "codigo_postal":"20560",
         "longitud":"-2.39867051586907",
@@ -170,7 +170,7 @@
     },
     {
         "nomMonumento":"Palacio Bendaña",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Cuchillería, 54",
         "codigo_postal":"01001",
         "longitud":"-2.671414899999945",
@@ -183,7 +183,7 @@
     },
     {
         "nomMonumento":"Palacio de Montehermoso",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Fray Zacarías Martínez, 2",
         "codigo_postal":"01001",
         "longitud":"-2.6728365000000167",
@@ -196,7 +196,7 @@
     },
     {
         "nomMonumento":"Torre de Mendoza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Mendoza, s\/n",
         "codigo_postal":"01191",
         "longitud":"-2.77405623",
@@ -209,7 +209,7 @@
     },
     {
         "nomMonumento":"Torre-Palacio de los Varona",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Calle Real, 11",
         "codigo_postal":"01426",
         "longitud":"-3.0714923269836163",
@@ -222,7 +222,7 @@
     },
     {
         "nomMonumento":"Palacio de los Ayala",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Quejana",
         "codigo_postal":"01477",
         "longitud":"-3.063037500000064",
@@ -235,7 +235,7 @@
     },
     {
         "nomMonumento":"Palacio de Ajuria Enea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Paseo Fray Francisco de Vitoria, 5",
         "codigo_postal":"01007",
         "longitud":"-2.6837529",
@@ -248,7 +248,7 @@
     },
     {
         "nomMonumento":"Fuerte de Guadalupe",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Carretera Jaizkibel GI-3440, barrio Gornutz Montaña",
         "codigo_postal":"20280",
         "longitud":"-1.8176744549560575",
@@ -261,7 +261,7 @@
     },
     {
         "nomMonumento":"Catedral del Buen Pastor",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza del Buen Pastor, s\/n",
         "codigo_postal":"20005",
         "longitud":"-1.981534229360932",
@@ -274,7 +274,7 @@
     },
     {
         "nomMonumento":"Basílica de Santa María del Coro",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"C\/ 31 de Agosto, 46",
         "codigo_postal":"20003",
         "longitud":"-1.9857227999999623",
@@ -287,7 +287,7 @@
     },
     {
         "nomMonumento":"Santuario de Guadalupe",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Carretera Jaizkibel, GI-3440, barrio Gornutz Montaña",
         "codigo_postal":"20280",
         "longitud":"-1.8210013306884387",
@@ -300,7 +300,7 @@
     },
     {
         "nomMonumento":"Catedral de Santa María",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza Santa María, 3",
         "codigo_postal":"01001",
         "longitud":"-2.6725128441803463",
@@ -313,7 +313,7 @@
     },
     {
         "nomMonumento":"Catedral de María Inmaculada (Catedral Nueva)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Magdalena, 1",
         "codigo_postal":"01008",
         "longitud":"-2.6763429507873298",
@@ -326,7 +326,7 @@
     },
     {
         "nomMonumento":"Santuario de Nuestra Señora de Estibaliz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Villafranca, 2",
         "codigo_postal":"01193",
         "longitud":"-2.5683596248535423",
@@ -339,7 +339,7 @@
     },
     {
         "nomMonumento":"Basílica de San Prudencio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Alto de Armentia, 24",
         "codigo_postal":"01195",
         "longitud":"-2.7016764",
@@ -352,7 +352,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María de los Reyes",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Mayor",
         "codigo_postal":"01300",
         "longitud":"-2.585530139950606",
@@ -365,7 +365,7 @@
     },
     {
         "nomMonumento":"Parroquia de Santa María la Real (Zarautz)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Elizaurre, 1",
         "codigo_postal":"20800",
         "longitud":"-2.1775636245022234",
@@ -378,7 +378,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Salvador",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Kale Nagusia, 39",
         "codigo_postal":"20808",
         "longitud":"-2.203569001852439",
@@ -391,7 +391,7 @@
     },
     {
         "nomMonumento":"Santuario de Loiola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Carretera GI-631, entre Azkoitia y Azpeitia",
         "codigo_postal":"20730",
         "longitud":"-2.282586292065389",
@@ -404,7 +404,7 @@
     },
     {
         "nomMonumento":"Parroquia de Santa María la Real (Azkoitia)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Calle de Nagusia, 61",
         "codigo_postal":"20720",
         "longitud":"-2.3116195232787495",
@@ -417,7 +417,7 @@
     },
     {
         "nomMonumento":"Santuario de Nuestra Señora de Itziar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Plaza principal, Itziar",
         "codigo_postal":"20829",
         "longitud":"-2.3316569374344542",
@@ -430,7 +430,7 @@
     },
     {
         "nomMonumento":"Torre Luzea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Nagusia, 28",
         "codigo_postal":"20800",
         "longitud":"-2.1750275534918684",
@@ -443,7 +443,7 @@
     },
     {
         "nomMonumento":"El Portalón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Correría, 147-149",
         "codigo_postal":"01001",
         "longitud":"-2.6730645000000095",
@@ -456,7 +456,7 @@
     },
     {
         "nomMonumento":"Paseo de los Arquillos",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Entre las calles Mateo Benigno de Moraza y Cuesta de San Francisco  <br\/>",
         "codigo_postal":"01001",
         "longitud":"-2.6715207",
@@ -469,7 +469,7 @@
     },
     {
         "nomMonumento":"Puente romano de Mantible",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"Assa",
         "codigo_postal":"01308",
         "longitud":"-2.506469",
@@ -482,7 +482,7 @@
     },
     {
         "nomMonumento":"Valle Salado de Salinas de Añana",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Centro de Acogida al Visitante<br\/>Calle Real, 42",
         "codigo_postal":"01426",
         "longitud":"-2.98322927249149",
@@ -495,7 +495,7 @@
     },
     {
         "nomMonumento":"Puente de San Antón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":null,
         "codigo_postal":"48005",
         "longitud":"-2.9230499267578125",
@@ -508,7 +508,7 @@
     },
     {
         "nomMonumento":"Teatro Arriaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Plaza del Arriaga s\/n",
         "codigo_postal":"48005",
         "longitud":"-2.924",
@@ -521,7 +521,7 @@
     },
     {
         "nomMonumento":"Puente de María Cristina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"Entre el Paseo de Francia y el Paseo de los Fueros",
         "codigo_postal":"20012",
         "longitud":"-1.9779609999999992",
@@ -534,7 +534,7 @@
     },
     {
         "nomMonumento":"Plaza de la Constitución",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Entre la calles de San Jerónimo, Puerto, Narrica, Pescadería e Iñigo.",
         "codigo_postal":"20003",
         "longitud":"-1.9848800478850936",
@@ -547,7 +547,7 @@
     },
     {
         "nomMonumento":"Plaza Nueva",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Plaza Nueva (Casco Viejo)",
         "codigo_postal":"48005",
         "longitud":"-2.922691992729136",
@@ -560,7 +560,7 @@
     },
     {
         "nomMonumento":"Casco Viejo de Bilbao - Las Siete Calles",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Plaza Biribila, 1",
         "codigo_postal":"48005",
         "longitud":"-2.9241326553337688",
@@ -573,7 +573,7 @@
     },
     {
         "nomMonumento":"Paseo de La Concha",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Entre la avenida de la Libertad y el túnel del Antiguo",
         "codigo_postal":"20007",
         "longitud":"-1.995005",
@@ -586,7 +586,7 @@
     },
     {
         "nomMonumento":"Casco histórico de Portugalete",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48920",
         "longitud":"-3.0203307",
@@ -599,7 +599,7 @@
     },
     {
         "nomMonumento":"Casa de Juntas de Gernika",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Allende Salazar, s\/n",
         "codigo_postal":"48300",
         "longitud":"-2.679720861376955",
@@ -612,7 +612,7 @@
     },
     {
         "nomMonumento":"Casco Antiguo de Lekeitio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48280",
         "longitud":"-2.503391511114499",
@@ -625,7 +625,7 @@
     },
     {
         "nomMonumento":"Casco Viejo de Durango",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48200",
         "longitud":"-2.631368618246477",
@@ -638,7 +638,7 @@
     },
     {
         "nomMonumento":"Villa Monumental de Elorrio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48230",
         "longitud":"-2.542165685250106",
@@ -651,7 +651,7 @@
     },
     {
         "nomMonumento":"Teatro Victoria Eugenia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Paseo de la República Argentina, 2",
         "codigo_postal":"20004",
         "longitud":"-1.9809124933929478",
@@ -664,7 +664,7 @@
     },
     {
         "nomMonumento":"Peine del Viento",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Paseo Eduardo Chillida",
         "codigo_postal":"20008",
         "longitud":"-2.0062222566223227",
@@ -677,7 +677,7 @@
     },
     {
         "nomMonumento":"Casco antiguo de Mutriku",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Casco antiguo",
         "codigo_postal":"20830",
         "longitud":"-2.384963271411127",
@@ -690,7 +690,7 @@
     },
     {
         "nomMonumento":"Casco antiguo de Pasai Donibane",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"20110",
         "longitud":"-1.9165783512206969",
@@ -703,7 +703,7 @@
     },
     {
         "nomMonumento":"Villa Monumental de Otxandio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48210",
         "longitud":"-2.6545944288360546",
@@ -716,7 +716,7 @@
     },
     {
         "nomMonumento":"Auditorio y cárcel de Astola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Astola, 26",
         "codigo_postal":"48820",
         "longitud":"-2.61288892",
@@ -729,7 +729,7 @@
     },
     {
         "nomMonumento":"Palacio Antxieta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Eliz Kalea (junto a la Iglesia Parroquial de San Sebastián de Soreasu)",
         "codigo_postal":"20730",
         "longitud":"-2.2644026980781473",
@@ -742,7 +742,7 @@
     },
     {
         "nomMonumento":"Ferrería de Mirandaola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Parque de Mirandaola, Telleriarte s\/n",
         "codigo_postal":"20230",
         "longitud":"-2.338553999999931",
@@ -755,7 +755,7 @@
     },
     {
         "nomMonumento":"Mercado del Tinglado (o Zerkausia)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Zerkausia kalea, 9A",
         "codigo_postal":"20400",
         "longitud":"-2.0724288318771134",
@@ -768,7 +768,7 @@
     },
     {
         "nomMonumento":"Viaducto de Ormaiztegi",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Gabiria Bidea",
         "codigo_postal":"20210",
         "longitud":"-2.2590382259032737",
@@ -781,7 +781,7 @@
     },
     {
         "nomMonumento":"Puente de la Muza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"C\/ Cristo, 1",
         "codigo_postal":"48800",
         "longitud":"-3.195139984100359",
@@ -794,7 +794,7 @@
     },
     {
         "nomMonumento":"Casco Antiguo de Bermeo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48370",
         "longitud":"-2.721557485180719",
@@ -807,7 +807,7 @@
     },
     {
         "nomMonumento":"Casco Antiguo de Plentzia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48620",
         "longitud":"-2.9481706095092486",
@@ -820,7 +820,7 @@
     },
     {
         "nomMonumento":"Casco Antiguo de Areatza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"48143",
         "longitud":"-2.7680718074096866",
@@ -833,7 +833,7 @@
     },
     {
         "nomMonumento":"Ciudad histórica de Oñati",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"20560",
         "longitud":"-2.411348",
@@ -846,7 +846,7 @@
     },
     {
         "nomMonumento":"Casco antiguo de Leintz-Gatzaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"20530",
         "longitud":"-2.5684044",
@@ -859,7 +859,7 @@
     },
     {
         "nomMonumento":"Fábrica de sal",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Al pie del castillo de Dorleta",
         "codigo_postal":"20530",
         "longitud":"-2.566559040197717",
@@ -872,7 +872,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Trokaz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"San Trokaz Plaza, 20",
         "codigo_postal":"48220",
         "longitud":"-2.6072198976227035",
@@ -885,7 +885,7 @@
     },
     {
         "nomMonumento":"Santuario de Urkiola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Barrio Urkiola, 5",
         "codigo_postal":"48211",
         "longitud":"-2.643382806854224",
@@ -898,7 +898,7 @@
     },
     {
         "nomMonumento":"Palacio Zurbano",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Zurbano",
         "codigo_postal":"01520",
         "longitud":"-2.6396392102172967",
@@ -911,7 +911,7 @@
     },
     {
         "nomMonumento":"Torre Murga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Murga",
         "codigo_postal":"01479",
         "longitud":"-3.022785186767578",
@@ -924,7 +924,7 @@
     },
     {
         "nomMonumento":"Torre y Palacio de Guevara",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Guevara",
         "codigo_postal":"01206",
         "longitud":"-2.495911307379174",
@@ -937,7 +937,7 @@
     },
     {
         "nomMonumento":"Ermita de San Juan",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Marquínez",
         "codigo_postal":"01118",
         "longitud":"-2.5647135",
@@ -950,7 +950,7 @@
     },
     {
         "nomMonumento":"Murallas de Antoñana",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Antoñana",
         "codigo_postal":"01128",
         "longitud":"-2.40068199",
@@ -963,7 +963,7 @@
     },
     {
         "nomMonumento":"Casa-Torre Berrozpe",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Calle Kaletxiki, 19",
         "codigo_postal":"20140",
         "longitud":"-2.0174094",
@@ -976,7 +976,7 @@
     },
     {
         "nomMonumento":"Casa-Torre Iztuitza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Karrika kalea",
         "codigo_postal":"20140",
         "longitud":"-2.0321790613769486",
@@ -989,7 +989,7 @@
     },
     {
         "nomMonumento":"Casa-Torre Sagarmendi",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Calle Ricardo Arregi",
         "codigo_postal":"20140",
         "longitud":"-2.0227024079345735",
@@ -1002,7 +1002,7 @@
     },
     {
         "nomMonumento":"Casa-Torre de Ateaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Goi Bailara 7",
         "codigo_postal":"20270",
         "longitud":"-2.0744483",
@@ -1015,7 +1015,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan Bautista (Anoeta)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza del pueblo",
         "codigo_postal":"20270",
         "longitud":"-2.0706281514758262",
@@ -1028,7 +1028,7 @@
     },
     {
         "nomMonumento":"Ermita de Nuestra Señora de la Antigua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Antigua",
         "codigo_postal":"20577",
         "longitud":"-2.3768715659926953",
@@ -1041,7 +1041,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa Águeda",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Galartza",
         "codigo_postal":"20577",
         "longitud":"-2.3921941171965955",
@@ -1054,7 +1054,7 @@
     },
     {
         "nomMonumento":"Torre-Palacio de Muntsaratz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Muntsaratz Auzoa, 17A",
         "codigo_postal":"48220",
         "longitud":"-2.602638746032646",
@@ -1067,7 +1067,7 @@
     },
     {
         "nomMonumento":"Iglesia Santa María de la Asunción",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Sabino Arana, s\/n",
         "codigo_postal":"48340",
         "longitud":"-2.735905433729604",
@@ -1080,7 +1080,7 @@
     },
     {
         "nomMonumento":"Iglesia Asunción de Nuestra Señora",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Castillo, s\/n",
         "codigo_postal":"01110",
         "longitud":"-2.3519360000000233",
@@ -1093,7 +1093,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Andrés (Elciego)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Hospital, 22",
         "codigo_postal":"01340",
         "longitud":"-2.616993204492246",
@@ -1106,7 +1106,7 @@
     },
     {
         "nomMonumento":"Casa Gótica (Areatza)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Errukiñe, 2",
         "codigo_postal":"48143",
         "longitud":"-2.7677548",
@@ -1119,7 +1119,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Martín (Arama)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de Arama, s\/n",
         "codigo_postal":"20248",
         "longitud":"-2.1656016441802506",
@@ -1132,7 +1132,7 @@
     },
     {
         "nomMonumento":"Palacio de Arratabe (actual ayuntamiento)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"C\/ Otalora, 1",
         "codigo_postal":"20550",
         "longitud":"-2.5043893711639287",
@@ -1145,7 +1145,7 @@
     },
     {
         "nomMonumento":"Casa-Torre de Galartza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio Galartza",
         "codigo_postal":"20550",
         "longitud":"-2.5176047",
@@ -1158,7 +1158,7 @@
     },
     {
         "nomMonumento":"Parroquia de Nuestra Señora de la Asunción (Aretxabaleta)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Herriko Plaza",
         "codigo_postal":"20550",
         "longitud":"-2.504650246032716",
@@ -1171,7 +1171,7 @@
     },
     {
         "nomMonumento":"Iglesia de Nuestra Señora de la Asunción (Elvillar)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de Santa María",
         "codigo_postal":"01309",
         "longitud":"-2.54331830000001",
@@ -1184,7 +1184,7 @@
     },
     {
         "nomMonumento":"Palacio Otalora",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Larrin plaza, 1",
         "codigo_postal":"20550",
         "longitud":"-2.5045906177909916",
@@ -1197,7 +1197,7 @@
     },
     {
         "nomMonumento":"Casa-Torre Otalora",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Aozaratza Elizaurrea, 2",
         "codigo_postal":"20550",
         "longitud":"-2.4919546043212826",
@@ -1210,7 +1210,7 @@
     },
     {
         "nomMonumento":"Murallas de Salinillas de Buradón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Salinillas de Buradón",
         "codigo_postal":"01339",
         "longitud":"-2.8305528",
@@ -1223,7 +1223,7 @@
     },
     {
         "nomMonumento":"Antiguo Ayuntamiento",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Durana, 11",
         "codigo_postal":"20550",
         "longitud":"-2.50378186",
@@ -1236,7 +1236,7 @@
     },
     {
         "nomMonumento":"Iglesia de Nuestra Señora de la Asunción (Labastida)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Mayor, 13",
         "codigo_postal":"01330",
         "longitud":"-2.7942450338683784",
@@ -1249,7 +1249,7 @@
     },
     {
         "nomMonumento":"Casa consistorial de Labastida",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza de la Paz, 1",
         "codigo_postal":"01330",
         "longitud":"-2.7932791000000634",
@@ -1262,7 +1262,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan Bautista (Laguardia)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de San Juan, 5",
         "codigo_postal":"01300",
         "longitud":"-2.5846294171619775",
@@ -1275,7 +1275,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Miguel de Elexabeitia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Elejabeitia",
         "codigo_postal":"48142",
         "longitud":"-2.789992357672182",
@@ -1288,7 +1288,7 @@
     },
     {
         "nomMonumento":"Ayuntamiento de Arrasate-Mondragón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza del pueblo, s\/n",
         "codigo_postal":"20500",
         "longitud":"-2.48992569",
@@ -1301,7 +1301,7 @@
     },
     {
         "nomMonumento":"Palacio de Bañez de Artazubiaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Iturriotz, 33",
         "codigo_postal":"20500",
         "longitud":"-2.4908248226845386",
@@ -1314,7 +1314,7 @@
     },
     {
         "nomMonumento":"Recinto Amurallado-Casco Histórico de Arrasate-Mondragón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"20500",
         "longitud":"-2.489166457672125",
@@ -1327,7 +1327,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Miguel de Linares",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de San Miguel de Linares",
         "codigo_postal":"48879",
         "longitud":"-3.2212837247451565",
@@ -1340,7 +1340,7 @@
     },
     {
         "nomMonumento":"Palacio de Monterrón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Zarugalde, 2",
         "codigo_postal":"20500",
         "longitud":"-2.491610601852472",
@@ -1353,7 +1353,7 @@
     },
     {
         "nomMonumento":"Ayuntamiento de Balmaseda",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza de San Severino",
         "codigo_postal":"48800",
         "longitud":"-3.1930847915405236",
@@ -1366,7 +1366,7 @@
     },
     {
         "nomMonumento":"Palacio de Okendo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Arrabal de Maala, 13",
         "codigo_postal":"20500",
         "longitud":"-2.48831752631987",
@@ -1379,7 +1379,7 @@
     },
     {
         "nomMonumento":"Convento de Santa Clara",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Campo de las monjas, 1 o Avenida Encartaciones, 2",
         "codigo_postal":"48800",
         "longitud":"-3.1976608478851154",
@@ -1392,7 +1392,7 @@
     },
     {
         "nomMonumento":"Ermita de San Roque de Kolitza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Monte Kolitza",
         "codigo_postal":"48800",
         "longitud":"-3.2503215952454023",
@@ -1405,7 +1405,7 @@
     },
     {
         "nomMonumento":"Torre del Condestable de Fontecha",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Fontecha, s\/n",
         "codigo_postal":"01423",
         "longitud":"-3.027045134492255",
@@ -1418,7 +1418,7 @@
     },
     {
         "nomMonumento":"Fábrica de Boinas La Encartada",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Barrio El Peñueco, 11",
         "codigo_postal":"48800",
         "longitud":"-3.2126653730163035",
@@ -1431,7 +1431,7 @@
     },
     {
         "nomMonumento":"Torre de los Orgaz de Fontecha",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Fontecha, s\/n",
         "codigo_postal":"01423",
         "longitud":"-3.0277317800000674",
@@ -1444,7 +1444,7 @@
     },
     {
         "nomMonumento":"Murallas de Labraza de Oyón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Labraza",
         "codigo_postal":"01322",
         "longitud":"-2.4165482999999313",
@@ -1457,7 +1457,7 @@
     },
     {
         "nomMonumento":"Ermita de Nuestra Señora de la Peña de Faido",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Virgen de la Peña Kalea, 3",
         "codigo_postal":"01216",
         "longitud":"-2.656476151451102",
@@ -1470,7 +1470,7 @@
     },
     {
         "nomMonumento":"Casa Consistorial de Asteasu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Lege Zaharren Enparantza",
         "codigo_postal":"20159",
         "longitud":"-2.0971432711639864",
@@ -1483,7 +1483,7 @@
     },
     {
         "nomMonumento":"Palacio de Murgia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Plaza de los Fueros",
         "codigo_postal":"20115",
         "longitud":"-1.9486974091232634",
@@ -1496,7 +1496,7 @@
     },
     {
         "nomMonumento":"Parroquia de Santa María de la Asunción",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza de los Fueros, 7",
         "codigo_postal":"20115",
         "longitud":"-1.9485549864386975",
@@ -1509,7 +1509,7 @@
     },
     {
         "nomMonumento":"Puente de Trespuentes",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"Carretera A-3306, Trespuentes",
         "codigo_postal":"01191",
         "longitud":"-2.7885427999999592",
@@ -1522,7 +1522,7 @@
     },
     {
         "nomMonumento":"Conjunto Histórico Artístico de Salvatierra",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"01200",
         "longitud":"-2.389455",
@@ -1535,7 +1535,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan Bautista (Salvatierra)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de San Juan",
         "codigo_postal":"01200",
         "longitud":"-2.3888445999999703",
@@ -1548,7 +1548,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María (Salvatierra\/Agurain)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Mayor, 80",
         "codigo_postal":"01200",
         "longitud":"-2.3896075773154735",
@@ -1561,7 +1561,7 @@
     },
     {
         "nomMonumento":"Monasterio cisterciense de Barria",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Barria (Narbaiza)",
         "codigo_postal":"01208",
         "longitud":"-2.435685409262078",
@@ -1574,7 +1574,7 @@
     },
     {
         "nomMonumento":"Órgano Barroco Ibérico",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Iglesia San Martín de Tours, barrio San Martín",
         "codigo_postal":"20211",
         "longitud":"-2.177396812491459",
@@ -1587,7 +1587,7 @@
     },
     {
         "nomMonumento":"Iglesia de Nuestra Señora de La Asunción (Tuesta)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Tuesta",
         "codigo_postal":"01423",
         "longitud":"-3.024169176443479",
@@ -1600,7 +1600,7 @@
     },
     {
         "nomMonumento":"Túnel de San Adrián",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"",
@@ -1613,7 +1613,7 @@
     },
     {
         "nomMonumento":"Archivo Histórico Provincial de Álava",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Paseo de la Zumaquera, 21",
         "codigo_postal":"01006",
         "longitud":"-2.66840022",
@@ -1626,7 +1626,7 @@
     },
     {
         "nomMonumento":"Casco Antiguo de Vitoria-Gasteiz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"01005",
         "longitud":"-2.6716351",
@@ -1639,7 +1639,7 @@
     },
     {
         "nomMonumento":"Casa-Torre de Balda",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Kale Nagusia, 99",
         "codigo_postal":"20720",
         "longitud":"-2.309675040614325",
@@ -1652,7 +1652,7 @@
     },
     {
         "nomMonumento":"Torre de Idiakez (Etxe Beltz)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Plaza Corazón de Jesús",
         "codigo_postal":"20720",
         "longitud":"-2.3111840244674764",
@@ -1665,7 +1665,7 @@
     },
     {
         "nomMonumento":"Caserío Artabene",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Eroso",
         "codigo_postal":"48390",
         "longitud":"-2.8116272583358826",
@@ -1678,7 +1678,7 @@
     },
     {
         "nomMonumento":"Palacio Floreaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Aizkibel, 10",
         "codigo_postal":"20720",
         "longitud":"-2.312364215938607",
@@ -1691,7 +1691,7 @@
     },
     {
         "nomMonumento":"Palacio Insausti",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Julio Urkijo Etorbidea, 25",
         "codigo_postal":"20720",
         "longitud":"-2.3064711661315895",
@@ -1704,7 +1704,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Miguel Arcángel",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de la Virgen Blanca",
         "codigo_postal":"01001",
         "longitud":"-2.6728560943732873",
@@ -1717,7 +1717,7 @@
     },
     {
         "nomMonumento":"Casa del Cordón",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Calle Cuchillería, 24",
         "codigo_postal":"01001",
         "longitud":"-2.6708419",
@@ -1730,7 +1730,7 @@
     },
     {
         "nomMonumento":"Convento y claustro de San Francisco",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Plaza Taraska",
         "codigo_postal":"48370",
         "longitud":"-2.724927765359557",
@@ -1743,7 +1743,7 @@
     },
     {
         "nomMonumento":"Palacio Villasuso",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Plaza del Machete, s\/n",
         "codigo_postal":"01001",
         "longitud":"-2.6722804999999425",
@@ -1756,7 +1756,7 @@
     },
     {
         "nomMonumento":"Palacio Escoriaza-Esquivel",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Fray Zacarías Martínez, 5 y 7",
         "codigo_postal":"01001",
         "longitud":"-2.6732220000000098",
@@ -1769,7 +1769,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Vicente Mártir",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Cuesta de San Vicente, 5",
         "codigo_postal":"01001",
         "longitud":"-2.6714752000000317",
@@ -1782,7 +1782,7 @@
     },
     {
         "nomMonumento":"Palacio Casa del Santo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Armentia",
         "codigo_postal":"01195",
         "longitud":"-2.6990081000000146",
@@ -1795,7 +1795,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Pedro Apóstol",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Fundadora de las Siervas de Jesús",
         "codigo_postal":"01001",
         "longitud":"-2.6748329465576717",
@@ -1808,7 +1808,7 @@
     },
     {
         "nomMonumento":"Faro de Matxitxako",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Cabo de Matxitxako",
         "codigo_postal":"48370",
         "longitud":"-2.752577049179081",
@@ -1821,7 +1821,7 @@
     },
     {
         "nomMonumento":"Palacio Augustín Zulueta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Paseo de Fray Francisco de Vitoria, 8",
         "codigo_postal":"01007",
         "longitud":"-2.68001486850892",
@@ -1834,7 +1834,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa Eufemia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Eupeme Deuna, 2",
         "codigo_postal":"48370",
         "longitud":"-2.7207039681228484",
@@ -1847,7 +1847,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María (Bermeo)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza Sabino Arana",
         "codigo_postal":"48370",
         "longitud":"-2.7222922249181902",
@@ -1860,7 +1860,7 @@
     },
     {
         "nomMonumento":"Puerta de la muralla de San Juan",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Doniene, s\/n",
         "codigo_postal":"48370",
         "longitud":"-2.7229155846557584",
@@ -1873,7 +1873,7 @@
     },
     {
         "nomMonumento":"Torre de Ercilla",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Plaza Torrontero, 1",
         "codigo_postal":"48370",
         "longitud":"-2.7211029795839603",
@@ -1886,7 +1886,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan Evangelista",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Elizondo, 3",
         "codigo_postal":"48240",
         "longitud":"-2.57710369206541",
@@ -1899,7 +1899,7 @@
     },
     {
         "nomMonumento":"Santuario de Nuestra Señora de Andikoa",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Barrio Andikoa",
         "codigo_postal":"48240",
         "longitud":"-2.5911549017136037",
@@ -1912,7 +1912,7 @@
     },
     {
         "nomMonumento":"Ermita de Nuestra Señora de Urrategi",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Urrategi",
         "codigo_postal":"20720",
         "longitud":"-2.3415784940589246",
@@ -1925,7 +1925,7 @@
     },
     {
         "nomMonumento":"Casa-Torre Enparan",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Paseo de los Fueros",
         "codigo_postal":"20730",
         "longitud":"-2.262703278118132",
@@ -1938,7 +1938,7 @@
     },
     {
         "nomMonumento":"Convento e Iglesia de las Hermanas Concepcionistas Franciscanas",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Foru Ibilbidea, 16",
         "codigo_postal":"20730",
         "longitud":"-2.2634004",
@@ -1951,7 +1951,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Severino",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza San Severino, 1",
         "codigo_postal":"48800",
         "longitud":"-3.1926468797622642",
@@ -1964,7 +1964,7 @@
     },
     {
         "nomMonumento":"Ayuntamiento de Bilbao",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza Ernesto Erkoreka",
         "codigo_postal":"48007",
         "longitud":"-2.923088",
@@ -1977,7 +1977,7 @@
     },
     {
         "nomMonumento":"Santuario de Nuestra Señora de la Encina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Cuesta de la Encina, s\/n",
         "codigo_postal":"01474",
         "longitud":"-3.135733973016386",
@@ -1990,7 +1990,7 @@
     },
     {
         "nomMonumento":"Casco Medieval de Artziniega",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"01474",
         "longitud":"-3.1294083999999884",
@@ -2003,7 +2003,7 @@
     },
     {
         "nomMonumento":"Ermita de Nuestra Señora de Olatz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Avenida Loiola",
         "codigo_postal":"20730",
         "longitud":"-2.27856051589969",
@@ -2016,7 +2016,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa María Magdalena",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Magdalena, 11",
         "codigo_postal":"20730",
         "longitud":"-2.2629530760574457",
@@ -2029,7 +2029,7 @@
     },
     {
         "nomMonumento":"Convento de la Encarnación",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Plaza de la Encarnación (Atxuri)",
         "codigo_postal":"48006",
         "longitud":"-2.9206153594551165",
@@ -2042,7 +2042,7 @@
     },
     {
         "nomMonumento":"Edificio de la Hacienda Estatal",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Plaza Moyua, 3",
         "codigo_postal":"48009",
         "longitud":"-2.9354201",
@@ -2055,7 +2055,7 @@
     },
     {
         "nomMonumento":"Iglesia de los Santos Juanes",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"La Cruz, 4",
         "codigo_postal":"48005",
         "longitud":"-2.9222017668647595",
@@ -2068,7 +2068,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Nicolás",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza San Nicolás, 1 (Casco Viejo)",
         "codigo_postal":"48005",
         "longitud":"-2.922576122684637",
@@ -2081,7 +2081,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Pedro",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza San Pedro, 1 (Deusto)",
         "codigo_postal":"48014",
         "longitud":"-2.9455323581475934",
@@ -2094,7 +2094,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Vicente Mártir de Abando",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Ibañez de Bilbao, 18",
         "codigo_postal":"48001",
         "longitud":"-2.9279132625656623",
@@ -2107,7 +2107,7 @@
     },
     {
         "nomMonumento":"Parque de Doña Casilda Iturrizar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Entre el Palacio Euskalduna y el Museo de Bellas Artes",
         "codigo_postal":"48011",
         "longitud":"-2.940352",
@@ -2120,7 +2120,7 @@
     },
     {
         "nomMonumento":"Teatro Campos Elíseos",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Bertendona, 3 bis",
         "codigo_postal":"48008",
         "longitud":"-2.93169815",
@@ -2133,7 +2133,7 @@
     },
     {
         "nomMonumento":"Iglesia de la Asunción de Santa María (Lekeitio)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de la Independencia",
         "codigo_postal":"48280",
         "longitud":"-2.502711863754268",
@@ -2146,7 +2146,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María de Axpe",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Axpe, 2",
         "codigo_postal":"48350",
         "longitud":"-2.7006218196822873",
@@ -2159,7 +2159,7 @@
     },
     {
         "nomMonumento":"Palacio de Chirapozu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Barrio de Altamira",
         "codigo_postal":"48350",
         "longitud":"-2.7038618150970684",
@@ -2172,7 +2172,7 @@
     },
     {
         "nomMonumento":"Molino de Zamakola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Indusi",
         "codigo_postal":"48141",
         "longitud":"-2.725833378018261",
@@ -2185,7 +2185,7 @@
     },
     {
         "nomMonumento":"Central hidroeléctrica Errotazar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Indusi, 25",
         "codigo_postal":"48141",
         "longitud":"-2.73342",
@@ -2198,7 +2198,7 @@
     },
     {
         "nomMonumento":"Convento de los Agustinos Descalzos (San Agustin Kultur Gunea)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"San Agustinalde, 12",
         "codigo_postal":"48200",
         "longitud":"-2.632894200000002",
@@ -2211,7 +2211,7 @@
     },
     {
         "nomMonumento":"Arco de Santa Ana",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza Santa Ana",
         "codigo_postal":"48200",
         "longitud":"-2.631991878573605",
@@ -2224,7 +2224,7 @@
     },
     {
         "nomMonumento":"Casa Consistorial de Durango",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Zeharkalea, 3",
         "codigo_postal":"48200",
         "longitud":"-2.6320348914016445",
@@ -2237,7 +2237,7 @@
     },
     {
         "nomMonumento":"Cruz de Kurutziaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Kurutziaga, 38 (Ermita de Vera Cruz)",
         "codigo_postal":"48200",
         "longitud":"-2.6293002775238428",
@@ -2250,7 +2250,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Pedro de Tabira",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Tabirabide kalea, 37",
         "codigo_postal":"48200",
         "longitud":"-2.631603177107311",
@@ -2263,7 +2263,7 @@
     },
     {
         "nomMonumento":"Iglesia San Juan Evangelista",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio San Miguel",
         "codigo_postal":"48200",
         "longitud":"-2.6126519539977933",
@@ -2276,7 +2276,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa Catalina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Egia, 10",
         "codigo_postal":"20820",
         "longitud":"-2.342975728836103",
@@ -2289,7 +2289,7 @@
     },
     {
         "nomMonumento":"Palacio de Lazarraga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Zalduondo, s\/n",
         "codigo_postal":"01208",
         "longitud":"-2.34620289999998",
@@ -2302,7 +2302,7 @@
     },
     {
         "nomMonumento":"Torre de Negorta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio El Valle",
         "codigo_postal":"01477",
         "longitud":"-3.0480194091796875",
@@ -2315,7 +2315,7 @@
     },
     {
         "nomMonumento":"Palacio Garai Goitia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Barrio San Miguel",
         "codigo_postal":"48200",
         "longitud":"-2.6119974949981595",
@@ -2328,7 +2328,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa Cruz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Cruz, 10",
         "codigo_postal":"20820",
         "longitud":"-2.353262624536905",
@@ -2341,7 +2341,7 @@
     },
     {
         "nomMonumento":"Parroquia de San Sebastián de Soreasu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Eliz Kalea, 25",
         "codigo_postal":"20730",
         "longitud":"-2.2642475576720855",
@@ -2354,7 +2354,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María (Ondarroa)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza Pedro María Unanue",
         "codigo_postal":"48700",
         "longitud":"-2.4242237403366307",
@@ -2367,7 +2367,7 @@
     },
     {
         "nomMonumento":"Cofradia Vieja y Zubi Zaharra",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Kanttoipe",
         "codigo_postal":"48700",
         "longitud":"-2.422095957949826",
@@ -2380,7 +2380,7 @@
     },
     {
         "nomMonumento":"Casa Torre de los Loiola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Carretera GI-631, entre Azkoitia y Azpeitia (Santuario de Loiola)",
         "codigo_postal":"20730",
         "longitud":"-2.2824016650650103",
@@ -2393,7 +2393,7 @@
     },
     {
         "nomMonumento":"Canteras de Andrabide",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Andrabide",
         "codigo_postal":"48314",
         "longitud":"-2.633754489288329",
@@ -2406,7 +2406,7 @@
     },
     {
         "nomMonumento":"Palacio Patrokua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Avenida de Xemein, 13",
         "codigo_postal":"48270",
         "longitud":"-2.4949452718276444",
@@ -2419,7 +2419,7 @@
     },
     {
         "nomMonumento":"Iglesia parroquial de Santa María",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza Zaharra, 7",
         "codigo_postal":"20820",
         "longitud":"-2.353492853967285",
@@ -2432,7 +2432,7 @@
     },
     {
         "nomMonumento":"Ermita de San Miguel de Arretxinaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Arretxinaga, 24",
         "codigo_postal":"48270",
         "longitud":"-2.495098769172719",
@@ -2445,7 +2445,7 @@
     },
     {
         "nomMonumento":"Iglesia y cementerio de Santa María de la Asunción de Xemein",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Arretxinaga",
         "codigo_postal":"48270",
         "longitud":"-2.4931790541722942",
@@ -2458,7 +2458,7 @@
     },
     {
         "nomMonumento":"Ermita de Nuestra Señora de Loinaz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Loinaz",
         "codigo_postal":"20200",
         "longitud":"-2.21424698",
@@ -2471,7 +2471,7 @@
     },
     {
         "nomMonumento":"Conjunto Monumental de Igartza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Peategi, z\/g",
         "codigo_postal":"20200",
         "longitud":"-2.2089916",
@@ -2484,7 +2484,7 @@
     },
     {
         "nomMonumento":"Castillo de Arteaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Gaztelubide, 7 (Barrio Zelaieta)",
         "codigo_postal":"48314",
         "longitud":"-2.654289261377012",
@@ -2497,7 +2497,7 @@
     },
     {
         "nomMonumento":"Convento Hospital de Sasiola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Carretera Deba-Mendaro (Barrio Sasiola)",
         "codigo_postal":"20820",
         "longitud":"-2.3714685",
@@ -2510,7 +2510,7 @@
     },
     {
         "nomMonumento":"Castillo de Muñatones",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio San Martín, s\/n",
         "codigo_postal":"48550",
         "longitud":"-3.1091737747192383",
@@ -2523,7 +2523,7 @@
     },
     {
         "nomMonumento":"Basílica de Santa María de Uribarri",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Kanpantorrosteta, 9",
         "codigo_postal":"48200",
         "longitud":"-2.6310996929022235",
@@ -2536,7 +2536,7 @@
     },
     {
         "nomMonumento":"Palacio de Etxezarreta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"San Agustinalde, 16",
         "codigo_postal":"48200",
         "longitud":"-2.633056113491876",
@@ -2549,7 +2549,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa Ana",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de Santa Ana, 7",
         "codigo_postal":"48200",
         "longitud":"-2.631784355819724",
@@ -2562,7 +2562,7 @@
     },
     {
         "nomMonumento":"Torre Sasiola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Calle Osio (Arrabal de Maxpe)",
         "codigo_postal":"20820",
         "longitud":"-2.3566167093315094",
@@ -2575,7 +2575,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Andrés (Ibarrangelu)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Elejalde",
         "codigo_postal":"48311",
         "longitud":"-2.6313687744427625",
@@ -2588,7 +2588,7 @@
     },
     {
         "nomMonumento":"Molino de marea Ozollo Errota",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Ozollo",
         "codigo_postal":"48314",
         "longitud":"-2.6639747725220198",
@@ -2601,7 +2601,7 @@
     },
     {
         "nomMonumento":"Ermita de San Roque",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Antigua calzada a Itziar (Barrio Egia)",
         "codigo_postal":"20820",
         "longitud":"-2.3488466539367936",
@@ -2614,7 +2614,7 @@
     },
     {
         "nomMonumento":"Basílica de San Martín de Loinaz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Loinaz, 7",
         "codigo_postal":"20200",
         "longitud":"-2.21194279",
@@ -2627,7 +2627,7 @@
     },
     {
         "nomMonumento":"Palacio Udetxea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Iturburu kalea 4",
         "codigo_postal":"48300",
         "longitud":"-2.6813506304474743",
@@ -2640,7 +2640,7 @@
     },
     {
         "nomMonumento":"Parroquia de Nuestra Señora de la Asunción (Beasain)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Andra Mari, 19",
         "codigo_postal":"20200",
         "longitud":"-2.19669061038132",
@@ -2653,7 +2653,7 @@
     },
     {
         "nomMonumento":"Fuente de Berriozabaleta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio de Berriozabaleta",
         "codigo_postal":"48230",
         "longitud":"-2.5600718892674235",
@@ -2666,7 +2666,7 @@
     },
     {
         "nomMonumento":"Basílica de la Purísima Concepción",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de Gernikako Arbola",
         "codigo_postal":"48230",
         "longitud":"-2.542225909311584",
@@ -2679,7 +2679,7 @@
     },
     {
         "nomMonumento":"Fábrica de Astra-Unceta y Cía",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Goikoibarra, 1",
         "codigo_postal":"48300",
         "longitud":"-2.6768566000000646",
@@ -2692,7 +2692,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Agustín de Etxebarria",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de San Agustín",
         "codigo_postal":"48230",
         "longitud":"-2.560085536770657",
@@ -2705,7 +2705,7 @@
     },
     {
         "nomMonumento":"Palacio de Arespakotxaga-Mendibil",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Don Tello, 1",
         "codigo_postal":"48230",
         "longitud":"-2.543828396295112",
@@ -2718,7 +2718,7 @@
     },
     {
         "nomMonumento":"Palacio de Tola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Elizalde kalea, 1",
         "codigo_postal":"48230",
         "longitud":"-2.5384883766906685",
@@ -2731,7 +2731,7 @@
     },
     {
         "nomMonumento":"Núcleo histórico de Bergara",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"20570",
         "longitud":"-2.4131426517760723",
@@ -2744,7 +2744,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María (Gernika-Lumo)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Goienkalea, 1",
         "codigo_postal":"48300",
         "longitud":"-2.6790749546310066",
@@ -2757,7 +2757,7 @@
     },
     {
         "nomMonumento":"Palacio Agirre",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Astillero, 12",
         "codigo_postal":"20820",
         "longitud":"-2.355919737434413",
@@ -2770,7 +2770,7 @@
     },
     {
         "nomMonumento":"Bikuña Enea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Bikuña Enea, 16",
         "codigo_postal":"20230",
         "longitud":"-2.3357606",
@@ -2783,7 +2783,7 @@
     },
     {
         "nomMonumento":"Palacio Alegría",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Allende Salazar, 5",
         "codigo_postal":"48300",
         "longitud":"-2.6795594840614245",
@@ -2796,7 +2796,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan de Molinar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza Molinar",
         "codigo_postal":"48192",
         "longitud":"-3.073390657147229",
@@ -2809,7 +2809,7 @@
     },
     {
         "nomMonumento":"Palacio y Torre de Oxirando",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Oxirando 1",
         "codigo_postal":"48192",
         "longitud":"-3.070005305557282",
@@ -2822,7 +2822,7 @@
     },
     {
         "nomMonumento":"Basílica del Santo Cristo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza del Santo Cristo, s\/n",
         "codigo_postal":"20100",
         "longitud":"-1.8987746",
@@ -2835,7 +2835,7 @@
     },
     {
         "nomMonumento":"Monumento al Pastor",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza de San Miguel Arcángel",
         "codigo_postal":"20213",
         "longitud":"-2.233215113353031",
@@ -2848,7 +2848,7 @@
     },
     {
         "nomMonumento":"Casco histórico de Segura",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"20214",
         "longitud":"-2.2534144492126407",
@@ -2861,7 +2861,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan Bautista (Arrasate-Mondragón)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Kanpatorpea kalea, 1",
         "codigo_postal":"20500",
         "longitud":"-2.4903677",
@@ -2874,7 +2874,7 @@
     },
     {
         "nomMonumento":"Palacio Horcasitas",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Martin Mendia, 14",
         "codigo_postal":"48800",
         "longitud":"-3.194449609856406",
@@ -2887,7 +2887,7 @@
     },
     {
         "nomMonumento":"Ermita de San Miguel de Ereñozar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Monte Ereñozar",
         "codigo_postal":"48313",
         "longitud":"-2.636703718338026",
@@ -2900,7 +2900,7 @@
     },
     {
         "nomMonumento":"Torre de Ybargoen",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio El Pontón",
         "codigo_postal":"48192",
         "longitud":"-3.089486481228634",
@@ -2913,7 +2913,7 @@
     },
     {
         "nomMonumento":"Palacio de Aiete",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Paseo de Aiete",
         "codigo_postal":"20009",
         "longitud":"-1.992034180217729",
@@ -2926,7 +2926,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santiago Apóstol",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Marqués de Valdespina",
         "codigo_postal":"48260",
         "longitud":"-2.5022321961563465",
@@ -2939,7 +2939,7 @@
     },
     {
         "nomMonumento":"Villa Cuba",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Sandamendi Auzoa, 2",
         "codigo_postal":"48192",
         "longitud":"-3.074594949073801",
@@ -2952,7 +2952,7 @@
     },
     {
         "nomMonumento":"Palacio de Valdespina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Marqués de Valdespina, 1",
         "codigo_postal":"48260",
         "longitud":"-2.502156399999995",
@@ -2965,7 +2965,7 @@
     },
     {
         "nomMonumento":"Ermita de San Cristóbal de Elgezua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Santa Lucía",
         "codigo_postal":"48140",
         "longitud":"-2.7562241828034106",
@@ -2978,7 +2978,7 @@
     },
     {
         "nomMonumento":"Plaza Gipuzkoa",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Plaza Gipuzkoa",
         "codigo_postal":"20004",
         "longitud":"-1.9821662576721244",
@@ -2991,7 +2991,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María de Idibalzaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Eleixalde, 2",
         "codigo_postal":"48309",
         "longitud":"-2.7263271374343945",
@@ -3004,7 +3004,7 @@
     },
     {
         "nomMonumento":"Monumento a José María Martínez de las Rivas",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza de San Pedro",
         "codigo_postal":"48191",
         "longitud":"-3.097771432120109",
@@ -3017,7 +3017,7 @@
     },
     {
         "nomMonumento":"Chalet Urrutia (Ayuntamiento)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Enkarterri, 5",
         "codigo_postal":"48840",
         "longitud":"-3.0952276779098575",
@@ -3030,7 +3030,7 @@
     },
     {
         "nomMonumento":"Torre de La Quadra",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio de La Quadra de Arriba",
         "codigo_postal":"48840",
         "longitud":"-3.0208058089843792",
@@ -3043,7 +3043,7 @@
     },
     {
         "nomMonumento":"Ermita de Gurutzeta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Serotegi",
         "codigo_postal":"20213",
         "longitud":"-2.22574",
@@ -3056,7 +3056,7 @@
     },
     {
         "nomMonumento":"Santuario de Angosto",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Santuario de Angosto",
         "codigo_postal":"01426",
         "longitud":"-3.0711930053100787",
@@ -3069,7 +3069,7 @@
     },
     {
         "nomMonumento":"Iglesia del arcángel San Miguel",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Mayor, 23",
         "codigo_postal":"20213",
         "longitud":"-2.2334574170578114",
@@ -3082,7 +3082,7 @@
     },
     {
         "nomMonumento":"Hórreo de Ertzilla",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio de Gaztañatza",
         "codigo_postal":"48215",
         "longitud":"-2.6485658645263976",
@@ -3095,7 +3095,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María (Güeñes)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de Euskadi, 7",
         "codigo_postal":"48840",
         "longitud":"-3.095502863229389",
@@ -3108,7 +3108,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa Elena",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Ermita, 2",
         "codigo_postal":"20304",
         "longitud":"-1.7851877865082266",
@@ -3121,7 +3121,7 @@
     },
     {
         "nomMonumento":"Palacio Ipeñarrieta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Carretera de Santa Barbara, s\/n",
         "codigo_postal":"20700",
         "longitud":"-2.3312740053100844",
@@ -3134,7 +3134,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Miguel (Iurreta)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de San Miguel",
         "codigo_postal":"48215",
         "longitud":"-2.632912182109064",
@@ -3147,7 +3147,7 @@
     },
     {
         "nomMonumento":"Iglesia San Miguel Arcángel",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Aldaba",
         "codigo_postal":"20400",
         "longitud":"-2.134036613214112",
@@ -3160,7 +3160,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Martín de Tours",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza Iparragirre",
         "codigo_postal":"20700",
         "longitud":"-2.313920383467125",
@@ -3173,7 +3173,7 @@
     },
     {
         "nomMonumento":"Torre de Berriatua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Tranpa Kale, 5",
         "codigo_postal":"20830",
         "longitud":"-2.384388018910153",
@@ -3186,7 +3186,7 @@
     },
     {
         "nomMonumento":"Torre de Muxika",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio San Román",
         "codigo_postal":"48392",
         "longitud":"-2.693095437576898",
@@ -3199,7 +3199,7 @@
     },
     {
         "nomMonumento":"Palacio Galdona",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Plaza Churruca",
         "codigo_postal":"20830",
         "longitud":"-2.387080206745855",
@@ -3212,7 +3212,7 @@
     },
     {
         "nomMonumento":"Iglesia de Nuestra Señora de la Asunción (Mutriku)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza Churruca",
         "codigo_postal":"20830",
         "longitud":"-2.387638106220953",
@@ -3225,7 +3225,7 @@
     },
     {
         "nomMonumento":"Palacio de Montalivet",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Tranpakale, 18",
         "codigo_postal":"20830",
         "longitud":"-2.3847968220901605",
@@ -3238,7 +3238,7 @@
     },
     {
         "nomMonumento":"Palacio de Olazarra-Mizkia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Barrenkale, 4",
         "codigo_postal":"20830",
         "longitud":"-2.385522924536869",
@@ -3251,7 +3251,7 @@
     },
     {
         "nomMonumento":"Casa Consistorial de Mutriku",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza Churruca",
         "codigo_postal":"20830",
         "longitud":"-2.3870774478850763",
@@ -3264,7 +3264,7 @@
     },
     {
         "nomMonumento":"Palacio Zabiel",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Erdiko Kale, 28",
         "codigo_postal":"20830",
         "longitud":"-2.385797499999967",
@@ -3277,7 +3277,7 @@
     },
     {
         "nomMonumento":"Ermita de San Miguel de Zumetzaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Camino Zumetzaga",
         "codigo_postal":"48100",
         "longitud":"-2.823580180625868",
@@ -3290,7 +3290,7 @@
     },
     {
         "nomMonumento":"Palacio de John (Edificio La Bolsa)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Pelota 10",
         "codigo_postal":"48005",
         "longitud":"-2.925099462530849",
@@ -3303,7 +3303,7 @@
     },
     {
         "nomMonumento":"Palacio Colina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Real, 13",
         "codigo_postal":"48895",
         "longitud":"-3.4381379020995806",
@@ -3316,7 +3316,7 @@
     },
     {
         "nomMonumento":"Las casas de la Plaza Vieja",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Plaza Vieja",
         "codigo_postal":"48895",
         "longitud":"-3.4400081634521484",
@@ -3329,7 +3329,7 @@
     },
     {
         "nomMonumento":"Monumento a Elcano",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Carretera N-634 hacia Zarautz",
         "codigo_postal":"20808",
         "longitud":"-2.2036229808815055",
@@ -3342,7 +3342,7 @@
     },
     {
         "nomMonumento":"Puerto de Getaria",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Puerto, 28",
         "codigo_postal":"20808",
         "longitud":"-2.199114889836422",
@@ -3355,7 +3355,7 @@
     },
     {
         "nomMonumento":"Antigua iglesia de Biañez",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Biañez",
         "codigo_postal":"48891",
         "longitud":"-3.346531646066888",
@@ -3368,7 +3368,7 @@
     },
     {
         "nomMonumento":"Puente de la Zurriola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"Paseo de la Zurriola",
         "codigo_postal":"20003",
         "longitud":"-1.9799058465576191",
@@ -3381,7 +3381,7 @@
     },
     {
         "nomMonumento":"Chalet Hernáiz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio de Concha, 71",
         "codigo_postal":"48891",
         "longitud":"-3.360230429360962",
@@ -3394,7 +3394,7 @@
     },
     {
         "nomMonumento":"Parque de Sagastigutia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Sagastigutia",
         "codigo_postal":"20200",
         "longitud":"-2.1931933762741718",
@@ -3407,7 +3407,7 @@
     },
     {
         "nomMonumento":"Palacio de Arana",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Barrio Elizalde, 23",
         "codigo_postal":"48213",
         "longitud":"-2.64034941716613",
@@ -3420,7 +3420,7 @@
     },
     {
         "nomMonumento":"Chalet Portillo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"La Tejera, 1",
         "codigo_postal":"48891",
         "longitud":"-3.3561519296387132",
@@ -3433,7 +3433,7 @@
     },
     {
         "nomMonumento":"Torre de Etxaburu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio Ortuzar",
         "codigo_postal":"48213",
         "longitud":"-2.6537920814016625",
@@ -3446,7 +3446,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Martín (Getaria)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Askizu",
         "codigo_postal":"20808",
         "longitud":"-2.2297483907378757",
@@ -3459,7 +3459,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Miguel Arcángel (Oñati)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Avenida de Unibertsitate, 2",
         "codigo_postal":"20560",
         "longitud":"-2.4139726852500853",
@@ -3472,7 +3472,7 @@
     },
     {
         "nomMonumento":"Ermita de San Pedro de Elorriaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Elorriaga, 15H",
         "codigo_postal":"48330",
         "longitud":"-2.7592536441802684",
@@ -3485,7 +3485,7 @@
     },
     {
         "nomMonumento":"Monasterio de Bidaurreta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Lazarraga kalea, 12",
         "codigo_postal":"20560",
         "longitud":"-2.406990973016377",
@@ -3498,7 +3498,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Bartolomé de Aldeacueva",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Aldeacueva",
         "codigo_postal":"48891",
         "longitud":"-3.3805180904696464",
@@ -3511,7 +3511,7 @@
     },
     {
         "nomMonumento":"Plaza de los Fueros",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"20560",
         "longitud":"-2.4135747399504908",
@@ -3524,7 +3524,7 @@
     },
     {
         "nomMonumento":"Palacio Miramar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Parque Miramar",
         "codigo_postal":"20009",
         "longitud":"-1.9988923863525332",
@@ -3537,7 +3537,7 @@
     },
     {
         "nomMonumento":"Monumento-Homenaje al Pastor Vasco",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Uribarri Auzoa",
         "codigo_postal":"20560",
         "longitud":"-2.413119423989878",
@@ -3550,7 +3550,7 @@
     },
     {
         "nomMonumento":"Torre Garibai",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio Torreauzo",
         "codigo_postal":"20560",
         "longitud":"-2.426983968147587",
@@ -3563,7 +3563,7 @@
     },
     {
         "nomMonumento":"Torre de Olakua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio Olakua",
         "codigo_postal":"20560",
         "longitud":"-2.404211142258459",
@@ -3576,7 +3576,7 @@
     },
     {
         "nomMonumento":"Puente de Santa Catalina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"Entre el Paseo de Francia y el Paseo de los Fueros",
         "codigo_postal":"20012",
         "longitud":"-1.9782217962951587",
@@ -3589,7 +3589,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Miguel de Ahedo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Ahedo",
         "codigo_postal":"48891",
         "longitud":"-3.3557518613769144",
@@ -3602,7 +3602,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa Cecilia. Santecilla",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Santecilla",
         "codigo_postal":"48891",
         "longitud":"-3.3579264456466285",
@@ -3615,7 +3615,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santo Tomás de Olabarrieta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Elizondo, s\/n",
         "codigo_postal":"48499",
         "longitud":"-2.834730745446794",
@@ -3628,7 +3628,7 @@
     },
     {
         "nomMonumento":"Casa Portalondo o Torre de los Gentiles",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Calle Kardaberaz, 46",
         "codigo_postal":"20120",
         "longitud":"-1.9740146050712548",
@@ -3641,7 +3641,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan Bautista (Hernani)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Gudarien plaza, 2",
         "codigo_postal":"20120",
         "longitud":"-1.9761016441109436",
@@ -3654,7 +3654,7 @@
     },
     {
         "nomMonumento":"Ermita Nuestra Señora de Zeberiogana",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Zeberiogana",
         "codigo_postal":"48499",
         "longitud":"-2.8387667460327126",
@@ -3667,7 +3667,7 @@
     },
     {
         "nomMonumento":"Palacio Amézaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Azkaldea, 5",
         "codigo_postal":"48269",
         "longitud":"-2.5314070558197255",
@@ -3680,7 +3680,7 @@
     },
     {
         "nomMonumento":"Calero de San Justo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Ozerimendi",
         "codigo_postal":"48144",
         "longitud":"-2.7651624009551923",
@@ -3693,7 +3693,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Francisco",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle San Francisco",
         "codigo_postal":"20400",
         "longitud":"-2.0743860190491437",
@@ -3706,7 +3706,7 @@
     },
     {
         "nomMonumento":"Plaza de Santa Marina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"20560",
         "longitud":"-2.4108143290527506",
@@ -3719,7 +3719,7 @@
     },
     {
         "nomMonumento":"Universidad Sancti Spiritus",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Avenida de la Universidad, 8<br\/>",
         "codigo_postal":"20560",
         "longitud":"-2.4153947788361165",
@@ -3732,7 +3732,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María de la Asunción (Mañaria)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Andra Mari, 3",
         "codigo_postal":"48212",
         "longitud":"-2.6596506772955375",
@@ -3745,7 +3745,7 @@
     },
     {
         "nomMonumento":"Iglesia parroquial de San Esteban de Lartaun",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de San Esteban",
         "codigo_postal":"20180",
         "longitud":"-1.860673193848461",
@@ -3758,7 +3758,7 @@
     },
     {
         "nomMonumento":"Chalet de Arechaga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Madalena",
         "codigo_postal":"48145",
         "longitud":"-2.6859500788208",
@@ -3771,7 +3771,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María (Tolosa)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de Santa María",
         "codigo_postal":"20400",
         "longitud":"-2.070883239549289",
@@ -3784,7 +3784,7 @@
     },
     {
         "nomMonumento":"Palacio de la Puente",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"La Iglesia, 3",
         "codigo_postal":"48880",
         "longitud":"-3.256593440475408",
@@ -3797,7 +3797,7 @@
     },
     {
         "nomMonumento":"Casa Artzu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Montaña",
         "codigo_postal":"20280",
         "longitud":"-1.81684469",
@@ -3810,7 +3810,7 @@
     },
     {
         "nomMonumento":"Ermita de San Esteban",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Lezesarri",
         "codigo_postal":"20560",
         "longitud":"-2.4097913745911326",
@@ -3823,7 +3823,7 @@
     },
     {
         "nomMonumento":"Casa Corral Ipeñarrieta (Ayuntamiento)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Calle Iparragirre, 20",
         "codigo_postal":"20700",
         "longitud":"-2.3137279000000035",
@@ -3836,7 +3836,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Pedro de Romaña",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"José Antonio Aguirre, 60",
         "codigo_postal":"48880",
         "longitud":"-3.2564729269836423",
@@ -3849,7 +3849,7 @@
     },
     {
         "nomMonumento":"Ermita de San Juan Bautista",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Garagaltza Auzoa Auzoa, 8",
         "codigo_postal":"20569",
         "longitud":"-2.4201256955819694",
@@ -3862,7 +3862,7 @@
     },
     {
         "nomMonumento":"Ermita de San Lorenzo (Oñati)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"San Lorentzo Auzoa Auzoa, 41",
         "codigo_postal":"20560",
         "longitud":"-2.40247484776114",
@@ -3875,7 +3875,7 @@
     },
     {
         "nomMonumento":"Ermita de San Martín",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Parque de San Martín",
         "codigo_postal":"20560",
         "longitud":"-2.408635768598295",
@@ -3888,7 +3888,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa Lucía",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Berezao",
         "codigo_postal":"20560",
         "longitud":"-2.4043121878052087",
@@ -3901,7 +3901,7 @@
     },
     {
         "nomMonumento":"Caserío Gurrutxaga Goikoa",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Soraitz",
         "codigo_postal":"20700",
         "longitud":"-2.3070643957092307",
@@ -3914,7 +3914,7 @@
     },
     {
         "nomMonumento":"Ermita de San Roque y plaza de toros",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de San Roque",
         "codigo_postal":"48880",
         "longitud":"-3.2523932920654564",
@@ -3927,7 +3927,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María Magdalena",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de la iglesia, 22",
         "codigo_postal":"48620",
         "longitud":"-2.9475753922042647",
@@ -3940,7 +3940,7 @@
     },
     {
         "nomMonumento":"Casa Dotorekua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Zigordia kalea, 31",
         "codigo_postal":"20800",
         "longitud":"-2.174288524536896",
@@ -3953,7 +3953,7 @@
     },
     {
         "nomMonumento":"Casa Consistorial de Otxandio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza Nagusia, 1",
         "codigo_postal":"48210",
         "longitud":"-2.654710598147625",
@@ -3966,7 +3966,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Vicente",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle de San Vicente, 3",
         "codigo_postal":"20003",
         "longitud":"-1.984152329499802",
@@ -3979,7 +3979,7 @@
     },
     {
         "nomMonumento":"Iglesia, convento y colegio de los Franciscanos",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Calle San Francisco, 2",
         "codigo_postal":"20800",
         "longitud":"-2.1734931246063525",
@@ -3992,7 +3992,7 @@
     },
     {
         "nomMonumento":"Castillo del Emperador Carlos V",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Plaza de Armas, 14",
         "codigo_postal":"20280",
         "longitud":"-1.791278000000034",
@@ -4005,7 +4005,7 @@
     },
     {
         "nomMonumento":"Palacio de Narros",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Elizaurre, 2 (Casco histórico)",
         "codigo_postal":"20800",
         "longitud":"-2.177357242327853",
@@ -4018,7 +4018,7 @@
     },
     {
         "nomMonumento":"Casa Portu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Calle Zigordia, 13",
         "codigo_postal":"20800",
         "longitud":"-2.1751223957008348",
@@ -4031,7 +4031,7 @@
     },
     {
         "nomMonumento":"Casa Solar o Palacio de Barrena",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Plaza Nikolas Lekuona, 1",
         "codigo_postal":"20240",
         "longitud":"-2.178550301852397",
@@ -4044,7 +4044,7 @@
     },
     {
         "nomMonumento":"Iglesia Santa María de la Asunción y del Manzano",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Mayor, s\/n",
         "codigo_postal":"20280",
         "longitud":"-1.7909641932541343",
@@ -4057,7 +4057,7 @@
     },
     {
         "nomMonumento":"Palacio de los Isasi (Markeskua)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Avenida Otaola, 1",
         "codigo_postal":"20600",
         "longitud":"-2.4786331673981388",
@@ -4070,7 +4070,7 @@
     },
     {
         "nomMonumento":"Palacio Sagartegieta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Barrio Maltzaga",
         "codigo_postal":"20600",
         "longitud":"-2.4378536711639165",
@@ -4083,7 +4083,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Andrés (Eibar)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Toribio Etxebarria, 26",
         "codigo_postal":"20600",
         "longitud":"-2.471153607409633",
@@ -4096,7 +4096,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María de la Asunción",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Santa María, 6",
         "codigo_postal":"20240",
         "longitud":"-2.179541485250065",
@@ -4109,7 +4109,7 @@
     },
     {
         "nomMonumento":"Caserío Justiz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Montaña",
         "codigo_postal":"20280",
         "longitud":"-1.8292048",
@@ -4122,7 +4122,7 @@
     },
     {
         "nomMonumento":"Iglesia de Nuestra Señora de la Asunción (Zumarraga)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Elizkale, 2",
         "codigo_postal":"20700",
         "longitud":"-2.3134024902129835",
@@ -4135,7 +4135,7 @@
     },
     {
         "nomMonumento":"Santuario de Arrate",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Arrate auzoa, 1",
         "codigo_postal":"20600",
         "longitud":"-2.446203710311916",
@@ -4148,7 +4148,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan Bautista (Pasai Donibane)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Donibane",
         "codigo_postal":"20110",
         "longitud":"-1.9174635017135389",
@@ -4161,7 +4161,7 @@
     },
     {
         "nomMonumento":"Jauregi Handia (Casa Legazpi)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Artiz, 30",
         "codigo_postal":"20700",
         "longitud":"-2.3196179884994383",
@@ -4174,7 +4174,7 @@
     },
     {
         "nomMonumento":"Ermita de Larraitz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Larraitz Auzoa, 12",
         "codigo_postal":"20269",
         "longitud":"-2.0989297447051802",
@@ -4187,7 +4187,7 @@
     },
     {
         "nomMonumento":"Muralla de Hondarribia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Casco Antiguo",
         "codigo_postal":"20280",
         "longitud":"-1.7934754639709305",
@@ -4200,7 +4200,7 @@
     },
     {
         "nomMonumento":"Iglesia de Nuestra Señora del Juncal",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Juncal",
         "codigo_postal":"20304",
         "longitud":"-1.7868469571471906",
@@ -4213,7 +4213,7 @@
     },
     {
         "nomMonumento":"Palacio Garro",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Santiago, 2",
         "codigo_postal":"20530",
         "longitud":"-2.568694800000003",
@@ -4226,7 +4226,7 @@
     },
     {
         "nomMonumento":"Santiago Etxea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Ctra de Donostia \/ N-634",
         "codigo_postal":"20750",
         "longitud":"-2.2473048207625634",
@@ -4239,7 +4239,7 @@
     },
     {
         "nomMonumento":"Torre de Terreros",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio La Herrera",
         "codigo_postal":"48860",
         "longitud":"-3.171282775146489",
@@ -4252,7 +4252,7 @@
     },
     {
         "nomMonumento":"Palacio Murga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Cosme Bibanko Etxebarria, 2",
         "codigo_postal":"48860",
         "longitud":"-3.1341570239426364",
@@ -4265,7 +4265,7 @@
     },
     {
         "nomMonumento":"Torre Zamudio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio Elexalde, 2",
         "codigo_postal":"48170",
         "longitud":"-2.8675408026550353",
@@ -4278,7 +4278,7 @@
     },
     {
         "nomMonumento":"Santuario de Dorleta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Santuario de Dorleta",
         "codigo_postal":"20530",
         "longitud":"-2.5655109288360367",
@@ -4291,7 +4291,7 @@
     },
     {
         "nomMonumento":"Castillo San Telmo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Pierre Lhande Kalea, 2",
         "codigo_postal":"20280",
         "longitud":"-1.7895863",
@@ -4304,7 +4304,7 @@
     },
     {
         "nomMonumento":"Casa Consistorial de Eibar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza Untzaga, 1",
         "codigo_postal":"20600",
         "longitud":"-2.47335129",
@@ -4317,7 +4317,7 @@
     },
     {
         "nomMonumento":"Casa-Torre de Unzueta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Gorosta Balle, 34",
         "codigo_postal":"20600",
         "longitud":"-2.45212854047546",
@@ -4330,7 +4330,7 @@
     },
     {
         "nomMonumento":"Convento de los Padres Benedictinos",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Calle Elosegi, 25",
         "codigo_postal":"20210",
         "longitud":"-2.1878374",
@@ -4343,7 +4343,7 @@
     },
     {
         "nomMonumento":"Balneario de Zestoa",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Camino de San Juan, 30",
         "codigo_postal":"20740",
         "longitud":"-2.2575951",
@@ -4356,7 +4356,7 @@
     },
     {
         "nomMonumento":"Palacio de Arbelaiz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle de la iglesia, 8",
         "codigo_postal":"20302",
         "longitud":"-1.7881973490738057",
@@ -4369,7 +4369,7 @@
     },
     {
         "nomMonumento":"Parroquia de San Pedro",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Mari Kalea, s\/n",
         "codigo_postal":"20750",
         "longitud":"-2.256667477909795",
@@ -4382,7 +4382,7 @@
     },
     {
         "nomMonumento":"Muralla",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Junto a la parroquia de Santa María",
         "codigo_postal":"48460",
         "longitud":"-3.0078750834670642",
@@ -4395,7 +4395,7 @@
     },
     {
         "nomMonumento":"Iglesia de la Sagrada Familia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Plaza de los Fueros",
         "codigo_postal":"48460",
         "longitud":"-3.009862757979247",
@@ -4408,7 +4408,7 @@
     },
     {
         "nomMonumento":"Aduana",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza de los Fueros, 15",
         "codigo_postal":"48460",
         "longitud":"-3.010149466508185",
@@ -4421,7 +4421,7 @@
     },
     {
         "nomMonumento":"Ermita de San Marcial",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Behobia, 26, Monte San Marcial",
         "codigo_postal":"20305",
         "longitud":"-1.766325831413269",
@@ -4434,7 +4434,7 @@
     },
     {
         "nomMonumento":"Palacio Urdanibia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Avenida Jaizubia, 1 <br\/>",
         "codigo_postal":"20305",
         "longitud":"-1.820212500000025",
@@ -4447,7 +4447,7 @@
     },
     {
         "nomMonumento":"Palacio Zumaia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Harategi kalea, 6",
         "codigo_postal":"20750",
         "longitud":"-2.257181038028646",
@@ -4460,7 +4460,7 @@
     },
     {
         "nomMonumento":"Palacio de los Lazcano",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Calle Elosegi, 30",
         "codigo_postal":"20210",
         "longitud":"-2.187763649351493",
@@ -4473,7 +4473,7 @@
     },
     {
         "nomMonumento":"Balneario de Alzola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Alzola",
         "codigo_postal":"20870",
         "longitud":"-2.4008",
@@ -4486,7 +4486,7 @@
     },
     {
         "nomMonumento":"Palacio de Foronda",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Odieta kalea, 2",
         "codigo_postal":"20750",
         "longitud":"-2.2590639889549458",
@@ -4499,7 +4499,7 @@
     },
     {
         "nomMonumento":"Casa-Torre de Alzola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Kalebarren plaza, 3<br\/>",
         "codigo_postal":"20870",
         "longitud":"-2.4154233",
@@ -4512,7 +4512,7 @@
     },
     {
         "nomMonumento":"Parroquia de San Bartolomé",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza de los Fueros",
         "codigo_postal":"20870",
         "longitud":"-2.416168237295555",
@@ -4525,7 +4525,7 @@
     },
     {
         "nomMonumento":"Ermita de San Lorenzo (Beizama)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Agiñamendi",
         "codigo_postal":"20739",
         "longitud":"-2.1931532025939693",
@@ -4538,7 +4538,7 @@
     },
     {
         "nomMonumento":"Puente de Anunzibai",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"Barrio de Anunzibai<br\/>",
         "codigo_postal":"48410",
         "longitud":"-2.93895377063905",
@@ -4551,7 +4551,7 @@
     },
     {
         "nomMonumento":"Ermita de la Virgen de la Soledad",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Carretera GI-3720, entre Beizama y Tolosa",
         "codigo_postal":"20739",
         "longitud":"-2.1970906854278316",
@@ -4564,7 +4564,7 @@
     },
     {
         "nomMonumento":"Torre de Aranguren",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Barrio de Aranguren",
         "codigo_postal":"48410",
         "longitud":"-2.8692877851806564",
@@ -4577,7 +4577,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Pedro de Murueta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Murueta",
         "codigo_postal":"48410",
         "longitud":"-2.9304562947051904",
@@ -4590,7 +4590,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Bartolomé de Olarte",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio de Olarte-Ibarra",
         "codigo_postal":"48410",
         "longitud":"-2.8626394216394213",
@@ -4603,7 +4603,7 @@
     },
     {
         "nomMonumento":"Parte Vieja de San Sebastián",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"20003",
         "longitud":"-1.9850581474990903",
@@ -4616,7 +4616,7 @@
     },
     {
         "nomMonumento":"Casa Azkarate Marutegi (Agirrebeña)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Plaza Ariznoa",
         "codigo_postal":"20570",
         "longitud":"-2.4127560313522367",
@@ -4629,7 +4629,7 @@
     },
     {
         "nomMonumento":"Santuario de Nuestra Señora de Udiarraga",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Udiarraga, s\/n",
         "codigo_postal":"48490",
         "longitud":"-2.902025489024358",
@@ -4642,7 +4642,7 @@
     },
     {
         "nomMonumento":"Casa Arrese",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrenkalea, 30",
         "codigo_postal":"20570",
         "longitud":"-2.4124154932540964",
@@ -4655,7 +4655,7 @@
     },
     {
         "nomMonumento":"Casa Bolo de Larrea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Arralde, 1",
         "codigo_postal":"01206",
         "longitud":"-2.462884783744812",
@@ -4668,7 +4668,7 @@
     },
     {
         "nomMonumento":"Parroquia de San Pedro de Ariznoa",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Ariznoa Plaza, 1",
         "codigo_postal":"20570",
         "longitud":"-2.4126747000000237",
@@ -4681,7 +4681,7 @@
     },
     {
         "nomMonumento":"Casa Torre Gabiria",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Gabiria kalea, 4 (barrio San Antonio)",
         "codigo_postal":"20570",
         "longitud":"-2.4151975",
@@ -4694,7 +4694,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María la Real",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle de Kalebarren, 2",
         "codigo_postal":"20590",
         "longitud":"-2.4124588753243126",
@@ -4707,7 +4707,7 @@
     },
     {
         "nomMonumento":"Ermita de Nuestra Señora de Ezozia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Ezozia",
         "codigo_postal":"20590",
         "longitud":"-2.4200238815368746",
@@ -4720,7 +4720,7 @@
     },
     {
         "nomMonumento":"Casa Torre Ozaeta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Zubiaurre, s\/n",
         "codigo_postal":"20570",
         "longitud":"-2.4186624",
@@ -4733,7 +4733,7 @@
     },
     {
         "nomMonumento":"Palacio de Egino-Mallea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Masterreka, 1",
         "codigo_postal":"20570",
         "longitud":"-2.4124705406884672",
@@ -4746,7 +4746,7 @@
     },
     {
         "nomMonumento":"Hórreo de Agirre",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Agirre auzoa, 7",
         "codigo_postal":"20570",
         "longitud":"-2.4246517212875496",
@@ -4759,7 +4759,7 @@
     },
     {
         "nomMonumento":"Palacio de Irizar",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Barrenkalea, 33",
         "codigo_postal":"20570",
         "longitud":"-2.4124679576721064",
@@ -4772,7 +4772,7 @@
     },
     {
         "nomMonumento":"Casa Jauregi",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Bidekurutzeta, 2",
         "codigo_postal":"20570",
         "longitud":"-2.4136045171966614",
@@ -4785,7 +4785,7 @@
     },
     {
         "nomMonumento":"Casa número 3 de Goenkalea",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Goenkalea, 3",
         "codigo_postal":"20570",
         "longitud":"-2.4124766",
@@ -4798,7 +4798,7 @@
     },
     {
         "nomMonumento":"Parroquia de Santa Marina de Oxirondo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Urdangarin Ibiltokia, s\/n",
         "codigo_postal":"20570",
         "longitud":"-2.4152199116393924",
@@ -4811,7 +4811,7 @@
     },
     {
         "nomMonumento":"Santuario de la Antigua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Paseo de La Antigua, 56",
         "codigo_postal":"48460",
         "longitud":"-3.0221067159385395",
@@ -4824,7 +4824,7 @@
     },
     {
         "nomMonumento":"Conjunto Histórico Artístico El Camino de Santiago (costa)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"<em>El recorrido comienza en Hondarribia y finaliza en Covarón<\/em>",
         "codigo_postal":"",
         "longitud":"",
@@ -4837,7 +4837,7 @@
     },
     {
         "nomMonumento":"Bosque de Oma",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio de Oma",
         "codigo_postal":"48315",
         "longitud":"-2.6167591",
@@ -4850,7 +4850,7 @@
     },
     {
         "nomMonumento":"Jardín Botánico de Santa Catalina",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"01191",
         "longitud":"-2.805369430810515",
@@ -4863,7 +4863,7 @@
     },
     {
         "nomMonumento":"Iglesia de Iesu",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Avenida Barcelona, 2 (Riberas de Loiola)",
         "codigo_postal":"20014",
         "longitud":"-1.970994066795356",
@@ -4876,7 +4876,7 @@
     },
     {
         "nomMonumento":"Landetxo Goikoa",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Landetxo Goikoa",
         "codigo_postal":"48100",
         "longitud":"-2.855198843933058",
@@ -4889,7 +4889,7 @@
     },
     {
         "nomMonumento":"Torre Iberdrola",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Euskadi Plaza, 5",
         "codigo_postal":"48009",
         "longitud":"-2.9386423502929793",
@@ -4902,7 +4902,7 @@
     },
     {
         "nomMonumento":"Bilbao Arena",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Askatasuna 13",
         "codigo_postal":"48003",
         "longitud":"-2.926080921148686",
@@ -4915,7 +4915,7 @@
     },
     {
         "nomMonumento":"Basque Culinary Center",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Paseo Juan Avelino Barriola, 101",
         "codigo_postal":"20009",
         "longitud":"-1.9872114909851524",
@@ -4928,7 +4928,7 @@
     },
     {
         "nomMonumento":"Puente Bizkaia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Puente",
         "direccion":"Barria, 3 bajo (oficina)<br\/>Zubiko enparantza, s\/n (puente)",
         "codigo_postal":"48930",
         "longitud":"",
@@ -4936,12 +4936,12 @@
         "descripcion":"Este famoso puente sobre la ría de Bilbao une las localidades de Areeta (Getxo) y Portugal...",
         "codLocalidad":"044 078",
         "nomLocalidad":"Getxo Portugalete",
-        "codProvincia":"48 48",
-        "nomProvincia":"Bizkaia Bizkaia"
+        "codProvincia":"48",
+        "nomProvincia":"Bizkaia"
     },
     {
         "nomMonumento":"Ermita de San Esteban de Gerekiz",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Gerekiz",
         "codigo_postal":"48115",
         "longitud":"-2.738512563385027",
@@ -4954,7 +4954,7 @@
     },
     {
         "nomMonumento":"Iglesia de los Mártires San Emeterio y San Celedonio",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Goikolexea, 9",
         "codigo_postal":"48195",
         "longitud":"-2.78318197953183",
@@ -4967,7 +4967,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María de Lezama",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Barrio Aretxalde, 81",
         "codigo_postal":"48196",
         "longitud":"-2.8347123675979513",
@@ -4980,7 +4980,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Vicente (Barakaldo)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Elejalde, 2",
         "codigo_postal":"48902",
         "longitud":"-2.9970901797622673",
@@ -4993,7 +4993,7 @@
     },
     {
         "nomMonumento":"Ermita de Santiagomendi (Astigarraga)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Travesía de Santiago, s\/n",
         "codigo_postal":"20115",
         "longitud":"-1.9323331978394065",
@@ -5006,7 +5006,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial San Martín de Tours (Andoain)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Goikoplaza, s\/n",
         "codigo_postal":"20140",
         "longitud":"-2.0205652436553656",
@@ -5019,7 +5019,7 @@
     },
     {
         "nomMonumento":"Convento de las Brigidas (Lasarte-Oria)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Monasterio-Convento",
         "direccion":"Plaza de las Brígidas",
         "codigo_postal":"20160",
         "longitud":"-2.020681476721198",
@@ -5032,7 +5032,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Martín (Estavillo)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Calle Picota",
         "codigo_postal":"01220",
         "longitud":"-2.860386100000028",
@@ -5045,7 +5045,7 @@
     },
     {
         "nomMonumento":"Basílica de Santa María (Portugalete)",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Santa María Kalea",
         "codigo_postal":"48920",
         "longitud":"-3.016654237295593",
@@ -5058,7 +5058,7 @@
     },
     {
         "nomMonumento":"Ermita de Nuestra Señora del Socorro",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"Camino a la ermita",
         "codigo_postal":"48550",
         "longitud":"-3.121918702099606",
@@ -5071,7 +5071,7 @@
     },
     {
         "nomMonumento":"Muelle de Hierro de Portugalete",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Muelle Churruca",
         "codigo_postal":"48980",
         "longitud":"-3.0243617153441837",
@@ -5084,20 +5084,20 @@
     },
     {
         "nomMonumento":"Pinturas de Gazeo y Alaitza",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"",
         "latitud":"",
         "descripcion":"Para que un tesoro pueda ser considerado tal, debe permanecer oculto a lo mortales durante un tie...",
-        "codLocalidad":"027 027",
-        "nomLocalidad":"Iruraiz-Gauna Iruraiz-Gauna",
-        "codProvincia":"01 01",
-        "nomProvincia":"Araba\/Álava Araba\/Álava"
+        "codLocalidad":"027",
+        "nomLocalidad":"Iruraiz-Gauna",
+        "codProvincia":"01",
+        "nomProvincia":"Araba\/Álava"
     },
     {
         "nomMonumento":"Palacio Arrietakua",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Conde de Motrico Kalea, 9",
         "codigo_postal":"20830",
         "longitud":"-2.3861940110450632",
@@ -5110,7 +5110,7 @@
     },
     {
         "nomMonumento":"Senda del Lea y Marierrota",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"-2.497720495861804",
@@ -5123,7 +5123,7 @@
     },
     {
         "nomMonumento":"Altos Hornos de Vizcaya - Horno Alto nº1",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"C\/ Txabarri, 4",
         "codigo_postal":"",
         "longitud":"-3.0005002822783733",
@@ -5136,7 +5136,7 @@
     },
     {
         "nomMonumento":"Grandes Villas de Getxo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"-3.0103634979003546",
@@ -5149,7 +5149,7 @@
     },
     {
         "nomMonumento":"Funicular de Igeldo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"-2.006342191696151",
@@ -5162,7 +5162,7 @@
     },
     {
         "nomMonumento":"Edificio Ilgner",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Avenida Altos Hornos de Vizcaya, 33",
         "codigo_postal":"48901",
         "longitud":"-2.9835250999999516",
@@ -5175,7 +5175,7 @@
     },
     {
         "nomMonumento":"Coto minero de Irugurutzeta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"-1.7722181000000319",
@@ -5188,7 +5188,7 @@
     },
     {
         "nomMonumento":"Coto minero de Goierri",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"",
@@ -5196,12 +5196,12 @@
         "descripcion":"La minería en el Goierri ha sido una actividad muy importante en el pasado que ha configur...",
         "codLocalidad":"057 026",
         "nomLocalidad":"Mutiloa Zerain",
-        "codProvincia":"20 20 20",
-        "nomProvincia":"Gipuzkoa Gipuzkoa Gipuzkoa"
+        "codProvincia":"20",
+        "nomProvincia":"Gipuzkoa"
     },
     {
         "nomMonumento":"Bosque Industrial de Ajuria & Urigoitia",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"-2.3123031000000083",
@@ -5214,7 +5214,7 @@
     },
     {
         "nomMonumento":"Palacio de la Finca Munoa",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Llano Kalea, s\/n",
         "codigo_postal":"48903",
         "longitud":"-2.978292383853154",
@@ -5227,7 +5227,7 @@
     },
     {
         "nomMonumento":"Marierrota",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Barrio Likoa",
         "codigo_postal":"48289",
         "longitud":"-2.49829985300903",
@@ -5240,7 +5240,7 @@
     },
     {
         "nomMonumento":"Molino de Fandería ? Casa del río",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Dolores Ibarruri Zumardia, z\/g",
         "codigo_postal":"",
         "longitud":"-1.888",
@@ -5253,7 +5253,7 @@
     },
     {
         "nomMonumento":"Palacio Lili",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Portale, 1",
         "codigo_postal":"",
         "longitud":"-2.260439347499079",
@@ -5266,7 +5266,7 @@
     },
     {
         "nomMonumento":"Pequeño Tren de Iraeta - Tren de cinco pulgadas",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Olaizola y Uria kalea",
         "codigo_postal":"",
         "longitud":"-2.2595286572860784",
@@ -5279,7 +5279,7 @@
     },
     {
         "nomMonumento":"Ermita de San Telmo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Iglesia-Ermita",
         "direccion":"San Telmo kalea, s\/n",
         "codigo_postal":"",
         "longitud":"-2.261305280456558",
@@ -5292,7 +5292,7 @@
     },
     {
         "nomMonumento":"Casa Torre Luardo",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Sabanika aldapa , 4",
         "codigo_postal":"",
         "longitud":"-2.3863634",
@@ -5305,7 +5305,7 @@
     },
     {
         "nomMonumento":"Antigua Lonja de Mutriku",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"-2.384268579276295",
@@ -5318,7 +5318,7 @@
     },
     {
         "nomMonumento":"Quinta Torre",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":"Errementeria. 29",
         "codigo_postal":"",
         "longitud":"-2.8156855529174907",
@@ -5331,7 +5331,7 @@
     },
     {
         "nomMonumento":"Palacio Elexpuru",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Edificio-Palacio",
         "direccion":"Basigo auzoa 16",
         "codigo_postal":"",
         "longitud":"-2.8201686524230962",
@@ -5344,7 +5344,7 @@
     },
     {
         "nomMonumento":"Funicular de Larreineta",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Funikular, 30",
         "codigo_postal":"",
         "longitud":"-3.0419183",
@@ -5357,7 +5357,7 @@
     },
     {
         "nomMonumento":"Coto Minero de Mutiloa y viaducto de Ormaiztegi",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Muxika egurastokia, 6",
         "codigo_postal":"20216",
         "longitud":"-2.2943262636596695",
@@ -5370,7 +5370,7 @@
     },
     {
         "nomMonumento":"Parroquia Nuestra Señora de la Asunción de Legazpi",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Euskal Herria Plaza z\/g",
         "codigo_postal":"",
         "longitud":"-2.333729428836069",
@@ -5383,7 +5383,7 @@
     },
     {
         "nomMonumento":"Santuario de Oro",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros",
         "direccion":"Vitoriano Entitatea, 1",
         "codigo_postal":"01139",
         "longitud":"-2.8261420645874025",
@@ -5396,7 +5396,7 @@
     },
     {
         "nomMonumento":"Cargadero de Mollarri",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Talaimendi",
         "codigo_postal":"20800",
         "longitud":"-2.1484063708862244",
@@ -5409,7 +5409,7 @@
     },
     {
         "nomMonumento":"Jardín Botánico Ramón Rubial",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"La Torre, 30",
         "codigo_postal":"48902",
         "longitud":"-3.001095232818607",
@@ -5422,7 +5422,7 @@
     },
     {
         "nomMonumento":"Vivienda Minera de La Arboleda",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"La Arboleda",
         "codigo_postal":"48510",
         "longitud":"-3.0536127190143625",
@@ -5435,7 +5435,7 @@
     },
     {
         "nomMonumento":"Jardín Botánico Berrizjauregi",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Otros monumentos",
         "direccion":"Iturritza Kalea, 51",
         "codigo_postal":"48240",
         "longitud":"-2.5775427",
@@ -5448,7 +5448,7 @@
     },
     {
         "nomMonumento":"Castillo de Portilla",
-        "tipoMonumento":"Patrimonio cultural",
+        "tipoMonumento":"Castillo-Torre-Fuerte",
         "direccion":null,
         "codigo_postal":"",
         "longitud":"-2.8336449",

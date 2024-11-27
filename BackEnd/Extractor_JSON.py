@@ -31,20 +31,40 @@ data = {
 
 # Función para clasificar el tipo de monumento
 def get_tipo_monumento(denominacion):
-    denominacion = denominacion.lower()
+    if not isinstance(denominacion, str):
+        return pd.NA
+        
+    denominacion_lower = denominacion.lower()
     palabras_clave = {
-        "Yacimiento arquelógico": ["yacimiento"],
-        "Monasterio-Convento": ["monasterio", "convento"],
-        "Iglesia-Ermita": ["iglesia", "ermita", "catedral", "basílica"],
-        "Castillo-Fortaleza-Torre": ["castillo", "fortaleza", "torre"],
-        "Edificio Singular": ["jardín", "palacio"],
-        "Puente": ["puente"]
+        "Yacimiento arqueológico": ["yacimiento arqueológico", "Yacimiento Arqueológico"],
+        "Monasterio-Convento": ["monasterio", "convento", "Monasterio", "Convento"],
+        "Iglesia-Ermita": ["iglesia", "ermita", "catedral", "basílica", 
+                        "Iglesia", "Ermita", "Catedral", "Basílica"],
+        "Castillo-Torre-Fuerte": ["castillo", "torre", "fuerte",
+                                "Castillo", "Torre", "Fuerte"],
+        "Edificio-Palacio": ["edificio", "palacio", "Edificio", "Palacio"],
+        "Puente": ["puente", "Puente"],
+        "Otros": ["santuario", "teatro", "plaza", "paseo", "casco", 
+                                        "villa", "ferrería", "mercado", "fábrica",
+                                        "Santuario", "Teatro", "Plaza", "Paseo", "Casco", 
+                                        "Villa", "Ferrería", "Mercado", "Fábrica"]
     }
     
     for tipo, keywords in palabras_clave.items():
         if any(keyword in denominacion for keyword in keywords):
             return tipo
-    return "Otros"
+    return "Otros monumentos"
+
+def limpiar_campo_duplicado(valor):
+    if not isinstance(valor, str):
+        return valor
+    # Divide el string por espacios y elimina duplicados manteniendo el orden
+    partes = valor.split()
+    partes_unicas = []
+    for parte in partes:
+        if parte not in partes_unicas:
+            partes_unicas.append(parte)
+    return ' '.join(partes_unicas)
 
 # Extraer información de cada elemento del JSON
 for monumento in json_data:
@@ -61,7 +81,7 @@ for monumento in json_data:
             monumento_dict[key] = value
     
     nomMonumento = monumento_dict.get('documentName', pd.NA)
-    tipoMonumento = monumento_dict.get('templateType', pd.NA)
+    tipoMonumento = get_tipo_monumento(nomMonumento) if nomMonumento is not pd.NA else pd.NA
     
     # Obtener la primera dirección que no esté vacía
     direccion = next((addr for addr in address_list if addr.strip()), pd.NA)
@@ -79,11 +99,11 @@ for monumento in json_data:
     
     descripcion = monumento_dict.get('documentDescription', pd.NA)
     
-    codLocalidad = monumento_dict.get('municipalitycode', pd.NA)
-    nomLocalidad = monumento_dict.get('municipality', pd.NA)
+    codLocalidad = limpiar_campo_duplicado(monumento_dict.get('municipalitycode', pd.NA))
+    nomLocalidad = limpiar_campo_duplicado(monumento_dict.get('municipality', pd.NA))
     
-    codProvincia = monumento_dict.get('territorycode', pd.NA)
-    nomProvincia = monumento_dict.get('territory', pd.NA)
+    codProvincia = limpiar_campo_duplicado(monumento_dict.get('territorycode', pd.NA))
+    nomProvincia = limpiar_campo_duplicado(monumento_dict.get('territory', pd.NA))
 
     # Añadir los datos al diccionario
     data['nomMonumento'].append(nomMonumento)
