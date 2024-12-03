@@ -14,11 +14,11 @@ Base = declarative_base()
 
 # Enum para el tipo de monumento con valores personalizados
 class TipoMonumento(PyEnum):
-    YacimientoArqueologico = "Yacimiento-arquelógico"
-    IglesiaErmita = "Iglesia-Ermita"
-    MonasterioConvento = "Monasterio-Convento"
-    CastilloFortalezaTorre = "Castillo-Fortaleza-Torre"
-    EdificioSingular = "Edificio-Palacio"
+    YacimientoArqueologico = "YacimientoArquelogico"
+    IglesiaErmita = "IglesiaErmita"
+    MonasterioConvento = "MonasterioConvento"
+    CastilloFortalezaTorre = "CastilloFortalezaTorre"
+    EdificioSingular = "EdificioPalacio"
     Puente = "Puente"
     Otros = "Otros"
 
@@ -53,5 +53,5 @@ class Monumento(Base):
     longitud: float = Column(Float)
     latitud: float = Column(Float)
     descripcion: str = Column(String(500))
-    en_localidad: int = Column(Integer, ForeignKey("localidad.id"), nullable=False)
+    en_localidad: int = Column(Integer, ForeignKey("localidad.id"), nullable=True)
     localidad = relationship("Localidad", back_populates="monumentos")

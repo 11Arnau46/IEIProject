@@ -14,7 +14,7 @@
     },
     {
         "nomMonumento":"Campana Santa María de la ermita del Mas de Barxell de Alcoi",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -92,7 +92,7 @@
     },
     {
         "nomMonumento":"Torre del Barranquet de Marco",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -105,7 +105,7 @@
     },
     {
         "nomMonumento":"Campana Maria de la ermita de la Sangre de Castalla",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -157,7 +157,7 @@
     },
     {
         "nomMonumento":"Campana María de la iglesia de San Andres de les Baies de Elx",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -170,7 +170,7 @@
     },
     {
         "nomMonumento":"Campana dels quarts de la Torre de la Vetlla de Elx",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -183,7 +183,7 @@
     },
     {
         "nomMonumento":"Campana de les hores de la Torre de la Vetlla de Elx",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -196,7 +196,7 @@
     },
     {
         "nomMonumento":"Torre Gaitán",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -209,7 +209,7 @@
     },
     {
         "nomMonumento":"Castillo de San José",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -313,7 +313,7 @@
     },
     {
         "nomMonumento":"Campana de horas de la catedral de El Salvador de Orihuela",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -391,7 +391,7 @@
     },
     {
         "nomMonumento":"Yacimiento arqueológico la Picola",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -586,7 +586,7 @@
     },
     {
         "nomMonumento":"Campana del Convent del antiguo convento de Ntra. Sra. del Rosario y San Blas de Forcall",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -612,7 +612,7 @@
     },
     {
         "nomMonumento":"Campana de les Ànimes de la ermita de la Purísima de la Llécua de Morella",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -716,7 +716,7 @@
     },
     {
         "nomMonumento":"Campana de horas de la catedral de la Asunción de Segorbe",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -768,7 +768,7 @@
     },
     {
         "nomMonumento":"Campana Cristòfol de la ermita San Cristóbal de Saranyana de Todolella",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -781,7 +781,7 @@
     },
     {
         "nomMonumento":"Zona Arqueológica Torre de Torrechiva",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -794,7 +794,7 @@
     },
     {
         "nomMonumento":"Campana la xicoteta de la  parroquia de Santa Quiteria de la Torre d'En Doménec",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1028,7 +1028,7 @@
     },
     {
         "nomMonumento":"Campana María de la ermita Virgen de Gracia de Castielfabib",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1080,7 +1080,7 @@
     },
     {
         "nomMonumento":"Torrecilla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1093,7 +1093,7 @@
     },
     {
         "nomMonumento":"Campana Maria del convento de San Gregorio de l'Eliana",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1132,7 +1132,7 @@
     },
     {
         "nomMonumento":"Campana de foc de la iglesia de la Sangre de Llíria",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1184,7 +1184,7 @@
     },
     {
         "nomMonumento":"Campana Ave Maria del monasterio de los Santos Patronos de l'Olleria",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1223,7 +1223,7 @@
     },
     {
         "nomMonumento":"Campana Andreua del convento de la Purísima Sangre de Ontinyent",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1249,7 +1249,7 @@
     },
     {
         "nomMonumento":"Campana de la ermita de la Purísima de la Puebla de San Miguel",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1314,7 +1314,7 @@
     },
     {
         "nomMonumento":"Campana gótica del antiguo convento de San José y Santa Tecla de Torrent",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1327,7 +1327,7 @@
     },
     {
         "nomMonumento":"Campana la Caterina de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1353,7 +1353,7 @@
     },
     {
         "nomMonumento":"Campana el Jaume de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1366,7 +1366,7 @@
     },
     {
         "nomMonumento":"Campana l'Úrsula de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1392,7 +1392,7 @@
     },
     {
         "nomMonumento":"Campana el Pau de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1418,7 +1418,7 @@
     },
     {
         "nomMonumento":"Campana l'Arcís de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1431,7 +1431,7 @@
     },
     {
         "nomMonumento":"Campana el Micalet de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1444,7 +1444,7 @@
     },
     {
         "nomMonumento":"Campana la Maria de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1470,7 +1470,7 @@
     },
     {
         "nomMonumento":"Campana el Vicent de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,
@@ -1522,7 +1522,7 @@
     },
     {
         "nomMonumento":"Campana l'Andreu de la catedral de Santa María de Valencia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":null,

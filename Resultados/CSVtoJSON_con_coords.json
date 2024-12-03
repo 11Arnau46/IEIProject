@@ -1,7 +1,7 @@
 [
     {
         "nomMonumento":"Castillo de Forna",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4306400.0,
@@ -14,7 +14,7 @@
     },
     {
         "nomMonumento":"Castillo de Agost",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4257316.0,
@@ -27,7 +27,7 @@
     },
     {
         "nomMonumento":"Castillo de la Murta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4258652.0,
@@ -53,7 +53,7 @@
     },
     {
         "nomMonumento":"Torre Atalaya",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4295098.0,
@@ -66,7 +66,7 @@
     },
     {
         "nomMonumento":"Castillo de Agres",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4294870.0,
@@ -79,7 +79,7 @@
     },
     {
         "nomMonumento":"Castillo de Aigües",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4264479.0,
@@ -92,7 +92,7 @@
     },
     {
         "nomMonumento":"Torre Alcalalí",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4293168.0,
@@ -105,7 +105,7 @@
     },
     {
         "nomMonumento":"Torre de Alcoleja",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4284142.0,
@@ -170,7 +170,7 @@
     },
     {
         "nomMonumento":"Torre de Barxell",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4285379.0,
@@ -222,7 +222,7 @@
     },
     {
         "nomMonumento":"Torre Bombarda",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4272317.0,
@@ -235,7 +235,7 @@
     },
     {
         "nomMonumento":"El Porquet. Yacimiento de Icnofósiles",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4244305.0,
@@ -248,7 +248,7 @@
     },
     {
         "nomMonumento":"Torre El Ciprés",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250790.0,
@@ -261,7 +261,7 @@
     },
     {
         "nomMonumento":"Torre del Conde",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250399.0,
@@ -274,7 +274,7 @@
     },
     {
         "nomMonumento":"Torre Cacholí",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250791.0,
@@ -287,7 +287,7 @@
     },
     {
         "nomMonumento":"Torre Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4249562.0,
@@ -313,7 +313,7 @@
     },
     {
         "nomMonumento":"Palacio del Conde de Lumiares",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4247166.0,
@@ -326,7 +326,7 @@
     },
     {
         "nomMonumento":"Castillo de Santa Bárbara",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4247522.0,
@@ -339,7 +339,7 @@
     },
     {
         "nomMonumento":"Concatedral de San Nicolás de Bari",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4247147.0,
@@ -352,7 +352,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santa María",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4247237.0,
@@ -417,7 +417,7 @@
     },
     {
         "nomMonumento":"Villas romanas del Castillo de Ansaldo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4249571.0,
@@ -443,7 +443,7 @@
     },
     {
         "nomMonumento":"Torre Agua Amarga",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4243215.0,
@@ -456,7 +456,7 @@
     },
     {
         "nomMonumento":"Torre Águilas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4249781.0,
@@ -469,7 +469,7 @@
     },
     {
         "nomMonumento":"Torre Bosch",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251654.0,
@@ -482,7 +482,7 @@
     },
     {
         "nomMonumento":"Torre Boter",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250621.0,
@@ -495,7 +495,7 @@
     },
     {
         "nomMonumento":"Torre Bourguño",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4245662.0,
@@ -508,7 +508,7 @@
     },
     {
         "nomMonumento":"Torre Alameda o Nicolau",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251798.0,
@@ -521,7 +521,7 @@
     },
     {
         "nomMonumento":"Torre del Cabo de las Huertas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4248184.0,
@@ -534,7 +534,7 @@
     },
     {
         "nomMonumento":"Torre Ferrer",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4249799.0,
@@ -547,7 +547,7 @@
     },
     {
         "nomMonumento":"Torre Juana",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251701.0,
@@ -560,7 +560,7 @@
     },
     {
         "nomMonumento":"Torre Medialibra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250960.0,
@@ -573,7 +573,7 @@
     },
     {
         "nomMonumento":"Torre Plácida",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251111.0,
@@ -586,7 +586,7 @@
     },
     {
         "nomMonumento":"Torre Reixes",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250963.0,
@@ -599,7 +599,7 @@
     },
     {
         "nomMonumento":"Torre San José (Tabarca)",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4227068.0,
@@ -612,7 +612,7 @@
     },
     {
         "nomMonumento":"Torre Santa Faz",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4252104.0,
@@ -625,7 +625,7 @@
     },
     {
         "nomMonumento":"Torre Santiago",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4249924.0,
@@ -638,7 +638,7 @@
     },
     {
         "nomMonumento":"Torre Sarrió",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250054.0,
@@ -651,7 +651,7 @@
     },
     {
         "nomMonumento":"Torre Soto",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251974.0,
@@ -664,7 +664,7 @@
     },
     {
         "nomMonumento":"Torre Tres Olivos, Fabián o Guisot",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251250.0,
@@ -677,7 +677,7 @@
     },
     {
         "nomMonumento":"Torre Villa García",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251476.0,
@@ -690,7 +690,7 @@
     },
     {
         "nomMonumento":"Torre Rizo (Desaparecida)",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251058.0,
@@ -703,7 +703,7 @@
     },
     {
         "nomMonumento":"Castillo de San Fernando",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4247738.0,
@@ -729,7 +729,7 @@
     },
     {
         "nomMonumento":"Torre Almohade",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4293613.0,
@@ -768,7 +768,7 @@
     },
     {
         "nomMonumento":"Torre de la Galera",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4279760.0,
@@ -781,7 +781,7 @@
     },
     {
         "nomMonumento":"Torre de Bellaguarda",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4276691.0,
@@ -807,7 +807,7 @@
     },
     {
         "nomMonumento":"Castillo de Aljau",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4246790.0,
@@ -820,7 +820,7 @@
     },
     {
         "nomMonumento":"Castillo del Río",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4246136.0,
@@ -833,7 +833,7 @@
     },
     {
         "nomMonumento":"Castillo de la Costurera",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4292269.0,
@@ -846,7 +846,7 @@
     },
     {
         "nomMonumento":"Castillo de Serrella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4286675.0,
@@ -859,7 +859,7 @@
     },
     {
         "nomMonumento":"Castillo de Banyeres de Mariola",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4287811.0,
@@ -885,7 +885,7 @@
     },
     {
         "nomMonumento":"Torre de la Font Bona",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4288394.0,
@@ -898,7 +898,7 @@
     },
     {
         "nomMonumento":"Torre del Palacio",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4285850.0,
@@ -911,7 +911,7 @@
     },
     {
         "nomMonumento":"Torre Atalaya",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4285792.0,
@@ -924,7 +924,7 @@
     },
     {
         "nomMonumento":"Torre Negret",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4286880.0,
@@ -950,7 +950,7 @@
     },
     {
         "nomMonumento":"Torre Morales o Escaletes",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4268068.0,
@@ -963,7 +963,7 @@
     },
     {
         "nomMonumento":"Torre Punta del Cavall o Seguró",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4268061.0,
@@ -1002,7 +1002,7 @@
     },
     {
         "nomMonumento":"Castillo Medieval",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4282480.0,
@@ -1015,7 +1015,7 @@
     },
     {
         "nomMonumento":"Castillo de Alfofra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4283868.0,
@@ -1041,7 +1041,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4285060.0,
@@ -1054,7 +1054,7 @@
     },
     {
         "nomMonumento":"Castillo de Segaria",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4302440.0,
@@ -1080,7 +1080,7 @@
     },
     {
         "nomMonumento":"La Torreta de Canor",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4290985.0,
@@ -1093,7 +1093,7 @@
     },
     {
         "nomMonumento":"Torre Defensiva de la Casa  del Tros de les Calcides",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4285880.0,
@@ -1119,7 +1119,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas de Biar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278235.0,
@@ -1132,7 +1132,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Nuestra Señora de la Asunción",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278086.0,
@@ -1145,7 +1145,7 @@
     },
     {
         "nomMonumento":"Castillo de Garx",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4286948.0,
@@ -1158,7 +1158,7 @@
     },
     {
         "nomMonumento":"Torre de Busot",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4263259.0,
@@ -1171,7 +1171,7 @@
     },
     {
         "nomMonumento":"Castillo de Busot",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4262845.0,
@@ -1197,7 +1197,7 @@
     },
     {
         "nomMonumento":"Torre del Castellet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4280901.0,
@@ -1249,7 +1249,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas de Callosa D´En Sarrià",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4282082.0,
@@ -1262,7 +1262,7 @@
     },
     {
         "nomMonumento":"Castillo de Bernia",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4283267.0,
@@ -1275,7 +1275,7 @@
     },
     {
         "nomMonumento":"Castillo de Callosa de Segura",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4221236.0,
@@ -1288,7 +1288,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Martín",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4221554.0,
@@ -1301,7 +1301,7 @@
     },
     {
         "nomMonumento":"Torre del barranco de Aigües",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4260340.0,
@@ -1314,7 +1314,7 @@
     },
     {
         "nomMonumento":"Torre de la Illeta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4257062.0,
@@ -1353,7 +1353,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada La Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4284375.0,
@@ -1366,7 +1366,7 @@
     },
     {
         "nomMonumento":"Castillo de Almizra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4283722.0,
@@ -1379,7 +1379,7 @@
     },
     {
         "nomMonumento":"Torre de Campo de Mirra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4283717.0,
@@ -1470,7 +1470,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas de Castalla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4274683.0,
@@ -1483,7 +1483,7 @@
     },
     {
         "nomMonumento":"Castillo de Serrella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4287889.0,
@@ -1509,7 +1509,7 @@
     },
     {
         "nomMonumento":"Castillo de Cocentaina",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4291674.0,
@@ -1522,7 +1522,7 @@
     },
     {
         "nomMonumento":"Castillo de Penella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4286833.0,
@@ -1535,7 +1535,7 @@
     },
     {
         "nomMonumento":"Palacio Condal y Monasterio de la Virgen del Milagro",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4291410.0,
@@ -1600,7 +1600,7 @@
     },
     {
         "nomMonumento":"Castillo de Alfofra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4283874.0,
@@ -1613,7 +1613,7 @@
     },
     {
         "nomMonumento":"Castillo de Santa Bárbara",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4223226.0,
@@ -1639,7 +1639,7 @@
     },
     {
         "nomMonumento":"Castillo Viejo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4239777.0,
@@ -1652,7 +1652,7 @@
     },
     {
         "nomMonumento":"Ermita de San Juan",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4301577.0,
@@ -1678,7 +1678,7 @@
     },
     {
         "nomMonumento":"Torre Almadraba",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4305976.0,
@@ -1691,7 +1691,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas de Dénia",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4303944.0,
@@ -1704,7 +1704,7 @@
     },
     {
         "nomMonumento":"Torre Carrals",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4303045.0,
@@ -1717,7 +1717,7 @@
     },
     {
         "nomMonumento":"Torre del Guerro",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4301535.0,
@@ -1743,7 +1743,7 @@
     },
     {
         "nomMonumento":"Castillo-Palacio de Altamira",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4238051.0,
@@ -1769,7 +1769,7 @@
     },
     {
         "nomMonumento":"Iglesia del Ex-convento de San José",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4237133.0,
@@ -1782,7 +1782,7 @@
     },
     {
         "nomMonumento":"Torre de Ressemblanch",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4236694.0,
@@ -1795,7 +1795,7 @@
     },
     {
         "nomMonumento":"Torre de la Calahorra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4237975.0,
@@ -1808,7 +1808,7 @@
     },
     {
         "nomMonumento":"Palacio Jorge Juan",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4237900.0,
@@ -1847,7 +1847,7 @@
     },
     {
         "nomMonumento":"Torre Asprillas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4233610.0,
@@ -1860,7 +1860,7 @@
     },
     {
         "nomMonumento":"Torre Cañada",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4237552.0,
@@ -1873,7 +1873,7 @@
     },
     {
         "nomMonumento":"Torre de Carrús",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4241231.0,
@@ -1886,7 +1886,7 @@
     },
     {
         "nomMonumento":"Torre Jubalcoy",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4239058.0,
@@ -1899,7 +1899,7 @@
     },
     {
         "nomMonumento":"Torre Palombar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4234507.0,
@@ -1912,7 +1912,7 @@
     },
     {
         "nomMonumento":"Torre Vigía Estaña",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4235753.0,
@@ -1925,7 +1925,7 @@
     },
     {
         "nomMonumento":"Torre Vigía Santa Bárbara",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4241662.0,
@@ -1938,7 +1938,7 @@
     },
     {
         "nomMonumento":"Torre de los Vaillos",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4238746.0,
@@ -1951,7 +1951,7 @@
     },
     {
         "nomMonumento":"Murallas y Torres",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4237778.0,
@@ -1990,7 +1990,7 @@
     },
     {
         "nomMonumento":"Torre de la Senieta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4238435.0,
@@ -2029,7 +2029,7 @@
     },
     {
         "nomMonumento":"Torreta de Elda",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4263235.0,
@@ -2042,7 +2042,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4261468.0,
@@ -2055,7 +2055,7 @@
     },
     {
         "nomMonumento":"Yacimiento arqueológico El Monastil",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4263001.0,
@@ -2081,7 +2081,7 @@
     },
     {
         "nomMonumento":"Castillo de Gaianes",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4299820.0,
@@ -2107,7 +2107,7 @@
     },
     {
         "nomMonumento":"Torre Mora",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4224934.0,
@@ -2133,7 +2133,7 @@
     },
     {
         "nomMonumento":"Torre del Descargador",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4215272.0,
@@ -2146,7 +2146,7 @@
     },
     {
         "nomMonumento":"Castillo de Guardamar del Segura",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4218568.0,
@@ -2159,7 +2159,7 @@
     },
     {
         "nomMonumento":"Yacimiento ibérico Cabezo Lucero",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4218514.0,
@@ -2185,7 +2185,7 @@
     },
     {
         "nomMonumento":"Castillo Viejo. Castell Vell",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4279300.0,
@@ -2198,7 +2198,7 @@
     },
     {
         "nomMonumento":"Castillo Bermejo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278434.0,
@@ -2211,7 +2211,7 @@
     },
     {
         "nomMonumento":"Castillo de Aixa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4294910.0,
@@ -2224,7 +2224,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Bartolomé Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4298148.0,
@@ -2250,7 +2250,7 @@
     },
     {
         "nomMonumento":"Torre de Ambolo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4291580.0,
@@ -2263,7 +2263,7 @@
     },
     {
         "nomMonumento":"Torre Bolufer",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4297486.0,
@@ -2276,7 +2276,7 @@
     },
     {
         "nomMonumento":"Torre Capçades",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4295663.0,
@@ -2289,7 +2289,7 @@
     },
     {
         "nomMonumento":"Torre Pelleter o del Pardalet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4297727.0,
@@ -2302,7 +2302,7 @@
     },
     {
         "nomMonumento":"Torre de Portichol",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4294398.0,
@@ -2315,7 +2315,7 @@
     },
     {
         "nomMonumento":"Torre Torroner",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4297384.0,
@@ -2328,7 +2328,7 @@
     },
     {
         "nomMonumento":"Torre La Granadella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4291175.0,
@@ -2341,7 +2341,7 @@
     },
     {
         "nomMonumento":"Yacimiento romano Illeta del Portichol",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4294555.0,
@@ -2354,7 +2354,7 @@
     },
     {
         "nomMonumento":"Castillo y murallas de Jijona o Xixona",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4268484.0,
@@ -2380,7 +2380,7 @@
     },
     {
         "nomMonumento":"Castillo de Perputxent",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4303823.0,
@@ -2406,7 +2406,7 @@
     },
     {
         "nomMonumento":"Castillo de Travadell",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4290783.0,
@@ -2419,7 +2419,7 @@
     },
     {
         "nomMonumento":"Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4290358.0,
@@ -2432,7 +2432,7 @@
     },
     {
         "nomMonumento":"Castillo (integrado en la iglesia)",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4250352.0,
@@ -2458,7 +2458,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa Bárbara",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4256783.0,
@@ -2471,7 +2471,7 @@
     },
     {
         "nomMonumento":"Castillo de Monóvar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4256706.0,
@@ -2510,7 +2510,7 @@
     },
     {
         "nomMonumento":"Jardín de la finca Casa de Ferraz",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4255068.0,
@@ -2523,7 +2523,7 @@
     },
     {
         "nomMonumento":"Jardín y Palacio de Peñacerrada",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4255573.0,
@@ -2549,7 +2549,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de El Salvador",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4254846.0,
@@ -2562,7 +2562,7 @@
     },
     {
         "nomMonumento":"Torre Ferraz",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4255090.0,
@@ -2575,7 +2575,7 @@
     },
     {
         "nomMonumento":"Torre de Mutxamel",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4254830.0,
@@ -2588,7 +2588,7 @@
     },
     {
         "nomMonumento":"Torre de las Paulinas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4252974.0,
@@ -2614,7 +2614,7 @@
     },
     {
         "nomMonumento":"Castillo-Iglesia Parroquial de San Miguel Arcángel",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4294129.0,
@@ -2653,7 +2653,7 @@
     },
     {
         "nomMonumento":"Castillo de la Mola",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4253461.0,
@@ -2705,7 +2705,7 @@
     },
     {
         "nomMonumento":"Torre del Reloj",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4301990.0,
@@ -2731,7 +2731,7 @@
     },
     {
         "nomMonumento":"Palacio Fortaleza del Marqués de Dos Aguas e Iglesia de Santiago",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278240.0,
@@ -2783,7 +2783,7 @@
     },
     {
         "nomMonumento":"Castillo de Orba",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4295553.0,
@@ -2796,7 +2796,7 @@
     },
     {
         "nomMonumento":"Castillo de Orxeta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4271295.0,
@@ -2848,7 +2848,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santiago el Mayor",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217514.0,
@@ -2874,7 +2874,7 @@
     },
     {
         "nomMonumento":"Castillo-Alcazaba de Orihuela",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217895.0,
@@ -2887,7 +2887,7 @@
     },
     {
         "nomMonumento":"Palacio Episcopal",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217286.0,
@@ -2913,7 +2913,7 @@
     },
     {
         "nomMonumento":"Convento de Santo Domingo",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217717.0,
@@ -2926,7 +2926,7 @@
     },
     {
         "nomMonumento":"Iglesia Catedral del Salvador y Santa María",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217323.0,
@@ -2939,7 +2939,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santas Justa y Rufina",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217265.0,
@@ -2952,7 +2952,7 @@
     },
     {
         "nomMonumento":"Torre Cabo Roig",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4198510.0,
@@ -2965,7 +2965,7 @@
     },
     {
         "nomMonumento":"Real Monasterio de la Visitación de Santa María",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217199.0,
@@ -3004,7 +3004,7 @@
     },
     {
         "nomMonumento":"Escudos heráldicos en la esquina y en las portadas del palacio del marqués de Rafal",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4217391.0,
@@ -3030,7 +3030,7 @@
     },
     {
         "nomMonumento":"Castillo de l'Ocaive o del Ocaive",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4296508.0,
@@ -3069,7 +3069,7 @@
     },
     {
         "nomMonumento":"Castillo de Ambra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4301702.0,
@@ -3082,7 +3082,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4283974.0,
@@ -3095,7 +3095,7 @@
     },
     {
         "nomMonumento":"Torre Sena",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4283943.0,
@@ -3134,7 +3134,7 @@
     },
     {
         "nomMonumento":"Castillo de Petrer",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4261908.0,
@@ -3160,7 +3160,7 @@
     },
     {
         "nomMonumento":"Castillo de Margarida",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4295676.0,
@@ -3173,7 +3173,7 @@
     },
     {
         "nomMonumento":"Castillo de Planes",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4296378.0,
@@ -3186,7 +3186,7 @@
     },
     {
         "nomMonumento":"Castillo de Polop de la Marina",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278850.0,
@@ -3212,7 +3212,7 @@
     },
     {
         "nomMonumento":"Torre Casa Balde",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4269876.0,
@@ -3225,7 +3225,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4274547.0,
@@ -3238,7 +3238,7 @@
     },
     {
         "nomMonumento":"Torre de la Vallonga",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4269178.0,
@@ -3329,7 +3329,7 @@
     },
     {
         "nomMonumento":"Yacimiento ibérico la Escuera y el Oral",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4222128.0,
@@ -3342,7 +3342,7 @@
     },
     {
         "nomMonumento":"Torre de Bonanza",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4253290.0,
@@ -3355,7 +3355,7 @@
     },
     {
         "nomMonumento":"Torre de Ansaldo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4254545.0,
@@ -3368,7 +3368,7 @@
     },
     {
         "nomMonumento":"Torre Salafranca",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4253652.0,
@@ -3381,7 +3381,7 @@
     },
     {
         "nomMonumento":"Torre de la Cadena",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4251988.0,
@@ -3394,7 +3394,7 @@
     },
     {
         "nomMonumento":"Torre de la Marquesa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4208524.0,
@@ -3407,7 +3407,7 @@
     },
     {
         "nomMonumento":"Castillo - Fortaleza",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4229965.0,
@@ -3420,7 +3420,7 @@
     },
     {
         "nomMonumento":"Torre Vigía Tamarit",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4229023.0,
@@ -3433,7 +3433,7 @@
     },
     {
         "nomMonumento":"Torre Atalayola",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4231984.0,
@@ -3446,7 +3446,7 @@
     },
     {
         "nomMonumento":"Torre Escaletes",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4230067.0,
@@ -3459,7 +3459,7 @@
     },
     {
         "nomMonumento":"Torre del Pinet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4225599.0,
@@ -3472,7 +3472,7 @@
     },
     {
         "nomMonumento":"Escudo del Inquisidor don Josef Torreblanca",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4267911.0,
@@ -3485,7 +3485,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4268041.0,
@@ -3524,7 +3524,7 @@
     },
     {
         "nomMonumento":"Castillo de Santa Bárbara",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4277033.0,
@@ -3537,7 +3537,7 @@
     },
     {
         "nomMonumento":"Torre de Sella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4276866.0,
@@ -3550,7 +3550,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4287299.0,
@@ -3563,7 +3563,7 @@
     },
     {
         "nomMonumento":"Castillo de Moraira",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4286670.0,
@@ -3576,7 +3576,7 @@
     },
     {
         "nomMonumento":"Torre del Cap d'Or",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4286462.0,
@@ -3589,7 +3589,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santa Catalina Mártir",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4291312.0,
@@ -3667,7 +3667,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4266942.0,
@@ -3680,7 +3680,7 @@
     },
     {
         "nomMonumento":"Torre de Maçanes",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4276288.0,
@@ -3706,7 +3706,7 @@
     },
     {
         "nomMonumento":"Torre La Mata",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4211340.0,
@@ -3719,7 +3719,7 @@
     },
     {
         "nomMonumento":"Torre Cervera o del Moro",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4208537.0,
@@ -3771,7 +3771,7 @@
     },
     {
         "nomMonumento":"Castillo de la Vall d'Alcalà",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4297547.0,
@@ -3797,7 +3797,7 @@
     },
     {
         "nomMonumento":"Castillo de Vall de Ebo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4297798.0,
@@ -3810,7 +3810,7 @@
     },
     {
         "nomMonumento":"Castillo de Alcalá o de Benisili",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4299183.0,
@@ -3823,7 +3823,7 @@
     },
     {
         "nomMonumento":"Castillo de Gallinera o de Benirrama",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4302612.0,
@@ -3849,7 +3849,7 @@
     },
     {
         "nomMonumento":"Castillo de Laguart",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4296554.0,
@@ -3862,7 +3862,7 @@
     },
     {
         "nomMonumento":"Torre de la Casota",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4296264.0,
@@ -3875,7 +3875,7 @@
     },
     {
         "nomMonumento":"Torre del Blanc de Morell",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4304515.0,
@@ -3888,7 +3888,7 @@
     },
     {
         "nomMonumento":"Torre del Comendador",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4303642.0,
@@ -3914,7 +3914,7 @@
     },
     {
         "nomMonumento":"Yacimiento Arqueológico Subacuático Bou Ferrer",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4264350.0,
@@ -3940,7 +3940,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Nuestra Señora de la Asunción",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4265529.0,
@@ -3953,7 +3953,7 @@
     },
     {
         "nomMonumento":"Torre de Sant Josep",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4266833.0,
@@ -3966,7 +3966,7 @@
     },
     {
         "nomMonumento":"Torre d'Aguilo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4267252.0,
@@ -3979,7 +3979,7 @@
     },
     {
         "nomMonumento":"Torre La Cruz",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4267482.0,
@@ -3992,7 +3992,7 @@
     },
     {
         "nomMonumento":"Torre de Baix o de Xauxelles",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4267424.0,
@@ -4005,7 +4005,7 @@
     },
     {
         "nomMonumento":"Torre Simeón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4266479.0,
@@ -4018,7 +4018,7 @@
     },
     {
         "nomMonumento":"Torre La Torreta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4266786.0,
@@ -4031,7 +4031,7 @@
     },
     {
         "nomMonumento":"Torre del  Xarco",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4263500.0,
@@ -4057,7 +4057,7 @@
     },
     {
         "nomMonumento":"Torre de Dalt o de la Era de Soler",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4267744.0,
@@ -4070,7 +4070,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santiago Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278059.0,
@@ -4083,7 +4083,7 @@
     },
     {
         "nomMonumento":"Castillo la Atalaya o de los Pacheco",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278103.0,
@@ -4122,7 +4122,7 @@
     },
     {
         "nomMonumento":"Ayuntamiento (Palacio Municipal)",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278041.0,
@@ -4148,7 +4148,7 @@
     },
     {
         "nomMonumento":"Castillo de Salvatierra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4278497.0,
@@ -4226,7 +4226,7 @@
     },
     {
         "nomMonumento":"Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4304175.0,
@@ -4239,7 +4239,7 @@
     },
     {
         "nomMonumento":"Torre Horadada",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4193521.0,
@@ -4252,7 +4252,7 @@
     },
     {
         "nomMonumento":"Torre de la Marquesa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4208523.0,
@@ -4291,7 +4291,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4453339.0,
@@ -4330,7 +4330,7 @@
     },
     {
         "nomMonumento":"Castillo de Benalí",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4419140.0,
@@ -4369,7 +4369,7 @@
     },
     {
         "nomMonumento":"Torre de L' Alfalsar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4471171.0,
@@ -4382,7 +4382,7 @@
     },
     {
         "nomMonumento":"Ermita hospedería de San Pablo",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4470215.0,
@@ -4395,7 +4395,7 @@
     },
     {
         "nomMonumento":"Torre de La Fonteta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4471810.0,
@@ -4408,7 +4408,7 @@
     },
     {
         "nomMonumento":"Restos del Castillo y Murallas de Albocàsser",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4471897.0,
@@ -4434,7 +4434,7 @@
     },
     {
         "nomMonumento":"Castillo Templario",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4467051.0,
@@ -4447,7 +4447,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Juan Bautista y Torre Campanario",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4466564.0,
@@ -4460,7 +4460,7 @@
     },
     {
         "nomMonumento":"Torre de Cap i Corp",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4456079.0,
@@ -4473,7 +4473,7 @@
     },
     {
         "nomMonumento":"Torre de Ebrí",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4464044.0,
@@ -4486,7 +4486,7 @@
     },
     {
         "nomMonumento":"Escudo de los Marco Lloris de la Torreta del desaparecido Palacio de los Marco",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4439951.0,
@@ -4499,7 +4499,7 @@
     },
     {
         "nomMonumento":"Escudo de los Marco Lloris de la Torreta de la Portada de la capilla de Nuestra Señora de los Dolores o de los Marco",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4439957.0,
@@ -4512,7 +4512,7 @@
     },
     {
         "nomMonumento":"Castillo del Alcalatén",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4441791.0,
@@ -4538,7 +4538,7 @@
     },
     {
         "nomMonumento":"Castillo de Alcudia de Veo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4422112.0,
@@ -4551,7 +4551,7 @@
     },
     {
         "nomMonumento":"Castillo de Jinquer o Xinquer",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4422977.0,
@@ -4564,7 +4564,7 @@
     },
     {
         "nomMonumento":"Castillo de Castro",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4415719.0,
@@ -4577,7 +4577,7 @@
     },
     {
         "nomMonumento":"Torre de la Alfàndiga",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4421378.0,
@@ -4603,7 +4603,7 @@
     },
     {
         "nomMonumento":"Restos del Castillo de Almassora",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4426417.0,
@@ -4642,7 +4642,7 @@
     },
     {
         "nomMonumento":"Torrelló de Boverot",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4428506.0,
@@ -4655,7 +4655,7 @@
     },
     {
         "nomMonumento":"Castillo del Monte de la Rodana",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4417177.0,
@@ -4694,7 +4694,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4404436.0,
@@ -4707,7 +4707,7 @@
     },
     {
         "nomMonumento":"Yacimiento del Punt del Cid",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4403906.0,
@@ -4759,7 +4759,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre Beltrans",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4475229.0,
@@ -4772,7 +4772,7 @@
     },
     {
         "nomMonumento":"Castillo de Ares",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4482264.0,
@@ -4811,7 +4811,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio de Ceyt Abu Ceyt",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4437240.0,
@@ -4824,7 +4824,7 @@
     },
     {
         "nomMonumento":"Castillo del Buey Negro o del Bou Negre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4439687.0,
@@ -4837,7 +4837,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4419656.0,
@@ -4850,7 +4850,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4430597.0,
@@ -4863,7 +4863,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4412946.0,
@@ -4889,7 +4889,7 @@
     },
     {
         "nomMonumento":"Palacio - Castillo de Betxí",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4423587.0,
@@ -4915,7 +4915,7 @@
     },
     {
         "nomMonumento":"Castillo de la Orden de Calatrava",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4420179.0,
@@ -4928,7 +4928,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de Bejís",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4419886.0,
@@ -4954,7 +4954,7 @@
     },
     {
         "nomMonumento":"Masía Torre Monfort",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4473208.0,
@@ -4967,7 +4967,7 @@
     },
     {
         "nomMonumento":"Castillo de Corbó",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4478393.0,
@@ -4980,7 +4980,7 @@
     },
     {
         "nomMonumento":"Torre Nabàs",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4476018.0,
@@ -4993,7 +4993,7 @@
     },
     {
         "nomMonumento":"Torre de Bulc",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4476220.0,
@@ -5006,7 +5006,7 @@
     },
     {
         "nomMonumento":"Murallas (torres d´en Garcés, de la Presó y Redona)",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4473923.0,
@@ -5045,7 +5045,7 @@
     },
     {
         "nomMonumento":"Antiguo Convento de San Francisco",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4480013.0,
@@ -5071,7 +5071,7 @@
     },
     {
         "nomMonumento":"Yacimiento Arqueológico El Morico",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4439904.0,
@@ -5084,7 +5084,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santo Tomás de Villanueva",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4438397.0,
@@ -5097,7 +5097,7 @@
     },
     {
         "nomMonumento":"Castillo de Montornés",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4439008.0,
@@ -5110,7 +5110,7 @@
     },
     {
         "nomMonumento":"Torre de San Vicente",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4437526.0,
@@ -5123,7 +5123,7 @@
     },
     {
         "nomMonumento":"Castillo de Benicasim",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4438528.0,
@@ -5136,7 +5136,7 @@
     },
     {
         "nomMonumento":"Torre del Barón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4435307.0,
@@ -5162,7 +5162,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4436897.0,
@@ -5175,7 +5175,7 @@
     },
     {
         "nomMonumento":"Torre Tadeo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4421421.0,
@@ -5188,7 +5188,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de El Salvador",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4419574.0,
@@ -5201,7 +5201,7 @@
     },
     {
         "nomMonumento":"Exconvento de la Merced",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4419432.0,
@@ -5227,7 +5227,7 @@
     },
     {
         "nomMonumento":"Torre del Mar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4418435.0,
@@ -5240,7 +5240,7 @@
     },
     {
         "nomMonumento":"Torre de Carabona",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4417942.0,
@@ -5253,7 +5253,7 @@
     },
     {
         "nomMonumento":"Yacimiento fenicio de Vinarratgell",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4423391.0,
@@ -5266,7 +5266,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre Calatrava",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4419358.0,
@@ -5279,7 +5279,7 @@
     },
     {
         "nomMonumento":"Torre Vinarragell",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4422171.0,
@@ -5318,7 +5318,7 @@
     },
     {
         "nomMonumento":"Ermita fortificada de Albalat",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4451392.0,
@@ -5331,7 +5331,7 @@
     },
     {
         "nomMonumento":"Castillo de Miravet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4443862.0,
@@ -5344,7 +5344,7 @@
     },
     {
         "nomMonumento":"Torre de la Sal",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4447077.0,
@@ -5357,7 +5357,7 @@
     },
     {
         "nomMonumento":"Castillo de Albalat",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4451643.0,
@@ -5370,7 +5370,7 @@
     },
     {
         "nomMonumento":"Torre dels Gats",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4450212.0,
@@ -5383,7 +5383,7 @@
     },
     {
         "nomMonumento":"Torre del Carmen",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4450139.0,
@@ -5396,7 +5396,7 @@
     },
     {
         "nomMonumento":"Torre Carmelet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4450031.0,
@@ -5409,7 +5409,7 @@
     },
     {
         "nomMonumento":"Torre de Càlig",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4484415.0,
@@ -5448,7 +5448,7 @@
     },
     {
         "nomMonumento":"Ermita de San Pedro",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4486856.0,
@@ -5461,7 +5461,7 @@
     },
     {
         "nomMonumento":"Ermita de la Virgen de la Fuente",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4484507.0,
@@ -5474,7 +5474,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas de Castellnovo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4415317.0,
@@ -5487,7 +5487,7 @@
     },
     {
         "nomMonumento":"Torre de Mal Paso",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4416359.0,
@@ -5552,7 +5552,7 @@
     },
     {
         "nomMonumento":"Torre Campanario El Fadrí",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4430429.0,
@@ -5565,7 +5565,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María la Mayor",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4430419.0,
@@ -5617,7 +5617,7 @@
     },
     {
         "nomMonumento":"Palacio Episcopal",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4430286.0,
@@ -5630,7 +5630,7 @@
     },
     {
         "nomMonumento":"Torreta Alonso",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4434260.0,
@@ -5864,7 +5864,7 @@
     },
     {
         "nomMonumento":"Castillo de Villamalefa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4445577.0,
@@ -5942,7 +5942,7 @@
     },
     {
         "nomMonumento":"Escudos de la Iglesia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4484515.0,
@@ -5981,7 +5981,7 @@
     },
     {
         "nomMonumento":"Torre del Molino",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4425409.0,
@@ -6007,7 +6007,7 @@
     },
     {
         "nomMonumento":"Torre i Molí de l'Oli",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4483906.0,
@@ -6020,7 +6020,7 @@
     },
     {
         "nomMonumento":"Castillo de Cervera",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4483302.0,
@@ -6033,7 +6033,7 @@
     },
     {
         "nomMonumento":"Torre de los Moros",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4497715.0,
@@ -6046,7 +6046,7 @@
     },
     {
         "nomMonumento":"Castillo de Cirat",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4436379.0,
@@ -6059,7 +6059,7 @@
     },
     {
         "nomMonumento":"Torre del Palacio de los Condes de Cirat",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4436987.0,
@@ -6072,7 +6072,7 @@
     },
     {
         "nomMonumento":"Castillo del Tormo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4437830.0,
@@ -6098,7 +6098,7 @@
     },
     {
         "nomMonumento":"Torre Amador",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4468012.0,
@@ -6111,7 +6111,7 @@
     },
     {
         "nomMonumento":"Torre vigía de San Cristòfol",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4467932.0,
@@ -6124,7 +6124,7 @@
     },
     {
         "nomMonumento":"Torre del Palomar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4469362.0,
@@ -6137,7 +6137,7 @@
     },
     {
         "nomMonumento":"Castillo y muralla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4469107.0,
@@ -6150,7 +6150,7 @@
     },
     {
         "nomMonumento":"Torre Matella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4459401.0,
@@ -6189,7 +6189,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torreta del Molinàs",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4489785.0,
@@ -6202,7 +6202,7 @@
     },
     {
         "nomMonumento":"Torre de San Marcos de la Barcella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4493865.0,
@@ -6215,7 +6215,7 @@
     },
     {
         "nomMonumento":"Torre Enroig o Comaro",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4489024.0,
@@ -6228,7 +6228,7 @@
     },
     {
         "nomMonumento":"Castillo y murallas de Chodos \/ Xodos",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4458438.0,
@@ -6241,7 +6241,7 @@
     },
     {
         "nomMonumento":"Torre de Chóvar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4413932.0,
@@ -6254,7 +6254,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4417659.0,
@@ -6267,7 +6267,7 @@
     },
     {
         "nomMonumento":"Castillo de Espadilla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4433494.0,
@@ -6280,7 +6280,7 @@
     },
     {
         "nomMonumento":"Castillo de Fanzara",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4431629.0,
@@ -6293,7 +6293,7 @@
     },
     {
         "nomMonumento":"Mas Torre Amela",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4505641.0,
@@ -6306,7 +6306,7 @@
     },
     {
         "nomMonumento":"Torre Molino o Masía Torreta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4505428.0,
@@ -6319,7 +6319,7 @@
     },
     {
         "nomMonumento":"Escudo heráldico del Palacio de los Osset -  Miró",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4503184.0,
@@ -6332,7 +6332,7 @@
     },
     {
         "nomMonumento":"Escudo heráldico de la Torre-Palacio de Blay Berga",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4503787.0,
@@ -6358,7 +6358,7 @@
     },
     {
         "nomMonumento":"Fábrica de Palos o Palacio de los Berga",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4503792.0,
@@ -6384,7 +6384,7 @@
     },
     {
         "nomMonumento":"Torre de Dionisio",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4505876.0,
@@ -6397,7 +6397,7 @@
     },
     {
         "nomMonumento":"Torre de Selló",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4505935.0,
@@ -6410,7 +6410,7 @@
     },
     {
         "nomMonumento":"Torre de Folch",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4505985.0,
@@ -6514,7 +6514,7 @@
     },
     {
         "nomMonumento":"Castillo de Gaibiel",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4422296.0,
@@ -6527,7 +6527,7 @@
     },
     {
         "nomMonumento":"Torre de Dalt",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4422994.0,
@@ -6540,7 +6540,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio de Geldo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4412791.0,
@@ -6553,7 +6553,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio del Barón de Herbés",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4512170.0,
@@ -6657,7 +6657,7 @@
     },
     {
         "nomMonumento":"Torre de las Campanas o  de la Alcudia",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4420709.0,
@@ -6670,7 +6670,7 @@
     },
     {
         "nomMonumento":"Castillo, ermita de San Roque o Santa Agueda la Vieja y cintas murarias",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4420458.0,
@@ -6696,7 +6696,7 @@
     },
     {
         "nomMonumento":"Torre de L´Oró",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4446240.0,
@@ -6709,7 +6709,7 @@
     },
     {
         "nomMonumento":"Castillo y murallas Les Torrocelles",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4453222.0,
@@ -6722,7 +6722,7 @@
     },
     {
         "nomMonumento":"Torre de los Foios",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4446504.0,
@@ -6748,7 +6748,7 @@
     },
     {
         "nomMonumento":"Torre de Giraba",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4442256.0,
@@ -6761,7 +6761,7 @@
     },
     {
         "nomMonumento":"Iglesia Fortificada",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4440686.0,
@@ -6774,7 +6774,7 @@
     },
     {
         "nomMonumento":"Torre Guillermo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4499398.0,
@@ -6813,7 +6813,7 @@
     },
     {
         "nomMonumento":"Torre molino de la Punta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4499399.0,
@@ -6839,7 +6839,7 @@
     },
     {
         "nomMonumento":"Torre del Pilón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4424011.0,
@@ -6852,7 +6852,7 @@
     },
     {
         "nomMonumento":"Restos de la Torre Santa Isabel de Carrillo o Nova",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4407672.0,
@@ -6878,7 +6878,7 @@
     },
     {
         "nomMonumento":"Castillo de Montán",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4434617.0,
@@ -6891,7 +6891,7 @@
     },
     {
         "nomMonumento":"Torre de Montanejos",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4438231.0,
@@ -6904,7 +6904,7 @@
     },
     {
         "nomMonumento":"Castillo de la Alquería",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4437100.0,
@@ -6930,7 +6930,7 @@
     },
     {
         "nomMonumento":"Castillo y murallas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4500598.0,
@@ -6956,7 +6956,7 @@
     },
     {
         "nomMonumento":"Iglesia Arciprestal de Santa María",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4500520.0,
@@ -6982,7 +6982,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico del Barranco de Vallivana",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4493337.0,
@@ -6995,7 +6995,7 @@
     },
     {
         "nomMonumento":"Torre Grossa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4499380.0,
@@ -7008,7 +7008,7 @@
     },
     {
         "nomMonumento":"Torre Madó",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4504044.0,
@@ -7021,7 +7021,7 @@
     },
     {
         "nomMonumento":"Torre Altomira",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4416647.0,
@@ -7073,7 +7073,7 @@
     },
     {
         "nomMonumento":"Castillo de Olcaf",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4502309.0,
@@ -7086,7 +7086,7 @@
     },
     {
         "nomMonumento":"Castillo del Real",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4501677.0,
@@ -7125,7 +7125,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4427143.0,
@@ -7138,7 +7138,7 @@
     },
     {
         "nomMonumento":"Torre del Cerro de la Atalaya",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4430537.0,
@@ -7151,7 +7151,7 @@
     },
     {
         "nomMonumento":"Recinto fortificado del Torrelló",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4429664.0,
@@ -7164,7 +7164,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas de Oropesa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4442736.0,
@@ -7177,7 +7177,7 @@
     },
     {
         "nomMonumento":"Torre del Rey",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4441694.0,
@@ -7190,7 +7190,7 @@
     },
     {
         "nomMonumento":"Torre de la Cordà",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4439796.0,
@@ -7203,7 +7203,7 @@
     },
     {
         "nomMonumento":"Torre Colomera",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4438718.0,
@@ -7242,7 +7242,7 @@
     },
     {
         "nomMonumento":"Castillo - Palacio",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4473168.0,
@@ -7255,7 +7255,7 @@
     },
     {
         "nomMonumento":"Torreón de Badum",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4468925.0,
@@ -7268,7 +7268,7 @@
     },
     {
         "nomMonumento":"Torre Nova",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4464134.0,
@@ -7294,7 +7294,7 @@
     },
     {
         "nomMonumento":"Torre del Prospinal",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4430166.0,
@@ -7307,7 +7307,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4432830.0,
@@ -7320,7 +7320,7 @@
     },
     {
         "nomMonumento":"Castillo de Portell de Morella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4490448.0,
@@ -7333,7 +7333,7 @@
     },
     {
         "nomMonumento":"Castillo de la Viñaza o Castillo de Arenós",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4440814.0,
@@ -7346,7 +7346,7 @@
     },
     {
         "nomMonumento":"Monasterio de Santa María",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4507747.0,
@@ -7359,7 +7359,7 @@
     },
     {
         "nomMonumento":"Castillo del Boixar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4507983.0,
@@ -7398,7 +7398,7 @@
     },
     {
         "nomMonumento":"Iglesia Arciprestal de San Mateo Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4484257.0,
@@ -7424,7 +7424,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre El Palomar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4487532.0,
@@ -7489,7 +7489,7 @@
     },
     {
         "nomMonumento":"Escudo del Puente sobre el Río Palacio",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4484334.0,
@@ -7515,7 +7515,7 @@
     },
     {
         "nomMonumento":"Escudo de la Torre del Antiguo Convento de Santo Domingo",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4484411.0,
@@ -7528,7 +7528,7 @@
     },
     {
         "nomMonumento":"Escudo del Palacio del Marqués de Villores",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4484208.0,
@@ -7554,7 +7554,7 @@
     },
     {
         "nomMonumento":"Castillo de Pulpis",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4472190.0,
@@ -7567,7 +7567,7 @@
     },
     {
         "nomMonumento":"Torreón de San Millán",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4474003.0,
@@ -7606,7 +7606,7 @@
     },
     {
         "nomMonumento":"Santa Iglesia Catedral Basílica de Santa María de la Asunción",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4414347.0,
@@ -7619,7 +7619,7 @@
     },
     {
         "nomMonumento":"Castillo, Acueducto y Murallas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4414640.0,
@@ -7671,7 +7671,7 @@
     },
     {
         "nomMonumento":"Castillo-Palacio del Señor",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4409343.0,
@@ -7684,7 +7684,7 @@
     },
     {
         "nomMonumento":"Castillo de Mauz",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4424954.0,
@@ -7710,7 +7710,7 @@
     },
     {
         "nomMonumento":"Castillo, Torre Cabrera y Torre de la Muerte",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4425197.0,
@@ -7723,7 +7723,7 @@
     },
     {
         "nomMonumento":"Castillo y murallas de Tírig",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4479386.0,
@@ -7736,7 +7736,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4503289.0,
@@ -7749,7 +7749,7 @@
     },
     {
         "nomMonumento":"Castillo de Toga",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4435913.0,
@@ -7788,7 +7788,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4428370.0,
@@ -7801,7 +7801,7 @@
     },
     {
         "nomMonumento":"Castillo de Villahaleva",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4428702.0,
@@ -7814,7 +7814,7 @@
     },
     {
         "nomMonumento":"Calvario y primitiva Iglesia",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4457269.0,
@@ -7827,7 +7827,7 @@
     },
     {
         "nomMonumento":"Torre de Doña Blanca",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4455396.0,
@@ -7840,7 +7840,7 @@
     },
     {
         "nomMonumento":"Torre Nostra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4454172.0,
@@ -7866,7 +7866,7 @@
     },
     {
         "nomMonumento":"Torre de Torrechiva",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4436399.0,
@@ -7892,7 +7892,7 @@
     },
     {
         "nomMonumento":"Castillo o Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4468172.0,
@@ -7931,7 +7931,7 @@
     },
     {
         "nomMonumento":"Castillo de Almonecir",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4420295.0,
@@ -7944,7 +7944,7 @@
     },
     {
         "nomMonumento":"Restos de la Torre del Palau Ducal \/ Palacio Ducal",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4411745.0,
@@ -7970,7 +7970,7 @@
     },
     {
         "nomMonumento":"Torre de la Casota",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4413650.0,
@@ -7983,7 +7983,7 @@
     },
     {
         "nomMonumento":"Torre de Benizahat",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4411996.0,
@@ -7996,7 +7996,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial del Santo Ángel Custodio",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4411771.0,
@@ -8009,7 +8009,7 @@
     },
     {
         "nomMonumento":"Castillo de Uxó o de Uixó",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4414555.0,
@@ -8035,7 +8035,7 @@
     },
     {
         "nomMonumento":"Torre de la Torrassa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4412639.0,
@@ -8048,7 +8048,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Asunción de María",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4499146.0,
@@ -8061,7 +8061,7 @@
     },
     {
         "nomMonumento":"La Torreta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4444465.0,
@@ -8113,7 +8113,7 @@
     },
     {
         "nomMonumento":"Castillo, lienzos de muralla y la Iglesia de la Sangre",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4444360.0,
@@ -8139,7 +8139,7 @@
     },
     {
         "nomMonumento":"Palacio del Batlle",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4444558.0,
@@ -8165,7 +8165,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre Barreda",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4480141.0,
@@ -8204,7 +8204,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre Fonso",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4481821.0,
@@ -8217,7 +8217,7 @@
     },
     {
         "nomMonumento":"Torre de Puebla de Bellestar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4482712.0,
@@ -8230,7 +8230,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre de Don Blasco \/ Torre d'En Blasco",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4476047.0,
@@ -8243,7 +8243,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santa María Magdalena",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4478555.0,
@@ -8282,7 +8282,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre Leandra",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4475644.0,
@@ -8321,7 +8321,7 @@
     },
     {
         "nomMonumento":"Castillo de Villahermosa del Río",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4453357.0,
@@ -8334,7 +8334,7 @@
     },
     {
         "nomMonumento":"Castillo de Villamalur",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4426854.0,
@@ -8347,7 +8347,7 @@
     },
     {
         "nomMonumento":"Yacimiento l'Hostalot Ildum",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4460369.0,
@@ -8373,7 +8373,7 @@
     },
     {
         "nomMonumento":"Iglesia Arciprestal de San Jaime Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4424942.0,
@@ -8425,7 +8425,7 @@
     },
     {
         "nomMonumento":"Castillo de La Vilavella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4416264.0,
@@ -8438,7 +8438,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Asunción de María",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4485845.0,
@@ -8451,7 +8451,7 @@
     },
     {
         "nomMonumento":"Torre de los Moros",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4489356.0,
@@ -8464,7 +8464,7 @@
     },
     {
         "nomMonumento":"Torre de Sol del Ríu",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4491723.0,
@@ -8490,7 +8490,7 @@
     },
     {
         "nomMonumento":"Castillo y murallas de Vistabella del Maestrazgo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4463958.0,
@@ -8529,7 +8529,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Asunción de Nuestra Señora",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4463895.0,
@@ -8542,7 +8542,7 @@
     },
     {
         "nomMonumento":"La Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4420608.0,
@@ -8568,7 +8568,7 @@
     },
     {
         "nomMonumento":"Castillo-Palacio de Los Peralta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4512531.0,
@@ -8581,7 +8581,7 @@
     },
     {
         "nomMonumento":"Masía y Torre de la Chirivilla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4446545.0,
@@ -8594,7 +8594,7 @@
     },
     {
         "nomMonumento":"Masía Fortificada Torre de la Regenta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4418923.0,
@@ -8607,7 +8607,7 @@
     },
     {
         "nomMonumento":"Castillo de Ademuz",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4435855.0,
@@ -8620,7 +8620,7 @@
     },
     {
         "nomMonumento":"Palacio de los Aguilar",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4370668.0,
@@ -8659,7 +8659,7 @@
     },
     {
         "nomMonumento":"Castillo - Palacio de los Milán de Aragón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4302192.0,
@@ -8685,7 +8685,7 @@
     },
     {
         "nomMonumento":"Torre Árabe",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4363843.0,
@@ -8711,7 +8711,7 @@
     },
     {
         "nomMonumento":"Castillo del Piló",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4397356.0,
@@ -8724,7 +8724,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4398123.0,
@@ -8737,7 +8737,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio de la Baronía",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4360935.0,
@@ -8750,7 +8750,7 @@
     },
     {
         "nomMonumento":"Monasterio Fortificado de Nuestra Señora de la Murta",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4334397.0,
@@ -8763,7 +8763,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santa Catalina Virgen y Mártir",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4336723.0,
@@ -8828,7 +8828,7 @@
     },
     {
         "nomMonumento":"Escudo en la Iglesia del Monasterio de Santa Lucía",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4336793.0,
@@ -8841,7 +8841,7 @@
     },
     {
         "nomMonumento":"Escudo en el Palacio de Casassús",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4336765.0,
@@ -8893,7 +8893,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Andrés Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4341458.0,
@@ -8919,7 +8919,7 @@
     },
     {
         "nomMonumento":"Castillo de Palma",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4312271.0,
@@ -8932,7 +8932,7 @@
     },
     {
         "nomMonumento":"Torre de Alfauir",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4312341.0,
@@ -8945,7 +8945,7 @@
     },
     {
         "nomMonumento":"Antiguo Monasterio de San Jerónimo de Cotalba",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4313806.0,
@@ -8958,7 +8958,7 @@
     },
     {
         "nomMonumento":"Castillo de la Señoría",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4380433.0,
@@ -8984,7 +8984,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4350411.0,
@@ -8997,7 +8997,7 @@
     },
     {
         "nomMonumento":"Antigua Torre Defensiva de Algar de Palancia",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4406802.0,
@@ -9010,7 +9010,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Jaime Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4340904.0,
@@ -9023,7 +9023,7 @@
     },
     {
         "nomMonumento":"Escudo de la Torre Luengo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4347454.0,
@@ -9036,7 +9036,7 @@
     },
     {
         "nomMonumento":"Palacio fortaleza del señorío de Alginet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4348839.0,
@@ -9049,7 +9049,7 @@
     },
     {
         "nomMonumento":"Castillo de Vilella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4312511.0,
@@ -9075,7 +9075,7 @@
     },
     {
         "nomMonumento":"Torre Racef",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4352152.0,
@@ -9088,7 +9088,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4415951.0,
@@ -9101,7 +9101,7 @@
     },
     {
         "nomMonumento":"Castillo del Poyo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4423973.0,
@@ -9179,7 +9179,7 @@
     },
     {
         "nomMonumento":"Yacimiento Paleontológico Cañada Paris II",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4418342.0,
@@ -9231,7 +9231,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de Corcolilla",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4422429.0,
@@ -9244,7 +9244,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de La Arquela",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4420635.0,
@@ -9257,7 +9257,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de Losilla",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4426636.0,
@@ -9270,7 +9270,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de Vizcota",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4421728.0,
@@ -9296,7 +9296,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Asunción de Nuestra Señora",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4411841.0,
@@ -9309,7 +9309,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4411910.0,
@@ -9322,7 +9322,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio de los Condes de Cervellón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4321864.0,
@@ -9335,7 +9335,7 @@
     },
     {
         "nomMonumento":"Torre del Palacio de Antella",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4328282.0,
@@ -9491,7 +9491,7 @@
     },
     {
         "nomMonumento":"Torre del Cortijo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4420983.0,
@@ -9504,7 +9504,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio de Aielo de Malferit",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4305844.0,
@@ -9517,7 +9517,7 @@
     },
     {
         "nomMonumento":"Castillo de Rugat",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4306114.0,
@@ -9530,7 +9530,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Asunción de Nuestra Señora",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4325226.0,
@@ -9543,7 +9543,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María La Mayor",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4325102.0,
@@ -9556,7 +9556,7 @@
     },
     {
         "nomMonumento":"Castillo de Ayora",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4325041.0,
@@ -9595,7 +9595,7 @@
     },
     {
         "nomMonumento":"Torre del desaparecido Castillo Palacio de los Bellvís",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4304140.0,
@@ -9634,7 +9634,7 @@
     },
     {
         "nomMonumento":"Castillo de Benaguasil",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4385569.0,
@@ -9660,7 +9660,7 @@
     },
     {
         "nomMonumento":"Torre de Benavites",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4402552.0,
@@ -9673,7 +9673,7 @@
     },
     {
         "nomMonumento":"Castillo de la Carbonera",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4301692.0,
@@ -9686,7 +9686,7 @@
     },
     {
         "nomMonumento":"Castillo de Marinyén",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4325669.0,
@@ -9699,7 +9699,7 @@
     },
     {
         "nomMonumento":"Torre de la Plaza",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4351555.0,
@@ -9712,7 +9712,7 @@
     },
     {
         "nomMonumento":"Torre Muza",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4352036.0,
@@ -9725,7 +9725,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Miguel Arcángel",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4313660.0,
@@ -9738,7 +9738,7 @@
     },
     {
         "nomMonumento":"Castillo de Benisanó",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4387750.0,
@@ -9751,7 +9751,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio de los Bellvís",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4310086.0,
@@ -9764,7 +9764,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio de los Boil",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4385612.0,
@@ -9790,7 +9790,7 @@
     },
     {
         "nomMonumento":"Restos Arqueológicos de la Alquería islámica de Bofilla y su Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4384315.0,
@@ -9803,7 +9803,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio del Señor de Bicorp",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4333706.0,
@@ -9829,7 +9829,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico del Barranco del Randero",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4336892.0,
@@ -9855,7 +9855,7 @@
     },
     {
         "nomMonumento":"Torre de Mariola",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4291785.0,
@@ -9881,7 +9881,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4326376.0,
@@ -9894,7 +9894,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4365585.0,
@@ -9907,7 +9907,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica de Buñol",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4367633.0,
@@ -9946,7 +9946,7 @@
     },
     {
         "nomMonumento":"El Castillo \/ La Torreta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4406507.0,
@@ -9985,7 +9985,7 @@
     },
     {
         "nomMonumento":"Yacimiento Arqueológico de El Molón",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4392038.0,
@@ -9998,7 +9998,7 @@
     },
     {
         "nomMonumento":"Torre y Murallas de los Borja",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4314655.0,
@@ -10011,7 +10011,7 @@
     },
     {
         "nomMonumento":"Convento de Aguas Vivas",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4329997.0,
@@ -10024,7 +10024,7 @@
     },
     {
         "nomMonumento":"Ermita de San Roque de Ternils",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4332051.0,
@@ -10037,7 +10037,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Bartolomé",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4332199.0,
@@ -10193,7 +10193,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4310953.0,
@@ -10206,7 +10206,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Nuestra Señora de los Ángeles",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4443749.0,
@@ -10219,7 +10219,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4443682.0,
@@ -10232,7 +10232,7 @@
     },
     {
         "nomMonumento":"Castillo de Catadau",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4350183.0,
@@ -10258,7 +10258,7 @@
     },
     {
         "nomMonumento":"Castillo de Cofrentes",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4344165.0,
@@ -10271,7 +10271,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4337303.0,
@@ -10284,7 +10284,7 @@
     },
     {
         "nomMonumento":"Torre Árabe de la Ermita de San Miguel",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4339067.0,
@@ -10297,7 +10297,7 @@
     },
     {
         "nomMonumento":"Castillo de la Pileta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4346000.0,
@@ -10310,7 +10310,7 @@
     },
     {
         "nomMonumento":"Castillo de Otonel",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4347732.0,
@@ -10323,7 +10323,7 @@
     },
     {
         "nomMonumento":"Castillo de Chirel",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4345330.0,
@@ -10336,7 +10336,7 @@
     },
     {
         "nomMonumento":"Castillo de Ruaya",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4345213.0,
@@ -10427,7 +10427,7 @@
     },
     {
         "nomMonumento":"Torre de Marenyet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4336255.0,
@@ -10440,7 +10440,7 @@
     },
     {
         "nomMonumento":"Castillo de Cullera",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4338802.0,
@@ -10466,7 +10466,7 @@
     },
     {
         "nomMonumento":"Iglesia Arciprestal de Nuestra Señora de los Ángeles",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4401670.0,
@@ -10479,7 +10479,7 @@
     },
     {
         "nomMonumento":"Castillo y murallas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4401590.0,
@@ -10505,7 +10505,7 @@
     },
     {
         "nomMonumento":"La Torrecilla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4402555.0,
@@ -10531,7 +10531,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4384210.0,
@@ -10544,7 +10544,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Lucas Evangelista",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4374242.0,
@@ -10557,7 +10557,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4371227.0,
@@ -10570,7 +10570,7 @@
     },
     {
         "nomMonumento":"Torreta de Chiva",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4371907.0,
@@ -10583,7 +10583,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica de Chiva",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4370324.0,
@@ -10596,7 +10596,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4391665.0,
@@ -10609,7 +10609,7 @@
     },
     {
         "nomMonumento":"Castillo de Domeño",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4397713.0,
@@ -10635,7 +10635,7 @@
     },
     {
         "nomMonumento":"Restos del Castillo de Dos Aguas, Torre de Vilaragut",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4351019.0,
@@ -10648,7 +10648,7 @@
     },
     {
         "nomMonumento":"Castillo de Madrona",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4349800.0,
@@ -10661,7 +10661,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de Dos Aguas",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4348992.0,
@@ -10674,7 +10674,7 @@
     },
     {
         "nomMonumento":"Torre del Virrey",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4382858.0,
@@ -10687,7 +10687,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4316739.0,
@@ -10700,7 +10700,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Miguel Arcángel",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4316905.0,
@@ -10713,7 +10713,7 @@
     },
     {
         "nomMonumento":"Castillo de Beselga",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4399118.0,
@@ -10726,7 +10726,7 @@
     },
     {
         "nomMonumento":"Escudo nobiliario de la familia Vilarrasa en el Palacio Señorial",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4401014.0,
@@ -10739,7 +10739,7 @@
     },
     {
         "nomMonumento":"Castillo del Rebollet",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4311578.0,
@@ -10765,7 +10765,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica de Fuenterrobles",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4383301.0,
@@ -10791,7 +10791,7 @@
     },
     {
         "nomMonumento":"Castillo de Bairén",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4320042.0,
@@ -10830,7 +10830,7 @@
     },
     {
         "nomMonumento":"Palacio de los Duques de Gandía",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4316735.0,
@@ -10895,7 +10895,7 @@
     },
     {
         "nomMonumento":"Alquería Fortificada Torre de los Padres \/ dels Pares",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4316122.0,
@@ -10908,7 +10908,7 @@
     },
     {
         "nomMonumento":"Fortaleza Alquería del Duc",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4319494.0,
@@ -10921,7 +10921,7 @@
     },
     {
         "nomMonumento":"Escudo en Antigua Casa Palacio",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4316932.0,
@@ -10947,7 +10947,7 @@
     },
     {
         "nomMonumento":"Castillo de Gestalgar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4386283.0,
@@ -10960,7 +10960,7 @@
     },
     {
         "nomMonumento":"Casa señorial y Torre de los Condes de la Alcúdia",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4386087.0,
@@ -10973,7 +10973,7 @@
     },
     {
         "nomMonumento":"Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395486.0,
@@ -10986,7 +10986,7 @@
     },
     {
         "nomMonumento":"Torre de la Casa Palacio de los Boil o Sardenyola",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4377625.0,
@@ -10999,7 +10999,7 @@
     },
     {
         "nomMonumento":"Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4366171.0,
@@ -11012,7 +11012,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica de Godelleta",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4366262.0,
@@ -11025,7 +11025,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Vicente Mártir",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4340401.0,
@@ -11038,7 +11038,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4339885.0,
@@ -11051,7 +11051,7 @@
     },
     {
         "nomMonumento":"Torre Guaita",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4325435.0,
@@ -11064,7 +11064,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4334034.0,
@@ -11103,7 +11103,7 @@
     },
     {
         "nomMonumento":"Castillo de Xàtiva",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4317800.0,
@@ -11129,7 +11129,7 @@
     },
     {
         "nomMonumento":"Ermita de Santa Ana",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4323142.0,
@@ -11142,7 +11142,7 @@
     },
     {
         "nomMonumento":"Ex-Convento de Santo Domingo",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4318283.0,
@@ -11168,7 +11168,7 @@
     },
     {
         "nomMonumento":"Iglesia Colegiata de la Asunción de Nuestra Señora",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4318374.0,
@@ -11181,7 +11181,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Francisco",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4318506.0,
@@ -11194,7 +11194,7 @@
     },
     {
         "nomMonumento":"Ermita de San Félix",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4318018.0,
@@ -11207,7 +11207,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Pedro Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4318451.0,
@@ -11220,7 +11220,7 @@
     },
     {
         "nomMonumento":"Palacio de Alarcón",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4318525.0,
@@ -11246,7 +11246,7 @@
     },
     {
         "nomMonumento":"Real Monasterio de la Asunción o de Santa Clara",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4318553.0,
@@ -11259,7 +11259,7 @@
     },
     {
         "nomMonumento":"Yacimiento Cova Negra",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4315888.0,
@@ -11389,7 +11389,7 @@
     },
     {
         "nomMonumento":"Iglesia de la Sangre",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4388958.0,
@@ -11506,7 +11506,7 @@
     },
     {
         "nomMonumento":"Castillo Xio",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4315164.0,
@@ -11519,7 +11519,7 @@
     },
     {
         "nomMonumento":"Monasterio (Iglesia-Convento) del Corpus Christi",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4314838.0,
@@ -11558,7 +11558,7 @@
     },
     {
         "nomMonumento":"Castillo Palacio Señorial",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4313783.0,
@@ -11571,7 +11571,7 @@
     },
     {
         "nomMonumento":"Ermita de la Consolación",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4314587.0,
@@ -11584,7 +11584,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Santa Cruz",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4350791.0,
@@ -11597,7 +11597,7 @@
     },
     {
         "nomMonumento":"Castillo de Aledua",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4352552.0,
@@ -11610,7 +11610,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4361227.0,
@@ -11636,7 +11636,7 @@
     },
     {
         "nomMonumento":"Torre Olla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4400725.0,
@@ -11649,7 +11649,7 @@
     },
     {
         "nomMonumento":"Castillo del Real",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4399908.0,
@@ -11675,7 +11675,7 @@
     },
     {
         "nomMonumento":"Castillo de Abajo o El Castillito",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4345980.0,
@@ -11688,7 +11688,7 @@
     },
     {
         "nomMonumento":"Castillo de Cabas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4347566.0,
@@ -11701,7 +11701,7 @@
     },
     {
         "nomMonumento":"Castillo de Corral Antón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4345347.0,
@@ -11714,7 +11714,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de Tambuc Este",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4338873.0,
@@ -11727,7 +11727,7 @@
     },
     {
         "nomMonumento":"Yacimiento icnológico de Tambuc Oeste",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4338788.0,
@@ -11740,7 +11740,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4305096.0,
@@ -11805,7 +11805,7 @@
     },
     {
         "nomMonumento":"Castillo de Alcalans",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4356054.0,
@@ -11831,7 +11831,7 @@
     },
     {
         "nomMonumento":"Castillo de Montesa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4314022.0,
@@ -11857,7 +11857,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4356821.0,
@@ -11870,7 +11870,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4331479.0,
@@ -11883,7 +11883,7 @@
     },
     {
         "nomMonumento":"Torres y muralla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4311822.0,
@@ -11896,7 +11896,7 @@
     },
     {
         "nomMonumento":"Castillo de Santa Ana",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4311485.0,
@@ -11909,7 +11909,7 @@
     },
     {
         "nomMonumento":"Castillo del Castellar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4307383.0,
@@ -11922,7 +11922,7 @@
     },
     {
         "nomMonumento":"Palacio de los Condes de Oliva",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4311815.0,
@@ -11948,7 +11948,7 @@
     },
     {
         "nomMonumento":"El Castell (Torre Pardines y Casa Solariega de los Condes de Olocau)",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4397382.0,
@@ -11961,7 +11961,7 @@
     },
     {
         "nomMonumento":"Castillo del Real",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4399908.0,
@@ -12000,7 +12000,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santa María Magdalena",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4309879.0,
@@ -12039,7 +12039,7 @@
     },
     {
         "nomMonumento":"Palacio de la Duquesa de Almodovar",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4299623.0,
@@ -12065,7 +12065,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Asunción de Nuestra Señora (Santa María)",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4299608.0,
@@ -12104,7 +12104,7 @@
     },
     {
         "nomMonumento":"Ayuntamiento. Palacio de los Condes de Villapaterna",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4375486.0,
@@ -12117,7 +12117,7 @@
     },
     {
         "nomMonumento":"Torre Árabe y Cuevas que la circundan",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4375711.0,
@@ -12143,7 +12143,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4396069.0,
@@ -12156,7 +12156,7 @@
     },
     {
         "nomMonumento":"Torre Espioca",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4354869.0,
@@ -12169,7 +12169,7 @@
     },
     {
         "nomMonumento":"Torre Vigía",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4315457.0,
@@ -12234,7 +12234,7 @@
     },
     {
         "nomMonumento":"Real Monasterio de Santa María",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4385561.0,
@@ -12247,7 +12247,7 @@
     },
     {
         "nomMonumento":"Castillo de Cebolla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4385826.0,
@@ -12260,7 +12260,7 @@
     },
     {
         "nomMonumento":"Torre Vigía",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4384349.0,
@@ -12286,7 +12286,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4332687.0,
@@ -12312,7 +12312,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica del Cerro de la Atalaya de Requena",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4374147.0,
@@ -12325,7 +12325,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica del Rebollar",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4371240.0,
@@ -12338,7 +12338,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica de San Antonio de Requena",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4377716.0,
@@ -12403,7 +12403,7 @@
     },
     {
         "nomMonumento":"Yacimiento Arqueológico La Solana de las Pilillas",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4361696.0,
@@ -12416,7 +12416,7 @@
     },
     {
         "nomMonumento":"Castillo de Sardineros",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4359950.0,
@@ -12442,7 +12442,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de El Salvador",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372438.0,
@@ -12455,7 +12455,7 @@
     },
     {
         "nomMonumento":"Iglesia de Santa María",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372360.0,
@@ -12468,7 +12468,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas de Requena",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372593.0,
@@ -12481,7 +12481,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Nicolás de Bari",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372263.0,
@@ -12507,7 +12507,7 @@
     },
     {
         "nomMonumento":"Castillo y Murallas",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4380417.0,
@@ -12546,7 +12546,7 @@
     },
     {
         "nomMonumento":"Yacimiento arqueológico de Valencia la Vella",
-        "tipoMonumento":"Yacimiento arquelógico",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4378503.0,
@@ -12559,7 +12559,7 @@
     },
     {
         "nomMonumento":"Castillo de Borró",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4313277.0,
@@ -12585,7 +12585,7 @@
     },
     {
         "nomMonumento":"Castillo de Cárcel",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4403388.0,
@@ -12611,7 +12611,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Natividad de Nuestra Señora",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395672.0,
@@ -12637,7 +12637,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de El Salvador",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395442.0,
@@ -12663,7 +12663,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395342.0,
@@ -12689,7 +12689,7 @@
     },
     {
         "nomMonumento":"Torre de San Roque",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4397108.0,
@@ -12702,7 +12702,7 @@
     },
     {
         "nomMonumento":"Fortín o Torre del Grau Vell",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4390922.0,
@@ -12728,7 +12728,7 @@
     },
     {
         "nomMonumento":"Molino Fortificado Torre Gausa",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395007.0,
@@ -12793,7 +12793,7 @@
     },
     {
         "nomMonumento":"Torreón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4327698.0,
@@ -12806,7 +12806,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395950.0,
@@ -12832,7 +12832,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395742.0,
@@ -12845,7 +12845,7 @@
     },
     {
         "nomMonumento":"Torre de la Ermita",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4396196.0,
@@ -12858,7 +12858,7 @@
     },
     {
         "nomMonumento":"Torre de Ría",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4396458.0,
@@ -12871,7 +12871,7 @@
     },
     {
         "nomMonumento":"Torre del Señor de la Vila",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4395922.0,
@@ -12884,7 +12884,7 @@
     },
     {
         "nomMonumento":"Torre de Satareña",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4394778.0,
@@ -12897,7 +12897,7 @@
     },
     {
         "nomMonumento":"Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4360192.0,
@@ -12910,7 +12910,7 @@
     },
     {
         "nomMonumento":"Monasterio de Santa María",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4324996.0,
@@ -12923,7 +12923,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4387696.0,
@@ -12936,7 +12936,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Pedro Apóstol",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4342609.0,
@@ -12975,7 +12975,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4329245.0,
@@ -13001,7 +13001,7 @@
     },
     {
         "nomMonumento":"Torre de la Vall",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4330018.0,
@@ -13014,7 +13014,7 @@
     },
     {
         "nomMonumento":"Castillo de Tavernes o de Alcalá de Alfàndec",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4329106.0,
@@ -13027,7 +13027,7 @@
     },
     {
         "nomMonumento":"Castillo de Cabrera",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4418039.0,
@@ -13040,7 +13040,7 @@
     },
     {
         "nomMonumento":"Torre de los Picos",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4439898.0,
@@ -13053,7 +13053,7 @@
     },
     {
         "nomMonumento":"La Torre",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4442518.0,
@@ -13066,7 +13066,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica del Vedat de Torrent",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4366830.0,
@@ -13092,7 +13092,7 @@
     },
     {
         "nomMonumento":"Torre del Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4368283.0,
@@ -13105,7 +13105,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4402647.0,
@@ -13131,7 +13131,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4336334.0,
@@ -13144,7 +13144,7 @@
     },
     {
         "nomMonumento":"Torre vigía de Tous",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4337881.0,
@@ -13170,7 +13170,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Nuestra Señora de los Ángeles",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4403369.0,
@@ -13196,7 +13196,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4403529.0,
@@ -13209,7 +13209,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4361221.0,
@@ -13313,7 +13313,7 @@
     },
     {
         "nomMonumento":"Castillo y Muralla",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4381198.0,
@@ -13326,7 +13326,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de la Asunción de Nuestra Señora",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4381238.0,
@@ -13417,7 +13417,7 @@
     },
     {
         "nomMonumento":"Recinto del Hospital Viejo y Ermita de Santa Lucía",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372244.0,
@@ -13430,7 +13430,7 @@
     },
     {
         "nomMonumento":"Torre adosada al lienzo de muralla árabe entre las calles Angel y Beneito Coll",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373122.0,
@@ -13469,7 +13469,7 @@
     },
     {
         "nomMonumento":"Monasterio de la Santísima Trinidad",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373357.0,
@@ -13482,7 +13482,7 @@
     },
     {
         "nomMonumento":"Real Basílica de Nuestra Señora de los Desamparados",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372921.0,
@@ -13495,7 +13495,7 @@
     },
     {
         "nomMonumento":"Torres de Quart",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372845.0,
@@ -13508,7 +13508,7 @@
     },
     {
         "nomMonumento":"Torres de Serranos",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373242.0,
@@ -13534,7 +13534,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Nuestra Señora de la Misericordia (Barrio de Campanar)",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373497.0,
@@ -13547,7 +13547,7 @@
     },
     {
         "nomMonumento":"Jardín Botánico de la Universidad de València",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372967.0,
@@ -13573,7 +13573,7 @@
     },
     {
         "nomMonumento":"Monasterio de San Miguel de los Reyes",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4375495.0,
@@ -13586,7 +13586,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Esteban Protomártir",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372914.0,
@@ -13612,7 +13612,7 @@
     },
     {
         "nomMonumento":"Palacio del Marqués de Campo o de los Berbedel",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372902.0,
@@ -13625,7 +13625,7 @@
     },
     {
         "nomMonumento":"Palacio de los Boil de Arenós",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372511.0,
@@ -13638,7 +13638,7 @@
     },
     {
         "nomMonumento":"Palacio de los Catalá de Valeriola",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373062.0,
@@ -13651,7 +13651,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Agustín, Iglesia Parroquial de Santa Catalina y San Agustín",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372064.0,
@@ -13664,7 +13664,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de los Santos Juanes",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372684.0,
@@ -13677,7 +13677,7 @@
     },
     {
         "nomMonumento":"Convento Colegio Escuelas Pías",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372649.0,
@@ -13690,7 +13690,7 @@
     },
     {
         "nomMonumento":"Ex-Convento del Carmen e Iglesia Parroquial de la Santa Cruz",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373265.0,
@@ -13742,7 +13742,7 @@
     },
     {
         "nomMonumento":"Jardín de Monforte",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373087.0,
@@ -13768,7 +13768,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Pedro Mártir y San Nicolás Obispo",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372900.0,
@@ -13807,7 +13807,7 @@
     },
     {
         "nomMonumento":"Santa Iglesia Catedral Basílica Metropolitana de Santa María",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372837.0,
@@ -13820,7 +13820,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Miguel y San Sebastián",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372768.0,
@@ -13833,7 +13833,7 @@
     },
     {
         "nomMonumento":"Palacio de los Escrivà",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372968.0,
@@ -13846,7 +13846,7 @@
     },
     {
         "nomMonumento":"Palacio de los Almirantes de Aragón",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372807.0,
@@ -13872,7 +13872,7 @@
     },
     {
         "nomMonumento":"Capitanía General (Convento de  Sto. Domingo)",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372710.0,
@@ -13911,7 +13911,7 @@
     },
     {
         "nomMonumento":"Palacio del Marqués de Dos Aguas",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372508.0,
@@ -13937,7 +13937,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Santo Tomás Apóstol y San Felipe Neri",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372691.0,
@@ -13950,7 +13950,7 @@
     },
     {
         "nomMonumento":"Palacio del Marqués de la Scala",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372997.0,
@@ -13989,7 +13989,7 @@
     },
     {
         "nomMonumento":"Palacio de Justicia",
-        "tipoMonumento":"Edificio Singular",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372438.0,
@@ -14002,7 +14002,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan de la Cruz (antes de San Andrés)",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372452.0,
@@ -14028,7 +14028,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de Nuestra Señora del Pilar y San Lorenzo Mártir",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372369.0,
@@ -14054,7 +14054,7 @@
     },
     {
         "nomMonumento":"Iglesia Parroquial de San Martín Obispo y San Antonio Abad",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372581.0,
@@ -14067,7 +14067,7 @@
     },
     {
         "nomMonumento":"Monasterio de San Vicente de la Roqueta y la Iglesia",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4371599.0,
@@ -14080,7 +14080,7 @@
     },
     {
         "nomMonumento":"Monasterio del Temple",
-        "tipoMonumento":"Monasterio-Convento",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372950.0,
@@ -14106,7 +14106,7 @@
     },
     {
         "nomMonumento":"Templo y Torre de Santa Catalina Mártir",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372679.0,
@@ -14132,7 +14132,7 @@
     },
     {
         "nomMonumento":"Iglesia del Santísimo Cristo del Salvador",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4373029.0,
@@ -14223,7 +14223,7 @@
     },
     {
         "nomMonumento":"Conjunto visigodo iglesia-cárcel de San Vicente",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4372868.0,
@@ -14262,7 +14262,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4306874.0,
@@ -14275,7 +14275,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4307931.0,
@@ -14288,7 +14288,7 @@
     },
     {
         "nomMonumento":"Castillo",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4382538.0,
@@ -14340,7 +14340,7 @@
     },
     {
         "nomMonumento":"Torre de Telegrafía Óptica de Villargordo de Cabriel",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4375896.0,
@@ -14392,7 +14392,7 @@
     },
     {
         "nomMonumento":"Escudo calle Iglesia, 20-22",
-        "tipoMonumento":"Iglesia-Ermita",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4417713.0,
@@ -14470,7 +14470,7 @@
     },
     {
         "nomMonumento":"Castillo de Torrejón",
-        "tipoMonumento":"Castillo-Fortaleza-Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
         "longitud":4406912.0,
