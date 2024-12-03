@@ -13,7 +13,7 @@ def cargar_datos(session: Session, filepath: str):
                 provincia = session.query(Provincia).filter_by(nombre=item["nomProvincia"]).first()
                 if not provincia:
                     provincia = Provincia(
-                        nombre=item["nomProvincia"]
+                        nombre=item["nomProvincia"],
                     )
                     session.add(provincia)
                     session.flush()  # Forzar ID de provincia antes de usarla en localidad

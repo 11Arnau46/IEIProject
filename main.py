@@ -10,6 +10,7 @@ def main():
 
     if engine_with_db is None:
         print("Error al inicializar la base de datos. Terminando el proceso.")
+    
         return
 
     # Crear una sesión de base de datos usando el engine con la base de datos seleccionada
@@ -17,7 +18,7 @@ def main():
 
     try:
         # Cargar datos desde el archivo JSON
-        cargar_datos(session, "Resultados/JSONtoJSON.json")
+        cargar_datos(session, "Resultados/CSVtoJSON_Corregido.json")
         print("Datos cargados exitosamente en la base de datos.")
     except Exception as e:
         print(f"Error al cargar datos: {e}")
