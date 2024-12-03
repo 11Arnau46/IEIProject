@@ -2,7 +2,7 @@ import pandas as pd
 import Coords_converter
 
 # Leer el archivo CSV
-csv_path = '../Fuentes_de_datos/Comunitat_Valenciana/vcl.csv'
+csv_path = 'vcl.csv'
 df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
 
 # Diccionario para almacenar los datos extraídos
