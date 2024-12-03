@@ -1,4 +1,5 @@
 import pandas as pd
+import Coords_converter
 
 # Leer el archivo CSV
 csv_path = '../Fuentes_de_datos/Comunitat_Valenciana/vcl.csv'
@@ -100,6 +101,7 @@ if len(df_sin_coords) > 0:
 
 #Hacer conversión de coordenadas a grados con Selenium
 #https://www.ign.es/web/calculadora-geodesica
+Coords_converter.convert_utm(694447, 4278086)
 
 #Usar la API para obtener el Código Postal y Localidad
 #https://opencagedata.com/api correo es swappypin@gmail.com y la contraseña es proyectoiei
