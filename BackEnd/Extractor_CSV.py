@@ -1,6 +1,7 @@
 import pandas as pd
 import Coords_converter
 import json
+import API2
 
 # Leer el archivo CSV
 csv_path = '../Fuentes_de_datos/Demo/vcl.csv'
@@ -123,6 +124,8 @@ with open(ruta_json_salida, "w", encoding="utf-8") as file:
     json.dump(monumentos, file, ensure_ascii=False, indent=4)
 
 print(f"Archivo actualizado guardado en {ruta_json_salida}.")
+
+
 
 #Usar la API para obtener el Código Postal y Localidad
 #https://opencagedata.com/api correo es swappypin@gmail.com y la contraseña es proyectoiei
