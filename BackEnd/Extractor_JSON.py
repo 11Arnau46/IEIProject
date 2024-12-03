@@ -2,6 +2,9 @@ import pandas as pd
 import json
 import re
 
+from Location_Finder import LocationFinder
+
+
 # Función para parsear y preservar todas las claves, incluyendo duplicados
 def parse_json_with_duplicates(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -158,3 +161,11 @@ if len(df_sin_coords) > 0:
         indent=4,
         default_handler=str
     )
+
+
+json_path = '../Resultados/JSONtoJSON_Corregido.json'
+location_finder = LocationFinder(json_path)
+# Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
+results = location_finder.process_json()
+location_finder.save_results_to_json(results)
+print(f"Archivo final guardado en {json_path}.")
