@@ -13,9 +13,9 @@ def get_location_info(lat, lon):
         data = response.json()
         if data['results']:
             components = data['results'][0]['components']
-            locality = components.get('city', 'N/A')
+            direction = data['results'][0].get('formatted', 'N/A')
             postal_code = components.get('postcode', 'N/A')
-            return locality, postal_code
+            return direction, postal_code
         else:
             return 'N/A', 'N/A'
     else:
@@ -35,11 +35,11 @@ def process_json(json_path):
         lat = item.get('latitud')
         lon = item.get('longitud')
         if lat and lon:
-            locality, postal_code = get_location_info(lat, lon)
+            direction, postal_code = get_location_info(lat, lon)
             result = {
                 'latitud': lat,
                 'longitud': lon,
-                'localidad': locality,
+                'direccion': direction,
                 'codigo_postal': postal_code
             }
             results.append(result)
