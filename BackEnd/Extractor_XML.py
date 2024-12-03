@@ -56,13 +56,19 @@ def clean_html_text(text):
     clean_text = ' '.join(clean_text.split())
     return clean_text
 
+# Función para limpiar coordenadas
+def clean_coordinates(value):
+    if value is not None:
+        # Mantener solo números, puntos y guiones
+        return re.sub(r'[^0-9\.\-]', '', value)
+    return value
+
 # Extraer información de cada elemento del XML
 for monumento in root.findall('.//monumento'):
     nomMonumento = monumento.find('nombre').text if monumento.find('nombre') is not None else pd.NA
     tipoMonumento = monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA
     
     # Obtener dirección de la calle
-    # Las direcciones pueden ser nulas, hay que extraerlas de la web en dicho caso o eliminarlas
     direccion = monumento.find('calle').text if monumento.find('calle') is not None else pd.NA
     codigo_postal = monumento.find('codigoPostal').text if monumento.find('codigoPostal') is not None else pd.NA
     
@@ -71,6 +77,10 @@ for monumento in root.findall('.//monumento'):
     if coordenadas is not None:
         longitud = coordenadas.find('longitud').text if coordenadas.find('longitud') is not None else pd.NA
         latitud = coordenadas.find('latitud').text if coordenadas.find('latitud') is not None else pd.NA
+        
+        # Limpiar las coordenadas
+        longitud = clean_coordinates(longitud)
+        latitud = clean_coordinates(latitud)
     else:
         longitud = pd.NA
         latitud = pd.NA

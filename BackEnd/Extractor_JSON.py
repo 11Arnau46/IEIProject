@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import re
 
 # Función para parsear y preservar todas las claves, incluyendo duplicados
 def parse_json_with_duplicates(file_path):
@@ -7,6 +8,13 @@ def parse_json_with_duplicates(file_path):
         # Utilizamos object_pairs_hook para conservar el orden y los duplicados
         data = json.load(file, object_pairs_hook=lambda pairs: pairs)
     return data
+
+# Función para limpiar coordenadas
+def clean_coordinates(value):
+    if value is not None and isinstance(value, str):
+        # Mantener solo números, puntos y guiones
+        return re.sub(r'[^0-9\.\-]', '', value)
+    return value
 
 # Ruta al archivo JSON
 json_path = '../Fuentes_de_datos/Demo/eus.json'
@@ -39,15 +47,15 @@ def get_tipo_monumento(denominacion):
         "YacimientoArqueologico": ["yacimiento arqueológico", "Yacimiento Arqueológico"],
         "MonasterioConvento": ["monasterio", "convento", "Monasterio", "Convento"],
         "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica", 
-                        "Iglesia", "Ermita", "Catedral", "Basílica"],
+                          "Iglesia", "Ermita", "Catedral", "Basílica"],
         "CastilloTorreFuerte": ["castillo", "torre", "fuerte",
                                 "Castillo", "Torre", "Fuerte"],
         "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio"],
         "Puente": ["puente", "Puente"],
         "Otros": ["santuario", "teatro", "plaza", "paseo", "casco", 
-                                        "villa", "ferrería", "mercado", "fábrica",
-                                        "Santuario", "Teatro", "Plaza", "Paseo", "Casco", 
-                                        "Villa", "Ferrería", "Mercado", "Fábrica"]
+                  "villa", "ferrería", "mercado", "fábrica",
+                  "Santuario", "Teatro", "Plaza", "Paseo", "Casco", 
+                  "Villa", "Ferrería", "Mercado", "Fábrica"]
     }
     
     for tipo, keywords in palabras_clave.items():
@@ -91,11 +99,11 @@ for monumento in json_data:
     # Obtener coordenadas
     latlong = monumento_dict.get('latitudelongitude', '').split(',')
     if len(latlong) == 2:
-        latitud = latlong[0]
-        longitud = latlong[1]
+        latitud = clean_coordinates(latlong[0])  # Limpiar latitud
+        longitud = clean_coordinates(latlong[1])  # Limpiar longitud
     else:
-        latitud = monumento_dict.get('latwgs84', pd.NA)
-        longitud = monumento_dict.get('lonwgs84', pd.NA)
+        latitud = clean_coordinates(monumento_dict.get('latwgs84', pd.NA))
+        longitud = clean_coordinates(monumento_dict.get('lonwgs84', pd.NA))
     
     descripcion = monumento_dict.get('documentDescription', pd.NA)
     
