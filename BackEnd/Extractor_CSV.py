@@ -27,7 +27,7 @@ def get_tipo_monumento(denominacion):
         "MonasterioConvento": ["monasterio", "Monasterio", "convento", "Convento"],
         "IglesiaErmita": ["iglesia", "Iglesia", "ermita", "Ermita", "catedral", "Catedral", "basílica", "Basílica"],
         "CastilloFortalezaTorre": ["castillo", "Castillo", "fortaleza", "Fortaleza", "torre", "Torre"],
-        "EdificioPalacio": ["jardín", "Jardín", "palacio", "Palacio"],
+        "EdificioSingular": ["jardín", "Jardín", "palacio", "Palacio"],
         "Puente": ["puente", "Puente"]
     }
     
@@ -97,3 +97,12 @@ if len(df_sin_coords) > 0:
         indent=4,
         default_handler=str
     )
+
+#Hacer conversión de coordenadas a grados con Selenium
+#https://www.ign.es/web/calculadora-geodesica
+
+#Usar la API para obtener el Código Postal y Localidad
+#https://opencagedata.com/api correo es swappypin@gmail.com y la contraseña es proyectoiei
+#2500 Llamadas diarias
+
+#Añadirlo al JSON resultante
