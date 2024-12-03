@@ -2,6 +2,8 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import re
 
+from Location_Finder import LocationFinder
+
 # Leer el archivo XML
 xml_path = '../Fuentes_de_datos/Demo/cle.xml'
 tree = ET.parse(xml_path)
@@ -147,3 +149,11 @@ if len(df_sin_coords) > 0:
         indent=4,
         default_handler=str
     )
+
+#todo: Utilizar archivo con coords
+json_path = '../Resultados/XMLtoJSON_Corregido.json'
+location_finder = LocationFinder(json_path)
+# Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
+results = location_finder.process_json()
+location_finder.save_results_to_json(results)
+print(f"Archivo final guardado en {json_path}.")

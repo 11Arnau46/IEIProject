@@ -127,10 +127,8 @@ with open(ruta_json_salida, "w", encoding="utf-8") as file:
 print(f"Archivo actualizado guardado en {ruta_json_salida}.")
 
 
-
+# todo: Poner el archivo con coordenadas
 #Usar la API para obtener el Código Postal y Localidad
-#https://opencagedata.com/api correo es swappypin@gmail.com y la contraseña es proyectoiei
-#2500 Llamadas diarias
 json_path = '../Resultados/CSVtoJSON_Corregido.json'
 location_finder = LocationFinder(json_path)
 # Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "requests": "^0.3.0"
+    "requests": "^0.3.0",
+    "selenium": "^2.20.0"
   }
 }
