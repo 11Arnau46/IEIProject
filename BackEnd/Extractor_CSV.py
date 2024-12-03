@@ -23,11 +23,11 @@ data = {
 def get_tipo_monumento(denominacion):
     denominacion = denominacion.lower()
     palabras_clave = {
-        "Yacimiento arquelógico": ["yacimiento", "Yacimiento"],
+        "Yacimiento-arquelógico": ["yacimiento", "Yacimiento"],
         "Monasterio-Convento": ["monasterio", "Monasterio", "convento", "Convento"],
         "Iglesia-Ermita": ["iglesia", "Iglesia", "ermita", "Ermita", "catedral", "Catedral", "basílica", "Basílica"],
         "Castillo-Fortaleza-Torre": ["castillo", "Castillo", "fortaleza", "Fortaleza", "torre", "Torre"],
-        "Edificio Singular": ["jardín", "Jardín", "palacio", "Palacio"],
+        "Edificio-Palacio": ["jardín", "Jardín", "palacio", "Palacio"],
         "Puente": ["puente", "Puente"]
     }
     
