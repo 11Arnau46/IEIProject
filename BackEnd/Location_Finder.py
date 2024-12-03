@@ -15,6 +15,8 @@ def get_location_info(lat, lon):
             components = data['results'][0]['components']
             direction = data['results'][0].get('formatted', 'N/A')
             postal_code = components.get('postcode', 'N/A')
+            if postal_code == 'N/A':
+                print(f"Missing postcode for {lat}, {lon}: {json.dumps(data, indent=4)}")
             return direction, postal_code
         else:
             return 'N/A', 'N/A'
