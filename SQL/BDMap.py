@@ -27,7 +27,6 @@ class Provincia(Base):
     __tablename__ = "provincia"
     id: int = Column(Integer, primary_key=True, autoincrement=True)
     nombre: str = Column(String(100), nullable=True, unique=True)
-    codigo: str = Column(String(50), nullable=True, unique=True)
     localidades = relationship("Localidad", back_populates="provincia")
 
 
@@ -36,7 +35,6 @@ class Localidad(Base):
     __tablename__ = "localidad"
     id: int = Column(Integer, primary_key=True, autoincrement=True)
     nombre: str = Column(String(100), nullable=True, unique=True)
-    codigo: str = Column(String(50), nullable=True, unique=True)
     en_provincia: int = Column(Integer, ForeignKey("provincia.id"), nullable=True)
     provincia = relationship("Provincia", back_populates="localidades")
     monumentos = relationship("Monumento", back_populates="localidad")
