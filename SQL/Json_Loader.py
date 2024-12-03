@@ -1,6 +1,7 @@
 import json
 from sqlalchemy.orm import Session
-from SQL.BDMap import Provincia, Localidad, Monumento
+from SQL.BDMap import Provincia, Localidad, Monumento, TipoMonumento
+from enum import Enum
 
 def cargar_datos(session: Session, filepath: str):
     with open(filepath, 'r', encoding='utf-8') as file:
@@ -25,10 +26,13 @@ def cargar_datos(session: Session, filepath: str):
                 )
                 session.add(localidad)
 
+                # Asignar el tipo de monumento usando el Enum
+            tipo_monumento = TipoMonumento[item["tipoMonumento"]] if item["tipoMonumento"] in TipoMonumento.__members__ else TipoMonumento.Otros
+
             # Crear el monumento
             monumento = Monumento(
                 nombre=item["nomMonumento"],
-                tipo=item.get("tipoMonumento"),
+                tipo=tipo_monumento,
                 direccion=item.get("direccion"),
                 codigo_postal=item.get("codigo_postal"),
                 longitud=item.get("longitud"),
