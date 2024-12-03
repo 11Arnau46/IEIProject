@@ -27,8 +27,8 @@ def get_location_info(lat, lon):
                 if response2.status_code == 200:
                     data2 = response2.json()
                     print(f"Response from second API: {json.dumps(data2, indent=4)}")  # Print the entire response from the second API
-                    if data2['results']:
-                        postal_code = data2['results'][0].get('postcode', 'N/A')
+                    if data2['features']:
+                        postal_code = data2['features'][0]['properties'].get('postcode', 'N/A')
                         print(postal_code)
             return direction, postal_code
         else:
