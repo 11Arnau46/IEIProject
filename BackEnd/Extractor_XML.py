@@ -107,14 +107,32 @@ for monumento in root.findall('.//monumento'):
 # Crear un DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
 
-# Mostrar el DataFrame resultante
-print(df_result.head())
+# Separar los datos en dos DataFrames
+df_con_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
+                            for i in range(len(data['nomMonumento'])) 
+                            if pd.notna(data['longitud'][i]) and pd.notna(data['latitud'][i])])
+
+df_sin_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
+                            for i in range(len(data['nomMonumento'])) 
+                            if pd.isna(data['longitud'][i]) or pd.isna(data['latitud'][i])])
+
+# Mostrar información sobre los datos separados
+print(f"Monumentos con coordenadas: {len(df_con_coords)}")
+print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON
-df_result.to_json(
-    '../Resultados/XMLtoJSON.json',
+df_con_coords.to_json(
+    '../Resultados/XMLtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
     default_handler=str
 )
+if len(df_sin_coords) > 0:
+    df_sin_coords.to_json(
+        '../Resultados/XMLtoJSON_sin_coords.json',
+        orient='records',
+        force_ascii=False,
+        indent=4,
+        default_handler=str
+    )

@@ -68,17 +68,32 @@ for _, row in df.iterrows():
     data['codProvincia'].append(codProvincia)
     data['nomProvincia'].append(nomProvincia)
 
-# Crear un DataFrame con los datos extraídos
-df_result = pd.DataFrame(data)
+# Separar los datos en dos DataFrames
+df_con_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
+                            for i in range(len(data['nomMonumento'])) 
+                            if pd.notna(data['longitud'][i]) and pd.notna(data['latitud'][i])])
 
-# Mostrar el DataFrame resultante
-print(df_result.head())
+df_sin_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
+                            for i in range(len(data['nomMonumento'])) 
+                            if pd.isna(data['longitud'][i]) or pd.isna(data['latitud'][i])])
+
+# Mostrar información sobre los datos separados
+print(f"Monumentos con coordenadas: {len(df_con_coords)}")
+print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON con formato legible
-df_result.to_json(
-    '../Resultados/CSVtoJSON.json',
+df_con_coords.to_json(
+    '../Resultados/CSVtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
     default_handler=str
 )
+if len(df_sin_coords) > 0:
+    df_sin_coords.to_json(
+        '../Resultados/CSVtoJSON_sin_coords.json',
+        orient='records',
+        force_ascii=False,
+        indent=4,
+        default_handler=str
+    )
