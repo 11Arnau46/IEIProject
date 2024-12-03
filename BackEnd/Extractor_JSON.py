@@ -9,7 +9,7 @@ def parse_json_with_duplicates(file_path):
     return data
 
 # Ruta al archivo JSON
-json_path = '../Fuentes_de_datos/Euskadi/eus.json'
+json_path = '../Fuentes_de_datos/Demo/eus.json'
 
 # Cargar los datos preservando los campos duplicados
 json_data = parse_json_with_duplicates(json_path)

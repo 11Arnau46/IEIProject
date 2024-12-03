@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import re
 
 # Leer el archivo XML
-xml_path = '../Fuentes_de_datos/Castilla_i_leon/cle.xml'
+xml_path = '../Fuentes_de_datos/Demo/cle.xml'
 tree = ET.parse(xml_path)
 root = tree.getroot()
 
