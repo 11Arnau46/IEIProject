@@ -66,7 +66,8 @@ def clean_coordinates(value):
 # Extraer información de cada elemento del XML
 for monumento in root.findall('.//monumento'):
     nomMonumento = monumento.find('nombre').text if monumento.find('nombre') is not None else pd.NA
-    tipoMonumento = monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA
+    tipoMonumento_raw = monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA
+    tipoMonumento = get_tipo_monumento(tipoMonumento_raw) if pd.notna(tipoMonumento_raw) else "Otros"
     
     # Obtener dirección de la calle
     direccion = monumento.find('calle').text if monumento.find('calle') is not None else pd.NA

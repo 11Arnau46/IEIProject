@@ -1,7 +1,7 @@
 [
     {
         "nomMonumento":"Risco La Zorrera",
-        "tipoMonumento":"Yacimientos arqueológicos",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":"Risco La Zorrera",
         "codigo_postal":"5489",
         "longitud":"-5.339664",
@@ -14,7 +14,7 @@
     },
     {
         "nomMonumento":"Ruinas Romanas de San Julián de Valmuza",
-        "tipoMonumento":"Yacimientos arqueológicos",
+        "tipoMonumento":"YacimientoArquelogico",
         "direccion":"Desvío a San Julian, Carretera Salamanca - Matilla de los Caños",
         "codigo_postal":"37120",
         "longitud":"-5.7787342",
@@ -27,7 +27,7 @@
     },
     {
         "nomMonumento":"Monasterio de Santa María",
-        "tipoMonumento":"Monasterios",
+        "tipoMonumento":"MonasterioConvento",
         "direccion":"Coto de San Bernardo",
         "codigo_postal":"40237",
         "longitud":"-3.924441",
@@ -40,7 +40,7 @@
     },
     {
         "nomMonumento":"Castillo de Íscar",
-        "tipoMonumento":"Castillos",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":"Castillo, s\/n",
         "codigo_postal":null,
         "longitud":"-4.537389",
@@ -53,7 +53,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Juan",
-        "tipoMonumento":"Iglesias y Ermitas",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":"Pza. Mayor, s\/n",
         "codigo_postal":"37800",
         "longitud":"-5.514936",
@@ -66,7 +66,7 @@
     },
     {
         "nomMonumento":"Iglesia parroquial de Valdesaz",
-        "tipoMonumento":"Iglesias y Ermitas",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":null,
         "codigo_postal":"64208",
         "longitud":"-5.42709",
@@ -79,7 +79,7 @@
     },
     {
         "nomMonumento":"Iglesia de San Miguel",
-        "tipoMonumento":"Iglesias y Ermitas",
+        "tipoMonumento":"IglesiaErmita",
         "direccion":"Plaza de San Miguel",
         "codigo_postal":"34005",
         "longitud":"-4.534237",
@@ -92,7 +92,7 @@
     },
     {
         "nomMonumento":"Casa Miranda y Casa de Íñigo Angulo",
-        "tipoMonumento":"Palacios",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":"Calera, 25 (Museo de Burgos)",
         "codigo_postal":"9002",
         "longitud":"-3.700035",
@@ -105,7 +105,7 @@
     },
     {
         "nomMonumento":"Casa Blanca",
-        "tipoMonumento":"Palacios",
+        "tipoMonumento":"EdificioPalacio",
         "direccion":null,
         "codigo_postal":"47400",
         "longitud":"-4.938024",
@@ -118,7 +118,7 @@
     },
     {
         "nomMonumento":"Puente de Piedra de Zamora",
-        "tipoMonumento":"Puentes",
+        "tipoMonumento":"Puente",
         "direccion":"Puente de Piedra",
         "codigo_postal":"49028",
         "longitud":"-5.748118",
@@ -131,7 +131,7 @@
     },
     {
         "nomMonumento":"Acueducto de Segovia",
-        "tipoMonumento":"Puentes",
+        "tipoMonumento":"Puente",
         "direccion":"Plaza del Azogüejo, 1",
         "codigo_postal":"40001",
         "longitud":"-4.117791",
@@ -144,7 +144,7 @@
     },
     {
         "nomMonumento":"Castillo de Íscar",
-        "tipoMonumento":"Castillos",
+        "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":"Castillo, s\/n",
         "codigo_postal":null,
         "longitud":"-4.537389",
@@ -157,7 +157,7 @@
     },
     {
         "nomMonumento":"Midrash del corral de Cayón",
-        "tipoMonumento":"Otros edificios",
+        "tipoMonumento":"Otros",
         "direccion":"Plaza la Merced",
         "codigo_postal":"40003",
         "longitud":"-4.126926",
@@ -170,7 +170,7 @@
     },
     {
         "nomMonumento":"Cloacas Romanas",
-        "tipoMonumento":"Otros edificios",
+        "tipoMonumento":"Otros",
         "direccion":null,
         "codigo_postal":"24700",
         "longitud":"-6.052759",
