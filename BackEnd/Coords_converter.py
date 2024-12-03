@@ -54,7 +54,7 @@ def convert_utm(latitud, longitud):
     driver.get("https://www.ign.es/web/calculadora-geodesica")
 
     # Espera a que la página cargue
-    time.sleep(5)
+    #time.sleep(5)
 
     # Encuentra y activa el radio button para introducir coordenadas en UTM 
     # Localiza el radio button por ID
@@ -67,7 +67,7 @@ def convert_utm(latitud, longitud):
     actions = ActionChains(driver)
     actions.move_to_element(radio_button).click().perform()
 
-    time.sleep(3)
+    #time.sleep(3)
 
     # Encuentra el campo x metros e introduce el valor de latitud
     driver.find_element(By.ID, "datacoord1").clear()

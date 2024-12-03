@@ -1,5 +1,6 @@
 import pandas as pd
 import Coords_converter
+import json
 
 # Leer el archivo CSV
 csv_path = 'vcl.csv'
@@ -101,7 +102,27 @@ if len(df_sin_coords) > 0:
 
 #Hacer conversión de coordenadas a grados con Selenium
 #https://www.ign.es/web/calculadora-geodesica
-Coords_converter.convert_utm(694447, 4278086)
+
+ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"  # Cambia por tu archivo JSON
+ruta_json_salida = "../Resultados/CSVtoJSON_Corregido.json"
+
+with open(ruta_json_entrada, "r", encoding="utf-8") as file:
+    monumentos = json.load(file)
+
+# Actualiza los datos del JSON
+for monumento in monumentos:
+    if monumento["latitud"] and monumento["longitud"]:
+        print(f"Convirtiendo coordenadas UTM para {monumento['nomMonumento']}...")
+        lat, lon = Coords_converter.convert_utm(monumento["latitud"], monumento["longitud"])
+        if lat and lon:
+            monumento["latitud"] = lat
+            monumento["longitud"] = lon
+
+# Guarda el archivo actualizado
+with open(ruta_json_salida, "w", encoding="utf-8") as file:
+    json.dump(monumentos, file, ensure_ascii=False, indent=4)
+
+print(f"Archivo actualizado guardado en {ruta_json_salida}.")
 
 #Usar la API para obtener el Código Postal y Localidad
 #https://opencagedata.com/api correo es swappypin@gmail.com y la contraseña es proyectoiei
