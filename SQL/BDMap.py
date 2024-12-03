@@ -26,7 +26,7 @@ class TipoMonumento(PyEnum):
 class Provincia(Base):
     __tablename__ = "provincia"
     id: int = Column(Integer, primary_key=True, autoincrement=True)
-    nombre: str = Column(String(100), nullable=True, unique=True)
+    nombre: str = Column(String(500), nullable=True, unique=True)
     localidades = relationship("Localidad", back_populates="provincia")
 
 
@@ -34,7 +34,7 @@ class Provincia(Base):
 class Localidad(Base):
     __tablename__ = "localidad"
     id: int = Column(Integer, primary_key=True, autoincrement=True)
-    nombre: str = Column(String(100), nullable=True, unique=True)
+    nombre: str = Column(String(500), nullable=True, unique=True)
     en_provincia: int = Column(Integer, ForeignKey("provincia.id"), nullable=True)
     provincia = relationship("Provincia", back_populates="localidades")
     monumentos = relationship("Monumento", back_populates="localidad")
@@ -44,12 +44,12 @@ class Localidad(Base):
 class Monumento(Base):
     __tablename__ = "monumento"
     id: int = Column(Integer, primary_key=True, autoincrement=True)
-    nombre: str = Column(String(150), nullable=True)
+    nombre: str = Column(String(500), nullable=True)
     tipo: TipoMonumento = Column(Enum(TipoMonumento, name="tipo_monumento"), nullable=True)
-    direccion: str = Column(String(200))
-    codigo_postal: str = Column(String(20))
+    direccion: str = Column(String(500))
+    codigo_postal: str = Column(String(50))
     longitud: float = Column(Float)
     latitud: float = Column(Float)
-    descripcion: str = Column(String(500))
+    descripcion: str = Column(String(10000))
     en_localidad: int = Column(Integer, ForeignKey("localidad.id"), nullable=True)
     localidad = relationship("Localidad", back_populates="monumentos")
