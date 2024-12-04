@@ -64,7 +64,11 @@ for monumento in root.findall('.//monumento'):
     # Obtener dirección de la calle
     direccion = monumento.find('calle').text if monumento.find('calle') is not None else pd.NA
     codigo_postal = monumento.find('codigoPostal').text if monumento.find('codigoPostal') is not None else pd.NA
-    
+
+    # Asegurarte de que el código postal tenga 5 dígitos
+    if pd.notna(codigo_postal) and codigo_postal.isdigit():  # Verificar que no sea nulo y sea un número
+        codigo_postal = codigo_postal.zfill(5)  # Añadir ceros a la izquierda si es necesario
+
     # Obtener coordenadas
     coordenadas = monumento.find('coordenadas')
     if coordenadas is not None:
