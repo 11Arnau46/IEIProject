@@ -1,7 +1,6 @@
 import pandas as pd
 import json
 import re
-
 from Location_Finder import LocationFinder
 
 
@@ -39,6 +38,9 @@ data = {
     'codProvincia': [],
     'nomProvincia': []
 }
+
+# Conjunto para realizar un seguimiento de los monumentos ya procesados
+seen_monuments = set()
 
 # Función para clasificar el tipo de monumento
 def get_tipo_monumento(denominacion):
@@ -92,6 +94,11 @@ for monumento in json_data:
             monumento_dict[key] = value
     
     nomMonumento = monumento_dict.get('documentName', pd.NA)
+    
+    # Verificar si el monumento ya ha sido procesado
+    if nomMonumento in seen_monuments:
+        continue  # Si ya se procesó, omitir este monumento
+    
     tipoMonumento = get_tipo_monumento(nomMonumento) if nomMonumento is not pd.NA else pd.NA
     
     # Obtener la primera dirección que no esté vacía
@@ -128,6 +135,9 @@ for monumento in json_data:
     data['nomLocalidad'].append(nomLocalidad)
     data['codProvincia'].append(codProvincia)
     data['nomProvincia'].append(nomProvincia)
+
+    # Agregar el nombre del monumento al conjunto de monumentos procesados
+    seen_monuments.add(nomMonumento)
 
 # Crear un DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)

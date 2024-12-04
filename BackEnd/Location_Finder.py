@@ -8,7 +8,7 @@ class LocationFinder:
         self.json_path = json_path
 
     def get_location_info(self, lat, lon):
-        api_key = 'd5759aade0884056ba8c63a7fe5d9f2f'
+        api_key = 'ab010f03e3d34a31b629db543f088d19' #'d5759aade0884056ba8c63a7fe5d9f2f'
         url1 = f'https://api.opencagedata.com/geocode/v1/json?q={lat}%2C{lon}&key={api_key}'
 
         response1 = requests.get(url1)

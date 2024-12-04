@@ -1,7 +1,6 @@
 import pandas as pd
 import xml.etree.ElementTree as ET
 import re
-
 from Location_Finder import LocationFinder
 
 # Leer el archivo XML
@@ -71,8 +70,7 @@ def clean_coordinates(value):
 # Extraer información de cada elemento del XML
 for monumento in root.findall('.//monumento'):
     nomMonumento = monumento.find('nombre').text if monumento.find('nombre') is not None else pd.NA
-    tipoMonumento_raw = monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA
-    tipoMonumento = get_tipo_monumento(tipoMonumento_raw) if pd.notna(tipoMonumento_raw) else "Otros"
+    tipoMonumento = monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA
     
     # Obtener dirección de la calle
     direccion = monumento.find('calle').text if monumento.find('calle') is not None else pd.NA
@@ -123,6 +121,9 @@ for monumento in root.findall('.//monumento'):
 # Crear un DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
 
+# Eliminar monumentos duplicados por el nombre 'nomMonumento'
+df_result_unique = df_result.drop_duplicates(subset='nomMonumento', keep='first')
+
 # Separar los datos en dos DataFrames
 df_con_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
                             for i in range(len(data['nomMonumento'])) 
@@ -136,7 +137,7 @@ df_sin_coords = pd.DataFrame([{k: v[i] for k, v in data.items()}
 print(f"Monumentos con coordenadas: {len(df_con_coords)}")
 print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
-# Guardar los datos en formato JSON
+# Guardar los datos en formato JSON sin duplicados
 df_con_coords.to_json(
     'Resultados/XMLtoJSON_con_coords.json',
     orient='records',
@@ -144,6 +145,7 @@ df_con_coords.to_json(
     indent=4,
     default_handler=str
 )
+
 if len(df_sin_coords) > 0:
     df_sin_coords.to_json(
         'Resultados/XMLtoJSON_sin_coords.json',
