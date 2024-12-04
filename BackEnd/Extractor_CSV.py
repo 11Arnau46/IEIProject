@@ -5,7 +5,7 @@ import json
 from Location_Finder import LocationFinder
 
 # Leer el archivo CSV
-csv_path = 'Fuentes_de_datos/Demo/vcl.csv'
+csv_path = '../Fuentes_de_datos/Demo/vcl.csv'
 df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
 
 # Diccionario para almacenar los datos extraídos
