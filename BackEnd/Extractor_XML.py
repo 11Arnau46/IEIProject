@@ -5,7 +5,7 @@ import re
 from Location_Finder import LocationFinder
 
 # Leer el archivo XML
-xml_path = '../Fuentes_de_datos/Demo/cle.xml'
+xml_path = 'Fuentes_de_datos/Demo/cle.xml'
 tree = ET.parse(xml_path)
 root = tree.getroot()
 
@@ -138,7 +138,7 @@ print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON
 df_con_coords.to_json(
-    '../Resultados/XMLtoJSON_con_coords.json',
+    'Resultados/XMLtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
@@ -146,7 +146,7 @@ df_con_coords.to_json(
 )
 if len(df_sin_coords) > 0:
     df_sin_coords.to_json(
-        '../Resultados/XMLtoJSON_sin_coords.json',
+        'Resultados/XMLtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
         indent=4,
@@ -154,7 +154,7 @@ if len(df_sin_coords) > 0:
     )
 
 #todo: Utilizar archivo con coords
-json_path = '../Resultados/XMLtoJSON_Corregido.json'
+json_path = 'Resultados/XMLtoJSON_con_coords.json'
 location_finder = LocationFinder(json_path)
 # Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
 results = location_finder.process_json()

@@ -20,7 +20,7 @@ def clean_coordinates(value):
     return value
 
 # Ruta al archivo JSON
-json_path = '../Fuentes_de_datos/Demo/eus.json'
+json_path = 'Fuentes_de_datos/Demo/eus.json'
 
 # Cargar los datos preservando los campos duplicados
 json_data = parse_json_with_duplicates(json_path)
@@ -147,7 +147,7 @@ print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON
 df_con_coords.to_json(
-    '../Resultados/JSONtoJSON_con_coords.json',
+    'Resultados/JSONtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
@@ -155,7 +155,7 @@ df_con_coords.to_json(
 )
 if len(df_sin_coords) > 0:
     df_sin_coords.to_json(
-        '../Resultados/JSONtoJSON_sin_coords.json',
+        'Resultados/JSONtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
         indent=4,
@@ -163,7 +163,7 @@ if len(df_sin_coords) > 0:
     )
 
 
-json_path = '../Resultados/JSONtoJSON_Corregido.json'
+json_path = 'Resultados/JSONtoJSON_con_coords.json'
 location_finder = LocationFinder(json_path)
 # Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
 results = location_finder.process_json()
