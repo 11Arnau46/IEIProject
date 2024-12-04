@@ -1,7 +1,7 @@
 [
     {
         "nomMonumento": "Risco La Zorrera",
-        "tipoMonumento": "Yacimientos arqueológicos",
+        "tipoMonumento": "YacimientoArquelogico",
         "direccion": "Calle de los Jazmines, 05489 Candeleda, Spain",
         "codigo_postal": "05489",
         "longitud": "-5.339664",
@@ -14,7 +14,7 @@
     },
     {
         "nomMonumento": "Ruinas Romanas de San Julián de Valmuza",
-        "tipoMonumento": "Yacimientos arqueológicos",
+        "tipoMonumento": "YacimientoArquelogico",
         "direccion": "Villa romana de San Julián de la Valmuza, Avenida de Muñovela, 37440 Doñinos de Salamanca, Spain",
         "codigo_postal": "37440",
         "longitud": "-5.7787342",
@@ -27,7 +27,7 @@
     },
     {
         "nomMonumento": "Monasterio de Santa María",
-        "tipoMonumento": "Monasterios",
+        "tipoMonumento": "MonasterioConvento",
         "direccion": "San Bernardo, SG-V-2429, 40237 Sacramenia, Spain",
         "codigo_postal": "40237",
         "longitud": "-3.924441",
@@ -40,7 +40,7 @@
     },
     {
         "nomMonumento": "Castillo de Íscar",
-        "tipoMonumento": "Castillos",
+        "tipoMonumento": "CastilloFortalezaTorre",
         "direccion": "Castillo de Íscar, Calle Hornillos, 47420 Íscar, Spain",
         "codigo_postal": "47420",
         "longitud": "-4.537389",
@@ -53,7 +53,7 @@
     },
     {
         "nomMonumento": "Iglesia de San Juan",
-        "tipoMonumento": "Iglesias y Ermitas",
+        "tipoMonumento": "IglesiaErmita",
         "direccion": "Iglesia de San Juan, Calle Padre Belda, 37800 Alba de Tormes, Spain",
         "codigo_postal": "37800",
         "longitud": "-5.514936",
@@ -66,7 +66,7 @@
     },
     {
         "nomMonumento": "Iglesia parroquial de Valdesaz",
-        "tipoMonumento": "Iglesias y Ermitas",
+        "tipoMonumento": "IglesiaErmita",
         "direccion": "Iglesia de la Asunción, Calle Real, 24209 Pajares de los Oteros, Spain",
         "codigo_postal": "24209",
         "longitud": "-5.42709",
@@ -79,7 +79,7 @@
     },
     {
         "nomMonumento": "Iglesia de San Miguel",
-        "tipoMonumento": "Iglesias y Ermitas",
+        "tipoMonumento": "IglesiaErmita",
         "direccion": "Grupo Scout San Miguel 337, Plaza de San Miguel, 4, 34005 Palencia, Spain",
         "codigo_postal": "34005",
         "longitud": "-4.534237",
@@ -92,7 +92,7 @@
     },
     {
         "nomMonumento": "Casa Miranda y Casa de Íñigo Angulo",
-        "tipoMonumento": "Palacios",
+        "tipoMonumento": "EdificioPalacio",
         "direccion": "Burgos Museum, Calle Miranda, 13, 09003 Burgos, Spain",
         "codigo_postal": "09003",
         "longitud": "-3.700035",
@@ -105,7 +105,7 @@
     },
     {
         "nomMonumento": "Casa Blanca",
-        "tipoMonumento": "Palacios",
+        "tipoMonumento": "EdificioPalacio",
         "direccion": "La Casa Blanca, CL-602, 47400 Medina del Campo, Spain",
         "codigo_postal": "47400",
         "longitud": "-4.938024",
@@ -118,7 +118,7 @@
     },
     {
         "nomMonumento": "Puente de Piedra de Zamora",
-        "tipoMonumento": "Puentes",
+        "tipoMonumento": "Puente",
         "direccion": "Puente Romano, Puente de Piedra, 49001 Zamora, Spain",
         "codigo_postal": "49001",
         "longitud": "-5.748118",
@@ -131,7 +131,7 @@
     },
     {
         "nomMonumento": "Acueducto de Segovia",
-        "tipoMonumento": "Puentes",
+        "tipoMonumento": "Puente",
         "direccion": "Calle de Fernán García, 40001 Segovia, Spain",
         "codigo_postal": "40001",
         "longitud": "-4.117791",
@@ -143,21 +143,8 @@
         "nomProvincia": "Segovia"
     },
     {
-        "nomMonumento": "Castillo de Íscar",
-        "tipoMonumento": "Castillos",
-        "direccion": "Castillo de Íscar, Calle Hornillos, 47420 Íscar, Spain",
-        "codigo_postal": "47420",
-        "longitud": "-4.537389",
-        "latitud": "41.365112",
-        "descripcion": "La parte más antigua que se conserva se corresponde con la traza y restos de muro que se adaptan al perímetro del cerro. Hacia el frente, que comunica este cerro con el páramo, se dispuso un foso y una torre, núcleo de la construcción actual. En el siglo XV se procedió al refuerzo de la torre, añadiéndose posteriomente distintos cuerpos alrededor de ésta.Durante tiempos sufrió graves problemas de cimentación. Pedro de Zúñiga, segundo conde de Miranda del Castañar, es el promotor de las principales obras del castillo, colocando sus armas, Zúñiga y Avellaneda, y las de su mujer Catalina de Velasco y Mendoza.Existe una anécdota sobre el castillo, la que cuenta cómo Alfonso XI acabó con la vida de un escudero del alcalde, Juan Martínez de Leyre, por negarse, desde lo alto de la torre, a darle albergue cuando cazaba por los alrededores.",
-        "codLocalidad": null,
-        "nomLocalidad": "Íscar",
-        "codProvincia": null,
-        "nomProvincia": "Valladolid"
-    },
-    {
         "nomMonumento": "Midrash del corral de Cayón",
-        "tipoMonumento": "Otros edificios",
+        "tipoMonumento": "EdificioPalacio",
         "direccion": "Plaza de la Merced, 1, 40001 Segovia, Spain",
         "codigo_postal": "40001",
         "longitud": "-4.126926",
@@ -170,7 +157,7 @@
     },
     {
         "nomMonumento": "Cloacas Romanas",
-        "tipoMonumento": "Otros edificios",
+        "tipoMonumento": "EdificioPalacio",
         "direccion": "Calle del Jardín, 24700 Astorga, Spain",
         "codigo_postal": "24700",
         "longitud": "-6.052759",

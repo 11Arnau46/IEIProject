@@ -108,17 +108,12 @@ for monumento in root.findall('.//monumento'):
 # Crear un DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
 
-# Eliminar monumentos duplicados por el nombre 'nomMonumento'
+# Eliminar monumentos duplicados por el nombre 'nomMonumento' antes de continuar
 df_result_unique = df_result.drop_duplicates(subset='nomMonumento', keep='first')
 
-# Separar los datos en dos DataFrames
-df_con_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
-                            for i in range(len(data['nomMonumento'])) 
-                            if pd.notna(data['longitud'][i]) and pd.notna(data['latitud'][i])])
-
-df_sin_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
-                            for i in range(len(data['nomMonumento'])) 
-                            if pd.isna(data['longitud'][i]) or pd.isna(data['latitud'][i])])
+# Separar los datos en dos DataFrames (con y sin coordenadas)
+df_con_coords = df_result_unique.dropna(subset=['longitud', 'latitud'])
+df_sin_coords = df_result_unique[df_result_unique['longitud'].isna() | df_result_unique['latitud'].isna()]
 
 # Mostrar información sobre los datos separados
 print(f"Monumentos con coordenadas: {len(df_con_coords)}")
