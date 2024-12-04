@@ -14,11 +14,11 @@ Base = declarative_base()
 
 # Enum para el tipo de monumento con valores personalizados
 class TipoMonumento(PyEnum):
-    YacimientoArqueologico = "YacimientoArquelogico"
+    YacimientoArquelogico = "YacimientoArquelogico"
     IglesiaErmita = "IglesiaErmita"
     MonasterioConvento = "MonasterioConvento"
     CastilloFortalezaTorre = "CastilloFortalezaTorre"
-    EdificioSingular = "EdificioPalacio"
+    EdificioPalacio = "EdificioPalacio"
     Puente = "Puente"
     Otros = "Otros"
 
