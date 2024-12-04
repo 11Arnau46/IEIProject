@@ -34,8 +34,9 @@ def get_tipo_monumento(denominacion):
                           "Iglesia", "Ermita", "Catedral", "Basílica"],
         "CastilloFortalezaTorre": ["castillo", "torre", "fuerte",
                                 "Castillo", "Torre", "Fuerte", "fortaleza", "Fortaleza"],
-        "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio", "jardín", "Jardín"],
+        "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio", "jardín", "Jardín", "Casas Nobles", "casas nobles", "Paraje", "paraje", "plazas", "Plazas"],
         "Puente": ["puente", "Puente"]
+        
     }
     
     for tipo, keywords in palabras_clave.items():
