@@ -1,0 +1,10 @@
+execute_xml.yml
+---
+post:
+  summary: Execute XML extraction
+  description: Endpoint to execute XML extraction
+  responses:
+    200:
+      description: Extraction successful
+    500:
+      description: Internal server error

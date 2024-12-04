@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import json
 import re
@@ -6,6 +8,19 @@ from Location_Finder import LocationFinder
 
 # Función para parsear y preservar todas las claves, incluyendo duplicados
 def parse_json_with_duplicates(file_path):
+    # Change the current working directory
+    os.chdir('/Users/arnau1146/IdeaProjects/IEIProject/BackEnd')
+
+    # Print the current working directory for debugging purposes
+    print("Current working directory:", os.getcwd())
+
+    # Remove '/BackEnd/API' from the file_path if it exists
+    file_path = file_path.replace('/BackEnd/API', '')
+
+    # Print the full path to the file for debugging purposes
+    full_path = os.path.join(os.getcwd(), file_path)
+    print("Full path to the file:", full_path)
+
     with open(file_path, 'r', encoding='utf-8') as file:
         # Utilizamos object_pairs_hook para conservar el orden y los duplicados
         data = json.load(file, object_pairs_hook=lambda pairs: pairs)
@@ -19,7 +34,7 @@ def clean_coordinates(value):
     return value
 
 # Ruta al archivo JSON
-json_path = 'Fuentes_de_datos/Demo/eus.json'
+json_path = '../Fuentes_de_datos/Demo/eus.json'
 
 # Cargar los datos preservando los campos duplicados
 json_data = parse_json_with_duplicates(json_path)
@@ -174,7 +189,7 @@ print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON
 df_con_coords.to_json(
-    'Resultados/JSONtoJSON_con_coords.json',
+    '../Resultados/JSONtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
@@ -182,7 +197,7 @@ df_con_coords.to_json(
 )
 if len(df_sin_coords) > 0:
     df_sin_coords.to_json(
-        'Resultados/JSONtoJSON_sin_coords.json',
+        '../Resultados/JSONtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
         indent=4,
@@ -190,7 +205,7 @@ if len(df_sin_coords) > 0:
     )
 
 
-json_path = 'Resultados/JSONtoJSON_con_coords.json'
+json_path = '../Resultados/JSONtoJSON_con_coords.json'
 location_finder = LocationFinder(json_path)
 # Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
 results = location_finder.process_json()

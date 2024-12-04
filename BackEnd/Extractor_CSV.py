@@ -1,7 +1,12 @@
+import os
+
 import pandas as pd
 import Coords_converter
 import json
 from Location_Finder import LocationFinder
+
+# Directorio actual
+print("Current working directory:", os.getcwd())
 
 # Leer el archivo CSV
 csv_path = 'Fuentes_de_datos/Demo/vcl.csv'

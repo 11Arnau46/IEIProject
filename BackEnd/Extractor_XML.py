@@ -1,10 +1,28 @@
+import os
+
 import pandas as pd
 import xml.etree.ElementTree as ET
 import re
 from Location_Finder import LocationFinder
 
+
+
 # Leer el archivo XML
-xml_path = 'Fuentes_de_datos/Demo/cle.xml'
+xml_path = '../Fuentes_de_datos/Demo/cle.xml'
+
+# Change the current working directory
+os.chdir('/Users/arnau1146/IdeaProjects/IEIProject/BackEnd')
+
+# Print the current working directory for debugging purposes
+print("Current working directory:", os.getcwd())
+
+# Remove '/BackEnd/API' from the file_path if it exists
+file_path = xml_path.replace('/BackEnd/API', '')
+
+# Print the full path to the file for debugging purposes
+full_path = os.path.join(os.getcwd(), file_path)
+print("Full path to the file:", full_path)
+
 tree = ET.parse(xml_path)
 root = tree.getroot()
 
@@ -121,7 +139,7 @@ print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON sin duplicados
 df_con_coords.to_json(
-    'Resultados/XMLtoJSON_con_coords.json',
+    '../Resultados/XMLtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
@@ -130,7 +148,7 @@ df_con_coords.to_json(
 
 if len(df_sin_coords) > 0:
     df_sin_coords.to_json(
-        'Resultados/XMLtoJSON_sin_coords.json',
+        '../Resultados/XMLtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
         indent=4,
@@ -138,7 +156,7 @@ if len(df_sin_coords) > 0:
     )
 
 # Procesar el archivo con coordenadas
-json_path = 'Resultados/XMLtoJSON_con_coords.json'
+json_path = '../Resultados/XMLtoJSON_con_coords.json'
 location_finder = LocationFinder(json_path)
 results = location_finder.process_json()
 location_finder.save_results_to_json(results)
