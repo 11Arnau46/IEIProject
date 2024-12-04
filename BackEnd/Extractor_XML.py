@@ -27,12 +27,15 @@ data = {
 def get_tipo_monumento(denominacion):
     denominacion = denominacion.lower()
     palabras_clave = {
-        "YacimientoArquelogico": ["yacimiento"],
-        "MonasterioConvento": ["monasterio", "convento"],
-        "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica"],
-        "CastilloFortalezaTorre": ["castillo", "fortaleza", "torre"],
-        "EdificioPalacio": ["jardín", "palacio"],
-        "Puente": ["puente"]
+        "YacimientoArquelogico": ["yacimiento", "Yacimiento", "yacimiento arqueológico", "Yacimiento Arqueológico"],
+        "MonasterioConvento": ["monasterio", "convento", "Monasterio", "Convento"],
+        "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica", 
+                          "Iglesia", "Ermita", "Catedral", "Basílica"],
+        "CastilloFortalezaTorre": ["castillo", "torre", "fuerte",
+                                "Castillo", "Torre", "Fuerte", "fortaleza", "Fortaleza"],
+        "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio", "jardín", "Jardín", "Casas Nobles", "casas nobles", "Paraje", "paraje", "plazas", "Plazas"],
+        "Puente": ["puente", "Puente"]
+        
     }
     
     for tipo, keywords in palabras_clave.items():
@@ -136,7 +139,7 @@ print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON sin duplicados
 df_con_coords.to_json(
-    '../Resultados/XMLtoJSON_con_coords.json',
+    'Resultados/XMLtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
@@ -145,15 +148,15 @@ df_con_coords.to_json(
 
 if len(df_sin_coords) > 0:
     df_sin_coords.to_json(
-        '../Resultados/XMLtoJSON_sin_coords.json',
+        'Resultados/XMLtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
         indent=4,
         default_handler=str
     )
 
-
-json_path = '../Resultados/XMLtoJSON_Corregido.json'
+#todo: Utilizar archivo con coords
+json_path = 'Resultados/XMLtoJSON_con_coords.json'
 location_finder = LocationFinder(json_path)
 # Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
 results = location_finder.process_json()

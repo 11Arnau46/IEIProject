@@ -19,7 +19,7 @@ def clean_coordinates(value):
     return value
 
 # Ruta al archivo JSON
-json_path = '../Fuentes_de_datos/Demo/eus.json'
+json_path = 'Fuentes_de_datos/Demo/eus.json'
 
 # Cargar los datos preservando los campos duplicados
 json_data = parse_json_with_duplicates(json_path)
@@ -49,13 +49,13 @@ def get_tipo_monumento(denominacion):
         
     denominacion_lower = denominacion.lower()
     palabras_clave = {
-        "YacimientoArqueologico": ["yacimiento arqueológico", "Yacimiento Arqueológico"],
+        "YacimientoArqueologico": ["yacimiento", "Yacimiento", "yacimiento arqueológico", "Yacimiento Arqueológico"],
         "MonasterioConvento": ["monasterio", "convento", "Monasterio", "Convento"],
         "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica", 
                           "Iglesia", "Ermita", "Catedral", "Basílica"],
-        "CastilloTorreFuerte": ["castillo", "torre", "fuerte",
-                                "Castillo", "Torre", "Fuerte"],
-        "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio"],
+        "CastilloFortalezaTorre": ["castillo", "torre", "fuerte",
+                                "Castillo", "Torre", "Fuerte", "fortaleza", "Fortaleza"],
+        "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio", "jardín", "Jardín", "Casas Nobles", "casas nobles", "Paraje", "paraje", "plazas", "Plazas"],
         "Puente": ["puente", "Puente"],
         "Otros": ["santuario", "teatro", "plaza", "paseo", "casco", 
                   "villa", "ferrería", "mercado", "fábrica",
@@ -157,7 +157,7 @@ print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
 
 # Guardar los datos en formato JSON
 df_con_coords.to_json(
-    '../Resultados/JSONtoJSON_con_coords.json',
+    'Resultados/JSONtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
@@ -165,7 +165,7 @@ df_con_coords.to_json(
 )
 if len(df_sin_coords) > 0:
     df_sin_coords.to_json(
-        '../Resultados/JSONtoJSON_sin_coords.json',
+        'Resultados/JSONtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
         indent=4,
@@ -173,7 +173,7 @@ if len(df_sin_coords) > 0:
     )
 
 
-json_path = '../Resultados/JSONtoJSON_Corregido.json'
+json_path = 'Resultados/JSONtoJSON_con_coords.json'
 location_finder = LocationFinder(json_path)
 # Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
 results = location_finder.process_json()
