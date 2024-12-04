@@ -25,53 +25,42 @@ data = {
 
 # Función para clasificar el tipo de monumento
 def get_tipo_monumento(denominacion):
-    denominacion = denominacion.lower()
+    denominacion = denominacion.lower()  # Convertir todo a minúsculas para evitar problemas de mayúsculas/minúsculas
     palabras_clave = {
-        "YacimientoArquelogico": ["yacimiento", "Yacimiento", "yacimiento arqueológico", "Yacimiento Arqueológico"],
-        "MonasterioConvento": ["monasterio", "convento", "Monasterio", "Convento"],
-        "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica", 
-                          "Iglesia", "Ermita", "Catedral", "Basílica"],
-        "CastilloFortalezaTorre": ["castillo", "torre", "fuerte",
-                                "Castillo", "Torre", "Fuerte", "fortaleza", "Fortaleza"],
-        "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio", "jardín", "Jardín", "Casas Nobles", "casas nobles", "Paraje", "paraje", "plazas", "Plazas"],
-        "Puente": ["puente", "Puente"]
-        
+        "YacimientoArquelogico": ["yacimiento", "yacimiento arqueológico"],
+        "MonasterioConvento": ["monasterio", "convento"],
+        "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica"],
+        "CastilloFortalezaTorre": ["castillo", "torre", "fuerte", "fortaleza"],
+        "EdificioPalacio": ["edificio", "palacio", "jardín", "casas nobles", "paraje", "plazas"],
+        "Puente": ["puente"]
     }
     
     for tipo, keywords in palabras_clave.items():
         if any(keyword in denominacion for keyword in keywords):
             return tipo
-    return "Otros"
+    return "Otros"  # Si no se encuentra ninguna coincidencia, devolver "Otros"
 
 # Función para limpiar texto HTML
 def clean_html_text(text):
     if pd.isna(text):
         return text
-    # Eliminar todas las etiquetas HTML
-    clean_text = re.sub(r'<[^>]+>', '', text)
-    # Reemplazar caracteres especiales HTML
-    clean_text = clean_text.replace('&oacute;', 'ó')
-    clean_text = clean_text.replace('&aacute;', 'á')
-    clean_text = clean_text.replace('&eacute;', 'é')
-    clean_text = clean_text.replace('&iacute;', 'í')
-    clean_text = clean_text.replace('&uacute;', 'ú')
-    clean_text = clean_text.replace('&ntilde;', 'ñ')
-    # Eliminar espacios extra y saltos de línea
-    clean_text = ' '.join(clean_text.split())
+    clean_text = re.sub(r'<[^>]+>', '', text)  # Eliminar etiquetas HTML
+    clean_text = clean_text.replace('&oacute;', 'ó').replace('&aacute;', 'á').replace('&eacute;', 'é').replace('&iacute;', 'í').replace('&uacute;', 'ú').replace('&ntilde;', 'ñ')  # Reemplazar caracteres especiales
+    clean_text = ' '.join(clean_text.split())  # Eliminar espacios extra
     return clean_text
 
 # Función para limpiar coordenadas
 def clean_coordinates(value):
     if value is not None:
-        # Mantener solo números, puntos y guiones
-        return re.sub(r'[^0-9\.\-]', '', value)
+        return re.sub(r'[^0-9\.\-]', '', value)  # Mantener solo números, puntos y guiones
     return value
 
 # Extraer información de cada elemento del XML
 for monumento in root.findall('.//monumento'):
     nomMonumento = monumento.find('nombre').text if monumento.find('nombre') is not None else pd.NA
     tipoMonumento = monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA
-    
+    tipoMonumento = get_tipo_monumento(tipoMonumento)  # Clasificar el tipo de monumento
+
     # Obtener dirección de la calle
     direccion = monumento.find('calle').text if monumento.find('calle') is not None else pd.NA
     codigo_postal = monumento.find('codigoPostal').text if monumento.find('codigoPostal') is not None else pd.NA
@@ -81,8 +70,6 @@ for monumento in root.findall('.//monumento'):
     if coordenadas is not None:
         longitud = coordenadas.find('longitud').text if coordenadas.find('longitud') is not None else pd.NA
         latitud = coordenadas.find('latitud').text if coordenadas.find('latitud') is not None else pd.NA
-        
-        # Limpiar las coordenadas
         longitud = clean_coordinates(longitud)
         latitud = clean_coordinates(latitud)
     else:
@@ -155,10 +142,9 @@ if len(df_sin_coords) > 0:
         default_handler=str
     )
 
-#todo: Utilizar archivo con coords
+# Procesar el archivo con coordenadas
 json_path = 'Resultados/XMLtoJSON_con_coords.json'
 location_finder = LocationFinder(json_path)
-# Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
 results = location_finder.process_json()
 location_finder.save_results_to_json(results)
 print(f"Archivo final guardado en {json_path}.")
