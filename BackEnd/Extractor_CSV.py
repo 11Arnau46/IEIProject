@@ -1,7 +1,6 @@
 import pandas as pd
 import Coords_converter
 import json
-
 from Location_Finder import LocationFinder
 
 # Leer el archivo CSV
@@ -23,6 +22,9 @@ data = {
     'nomProvincia': []
 }
 
+# Conjunto para realizar un seguimiento de los monumentos ya procesados
+seen_monuments = set()
+
 # Función para clasificar el tipo de monumento basado en la denominación
 def get_tipo_monumento(denominacion):
     denominacion = denominacion.lower()
@@ -43,20 +45,22 @@ def get_tipo_monumento(denominacion):
 # Extraer información de cada fila del CSV
 for _, row in df.iterrows():
     nomMonumento = row['DENOMINACION']
+    
+    # Verificar si el monumento ya ha sido procesado
+    if nomMonumento in seen_monuments:
+        continue  # Si ya se procesó, omitir este monumento
+    
     tipoMonumento = get_tipo_monumento(nomMonumento)
 
-    # Hay que extraerlo de la web
+    # Extraer los demás datos
     direccion = pd.NA 
     codigo_postal = pd.NA
-    
-    # Hay que tranformar
     latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA 
     longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
-    
     descripcion = row['CLASIFICACION']
-    codLocalidad = pd.NA # Hay que generarlo
+    codLocalidad = pd.NA 
     nomLocalidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
-    codProvincia = pd.NA # Hay que generarlo
+    codProvincia = pd.NA 
     nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
 
     # Añadir los datos al diccionario
@@ -71,6 +75,9 @@ for _, row in df.iterrows():
     data['nomLocalidad'].append(nomLocalidad)
     data['codProvincia'].append(codProvincia)
     data['nomProvincia'].append(nomProvincia)
+
+    # Agregar el nombre del monumento al conjunto de monumentos procesados
+    seen_monuments.add(nomMonumento)
 
 # Separar los datos en dos DataFrames
 df_con_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
