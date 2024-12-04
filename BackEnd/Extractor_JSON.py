@@ -66,7 +66,7 @@ def get_tipo_monumento(denominacion):
     for tipo, keywords in palabras_clave.items():
         if any(keyword in denominacion for keyword in keywords):
             return tipo
-    return "Otros monumentos"
+    return "Otros"
 
 def limpiar_campo_duplicado(valor):
     if not isinstance(valor, str):
@@ -78,6 +78,19 @@ def limpiar_campo_duplicado(valor):
         if parte not in partes_unicas:
             partes_unicas.append(parte)
     return ' '.join(partes_unicas)
+
+# Función para validar si las coordenadas están dentro de los límites de WGS84
+def validar_coordenadas(latitud, longitud):
+    try:
+        latitud = float(latitud)
+        longitud = float(longitud)
+        # Verificar que la latitud esté entre -90 y 90 y que la longitud esté entre -180 y 180
+        if -90 <= latitud <= 90 and -180 <= longitud <= 180:
+            return True
+        else:
+            return False
+    except ValueError:
+        return False  # Si no se puede convertir a float, la coordenada es inválida
 
 # Extraer información de cada elemento del JSON
 for monumento in json_data:
@@ -114,6 +127,10 @@ for monumento in json_data:
     else:
         latitud = clean_coordinates(monumento_dict.get('latwgs84', pd.NA))
         longitud = clean_coordinates(monumento_dict.get('lonwgs84', pd.NA))
+    
+    # Filtrar monumentos con coordenadas fuera de los límites de WGS84
+    if not validar_coordenadas(latitud, longitud):
+        continue  # Si las coordenadas no son válidas, omitir el monumento
     
     descripcion = monumento_dict.get('documentDescription', pd.NA)
     
