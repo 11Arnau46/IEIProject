@@ -4,7 +4,7 @@ import re
 from Location_Finder import LocationFinder
 
 # Leer el archivo XML
-xml_path = '../Fuentes_de_datos/Demo/cle.xml'
+xml_path = 'Fuentes_de_datos/Demo/cle.xml'
 tree = ET.parse(xml_path)
 root = tree.getroot()
 
