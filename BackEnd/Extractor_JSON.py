@@ -20,7 +20,7 @@ def clean_coordinates(value):
     return value
 
 # Ruta al archivo JSON
-json_path = '../Fuentes_de_datos/Demo/eus.json'
+json_path = 'Fuentes_de_datos/Demo/eus.json'
 
 # Cargar los datos preservando los campos duplicados
 json_data = parse_json_with_duplicates(json_path)
