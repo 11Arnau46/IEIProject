@@ -18,7 +18,7 @@ def main():
 
     try:
         # Cargar datos desde el archivo JSON
-        cargar_datos(session, "Resultados/CSVtoJSON_Corregido.json")
+        cargar_datos(session, "Resultados/JSONtoJSON_Corregido.json")
         print("Datos cargados exitosamente en la base de datos.")
     except Exception as e:
         print(f"Error al cargar datos: {e}")

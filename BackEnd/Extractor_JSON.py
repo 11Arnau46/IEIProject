@@ -51,7 +51,7 @@ def get_tipo_monumento(denominacion):
         "MonasterioConvento": ["monasterio", "convento", "Monasterio", "Convento"],
         "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica", 
                           "Iglesia", "Ermita", "Catedral", "Basílica"],
-        "CastilloTorreFuerte": ["castillo", "torre", "fuerte",
+        "CastilloFortalezaTorre": ["castillo", "torre", "fuerte",
                                 "Castillo", "Torre", "Fuerte"],
         "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio"],
         "Puente": ["puente", "Puente"],
