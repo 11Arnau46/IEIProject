@@ -84,7 +84,7 @@ for monumento in json_data:
 df_result = pd.DataFrame(data)
 
 # Aplica los filtros al DataFrame
-df_result = aplicar_filtros_estandar(df_result)
+df_result = aplicar_correcciones(df_result)
 
 # Guardar el resultado en un archivo JSON
 process_and_save_json('../Resultados/JSONtoJSON_con_coords.json')

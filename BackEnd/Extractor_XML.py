@@ -78,7 +78,7 @@ for monumento in root.findall('.//monumento'):
 df_result = pd.DataFrame(data)
 
 # Aplicar filtros estandarizados al DataFrame
-df_result = aplicar_filtros_estandar(df_result)
+df_result = aplicar_correcciones(df_result)
 
 # Dividir los datos en aquellos con coordenadas y sin coordenadas
 df_con_coords, df_sin_coords = procesar_datos(df_result)

@@ -7,7 +7,7 @@ def process_and_save_json(json_path):
     location_finder.save_results_to_json(results)
     print(f"Archivo final guardado en {json_path}.")
 
-def aplicar_filtros_estandar(df):
+def aplicar_correcciones(df):
     """
     Aplica los filtros estandarizados a las columnas específicas de un DataFrame.
     
