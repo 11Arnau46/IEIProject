@@ -3,7 +3,6 @@ import pandas as pd
 import Coords_converter
 import json
 from config.paths import INPUT_CSV_PATH
-from Location_Finder import LocationFinder
 from utils.filtros import get_tipo_monumento, is_duplicate_monument, filtrar_por_coordenadas, procesar_datos
 from utils.Otros import *
 from utils.Conversores import convertir_coordenadas_utm
@@ -25,9 +24,7 @@ def extraer_datos_csv(row, seen_monuments):
     codProvincia = pd.NA
     nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
 
-    # Validar utilizando la función de filtros
-    if not aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad, seen_monuments):
-        return None  # Si no pasa las validaciones, omitimos el monumento
+    return None  # Si no pasa las validaciones, omitimos el monumento
 
 
     # Agregar a 'seen_monuments'
@@ -58,7 +55,7 @@ seen_monuments = set()
 # Extraer información de cada fila del CSV
 for monumento in df.iterrows():
     extracted_data = extraer_datos_csv(monumento, seen_monuments)
-    if extracted_data:
+    if extracted_data is not None:  # Solo agregar si los datos no son None
         for key, value in extracted_data.items():
             data[key].append(value)
 

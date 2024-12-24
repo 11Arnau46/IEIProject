@@ -2,19 +2,33 @@ import sys
 import subprocess
 from SQL.BDConnection import BDConnection
 from SQL.Json_Loader import cargar_datos
+import os
 
+# Función para ejecutar el extractor y generar el archivo correspondiente
 def ejecutar_extractor(tipo):
+    # Definir la ruta del archivo corregido según el tipo
     if tipo == "csv":
+        # Ejecutar el script para CSV
         subprocess.run(["python3", "BackEnd/Extractor_CSV.py"])
-        return "Resultados/CSVtoJSON_Corregido.json"
+        json_path = "Resultados/CSVtoJSON_Corregido.json"
     elif tipo == "json":
+        # Ejecutar el script para JSON
         subprocess.run(["python3", "BackEnd/Extractor_JSON.py"])
-        return "Resultados/JSONtoJSON_con_coords.json"
+        json_path = "Resultados/JSONtoJSON_con_coords.json"
     elif tipo == "xml":
+        # Ejecutar el script para XML
         subprocess.run(["python3", "BackEnd/Extractor_XML.py"])
-        return "Resultados/XMLtoJSON_con_coords.json"
+        json_path = "Resultados/XMLtoJSON_con_coords.json"
     else:
         raise ValueError("Tipo de extractor no válido. Use 'csv', 'json' o 'xml'.")
+    
+    # Comprobar si el archivo ya existe y si es necesario sobreescribir
+    if os.path.exists(json_path):
+        print(f"El archivo {json_path} ya existe, se sobrescribirá.")
+    else:
+        print(f"El archivo {json_path} no existe, se creará uno nuevo.")
+
+    return json_path
 
 def main():
     if len(sys.argv) != 2:
