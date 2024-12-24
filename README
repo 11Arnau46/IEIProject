@@ -1,0 +1,7 @@
+Para ejecutar Server de APIS SWAGGER:
+
+    1. Instala las dependencias si no las tienes ya:
+    pip install flask flasgger flask-restful
+
+    2. Ejecuta la aplicación con:
+    python Flask.py
