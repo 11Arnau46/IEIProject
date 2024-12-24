@@ -5,7 +5,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import re
 from Location_Finder import LocationFinder
-from utils.filtros import get_tipo_monumento, clean_coordinates, clean_html_text
+from utils.filtros import get_tipo_monumento, clean_coordinates, clean_html_text, procesar_datos
 
 # Función para extraer los datos del XML
 def extraer_datos_xml(monumento):

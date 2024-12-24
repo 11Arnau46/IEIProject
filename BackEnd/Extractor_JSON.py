@@ -5,7 +5,7 @@ import pandas as pd
 import json
 import re
 from Location_Finder import LocationFinder
-from utils.filtros import clean_coordinates, limpiar_campo_duplicado, validar_coordenadas, get_tipo_monumento, is_duplicate_monument
+from utils.filtros import clean_coordinates, limpiar_campo_duplicado, validar_coordenadas, get_tipo_monumento, is_duplicate_monument, procesar_datos
 
 # Función para cargar el archivo JSON y preservar claves duplicadas
 def parse_json_with_duplicates(file_path):
@@ -68,20 +68,9 @@ def extraer_datos_monumento(monumento):
 
 # Función para procesar y almacenar los datos del archivo JSON
 def procesar_datos_json(json_data):
-    data = {
-        'nomMonumento': [],
-        'tipoMonumento': [],
-        'direccion': [],
-        'codigo_postal': [],
-        'latitud': [],
-        'longitud': [],
-        'descripcion': [],
-        'codLocalidad': [],
-        'nomLocalidad': [],
-        'codProvincia': [],
-        'nomProvincia': []
-    }
-    
+
+# Diccionario para almacenar los datos extraídos
+data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_postal': [], 'longitud': [], 'latitud': [], 'descripcion': [], 'codLocalidad': [], 'nomLocalidad': [], 'codProvincia': [], 'nomProvincia': [] }
     seen_monuments = set()
 
     for monumento in json_data:

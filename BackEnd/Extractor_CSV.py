@@ -5,7 +5,7 @@ import pandas as pd
 import Coords_converter
 import json
 from Location_Finder import LocationFinder
-from utils.filtros import get_tipo_monumento, clean_coordinates, is_duplicate_monument, filtrar_por_coordenadas
+from utils.filtros import get_tipo_monumento, clean_coordinates, is_duplicate_monument, filtrar_por_coordenadas, procesar_datos
 
 # Directorio actual
 print("Current working directory:", os.getcwd())
