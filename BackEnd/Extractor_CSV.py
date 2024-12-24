@@ -5,7 +5,7 @@ import json
 from config.paths import INPUT_CSV_PATH
 from Location_Finder import LocationFinder
 from utils.filtros import get_tipo_monumento, is_duplicate_monument, filtrar_por_coordenadas, procesar_datos
-from utils.Otros import process_and_save_json, aplicar_filtros_estandar
+from utils.Otros import *
 from utils.Conversores import convertir_coordenadas_utm
 
 # Directorio actual
@@ -14,24 +14,21 @@ print("Current working directory:", os.getcwd())
 # Función para extraer los datos del CSV
 def extraer_datos_csv(row, seen_monuments):
     nomMonumento = row['DENOMINACION']
-    if is_duplicate_monument(nomMonumento, seen_monuments):
-        return None
-
     tipoMonumento = get_tipo_monumento(nomMonumento)
     direccion = pd.NA
     codigo_postal = pd.NA
     latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA
     longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
-
-    # Validar coordenadas
-    if not validar_coordenadas(latitud, longitud):
-        return None  # Si las coordenadas no son válidas, omitimos el monumento
-
     descripcion = row['CLASIFICACION']
     codLocalidad = pd.NA
     nomLocalidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
     codProvincia = pd.NA
     nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
+
+    # Validar utilizando la función de filtros
+    if not aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad, seen_monuments):
+        return None  # Si no pasa las validaciones, omitimos el monumento
+
 
     # Agregar a 'seen_monuments'
     seen_monuments.add(nomMonumento)

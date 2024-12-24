@@ -23,35 +23,28 @@ def parse_json_with_duplicates(file_path):
 def extraer_datos_monumento(monumento, seen_monuments):
     monumento_dict = {key: value for key, value in monumento}
     nomMonumento = monumento_dict.get('documentName', pd.NA)
-    if is_duplicate_monument(nomMonumento, seen_monuments):
-        return None
-
-    # Direcciones
     address_list = [value for key, value in monumento if key == 'address' and isinstance(value, str)]
     direccion = next((addr for addr in address_list if addr.strip()), pd.NA)
-    
-    # Datos del monumento
     tipoMonumento = get_tipo_monumento(nomMonumento) if nomMonumento is not pd.NA else pd.NA
     codigo_postal = monumento_dict.get('postalCode', pd.NA)
-    
-    # Coordenadas
     latlong = monumento_dict.get('latitudelongitude', '').split(',')
+
     if len(latlong) == 2:
         latitud = latlong[0]
         longitud = latlong[1]
     else:
         latitud = monumento_dict.get('latwgs84', pd.NA)
         longitud = monumento_dict.get('lonwgs84', pd.NA)
-    
-    # Validar coordenadas
-    if not validar_coordenadas(latitud, longitud):
-        return None  # Si las coordenadas no son válidas, omitimos el monumento
-    
+
     descripcion = monumento_dict.get('documentDescription', pd.NA)
     codLocalidad = monumento_dict.get('municipalitycode', pd.NA)
     nomLocalidad = monumento_dict.get('municipality', pd.NA)
     codProvincia = monumento_dict.get('territorycode', pd.NA)
     nomProvincia = monumento_dict.get('territory', pd.NA)
+
+    # Validar utilizando la función de filtros
+    if not aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad, seen_monuments):
+        return None  # Si no pasa las validaciones, omitimos el monumento
 
     # Agregar a 'seen_monuments'
     seen_monuments.add(nomMonumento)

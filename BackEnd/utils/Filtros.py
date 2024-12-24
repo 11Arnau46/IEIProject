@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import pycountry
 
 #Filtros que por su naturaleza deben ser colocados uno por uno------------------------------------------------------------------------------
 
@@ -79,8 +80,33 @@ def validar_coordenadas(latitud, longitud):
     except ValueError:
         return False
 
+def validar_provincia_localidad(nombre, tipo="provincia"):
+    """
+    Valida si un nombre corresponde a una provincia o localidad válida en España.
 
-#Filtros aplicables en grupo------------------------------------------------------------------------------
+    Argumentos:
+        nombre (str): Nombre de la provincia o localidad a validar.
+        tipo (str): Tipo de validación ('provincia' o 'localidad').
+
+    Retorna:
+        bool: True si es válida, False en caso contrario.
+    """
+    if pd.isna(nombre):
+        return False
+
+    nombre = nombre.strip().lower()  # Normalizar el nombre
+    if tipo == "provincia":
+        provincias = [
+            subdivision.name.lower() for subdivision in pycountry.subdivisions if subdivision.country_code == "ES"
+        ]
+        return nombre in provincias
+    elif tipo == "localidad":
+        # Esto puede ampliarse con datos específicos de localidades de España
+        return True  # Por defecto, se acepta cualquier localidad
+    return False 
+
+
+#Correcciones aplicables en grupo------------------------------------------------------------------------------
 
 # Función para limpiar coordenadas
 def clean_coordinates(value):
@@ -100,7 +126,6 @@ def limpiar_campo_duplicado(valor):
         if parte not in partes_unicas:
             partes_unicas.append(parte)
     return ' '.join(partes_unicas)
-
 
 #Excepciones------------------------------------------------------------------------------
 

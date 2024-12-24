@@ -1,3 +1,4 @@
+from filtros import *
 def process_and_save_json(json_path):
     location_finder = LocationFinder(json_path)
     # Procesar el JSON y obtener los resultados
@@ -34,3 +35,36 @@ def aplicar_filtros_estandar(df):
             df[columna] = df[columna].apply(filtro)
     
     return df
+
+def aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad, seen_monuments):
+    """
+    Realiza las validaciones para los datos de cada monumento (duplicado, coordenadas, provincia, localidad).
+    
+    Argumentos:
+        nomMonumento (str): Nombre del monumento.
+        latitud (float): Latitud del monumento.
+        longitud (float): Longitud del monumento.
+        nomProvincia (str): Nombre de la provincia.
+        nomLocalidad (str): Nombre de la localidad.
+        seen_monuments (set): Conjunto que mantiene los monumentos ya vistos para evitar duplicados.
+    
+    Retorna:
+        bool: True si pasa todas las validaciones, False si alguna falla.
+    """
+    # Verificar si el monumento es duplicado
+    if is_duplicate_monument(nomMonumento, seen_monuments):
+        return False
+
+    # Validar coordenadas
+    if not validar_coordenadas(latitud, longitud):
+        return False
+
+    # Validar provincia y localidad
+    if not validar_provincia_localidad(nomProvincia, tipo="provincia"):
+        print(f"Provincia inválida: {nomProvincia}. Saltando el monumento.")
+        return False
+    if not validar_provincia_localidad(nomLocalidad, tipo="localidad"):
+        print(f"Localidad inválida: {nomLocalidad}. Saltando el monumento.")
+        return False
+
+    return True
