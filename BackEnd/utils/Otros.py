@@ -1,4 +1,6 @@
-from filtros import *
+import os
+import json
+from Filtros import *
 from Location_Finder import LocationFinder
 
 def process_and_save_json(json_path):
@@ -19,7 +21,7 @@ def aplicar_correcciones(df):
     Retorna:
         pd.DataFrame: DataFrame con los filtros aplicados.
     """
-    from utils.filtros import clean_coordinates, limpiar_campo_duplicado  # Asegúrate de importar las funciones necesarias
+    from utils.Filtros import clean_coordinates, limpiar_campo_duplicado  # Asegúrate de importar las funciones necesarias
     
     # Diccionario con columnas y sus funciones de filtro
     filtros = {

@@ -3,8 +3,8 @@ from config.paths import INPUT_JSON_PATH
 import pandas as pd
 import json
 from Location_Finder import LocationFinder
-from utils.filtros import clean_coordinates, limpiar_campo_duplicado, validar_coordenadas, get_tipo_monumento, is_duplicate_monument, procesar_datos
-from utils.Otros import process_and_save_json, aplicar_filtros_estandar
+from utils.Filtros import clean_coordinates, limpiar_campo_duplicado, validar_coordenadas, get_tipo_monumento, is_duplicate_monument, procesar_datos
+from utils.Otros import aplicar_correcciones, aplicar_filtros, process_and_save_json, aplicar_filtros_estandar
 
 # Función para cargar el archivo JSON y preservar claves duplicadas
 def parse_json_with_duplicates(file_path):

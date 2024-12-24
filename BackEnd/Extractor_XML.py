@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 import re
 from config.paths import INPUT_XML_PATH
 from Location_Finder import LocationFinder
-from utils.filtros import get_tipo_monumento, clean_coordinates, clean_html_text, procesar_datos
+from utils.Filtros import get_tipo_monumento, clean_coordinates, clean_html_text, procesar_datos
 from utils.Otros import *
 
 # Función para extraer los datos del XML
