@@ -4,11 +4,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import re
 from Location_Finder import LocationFinder
-
-
-
-# Leer el archivo XML
-xml_path = '../Fuentes_de_datos/Demo/cle.xml'
+from utils.filtros import get_tipo_monumento, clean_coordinates, clean_html_text
 
 # Change the current working directory
 os.chdir('/Users/arnau1146/IdeaProjects/IEIProject/BackEnd')
@@ -26,6 +22,9 @@ print("Full path to the file:", full_path)
 tree = ET.parse(xml_path)
 root = tree.getroot()
 
+# Leer el archivo XML
+xml_path = '../Fuentes_de_datos/Demo/cle.xml'
+
 # Diccionario para almacenar los datos extraídos
 data = {
     'nomMonumento': [],
@@ -41,43 +40,11 @@ data = {
     'nomProvincia': []
 }
 
-# Función para clasificar el tipo de monumento
-def get_tipo_monumento(denominacion):
-    denominacion = denominacion.lower()  # Convertir todo a minúsculas para evitar problemas de mayúsculas/minúsculas
-    palabras_clave = {
-        "YacimientoArquelogico": ["yacimiento", "yacimiento arqueológico"],
-        "MonasterioConvento": ["monasterio", "convento"],
-        "IglesiaErmita": ["iglesia", "ermita", "catedral", "basílica"],
-        "CastilloFortalezaTorre": ["castillo", "torre", "fuerte", "fortaleza"],
-        "EdificioPalacio": ["edificio", "palacio", "jardín", "casas nobles", "paraje", "plazas"],
-        "Puente": ["puente"]
-    }
-    
-    for tipo, keywords in palabras_clave.items():
-        if any(keyword in denominacion for keyword in keywords):
-            return tipo
-    return "Otros"  # Si no se encuentra ninguna coincidencia, devolver "Otros"
-
-# Función para limpiar texto HTML
-def clean_html_text(text):
-    if pd.isna(text):
-        return text
-    clean_text = re.sub(r'<[^>]+>', '', text)  # Eliminar etiquetas HTML
-    clean_text = clean_text.replace('&oacute;', 'ó').replace('&aacute;', 'á').replace('&eacute;', 'é').replace('&iacute;', 'í').replace('&uacute;', 'ú').replace('&ntilde;', 'ñ')  # Reemplazar caracteres especiales
-    clean_text = ' '.join(clean_text.split())  # Eliminar espacios extra
-    return clean_text
-
-# Función para limpiar coordenadas
-def clean_coordinates(value):
-    if value is not None:
-        return re.sub(r'[^0-9\.\-]', '', value)  # Mantener solo números, puntos y guiones
-    return value
-
 # Extraer información de cada elemento del XML
 for monumento in root.findall('.//monumento'):
     nomMonumento = monumento.find('nombre').text if monumento.find('nombre') is not None else pd.NA
     tipoMonumento = monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA
-    tipoMonumento = get_tipo_monumento(tipoMonumento)  # Clasificar el tipo de monumento
+    tipoMonumento = get_tipo_monumento(tipoMonumento)  # Clasificar el tipo de monumento, filtros.py
 
     # Obtener dirección de la calle
     direccion = monumento.find('calle').text if monumento.find('calle') is not None else pd.NA

@@ -1,15 +1,17 @@
 import os
 
+from config.paths import INPUT_CSV_PATH, OUTPUT_CSV_PATHS
 import pandas as pd
 import Coords_converter
 import json
 from Location_Finder import LocationFinder
+from utils.filtros import get_tipo_monumento, clean_coordinates, is_duplicate_monument, filtrar_por_coordenadas
 
 # Directorio actual
 print("Current working directory:", os.getcwd())
 
 # Leer el archivo CSV
-csv_path = 'Fuentes_de_datos/Demo/vcl.csv'
+csv_path = '../Fuentes_de_datos/Demo/vcl.csv'
 df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
 
 # Diccionario para almacenar los datos extraídos
@@ -30,31 +32,15 @@ data = {
 # Conjunto para realizar un seguimiento de los monumentos ya procesados
 seen_monuments = set()
 
-# Función para clasificar el tipo de monumento basado en la denominación
-def get_tipo_monumento(denominacion):
-    denominacion = denominacion.lower()
-    palabras_clave = {
-        "YacimientoArquelogico": ["yacimiento", "Yacimiento", "yacimiento arqueológico", "Yacimiento Arqueológico"],
-        "MonasterioConvento": ["monasterio", "Monasterio", "convento", "Convento"],
-        "IglesiaErmita": ["iglesia", "Iglesia", "ermita", "Ermita", "catedral", "Catedral", "basílica", "Basílica"],
-        "CastilloFortalezaTorre": ["castillo", "Castillo", "fortaleza", "Fortaleza", "torre", "Torre", "fuerte", "Fuerte"],
-        "EdificioPalacio": ["edificio", "palacio", "Edificio", "Palacio", "jardín", "Jardín", "Casas Nobles", "casas nobles", "Paraje", "paraje", "plazas", "Plazas"],
-        "Puente": ["puente", "Puente"]
-    }
-    
-    for tipo, keywords in palabras_clave.items():
-        if any(keyword in denominacion for keyword in keywords):
-            return tipo
-    return "Otros"
-
 # Extraer información de cada fila del CSV
 for _, row in df.iterrows():
     nomMonumento = row['DENOMINACION']
     
-    # Verificar si el monumento ya ha sido procesado
-    if nomMonumento in seen_monuments:
-        continue  # Si ya se procesó, omitir este monumento
+    # Verificar si el monumento ya ha sido procesado, filtros.py
+    if is_duplicate_monument(nomMonumento, seen_monuments):
+        continue  
     
+    # Obtener el tipo de monumento, filtros.py
     tipoMonumento = get_tipo_monumento(nomMonumento)
 
     # Extraer los demás datos
@@ -84,21 +70,11 @@ for _, row in df.iterrows():
     # Agregar el nombre del monumento al conjunto de monumentos procesados
     seen_monuments.add(nomMonumento)
 
-# Separar los datos en dos DataFrames
-df_con_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
-                            for i in range(len(data['nomMonumento'])) 
-                            if pd.notna(data['longitud'][i]) and pd.notna(data['latitud'][i])])
-
-df_sin_coords = pd.DataFrame([{k: v[i] for k, v in data.items()} 
-                            for i in range(len(data['nomMonumento'])) 
-                            if pd.isna(data['longitud'][i]) or pd.isna(data['latitud'][i])])
-
-# Mostrar información sobre los datos separados
-print(f"Monumentos con coordenadas: {len(df_con_coords)}")
-print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
+# Separar los datos en dos DataFrames, filtros.py
+con_coords, sin_coords = filtrar_por_coordenadas(data)
 
 # Guardar los datos en formato JSON con formato legible
-df_con_coords.to_json(
+con_coords.to_json(
     'Resultados/CSVtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
@@ -106,7 +82,7 @@ df_con_coords.to_json(
     default_handler=str
 )
 if len(df_sin_coords) > 0:
-    df_sin_coords.to_json(
+    sin_coords.to_json(
         'Resultados/CSVtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
