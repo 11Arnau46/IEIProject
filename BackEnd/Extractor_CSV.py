@@ -11,7 +11,7 @@ from utils.filtros import get_tipo_monumento, clean_coordinates, is_duplicate_mo
 print("Current working directory:", os.getcwd())
 
 # Leer el archivo CSV
-csv_path = '../Fuentes_de_datos/Demo/vcl.csv'
+csv_path = INPUT_CSV_PATH
 df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
 
 # Diccionario para almacenar los datos extraídos
@@ -75,7 +75,7 @@ con_coords, sin_coords = filtrar_por_coordenadas(data)
 
 # Guardar los datos en formato JSON con formato legible
 con_coords.to_json(
-    'Resultados/CSVtoJSON_con_coords.json',
+    '../Resultados/CSVtoJSON_con_coords.json',
     orient='records',
     force_ascii=False,
     indent=4,
@@ -83,7 +83,7 @@ con_coords.to_json(
 )
 if len(df_sin_coords) > 0:
     sin_coords.to_json(
-        'Resultados/CSVtoJSON_sin_coords.json',
+        '../Resultados/CSVtoJSON_sin_coords.json',
         orient='records',
         force_ascii=False,
         indent=4,
@@ -93,8 +93,8 @@ if len(df_sin_coords) > 0:
 #Hacer conversión de coordenadas a grados con Selenium
 #https://www.ign.es/web/calculadora-geodesica
 
-ruta_json_entrada = "Resultados/CSVtoJSON_con_coords.json"  # Cambia por tu archivo JSON
-ruta_json_salida = "Resultados/CSVtoJSON_Corregido.json"
+ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"  # Cambia por tu archivo JSON
+ruta_json_salida = "../Resultados/CSVtoJSON_Corregido.json"
 
 with open(ruta_json_entrada, "r", encoding="utf-8") as file:
     monumentos = json.load(file)
@@ -117,7 +117,7 @@ print(f"Archivo actualizado guardado en {ruta_json_salida}.")
 
 # todo: Poner el archivo con coordenadas
 #Usar la API para obtener el Código Postal y Localidad
-json_path = 'Resultados/CSVtoJSON_Corregido.json'
+json_path = '../Resultados/CSVtoJSON_Corregido.json'
 location_finder = LocationFinder(json_path)
 # Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
 results = location_finder.process_json()
