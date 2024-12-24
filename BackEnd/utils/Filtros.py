@@ -1,6 +1,8 @@
 import pandas as pd
 import re
 
+#Filtros que por su naturaleza deben ser colocados uno por uno------------------------------------------------------------------------------
+
 # Función para clasificar el tipo de monumento basado en la denominación
 def get_tipo_monumento(denominacion):
     if not isinstance(denominacion, str):
@@ -67,6 +69,8 @@ def is_duplicate_monument(nom_monumento, seen_monuments):
         return True  # El monumento ya ha sido procesado
     seen_monuments.add(nom_monumento)
     return False
+
+#Filtros aplicables en grupo------------------------------------------------------------------------------
 
 # Función para limpiar coordenadas
 def clean_coordinates(value):

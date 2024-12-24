@@ -1,9 +1,8 @@
 import os
-
-from config.paths import INPUT_CSV_PATH
 import pandas as pd
 import Coords_converter
 import json
+from config.paths import INPUT_CSV_PATH
 from Location_Finder import LocationFinder
 from utils.filtros import get_tipo_monumento, clean_coordinates, is_duplicate_monument, filtrar_por_coordenadas, procesar_datos
 
@@ -53,8 +52,8 @@ data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_posta
 seen_monuments = set()
 
 # Extraer información de cada fila del CSV
-for _, row in df.iterrows():
-    extracted_data = extraer_datos_csv(row, seen_monuments)
+for monumento in df.iterrows():
+    extracted_data = extraer_datos_csv(monumento, seen_monuments)
     if extracted_data:
         for key, value in extracted_data.items():
             data[key].append(value)
@@ -63,10 +62,10 @@ df_result = pd.DataFrame(data)
 
 df_con_coords, df_sin_coords = procesar_datos(df_result)
 
-# Rutas de archivos
+# Convertir coordenadas
 ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"
 ruta_json_salida = "../Resultados/CSVtoJSON_Corregido.json"
-
-# Convertir coordenadas y procesar el archivo
 convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
+
+# Procesar y guardar el archivo JSON
 process_and_save_json('../Resultados/CSVtoJSON_Corregido.json')

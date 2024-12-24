@@ -23,7 +23,9 @@ def parse_json_with_duplicates(file_path):
 # Función para extraer los datos de cada monumento del JSON
 def extraer_datos_monumento(monumento):
     monumento_dict = {key: value for key, value in monumento}
-    
+    if is_duplicate_monument(nomMonumento, seen_monuments):
+        return None
+
     # Direcciones
     address_list = [value for key, value in monumento if key == 'address' and isinstance(value, str)]
     
@@ -51,6 +53,9 @@ def extraer_datos_monumento(monumento):
     nomLocalidad = limpiar_campo_duplicado(monumento_dict.get('municipality', pd.NA))
     codProvincia = limpiar_campo_duplicado(monumento_dict.get('territorycode', pd.NA))
     nomProvincia = limpiar_campo_duplicado(monumento_dict.get('territory', pd.NA))
+
+    # Agregar a 'seen_monuments'
+    seen_monuments.add(nomMonumento)
     
     return {
         'nomMonumento': nomMonumento,
@@ -66,32 +71,23 @@ def extraer_datos_monumento(monumento):
         'nomProvincia': nomProvincia
     }
 
-# Función para procesar y almacenar los datos del archivo JSON
-def procesar_datos_json(json_data):
-
-# Diccionario para almacenar los datos extraídos
-data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_postal': [], 'longitud': [], 'latitud': [], 'descripcion': [], 'codLocalidad': [], 'nomLocalidad': [], 'codProvincia': [], 'nomProvincia': [] }
-    seen_monuments = set()
-
-    for monumento in json_data:
-        extracted_data = extraer_datos_monumento(monumento)
-        
-        if extracted_data and not is_duplicate_monument(extracted_data['nomMonumento'], seen_monuments):
-            for key, value in extracted_data.items():
-                data[key].append(value)
-            
-            seen_monuments.add(extracted_data['nomMonumento'])
-    
-    return pd.DataFrame(data)
-
 # Ruta al archivo JSON
 json_path = INPUT_JSON_PATH
 
 # Cargar los datos preservando los campos duplicados
 json_data = parse_json_with_duplicates(json_path)
 
+# Diccionario para almacenar los datos extraídos
+data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_postal': [], 'longitud': [], 'latitud': [], 'descripcion': [], 'codLocalidad': [], 'nomLocalidad': [], 'codProvincia': [], 'nomProvincia': [] }
+    seen_monuments = set()
+
+for monumento in json_data:
+    extracted_data = extraer_datos_monumento(monumento, seen_monuments)
+        for key, value in extracted_data.items():
+            data[key].append(value)
+
 # Procesar los datos y extraer la información relevante
-df_result = procesar_datos_json(json_data)
+df_result = pd.DataFrame(data)
 
 # Dividir los datos en aquellos con y sin coordenadas
 df_con_coords, df_sin_coords = procesar_datos(df_result)
