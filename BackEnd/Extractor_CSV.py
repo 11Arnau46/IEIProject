@@ -1,6 +1,6 @@
 import os
 
-from config.paths import INPUT_CSV_PATH, OUTPUT_CSV_PATHS
+from config.paths import INPUT_CSV_PATH
 import pandas as pd
 import Coords_converter
 import json
@@ -10,115 +10,63 @@ from utils.filtros import get_tipo_monumento, clean_coordinates, is_duplicate_mo
 # Directorio actual
 print("Current working directory:", os.getcwd())
 
+# Función para extraer los datos del CSV
+def extraer_datos_csv(row, seen_monuments):
+    nomMonumento = row['DENOMINACION']
+    if is_duplicate_monument(nomMonumento, seen_monuments):
+        return None
+
+    tipoMonumento = get_tipo_monumento(nomMonumento)
+    direccion = pd.NA
+    codigo_postal = pd.NA
+    latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA
+    longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
+    descripcion = row['CLASIFICACION']
+    codLocalidad = pd.NA
+    nomLocalidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
+    codProvincia = pd.NA
+    nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
+
+    # Agregar a 'seen_monuments'
+    seen_monuments.add(nomMonumento)
+
+    return {
+        'nomMonumento': nomMonumento,
+        'tipoMonumento': tipoMonumento,
+        'direccion': direccion,
+        'codigo_postal': codigo_postal,
+        'latitud': latitud,
+        'longitud': longitud,
+        'descripcion': descripcion,
+        'codLocalidad': codLocalidad,
+        'nomLocalidad': nomLocalidad,
+        'codProvincia': codProvincia,
+        'nomProvincia': nomProvincia
+    }
+
 # Leer el archivo CSV
 csv_path = INPUT_CSV_PATH
 df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
 
 # Diccionario para almacenar los datos extraídos
-data = {
-    'nomMonumento': [],
-    'tipoMonumento': [],
-    'direccion': [],
-    'codigo_postal': [],
-    'longitud': [],
-    'latitud': [],
-    'descripcion': [],
-    'codLocalidad': [],
-    'nomLocalidad': [],
-    'codProvincia': [],
-    'nomProvincia': []
-}
-
-# Conjunto para realizar un seguimiento de los monumentos ya procesados
+data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_postal': [], 'longitud': [], 'latitud': [], 'descripcion': [], 'codLocalidad': [], 'nomLocalidad': [], 'codProvincia': [], 'nomProvincia': [] }
 seen_monuments = set()
 
 # Extraer información de cada fila del CSV
 for _, row in df.iterrows():
-    nomMonumento = row['DENOMINACION']
-    
-    # Verificar si el monumento ya ha sido procesado, filtros.py
-    if is_duplicate_monument(nomMonumento, seen_monuments):
-        continue  
-    
-    # Obtener el tipo de monumento, filtros.py
-    tipoMonumento = get_tipo_monumento(nomMonumento)
+    extracted_data = extraer_datos_csv(row, seen_monuments)
+    if extracted_data:
+        for key, value in extracted_data.items():
+            data[key].append(value)
 
-    # Extraer los demás datos
-    direccion = pd.NA 
-    codigo_postal = pd.NA
-    latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA 
-    longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
-    descripcion = row['CLASIFICACION']
-    codLocalidad = pd.NA 
-    nomLocalidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
-    codProvincia = pd.NA 
-    nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
+df_result = pd.DataFrame(data)
 
-    # Añadir los datos al diccionario
-    data['nomMonumento'].append(nomMonumento)
-    data['tipoMonumento'].append(tipoMonumento)
-    data['direccion'].append(direccion)
-    data['codigo_postal'].append(codigo_postal)
-    data['latitud'].append(latitud)
-    data['longitud'].append(longitud)
-    data['descripcion'].append(descripcion)
-    data['codLocalidad'].append(codLocalidad)
-    data['nomLocalidad'].append(nomLocalidad)
-    data['codProvincia'].append(codProvincia)
-    data['nomProvincia'].append(nomProvincia)
+df_con_coords, df_sin_coords = procesar_datos(df_result)
 
-    # Agregar el nombre del monumento al conjunto de monumentos procesados
-    seen_monuments.add(nomMonumento)
-
-# Separar los datos en dos DataFrames, filtros.py
-con_coords, sin_coords = filtrar_por_coordenadas(data)
-
-# Guardar los datos en formato JSON con formato legible
-con_coords.to_json(
-    '../Resultados/CSVtoJSON_con_coords.json',
-    orient='records',
-    force_ascii=False,
-    indent=4,
-    default_handler=str
-)
-if len(df_sin_coords) > 0:
-    sin_coords.to_json(
-        '../Resultados/CSVtoJSON_sin_coords.json',
-        orient='records',
-        force_ascii=False,
-        indent=4,
-        default_handler=str
-    )
-
-#Hacer conversión de coordenadas a grados con Selenium
-#https://www.ign.es/web/calculadora-geodesica
-
-ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"  # Cambia por tu archivo JSON
+# Rutas de archivos
+ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"
 ruta_json_salida = "../Resultados/CSVtoJSON_Corregido.json"
 
-with open(ruta_json_entrada, "r", encoding="utf-8") as file:
-    monumentos = json.load(file)
-
-# Actualiza los datos del JSON
-for monumento in monumentos:
-    if monumento["latitud"] and monumento["longitud"]:
-        print(f"Convirtiendo coordenadas UTM para {monumento['nomMonumento']}...")
-        lat, lon = Coords_converter.convert_utm(monumento["latitud"], monumento["longitud"])
-        if lat and lon:
-            monumento["latitud"] = lat
-            monumento["longitud"] = lon
-
-# Guarda el archivo actualizado
-with open(ruta_json_salida, "w", encoding="utf-8") as file:
-    json.dump(monumentos, file, ensure_ascii=False, indent=4)
-
-print(f"Archivo actualizado guardado en {ruta_json_salida}.")
-
-
-# todo: Poner el archivo con coordenadas
-#Usar la API para obtener el Código Postal y Localidad
-json_path = '../Resultados/CSVtoJSON_Corregido.json'
-location_finder = LocationFinder(json_path)
-# Procesar el JSON y guardar los resultados en el mismo archivo con código postal y direcciones completas
-results = location_finder.process_json()
-location_finder.save_results_to_json(results)
+# Convertir coordenadas y procesar el archivo
+convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
+process_and_save_json('../Resultados/CSVtoJSON_Corregido.json')

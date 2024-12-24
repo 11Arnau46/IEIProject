@@ -29,18 +29,37 @@ def get_tipo_monumento(denominacion):
 
 
 # Filtrar filas con o sin coordenadas
-def filtrar_por_coordenadas(data):
-    con_coords = [
-        {k: v[i] for k, v in data.items()}
-        for i in range(len(data['nomMonumento']))
-        if pd.notna(data['longitud'][i]) and pd.notna(data['latitud'][i])
-    ]
-    sin_coords = [
-        {k: v[i] for k, v in data.items()}
-        for i in range(len(data['nomMonumento']))
-        if pd.isna(data['longitud'][i]) or pd.isna(data['latitud'][i])
-    ]
-    return con_coords, sin_coords
+def procesar_datos(data):
+    # Eliminar monumentos duplicados por el nombre 'nomMonumento' antes de continuar
+    df_result_unique = data.drop_duplicates(subset='nomMonumento', keep='first')
+    
+    # Separar los datos en dos DataFrames (con y sin coordenadas)
+    df_con_coords = df_result_unique.dropna(subset=['longitud', 'latitud'])
+    df_sin_coords = df_result_unique[df_result_unique['longitud'].isna() | df_result_unique['latitud'].isna()]
+
+    # Guardar los datos en formato JSON
+    df_con_coords.to_json(
+        '../Resultados/CSVtoJSON_con_coords.json',
+        orient='records',
+        force_ascii=False,
+        indent=4,
+        default_handler=str
+    )
+    
+    if len(df_sin_coords) > 0:
+        df_sin_coords.to_json(
+            '../Resultados/CSVtoJSON_sin_coords.json',
+            orient='records',
+            force_ascii=False,
+            indent=4,
+            default_handler=str
+        )
+
+    # Mostrar información sobre los datos separados
+    print(f"Monumentos con coordenadas: {len(df_con_coords)}")
+    print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
+    
+    return df_con_coords, df_sin_coords
 
 # Filtrar filas duplicadas
 def is_duplicate_monument(nom_monumento, seen_monuments):
