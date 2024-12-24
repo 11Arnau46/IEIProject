@@ -63,12 +63,22 @@ def procesar_datos(data):
     
     return df_con_coords, df_sin_coords
 
-# Filtrar filas duplicadas
+# Filtrar filas duplicadas, caso contrario no continuar
 def is_duplicate_monument(nom_monumento, seen_monuments):
     if nom_monumento in seen_monuments:
         return True  # El monumento ya ha sido procesado
     seen_monuments.add(nom_monumento)
     return False
+
+# Función para validar si las coordenadas están dentro de los límites de WGS84, caso contrario no continuar
+def validar_coordenadas(latitud, longitud):
+    try:
+        latitud = float(latitud)
+        longitud = float(longitud)
+        return -90 <= latitud <= 90 and -180 <= longitud <= 180
+    except ValueError:
+        return False
+
 
 #Filtros aplicables en grupo------------------------------------------------------------------------------
 
@@ -91,15 +101,8 @@ def limpiar_campo_duplicado(valor):
             partes_unicas.append(parte)
     return ' '.join(partes_unicas)
 
-# Función para validar si las coordenadas están dentro de los límites de WGS84
-def validar_coordenadas(latitud, longitud):
-    try:
-        latitud = float(latitud)
-        longitud = float(longitud)
-        return -90 <= latitud <= 90 and -180 <= longitud <= 180
-    except ValueError:
-        return False
 
+#Excepciones------------------------------------------------------------------------------
 
 # Función para limpiar texto HTML
 def clean_html_text(text):

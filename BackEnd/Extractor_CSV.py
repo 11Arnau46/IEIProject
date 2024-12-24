@@ -4,7 +4,9 @@ import Coords_converter
 import json
 from config.paths import INPUT_CSV_PATH
 from Location_Finder import LocationFinder
-from utils.filtros import get_tipo_monumento, clean_coordinates, is_duplicate_monument, filtrar_por_coordenadas, procesar_datos
+from utils.filtros import get_tipo_monumento, is_duplicate_monument, filtrar_por_coordenadas, procesar_datos
+from utils.Otros import process_and_save_json, aplicar_filtros_estandar
+from utils.Conversores import convertir_coordenadas_utm
 
 # Directorio actual
 print("Current working directory:", os.getcwd())
@@ -20,6 +22,11 @@ def extraer_datos_csv(row, seen_monuments):
     codigo_postal = pd.NA
     latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA
     longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
+
+    # Validar coordenadas
+    if not validar_coordenadas(latitud, longitud):
+        return None  # Si las coordenadas no son válidas, omitimos el monumento
+
     descripcion = row['CLASIFICACION']
     codLocalidad = pd.NA
     nomLocalidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
@@ -58,8 +65,13 @@ for monumento in df.iterrows():
         for key, value in extracted_data.items():
             data[key].append(value)
 
+# Crear DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
 
+# Aplicar filtros estandarizados al DataFrame
+df_result = aplicar_filtros_estandar(df_result)
+
+# Dividir los datos en aquellos con coordenadas y sin coordenadas
 df_con_coords, df_sin_coords = procesar_datos(df_result)
 
 # Convertir coordenadas

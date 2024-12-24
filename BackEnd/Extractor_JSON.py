@@ -1,11 +1,10 @@
 import os
-
 from config.paths import INPUT_JSON_PATH
 import pandas as pd
 import json
-import re
 from Location_Finder import LocationFinder
 from utils.filtros import clean_coordinates, limpiar_campo_duplicado, validar_coordenadas, get_tipo_monumento, is_duplicate_monument, procesar_datos
+from utils.Otros import process_and_save_json, aplicar_filtros_estandar
 
 # Función para cargar el archivo JSON y preservar claves duplicadas
 def parse_json_with_duplicates(file_path):
@@ -21,38 +20,38 @@ def parse_json_with_duplicates(file_path):
     return data
 
 # Función para extraer los datos de cada monumento del JSON
-def extraer_datos_monumento(monumento):
+def extraer_datos_monumento(monumento, seen_monuments):
     monumento_dict = {key: value for key, value in monumento}
+    nomMonumento = monumento_dict.get('documentName', pd.NA)
     if is_duplicate_monument(nomMonumento, seen_monuments):
         return None
 
     # Direcciones
     address_list = [value for key, value in monumento if key == 'address' and isinstance(value, str)]
+    direccion = next((addr for addr in address_list if addr.strip()), pd.NA)
     
     # Datos del monumento
-    nomMonumento = monumento_dict.get('documentName', pd.NA)
     tipoMonumento = get_tipo_monumento(nomMonumento) if nomMonumento is not pd.NA else pd.NA
-    direccion = next((addr for addr in address_list if addr.strip()), pd.NA)
     codigo_postal = monumento_dict.get('postalCode', pd.NA)
     
     # Coordenadas
     latlong = monumento_dict.get('latitudelongitude', '').split(',')
     if len(latlong) == 2:
-        latitud = clean_coordinates(latlong[0])
-        longitud = clean_coordinates(latlong[1])
+        latitud = latlong[0]
+        longitud = latlong[1]
     else:
-        latitud = clean_coordinates(monumento_dict.get('latwgs84', pd.NA))
-        longitud = clean_coordinates(monumento_dict.get('lonwgs84', pd.NA))
+        latitud = monumento_dict.get('latwgs84', pd.NA)
+        longitud = monumento_dict.get('lonwgs84', pd.NA)
     
     # Validar coordenadas
     if not validar_coordenadas(latitud, longitud):
         return None  # Si las coordenadas no son válidas, omitimos el monumento
     
     descripcion = monumento_dict.get('documentDescription', pd.NA)
-    codLocalidad = limpiar_campo_duplicado(monumento_dict.get('municipalitycode', pd.NA))
-    nomLocalidad = limpiar_campo_duplicado(monumento_dict.get('municipality', pd.NA))
-    codProvincia = limpiar_campo_duplicado(monumento_dict.get('territorycode', pd.NA))
-    nomProvincia = limpiar_campo_duplicado(monumento_dict.get('territory', pd.NA))
+    codLocalidad = monumento_dict.get('municipalitycode', pd.NA)
+    nomLocalidad = monumento_dict.get('municipality', pd.NA)
+    codProvincia = monumento_dict.get('territorycode', pd.NA)
+    nomProvincia = monumento_dict.get('territory', pd.NA)
 
     # Agregar a 'seen_monuments'
     seen_monuments.add(nomMonumento)
@@ -79,18 +78,20 @@ json_data = parse_json_with_duplicates(json_path)
 
 # Diccionario para almacenar los datos extraídos
 data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_postal': [], 'longitud': [], 'latitud': [], 'descripcion': [], 'codLocalidad': [], 'nomLocalidad': [], 'codProvincia': [], 'nomProvincia': [] }
-    seen_monuments = set()
+seen_monuments = set()
 
+# Extraer los datos
 for monumento in json_data:
     extracted_data = extraer_datos_monumento(monumento, seen_monuments)
+    if extracted_data:
         for key, value in extracted_data.items():
             data[key].append(value)
 
 # Procesar los datos y extraer la información relevante
 df_result = pd.DataFrame(data)
 
-# Dividir los datos en aquellos con y sin coordenadas
-df_con_coords, df_sin_coords = procesar_datos(df_result)
+# Aplica los filtros al DataFrame
+df_result = aplicar_filtros_estandar(df_result)
 
 # Guardar el resultado en un archivo JSON
 process_and_save_json('../Resultados/JSONtoJSON_con_coords.json')
