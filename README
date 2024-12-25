@@ -1,0 +1,31 @@
+Para ejecutar Server de APIS SWAGGER:
+
+    1. Instala las dependencias si no las tienes ya:
+    pip install flask flasgger flask-restful
+
+    2. Ejecuta la aplicación con:
+    python Flask.py
+
+ Para ejecutar los extractores:
+
+    1. Ejecuta la aplicación con:
+    python main.py  -tipo-
+   
+    tipos disponibles: csv, xml, json
+
+
+ Para abrir la Base de Datos:
+
+    1. Ejecutar MySQLWorkBench:
+        Datos de prueba utilizados: usuario='root', contrasena='123456', host='127.0.0.1', puerto=3306, db_name='IEI'
+
+    2. Drop iei si existe para limpiar el sistema y cargar una nueva BD con main.py
+
+
+Habilitar o deshabiliar que se imprima por consola la creacion y subida de datos a la BD:
+
+   Cambiar los echo=True/False de SQL>BDConnection
+
+Error de python No se encontró Python; ejecuta sin argumentos para instalar desde Microsoft Store
+
+   https://recursospython.com/guias-y-manuales/no-se-encontro-python-ejecuta-sin-argumentos-para-instalar-desde-microsoft-store/

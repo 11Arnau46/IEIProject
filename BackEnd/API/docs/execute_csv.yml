@@ -1,0 +1,10 @@
+execute_csv.yml
+---
+post:
+  summary: Execute CSV extraction
+  description: Endpoint to execute CSV extraction
+  responses:
+    200:
+      description: Extraction successful
+    500:
+      description: Internal server error

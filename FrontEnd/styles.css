@@ -1,0 +1,210 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente */
+    min-height: 100vh; /* Hace que el cuerpo tenga la altura completa de la ventana */
+}
+
+.header {
+    max-width: 1200px; /* Igual que .container */
+    width: 100%; /* Ocupa el 100% del ancho disponible dentro del max-width */
+    color: black;
+    padding: 1rem 0;
+    background-color: rgb(135, 135, 244);
+    text-align: center;
+    border-radius: 10px; /* Opcional: redondea los bordes del header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade sombra */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Estilo para el contenedor de la tabla con scroll vertical y horizontal */
+.table-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: auto; /* Añade scroll vertical */
+    overflow-x: auto; /* Añade scroll horizontal */
+}
+
+/* Tabla con ajuste automático de columnas */
+#tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Permite que las columnas se ajusten al contenido */
+}
+
+/* Estilo para las celdas de la tabla */
+#tabla-resultados th, #tabla-resultados td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Esconde el texto que excede el espacio */
+}
+
+/* Estilo para los encabezados */
+#tabla-resultados th {
+    background-color: #f4f4f4;
+}
+
+/* Ajuste de la columna de descripción */
+#tabla-resultados td:nth-child(7) {
+    max-width: 100%; /* Permite que la columna se expanda dinámicamente */
+    white-space: normal; /* Permite que el texto se ajuste a varias líneas si es necesario */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan */
+}
+
+/* Permitir desplazamiento horizontal en la tabla */
+#tabla-resultados td {
+    white-space: normal; /* Permite que el texto se ajuste dentro de la celda */
+    overflow: hidden; /* El texto no desborda */
+}
+
+/* Navegación */
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* Formulario y mapa */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancelar {
+    background-color: #f44336;
+    color: white;
+}
+
+#buscar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Mapa */
+.map {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    height: 400px; 
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+    }
+
+    .form, .map {
+        flex: 1;
+    }
+
+    .form {
+        margin-right: 1rem;
+    }
+}
+
+.results {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+/* Asegura que los elementos del formulario estén en su lugar */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Necesario para que las sugerencias se posicionen respecto a este contenedor */
+    margin-bottom: 1rem; /* Añade espacio entre cada grupo de formulario */
+}
+/* Ajuste de las sugerencias */
+.suggestions {
+    position: absolute;  /* Asegura que las sugerencias se posicionen por encima del formulario */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;  /* Asegura que las sugerencias tengan el mismo ancho que el input */
+    background-color: white;
+    border-radius: 5px;
+    max-height: 80px;  /* Limita la altura máxima para evitar desbordamientos */
+    overflow-y: auto;   /* Permite el desplazamiento si hay demasiadas sugerencias */
+    z-index: 10;        /* Asegura que las sugerencias estén por encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 100%; /* Hace que las sugerencias aparezcan justo debajo del input */
+    margin-top: 0.5rem; /* Añade un pequeño espacio entre el input y las sugerencias */
+}
+
+
+.suggestions li {
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;  /* Cambia el fondo cuando el ratón pasa por encima */
+}
+.margin-bottom-100 {
+    margin-bottom: 100px;
+}

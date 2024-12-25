@@ -4,133 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de Monumentos de Interés Cultural</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            width: 100%;
-            max-width: 700px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .form-group {
-            margin: 10px 0;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"], select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        .buttons {
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button#cancelar {
-            background-color: #e74c3c;
-            color: white;
-        }
-        button#buscar {
-            background-color: #2c3e50;
-            color: white;
-        }
-        #mapa {
-            width: 100%;
-            height: 200px;
-            margin-top: 20px;
-        }
-        #resultados {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        img.img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .navegacion {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @media only screen and (min-width: 768px) {
-            #mapa {
-                height: 300px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
+<header class="header">
+    <h1>Buscador de Monumentos de Interés Cultural</h1>
+    <nav class="navigation">
+        <a href="Carga.html">Carga del Almacén de Datos</a>
+    </nav>
+</header>
 
-<div class="container">
-    <h1>Buscador de monumentos de interés cultural</h1>
-    <a href="Carga.html" class="navegacion">Carga del almacén de datos class</a>
-
-    <div class="form-group">
-        <label for="localidad">Localidad:</label>
-        <input type="text" id="localidad" placeholder="Añadir texto">
-    </div>
-    
-    <div class="form-group">
-        <label for="codigo_postal">Cód. Postal:</label>
-        <input type="text" id="codigo_postal" placeholder="Añadir texto">
-    </div>
-    
-    <div class="form-group">
-        <label for="provincia">Provincia:</label>
-        <input type="text" id="provincia" placeholder="Añadir texto">
-    </div>
-    
-    <div class="form-group">
-        <label for="tipo">Tipo:</label>
-        <select id="tipo" class="tipos">
-            <option value="puente">Puente</option>
-            <option value="edificio">Edificio</option>
-            <option value="museo">Museo</option>
-        </select>
-    </div>
-    
-    <div class="buttons">
-        <button id="cancelar">Cancelar</button>
-        <button id="buscar">Buscar</button>
-    </div>
-    
-    <div id="mapa">
-        <img class="img" src="https://via.placeholder.com/600x300.png?text=Mapa" alt="Mapa de monumentos">
-    </div>
-    
-    <div id="resultados">
+<main class="container">
+    <section class="main-content">
+        <form class="form">
+            <div class="form-group">
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" placeholder="Añadir texto" autocomplete="off">
+                <ul id="localidad-suggestions" class="suggestions"></ul>
+            </div>
+            <div class="form-group">
+                <label for="codigo_postal">Cód. Postal:</label>
+                <input type="text" id="codigo_postal" placeholder="Añadir texto" autocomplete="off">
+                <ul id="codigo-postal-suggestions" class="suggestions"></ul>
+            </div>
+            <div class="form-group">
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" placeholder="Añadir texto" autocomplete="off">
+                <ul id="provincia-suggestions" class="suggestions"></ul>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="">Todos</option>
+                    <option value="IglesiaErmita">Iglesia-Ermita</option>
+                    <option value="MonasterioConvento">Monasterio-Convento</option>
+                    <option value="CastilloTorreFuerte">Castillo-Torre</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="reset" id="cancelar">Cancelar</button>
+                <button type="button" id="buscar">Buscar</button>
+            </div>
+        </form>
+        <div id="mapa" class="map"></div>
+    </section>
+    <section id="resultados" class="results">
         <p>Resultados de la búsqueda:</p>
-    </div>
-</div>
+        <div class="table-container">
+            <table id="tabla-resultados">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Dirección</th>
+                        <th>Localidad</th>
+                        <th>Cód. Postal</th>
+                        <th>Provincia</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+</main>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="Logica.js"></script>
 </body>
 </html>

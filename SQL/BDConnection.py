@@ -15,11 +15,11 @@ class BDConnection:
 
     def create_engine_without_db(self):
         """ Crea un motor de SQLAlchemy sin base de datos especificada """
-        return create_engine(f'mysql+mysqlconnector://{self.usuario}:{self.contrasena}@{self.host}:{self.puerto}/', echo=True)
+        return create_engine(f'mysql+mysqlconnector://{self.usuario}:{self.contrasena}@{self.host}:{self.puerto}/', echo=False)
 
     def create_engine_with_db(self):
         """ Crea un motor de SQLAlchemy con la base de datos especificada """
-        return create_engine(f'mysql+mysqlconnector://{self.usuario}:{self.contrasena}@{self.host}:{self.puerto}/{self.db_name}', echo=True)
+        return create_engine(f'mysql+mysqlconnector://{self.usuario}:{self.contrasena}@{self.host}:{self.puerto}/{self.db_name}', echo=False)
 
     def create_database_if_not_exists(self):
         """ Crear la base de datos si no existe """
