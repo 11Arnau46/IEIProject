@@ -1,7 +1,7 @@
 import os
 import json
 from .Filtros import clean_coordinates, limpiar_campo_duplicado, is_duplicate_monument, validar_provincia_localidad
-from Location_Finder import LocationFinder
+from .Location_Finder import LocationFinder
 
 def process_and_save_json(json_path):
     location_finder = LocationFinder(json_path)

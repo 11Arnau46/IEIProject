@@ -6,7 +6,7 @@ from config.paths import INPUT_CSV_PATH
 from utils.Filtros import *
 from utils.Otros import *
 from utils.Conversores import convertir_coordenadas_utm
-from Location_Finder import LocationFinder
+from BackEnd.utils.Location_Finder import LocationFinder
 
 # Directorio actual
 print("Current working directory:", os.getcwd())

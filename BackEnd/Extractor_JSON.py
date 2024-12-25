@@ -2,7 +2,6 @@ import os
 from config.paths import INPUT_JSON_PATH
 import pandas as pd
 import json
-from Location_Finder import LocationFinder
 from utils.Filtros import clean_coordinates, limpiar_campo_duplicado, validar_coordenadas, get_tipo_monumento, is_duplicate_monument, procesar_datos
 from utils.Otros import *
 
@@ -85,4 +84,4 @@ df_result = aplicar_correcciones(df_result)
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'jsontojson')
 
 # Guardar el resultado en un archivo JSON
-process_and_save_json('Resultados/JSONtoJSON_con_coords.json')
+process_and_save_json('../Resultados/JSONtoJSON_con_coords.json')
