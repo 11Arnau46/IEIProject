@@ -4,20 +4,15 @@ import pandas as pd
 import json
 from Location_Finder import LocationFinder
 from utils.Filtros import clean_coordinates, limpiar_campo_duplicado, validar_coordenadas, get_tipo_monumento, is_duplicate_monument, procesar_datos
-from utils.Otros import aplicar_correcciones, aplicar_filtros, process_and_save_json, aplicar_filtros_estandar
+from utils.Otros import *
 
 # Función para cargar el archivo JSON y preservar claves duplicadas
 def parse_json_with_duplicates(file_path):
-    os.chdir('/Users/arnau1146/IdeaProjects/IEIProject/BackEnd')
-    print("Current working directory:", os.getcwd())
-    
-    file_path = file_path.replace('/BackEnd/API', '')
-    full_path = os.path.join(os.getcwd(), file_path)
-    print("Full path to the file:", full_path)
-    
-    with open(full_path, 'r', encoding='utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
+        # Utilizamos object_pairs_hook para conservar el orden y los duplicados
         data = json.load(file, object_pairs_hook=lambda pairs: pairs)
     return data
+
 
 # Función para extraer los datos de cada monumento del JSON
 def extraer_datos_monumento(monumento, seen_monuments):
@@ -83,8 +78,12 @@ for monumento in json_data:
 # Procesar los datos y extraer la información relevante
 df_result = pd.DataFrame(data)
 
+# Dividir los datos en aquellos con coordenadas y sin coordenadas
+df_con_coords, df_sin_coords = procesar_datos(data, 'jsontojson')
+
+
 # Aplica los filtros al DataFrame
 df_result = aplicar_correcciones(df_result)
 
 # Guardar el resultado en un archivo JSON
-process_and_save_json('../Resultados/JSONtoJSON_con_coords.json')
+process_and_save_json('Resultados/JSONtoJSON_con_coords.json')

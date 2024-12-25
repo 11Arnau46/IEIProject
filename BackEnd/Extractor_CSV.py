@@ -64,11 +64,13 @@ for index, monumento in df.iterrows():
 # Crear DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
 
+# Mostrar información sobre los datos separados
+
 # Aplicar filtros estandarizados al DataFrame
 df_result = aplicar_correcciones(df_result)
 
 # Dividir los datos en aquellos con coordenadas y sin coordenadas
-df_con_coords, df_sin_coords = procesar_datos(df_result)
+df_con_coords, df_sin_coords = procesar_datos(data, 'csvotojson')
 
 # Convertir coordenadas
 ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"
@@ -76,4 +78,4 @@ ruta_json_salida = "../Resultados/CSVtoJSON_Corregido.json"
 convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
 
 # Procesar y guardar el archivo JSON
-process_and_save_json('../Resultados/CSVtoJSON_Corregido.json')
+process_and_save_json('Resultados/CSVtoJSON_Corregido.json')

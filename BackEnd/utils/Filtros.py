@@ -33,7 +33,11 @@ def get_tipo_monumento(denominacion):
 
 
 # Filtrar filas con o sin coordenadas
-def procesar_datos(data):
+def procesar_datos(data, archivo_json):
+    # Verificar si 'data' es un diccionario y convertirlo a DataFrame
+    if isinstance(data, dict):
+        data = pd.DataFrame(data)
+    
     # Eliminar monumentos duplicados por el nombre 'nomMonumento' antes de continuar
     df_result_unique = data.drop_duplicates(subset='nomMonumento', keep='first')
     
@@ -44,10 +48,28 @@ def procesar_datos(data):
     # Crear la ruta relativa correcta y asegurarse de que la carpeta de destino existe
     result_dir = os.path.join(os.path.dirname(__file__), '../../../Resultados')
     os.makedirs(result_dir, exist_ok=True)
+    
+    # Establecer el nombre de archivo basado en el argumento 'archivo_json'
+    if archivo_json == 'csvotojson':
+        con_coords_path = os.path.join(result_dir, 'CSVtoJSON_con_coords.json')
+        sin_coords_path = os.path.join(result_dir, 'CSVtoJSON_sin_coords.json')
+    elif archivo_json == 'jsontojson':
+        con_coords_path = os.path.join(result_dir, 'JSONtoJSON_con_coords.json')
+        sin_coords_path = os.path.join(result_dir, 'JSONtoJSON_sin_coords.json')
+    elif archivo_json == 'xmltojson':
+        con_coords_path = os.path.join(result_dir, 'XMLtoJSON_con_coords.json')
+        sin_coords_path = os.path.join(result_dir, 'XMLtoJSON_sin_coords.json')
+    else:
+        raise ValueError("El argumento 'archivo_json' debe ser 'csvotojson', 'jsontojson' o 'xmltojson'")
 
-    # Guardar los datos en formato JSON con la ruta relativa
+    # Mostrar información sobre los datos separados
+    print(f"Monumentos con coordenadas: {len(df_con_coords)}")
+    print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
+    
+    # Guardar los datos en formato JSON
+    print(f"Guardando archivo con coordenadas en: {con_coords_path}")
     df_con_coords.to_json(
-        os.path.join(result_dir, 'CSVtoJSON_con_coords.json'),
+        con_coords_path,
         orient='records',
         force_ascii=False,
         indent=4,
@@ -55,18 +77,15 @@ def procesar_datos(data):
     )
 
     if len(df_sin_coords) > 0:
+        print(f"Guardando archivo sin coordenadas en: {sin_coords_path}")
         df_sin_coords.to_json(
-            os.path.join(result_dir, 'CSVtoJSON_sin_coords.json'),
+            sin_coords_path,
             orient='records',
             force_ascii=False,
             indent=4,
             default_handler=str
         )
 
-    # Mostrar información sobre los datos separados
-    print(f"Monumentos con coordenadas: {len(df_con_coords)}")
-    print(f"Monumentos sin coordenadas: {len(df_sin_coords)}")
-    
     return df_con_coords, df_sin_coords
 
 # Filtrar filas duplicadas, caso contrario no continuar
