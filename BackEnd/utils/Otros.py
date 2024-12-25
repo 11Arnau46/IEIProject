@@ -1,6 +1,6 @@
 import os
 import json
-from Filtros import *
+from .Filtros import *
 from Location_Finder import LocationFinder
 
 def process_and_save_json(json_path):
