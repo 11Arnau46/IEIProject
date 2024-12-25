@@ -1,0 +1,133 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente */
+    min-height: 100vh; /* Hace que el cuerpo tenga la altura completa de la ventana */
+}
+
+.header {
+    max-width: 1200px; /* Igual que .container */
+    width: 100%; /* Ocupa el 100% del ancho disponible dentro del max-width */
+    color: black;
+    padding: 1rem 0;
+    background-color: rgb(135, 135, 244);
+    text-align: center;
+    border-radius: 10px; /* Opcional: redondea los bordes del header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade sombra */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* Formulario y mapa */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancelar {
+    background-color: #f44336;
+    color: white;
+}
+
+#buscar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Mapa */
+.map {
+    flex: 1;
+    max-width: 600px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+    }
+
+    .form, .map {
+        flex: 1;
+    }
+
+    .form {
+        margin-right: 1rem;
+    }
+}
+
+.results {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}

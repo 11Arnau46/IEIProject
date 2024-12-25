@@ -3,99 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carga del almacén de datos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            width: 100%;
-            max-width: 600px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .form-group {
-            margin: 10px 0;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        .buttons {
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button#cancelar {
-            background-color: #e74c3c;
-            color: white;
-        }
-        button#cargar {
-            background-color: #2c3e50;
-            color: white;
-        }
-        #resultados {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .navegacion {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @media only screen and (min-width: 768px) {
-            .container {
-                max-width: 700px;
-            }
-        }
-    </style>
+    <title>Carga del Almacén de Datos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>Carga del almacén de datos</h1>
-    <a href="Busqueda.html" class="navegacion">Buscador de monumentos</a>
-    
-    <div class="form-group">
-        <label for="fuente">Seleccione fuente:</label>
-        <input type="checkbox" id="castilla" value="castilla"> Castilla y León<br>
-        <input type="checkbox" id="valenciana" value="valenciana" checked> Comunitat Valenciana<br>
-        <input type="checkbox" id="euskadi" value="euskadi"> Euskadi<br>
-        <input type="checkbox" id="seleccionar_todas" value="todas"> Seleccionar todas
-    </div>
-    
-    <div class="buttons">
-        <button id="cancelar">Cancelar</button>
-        <button id="cargar">Cargar</button>
-    </div>
-    
-    <div id="resultados">
-        <p>Resultados de la carga:</p>
-    </div>
-</div>
+<header class="header">
+    <h1>Carga del Almacén de Datos</h1>
+    <nav class="navigation">
+        <a href="Busqueda.html">Buscador de Monumentos</a>
+    </nav>
+</header>
 
+<main class="container">
+    <form class="form">
+        <fieldset>
+            <legend>Seleccione fuente:</legend>
+            <label><input type="checkbox" value="castilla"> Castilla y León</label>
+            <label><input type="checkbox" value="valenciana" checked> Comunitat Valenciana</label>
+            <label><input type="checkbox" value="euskadi"> Euskadi</label>
+            <label><input type="checkbox" id="seleccionar_todas" value="todas"> Seleccionar todas</label>
+        </fieldset>
+        <div class="buttons">
+            <button type="button" id="cancelar">Cancelar</button>
+            <button type="button" id="cargar">Cargar</button>
+            <button type="button" id="borrar">Borrar Almacén de Datos</button>
+        </div>
+    </form>
+    <section id="resultados" class="results">
+        <p>Resultados de la carga:</p>
+    </section>
+</main>
+
+<script src="js/main.js"></script>
 </body>
 </html>
