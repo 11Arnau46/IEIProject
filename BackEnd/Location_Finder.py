@@ -29,7 +29,7 @@ class LocationFinder:
                         if data2['features']:
                             postal_code = data2['features'][0]['properties'].get('postcode', 'N/A')
                 return direction, postal_code
-            else:
+            else: 
                 return 'N/A', 'N/A'
         else:
             return 'N/A', 'N/A'
@@ -45,11 +45,21 @@ class LocationFinder:
         for item in data:
             lat = item.get('latitud')
             lon = item.get('longitud')
-            if lat and lon:
+
+            # Verificar si se debe actualizar
+            direccion_necesaria = not item.get('direccion') or item['direccion'] in ['N/A', None, '']
+            postal_code_necesario = not item.get('codigo_postal') or item['codigo_postal'] in ['N/A', None, '']
+
+            if lat and lon and (direccion_necesaria or postal_code_necesario):
                 direction, postal_code = self.get_location_info(lat, lon)
-                item['direccion'] = direction
-                item['codigo_postal'] = postal_code
-                results.append(item)
+                
+                # Solo actualizar si los campos estaban vacíos o no válidos
+                if direccion_necesaria:
+                    item['direccion'] = direction
+                if postal_code_necesario:
+                    item['codigo_postal'] = postal_code
+
+            results.append(item)
 
         return results
 
