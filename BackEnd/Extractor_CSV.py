@@ -55,8 +55,8 @@ data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_posta
 seen_monuments = set()
 
 # Extraer información de cada fila del CSV
-for index, monumento in df.iterrows():
-    extracted_data = extraer_datos_csv(monumento, seen_monuments)
+for _, row in df.iterrows():
+    extracted_data = extraer_datos_csv(row['DENOMINACION'], seen_monuments)
     if extracted_data is not None:  # Solo agregar si los datos no son None
         for key, value in extracted_data.items():
             data[key].append(value)
@@ -75,6 +75,10 @@ df_con_coords, df_sin_coords = procesar_datos(data, 'csvotojson')
 # Convertir coordenadas
 ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"
 ruta_json_salida = "../Resultados/CSVtoJSON_Corregido.json"
+
+with open(ruta_json_entrada, "r", encoding="utf-8") as file:
+    monumentos = json.load(file)
+    
 convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
 
 # Procesar y guardar el archivo JSON

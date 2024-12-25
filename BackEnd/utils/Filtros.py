@@ -2,6 +2,7 @@ import pandas as pd
 import re
 import os
 import pycountry
+import json
 
 #Filtros que por su naturaleza deben ser colocados uno por uno------------------------------------------------------------------------------
 
