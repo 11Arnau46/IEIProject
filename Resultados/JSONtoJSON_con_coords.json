@@ -26,6 +26,19 @@
         "nomProvincia": "Bizkaia"
     },
     {
+        "nomMonumento": "Torre de Doña Otxanda",
+        "tipoMonumento": "CastilloFortalezaTorre",
+        "direccion": "Calle Fundadora de las Siervas de Jesús, 24",
+        "codigo_postal": "01001",
+        "longitud": "-2.674561400000016",
+        "latitud": "42.8503186",
+        "descripcion": "La torre de Doña Otxanda es un bello edificio rematado por almenas. Es una de las muchas e...",
+        "codLocalidad": "059",
+        "nomLocalidad": "Vitoria-Gasteiz",
+        "codProvincia": "01",
+        "nomProvincia": "Araba/Álava"
+    },
+    {
         "nomMonumento": "Fuerte de Guadalupe",
         "tipoMonumento": "CastilloFortalezaTorre",
         "direccion": "Carretera Jaizkibel GI-3440, barrio Gornutz Montaña",
@@ -50,6 +63,19 @@
         "nomLocalidad": "Donostia / San Sebastián",
         "codProvincia": "20",
         "nomProvincia": "Gipuzkoa"
+    },
+    {
+        "nomMonumento": "Paseo de los Arquillos",
+        "tipoMonumento": "Otros",
+        "direccion": "Entre las calles Mateo Benigno de Moraza y Cuesta de San Francisco  <br/>",
+        "codigo_postal": "01001",
+        "longitud": "-2.6715207",
+        "latitud": "42.8471391",
+        "descripcion": "El paseo de los Arquillos, obra del arquitecto vitoriano Justo Antonio de Olaguíbel, se co...",
+        "codLocalidad": "059",
+        "nomLocalidad": "Vitoria-Gasteiz",
+        "codProvincia": "01",
+        "nomProvincia": "Araba/Álava"
     },
     {
         "nomMonumento": "Puente de San Antón",
@@ -117,6 +143,19 @@
         "nomProvincia": "Gipuzkoa"
     },
     {
+        "nomMonumento": "Puente de Trespuentes",
+        "tipoMonumento": "Puente",
+        "direccion": "Carretera A-3306, Trespuentes",
+        "codigo_postal": "01191",
+        "longitud": "-2.7885427999999592",
+        "latitud": "42.84394280000001",
+        "descripcion": "El puente de Trespuentes une las dos orillas del río Zadorra desde tiempos remotos. Sobre ...",
+        "codLocalidad": "901",
+        "nomLocalidad": "Iruña Oka/Iruña de Oca",
+        "codProvincia": "01",
+        "nomProvincia": "Araba/Álava"
+    },
+    {
         "nomMonumento": "Molino de Zamakola",
         "tipoMonumento": "Otros",
         "direccion": "Barrio Indusi",
@@ -128,5 +167,18 @@
         "nomLocalidad": "Dima",
         "codProvincia": "48",
         "nomProvincia": "Bizkaia"
+    },
+    {
+        "nomMonumento": "Castillo de Portilla",
+        "tipoMonumento": "CastilloFortalezaTorre",
+        "direccion": "Portillako gaztelua/Castillo de Portilla, Zabalateko bidea / Camino a Portilla, 01212 Zambrana, Spain",
+        "codigo_postal": "01212",
+        "longitud": "-2.8336449",
+        "latitud": "42.6703698",
+        "descripcion": "La edificación defensiva del Castillo de Portilla, Zabaletako Gaztelua en euskera, se cons...",
+        "codLocalidad": "062",
+        "nomLocalidad": "Zambrana",
+        "codProvincia": "01",
+        "nomProvincia": "Araba/Álava"
     }
 ]
