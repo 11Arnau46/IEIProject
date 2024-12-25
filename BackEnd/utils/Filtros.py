@@ -142,9 +142,9 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
 
 # Función para limpiar coordenadas
 def clean_coordinates(value):
-    if isinstance(value, str):
+    if value is not None and isinstance(value, str):
         return re.sub(r'[^0-9\.\-]', '', value)
-    return pd.NA  # Devolver pd.NA si el valor no es una cadena válida
+    return value  
 
 #Elimina palabras duplicadas en el texto
 def limpiar_campo_duplicado(valor):

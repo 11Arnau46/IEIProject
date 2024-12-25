@@ -1,67 +1,15 @@
 [
     {
-        "nomMonumento":"Escudo de los Júdici de Acharte Blanes",
-        "tipoMonumento":"Otros",
-        "direccion":null,
-        "codigo_postal":null,
-        "longitud":null,
-        "latitud":null,
-        "descripcion":"Bienes inmuebles 1ª",
-        "codLocalidad":null,
-        "nomLocalidad":"ALZIRA",
-        "codProvincia":null,
-        "nomProvincia":"VALENCIA"
-    },
-    {
-        "nomMonumento":"Torre Muza",
+        "nomMonumento":"Castillo y Murallas de Biar",
         "tipoMonumento":"CastilloFortalezaTorre",
         "direccion":null,
         "codigo_postal":null,
-        "longitud":null,
+        "longitud":4278235,
         "latitud":null,
         "descripcion":"Bienes inmuebles 1ª",
         "codLocalidad":null,
-        "nomLocalidad":"BENIFAIÓ",
+        "nomLocalidad":"BIAR",
         "codProvincia":null,
-        "nomProvincia":"VALENCIA"
-    },
-    {
-        "nomMonumento":"Iglesia Parroquial de San Miguel Arcángel",
-        "tipoMonumento":"IglesiaErmita",
-        "direccion":null,
-        "codigo_postal":null,
-        "longitud":null,
-        "latitud":null,
-        "descripcion":"Bienes inmuebles 1ª",
-        "codLocalidad":null,
-        "nomLocalidad":"BENIGÀNIM",
-        "codProvincia":null,
-        "nomProvincia":"VALENCIA"
-    },
-    {
-        "nomMonumento":"Restos Arqueológicos de la Alquería islámica de Bofilla y su Torre",
-        "tipoMonumento":"CastilloFortalezaTorre",
-        "direccion":null,
-        "codigo_postal":null,
-        "longitud":null,
-        "latitud":null,
-        "descripcion":"Bienes inmuebles 1ª",
-        "codLocalidad":null,
-        "nomLocalidad":"BÉTERA",
-        "codProvincia":null,
-        "nomProvincia":"VALENCIA"
-    },
-    {
-        "nomMonumento":"Molino Fortificado Torre Gausa",
-        "tipoMonumento":"CastilloFortalezaTorre",
-        "direccion":null,
-        "codigo_postal":null,
-        "longitud":null,
-        "latitud":null,
-        "descripcion":"Bienes inmuebles 1ª",
-        "codLocalidad":null,
-        "nomLocalidad":"SAGUNT",
-        "codProvincia":null,
-        "nomProvincia":"VALENCIA"
+        "nomProvincia":"ALICANTE"
     }
 ]
