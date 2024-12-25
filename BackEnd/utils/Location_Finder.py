@@ -1,13 +1,14 @@
 import json
 import os
 import requests
+import time
 
 class LocationFinder:
     def __init__(self, json_path):
         self.json_path = json_path
 
     def get_location_info(self, lat, lon):
-        api_key = 'ab010f03e3d34a31b629db543f088d19'  # Replace with your actual API key
+        api_key = 'ced764935c23495db1e89a127ba65f36' #'d5759aade0884056ba8c63a7fe5d9f2f'
         url1 = f'https://api.opencagedata.com/geocode/v1/json?q={lat}%2C{lon}&key={api_key}'
 
         response1 = requests.get(url1)
@@ -20,7 +21,7 @@ class LocationFinder:
                 postal_code = components.get('postcode', 'N/A')
 
                 if postal_code == 'N/A':
-                    api2_key = '3b3eb29261ae4a61bd9fc55c2e50f74d'  # Replace with your actual API key
+                    api2_key = '3b3eb29261ae4a61bd9fc55c2e50f74d'
                     url2 = f'https://api.geoapify.com/v1/geocode/reverse?lat={lat}&lon={lon}&apiKey={api2_key}'
                     response2 = requests.get(url2)
 
@@ -36,7 +37,7 @@ class LocationFinder:
 
     def process_json(self):
         if not os.path.exists(self.json_path):
-            return []  # Return an empty list if the file doesn't exist
+            return []
 
         with open(self.json_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
@@ -64,13 +65,5 @@ class LocationFinder:
         return results
 
     def save_results_to_json(self, results):
-        # Create the file if it doesn't exist
-        if not os.path.exists(self.json_path):
-            with open(self.json_path, 'w', encoding='utf-8') as file:
-                json.dump(results, file, ensure_ascii=False, indent=4)
-            print(f"Archivo creado y guardado en {self.json_path}.")
-        else:
-            # If the file exists, overwrite it with the new data
-            with open(self.json_path, 'w', encoding='utf-8') as file:
-                json.dump(results, file, ensure_ascii=False, indent=4)
-            print(f"Archivo guardado en {self.json_path}.")
+        with open(self.json_path, 'w', encoding='utf-8') as file:
+            json.dump(results, file, ensure_ascii=False, indent=4)

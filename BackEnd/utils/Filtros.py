@@ -127,11 +127,14 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
         return False
 
     nombre = nombre.strip().lower()  # Normalizar el nombre
+    
     if tipo == "provincia":
         provincias = [
             subdivision.name.lower() for subdivision in pycountry.subdivisions if subdivision.country_code == "ES"
         ]
-        return nombre in provincias
+        # Comprobar si el nombre contiene alguna provincia (no exacto, pero contiene la palabra)
+        return any(provincia in nombre for provincia in provincias)
+    
     elif tipo == "localidad":
         # Esto puede ampliarse con datos específicos de localidades de España
         return True  # Por defecto, se acepta cualquier localidad

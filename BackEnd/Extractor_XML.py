@@ -86,4 +86,4 @@ df_result = aplicar_correcciones(df_result)
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'xmltojson')
 
 # Procesar y guardar el archivo JSON
-process_and_save_json('../Resultados/XMLtoJSON_con_coords.json')
+process_and_save_json('Resultados/XMLtoJSON_con_coords.json')
