@@ -24,7 +24,7 @@ def extraer_datos_xml(monumento, seen_monuments):
     codProvincia = pd.NA
 
     # Validar utilizando la función de filtros
-    if not aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad, seen_monuments):
+    if not aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, seen_monuments):
         return None  # Si no pasa las validaciones, omitimos el monumento
 
     # Agregar a 'seen_monuments'
@@ -45,7 +45,7 @@ def extraer_datos_xml(monumento, seen_monuments):
     }
 
 # Cambiar directorio de trabajo
-os.chdir('/Users/arnau1146/IdeaProjects/IEIProject/BackEnd')
+#os.chdir('/Users/arnau1146/IdeaProjects/IEIProject/BackEnd')
 print("Current working directory:", os.getcwd())
 
 # Leer el archivo XML

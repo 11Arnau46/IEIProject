@@ -5,6 +5,7 @@ import time
 import json
 import Coords_converter
 
+
 def convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida):
     # Cargar el archivo JSON
     with open(ruta_json_entrada, "r", encoding="utf-8") as file:

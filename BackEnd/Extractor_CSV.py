@@ -6,6 +6,7 @@ from config.paths import INPUT_CSV_PATH
 from utils.Filtros import *
 from utils.Otros import *
 from utils.Conversores import convertir_coordenadas_utm
+from Location_Finder import LocationFinder
 
 # Directorio actual
 print("Current working directory:", os.getcwd())
@@ -25,7 +26,7 @@ def extraer_datos_csv(row, seen_monuments):
     nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
 
     # Validar utilizando la función de filtros
-    if not aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad, seen_monuments):
+    if not aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, seen_monuments):
         return None  # Si no pasa las validaciones, omitimos el monumento
 
 
@@ -56,7 +57,7 @@ seen_monuments = set()
 
 # Extraer información de cada fila del CSV
 for _, row in df.iterrows():
-    extracted_data = extraer_datos_csv(row['DENOMINACION'], seen_monuments)
+    extracted_data = extraer_datos_csv(row, seen_monuments)
     if extracted_data is not None:  # Solo agregar si los datos no son None
         for key, value in extracted_data.items():
             data[key].append(value)

@@ -40,14 +40,12 @@ def aplicar_correcciones(df):
     
     return df
 
-def aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad, seen_monuments):
+def aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, seen_monuments):
     """
     Realiza las validaciones para los datos de cada monumento (duplicado, coordenadas, provincia, localidad).
     
     Argumentos:
         nomMonumento (str): Nombre del monumento.
-        latitud (float): Latitud del monumento.
-        longitud (float): Longitud del monumento.
         nomProvincia (str): Nombre de la provincia.
         nomLocalidad (str): Nombre de la localidad.
         seen_monuments (set): Conjunto que mantiene los monumentos ya vistos para evitar duplicados.
@@ -57,10 +55,6 @@ def aplicar_filtros(nomMonumento, latitud, longitud, nomProvincia, nomLocalidad,
     """
     # Verificar si el monumento es duplicado
     if is_duplicate_monument(nomMonumento, seen_monuments):
-        return False
-
-    # Validar coordenadas
-    if not validar_coordenadas(latitud, longitud):
         return False
 
     # Validar provincia y localidad
