@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import os
 import pycountry
 
 #Filtros que por su naturaleza deben ser colocados uno por uno------------------------------------------------------------------------------
@@ -40,18 +41,22 @@ def procesar_datos(data):
     df_con_coords = df_result_unique.dropna(subset=['longitud', 'latitud'])
     df_sin_coords = df_result_unique[df_result_unique['longitud'].isna() | df_result_unique['latitud'].isna()]
 
-    # Guardar los datos en formato JSON
+    # Crear la ruta relativa correcta y asegurarse de que la carpeta de destino existe
+    result_dir = os.path.join(os.path.dirname(__file__), '../../../Resultados')
+    os.makedirs(result_dir, exist_ok=True)
+
+    # Guardar los datos en formato JSON con la ruta relativa
     df_con_coords.to_json(
-        '../Resultados/CSVtoJSON_con_coords.json',
+        os.path.join(result_dir, 'CSVtoJSON_con_coords.json'),
         orient='records',
         force_ascii=False,
         indent=4,
         default_handler=str
     )
-    
+
     if len(df_sin_coords) > 0:
         df_sin_coords.to_json(
-            '../Resultados/CSVtoJSON_sin_coords.json',
+            os.path.join(result_dir, 'CSVtoJSON_sin_coords.json'),
             orient='records',
             force_ascii=False,
             indent=4,
@@ -73,6 +78,9 @@ def is_duplicate_monument(nom_monumento, seen_monuments):
 
 # Función para validar si las coordenadas están dentro de los límites de WGS84, caso contrario no continuar
 def validar_coordenadas(latitud, longitud):
+        # Comprobar si latitud o longitud son NaN
+    if pd.isna(latitud) or pd.isna(longitud):
+        return False;
     try:
         latitud = float(latitud)
         longitud = float(longitud)

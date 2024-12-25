@@ -55,7 +55,7 @@ data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_posta
 seen_monuments = set()
 
 # Extraer información de cada fila del CSV
-for monumento in df.iterrows():
+for index, monumento in df.iterrows():
     extracted_data = extraer_datos_csv(monumento, seen_monuments)
     if extracted_data is not None:  # Solo agregar si los datos no son None
         for key, value in extracted_data.items():
