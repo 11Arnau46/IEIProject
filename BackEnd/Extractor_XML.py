@@ -71,8 +71,10 @@ seen_monuments = set()
 # Extraer información de cada monumento del XML
 for monumento in root.findall('.//monumento'):
     extracted_data = extraer_datos_xml(monumento, seen_monuments)
-    for key, value in extracted_data.items():
-        data[key].append(value)
+    # Verificar si los datos extraídos no son None antes de continuar
+    if extracted_data is not None:
+        for key, value in extracted_data.items():
+            data[key].append(value)
 
 # Crear DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
