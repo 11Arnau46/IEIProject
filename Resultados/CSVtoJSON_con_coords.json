@@ -1,0 +1,67 @@
+[
+    {
+        "nomMonumento":"Escudo de los Júdici de Acharte Blanes",
+        "tipoMonumento":"Otros",
+        "direccion":null,
+        "codigo_postal":null,
+        "longitud":4336798,
+        "latitud":721049.0,
+        "descripcion":"Bienes inmuebles 1ª",
+        "codLocalidad":null,
+        "nomLocalidad":"ALZIRA",
+        "codProvincia":null,
+        "nomProvincia":"VALENCIA"
+    },
+    {
+        "nomMonumento":"Torre Muza",
+        "tipoMonumento":"CastilloFortalezaTorre",
+        "direccion":null,
+        "codigo_postal":null,
+        "longitud":4352036,
+        "latitud":721486.0,
+        "descripcion":"Bienes inmuebles 1ª",
+        "codLocalidad":null,
+        "nomLocalidad":"BENIFAIÓ",
+        "codProvincia":null,
+        "nomProvincia":"VALENCIA"
+    },
+    {
+        "nomMonumento":"Iglesia Parroquial de San Miguel Arcángel",
+        "tipoMonumento":"IglesiaErmita",
+        "direccion":null,
+        "codigo_postal":null,
+        "longitud":4313660,
+        "latitud":721543.0,
+        "descripcion":"Bienes inmuebles 1ª",
+        "codLocalidad":null,
+        "nomLocalidad":"BENIGÀNIM",
+        "codProvincia":null,
+        "nomProvincia":"VALENCIA"
+    },
+    {
+        "nomMonumento":"Restos Arqueológicos de la Alquería islámica de Bofilla y su Torre",
+        "tipoMonumento":"CastilloFortalezaTorre",
+        "direccion":null,
+        "codigo_postal":null,
+        "longitud":4384315,
+        "latitud":720796.0,
+        "descripcion":"Bienes inmuebles 1ª",
+        "codLocalidad":null,
+        "nomLocalidad":"BÉTERA",
+        "codProvincia":null,
+        "nomProvincia":"VALENCIA"
+    },
+    {
+        "nomMonumento":"Molino Fortificado Torre Gausa",
+        "tipoMonumento":"CastilloFortalezaTorre",
+        "direccion":null,
+        "codigo_postal":null,
+        "longitud":4395007,
+        "latitud":732199.0,
+        "descripcion":"Bienes inmuebles 1ª",
+        "codLocalidad":null,
+        "nomLocalidad":"SAGUNT",
+        "codProvincia":null,
+        "nomProvincia":"VALENCIA"
+    }
+]

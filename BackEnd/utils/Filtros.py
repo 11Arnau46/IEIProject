@@ -46,8 +46,9 @@ def procesar_datos(data, archivo_json):
     df_con_coords = df_result_unique.dropna(subset=['longitud', 'latitud'])
     df_sin_coords = df_result_unique[df_result_unique['longitud'].isna() | df_result_unique['latitud'].isna()]
 
-    # Crear la ruta relativa correcta y asegurarse de que la carpeta de destino existe
-    result_dir = os.path.join(os.path.dirname(__file__), '../../../Resultados')
+    # Crear la ruta absoluta correcta para 'Resultados' en el directorio raíz del proyecto
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..', 'IEIProject'))  # Subir tres niveles al directorio raíz
+    result_dir = os.path.join(project_root, 'Resultados')
     os.makedirs(result_dir, exist_ok=True)
     
     # Establecer el nombre de archivo basado en el argumento 'archivo_json'
