@@ -3,7 +3,7 @@ import pandas as pd
 import Coords_converter
 import json
 from config.paths import INPUT_CSV_PATH
-from utils.Filtros import get_tipo_monumento, is_duplicate_monument, filtrar_por_coordenadas, procesar_datos
+from utils.Filtros import get_tipo_monumento, procesar_datos
 from utils.Otros import *
 from utils.Conversores import convertir_coordenadas_utm
 

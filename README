@@ -25,3 +25,7 @@ Para ejecutar Server de APIS SWAGGER:
 Habilitar o deshabiliar que se imprima por consola la creacion y subida de datos a la BD:
 
    Cambiar los echo=True/False de SQL>BDConnection
+
+Error de python No se encontró Python; ejecuta sin argumentos para instalar desde Microsoft Store
+
+   https://recursospython.com/guias-y-manuales/no-se-encontro-python-ejecuta-sin-argumentos-para-instalar-desde-microsoft-store/

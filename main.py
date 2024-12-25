@@ -9,15 +9,15 @@ def ejecutar_extractor(tipo):
     # Definir la ruta del archivo corregido según el tipo
     if tipo == "csv":
         # Ejecutar el script para CSV
-        subprocess.run(["python3", "BackEnd/Extractor_CSV.py"])
+        subprocess.run(["python", "BackEnd/Extractor_CSV.py"])
         json_path = "Resultados/CSVtoJSON_Corregido.json"
     elif tipo == "json":
         # Ejecutar el script para JSON
-        subprocess.run(["python3", "BackEnd/Extractor_JSON.py"])
+        subprocess.run(["python", "BackEnd/Extractor_JSON.py"])
         json_path = "Resultados/JSONtoJSON_con_coords.json"
     elif tipo == "xml":
         # Ejecutar el script para XML
-        subprocess.run(["python3", "BackEnd/Extractor_XML.py"])
+        subprocess.run(["python", "BackEnd/Extractor_XML.py"])
         json_path = "Resultados/XMLtoJSON_con_coords.json"
     else:
         raise ValueError("Tipo de extractor no válido. Use 'csv', 'json' o 'xml'.")
