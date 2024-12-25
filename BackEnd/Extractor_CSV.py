@@ -71,7 +71,7 @@ df_result = pd.DataFrame(data)
 df_result = aplicar_correcciones(df_result)
 
 # Dividir los datos en aquellos con coordenadas y sin coordenadas
-df_con_coords, df_sin_coords = procesar_datos(data, 'csvotojson')
+df_con_coords, df_sin_coords = procesar_datos(df_result, 'csvotojson')
 
 # Convertir coordenadas
 ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"

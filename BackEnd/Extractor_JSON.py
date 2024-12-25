@@ -78,12 +78,11 @@ for monumento in json_data:
 # Procesar los datos y extraer la información relevante
 df_result = pd.DataFrame(data)
 
-# Dividir los datos en aquellos con coordenadas y sin coordenadas
-df_con_coords, df_sin_coords = procesar_datos(data, 'jsontojson')
-
-
 # Aplica los filtros al DataFrame
 df_result = aplicar_correcciones(df_result)
+
+# Dividir los datos en aquellos con coordenadas y sin coordenadas
+df_con_coords, df_sin_coords = procesar_datos(df_result, 'jsontojson')
 
 # Guardar el resultado en un archivo JSON
 process_and_save_json('Resultados/JSONtoJSON_con_coords.json')
