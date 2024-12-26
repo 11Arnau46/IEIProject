@@ -1,0 +1,5 @@
+Registros con errores y descartados: {fuente = XML, nombre = Monasterio de Santa María de Retuerta, Localidad = Sardón de Duero, motivo del error = Coordenadas sin valor}
+Registros con errores y reparados: {fuente = XML, nombre = Castillo de Íscar, Localidad = Íscar, motivo del error = Código postal sin valor, operación realizada = Reparado mediante la búsqueda del código postal}
+Registros con errores y descartados: {fuente = XML, nombre = Iglesia parroquial de Valdesaz, Localidad = Valdesaz de los Oteros, motivo del error = Código postal fuera de rango}
+Registros con errores y descartados: {fuente = XML, nombre = Castillo de Íscar, Localidad = Íscar, motivo del error = Monumento duplicado}
+Número de registros cargados correctamente: 12

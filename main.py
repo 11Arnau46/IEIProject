@@ -5,13 +5,13 @@ from SQL.Json_Loader import cargar_datos
 
 def ejecutar_extractor(tipo):
     if tipo == "csv":
-        subprocess.run(["py", "BackEnd/Extractor_CSV.py"])
+        subprocess.run(["python3", "BackEnd/Extractor_CSV.py"])
         return "Resultados/CSVtoJSON_Corregido.json"
     elif tipo == "json":
-        subprocess.run(["py", "BackEnd/Extractor_JSON.py"])
+        subprocess.run(["python3", "BackEnd/Extractor_JSON.py"])
         return "Resultados/JSONtoJSON_con_coords.json"
     elif tipo == "xml":
-        subprocess.run(["py", "BackEnd/Extractor_XML.py"])
+        subprocess.run(["python3", "BackEnd/Extractor_XML.py"])
         return "Resultados/XMLtoJSON_con_coords.json"
     else:
         raise ValueError("Tipo de extractor no válido. Use 'csv', 'json' o 'xml'.")
