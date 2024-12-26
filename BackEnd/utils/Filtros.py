@@ -99,14 +99,18 @@ def is_duplicate_monument(nom_monumento, seen_monuments):
 
 # Función para validar si las coordenadas tienen valor o no. En caso de que no, devuelve True, por defecto devuelve False
 def coordenadas_null(latitud, longitud):
-        # Comprobar si latitud o longitud son NaN
+    # Comprobar si latitud o longitud son NaN
     if pd.isna(latitud) or pd.isna(longitud):
         return True
     
     return False
 
 # Función para validar si las coordenadas están dentro de los límites de WGS84. Si están fuera de rango devuelve True, en caso contrario devuelve False
-def coordenadas_fuera_de_rango(latitud, longitud):
+def coordenadas_fuera_de_rango(latitud, longitud, fuente):
+    #Dado que CSV no tiene coordenadas, no hace falta comprobar
+    if fuente in {"CSV"}:
+        return False
+    
     try:
         latitud = float(latitud)
         longitud = float(longitud)

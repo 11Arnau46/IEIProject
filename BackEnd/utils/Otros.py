@@ -1,6 +1,6 @@
 import os
 import json
-from .Filtros import clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_fuera_de_rango, limpiar_campo_duplicado, is_duplicate_monument, validar_provincia_localidad
+from .Filtros import clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_fuera_de_rango, cp_null, limpiar_campo_duplicado, is_duplicate_monument, validar_provincia_localidad
 from .Location_Finder import LocationFinder
 
 def process_and_save_json(json_path):
@@ -36,7 +36,7 @@ def aplicar_correcciones(df):
     
     return df
 
-def aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, codigoPostal, latitud, longitud, seen_monuments):
+def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPostal, latitud, longitud, seen_monuments):
     """
     Realiza las validaciones para los datos de cada monumento (duplicado, coordenadas, provincia, localidad).
     
@@ -72,10 +72,13 @@ def aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, codigoPostal, lati
         print(f"Código postal fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Rechazado el monumento.")
         return False
     
+    # Verificar que las coordenadas tengan valor
     if coordenadas_null(latitud, longitud):
         print(f"Coordenadas sin valor: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
         return False
     
+    # Verificar que las coordenadas estén dentro del rango
+    if coordenadas_fuera_de_rango(latitud, longitud, fuente):
         print(f"Coordenadas fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
         return False
 
