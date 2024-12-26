@@ -1,6 +1,6 @@
 import os
 import json
-from .Filtros import capitalizar_string, clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_añadir_cero_izquierda, cp_fuera_de_rango, cp_menor_5_digitos, cp_null, direccion_null, limpiar_campo_duplicado, is_duplicate_monument, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
+from .Filtros import capitalizar_string, clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_añadir_cero_izquierda, cp_fuera_de_rango, cp_menor_5_digitos, cp_null, direccion_null, limpiar_campo_duplicado, is_duplicate_monument, obtener_despues_del_slash, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
 from .Location_Finder import LocationFinder
 import logging
 
@@ -35,8 +35,8 @@ def aplicar_correcciones(df):
         'latitud': clean_coordinates,
         'longitud': clean_coordinates,
         'codigo_postal': cp_añadir_cero_izquierda,
-        'nomLocalidad': [limpiar_campo_duplicado, capitalizar_string],
-        'nomProvincia': [limpiar_campo_duplicado, capitalizar_string],
+        'nomLocalidad': [limpiar_campo_duplicado, obtener_despues_del_slash, capitalizar_string],
+        'nomProvincia': [limpiar_campo_duplicado, obtener_despues_del_slash, capitalizar_string],
     }
 
     # Aplicar los filtros

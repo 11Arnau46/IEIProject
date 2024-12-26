@@ -275,6 +275,15 @@ def cp_añadir_cero_izquierda(codigoPostal):
 def capitalizar_string(texto):
     return texto.capitalize()
 
+#Función que obtiene lo que haya después de un /, se utiliza para los casos en los que la localidad o provincia tenga dos nombres
+def obtener_despues_del_slash(texto):
+    # Verifica si el texto contiene un '/'
+    if '/' in texto:
+        # Divide el texto por el carácter '/' y devuelve lo que está después del primer '/'
+        # lstrip borra los espacios innecesarios
+        return texto.split('/', 1)[1].lstrip()
+    return texto  # Si no hay '/', devuelve el texto original
+
 #Excepciones------------------------------------------------------------------------------
 
 # Función para limpiar texto HTML
