@@ -51,6 +51,7 @@ def aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, codigoPostal, lati
     """
     # Verificar si el monumento es duplicado
     if is_duplicate_monument(nomMonumento, seen_monuments):
+        print(f"Monumento duplicado: {nomMonumento}. Rechazado el monumento.")
         return False
 
     # Validar provincia y localidad
