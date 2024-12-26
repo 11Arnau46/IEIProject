@@ -62,6 +62,13 @@ def aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, codigoPostal, lati
         print(f"Localidad inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomLocalidad}. Rechazado el monumento.")
         return False
     
+    # Verificar que el codigo postal tenga valor, no rechaza el CP ya que lo corregimos
+    if cp_null(codigoPostal, fuente):
+        print(f"Código postal sin valor: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {nomLocalidad}. Reparado el monumento mediante la búsqueda del código postal.")
+        return True
+
+    # Verificar que el codigo postal esté dentro del rango
+    if  cp_fuera_de_rango(codigoPostal, fuente):
         print(f"Código postal fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Rechazado el monumento.")
         return False
     

@@ -152,10 +152,21 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
     
     return False
 
+#Función para comprobar si el código postal es vacío dependiendo de la fuente
+#Devuelve True en el caso de que la fuente sea JSON o XML y el codigo postal sea vacío y False en el caso de que tenga valor
+def cp_null(codigoPostal, fuente):
+    if (pd.isna(codigoPostal) or codigoPostal in {''}) and fuente in {"JSON", "XML"}:
+        return True
+    
+    return False
+    
 #Función para comprobar si el código postal se encuentra en 01001 a 52999
 #Devuelve False en el caso de que sea correcto y True en el caso de que sea incorrecto
-def cp_fuera_de_rango(codigoPostal):
-    
+def cp_fuera_de_rango(codigoPostal, fuente):   
+    #Dado que CSV no tiene codigo postal, no hace falta comprobar
+    if fuente in {"CSV"}:
+        return False
+
     try:
         if 1001 <= int(codigoPostal) <= 52999:
             return False
@@ -163,7 +174,7 @@ def cp_fuera_de_rango(codigoPostal):
             return True
     except ValueError:
         # Si el valor no es un número, no es válido
-        return False
+        return True
 
 #Correcciones aplicables en grupo------------------------------------------------------------------------------
 
