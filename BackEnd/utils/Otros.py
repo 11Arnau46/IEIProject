@@ -51,27 +51,25 @@ def aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, codigoPostal, lati
     """
     # Verificar si el monumento es duplicado
     if is_duplicate_monument(nomMonumento, seen_monuments):
-        print(f"Monumento duplicado: {nomMonumento}. Rechazado el monumento.")
+        print(f"Monumento duplicado: fuente = {fuente}, monumento = {nomMonumento}. Rechazado el monumento.")
         return False
 
     # Validar provincia y localidad
     if not validar_provincia_localidad(nomProvincia, tipo="provincia"):
-        print(f"Provincia inválida: {nomProvincia}. Rechazado el monumento.")
+        print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, provincia = {nomProvincia}. Rechazado el monumento.")
         return False
     if not validar_provincia_localidad(nomLocalidad, tipo="localidad"):
-        print(f"Localidad inválida: {nomLocalidad}. Rechazado el monumento.")
+        print(f"Localidad inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomLocalidad}. Rechazado el monumento.")
         return False
     
-    if  cp_fuera_de_rango(codigoPostal):
-        print(f"Código postal fuera de rango: {codigoPostal}. Rechazado el monumento.")
+        print(f"Código postal fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Rechazado el monumento.")
         return False
     
     if coordenadas_null(latitud, longitud):
-        print(f"Coordenadas sin valor: {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
+        print(f"Coordenadas sin valor: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
         return False
     
-    if coordenadas_fuera_de_rango(latitud, longitud):
-        print(f"Coordenadas fuera de rango: {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
+        print(f"Coordenadas fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
         return False
 
     return True
