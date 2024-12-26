@@ -1,6 +1,6 @@
 import os
 import json
-from .Filtros import clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_fuera_de_rango, cp_null, limpiar_campo_duplicado, is_duplicate_monument, provincia_incorrecta, validar_provincia_localidad
+from .Filtros import clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_fuera_de_rango, cp_menor_5_digitos, cp_null, limpiar_campo_duplicado, is_duplicate_monument, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
 from .Location_Finder import LocationFinder
 import logging
 
@@ -64,15 +64,28 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         print(f"Monumento duplicado: fuente = {fuente}, monumento = {nomMonumento}. Rechazado el monumento.")
         return False
 
+    """
     # Validar provincia y localidad
     if not validar_provincia_localidad(nomProvincia, tipo="provincia"):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Provincia inválida}}")
         print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, provincia = {nomProvincia}. Rechazado el monumento.")
         return False
-    
+    """
     if not validar_provincia_localidad(nomLocalidad, tipo="localidad"):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Localidad inválida}}")
         print(f"Localidad inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomLocalidad}. Rechazado el monumento.")
+        return False
+    
+    # Verificar que la provincia esté bien escrita, primero comprueba si todas las letras son iguales y luego comprueba si hay errores de acentuación
+    if provincia_sin_tilde(nomProvincia, fuente):
+        # Comprobar que esté bien escrita
+        if provincia_incorrecta(nomProvincia, fuente):
+            logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia inválida}}")
+            print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomProvincia}. Rechazado el monumento.")
+            return False
+        
+        logging.error(f"Registros con errores y reparado: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia sin tilde, operación realizada = Reparado mediante la adición de la tilde}}")
+        print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomProvincia}. Reparado mediante la adición de la tilde.")
         return False
     
     # Verificar que el codigo postal tenga valor, no rechaza el CP ya que lo corregimos

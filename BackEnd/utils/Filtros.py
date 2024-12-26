@@ -158,7 +158,9 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
     
     return False
 
-def provincia_incorrecta(provincia, fuente):
+# Función para validar si el nombre de la provincia tiene el tilde correcto, dependiendo de la fuente, se comparará con una lista de provincias u otra
+# Devolverá True en el caso de que esté mal escrito  y devolverá False en el caso de que esté bien escrito
+def provincia_sin_tilde(provincia, fuente):
     if pd.isna(provincia):
         return False
 
@@ -169,15 +171,17 @@ def provincia_incorrecta(provincia, fuente):
     provincias_comunidad_valenciana = ["alicante", "castellón", "valencia"]
 
     if fuente in {"JSON"}:
-        return any(provinciaEUS in provincia for provinciaEUS in provincias_euskadi)
+        return not any(provinciaEUS in provincia for provinciaEUS in provincias_euskadi)
     if fuente in {"XML"}:
-        return any(provinciaCLE in provincia for provinciaCLE in provincias_castilla_leon)
+        return not any(provinciaCLE in provincia for provinciaCLE in provincias_castilla_leon)
     if fuente in {"CSV"}:
-        return any(provinciaCSV in provincia for provinciaCSV in provincias_comunidad_valenciana)
+        return not any(provinciaCSV in provincia for provinciaCSV in provincias_comunidad_valenciana)
     
     return False
-    
-def provincia_sin_tilde(provincia, fuente):
+
+# Función para validar si el nombre de la provincia tiene los mismos caracteres (sin tomar en cuenta tildes), dependiendo de la fuente, se comparará con una lista de provincias u otra
+# Devolverá True en el caso de que esté mal escrito  y devolverá False en el caso de que esté bien escrito
+def provincia_incorrecta(provincia, fuente):
     if pd.isna(provincia):
         return False
 
@@ -189,11 +193,11 @@ def provincia_sin_tilde(provincia, fuente):
     provincias_comunidad_valenciana = ["alicante", "castellon", "valencia"]
 
     if fuente in {"JSON"}:
-        return any(provinciaEUS in provincia for provinciaEUS in provincias_euskadi)
+        return not any(provinciaEUS in provincia for provinciaEUS in provincias_euskadi)
     if fuente in {"XML"}:
-        return any(provinciaCLE in provincia for provinciaCLE in provincias_castilla_leon)
+        return not any(provinciaCLE in provincia for provinciaCLE in provincias_castilla_leon)
     if fuente in {"CSV"}:
-        return any(provinciaCSV in provincia for provinciaCSV in provincias_comunidad_valenciana)
+        return not any(provinciaCSV in provincia for provinciaCSV in provincias_comunidad_valenciana)
     
     return False
 
