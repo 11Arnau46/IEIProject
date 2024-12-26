@@ -236,6 +236,15 @@ def cp_fuera_de_rango(codigoPostal, fuente):
     except ValueError:
         # Si el valor no es un número, no es válido
         return True
+    
+#Función para comprobar si la dirección es vacía
+#Devuelve True en el caso de que no tenga valor y True en el caso de que sí tenga
+#Para la fuente de datos CSV siempre devuelve False ya que no tiene dirección antes de aplicar el filtro
+def direccion_null(direccion, fuente):   
+    if (pd.isna(direccion) or direccion in {''}) and fuente in {"JSON", "XML"}:
+        return True
+    
+    return False
 
 #Correcciones aplicables en grupo------------------------------------------------------------------------------
 

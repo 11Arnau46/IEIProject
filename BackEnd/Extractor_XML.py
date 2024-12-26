@@ -22,7 +22,7 @@ def extraer_datos_xml(monumento, seen_monuments):
     nomProvincia = poblacion.find('provincia').text if poblacion is not None and poblacion.find('provincia') is not None else pd.NA
 
     # Validar utilizando la función de filtros
-    if not aplicar_filtros("XML", nomMonumento, nomProvincia, nomLocalidad, codigo_postal, latitud, longitud, seen_monuments):
+    if not aplicar_filtros("XML", nomMonumento, nomProvincia, nomLocalidad, codigo_postal, latitud, longitud, direccion, seen_monuments):
         return None  # Si no pasa las validaciones, omitimos el monumento
 
     # Agregar a 'seen_monuments'
