@@ -67,7 +67,7 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
     # Verificar si el monumento es duplicado
     if is_duplicate_monument(nomMonumento, seen_monuments):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Monumento duplicado}}")
-        print(f"Monumento duplicado: fuente = {fuente}, monumento = {nomMonumento}. Rechazado el monumento.")
+        #print(f"Monumento duplicado: fuente = {fuente}, monumento = {nomMonumento}. Rechazado el monumento.")
         return False
 
     """
@@ -79,7 +79,7 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
     """
     if not validar_provincia_localidad(nomLocalidad, tipo="localidad"):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Localidad inválida}}")
-        print(f"Localidad inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomLocalidad}. Rechazado el monumento.")
+        #print(f"Localidad inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomLocalidad}. Rechazado el monumento.")
         return False
     
     # Verificar que la provincia esté bien escrita, primero comprueba si todas las letras son iguales y luego comprueba si hay errores de acentuación. Si hay error de tilde, no se rechaza ya que lo reparamos
@@ -87,47 +87,47 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         # Comprobar que esté bien escrita
         if provincia_incorrecta(nomProvincia, fuente):
             logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia inválida}}")
-            print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomProvincia}. Rechazado el monumento.")
+            #print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomProvincia}. Rechazado el monumento.")
             return False
         
         logging.error(f"Registros con errores y reparado: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia sin tilde, operación realizada = Reparado mediante la adición de la tilde}}")
-        print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomProvincia}. Reparado mediante la adición de la tilde.")
+        #print(f"Provincia inválida: fuente = {fuente}, monumento = {nomMonumento}, localidad = {nomProvincia}. Reparado mediante la adición de la tilde.")
         return True
     
     # Verificar que el codigo postal tenga valor, no rechaza la entrada ya que lo corregimos
     if cp_null(codigoPostal, fuente):
         logging.info(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal sin valor, operación realizada = Reparado mediante la búsqueda del código postal}}")
-        print(f"Código postal sin valor: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {nomLocalidad}. Reparado el monumento mediante la búsqueda del código postal.")
+        #print(f"Código postal sin valor: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {nomLocalidad}. Reparado el monumento mediante la búsqueda del código postal.")
         return True
 
     # Verificar que el codigo postal tenga 5 dígitos, no rechaza la entrada ya que lo corregimos
     if  cp_menor_5_digitos(codigoPostal, fuente):
         logging.error(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
-        print(f"Código postal con menos de 5 digitos: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Reparado mediante la adición de 0 a la izquierda.")
+        #print(f"Código postal con menos de 5 digitos: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Reparado mediante la adición de 0 a la izquierda.")
         return True
     
     # Verificar que el codigo postal esté dentro del rango
     if  cp_fuera_de_rango(codigoPostal, fuente):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal fuera de rango}}")
-        print(f"Código postal fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Rechazado el monumento.")
+        #print(f"Código postal fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Rechazado el monumento.")
         return False
     
     # Verificar que las coordenadas tengan valor
     if coordenadas_null(latitud, longitud):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Coordenadas sin valor}}")
-        print(f"Coordenadas sin valor: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
+        #print(f"Coordenadas sin valor: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
         return False
     
     # Verificar que las coordenadas estén dentro del rango
     if coordenadas_fuera_de_rango(latitud, longitud, fuente):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Coordenadas fuera de rango}}")
-        print(f"Coordenadas fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
+        #print(f"Coordenadas fuera de rango: fuente = {fuente}, monumento = {nomMonumento}, latitud = {latitud}, longitud = {longitud}. Rechazado el monumento.")
         return False
     
     # Verificar que la dirección tenga valor, no rechaza la entrada ya que lo corregimos
     if direccion_null(direccion, fuente):
         logging.info(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}}")
-        print(f"Dirección sin valor: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {nomLocalidad}. Reparado el monumento mediante la búsqueda de la dirección.")
+        #print(f"Dirección sin valor: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {nomLocalidad}. Reparado el monumento mediante la búsqueda de la dirección.")
         return True
 
     return True
