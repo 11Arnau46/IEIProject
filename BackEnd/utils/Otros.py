@@ -1,6 +1,6 @@
 import os
 import json
-from .Filtros import clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_añadir_cero_izquierda, cp_fuera_de_rango, cp_menor_5_digitos, cp_null, limpiar_campo_duplicado, is_duplicate_monument, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
+from .Filtros import capitalizar_string, clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_añadir_cero_izquierda, cp_fuera_de_rango, cp_menor_5_digitos, cp_null, limpiar_campo_duplicado, is_duplicate_monument, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
 from .Location_Finder import LocationFinder
 import logging
 
@@ -35,14 +35,19 @@ def aplicar_correcciones(df):
         'latitud': clean_coordinates,
         'longitud': clean_coordinates,
         'codigo_postal': cp_añadir_cero_izquierda,
-        'nomLocalidad': limpiar_campo_duplicado,
-        'nomProvincia': limpiar_campo_duplicado,
+        'nomLocalidad': [limpiar_campo_duplicado, capitalizar_string],
+        'nomProvincia': [limpiar_campo_duplicado, capitalizar_string],
     }
 
     # Aplicar los filtros
-    for columna, filtro in filtros.items():
+    for columna, filtros_a_aplicar in filtros.items():
         if columna in df.columns:  # Verifica si la columna existe en el DataFrame
-            df[columna] = df[columna].apply(filtro)
+            # Asegurarse de que filtros_a_aplicar sea siempre iterable
+            if not isinstance(filtros_a_aplicar, list):
+                filtros_a_aplicar = [filtros_a_aplicar]
+            
+            for filtro in filtros_a_aplicar:
+                df[columna] = df[columna].apply(filtro)
     
     return df
 
