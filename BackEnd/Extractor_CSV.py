@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import Coords_converter
 import json
+from pathlib import Path
 from config.paths import INPUT_CSV_PATH
 from utils.Filtros import *
 from utils.Otros import *
@@ -78,16 +79,27 @@ df_result = pd.DataFrame(data)
 df_result = aplicar_correcciones(df_result)
 
 # Dividir los datos en aquellos con coordenadas y sin coordenadas
-df_con_coords, df_sin_coords = procesar_datos(df_result, 'csvotojson')
+df_con_coords, df_sin_coords = procesar_datos(df_result, 'csvtojson')
+
+# Get the root project directory
+root_dir = Path(__file__).resolve().parents[1]
 
 # Convertir coordenadas
-ruta_json_entrada = "Resultados/CSVtoJSON_con_coords.json"
-ruta_json_salida = "Resultados/CSVtoJSON_Corregido.json"
+ruta_json_entrada = root_dir / 'Resultados' / 'CSVtoJSON_con_coords.json'
+ruta_json_salida = root_dir / 'Resultados' / 'CSVtoJSON_Corregido.json'
 
-with open(ruta_json_entrada, "r", encoding="utf-8") as file:
-    monumentos = json.load(file)
+# Print the paths for debugging purposes
+print(f"Path to input JSON: {ruta_json_entrada}")
+print(f"Path to output JSON: {ruta_json_salida}")
+
+# Check if the input file exists
+if not ruta_json_entrada.exists():
+    print(f"Input file does not exist: {ruta_json_entrada}")
+else:
+    with open(ruta_json_entrada, "r", encoding="utf-8") as file:
+        monumentos = json.load(file)
     
-convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
+    convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
 
-# Procesar y guardar el archivo JSON
-process_and_save_json('Resultados/CSVtoJSON_Corregido.json')
+    # Procesar y guardar el archivo JSON
+    process_and_save_json(ruta_json_salida)

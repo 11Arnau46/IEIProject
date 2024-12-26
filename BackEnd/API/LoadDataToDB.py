@@ -1,18 +1,19 @@
 from flask_restful import Resource
-from SQL.BDConnection import BDConnection
-from SQL.Json_Loader import cargar_datos
+from flask import Response
+from pathlib import Path
+
+
+# Get the root project directory
+root_dir = Path(__file__).resolve().parents[2]
+
+# Path to the log file
+log_file_path = root_dir / 'Resultados' / 'log-summary.log'
 
 class LoadDataToDB(Resource):
-    def post(self):
-        bd_connection = BDConnection()
-        engine_with_db = bd_connection.init_db()
-        if engine_with_db is None:
-            return {"message": "Error initializing the database"}, 500
-        session = bd_connection.session
+    def get(self):
         try:
-            cargar_datos(session, "path_to_your_json_file.json")
-            return {"message": "Data loaded successfully"}, 200
-        except Exception as e:
-            return {"message": f"Error loading data: {e}"}, 500
-        finally:
-            bd_connection.close()
+            with open(log_file_path, 'r') as log_file:
+                logs = log_file.read()
+            return Response(logs, mimetype='text/plain')
+        except FileNotFoundError:
+            return {"error": "Log file not found"}, 404

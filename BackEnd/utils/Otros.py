@@ -2,13 +2,24 @@ import os
 import json
 from .Filtros import capitalizar_string, clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_añadir_cero_izquierda, cp_fuera_de_rango, cp_menor_5_digitos, cp_null, direccion_null, limpiar_campo_duplicado, is_duplicate_monument, obtener_despues_del_slash, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
 from .Location_Finder import LocationFinder
+from pathlib import Path
 import logging
 
-# Configure logging
-log_file_path = os.path.join('Resultados', 'log-summary.log')
-logging.basicConfig(level=logging.INFO, format='%(message)s', handlers=[logging.FileHandler(log_file_path, mode='w'), logging.StreamHandler()])
+
+# Get the root project directory
+root_dir = Path(__file__).resolve().parents[2]
+
+# Define the relative path to the log file
+log_file_path = root_dir / 'Resultados' / 'log-summary.log'
+
+print(f"Log file path: {log_file_path}")
+logging.basicConfig(level=logging.INFO, format='%(message)s', handlers=[logging.FileHandler(log_file_path, mode='a'), logging.StreamHandler()])
+
+# Global variable to keep track of the total count of records added correctly
+total_records_added_correctly = 0
 
 def process_and_save_json(json_path):
+    global total_records_added_correctly
     location_finder = LocationFinder(json_path)
     # Procesar el JSON y obtener los resultados
     results = location_finder.process_json()
@@ -18,7 +29,12 @@ def process_and_save_json(json_path):
     
     # Contar el número de registros cargados correctamente
     num_records = len(results)
-    logging.info(f"Número de registros cargados correctamente: {num_records}")
+    total_records_added_correctly += num_records
+    
+    logging.info(f"")
+    logging.info(f"Número de registros cargados correctamente : {num_records}")
+    logging.info(f"--------------------------------------------------------------------------------")
+    
 
 def aplicar_correcciones(df):
     """
@@ -131,3 +147,11 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         return True
 
     return True
+
+
+def get_total_records_added_correctly():
+    """
+    Devuelve el número total de registros cargados correctamente.
+    """
+    global total_records_added_correctly
+    return total_records_added_correctly

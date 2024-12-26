@@ -3,6 +3,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import re
 from config.paths import INPUT_XML_PATH
+from pathlib import Path
 from utils.Location_Finder import LocationFinder
 from utils.Filtros import get_tipo_monumento, clean_coordinates, clean_html_text, procesar_datos
 from utils.Otros import *
@@ -70,6 +71,7 @@ for monumento in root.findall('.//monumento'):
         for key, value in extracted_data.items():
             data[key].append(value)
 
+
 # Crear DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
 
@@ -79,5 +81,13 @@ df_result = aplicar_correcciones(df_result)
 # Dividir los datos en aquellos con coordenadas y sin coordenadas
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'xmltojson')
 
-# Procesar y guardar el archivo JSON
-process_and_save_json('Resultados/XMLtoJSON_con_coords.json')
+# Get the root project directory
+root_dir = Path(__file__).resolve().parents[1]
+
+# Define the path to the output JSON file
+ruta_json_salida = root_dir / 'Resultados' / 'XMLtoJSON_con_coords.json'
+
+# Print the path for debugging purposes
+print(f"Path to output JSON: {ruta_json_salida}")
+
+process_and_save_json(ruta_json_salida)

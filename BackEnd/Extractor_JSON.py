@@ -5,6 +5,8 @@ import json
 from utils.Filtros import *
 from utils.Otros import *
 from utils.Location_Finder import LocationFinder
+from pathlib import Path
+
 
 # Función para cargar el archivo JSON y preservar claves duplicadas
 def parse_json_with_duplicates(file_path):
@@ -90,5 +92,14 @@ df_result = aplicar_correcciones(df_result)
 # Dividir los datos en aquellos con coordenadas y sin coordenadas
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'jsontojson')
 
+# Get the root project directory
+root_dir = Path(__file__).resolve().parents[1]
+
+# Define the path to the output JSON file
+ruta_json_salida = root_dir / 'Resultados' / 'JSONtoJSON_con_coords.json'
+
+# Print the path for debugging purposes
+print(f"Path to output JSON: {ruta_json_salida}")
+
 # Guardar el resultado en un archivo JSON
-process_and_save_json('Resultados/JSONtoJSON_con_coords.json')
+process_and_save_json(ruta_json_salida)
