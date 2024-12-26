@@ -204,26 +204,13 @@ def provincia_incorrecta(provincia, fuente):
 #Función para comprobar si el código postal es vacío dependiendo de la fuente
 #Devuelve True en el caso de que la fuente sea JSON o XML y el codigo postal sea vacío y False en el caso de que tenga valor
 def cp_null(codigoPostal, fuente):
-    if fuente in {"CSV"}:
-        return False
-    
-    try:
-        if 1001 <= int(codigoPostal) <= 52999:
-            return False
-        else:
-            return True
-    except ValueError:
-        # Si el valor no es un número, no es válido
-        return True
-
-#Función para comprobar si el codigo postal tiene menos de 5 dígitos
-def cp_menos_5_digitos(codigoPostal, fuente):
     if (pd.isna(codigoPostal) or codigoPostal in {''}) and fuente in {"JSON", "XML"}:
         return True
     
     return False
 
 #Función para comprobar si el codigo postal tiene menos de 5 dígitos
+#Devuelve True en el caso de que tenga menos de 5 dígitos y False en el caso de que tenga exactamente 5 dígitos
 def cp_menor_5_digitos(codigoPostal, fuente):
     #Dado que CSV no tiene codigo postal, no hace falta comprobar
     if fuente in {"CSV"}:
