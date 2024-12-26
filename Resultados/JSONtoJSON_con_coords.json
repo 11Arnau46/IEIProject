@@ -7,23 +7,8 @@
         "longitud": "-2.303607169311588",
         "latitud": "43.09096533979687",
         "descripcion": "La ermita de Santa María (La Antigua) de Zumarraga está considerada como la ca...",
-        "codLocalidad": "080",
         "nomLocalidad": "Zumarraga",
-        "codProvincia": "20",
         "nomProvincia": "Gipuzkoa"
-    },
-    {
-        "nomMonumento": "Monasterio de Zenarruza",
-        "tipoMonumento": "MonasterioConvento",
-        "direccion": "CL Zenarruza 11",
-        "codigo_postal": "58279",
-        "longitud": "-2.561749469311503",
-        "latitud": "43.24845524092432",
-        "descripcion": "Declarado Monumento Nacional de Euskadi, el Monasterio de Zenarruza, antigua colegiata, se encuen...",
-        "codLocalidad": "915",
-        "nomLocalidad": "Ziortza-Bolibar",
-        "codProvincia": "48",
-        "nomProvincia": "Bizkaia"
     },
     {
         "nomMonumento": "Torre de Doña Otxanda",
@@ -33,9 +18,7 @@
         "longitud": "-2.674561400000016",
         "latitud": "42.8503186",
         "descripcion": "La torre de Doña Otxanda es un bello edificio rematado por almenas. Es una de las muchas e...",
-        "codLocalidad": "059",
         "nomLocalidad": "Vitoria-Gasteiz",
-        "codProvincia": "01",
         "nomProvincia": "Araba/Álava"
     },
     {
@@ -46,22 +29,7 @@
         "longitud": "-1.8176744549560575",
         "latitud": "43.37004606341497",
         "descripcion": "El fuerte de Guadalupe es una de las construcciones defensivas más bellas de Hondarribia. ...",
-        "codLocalidad": "036",
         "nomLocalidad": "Hondarribia",
-        "codProvincia": "20",
-        "nomProvincia": "Gipuzkoa"
-    },
-    {
-        "nomMonumento": "Catedral del Buen Pastor",
-        "tipoMonumento": "IglesiaErmita",
-        "direccion": "Plaza del Buen Pastor, s/n",
-        "codigo_postal": "20005",
-        "longitud": "-199.981534229360932",
-        "latitud": "43.3167285180224",
-        "descripcion": "La Catedral del Buen Pastor es la construcción religiosa más grande de San Sebasti&...",
-        "codLocalidad": "069",
-        "nomLocalidad": "Donostia / San Sebastián",
-        "codProvincia": "20",
         "nomProvincia": "Gipuzkoa"
     },
     {
@@ -72,9 +40,7 @@
         "longitud": "-2.6715207",
         "latitud": "42.8471391",
         "descripcion": "El paseo de los Arquillos, obra del arquitecto vitoriano Justo Antonio de Olaguíbel, se co...",
-        "codLocalidad": "059",
         "nomLocalidad": "Vitoria-Gasteiz",
-        "codProvincia": "01",
         "nomProvincia": "Araba/Álava"
     },
     {
@@ -85,9 +51,7 @@
         "longitud": "-2.9230499267578125",
         "latitud": "43.25462710987754",
         "descripcion": "El Puente Antiguo de San Antón, junto a la iglesia del mismo nombre, forma parte del escud...",
-        "codLocalidad": "020",
         "nomLocalidad": "Bilbao",
-        "codProvincia": "48",
         "nomProvincia": "Bizkaia"
     },
     {
@@ -98,9 +62,7 @@
         "longitud": "-2.924",
         "latitud": "43.259542",
         "descripcion": "El Teatro Arriaga de Bilbao fue diseñado en el siglo XIX por el arquitecto municipal Joaqu...",
-        "codLocalidad": "020",
         "nomLocalidad": "Bilbao",
-        "codProvincia": "48",
         "nomProvincia": "Bizkaia"
     },
     {
@@ -111,9 +73,7 @@
         "longitud": "-1.9848800478850936",
         "latitud": "43.32360527695042",
         "descripcion": "La Plaza de la Constitución, situada en el centro de la Parte Vieja de San Sebastiá...",
-        "codLocalidad": "069",
         "nomLocalidad": "Donostia / San Sebastián",
-        "codProvincia": "20",
         "nomProvincia": "Gipuzkoa"
     },
     {
@@ -124,9 +84,7 @@
         "longitud": "-2.0062222566223227",
         "latitud": "43.32180090053917",
         "descripcion": "Situado al final de la playa de Ondarreta, en el extremo oeste de San Sebastián y a los pi...",
-        "codLocalidad": "069",
         "nomLocalidad": "Donostia / San Sebastián",
-        "codProvincia": "20",
         "nomProvincia": "Gipuzkoa"
     },
     {
@@ -137,9 +95,7 @@
         "longitud": "-2.3921941171965955",
         "latitud": "43.11376192423708",
         "descripcion": "La ermita, que antiguamente estaba dedicada a San Lorenzo, se sitúa fuera del casco urbano...",
-        "codLocalidad": "011",
         "nomLocalidad": "Antzuola",
-        "codProvincia": "20",
         "nomProvincia": "Gipuzkoa"
     },
     {
@@ -150,9 +106,7 @@
         "longitud": "-2.7885427999999592",
         "latitud": "42.84394280000001",
         "descripcion": "El puente de Trespuentes une las dos orillas del río Zadorra desde tiempos remotos. Sobre ...",
-        "codLocalidad": "901",
         "nomLocalidad": "Iruña Oka/Iruña de Oca",
-        "codProvincia": "01",
         "nomProvincia": "Araba/Álava"
     },
     {
@@ -163,9 +117,7 @@
         "longitud": "-2.725833378018261",
         "latitud": "43.116919412204155",
         "descripcion": "Aunque se desconoce la fecha de su fundación, se sabe que en este lugar existía un ...",
-        "codLocalidad": "026",
         "nomLocalidad": "Dima",
-        "codProvincia": "48",
         "nomProvincia": "Bizkaia"
     },
     {
@@ -176,9 +128,7 @@
         "longitud": "-2.8336449",
         "latitud": "42.6703698",
         "descripcion": "La edificación defensiva del Castillo de Portilla, Zabaletako Gaztelua en euskera, se cons...",
-        "codLocalidad": "062",
         "nomLocalidad": "Zambrana",
-        "codProvincia": "01",
         "nomProvincia": "Araba/Álava"
     }
 ]

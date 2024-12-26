@@ -3,6 +3,7 @@ import re
 import os
 import pycountry
 import json
+import unidecode
 
 #Filtros que por su naturaleza deben ser colocados uno por uno------------------------------------------------------------------------------
 
@@ -138,6 +139,7 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
 
     nombre = nombre.strip().lower()  # Normalizar el nombre
     
+
     # Si el nombre contiene '/', lo consideramos siempre válido
     if '/' in nombre:
         return True
@@ -149,21 +151,74 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
         
         # Comprobar si el nombre contiene alguna provincia (no exacto, pero contiene la palabra)
         return any(provincia in nombre for provincia in provincias)
-    
+
     elif tipo == "localidad":
         # Esto puede ampliarse con datos específicos de localidades de España
         return True  # Por defecto, se acepta cualquier localidad
     
     return False
 
+def provincia_incorrecta(provincia, fuente):
+    if pd.isna(provincia):
+        return False
+
+    provincia = provincia.strip().lower()  # Normalizar el nombre
+
+    provincias_euskadi = ["vizcaya", "guipúzcoa", "álava", "gipuzkoa", "bizkaia"]
+    provincias_castilla_leon = ["ávila", "burgos", "león", "palencia", "salamanca", "segovia", "soria", "valladolid", "zamora"]
+    provincias_comunidad_valenciana = ["alicante", "castellón", "valencia"]
+
+    if fuente in {"JSON"}:
+        return any(provinciaEUS in provincia for provinciaEUS in provincias_euskadi)
+    if fuente in {"XML"}:
+        return any(provinciaCLE in provincia for provinciaCLE in provincias_castilla_leon)
+    if fuente in {"CSV"}:
+        return any(provinciaCSV in provincia for provinciaCSV in provincias_comunidad_valenciana)
+    
+    return False
+    
+def provincia_sin_tilde(provincia, fuente):
+    if pd.isna(provincia):
+        return False
+
+    provincia = provincia.strip().lower()  # Normalizar el nombre
+    provincia = unidecode.unidecode(provincia, "utf-8") # Eliminar tilde
+
+    provincias_euskadi = ["vizcaya", "guipuzcoa", "alava", "gipuzkoa", "bizkaia"]
+    provincias_castilla_leon = ["avila", "burgos", "león", "palencia", "salamanca", "segovia", "soria", "valladolid", "zamora"]
+    provincias_comunidad_valenciana = ["alicante", "castellon", "valencia"]
+
+    if fuente in {"JSON"}:
+        return any(provinciaEUS in provincia for provinciaEUS in provincias_euskadi)
+    if fuente in {"XML"}:
+        return any(provinciaCLE in provincia for provinciaCLE in provincias_castilla_leon)
+    if fuente in {"CSV"}:
+        return any(provinciaCSV in provincia for provinciaCSV in provincias_comunidad_valenciana)
+    
+    return False
+
 #Función para comprobar si el código postal es vacío dependiendo de la fuente
 #Devuelve True en el caso de que la fuente sea JSON o XML y el codigo postal sea vacío y False en el caso de que tenga valor
 def cp_null(codigoPostal, fuente):
+    if fuente in {"CSV"}:
+        return False
+    
+    try:
+        if 1001 <= int(codigoPostal) <= 52999:
+            return False
+        else:
+            return True
+    except ValueError:
+        # Si el valor no es un número, no es válido
+        return True
+
+#Función para comprobar si el codigo postal tiene menos de 5 dígitos
+def cp_menos_5_digitos(codigoPostal, fuente):
     if (pd.isna(codigoPostal) or codigoPostal in {''}) and fuente in {"JSON", "XML"}:
         return True
     
     return False
-    
+
 #Función para comprobar si el código postal se encuentra en 01001 a 52999
 #Devuelve False en el caso de que sea correcto y True en el caso de que sea incorrecto
 def cp_fuera_de_rango(codigoPostal, fuente):   

@@ -13,8 +13,13 @@
     {
         "nomMonumento": "Torre Muza",
         "tipoMonumento": "CastilloFortalezaTorre",
+<<<<<<< Updated upstream
         "direccion": "Torre de Mussa, Camí de la Gamasseta, 46450 Benifaió, Spain",
         "codigo_postal": "46450",
+=======
+        "direccion": null,
+        "codigo_postal": null,
+>>>>>>> Stashed changes
         "longitud": "-0.43185861",
         "latitud": "39.28939252",
         "descripcion": "Bienes inmuebles 1ª",
@@ -24,8 +29,13 @@
     {
         "nomMonumento": "Iglesia Parroquial de San Miguel Arcángel",
         "tipoMonumento": "IglesiaErmita",
+<<<<<<< Updated upstream
         "direccion": "Iglesia de San Miguel Arcangel, Carrer de l'Esglesia, Benigànim, Spain",
         "codigo_postal": "46830",
+=======
+        "direccion": null,
+        "codigo_postal": null,
+>>>>>>> Stashed changes
         "longitud": "-0.44372005",
         "latitud": "38.94391169",
         "descripcion": "Bienes inmuebles 1ª",
@@ -35,8 +45,13 @@
     {
         "nomMonumento": "Restos Arqueológicos de la Alquería islámica de Bofilla y su Torre",
         "tipoMonumento": "CastilloFortalezaTorre",
+<<<<<<< Updated upstream
         "direccion": "Torre de Bofilla, Variant Nord de Bétera, 46117 Bétera, Spain",
         "codigo_postal": "46117",
+=======
+        "direccion": null,
+        "codigo_postal": null,
+>>>>>>> Stashed changes
         "longitud": "-0.42918731",
         "latitud": "39.58013227",
         "descripcion": "Bienes inmuebles 1ª",
@@ -46,8 +61,13 @@
     {
         "nomMonumento": "Molino Fortificado Torre Gausa",
         "tipoMonumento": "CastilloFortalezaTorre",
+<<<<<<< Updated upstream
         "direccion": "Molí de Gausa, Autovía Mudéjar, 46501 Sagunto, Spain",
         "codigo_postal": "46501",
+=======
+        "direccion": null,
+        "codigo_postal": null,
+>>>>>>> Stashed changes
         "longitud": "-0.29280305",
         "latitud": "39.67335170",
         "descripcion": "Bienes inmuebles 1ª",

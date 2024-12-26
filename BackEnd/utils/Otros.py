@@ -1,6 +1,6 @@
 import os
 import json
-from .Filtros import clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_fuera_de_rango, cp_null, limpiar_campo_duplicado, is_duplicate_monument, validar_provincia_localidad
+from .Filtros import clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_fuera_de_rango, cp_null, limpiar_campo_duplicado, is_duplicate_monument, provincia_incorrecta, validar_provincia_localidad
 from .Location_Finder import LocationFinder
 import logging
 
