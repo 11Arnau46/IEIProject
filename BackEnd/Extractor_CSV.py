@@ -20,9 +20,7 @@ def extraer_datos_csv(row, seen_monuments):
     latitud = row['UTMNORTE'] if pd.notnull(row['UTMNORTE']) else pd.NA
     longitud = row['UTMESTE'] if pd.notnull(row['UTMESTE']) else pd.NA
     descripcion = row['CLASIFICACION']
-    codLocalidad = pd.NA
     nomLocalidad = row['MUNICIPIO'] if pd.notnull(row['MUNICIPIO']) else pd.NA
-    codProvincia = pd.NA
     nomProvincia = row['PROVINCIA'] if pd.notnull(row['PROVINCIA']) else pd.NA
 
     # Validar utilizando la función de filtros
@@ -41,9 +39,7 @@ def extraer_datos_csv(row, seen_monuments):
         'latitud': latitud,
         'longitud': longitud,
         'descripcion': descripcion,
-        'codLocalidad': codLocalidad,
         'nomLocalidad': nomLocalidad,
-        'codProvincia': codProvincia,
         'nomProvincia': nomProvincia
     }
 
@@ -52,7 +48,18 @@ csv_path = INPUT_CSV_PATH
 df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
 
 # Diccionario para almacenar los datos extraídos
-data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_postal': [], 'longitud': [], 'latitud': [], 'descripcion': [], 'codLocalidad': [], 'nomLocalidad': [], 'codProvincia': [], 'nomProvincia': [] }
+data = { 
+    'nomMonumento': [], 
+    'tipoMonumento': [], 
+    'direccion': [], 
+    'codigo_postal': [], 
+    'longitud': [], 
+    'latitud': [], 
+    'descripcion': [], 
+    'nomLocalidad': [], 
+    'nomProvincia': [] 
+}
+
 seen_monuments = set()
 
 # Extraer información de cada fila del CSV

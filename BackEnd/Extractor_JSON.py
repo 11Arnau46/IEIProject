@@ -32,9 +32,7 @@ def extraer_datos_monumento(monumento, seen_monuments):
         longitud = monumento_dict.get('lonwgs84', pd.NA)
 
     descripcion = monumento_dict.get('documentDescription', pd.NA)
-    codLocalidad = monumento_dict.get('municipalitycode', pd.NA)
     nomLocalidad = monumento_dict.get('municipality', pd.NA)
-    codProvincia = monumento_dict.get('territorycode', pd.NA)
     nomProvincia = monumento_dict.get('territory', pd.NA)
 
     # Validar utilizando la función de filtros
@@ -52,9 +50,7 @@ def extraer_datos_monumento(monumento, seen_monuments):
         'latitud': latitud,
         'longitud': longitud,
         'descripcion': descripcion,
-        'codLocalidad': codLocalidad,
         'nomLocalidad': nomLocalidad,
-        'codProvincia': codProvincia,
         'nomProvincia': nomProvincia
     }
 
@@ -65,7 +61,17 @@ json_path = INPUT_JSON_PATH
 json_data = parse_json_with_duplicates(json_path)
 
 # Diccionario para almacenar los datos extraídos
-data = { 'nomMonumento': [], 'tipoMonumento': [], 'direccion': [], 'codigo_postal': [], 'longitud': [], 'latitud': [], 'descripcion': [], 'codLocalidad': [], 'nomLocalidad': [], 'codProvincia': [], 'nomProvincia': [] }
+data = { 
+    'nomMonumento': [], 
+    'tipoMonumento': [], 
+    'direccion': [], 
+    'codigo_postal': [], 
+    'longitud': [], 
+    'latitud': [], 
+    'descripcion': [], 
+    'nomLocalidad': [], 
+    'nomProvincia': [] 
+}
 seen_monuments = set()
 
 # Extraer los datos

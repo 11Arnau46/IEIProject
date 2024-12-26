@@ -20,8 +20,6 @@ def extraer_datos_xml(monumento, seen_monuments):
     poblacion = monumento.find('poblacion')
     nomLocalidad = poblacion.find('localidad').text if poblacion is not None and poblacion.find('localidad') is not None else pd.NA
     nomProvincia = poblacion.find('provincia').text if poblacion is not None and poblacion.find('provincia') is not None else pd.NA
-    codLocalidad = pd.NA
-    codProvincia = pd.NA
 
     # Validar utilizando la función de filtros
     if not aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, seen_monuments):
@@ -38,9 +36,7 @@ def extraer_datos_xml(monumento, seen_monuments):
         'latitud': latitud,
         'longitud': longitud,
         'descripcion': descripcion,
-        'codLocalidad': codLocalidad,
         'nomLocalidad': nomLocalidad,
-        'codProvincia': codProvincia,
         'nomProvincia': nomProvincia
     }
 
@@ -61,9 +57,7 @@ data = {
     'longitud': [], 
     'latitud': [], 
     'descripcion': [], 
-    'codLocalidad': [], 
     'nomLocalidad': [], 
-    'codProvincia': [], 
     'nomProvincia': [] 
 }
 seen_monuments = set()

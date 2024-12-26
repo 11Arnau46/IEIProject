@@ -25,9 +25,7 @@ def aplicar_correcciones(df):
     filtros = {
         'latitud': clean_coordinates,
         'longitud': clean_coordinates,
-        'codLocalidad': limpiar_campo_duplicado,
         'nomLocalidad': limpiar_campo_duplicado,
-        'codProvincia': limpiar_campo_duplicado,
         'nomProvincia': limpiar_campo_duplicado,
     }
 
