@@ -6,7 +6,7 @@ from config.paths import INPUT_CSV_PATH
 from utils.Filtros import *
 from utils.Otros import *
 from utils.Conversores import convertir_coordenadas_utm
-from BackEnd.utils.Location_Finder import LocationFinder
+from utils.Location_Finder import LocationFinder
 
 # Directorio actual
 print("Current working directory:", os.getcwd())
@@ -74,8 +74,8 @@ df_result = aplicar_correcciones(df_result)
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'csvotojson')
 
 # Convertir coordenadas
-ruta_json_entrada = "../Resultados/CSVtoJSON_con_coords.json"
-ruta_json_salida = "../Resultados/CSVtoJSON_Corregido.json"
+ruta_json_entrada = "Resultados/CSVtoJSON_con_coords.json"
+ruta_json_salida = "Resultados/CSVtoJSON_Corregido.json"
 
 with open(ruta_json_entrada, "r", encoding="utf-8") as file:
     monumentos = json.load(file)
