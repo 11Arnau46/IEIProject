@@ -36,7 +36,7 @@ def extraer_datos_monumento(monumento, seen_monuments):
     nomProvincia = monumento_dict.get('territory', pd.NA)
 
     # Validar utilizando la función de filtros
-    if not aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, seen_monuments):
+    if not aplicar_filtros(nomMonumento, nomProvincia, nomLocalidad, codigo_postal, seen_monuments):
         return None  # Si no pasa las validaciones, omitimos el monumento
 
     # Agregar a 'seen_monuments'

@@ -100,7 +100,7 @@ def is_duplicate_monument(nom_monumento, seen_monuments):
 def validar_coordenadas(latitud, longitud):
         # Comprobar si latitud o longitud son NaN
     if pd.isna(latitud) or pd.isna(longitud):
-        return True;
+        return True
     try:
         latitud = float(latitud)
         longitud = float(longitud)
@@ -145,6 +145,19 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
         return True  # Por defecto, se acepta cualquier localidad
     
     return False
+
+#Función para comprobar si el código postal se encuentra en 01001 a 52999
+#Devuelve False en el caso de que sea correcto y True en el caso de que sea incorrecto
+def cp_fuera_de_rango(codigoPostal):
+    
+    try:
+        if 1001 <= int(codigoPostal) <= 52999:
+            return False
+        else:
+            return True
+    except ValueError:
+        # Si el valor no es un número, no es válido
+        return False
 
 #Correcciones aplicables en grupo------------------------------------------------------------------------------
 
