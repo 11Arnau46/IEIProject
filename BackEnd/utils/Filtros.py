@@ -96,21 +96,27 @@ def is_duplicate_monument(nom_monumento, seen_monuments):
         return True  # El monumento ya ha sido procesado
     seen_monuments.add(nom_monumento)
     return False
-# Función para validar si las coordenadas están dentro de los límites de WGS84, caso contrario no continuar
-def validar_coordenadas(latitud, longitud):
+
+# Función para validar si las coordenadas tienen valor o no. En caso de que no, devuelve True, por defecto devuelve False
+def coordenadas_null(latitud, longitud):
         # Comprobar si latitud o longitud son NaN
     if pd.isna(latitud) or pd.isna(longitud):
         return True
+    
+    return False
+
+# Función para validar si las coordenadas están dentro de los límites de WGS84. Si están fuera de rango devuelve True, en caso contrario devuelve False
+def coordenadas_fuera_de_rango(latitud, longitud):
     try:
         latitud = float(latitud)
         longitud = float(longitud)
         # Verificar que la latitud esté entre -90 y 90 y que la longitud esté entre -180 y 180
-        if -90 <= latitud <= 90 and -180 <= longitud <= 180:
-            return True
-        else:
+        if -90.0 <= latitud <= 90.0 and -180.0 <= longitud <= 180.0:
             return False
+        else:
+            return True
     except ValueError:
-        return False  # Si no se puede convertir a float, la coordenada es inválida
+        return True  # Si no se puede convertir a float, la coordenada es inválida
 
 def validar_provincia_localidad(nombre, tipo="provincia"):
     """
