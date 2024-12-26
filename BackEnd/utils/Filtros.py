@@ -223,6 +223,17 @@ def cp_menos_5_digitos(codigoPostal, fuente):
     
     return False
 
+#Función para comprobar si el codigo postal tiene menos de 5 dígitos
+def cp_menor_5_digitos(codigoPostal, fuente):
+    #Dado que CSV no tiene codigo postal, no hace falta comprobar
+    if fuente in {"CSV"}:
+        return False
+    
+    if len(str(codigoPostal)) == 5:  # Usamos abs para asegurarnos de que funcione con números negativos
+        return False
+    else:
+        return True
+
 #Función para comprobar si el código postal se encuentra en 01001 a 52999
 #Devuelve False en el caso de que sea correcto y True en el caso de que sea incorrecto
 def cp_fuera_de_rango(codigoPostal, fuente):   

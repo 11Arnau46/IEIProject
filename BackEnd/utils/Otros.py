@@ -94,6 +94,12 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         print(f"Código postal sin valor: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {nomLocalidad}. Reparado el monumento mediante la búsqueda del código postal.")
         return True
 
+    # Verificar que el codigo postal tenga 5 dígitos
+    if  cp_menor_5_digitos(codigoPostal, fuente):
+        logging.error(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
+        print(f"Código postal con menos de 5 digitos: fuente = {fuente}, monumento = {nomMonumento}, codigo postal = {codigoPostal}. Reparado mediante la adición de 0 a la izquierda.")
+        return False
+    
     # Verificar que el codigo postal esté dentro del rango
     if  cp_fuera_de_rango(codigoPostal, fuente):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal fuera de rango}}")
