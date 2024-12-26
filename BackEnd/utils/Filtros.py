@@ -257,6 +257,10 @@ def limpiar_campo_duplicado(valor):
             partes_unicas.append(parte)
     return ' '.join(partes_unicas)
 
+def cp_añadir_cero_izquierda(codigoPostal):
+    if cp_menor_5_digitos(codigoPostal, "Relleno"):
+        return '0' + codigoPostal
+
 #Excepciones------------------------------------------------------------------------------
 
 # Función para limpiar texto HTML
