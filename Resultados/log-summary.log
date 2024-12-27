@@ -1,1 +1,11 @@
-127.0.0.1 - - [27/Dec/2024 01:39:21] "POST /clear_files HTTP/1.1" 200 -
+Registros con errores y reparados: {fuente = XML, nombre = Risco La Zorrera, Localidad = Raso (El), motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registros con errores y descartados: {fuente = XML, nombre = Monasterio de Santa María de Retuerta, Localidad = Sardón de Duero, motivo del error = Coordenadas sin valor}
+Registros con errores y reparados: {fuente = XML, nombre = Castillo de Íscar, Localidad = Íscar, motivo del error = Código postal sin valor, operación realizada = Reparado mediante la búsqueda del código postal}
+Registros con errores y descartados: {fuente = XML, nombre = Iglesia parroquial de Valdesaz, Localidad = Valdesaz de los Oteros, motivo del error = Código postal fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = Casa Miranda y Casa de Íñigo Angulo, Localidad = Burgos, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Casa Blanca, Localidad = Medina del Campo, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+Registros con errores y descartados: {fuente = XML, nombre = Castillo de Íscar, Localidad = Íscar, motivo del error = Monumento duplicado}
+Registros con errores y reparados: {fuente = XML, nombre = Cloacas Romanas, Localidad = Astorga, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+
+Número de registros cargados correctamente : 12
+--------------------------------------------------------------------------------

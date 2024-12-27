@@ -32,7 +32,7 @@
                     "Extractors"
                 ],
                 "summary": "Execute CSV extraction",
-                "description": "Endpoint to execute CSV extraction",
+                "description": "Endpoint to execute CSV extraction.\n\n**Postman Instructions:**\n- **Method:** POST\n- **URL:** http://localhost:8080/extractor/execute_csv\n- **Headers:** None\n- **Body:** None",
                 "responses": {
                     "200": {
                         "description": "Extraction successful"
@@ -49,7 +49,7 @@
                     "Extractors"
                 ],
                 "summary": "Execute JSON extraction",
-                "description": "Endpoint to execute JSON extraction",
+                "description": "Endpoint to execute JSON extraction.\n\n**Postman Instructions:**\n- **Method:** POST\n- **URL:** http://localhost:8080/extractor/execute_json\n- **Headers:** None\n- **Body:** None",
                 "responses": {
                     "200": {
                         "description": "Extraction successful"
@@ -66,7 +66,7 @@
                     "Extractors"
                 ],
                 "summary": "Execute XML extraction",
-                "description": "Endpoint to execute XML extraction",
+                "description": "Endpoint to execute XML extraction.\n\n**Postman Instructions:**\n- **Method:** POST\n- **URL:** http://localhost:8080/extractor/execute_xml\n- **Headers:** None\n- **Body:** None",
                 "responses": {
                     "200": {
                         "description": "Extraction successful"
@@ -83,7 +83,7 @@
                     "Load"
                 ],
                 "summary": "Get log summary",
-                "description": "Fetches the log summary from the log file",
+                "description": "Fetches the log summary from the log file.\n\n**Postman Instructions:**\n- **Method:** GET\n- **URL:** http://localhost:8080/load_results\n- **Headers:** None\n- **Body:** None",
                 "produces": [
                     "text/plain"
                 ],
@@ -115,7 +115,7 @@
                     "Utility"
                 ],
                 "summary": "Clear necessary JSON and log files",
-                "description": "Endpoint to clear necessary JSON and log files",
+                "description": "Endpoint to clear necessary JSON and log files.\n\n**Postman Instructions:**\n- **Method:** POST\n- **URL:** http://localhost:8080/clear_files\n- **Headers:** None\n- **Body:** None",
                 "responses": {
                     "200": {
                         "description": "Files cleared successfully",
@@ -150,7 +150,7 @@
                     "Utility"
                 ],
                 "summary": "Get total correct loads",
-                "description": "Fetches the total number of correct loads",
+                "description": "Fetches the total number of correct loads.\n\n**Postman Instructions:**\n- **Method:** GET\n- **URL:** http://localhost:8080/total_correct_loads\n- **Headers:** None\n- **Body:** None",
                 "responses": {
                     "200": {
                         "description": "Total correct loads fetched successfully",

@@ -153,5 +153,4 @@ def get_total_records_added_correctly():
     """
     Devuelve el número total de registros cargados correctamente.
     """
-    global total_records_added_correctly
     return total_records_added_correctly

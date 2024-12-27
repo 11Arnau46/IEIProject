@@ -32,60 +32,11 @@
                 <button type="button" id="borrar">Borrar Almacén de Datos</button>
             </div>
         </form>
-        <div id="resultados" class="resultados"></div>
+        <div id="resultados"></div>
     </main>
 
-    <script>
-        document.getElementById('cargar').addEventListener('click', async function () {
-            const selectedFuentes = Array.from(document.querySelectorAll('input[name="fuente"]:checked')).map(input => input.value);
-            const resultadosDiv = document.getElementById('resultados');
-            resultadosDiv.innerHTML = '';
-
-            // Clear necessary JSON and log files
-            await fetch('/clear_files', { method: 'POST' });
-
-            // Execute selected APIs
-            for (const fuente of selectedFuentes) {
-                let endpoint;
-                if (fuente === 'castilla') {
-                    endpoint = '/extractor/execute_csv';
-                } else if (fuente === 'valenciana') {
-                    endpoint = '/extractor/execute_json';
-                } else if (fuente === 'euskadi') {
-                    endpoint = '/extractor/execute_xml';
-                }
-
-                if (endpoint) {
-                    try {
-                        const response = await fetch(endpoint, { method: 'POST' });
-                        const result = await response.json();
-                        resultadosDiv.innerHTML += `<p>${fuente}: ${result.message}</p>`;
-                    } catch (error) {
-                        resultadosDiv.innerHTML += `<p>${fuente}: Error al ejecutar la API</p>`;
-                    }
-                }
-            }
-
-            // Get load results
-            try {
-                const response = await fetch('/load_results');
-                const logSummary = await response.text();
-                resultadosDiv.innerHTML += `<h2>Resultados de la carga:</h2><pre>${logSummary}</pre>`;
-            } catch (error) {
-                resultadosDiv.innerHTML += `<p>Error al obtener los resultados de la carga</p>`;
-            }
-
-            // Display total correct loads
-            try {
-                const response = await fetch('/total_correct_loads');
-                const totalCorrectLoads = await response.json();
-                resultadosDiv.innerHTML += `<p>Total de cargas correctas: ${totalCorrectLoads.total}</p>`;
-            } catch (error) {
-                resultadosDiv.innerHTML += `<p>Error al obtener el total de cargas correctas</p>`;
-            }
-        });
-    </script>
-
+    <!-- Link to the external JavaScript file -->
+    <script src="carga.js"></script>
 </body>
 
 </html>
