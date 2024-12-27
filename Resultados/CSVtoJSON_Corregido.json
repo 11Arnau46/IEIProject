@@ -1,0 +1,145 @@
+[
+    {
+        "nomMonumento": "Illeta dels Banyets",
+        "tipoMonumento": "Otros",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4257022,
+        "latitud": 728548.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Campello (el)",
+        "nomProvincia": "Alicante"
+    },
+    {
+        "nomMonumento": "Palacio Condal y Monasterio de la Virgen del Milagro",
+        "tipoMonumento": "MonasterioConvento",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4291410,
+        "latitud": 722391.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Cocentaina",
+        "nomProvincia": "Alicante"
+    },
+    {
+        "nomMonumento": "Yacimiento romano Illeta del Portichol",
+        "tipoMonumento": "YacimientoArqueologico",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4294555,
+        "latitud": 780697.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Xàbia",
+        "nomProvincia": "Alicante"
+    },
+    {
+        "nomMonumento": "Recinto Amurallado de Almazora",
+        "tipoMonumento": "Otros",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4425387,
+        "latitud": 751012.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Almassora",
+        "nomProvincia": "Castellón"
+    },
+    {
+        "nomMonumento": "Cartuja de la Vall de Christ",
+        "tipoMonumento": "Otros",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4413062,
+        "latitud": 713220.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Altura",
+        "nomProvincia": "Castellón"
+    },
+    {
+        "nomMonumento": "Poblado de la Peña Ajuerá",
+        "tipoMonumento": "Otros",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4412475,
+        "latitud": 725683.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Azuébar",
+        "nomProvincia": "Castellon"
+    },
+    {
+        "nomMonumento": "Yacimiento fenicio de Vinarratgell",
+        "tipoMonumento": "YacimientoArqueologico",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4423391,
+        "latitud": 752342.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Borriana",
+        "nomProvincia": "Castellón"
+    },
+    {
+        "nomMonumento": "Torre Campanario El Fadrí",
+        "tipoMonumento": "CastilloFortalezaTorre",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4430429,
+        "latitud": 752961.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Castelló de la plana",
+        "nomProvincia": "Castellón"
+    },
+    {
+        "nomMonumento": "Escudo de los Júdici de Acharte Blanes",
+        "tipoMonumento": "Otros",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4336798,
+        "latitud": 721049.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Alzira",
+        "nomProvincia": "Valencia"
+    },
+    {
+        "nomMonumento": "Torre Muza",
+        "tipoMonumento": "CastilloFortalezaTorre",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4352036,
+        "latitud": 721486.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Benifaió",
+        "nomProvincia": "Valencia"
+    },
+    {
+        "nomMonumento": "Iglesia Parroquial de San Miguel Arcángel",
+        "tipoMonumento": "IglesiaErmita",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4313660,
+        "latitud": 721543.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Benigànim",
+        "nomProvincia": "Valencia"
+    },
+    {
+        "nomMonumento": "Restos Arqueológicos de la Alquería islámica de Bofilla y su Torre",
+        "tipoMonumento": "CastilloFortalezaTorre",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4384315,
+        "latitud": 720796.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Bétera",
+        "nomProvincia": "Valencia"
+    },
+    {
+        "nomMonumento": "Molino Fortificado Torre Gausa",
+        "tipoMonumento": "CastilloFortalezaTorre",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4395007,
+        "latitud": 732199.0,
+        "descripcion": "Bienes inmuebles 1ª",
+        "nomLocalidad": "Sagunt",
+        "nomProvincia": "Valencia"
+    }
+]
