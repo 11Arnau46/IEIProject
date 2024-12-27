@@ -1,0 +1,90 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API documentation for Carga",
+        "version": "1.0.0",
+        "title": "Carga API",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "email": "you@example.com"
+        }
+    },
+    "host": "localhost:5000",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Carga",
+            "description": "Endpoints related to data loading"
+        }
+    ],
+    "paths": {
+        "/carga": {
+            "post": {
+                "tags": [
+                    "Carga"
+                ],
+                "summary": "Execute data load",
+                "description": "Endpoint to execute the connection to the database and load the specified files.\n\n**Postman Instructions:**\n- **Method:** POST\n- **URL:** http://localhost:5000/carga?file=csv,json,xml\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Data load successful"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "Carga"
+                ],
+                "summary": "Get load results",
+                "description": "Endpoint to get the results of the last load performed.\n\n**Postman Instructions:**\n- **Method:** GET\n- **URL:** http://localhost:5000/carga\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Load results fetched successfully",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Load results not found",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Load results not found"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Carga"
+                ],
+                "summary": "Clear load results",
+                "description": "Endpoint to clear the load results.\n\n**Postman Instructions:**\n- **Method:** PUT\n- **URL:** http://localhost:5000/carga\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Load results cleared successfully"
+                    },
+                    "404": {
+                        "description": "Load results not found",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Load results not found"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

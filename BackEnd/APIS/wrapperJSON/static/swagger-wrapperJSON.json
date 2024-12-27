@@ -1,0 +1,149 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API documentation for WrapperJSON",
+        "version": "1.0.0",
+        "title": "WrapperJSON API",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "email": "you@example.com"
+        }
+    },
+    "host": "localhost:8082",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "WrapperJSON",
+            "description": "Endpoints related to JSON wrapper"
+        }
+    ],
+    "paths": {
+        "/wrapperJSON/execute": {
+            "post": {
+                "tags": [
+                    "WrapperJSON"
+                ],
+                "summary": "Execute data transformation to JSON",
+                "description": "Endpoint to execute the transformation of the data source to the desired format (JSON).\n\n**Postman Instructions:**\n- **Method:** POST\n- **URL:** http://localhost:8082/wrapperJSON/execute\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Transformation successful"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    }
+                }
+            }
+        },
+        "/wrapperJSON/result": {
+            "get": {
+                "tags": [
+                    "WrapperJSON"
+                ],
+                "summary": "Get JSON result",
+                "description": "Endpoint to get the JSON result from the wrapper.\n\n**Postman Instructions:**\n- **Method:** GET\n- **URL:** http://localhost:8082/wrapperJSON/result\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Result fetched successfully",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "404": {
+                        "description": "Result not found",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Result not found"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/wrapperJSON/log": {
+            "get": {
+                "tags": [
+                    "WrapperJSON"
+                ],
+                "summary": "Get log results",
+                "description": "Endpoint to get the log results.\n\n**Postman Instructions:**\n- **Method:** GET\n- **URL:** http://localhost:8082/wrapperJSON/log\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Log fetched successfully",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Log not found",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Log not found"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/wrapperJSON/result": {
+            "delete": {
+                "tags": [
+                    "WrapperJSON"
+                ],
+                "summary": "Delete JSON result",
+                "description": "Endpoint to delete the JSON result.\n\n**Postman Instructions:**\n- **Method:** DELETE\n- **URL:** http://localhost:8082/wrapperJSON/result\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Result deleted successfully"
+                    },
+                    "404": {
+                        "description": "Result not found",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Result not found"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/wrapperJSON/log": {
+            "delete": {
+                "tags": [
+                    "WrapperJSON"
+                ],
+                "summary": "Clear log file",
+                "description": "Endpoint to clear the log file.\n\n**Postman Instructions:**\n- **Method:** DELETE\n- **URL:** http://localhost:8082/wrapperJSON/log\n- **Headers:** None\n- **Body:** None",
+                "responses": {
+                    "200": {
+                        "description": "Log cleared successfully"
+                    },
+                    "404": {
+                        "description": "Log not found",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Log not found"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
