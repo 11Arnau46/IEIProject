@@ -1,30 +1,30 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "API para la transformación de datos de CSV a JSON",
+        "description": "API para la transformación de datos de JSON",
         "version": "1.0.0",
-        "title": "WrapperCSV API",
+        "title": "WrapperJSON API",
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
             "email": "agarmar6@etsinf.upv.es"
         }
     },
-    "host": "localhost:8080",
+    "host": "localhost:8082",
     "basePath": "/",
     "tags": [
         {
-            "name": "WrapperCSV",
-            "description": "Endpoints para la transformación de datos de CSV a JSON"
+            "name": "WrapperJSON",
+            "description": "Endpoints para la transformación de datos de JSON"
         }
     ],
     "paths": {
-        "/wrapperCSV/execute": {
+        "/wrapperJSON/execute": {
             "post": {
                 "tags": [
-                    "WrapperCSV"
+                    "WrapperJSON"
                 ],
-                "summary": "Ejecutar transformación de CSV a JSON",
-                "description": "Endpoint para ejecutar la transformación de datos de CSV a JSON.",
+                "summary": "Ejecutar transformación de datos a JSON",
+                "description": "Endpoint para ejecutar la transformación de datos a JSON.",
                 "responses": {
                     "200": {
                         "description": "Transformación de datos exitosa. Los resultados obtenidos son:",
@@ -64,7 +64,7 @@
             },
             "delete": {
                 "tags": [
-                    "WrapperCSV"
+                    "WrapperJSON"
                 ],
                 "summary": "Eliminar archivo JSON generado",
                 "description": "Endpoint para eliminar el archivo JSON generado por la transformación.",
@@ -96,10 +96,10 @@
                 }
             }
         },
-        "/wrapperCSV/log": {
+        "/wrapperJSON/log": {
             "get": {
                 "tags": [
-                    "WrapperCSV"
+                    "Log"
                 ],
                 "summary": "Obtener contenido del archivo de log",
                 "description": "Endpoint para obtener el contenido del archivo de log.",
@@ -110,7 +110,7 @@
                             "type": "string"
                         },
                         "examples": {
-                            "text/plain": "Registros con errores y descartados: {fuente, nombre, Localidad, motivo del error}\nRegistros con errores y reparado: {fuente, nombre, Localidad, motivo del error, operación realizada}\n\nNúmero de registros cargados correctamente : NN\n"
+                            "text/plain": "Registros con errores y descartados: {fuente, nombre, Localidad, motivo del error}\nRegistros con errores y reparadas: {fuente, nombre, Localidad, motivo del error, reparación}\nNúmero de registros cargados correctamente : NN\n"
                         }
                     },
                     "404": {
@@ -133,7 +133,7 @@
             },
             "delete": {
                 "tags": [
-                    "WrapperCSV"
+                    "Log"
                 ],
                 "summary": "Limpiar contenido del archivo de log",
                 "description": "Endpoint para limpiar el contenido del archivo de log.",
@@ -143,6 +143,14 @@
                         "examples": {
                             "application/json": {
                                 "message": "Log file cleared successfully"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Archivo no encontrado",
+                        "examples": {
+                            "application/json": {
+                                "message": "Log file not found"
                             }
                         }
                     },

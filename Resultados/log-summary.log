@@ -1,0 +1,18 @@
+Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Código postal fuera de rango}
+Registros con errores y descartados: {fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebastián, motivo del error = Coordenadas fuera de rango}
+Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Monumento duplicado}
+Registros con errores y reparados: {fuente = JSON, nombre = Puente de San Antón, Localidad = Bilbao, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+Registros con errores y reparados: {fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebastián, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+Registros con errores y reparados: {fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo del error = Código postal sin valor, operación realizada = Reparado mediante la búsqueda del código postal}
+
+Número de registros cargados correctamente : 12
+--------------------------------------------------------------------------------
+Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Código postal fuera de rango}
+Registros con errores y descartados: {fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebastián, motivo del error = Coordenadas fuera de rango}
+Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Monumento duplicado}
+Registros con errores y reparados: {fuente = JSON, nombre = Puente de San Antón, Localidad = Bilbao, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+Registros con errores y reparados: {fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebastián, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+Registros con errores y reparados: {fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo del error = Código postal sin valor, operación realizada = Reparado mediante la búsqueda del código postal}
+
+Número de registros cargados correctamente : 12
+--------------------------------------------------------------------------------

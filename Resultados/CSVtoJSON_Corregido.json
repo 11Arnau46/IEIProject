@@ -57,10 +57,10 @@
     {
         "nomMonumento": "Poblado de la Peña Ajuerá",
         "tipoMonumento": "Otros",
-        "direccion": "Carretera de Segorbe, 12490 Azuébar, Spain",
-        "codigo_postal": "12490",
-        "longitud": "-0.36270316",
-        "latitud": "39.83232050",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4412475,
+        "latitud": 725683.0,
         "descripcion": "Bienes inmuebles 1ª",
         "nomLocalidad": "Azuébar",
         "nomProvincia": "Castellon"
@@ -68,10 +68,10 @@
     {
         "nomMonumento": "Yacimiento fenicio de Vinarratgell",
         "tipoMonumento": "YacimientoArqueologico",
-        "direccion": "Jaciment de Vinarragell, Camí de la Cantera de Vora Riu, 12550 Borriana / Burriana, Spain",
-        "codigo_postal": "12550",
-        "longitud": "-0.04732570",
-        "latitud": "39.92304668",
+        "direccion": "N/A",
+        "codigo_postal": "N/A",
+        "longitud": 4423391,
+        "latitud": 752342.0,
         "descripcion": "Bienes inmuebles 1ª",
         "nomLocalidad": "Borriana",
         "nomProvincia": "Castellón"
