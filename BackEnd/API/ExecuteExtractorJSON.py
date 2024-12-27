@@ -30,7 +30,7 @@ class ExecuteExtractorJSON(Resource):
         
         # Read the output file and return its contents
         try:
-            with open(output_file_path, 'r') as output_file:
+            with open(output_file_path, 'r', encoding='utf-8') as output_file:
                 output_data = output_file.read()
             return Response(output_data, mimetype='application/json')
         except FileNotFoundError:

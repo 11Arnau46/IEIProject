@@ -11,17 +11,17 @@ def ejecutar_extractor(tipo):
     if tipo == "csv":
         extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_CSV.py")
         result_file = os.path.join(current_dir, "Resultados", "CSVtoJSON_Corregido.json")
-        subprocess.run(["python3", extractor_script])
+        subprocess.run(["py", extractor_script])
         return result_file
     elif tipo == "json":
         extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_JSON.py")
         result_file = os.path.join(current_dir, "Resultados", "JSONtoJSON_con_coords.json")
-        subprocess.run(["python3", extractor_script])
+        subprocess.run(["py", extractor_script])
         return result_file
     elif tipo == "xml":
         extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_XML.py")
         result_file = os.path.join(current_dir, "Resultados", "XMLtoJSON_con_coords.json")
-        subprocess.run(["python3", extractor_script])
+        subprocess.run(["py", extractor_script])
         return result_file
     else:
         raise ValueError("Tipo de extractor no válido. Use 'csv', 'json' o 'xml'.")

@@ -11,18 +11,16 @@ class ExecuteExtractorXML(Resource):
         
         # Print the path to main.py for debugging purposes
         print("Path to main.py:", main_py_path)
-        
-        # Determine the Python command to use
-        python_command = "python3" if subprocess.run(["which", "python3"], capture_output=True).returncode == 0 else "py"
-        
-        # Print the Python command for debugging purposes
-        print("Python command:", python_command)
-        
-        # Execute the command
+
+        # Execute the command with python3
         try:
-            subprocess.run([python_command, main_py_path, "xml"], check=True)
+            subprocess.run(["python3", main_py_path, "xml"], check=True)
         except subprocess.CalledProcessError as e:
-            return {"error": f"Subprocess failed with error: {e}"}, 500
+            print(f"python3 failed with error: {e}, trying py command")
+            try:
+                subprocess.run(["py", main_py_path, "xml"], check=True)
+            except subprocess.CalledProcessError as e:
+                return {"error": f"Subprocess failed with error: {e}"}, 500
         
         # Define the path to the output file
         output_file_path = main_py_path.parent / 'Resultados' / 'XMLtoJSON_con_coords.json'
@@ -32,7 +30,7 @@ class ExecuteExtractorXML(Resource):
         
         # Read the output file and return its contents
         try:
-            with open(output_file_path, 'r') as output_file:
+            with open(output_file_path, 'r', encoding='utf-8') as output_file:
                 output_data = output_file.read()
             return Response(output_data, mimetype='application/json')
         except FileNotFoundError:

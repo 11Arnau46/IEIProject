@@ -12,7 +12,7 @@ log_file_path = root_dir / 'Resultados' / 'log-summary.log'
 class LoadDataToDB(Resource):
     def get(self):
         try:
-            with open(log_file_path, 'r') as log_file:
+            with open(log_file_path, 'r', encoding='latin-1') as log_file:
                 logs = log_file.read()
             return Response(logs, mimetype='text/plain')
         except FileNotFoundError:
