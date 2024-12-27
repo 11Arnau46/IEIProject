@@ -19,6 +19,10 @@
         {
             "name": "Load",
             "description": "Endpoints related to loading data"
+        },
+        {
+            "name": "Utility",
+            "description": "Utility endpoints"
         }
     ],
     "paths": {
@@ -86,27 +90,88 @@
                 "responses": {
                     "200": {
                         "description": "Log summary fetched successfully",
-                        "content": {
-                            "text/plain": {
-                                "schema": {
-                                    "type": "string",
-                                    "example": "Log entry 1\nLog entry 2\nLog entry 3"
-                                }
-                            }
+                        "schema": {
+                            "type": "string"
                         }
                     },
                     "404": {
                         "description": "Log file not found",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "error": {
-                                            "type": "string",
-                                            "example": "Log file not found"
-                                        }
-                                    }
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Log file not found"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/clear_files": {
+            "post": {
+                "tags": [
+                    "Utility"
+                ],
+                "summary": "Clear necessary JSON and log files",
+                "description": "Endpoint to clear necessary JSON and log files",
+                "responses": {
+                    "200": {
+                        "description": "Files cleared successfully",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "message": {
+                                    "type": "string",
+                                    "example": "Files cleared successfully"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Internal server error"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/total_correct_loads": {
+            "get": {
+                "tags": [
+                    "Utility"
+                ],
+                "summary": "Get total correct loads",
+                "description": "Fetches the total number of correct loads",
+                "responses": {
+                    "200": {
+                        "description": "Total correct loads fetched successfully",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "total": {
+                                    "type": "integer",
+                                    "example": 42
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Internal server error"
                                 }
                             }
                         }
