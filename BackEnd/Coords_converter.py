@@ -1,6 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -49,8 +48,11 @@ import time
     return lat, lon """
 
 def convert_utm(latitud, longitud):
-    # Inicializa el navegador
-    driver = webdriver.Chrome()  # Asegúrate de que 'chromedriver' esté en tu PATH
+    opciones = Options()
+    opciones.add_argument("--headless")  # Habilita el modo headless (sin interfaz gráfica)
+
+    # Inicializa el navegador con las opciones configuradas
+    driver = webdriver.Chrome(options=opciones)  # Asegúrate de que 'chromedriver' esté en tu PATH
     driver.get("https://www.ign.es/web/calculadora-geodesica")
 
     # Espera a que la página cargue
@@ -81,14 +83,14 @@ def convert_utm(latitud, longitud):
     driver.find_element(By.ID, "trd_calc").click()
 
     # Espera un momento para que se procese la conversión
-    time.sleep(5)
+    time.sleep(3)
 
     # Obtiene la latitud y longitud en grados
     lat = driver.find_element(By.ID, "txt_etrs89_latgd").get_attribute("value")
     lon = driver.find_element(By.ID, "txt_etrs89_longd").get_attribute("value")
 
-    print(lat)
-    print(lon)
+    #print(lat)
+    #print(lon)
 
     # Cierra el navegador
     driver.quit()
