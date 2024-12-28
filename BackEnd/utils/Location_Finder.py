@@ -58,7 +58,7 @@ class LocationFinder:
                 if direccion_necesaria:
                     item['direccion'] = direction
                 if postal_code_necesario:
-                    item['codigo_postal'] = 1
+                    item['codigo_postal'] = postal_code
 
             results.append(item)
 

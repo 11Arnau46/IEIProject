@@ -1,0 +1,4727 @@
+[
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05296",
+        "ciudad": "Adanero",
+        "x": "40.9461",
+        "y": "-4.6061"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05160",
+        "ciudad": "Alamedilla del berrocal",
+        "x": "40.7091",
+        "y": "-4.7649"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05358",
+        "ciudad": "Albornos",
+        "x": "40.8395",
+        "y": "-4.8816"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05197",
+        "ciudad": "Aldea del rey niño",
+        "x": "40.5851",
+        "y": "-4.7447"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05520",
+        "ciudad": "Aldealabad",
+        "x": "40.611",
+        "y": "-4.8392"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05153",
+        "ciudad": "Aldealabad del miron",
+        "x": "40.5747",
+        "y": "-5.3949"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05580",
+        "ciudad": "Aldeanueva santa cruz",
+        "x": "40.3831",
+        "y": "-5.4205"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05212",
+        "ciudad": "Aldeaseca",
+        "x": "41.0483",
+        "y": "-4.8164"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05193",
+        "ciudad": "Aldeavieja",
+        "x": "40.7438",
+        "y": "-4.4718"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05141",
+        "ciudad": "Altamiros",
+        "x": "40.713",
+        "y": "-4.9099"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05560",
+        "ciudad": "Amavida",
+        "x": "40.5724",
+        "y": "-5.0647"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05400",
+        "ciudad": "Arenas de san pedro",
+        "x": "40.2115",
+        "y": "-5.0866"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05153",
+        "ciudad": "Arevalillo",
+        "x": "40.547",
+        "y": "-5.3517"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05200",
+        "ciudad": "Arevalo",
+        "x": "41.0632",
+        "y": "-4.7208"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05357",
+        "ciudad": "Aveinte",
+        "x": "40.7817",
+        "y": "-4.8354"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05580",
+        "ciudad": "Avellaneda",
+        "x": "40.3892",
+        "y": "-5.3888"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05001",
+        "ciudad": "Avila",
+        "x": "40.6566",
+        "y": "-4.6992"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05520",
+        "ciudad": "Balbarda",
+        "x": "40.6347",
+        "y": "-4.9749"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05198",
+        "ciudad": "Bandadas",
+        "x": "40.5449",
+        "y": "-4.8455"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05635",
+        "ciudad": "Barajas",
+        "x": "40.3635",
+        "y": "-5.1441"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05229",
+        "ciudad": "Barroman",
+        "x": "41.0639",
+        "y": "-4.9296"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05130",
+        "ciudad": "Baterna",
+        "x": "40.5551",
+        "y": "-4.9347"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05610",
+        "ciudad": "Becedas",
+        "x": "40.4027",
+        "y": "-5.6346"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05153",
+        "ciudad": "Becedillas",
+        "x": "40.5391",
+        "y": "-5.3254"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05141",
+        "ciudad": "Benitos del rebollar",
+        "x": "40.6779",
+        "y": "-4.9431"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05229",
+        "ciudad": "Bercial de zapardiel",
+        "x": "41.0483",
+        "y": "-4.9693"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05195",
+        "ciudad": "Bernuy salinero",
+        "x": "40.6676",
+        "y": "-4.5976"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05211",
+        "ciudad": "Bernuy  zapardiel",
+        "x": "40.9761",
+        "y": "-4.9433"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05194",
+        "ciudad": "Berrocalejo de aragona",
+        "x": "40.6945",
+        "y": "-4.5954"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05540",
+        "ciudad": "Blacha",
+        "x": "40.5641",
+        "y": "-4.9827"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05193",
+        "ciudad": "Blascoeles",
+        "x": "40.7548",
+        "y": "-4.496"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05147",
+        "ciudad": "Blascojimeno",
+        "x": "40.7053",
+        "y": "-5.1074"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05146",
+        "ciudad": "Blascomillan",
+        "x": "40.8021",
+        "y": "-5.0869"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05299",
+        "ciudad": "Blasconuño de matacabras",
+        "x": "41.125",
+        "y": "-4.9884"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05290",
+        "ciudad": "Blascosancho",
+        "x": "40.876",
+        "y": "-4.6361"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05690",
+        "ciudad": "Bohoyo",
+        "x": "40.3144",
+        "y": "-5.4438"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05514",
+        "ciudad": "Bonilla de la sierra",
+        "x": "40.5318",
+        "y": "-5.2649"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05357",
+        "ciudad": "Bravos",
+        "x": "40.7757",
+        "y": "-4.909"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05194",
+        "ciudad": "Brieva",
+        "x": "40.6947",
+        "y": "-4.629"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05140",
+        "ciudad": "Bularros",
+        "x": "40.6619",
+        "y": "-4.7937"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05113",
+        "ciudad": "Burgohondo",
+        "x": "40.4143",
+        "y": "-4.7859"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05190",
+        "ciudad": "Cabañas",
+        "x": "40.5627",
+        "y": "-4.7656"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05697",
+        "ciudad": "Cabezas altas",
+        "x": "40.3136",
+        "y": "-5.5435"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05697",
+        "ciudad": "Cabezas bajas",
+        "x": "40.3276",
+        "y": "-5.5366"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05217",
+        "ciudad": "Cabezas de alambre",
+        "x": "40.942",
+        "y": "-4.8417"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05514",
+        "ciudad": "Cabezas de bonilla",
+        "x": "40.5622",
+        "y": "-5.2464"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05211",
+        "ciudad": "Cabezas del pozo",
+        "x": "41.0024",
+        "y": "-4.9536"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05148",
+        "ciudad": "Cabezas del villar",
+        "x": "40.7147",
+        "y": "-5.2096"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05165",
+        "ciudad": "Cabizuela",
+        "x": "40.9",
+        "y": "-4.8006"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05112",
+        "ciudad": "Calas del burguillo",
+        "x": "40.3988",
+        "y": "-4.8185"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05212",
+        "ciudad": "Canales",
+        "x": "41.0045",
+        "y": "-4.9017"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05480",
+        "ciudad": "Candeleda",
+        "x": "40.1563",
+        "y": "-5.2413"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05211",
+        "ciudad": "Cantiveros",
+        "x": "40.9523",
+        "y": "-4.9543"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05630",
+        "ciudad": "Cardedal",
+        "x": "40.3525",
+        "y": "-5.4257"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05320",
+        "ciudad": "Cardeñosa",
+        "x": "40.7432",
+        "y": "-4.7469"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05151",
+        "ciudad": "Carpio medianero",
+        "x": "40.6629",
+        "y": "-5.3561"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05580",
+        "ciudad": "Carrascalejo",
+        "x": "40.4026",
+        "y": "-5.434"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05620",
+        "ciudad": "Casas de la sierra",
+        "x": "40.3581",
+        "y": "-5.5907"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05692",
+        "ciudad": "Casas de la vega",
+        "x": "40.3894",
+        "y": "-5.551"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05693",
+        "ciudad": "Casas de maripedro",
+        "x": "40.3123",
+        "y": "-5.5755"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05592",
+        "ciudad": "Casas de navancuerda",
+        "x": "40.4407",
+        "y": "-5.3312"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05693",
+        "ciudad": "Casas del abad",
+        "x": "40.3072",
+        "y": "-5.5899"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05571",
+        "ciudad": "Casas del puerto de villatoro",
+        "x": "40.528",
+        "y": "-5.1979"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05621",
+        "ciudad": "Casas del rey",
+        "x": "40.3148",
+        "y": "-5.6224"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05515",
+        "ciudad": "Casas sebastian perez",
+        "x": "40.4695",
+        "y": "-5.3544"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05140",
+        "ciudad": "Casasola",
+        "x": "40.6628",
+        "y": "-4.7935"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05450",
+        "ciudad": "Casavieja",
+        "x": "40.2823",
+        "y": "-4.7673"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05428",
+        "ciudad": "Casillas",
+        "x": "40.3273",
+        "y": "-4.5731"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05153",
+        "ciudad": "Casillas de chicapierna",
+        "x": "40.5506",
+        "y": "-5.3332"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05229",
+        "ciudad": "Castellanos de zapardiel",
+        "x": "41.0836",
+        "y": "-4.9102"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05357",
+        "ciudad": "Castilblanco",
+        "x": "40.8031",
+        "y": "-4.956"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05260",
+        "ciudad": "Cebreros",
+        "x": "40.4589",
+        "y": "-4.4658"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05132",
+        "ciudad": "Cepeda la mora",
+        "x": "40.459",
+        "y": "-5.0483"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05620",
+        "ciudad": "Cereceda",
+        "x": "40.3533",
+        "y": "-5.5606"
+    },
+    {
+        "provincia": "Ávila",
+        "codigo_postal": "05279",
+        "ciudad": "Cerro de guisando",
+        "x": "40.4144",
+        "y": "-4.5003"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09586",
+        "ciudad": "Abadia la mena",
+        "x": "43.1532",
+        "y": "-3.272"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09141",
+        "ciudad": "Abajas de bureba",
+        "x": "42.6161",
+        "y": "-3.5548"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09129",
+        "ciudad": "Acedillo",
+        "x": "42.5721",
+        "y": "-3.8681"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09462",
+        "ciudad": "Adrada de haza",
+        "x": "41.595",
+        "y": "-3.8244"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09515",
+        "ciudad": "Ael",
+        "x": "42.8833",
+        "y": "-3.3715"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09515",
+        "ciudad": "Aforados de moneo",
+        "x": "42.8716",
+        "y": "-3.4432"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09199",
+        "ciudad": "Ages",
+        "x": "42.3689",
+        "y": "-3.4797"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09593",
+        "ciudad": "Aguas candidas",
+        "x": "42.7152",
+        "y": "-3.5011"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09569",
+        "ciudad": "Aguera de montija",
+        "x": "43.0979",
+        "y": "-3.4518"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09249",
+        "ciudad": "Aguilar de bureba",
+        "x": "42.5895",
+        "y": "-3.3293"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09216",
+        "ciudad": "Aguillo",
+        "x": "42.7392",
+        "y": "-2.6368"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09146",
+        "ciudad": "Ailanes de zamanzas",
+        "x": "42.8645",
+        "y": "-3.7401"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09216",
+        "ciudad": "Ajarte",
+        "x": "42.7531",
+        "y": "-2.6315"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09199",
+        "ciudad": "Alarcia",
+        "x": "42.3057",
+        "y": "-3.2962"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "34492",
+        "ciudad": "Albacastro",
+        "x": "42.6805",
+        "y": "-4.1895"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09216",
+        "ciudad": "Albaina",
+        "x": "42.6885",
+        "y": "-2.6329"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09239",
+        "ciudad": "Albillos",
+        "x": "42.2775",
+        "y": "-3.7902"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09258",
+        "ciudad": "Alcocero de mola",
+        "x": "42.4719",
+        "y": "-3.3572"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09660",
+        "ciudad": "Aldea del pinar",
+        "x": "41.8695",
+        "y": "-3.1685"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09571",
+        "ciudad": "Alfoz de santa gadea",
+        "x": "42.9648",
+        "y": "-3.9069"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09515",
+        "ciudad": "Almendres",
+        "x": "42.8929",
+        "y": "-3.4147"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09219",
+        "ciudad": "Altable",
+        "x": "42.6025",
+        "y": "-3.0762"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09136",
+        "ciudad": "Amaya",
+        "x": "42.6439",
+        "y": "-4.1635"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09219",
+        "ciudad": "Ameyugo",
+        "x": "42.6547",
+        "y": "-3.062"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09215",
+        "ciudad": "Añastro",
+        "x": "42.7411",
+        "y": "-2.7885"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09554",
+        "ciudad": "Andino",
+        "x": "42.9162",
+        "y": "-3.5645"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09588",
+        "ciudad": "Angostina",
+        "x": "43.0904",
+        "y": "-3.1863"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09514",
+        "ciudad": "Angosto",
+        "x": "43.0185",
+        "y": "-3.4169"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09313",
+        "ciudad": "Anguix",
+        "x": "41.7521",
+        "y": "-3.9317"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09588",
+        "ciudad": "Angulo",
+        "x": "43.0372",
+        "y": "-3.1732"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09585",
+        "ciudad": "Antuñano",
+        "x": "43.0627",
+        "y": "-3.236"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09589",
+        "ciudad": "Anzo",
+        "x": "43.0771",
+        "y": "-3.3117"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09511",
+        "ciudad": "Aostri",
+        "x": "42.9542",
+        "y": "-3.1349"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09588",
+        "ciudad": "Araduenga",
+        "x": "43.0956",
+        "y": "-3.1706"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09217",
+        "ciudad": "Araico",
+        "x": "42.7172",
+        "y": "-2.7069"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09215",
+        "ciudad": "Arana",
+        "x": "42.6992",
+        "y": "-2.7197"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09400",
+        "ciudad": "Aranda de duero",
+        "x": "41.6713",
+        "y": "-3.6904"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09410",
+        "ciudad": "Arandilla",
+        "x": "41.7382",
+        "y": "-3.4306"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09451",
+        "ciudad": "Arauzo de miel",
+        "x": "41.8578",
+        "y": "-3.3865"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09451",
+        "ciudad": "Arauzo de salce",
+        "x": "41.8203",
+        "y": "-3.4108"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09451",
+        "ciudad": "Arauzo de torre",
+        "x": "41.7978",
+        "y": "-3.4234"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09218",
+        "ciudad": "Arce",
+        "x": "42.6877",
+        "y": "-2.8301"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09127",
+        "ciudad": "Arcellares del tozo",
+        "x": "42.7167",
+        "y": "-4.0862"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09587",
+        "ciudad": "Arceo",
+        "x": "43.1042",
+        "y": "-3.3645"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09592",
+        "ciudad": "Arconada",
+        "x": "42.5968",
+        "y": "-3.5216"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09195",
+        "ciudad": "Arcos de la llana",
+        "x": "42.3025",
+        "y": "-3.7451"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09239",
+        "ciudad": "Arenillas de muño",
+        "x": "42.2211",
+        "y": "-3.8488"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09107",
+        "ciudad": "Arenillas de riopisuerga",
+        "x": "42.3583",
+        "y": "-4.2347"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09133",
+        "ciudad": "Arenillas de villadiego",
+        "x": "42.5305",
+        "y": "-3.9856"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09558",
+        "ciudad": "Arges",
+        "x": "42.8954",
+        "y": "-3.6769"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09572",
+        "ciudad": "Argomedo",
+        "x": "42.9823",
+        "y": "-3.7661"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09217",
+        "ciudad": "Argote",
+        "x": "42.7031",
+        "y": "-2.6729"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09570",
+        "ciudad": "Arija",
+        "x": "42.9944",
+        "y": "-3.9447"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09199",
+        "ciudad": "Arlanzon",
+        "x": "42.3232",
+        "y": "-3.4585"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09215",
+        "ciudad": "Armentia",
+        "x": "42.7147",
+        "y": "-2.7037"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09571",
+        "ciudad": "Arnedo de hoz",
+        "x": "42.9654",
+        "y": "-3.907"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09292",
+        "ciudad": "Arraya de oca",
+        "x": "42.4152",
+        "y": "-3.3964"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09572",
+        "ciudad": "Arreba",
+        "x": "42.8888",
+        "y": "-3.7561"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09215",
+        "ciudad": "Arrieta",
+        "x": "42.7675",
+        "y": "-2.7258"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09131",
+        "ciudad": "Arroyal de vivar",
+        "x": "42.4111",
+        "y": "-3.8225"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09239",
+        "ciudad": "Arroyo de muño",
+        "x": "42.2495",
+        "y": "-3.8979"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09615",
+        "ciudad": "Arroyo de salas",
+        "x": "42.0715",
+        "y": "-3.268"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "01427",
+        "ciudad": "Arroyo de san zadornil",
+        "x": "42.8536",
+        "y": "-3.1777"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09559",
+        "ciudad": "Arroyo de valdivielso",
+        "x": "42.8254",
+        "y": "-3.5275"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09549",
+        "ciudad": "Arroyuelo",
+        "x": "42.8365",
+        "y": "-3.3818"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09588",
+        "ciudad": "Artieta",
+        "x": "43.1167",
+        "y": "-3.1865"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09585",
+        "ciudad": "Arza",
+        "x": "43.0621",
+        "y": "-3.2366"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09215",
+        "ciudad": "Ascarza",
+        "x": "42.7618",
+        "y": "-2.7078"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09199",
+        "ciudad": "Atapuerca",
+        "x": "42.3791",
+        "y": "-3.508"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09345",
+        "ciudad": "Avellanosa de muño",
+        "x": "41.9825",
+        "y": "-3.8268"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09267",
+        "ciudad": "Avellanosa de rioja",
+        "x": "42.3639",
+        "y": "-3.0941"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09131",
+        "ciudad": "Avellanosa del paramo",
+        "x": "42.4611",
+        "y": "-3.8775"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09144",
+        "ciudad": "Ayoluengo",
+        "x": "42.7489",
+        "y": "-3.8652"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09219",
+        "ciudad": "Ayuelas",
+        "x": "42.6951",
+        "y": "-3.038"
+    },
+    {
+        "provincia": "Burgos",
+        "codigo_postal": "09200",
+        "ciudad": "Azucarera leopoldo",
+        "x": "42.6858",
+        "y": "-2.9472"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24891",
+        "ciudad": "Abadengo de torio",
+        "x": "42.7143",
+        "y": "-5.5156"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24397",
+        "ciudad": "Abano",
+        "x": "42.6536",
+        "y": "-6.0297"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24145",
+        "ciudad": "Abelgas",
+        "x": "42.7989",
+        "y": "-5.9844"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24996",
+        "ciudad": "Acebedo",
+        "x": "43.0407",
+        "y": "-5.1161"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24357",
+        "ciudad": "Acebes del paramo",
+        "x": "42.4436",
+        "y": "-5.8446"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24413",
+        "ciudad": "Acebo de san miguel",
+        "x": "42.5291",
+        "y": "-6.4712"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24877",
+        "ciudad": "Acisa de las arrimadas",
+        "x": "42.8071",
+        "y": "-5.2622"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24859",
+        "ciudad": "Adrados",
+        "x": "42.8769",
+        "y": "-5.2835"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24277",
+        "ciudad": "Adrados de ordas",
+        "x": "42.7381",
+        "y": "-5.8499"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24569",
+        "ciudad": "Aguiar",
+        "x": "42.5306",
+        "y": "-6.8905"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24521",
+        "ciudad": "Albaredos",
+        "x": "42.5948",
+        "y": "-7.0398"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24310",
+        "ciudad": "Albares de la ribera",
+        "x": "42.6078",
+        "y": "-6.366"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24293",
+        "ciudad": "Albires",
+        "x": "42.2511",
+        "y": "-5.2693"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24768",
+        "ciudad": "Alcaidon o alquidon",
+        "x": "42.3477",
+        "y": "-5.8865"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24649",
+        "ciudad": "Alcedo de alba",
+        "x": "42.8068",
+        "y": "-5.6595"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24393",
+        "ciudad": "Alcoba de la ribera",
+        "x": "42.5506",
+        "y": "-5.8299"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24207",
+        "ciudad": "Alcuetas",
+        "x": "42.2705",
+        "y": "-5.4339"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24391",
+        "ciudad": "Aldea de la valdoncina",
+        "x": "42.5464",
+        "y": "-5.6565"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24920",
+        "ciudad": "Aldea del puente",
+        "x": "42.5502",
+        "y": "-5.2969"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24960",
+        "ciudad": "Aleje",
+        "x": "42.8516",
+        "y": "-5.1268"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24960",
+        "ciudad": "Alejico",
+        "x": "42.8491",
+        "y": "-5.1319"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24238",
+        "ciudad": "Algadefe",
+        "x": "42.2178",
+        "y": "-5.5831"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24199",
+        "ciudad": "Alija de la ribera",
+        "x": "42.5225",
+        "y": "-5.5319"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24761",
+        "ciudad": "Alija del infantado",
+        "x": "42.289",
+        "y": "-5.9354"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24374",
+        "ciudad": "Almagarinos",
+        "x": "42.6705",
+        "y": "-6.252"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24170",
+        "ciudad": "Almanza",
+        "x": "42.6576",
+        "y": "-5.0355"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24398",
+        "ciudad": "Almazcara",
+        "x": "42.593",
+        "y": "-6.5042"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24838",
+        "ciudad": "Almuzara",
+        "x": "42.9513",
+        "y": "-5.5608"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24792",
+        "ciudad": "Altobar de la encomienda",
+        "x": "42.164",
+        "y": "-5.8145"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24743",
+        "ciudad": "Ambasaguas de cabrera",
+        "x": "42.2797",
+        "y": "-6.5647"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24150",
+        "ciudad": "Ambasaguas de curueño",
+        "x": "42.7072",
+        "y": "-5.3692"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24524",
+        "ciudad": "Ambasmestas",
+        "x": "42.6648",
+        "y": "-6.9455"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24127",
+        "ciudad": "Andarraso",
+        "x": "42.7476",
+        "y": "-6.01"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24722",
+        "ciudad": "Andiñuela",
+        "x": "42.4574",
+        "y": "-6.3151"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24488",
+        "ciudad": "Anllares del sil",
+        "x": "42.8449",
+        "y": "-6.5428"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24488",
+        "ciudad": "Anllarinos del sil",
+        "x": "42.8469",
+        "y": "-6.5428"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24251",
+        "ciudad": "Antimio de abajo",
+        "x": "42.4967",
+        "y": "-5.6118"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24391",
+        "ciudad": "Antimio de arriba",
+        "x": "42.5152",
+        "y": "-5.6476"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24281",
+        "ciudad": "Antoñan del valle",
+        "x": "42.5222",
+        "y": "-5.9498"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24248",
+        "ciudad": "Antoñanes del paramo",
+        "x": "42.4046",
+        "y": "-5.7885"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24146",
+        "ciudad": "Aralla",
+        "x": "42.9013",
+        "y": "-5.8334"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24690",
+        "ciudad": "Arbas del puerto",
+        "x": "42.9838",
+        "y": "-5.7006"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24547",
+        "ciudad": "Arborbuena",
+        "x": "42.6239",
+        "y": "-6.7546"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24227",
+        "ciudad": "Arcahueja",
+        "x": "42.5664",
+        "y": "-5.4984"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24171",
+        "ciudad": "Arcayos",
+        "x": "42.5921",
+        "y": "-5.0457"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24232",
+        "ciudad": "Ardon",
+        "x": "42.4368",
+        "y": "-5.5607"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24251",
+        "ciudad": "Ardoncino",
+        "x": "42.4902",
+        "y": "-5.6444"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24329",
+        "ciudad": "Arenillas de valderaduey",
+        "x": "42.2787",
+        "y": "-5.0583"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24722",
+        "ciudad": "Argañoso",
+        "x": "42.5135",
+        "y": "-6.2651"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24546",
+        "ciudad": "Arganza",
+        "x": "42.6414",
+        "y": "-6.6867"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24478",
+        "ciudad": "Argayo",
+        "x": "42.8113",
+        "y": "-6.5765"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24526",
+        "ciudad": "Argenteiro",
+        "x": "42.6792",
+        "y": "-7.0296"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24989",
+        "ciudad": "Argovejo",
+        "x": "42.904",
+        "y": "-5.1178"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24127",
+        "ciudad": "Ariego de abajo",
+        "x": "42.7854",
+        "y": "-5.9635"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24127",
+        "ciudad": "Ariego de arriba",
+        "x": "42.7901",
+        "y": "-5.9774"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24132",
+        "ciudad": "Arienza",
+        "x": "42.8185",
+        "y": "-6.0108"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24845",
+        "ciudad": "Arintero",
+        "x": "42.9486",
+        "y": "-5.3621"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24319",
+        "ciudad": "Arlanza",
+        "x": "42.6625",
+        "y": "-6.4171"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24284",
+        "ciudad": "Armellada",
+        "x": "42.5535",
+        "y": "-5.8639"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24009",
+        "ciudad": "Armunia",
+        "x": "42.5765",
+        "y": "-5.59"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24567",
+        "ciudad": "Arnadelo",
+        "x": "42.5558",
+        "y": "-6.9077"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24568",
+        "ciudad": "Arnado",
+        "x": "42.5375",
+        "y": "-7.0142"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24700",
+        "ciudad": "Astorga",
+        "x": "42.4593",
+        "y": "-6.0558"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24796",
+        "ciudad": "Audanzas del valle",
+        "x": "42.1691",
+        "y": "-5.7122"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24849",
+        "ciudad": "Aviados",
+        "x": "42.858",
+        "y": "-5.4442"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24121",
+        "ciudad": "Azadinos",
+        "x": "42.6369",
+        "y": "-5.6173"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24272",
+        "ciudad": "Azadon",
+        "x": "42.6304",
+        "y": "-5.8082"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24253",
+        "ciudad": "Azares del paramo",
+        "x": "42.2916",
+        "y": "-5.832"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24740",
+        "ciudad": "Baillo",
+        "x": "42.2831",
+        "y": "-6.4628"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24525",
+        "ciudad": "Balboa",
+        "x": "42.7076",
+        "y": "-6.9225"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24884",
+        "ciudad": "Balneario de morgovejo",
+        "x": "42.8434",
+        "y": "-4.9589"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24433",
+        "ciudad": "Balouta",
+        "x": "42.8878",
+        "y": "-6.8064"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24343",
+        "ciudad": "Banecidas",
+        "x": "42.4735",
+        "y": "-5.095"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24251",
+        "ciudad": "Banuncias",
+        "x": "42.4715",
+        "y": "-5.6356"
+    },
+    {
+        "provincia": "León",
+        "codigo_postal": "24429",
+        "ciudad": "Barcena de la abadia",
+        "x": "42.7886",
+        "y": "-6.6301"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34338",
+        "ciudad": "Abarca de campos",
+        "x": "42.0616",
+        "y": "-4.842"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34307",
+        "ciudad": "Abastas",
+        "x": "42.2385",
+        "y": "-4.7907"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34307",
+        "ciudad": "Abastillas",
+        "x": "42.2568",
+        "y": "-4.8022"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34479",
+        "ciudad": "Abia de las torres",
+        "x": "42.4209",
+        "y": "-4.4206"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34111",
+        "ciudad": "Acera de la vega",
+        "x": "42.6151",
+        "y": "-4.8175"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34800",
+        "ciudad": "Aguilar de campoo",
+        "x": "42.7942",
+        "y": "-4.2587"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34480",
+        "ciudad": "Alar del rey",
+        "x": "42.6601",
+        "y": "-4.3124"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34219",
+        "ciudad": "Alba de cerrato",
+        "x": "41.813",
+        "y": "-4.3632"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34888",
+        "ciudad": "Alba de los cardaños",
+        "x": "42.907",
+        "y": "-4.7195"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34126",
+        "ciudad": "Albala de la vega",
+        "x": "42.4394",
+        "y": "-4.7075"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34429",
+        "ciudad": "Amayuelas de abajo",
+        "x": "42.2044",
+        "y": "-4.4971"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34429",
+        "ciudad": "Amayuelas de arriba",
+        "x": "42.2099",
+        "y": "-4.4881"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34485",
+        "ciudad": "Amayuelas de ojeda",
+        "x": "42.7831",
+        "y": "-4.4917"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34191",
+        "ciudad": "Ampudia",
+        "x": "41.9149",
+        "y": "-4.7816"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34420",
+        "ciudad": "Amusco",
+        "x": "42.1732",
+        "y": "-4.4708"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34307",
+        "ciudad": "Añoza",
+        "x": "42.2244",
+        "y": "-4.784"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34248",
+        "ciudad": "Antiguedad",
+        "x": "41.947",
+        "y": "-4.1211"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34846",
+        "ciudad": "Arbejal",
+        "x": "42.9184",
+        "y": "-4.462"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34449",
+        "ciudad": "Arconada",
+        "x": "42.327",
+        "y": "-4.4975"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34477",
+        "ciudad": "Arenillas de nuño perez",
+        "x": "42.5154",
+        "y": "-4.5305"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34473",
+        "ciudad": "Arenillas de san pelayo",
+        "x": "42.5804",
+        "y": "-4.5975"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34849",
+        "ciudad": "Areños",
+        "x": "42.9925",
+        "y": "-4.4915"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34347",
+        "ciudad": "Arroyo",
+        "x": "42.3105",
+        "y": "-4.8571"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34450",
+        "ciudad": "Astudillo",
+        "x": "42.193",
+        "y": "-4.2935"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34191",
+        "ciudad": "Autilla del pino",
+        "x": "41.9908",
+        "y": "-4.6351"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34338",
+        "ciudad": "Autillo de campos",
+        "x": "42.0865",
+        "y": "-4.8338"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34869",
+        "ciudad": "Aviñante de la peña",
+        "x": "42.8313",
+        "y": "-4.6464"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34473",
+        "ciudad": "Ayuela",
+        "x": "42.6274",
+        "y": "-4.6613"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34127",
+        "ciudad": "Bahillo",
+        "x": "42.4432",
+        "y": "-4.5798"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34240",
+        "ciudad": "Baltanas",
+        "x": "41.9372",
+        "y": "-4.2462"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34200",
+        "ciudad": "Baños de cerrato",
+        "x": "41.9198",
+        "y": "-4.4762"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34878",
+        "ciudad": "Baños de la peña",
+        "x": "42.7252",
+        "y": "-4.6515"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34305",
+        "ciudad": "Baquerin de campos",
+        "x": "42.0148",
+        "y": "-4.7813"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34878",
+        "ciudad": "Barajores de la peña",
+        "x": "42.7647",
+        "y": "-4.6731"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34477",
+        "ciudad": "Barcena de campos",
+        "x": "42.4852",
+        "y": "-4.5"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34839",
+        "ciudad": "Barcenilla de pisuerga",
+        "x": "42.8487",
+        "y": "-4.4136"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34810",
+        "ciudad": "Barrio de san pedro",
+        "x": "42.8049",
+        "y": "-4.3718"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34492",
+        "ciudad": "Barrio de san quirce",
+        "x": "42.7075",
+        "y": "-4.2374"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34810",
+        "ciudad": "Barrio de santa maria",
+        "x": "42.8117",
+        "y": "-4.3805"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34470",
+        "ciudad": "Barrio la puebla",
+        "x": "42.6727",
+        "y": "-4.6215"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34111",
+        "ciudad": "Barrios de la vega",
+        "x": "42.5517",
+        "y": "-4.7853"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34470",
+        "ciudad": "Barriosuso",
+        "x": "42.6452",
+        "y": "-4.6298"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34820",
+        "ciudad": "Barruelo de santullan",
+        "x": "42.9061",
+        "y": "-4.287"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "39250",
+        "ciudad": "Bascones de ebro",
+        "x": "42.7986",
+        "y": "-4.0109"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34406",
+        "ciudad": "Bascones de ojeda",
+        "x": "42.6702",
+        "y": "-4.5271"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34813",
+        "ciudad": "Bascones de valdivia",
+        "x": "42.7663",
+        "y": "-4.184"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34310",
+        "ciudad": "Becerril de campos",
+        "x": "42.1089",
+        "y": "-4.6412"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34487",
+        "ciudad": "Becerril del carpio",
+        "x": "42.7119",
+        "y": "-4.3006"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34304",
+        "ciudad": "Belmonte de campos",
+        "x": "41.9436",
+        "y": "-4.986"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34485",
+        "ciudad": "Berzosa de los hidalgos",
+        "x": "42.6719",
+        "y": "-4.4487"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "39250",
+        "ciudad": "Berzosilla",
+        "x": "42.779",
+        "y": "-4.0369"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34305",
+        "ciudad": "Boada de campos",
+        "x": "41.9896",
+        "y": "-4.8773"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34349",
+        "ciudad": "Boadilla de rioseco",
+        "x": "42.1784",
+        "y": "-4.9686"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34468",
+        "ciudad": "Boadilla del camino",
+        "x": "42.2601",
+        "y": "-4.3448"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34859",
+        "ciudad": "Boedo de castrejon",
+        "x": "42.8137",
+        "y": "-4.5945"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34829",
+        "ciudad": "Brañosera",
+        "x": "42.937",
+        "y": "-4.3098"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34470",
+        "ciudad": "Buenavista de valdavia",
+        "x": "42.6372",
+        "y": "-4.6133"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34116",
+        "ciudad": "Bustillo de la vega",
+        "x": "42.4549",
+        "y": "-4.7411"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34828",
+        "ciudad": "Bustillo de santullan",
+        "x": "42.8699",
+        "y": "-4.3495"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34129",
+        "ciudad": "Bustillo del paramo de carrion",
+        "x": "42.3819",
+        "y": "-4.6993"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34811",
+        "ciudad": "Cabria",
+        "x": "42.8064",
+        "y": "-4.2228"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34190",
+        "ciudad": "Calabazanos",
+        "x": "41.9425",
+        "y": "-4.5034"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34407",
+        "ciudad": "Calahorra de boedo",
+        "x": "42.5737",
+        "y": "-4.3849"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34129",
+        "ciudad": "Calzada de los molinos",
+        "x": "42.3274",
+        "y": "-4.6524"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34309",
+        "ciudad": "Calzadilla de la cueza",
+        "x": "42.3295",
+        "y": "-4.8029"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34849",
+        "ciudad": "Camasobres",
+        "x": "43.0143",
+        "y": "-4.4891"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34813",
+        "ciudad": "Camesa de valdivia",
+        "x": "42.7852",
+        "y": "-4.2397"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34888",
+        "ciudad": "Camporredondo de alba",
+        "x": "42.895",
+        "y": "-4.7462"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34811",
+        "ciudad": "Canduela",
+        "x": "42.8349",
+        "y": "-4.1862"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34859",
+        "ciudad": "Cantoral de la peña",
+        "x": "42.8135",
+        "y": "-4.5941"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34305",
+        "ciudad": "Capillas",
+        "x": "42.0124",
+        "y": "-4.8901"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34117",
+        "ciudad": "Carbonera",
+        "x": "42.5912",
+        "y": "-4.7353"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34888",
+        "ciudad": "Cardaño de abajo",
+        "x": "42.9222",
+        "y": "-4.7629"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34888",
+        "ciudad": "Cardaño de arriba",
+        "x": "42.9719",
+        "y": "-4.7557"
+    },
+    {
+        "provincia": "Palencia",
+        "codigo_postal": "34309",
+        "ciudad": "Cardeñosa de volpejera",
+        "x": "42.2309",
+        "y": "-4.7011"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37640",
+        "ciudad": "Abusejo",
+        "x": "40.7082",
+        "y": "-6.1417"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37510",
+        "ciudad": "Agallas",
+        "x": "40.4487",
+        "y": "-6.4422"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37594",
+        "ciudad": "Agueda del caudillo",
+        "x": "40.5631",
+        "y": "-6.4995"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37248",
+        "ciudad": "Ahigal de los aceiteros",
+        "x": "40.8717",
+        "y": "-6.747"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37173",
+        "ciudad": "Ahigal de villarino",
+        "x": "41.1573",
+        "y": "-6.3814"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37312",
+        "ciudad": "Alaraz",
+        "x": "40.7487",
+        "y": "-5.288"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37800",
+        "ciudad": "Alba de tormes",
+        "x": "40.8266",
+        "y": "-5.5135"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37478",
+        "ciudad": "Alba de yeltes",
+        "x": "40.6722",
+        "y": "-6.3178"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37191",
+        "ciudad": "Albahonda",
+        "x": "40.9067",
+        "y": "-5.5922"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37759",
+        "ciudad": "Albergueria de herguijuela",
+        "x": "40.6022",
+        "y": "-5.8712"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37449",
+        "ciudad": "Albergueria de la valmuza",
+        "x": "40.9422",
+        "y": "-5.8395"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37607",
+        "ciudad": "Alcazaren",
+        "x": "40.6319",
+        "y": "-6.0047"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37329",
+        "ciudad": "Alconada",
+        "x": "40.9104",
+        "y": "-5.3619"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37460",
+        "ciudad": "Alcornocal",
+        "x": "40.8825",
+        "y": "-6.0612"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37488",
+        "ciudad": "Aldea del obispo",
+        "x": "40.7063",
+        "y": "-6.7932"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37718",
+        "ciudad": "Aldeacipreste",
+        "x": "40.3812",
+        "y": "-5.8975"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37250",
+        "ciudad": "Aldeadavila de la ribera",
+        "x": "41.2181",
+        "y": "-6.619"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37187",
+        "ciudad": "Aldeagallega",
+        "x": "40.8781",
+        "y": "-5.7217"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37116",
+        "ciudad": "Aldeagutierrez",
+        "x": "41.1084",
+        "y": "-6.024"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37350",
+        "ciudad": "Aldealengua",
+        "x": "40.9818",
+        "y": "-5.5494"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37183",
+        "ciudad": "Aldealgordo de abajo",
+        "x": "40.8304",
+        "y": "-5.7214"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37183",
+        "ciudad": "Aldealgordo de arriba",
+        "x": "40.8278",
+        "y": "-5.7195"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37187",
+        "ciudad": "Aldeanueva de ariseos",
+        "x": "40.8967",
+        "y": "-5.6978"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37767",
+        "ciudad": "Aldeanueva de campomojado",
+        "x": "40.5933",
+        "y": "-5.7606"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37429",
+        "ciudad": "Aldeanueva de figueroa",
+        "x": "41.1496",
+        "y": "-5.5246"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37621",
+        "ciudad": "Aldeanueva de la sierra",
+        "x": "40.5672",
+        "y": "-6.1115"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37110",
+        "ciudad": "Aldearrodrigo",
+        "x": "41.11",
+        "y": "-5.8077"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37340",
+        "ciudad": "Aldearrubia",
+        "x": "41.009",
+        "y": "-5.4976"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37870",
+        "ciudad": "Aldeaseca de alba",
+        "x": "40.8179",
+        "y": "-5.4484"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37189",
+        "ciudad": "Aldeaseca de la armuña",
+        "x": "41.0206",
+        "y": "-5.6725"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37317",
+        "ciudad": "Aldeaseca de la frontera",
+        "x": "40.9402",
+        "y": "-5.2058"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37187",
+        "ciudad": "Aldeatejada",
+        "x": "40.9225",
+        "y": "-5.6916"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37493",
+        "ciudad": "Aldeavieja",
+        "x": "40.8399",
+        "y": "-6.196"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37779",
+        "ciudad": "Aldeavieja de tormes",
+        "x": "40.5824",
+        "y": "-5.6174"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37493",
+        "ciudad": "Aldeavila de revilla",
+        "x": "40.8584",
+        "y": "-6.18"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37317",
+        "ciudad": "Aldeayuste",
+        "x": "40.9645",
+        "y": "-5.2334"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37460",
+        "ciudad": "Aldehuela de la boveda",
+        "x": "40.85",
+        "y": "-6.0511"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37193",
+        "ciudad": "Aldehuela de los guzmanes",
+        "x": "40.9783",
+        "y": "-5.6106"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37639",
+        "ciudad": "Aldehuela de yeltes",
+        "x": "40.662",
+        "y": "-6.2437"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37115",
+        "ciudad": "Almenara de tormes",
+        "x": "41.065",
+        "y": "-5.8241"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37176",
+        "ciudad": "Almendra",
+        "x": "41.2279",
+        "y": "-6.3419"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37890",
+        "ciudad": "Amatos de alba",
+        "x": "40.8472",
+        "y": "-5.4857"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37792",
+        "ciudad": "Amatos de salvatierra",
+        "x": "40.7776",
+        "y": "-5.6972"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37181",
+        "ciudad": "Amatos del rio",
+        "x": "40.9536",
+        "y": "-5.559"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37863",
+        "ciudad": "Anaya de alba",
+        "x": "40.7294",
+        "y": "-5.4928"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37465",
+        "ciudad": "Anaya de huebra",
+        "x": "41.1485",
+        "y": "-6.1346"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37786",
+        "ciudad": "Andarromero",
+        "x": "40.7078",
+        "y": "-5.6356"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37111",
+        "ciudad": "Añover de tormes",
+        "x": "41.1359",
+        "y": "-5.9156"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37418",
+        "ciudad": "Arabayona de mogica",
+        "x": "41.0456",
+        "y": "-5.3861"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37796",
+        "ciudad": "Arapiles",
+        "x": "40.8935",
+        "y": "-5.645"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37429",
+        "ciudad": "Arcediano",
+        "x": "41.0951",
+        "y": "-5.5608"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37460",
+        "ciudad": "Ardonsillero",
+        "x": "40.8819",
+        "y": "-6.0613"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37193",
+        "ciudad": "Arenal del angel",
+        "x": "40.977",
+        "y": "-5.6077"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37129",
+        "ciudad": "Argentina",
+        "x": "40.9768",
+        "y": "-5.7622"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37455",
+        "ciudad": "Arguijo",
+        "x": "40.7653",
+        "y": "-5.8799"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37197",
+        "ciudad": "Ariseos",
+        "x": "40.9431",
+        "y": "-5.6009"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37755",
+        "ciudad": "Armenteros",
+        "x": "40.5935",
+        "y": "-5.4478"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37500",
+        "ciudad": "Arrabal de san sebastian",
+        "x": "40.6",
+        "y": "-6.5331"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37797",
+        "ciudad": "Arroyo de la encina",
+        "x": "41.087",
+        "y": "-5.7007"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37609",
+        "ciudad": "Avililla de la sierra",
+        "x": "40.6845",
+        "y": "-6.0443"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37874",
+        "ciudad": "Azud de villagonzalo",
+        "x": "40.8468",
+        "y": "-5.4192"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37330",
+        "ciudad": "Babilafuente",
+        "x": "40.9782",
+        "y": "-5.4261"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37271",
+        "ciudad": "Bañobarez",
+        "x": "40.8474",
+        "y": "-6.6125"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37115",
+        "ciudad": "Baños de ledesma",
+        "x": "41.0709",
+        "y": "-5.8993"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37495",
+        "ciudad": "Baños de retortillo",
+        "x": "40.8017",
+        "y": "-6.3592"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37440",
+        "ciudad": "Barbadillo",
+        "x": "40.9312",
+        "y": "-5.8814"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37607",
+        "ciudad": "Barbalos",
+        "x": "40.6775",
+        "y": "-5.9441"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37217",
+        "ciudad": "Barceino",
+        "x": "41.0802",
+        "y": "-6.4619"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37217",
+        "ciudad": "Barceo",
+        "x": "41.0603",
+        "y": "-6.4518"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37488",
+        "ciudad": "Barquilla",
+        "x": "40.6916",
+        "y": "-6.7307"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37256",
+        "ciudad": "Barreras",
+        "x": "41.0278",
+        "y": "-6.5891"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37255",
+        "ciudad": "Barruecopardo",
+        "x": "41.0721",
+        "y": "-6.6653"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37148",
+        "ciudad": "Becerril",
+        "x": "41.0338",
+        "y": "-6.2665"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37700",
+        "ciudad": "Bejar",
+        "x": "40.3879",
+        "y": "-5.7645"
+    },
+    {
+        "provincia": "Salamanca",
+        "codigo_postal": "37789",
+        "ciudad": "Beleña",
+        "x": "40.751",
+        "y": "-5.6276"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40141",
+        "ciudad": "Abades",
+        "x": "40.9158",
+        "y": "-4.2693"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40192",
+        "ciudad": "Adrada de piron",
+        "x": "41.0533",
+        "y": "-4.0511"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40354",
+        "ciudad": "Adrados",
+        "x": "41.3678",
+        "y": "-4.1117"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40340",
+        "ciudad": "Aguilafuente",
+        "x": "41.2256",
+        "y": "-4.1128"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40311",
+        "ciudad": "Alameda",
+        "x": "41.2584",
+        "y": "-3.6388"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40529",
+        "ciudad": "Alconada de maderuelo",
+        "x": "41.4512",
+        "y": "-3.4844"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40529",
+        "ciudad": "Alconadilla",
+        "x": "41.463",
+        "y": "-3.4996"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40292",
+        "ciudad": "Aldea real",
+        "x": "41.1856",
+        "y": "-4.1655"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40513",
+        "ciudad": "Aldealazaro",
+        "x": "41.3465",
+        "y": "-3.4096"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40389",
+        "ciudad": "Aldealcorvo",
+        "x": "41.2434",
+        "y": "-3.7913"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40162",
+        "ciudad": "Aldealengua de pedraza",
+        "x": "41.0709",
+        "y": "-3.7997"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40555",
+        "ciudad": "Aldealengua de santa maria",
+        "x": "41.4635",
+        "y": "-3.4661"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40153",
+        "ciudad": "Aldeallana",
+        "x": "40.8753",
+        "y": "-4.2269"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40532",
+        "ciudad": "Aldeanueva de la serrezuela",
+        "x": "41.397",
+        "y": "-3.7374"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40568",
+        "ciudad": "Aldeanueva del campanario",
+        "x": "41.3556",
+        "y": "-3.6142"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40462",
+        "ciudad": "Aldeanueva del codonal",
+        "x": "41.0812",
+        "y": "-4.5425"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40517",
+        "ciudad": "Aldeanueva del monte",
+        "x": "41.3341",
+        "y": "-3.5436"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40181",
+        "ciudad": "Aldeasaz de la cuesta",
+        "x": "41.0773",
+        "y": "-3.9637"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40235",
+        "ciudad": "Aldeasoña",
+        "x": "41.4727",
+        "y": "-4.0565"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40533",
+        "ciudad": "Aldehorno",
+        "x": "41.5119",
+        "y": "-3.7784"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40160",
+        "ciudad": "Aldehuela",
+        "x": "40.9847",
+        "y": "-4.0277"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40462",
+        "ciudad": "Aldehuela del codonal",
+        "x": "41.0541",
+        "y": "-4.5392"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40317",
+        "ciudad": "Aldehuelas de sepulveda",
+        "x": "41.3285",
+        "y": "-3.8086"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40380",
+        "ciudad": "Aldeonsancho",
+        "x": "41.252",
+        "y": "-3.8725"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40531",
+        "ciudad": "Aldeonte",
+        "x": "41.3494",
+        "y": "-3.6771"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40510",
+        "ciudad": "Alquite",
+        "x": "41.3101",
+        "y": "-3.4047"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40419",
+        "ciudad": "Alto de los leones",
+        "x": "40.7133",
+        "y": "-4.1629"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40121",
+        "ciudad": "Anaya",
+        "x": "40.9917",
+        "y": "-4.3085"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40492",
+        "ciudad": "Añe",
+        "x": "41.038",
+        "y": "-4.2955"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40123",
+        "ciudad": "Aragoneses",
+        "x": "41.0263",
+        "y": "-4.3859"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40173",
+        "ciudad": "Arahuetes",
+        "x": "41.1371",
+        "y": "-3.8566"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40164",
+        "ciudad": "Arconcillos",
+        "x": "41.1226",
+        "y": "-3.7298"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40164",
+        "ciudad": "Arcones",
+        "x": "41.1196",
+        "y": "-3.7236"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40185",
+        "ciudad": "Arevalillo de cega",
+        "x": "41.1614",
+        "y": "-3.8897"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40494",
+        "ciudad": "Armuña",
+        "x": "41.0783",
+        "y": "-4.321"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40215",
+        "ciudad": "Arroyo de cuellar",
+        "x": "41.3333",
+        "y": "-4.3692"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40520",
+        "ciudad": "Ayllon",
+        "x": "41.4197",
+        "y": "-3.3755"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40449",
+        "ciudad": "Balisa",
+        "x": "41.0222",
+        "y": "-4.418"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40517",
+        "ciudad": "Barahona de fresno",
+        "x": "41.3534",
+        "y": "-3.57"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40530",
+        "ciudad": "Barbolla",
+        "x": "41.3249",
+        "y": "-3.6732"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40180",
+        "ciudad": "Basardilla",
+        "x": "41.026",
+        "y": "-4.0274"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40510",
+        "ciudad": "Becerril",
+        "x": "41.2885",
+        "y": "-3.364"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40144",
+        "ciudad": "Bercial",
+        "x": "40.9056",
+        "y": "-4.435"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40550",
+        "ciudad": "Bercimuel",
+        "x": "41.3981",
+        "y": "-3.5701"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40430",
+        "ciudad": "Bernardos",
+        "x": "41.1267",
+        "y": "-4.35"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40460",
+        "ciudad": "Bernuy de coca",
+        "x": "41.1785",
+        "y": "-4.6061"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40190",
+        "ciudad": "Bernuy de porreros",
+        "x": "40.9971",
+        "y": "-4.1178"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40181",
+        "ciudad": "Berrocal",
+        "x": "41.0718",
+        "y": "-3.9697"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40174",
+        "ciudad": "Berzal",
+        "x": "41.1803",
+        "y": "-3.8067"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40560",
+        "ciudad": "Boceguillas",
+        "x": "41.3361",
+        "y": "-3.6378"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40180",
+        "ciudad": "Brieva",
+        "x": "41.0354",
+        "y": "-4.0524"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40331",
+        "ciudad": "Burgomillodo",
+        "x": "41.3404",
+        "y": "-3.887"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40182",
+        "ciudad": "Caballar",
+        "x": "41.1221",
+        "y": "-3.9627"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40392",
+        "ciudad": "Cabañas de polendos",
+        "x": "41.0681",
+        "y": "-4.1088"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40160",
+        "ciudad": "Cabanillas del monte",
+        "x": "40.9751",
+        "y": "-4.0312"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40396",
+        "ciudad": "Cabezuela",
+        "x": "41.2358",
+        "y": "-3.9314"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40356",
+        "ciudad": "Calabazas de fuentidueña",
+        "x": "41.4455",
+        "y": "-4.011"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40242",
+        "ciudad": "Campo de cuellar",
+        "x": "41.3156",
+        "y": "-4.364"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40551",
+        "ciudad": "Campo de san pedro",
+        "x": "41.4303",
+        "y": "-3.5448"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40163",
+        "ciudad": "Cañicosa",
+        "x": "41.1038",
+        "y": "-3.7686"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40320",
+        "ciudad": "Cantalejo",
+        "x": "41.2562",
+        "y": "-3.9274"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40360",
+        "ciudad": "Cantimpalos",
+        "x": "41.0729",
+        "y": "-4.1599"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40540",
+        "ciudad": "Carabias",
+        "x": "41.444",
+        "y": "-3.6727"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40491",
+        "ciudad": "Carbonero de ahusin",
+        "x": "41.0379",
+        "y": "-4.2377"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40270",
+        "ciudad": "Carbonero el mayor",
+        "x": "41.1226",
+        "y": "-4.2649"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40181",
+        "ciudad": "Carrascal de la cuesta",
+        "x": "41.0776",
+        "y": "-3.9658"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40331",
+        "ciudad": "Carrascal del rio",
+        "x": "41.3685",
+        "y": "-3.8985"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40165",
+        "ciudad": "Casas altas",
+        "x": "41.1857",
+        "y": "-3.6821"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40518",
+        "ciudad": "Cascajares",
+        "x": "41.3887",
+        "y": "-3.4966"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40590",
+        "ciudad": "Casla",
+        "x": "41.1667",
+        "y": "-3.6551"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40164",
+        "ciudad": "Castillejo de arcones",
+        "x": "41.1224",
+        "y": "-3.7349"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40593",
+        "ciudad": "Castillejo de mesleon",
+        "x": "41.2808",
+        "y": "-3.6004"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40318",
+        "ciudad": "Castillo de castilnovo",
+        "x": "41.2147",
+        "y": "-3.747"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40518",
+        "ciudad": "Castiltierra",
+        "x": "41.3849",
+        "y": "-3.5338"
+    },
+    {
+        "provincia": "Segovia",
+        "codigo_postal": "40317",
+        "ciudad": "Castrillo de sepulveda",
+        "x": "41.3381",
+        "y": "-3.7892"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42368",
+        "ciudad": "Abanco",
+        "x": "41.3799",
+        "y": "-2.9515"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42146",
+        "ciudad": "Abejar",
+        "x": "41.8077",
+        "y": "-2.7829"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42127",
+        "ciudad": "Abion",
+        "x": "41.5724",
+        "y": "-2.2311"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42193",
+        "ciudad": "Abioncillo",
+        "x": "41.7035",
+        "y": "-2.8663"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42216",
+        "ciudad": "Adradas",
+        "x": "41.3518",
+        "y": "-2.4751"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42100",
+        "ciudad": "Agreda",
+        "x": "41.8567",
+        "y": "-1.9231"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42258",
+        "ciudad": "Aguaviva de la vega",
+        "x": "41.2945",
+        "y": "-2.3818"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42259",
+        "ciudad": "Aguilar de montuenga",
+        "x": "41.2184",
+        "y": "-2.2312"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42366",
+        "ciudad": "Aguilera",
+        "x": "41.483",
+        "y": "-2.8912"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42368",
+        "ciudad": "Alalo",
+        "x": "41.3739",
+        "y": "-2.9114"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42132",
+        "ciudad": "Albocabe",
+        "x": "41.6532",
+        "y": "-2.2215"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42351",
+        "ciudad": "Alcoba de la torre",
+        "x": "41.7204",
+        "y": "-3.3426"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42134",
+        "ciudad": "Alconaba",
+        "x": "41.7251",
+        "y": "-2.3858"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42320",
+        "ciudad": "Alcozar",
+        "x": "41.617",
+        "y": "-3.3246"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42351",
+        "ciudad": "Alcubilla de avellaneda",
+        "x": "41.725",
+        "y": "-3.3039"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42213",
+        "ciudad": "Alcubilla de las peñas",
+        "x": "41.252",
+        "y": "-2.5275"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42391",
+        "ciudad": "Alcubilla del marques",
+        "x": "41.5673",
+        "y": "-3.1348"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42345",
+        "ciudad": "Aldea de san esteban",
+        "x": "41.5607",
+        "y": "-3.2637"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42134",
+        "ciudad": "Aldealafuente",
+        "x": "41.6727",
+        "y": "-2.326"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42180",
+        "ciudad": "Aldealices",
+        "x": "41.8604",
+        "y": "-2.3117"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42112",
+        "ciudad": "Aldealpozo",
+        "x": "41.7821",
+        "y": "-2.204"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42180",
+        "ciudad": "Aldealseñor",
+        "x": "41.8784",
+        "y": "-2.3152"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42107",
+        "ciudad": "Aldehuela de agreda",
+        "x": "41.8273",
+        "y": "-1.8842"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42193",
+        "ciudad": "Aldehuela de calatañazor",
+        "x": "41.7159",
+        "y": "-2.7848"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42180",
+        "ciudad": "Aldehuela de periañez",
+        "x": "41.8062",
+        "y": "-2.3052"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42166",
+        "ciudad": "Aldehuela del rincon",
+        "x": "41.9252",
+        "y": "-2.5833"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42225",
+        "ciudad": "Alentisque",
+        "x": "41.4192",
+        "y": "-2.3316"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42132",
+        "ciudad": "Aliud",
+        "x": "41.654",
+        "y": "-2.2527"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42180",
+        "ciudad": "Almajano",
+        "x": "41.8516",
+        "y": "-2.3379"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42258",
+        "ciudad": "Almaluez",
+        "x": "41.2908",
+        "y": "-2.2672"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42212",
+        "ciudad": "Almantiga",
+        "x": "41.4436",
+        "y": "-2.5611"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42191",
+        "ciudad": "Almarail",
+        "x": "41.5796",
+        "y": "-2.3816"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42169",
+        "ciudad": "Almarza",
+        "x": "41.9469",
+        "y": "-2.4704"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42200",
+        "ciudad": "Almazan",
+        "x": "41.4864",
+        "y": "-2.5299"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42126",
+        "ciudad": "Almazul",
+        "x": "41.5727",
+        "y": "-2.1456"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42130",
+        "ciudad": "Almenar",
+        "x": "41.7038",
+        "y": "-2.2249"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42213",
+        "ciudad": "Alpanseque",
+        "x": "41.2662",
+        "y": "-2.6713"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42218",
+        "ciudad": "Alparrache",
+        "x": "41.5698",
+        "y": "-2.3539"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42230",
+        "ciudad": "Ambrona",
+        "x": "41.1657",
+        "y": "-2.5081"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42108",
+        "ciudad": "Añavieja",
+        "x": "41.8824",
+        "y": "-1.9849"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42365",
+        "ciudad": "Andaluz",
+        "x": "41.5186",
+        "y": "-2.8078"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42180",
+        "ciudad": "Arancon",
+        "x": "41.801",
+        "y": "-2.2827"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42240",
+        "ciudad": "Arbujuelo",
+        "x": "41.1304",
+        "y": "-2.3789"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42250",
+        "ciudad": "Arcos de jalon",
+        "x": "41.2157",
+        "y": "-2.2754"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42368",
+        "ciudad": "Arenillas",
+        "x": "41.3459",
+        "y": "-2.8465"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42161",
+        "ciudad": "Arevalo de la sierra",
+        "x": "41.9471",
+        "y": "-2.4"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42141",
+        "ciudad": "Arganza",
+        "x": "41.816",
+        "y": "-3.0869"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42169",
+        "ciudad": "Arguijo",
+        "x": "41.9878",
+        "y": "-2.5115"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42345",
+        "ciudad": "Atauta",
+        "x": "41.5297",
+        "y": "-3.2109"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42172",
+        "ciudad": "Ausejo de la sierra",
+        "x": "41.8944",
+        "y": "-2.3726"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42317",
+        "ciudad": "Aylagas",
+        "x": "41.7238",
+        "y": "-3.011"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42162",
+        "ciudad": "Aylloncillo",
+        "x": "41.8544",
+        "y": "-2.4224"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42230",
+        "ciudad": "Azcamellas",
+        "x": "41.1303",
+        "y": "-2.4184"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42212",
+        "ciudad": "Balluncar",
+        "x": "41.4247",
+        "y": "-2.5451"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42218",
+        "ciudad": "Baniel",
+        "x": "41.5271",
+        "y": "-2.4918"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42213",
+        "ciudad": "Barahona",
+        "x": "41.2964",
+        "y": "-2.6559"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42210",
+        "ciudad": "Barca",
+        "x": "41.4535",
+        "y": "-2.6228"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42318",
+        "ciudad": "Barcebal",
+        "x": "41.642",
+        "y": "-3.0069"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42318",
+        "ciudad": "Barcebalejo",
+        "x": "41.6284",
+        "y": "-3.0511"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42368",
+        "ciudad": "Barcones",
+        "x": "41.2912",
+        "y": "-2.8155"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42169",
+        "ciudad": "Barriomartin",
+        "x": "41.9983",
+        "y": "-2.4923"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42366",
+        "ciudad": "Bayubas de abajo",
+        "x": "41.5262",
+        "y": "-2.8952"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42366",
+        "ciudad": "Bayubas de arriba",
+        "x": "41.5584",
+        "y": "-2.8879"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42248",
+        "ciudad": "Beltejar",
+        "x": "41.2239",
+        "y": "-2.4634"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42230",
+        "ciudad": "Benamira",
+        "x": "41.0941",
+        "y": "-2.4234"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42107",
+        "ciudad": "Beraton",
+        "x": "41.7167",
+        "y": "-1.8116"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42360",
+        "ciudad": "Berlanga de duero",
+        "x": "41.4643",
+        "y": "-2.8607"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42351",
+        "ciudad": "Berzosa",
+        "x": "41.6602",
+        "y": "-3.1597"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42193",
+        "ciudad": "Blacos",
+        "x": "41.6803",
+        "y": "-2.8583"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42128",
+        "ciudad": "Bliecos",
+        "x": "41.5273",
+        "y": "-2.2721"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42248",
+        "ciudad": "Blocona",
+        "x": "41.2308",
+        "y": "-2.4464"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42329",
+        "ciudad": "Bocigas de perales",
+        "x": "41.6644",
+        "y": "-3.3612"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42218",
+        "ciudad": "Boñices",
+        "x": "41.5831",
+        "y": "-2.3385"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42193",
+        "ciudad": "Boos",
+        "x": "41.6725",
+        "y": "-2.8445"
+    },
+    {
+        "provincia": "Soria",
+        "codigo_postal": "42223",
+        "ciudad": "Borchicayada",
+        "x": "41.4475",
+        "y": "-2.411"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47129",
+        "ciudad": "Adalia",
+        "x": "41.6483",
+        "y": "-5.1216"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47418",
+        "ciudad": "Aguasal",
+        "x": "41.2743",
+        "y": "-4.6522"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47814",
+        "ciudad": "Aguilar de campos",
+        "x": "41.9826",
+        "y": "-5.1814"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47281",
+        "ciudad": "Aguilarejo",
+        "x": "41.7618",
+        "y": "-4.6238"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47510",
+        "ciudad": "Alaejos",
+        "x": "41.3058",
+        "y": "-5.2166"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47238",
+        "ciudad": "Alcazaren",
+        "x": "41.3718",
+        "y": "-4.6718"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47160",
+        "ciudad": "Aldea de san miguel",
+        "x": "41.4596",
+        "y": "-4.6162"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47313",
+        "ciudad": "Aldealbar",
+        "x": "41.494",
+        "y": "-4.3538"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47162",
+        "ciudad": "Aldeamayor de san martin",
+        "x": "41.5131",
+        "y": "-4.6392"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47313",
+        "ciudad": "Aldeyuso",
+        "x": "41.5621",
+        "y": "-4.1354"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47419",
+        "ciudad": "Almenara de adaja",
+        "x": "41.2145",
+        "y": "-4.6787"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47177",
+        "ciudad": "Amusquillo",
+        "x": "41.7492",
+        "y": "-4.2996"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47239",
+        "ciudad": "Aniago",
+        "x": "41.5347",
+        "y": "-4.8557"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47160",
+        "ciudad": "Arrabal de portillo",
+        "x": "41.4757",
+        "y": "-4.5938"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47195",
+        "ciudad": "Arroyo de la encomienda",
+        "x": "41.609",
+        "y": "-4.798"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47210",
+        "ciudad": "Ataquines",
+        "x": "41.1838",
+        "y": "-4.8032"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47312",
+        "ciudad": "Bahabon",
+        "x": "41.4803",
+        "y": "-4.2788"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47674",
+        "ciudad": "Barcial de la loma",
+        "x": "41.9502",
+        "y": "-5.2826"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47129",
+        "ciudad": "Barruelo del valle",
+        "x": "41.6678",
+        "y": "-5.0883"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47670",
+        "ciudad": "Becilla de valderaduey",
+        "x": "42.0984",
+        "y": "-5.2184"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47880",
+        "ciudad": "Benafarces",
+        "x": "41.6214",
+        "y": "-5.2933"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47115",
+        "ciudad": "Bercero",
+        "x": "41.5638",
+        "y": "-5.0565"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47115",
+        "ciudad": "Berceruelo",
+        "x": "41.5807",
+        "y": "-5.0337"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47813",
+        "ciudad": "Berrueces",
+        "x": "41.9447",
+        "y": "-5.0979"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47462",
+        "ciudad": "Bobadilla del campo",
+        "x": "41.2049",
+        "y": "-5.0223"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47419",
+        "ciudad": "Bocigas",
+        "x": "41.2305",
+        "y": "-4.681"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47317",
+        "ciudad": "Bocos de duero",
+        "x": "41.624",
+        "y": "-4.069"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47151",
+        "ciudad": "Boecillo",
+        "x": "41.5394",
+        "y": "-4.6979"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47675",
+        "ciudad": "Bolaños de campos",
+        "x": "42.0083",
+        "y": "-5.2829"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47461",
+        "ciudad": "Brahojos de medina",
+        "x": "41.2576",
+        "y": "-5.0162"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47608",
+        "ciudad": "Bustillo de chaves",
+        "x": "42.1308",
+        "y": "-5.0923"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47260",
+        "ciudad": "Cabezon de pisuerga",
+        "x": "41.7618",
+        "y": "-4.6228"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47689",
+        "ciudad": "Cabezon de valderaduey",
+        "x": "42.1688",
+        "y": "-5.1585"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47832",
+        "ciudad": "Cabreros del monte",
+        "x": "41.8504",
+        "y": "-5.2692"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47451",
+        "ciudad": "Calabazas",
+        "x": "41.337",
+        "y": "-4.7664"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47310",
+        "ciudad": "Campaspero",
+        "x": "41.4911",
+        "y": "-4.1969"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47165",
+        "ciudad": "Camporredondo",
+        "x": "41.4743",
+        "y": "-4.5039"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47311",
+        "ciudad": "Canalejas de peñafiel",
+        "x": "41.5246",
+        "y": "-4.1144"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47185",
+        "ciudad": "Canillas de esgueva",
+        "x": "41.7556",
+        "y": "-4.1247"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47470",
+        "ciudad": "Carpio",
+        "x": "41.2129",
+        "y": "-5.1088"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47110",
+        "ciudad": "Casasola de arion",
+        "x": "41.5781",
+        "y": "-5.2419"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47512",
+        "ciudad": "Castrejon de trabancos",
+        "x": "41.2938",
+        "y": "-5.2089"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47318",
+        "ciudad": "Castrillo de duero",
+        "x": "41.5762",
+        "y": "-4.0159"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47329",
+        "ciudad": "Castrillo tejeriego",
+        "x": "41.7032",
+        "y": "-4.3715"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47689",
+        "ciudad": "Castrobol",
+        "x": "42.1367",
+        "y": "-5.3148"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47192",
+        "ciudad": "Castrodeza",
+        "x": "41.6503",
+        "y": "-4.9579"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47882",
+        "ciudad": "Castromembibre",
+        "x": "41.6711",
+        "y": "-5.3053"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47641",
+        "ciudad": "Castromonte",
+        "x": "41.773",
+        "y": "-5.0402"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47171",
+        "ciudad": "Castronuevo de esgueva",
+        "x": "41.6824",
+        "y": "-4.5893"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47520",
+        "ciudad": "Castronuño",
+        "x": "41.3893",
+        "y": "-5.2641"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47664",
+        "ciudad": "Castroponce de valderaduey",
+        "x": "42.0554",
+        "y": "-5.1249"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47182",
+        "ciudad": "Castroverde de cerrato",
+        "x": "41.755",
+        "y": "-4.2203"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47692",
+        "ciudad": "Ceinos de campos",
+        "x": "42.0318",
+        "y": "-5.1516"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47494",
+        "ciudad": "Cervillego de la cruz",
+        "x": "41.187",
+        "y": "-4.9508"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47270",
+        "ciudad": "Cigales",
+        "x": "41.7585",
+        "y": "-4.6977"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47191",
+        "ciudad": "Ciguñuela",
+        "x": "41.641",
+        "y": "-4.8562"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47440",
+        "ciudad": "Cogeces de iscar",
+        "x": "41.4058",
+        "y": "-4.5439"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47313",
+        "ciudad": "Cogeces del monte",
+        "x": "41.5108",
+        "y": "-4.3174"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47280",
+        "ciudad": "Corcos",
+        "x": "41.8086",
+        "y": "-4.6912"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47317",
+        "ciudad": "Corrales de duero",
+        "x": "41.6726",
+        "y": "-4.047"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47290",
+        "ciudad": "Cubillas de santa marta",
+        "x": "41.8346",
+        "y": "-4.6158"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47650",
+        "ciudad": "Cuenca de campos",
+        "x": "42.0589",
+        "y": "-5.0567"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47316",
+        "ciudad": "Curiel de duero",
+        "x": "41.6427",
+        "y": "-4.1008"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47460",
+        "ciudad": "El campillo",
+        "x": "41.2529",
+        "y": "-5.0177"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47169",
+        "ciudad": "El otero",
+        "x": "41.4794",
+        "y": "-4.5501"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47153",
+        "ciudad": "El pinar",
+        "x": "41.5852",
+        "y": "-4.7545"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47153",
+        "ciudad": "El pinar de antequera",
+        "x": "41.619",
+        "y": "-4.7399"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47186",
+        "ciudad": "Encinas de esgueva",
+        "x": "41.7574",
+        "y": "-4.103"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47176",
+        "ciudad": "Esguevillas de esgueva",
+        "x": "41.7507",
+        "y": "-4.3819"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47184",
+        "ciudad": "Fombellida",
+        "x": "41.7677",
+        "y": "-4.1828"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47311",
+        "ciudad": "Fompedraza",
+        "x": "41.5368",
+        "y": "-4.1451"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47492",
+        "ciudad": "Foncastin",
+        "x": "41.4367",
+        "y": "-5.0177"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47609",
+        "ciudad": "Fontihoyuelo",
+        "x": "42.1626",
+        "y": "-5.0577"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47480",
+        "ciudad": "Fresno el viejo",
+        "x": "41.1988",
+        "y": "-5.1455"
+    },
+    {
+        "provincia": "Valladolid",
+        "codigo_postal": "47194",
+        "ciudad": "Fuensaldaña",
+        "x": "41.7048",
+        "y": "-4.7652"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49591",
+        "ciudad": "Abejera",
+        "x": "41.8033",
+        "y": "-6.1456"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49254",
+        "ciudad": "Abelon",
+        "x": "41.4471",
+        "y": "-6.0619"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49834",
+        "ciudad": "Abezames",
+        "x": "41.6266",
+        "y": "-5.426"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49624",
+        "ciudad": "Abraveses de tera",
+        "x": "41.9933",
+        "y": "-5.8938"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49574",
+        "ciudad": "Aciberos",
+        "x": "42.0391",
+        "y": "-6.8719"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49624",
+        "ciudad": "Aguilar de tera",
+        "x": "41.9853",
+        "y": "-5.8433"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49500",
+        "ciudad": "Alcañices",
+        "x": "41.6981",
+        "y": "-6.347"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49517",
+        "ciudad": "Alcorcillo",
+        "x": "41.719",
+        "y": "-6.3767"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49696",
+        "ciudad": "Alcubilla de nogales",
+        "x": "42.1289",
+        "y": "-5.9203"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49177",
+        "ciudad": "Alfaraz de sayago",
+        "x": "41.2352",
+        "y": "-5.9683"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49539",
+        "ciudad": "Algodre",
+        "x": "41.5657",
+        "y": "-5.6042"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49180",
+        "ciudad": "Almaraz de duero",
+        "x": "41.4747",
+        "y": "-5.9161"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49210",
+        "ciudad": "Almeida de sayago",
+        "x": "41.2664",
+        "y": "-6.0734"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49183",
+        "ciudad": "Almendra",
+        "x": "41.591",
+        "y": "-5.9206"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49162",
+        "ciudad": "Andavias",
+        "x": "41.5964",
+        "y": "-5.8552"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49349",
+        "ciudad": "Anta de rioconejos",
+        "x": "42.0756",
+        "y": "-6.4725"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49151",
+        "ciudad": "Arcenillas",
+        "x": "41.4551",
+        "y": "-5.6844"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49514",
+        "ciudad": "Arcillera",
+        "x": "41.6905",
+        "y": "-6.2766"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49272",
+        "ciudad": "Arcillo",
+        "x": "41.4183",
+        "y": "-5.9455"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49699",
+        "ciudad": "Arcos de la polvorosa",
+        "x": "41.9428",
+        "y": "-5.6963"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49251",
+        "ciudad": "Argañin",
+        "x": "41.4406",
+        "y": "-6.2088"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49716",
+        "ciudad": "Argujillo",
+        "x": "41.312",
+        "y": "-5.5867"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49126",
+        "ciudad": "Arquillinos",
+        "x": "41.7095",
+        "y": "-5.6569"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49696",
+        "ciudad": "Arrabalde",
+        "x": "42.1086",
+        "y": "-5.8953"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49124",
+        "ciudad": "Aspariegos",
+        "x": "41.6761",
+        "y": "-5.6008"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49325",
+        "ciudad": "Asturianos",
+        "x": "42.0514",
+        "y": "-6.4908"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49396",
+        "ciudad": "Avedillo de sanabria",
+        "x": "42.0703",
+        "y": "-6.7163"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49619",
+        "ciudad": "Ayoo de vidriales",
+        "x": "42.1318",
+        "y": "-6.0641"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49214",
+        "ciudad": "Badilla",
+        "x": "41.4515",
+        "y": "-6.2539"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49157",
+        "ciudad": "Bamba",
+        "x": "41.46",
+        "y": "-5.6215"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49392",
+        "ciudad": "Baños de calabor",
+        "x": "41.9985",
+        "y": "-6.6893"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49760",
+        "ciudad": "Barcial del barco",
+        "x": "41.9322",
+        "y": "-5.663"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49582",
+        "ciudad": "Barjacoba",
+        "x": "42.1187",
+        "y": "-6.956"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49396",
+        "ciudad": "Barrio de lomba",
+        "x": "42.0765",
+        "y": "-6.6692"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49358",
+        "ciudad": "Barrio de rabano",
+        "x": "42.15",
+        "y": "-6.6195"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49830",
+        "ciudad": "Belver de los montes",
+        "x": "41.7226",
+        "y": "-5.4504"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49600",
+        "ciudad": "Benavente",
+        "x": "42.0038",
+        "y": "-5.6777"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49123",
+        "ciudad": "Benegiles",
+        "x": "41.6285",
+        "y": "-5.6342"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49592",
+        "ciudad": "Bercianos de aliste",
+        "x": "41.7873",
+        "y": "-6.2288"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49333",
+        "ciudad": "Bercianos de valverde",
+        "x": "41.9326",
+        "y": "-5.9521"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49618",
+        "ciudad": "Bercianos de vidriales",
+        "x": "42.0752",
+        "y": "-5.9646"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49168",
+        "ciudad": "Bermillo de alba",
+        "x": "41.6181",
+        "y": "-6.0881"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49200",
+        "ciudad": "Bermillo de sayago",
+        "x": "41.3661",
+        "y": "-6.1129"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49561",
+        "ciudad": "Boya",
+        "x": "41.9242",
+        "y": "-6.355"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49511",
+        "ciudad": "Brandilanes",
+        "x": "41.6196",
+        "y": "-6.2129"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49751",
+        "ciudad": "Breto",
+        "x": "41.8806",
+        "y": "-5.7377"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49698",
+        "ciudad": "Bretocino",
+        "x": "41.8855",
+        "y": "-5.7538"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49629",
+        "ciudad": "Brime de sog",
+        "x": "42.0613",
+        "y": "-6.0474"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49622",
+        "ciudad": "Brime de urz",
+        "x": "42.0385",
+        "y": "-5.8721"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49698",
+        "ciudad": "Burganes de valverde",
+        "x": "41.9209",
+        "y": "-5.7829"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49831",
+        "ciudad": "Bustillo del oro",
+        "x": "41.674",
+        "y": "-5.4618"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49592",
+        "ciudad": "Cabañas de aliste",
+        "x": "41.8552",
+        "y": "-6.2454"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49709",
+        "ciudad": "Cabañas de sayago",
+        "x": "41.3326",
+        "y": "-5.7823"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49627",
+        "ciudad": "Cabañas de tera",
+        "x": "42.0114",
+        "y": "-6.0443"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49392",
+        "ciudad": "Calabor",
+        "x": "41.9568",
+        "y": "-6.7167"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49329",
+        "ciudad": "Calzada de tera",
+        "x": "41.9838",
+        "y": "-6.0749"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49331",
+        "ciudad": "Calzadilla de tera",
+        "x": "41.9802",
+        "y": "-6.0809"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49332",
+        "ciudad": "Camarzana",
+        "x": "41.9937",
+        "y": "-6.0252"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49592",
+        "ciudad": "Campogrande de aliste",
+        "x": "41.8212",
+        "y": "-6.2248"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49440",
+        "ciudad": "Cañizal",
+        "x": "41.1661",
+        "y": "-5.369"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49128",
+        "ciudad": "Cañizo",
+        "x": "41.7683",
+        "y": "-5.5029"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49160",
+        "ciudad": "Carbajales de alba",
+        "x": "41.6526",
+        "y": "-5.9968"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49347",
+        "ciudad": "Carbajales de la encomienda",
+        "x": "42.0918",
+        "y": "-6.4169"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49324",
+        "ciudad": "Carbajalinos",
+        "x": "42.1306",
+        "y": "-6.5024"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49166",
+        "ciudad": "Carbajosa",
+        "x": "41.5374",
+        "y": "-6.0915"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49211",
+        "ciudad": "Carbellino",
+        "x": "41.2299",
+        "y": "-6.1494"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49619",
+        "ciudad": "Carracedo de vidriales",
+        "x": "42.1021",
+        "y": "-6.0336"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49027",
+        "ciudad": "Carrascal",
+        "x": "41.486",
+        "y": "-5.8111"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49708",
+        "ciudad": "Casaseca de campean",
+        "x": "41.3755",
+        "y": "-5.7461"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49151",
+        "ciudad": "Casaseca de las chanas",
+        "x": "41.4378",
+        "y": "-5.6742"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49390",
+        "ciudad": "Castellanos",
+        "x": "42.0724",
+        "y": "-6.6165"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49543",
+        "ciudad": "Castillo de alba",
+        "x": "41.6597",
+        "y": "-6.0643"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49571",
+        "ciudad": "Castrelos",
+        "x": "42.0004",
+        "y": "-6.8974"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49419",
+        "ciudad": "Castrillo de la guareña",
+        "x": "41.2316",
+        "y": "-5.3257"
+    },
+    {
+        "provincia": "Zamora",
+        "codigo_postal": "49396",
+        "ciudad": "Castro de sanabria",
+        "x": "42.0654",
+        "y": "-6.6501"
+    }
+]

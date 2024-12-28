@@ -1,5 +1,5 @@
-Registros con errores y reparados: {fuente = XML, nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
-Registros con errores y reparados: {fuente = XML, nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+Registros con errores y reparados: {fuente = XML, nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
 
 Número de registros cargados correctamente : 1
 --------------------------------------------------------------------------------
