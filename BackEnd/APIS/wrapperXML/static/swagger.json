@@ -1,0 +1,179 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API para la transformación de datos de XML",
+        "version": "1.0.0",
+        "title": "WrapperXML API",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "email": "agarmar6@etsinf.upv.es"
+        }
+    },
+    "host": "localhost:8081",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "WrapperXML",
+            "description": "Endpoints para la transformación de datos de XML"
+        }
+    ],
+    "paths": {
+        "/wrapperXML/execute": {
+            "post": {
+                "tags": [
+                    "WrapperXML"
+                ],
+                "summary": "Ejecutar transformación de datos a XML",
+                "description": "Endpoint para ejecutar la transformación de datos a XML.",
+                "responses": {
+                    "201": {
+                        "description": "Transformación de datos exitosa. Los resultados obtenidos son:",
+                        "examples": {
+                            "application/json": [
+                                {
+                                    "nomMonumento": "",
+                                    "tipoMonumento": "",
+                                    "direccion": "",
+                                    "codigo_postal": "",
+                                    "longitud": "",
+                                    "latitud": "",
+                                    "descripcion": "",
+                                    "nomLocalidad": "",
+                                    "nomProvincia": ""
+                                }
+                            ]
+                        }
+                    },
+                    "404": {
+                        "description": "Archivo de salida no encontrado",
+                        "examples": {
+                            "application/json": {
+                                "error": "Output file not found"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "Subprocess failed with error: <error_message>"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "WrapperXML"
+                ],
+                "summary": "Eliminar archivo XML generado",
+                "description": "Endpoint para eliminar el archivo XML generado por la transformación.",
+                "responses": {
+                    "200": {
+                        "description": "Archivo eliminado exitosamente",
+                        "examples": {
+                            "application/json": {
+                                "message": "Output file deleted successfully"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Archivo no encontrado",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Resultado no encontrado."
+                                }
+                            }
+                        },
+                        "examples": {
+                            "application/json": {
+                                "error": "Resultado no encontrado."
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Error interno del servidor. Intente más tarde."
+                                }
+                            }
+                        },
+                        "examples": {
+                            "application/json": {
+                                "error": "Error interno del servidor. Intente más tarde."
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/wrapperXML/log": {
+            "get": {
+                "tags": [
+                    "log"
+                ],
+                "summary": "Obtener contenido del archivo de log",
+                "description": "Endpoint para obtener el contenido del archivo de log.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log obtenido exitosamente",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "text/plain": "Registros con errores y descartados: {fuente, nombre, Localidad, motivo del error}\nRegistros con errores y reparados: {fuente, nombre, Localidad, motivo del error, reparación}\n\nNúmero de registros cargados correctamente : NN\n"
+                        }
+                    },
+                    "404": {
+                        "description": "Archivo de log no encontrado",
+                        "examples": {
+                            "application/json": {
+                                "error": "Log file not found"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "An error occurred while reading the log file: <error_message>"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "log"
+                ],
+                "summary": "Limpiar contenido del archivo de log",
+                "description": "Endpoint para limpiar el contenido del archivo de log.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log limpiado exitosamente",
+                        "examples": {
+                            "application/json": {
+                                "message": "Log file cleared successfully"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "An error occurred while clearing the log file: <error_message>"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
