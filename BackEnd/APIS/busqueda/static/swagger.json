@@ -1,0 +1,119 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API para la búsqueda de monumentos",
+        "version": "1.0.0",
+        "title": "Búsqueda API",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "email": "agarmar6@etsinf.upv.es"
+        }
+    },
+    "host": "localhost:5001",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Monumentos",
+            "description": "Endpoints para la búsqueda de monumentos"
+        }
+    ],
+    "paths": {
+        "/api/monumentos": {
+            "get": {
+                "tags": [
+                    "Monumentos"
+                ],
+                "summary": "Obtener todos los monumentos o filtrar por distintos criterios",
+                "description": "Endpoint para obtener todos los monumentos o filtrar por localidad, código postal, provincia, tipo, o una combinación de estos filtros. También soporta paginación.",
+                "parameters": [
+                    {
+                        "name": "localidad",
+                        "in": "query",
+                        "description": "Nombre de la localidad para filtrar",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "codigo_postal",
+                        "in": "query",
+                        "description": "Código postal para filtrar",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "provincia",
+                        "in": "query",
+                        "description": "Nombre de la provincia para filtrar",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tipo",
+                        "in": "query",
+                        "description": "Tipo de monumento para filtrar",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Número de página para paginación",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Número de resultados por página",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Listado de monumentos en formato JSON",
+                        "examples": {
+                            "application/json": [
+                                {
+                                    "nombre": "Puente de Alcántara",
+                                    "tipo": "Puente",
+                                    "direccion": "Calle Puente, 1",
+                                    "localidad": "Toledo",
+                                    "codigo_postal": "45001",
+                                    "provincia": "Toledo",
+                                    "descripcion": "Un puente histórico sobre el río Tajo."
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "Parámetros inválidos en la solicitud",
+                        "examples": {
+                            "application/json": {
+                                "error": "Parámetros inválidos."
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No se encontraron monumentos con los filtros especificados",
+                        "examples": {
+                            "application/json": {
+                                "error": "No se encontraron monumentos para los filtros especificados."
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error en el servidor al procesar la solicitud",
+                        "examples": {
+                            "application/json": {
+                                "error": "Error interno del servidor. Intente más tarde."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
