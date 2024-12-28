@@ -204,8 +204,8 @@ def provincia_incorrecta(provincia, fuente):
 #Función para comprobar si el código postal es vacío dependiendo de la fuente
 #Devuelve True en el caso de que la fuente sea JSON o XML y el codigo postal sea vacío y False en el caso de que tenga valor
 def cp_null(codigoPostal, fuente):
-    if (pd.isna(codigoPostal) or codigoPostal in {''}) and fuente in {"JSON", "XML"}:
-        return True
+    if fuente in {"JSON", "XML"}:
+        return pd.isna(codigoPostal) or str(codigoPostal).strip() == ''
     
     return False
 
@@ -216,9 +216,12 @@ def cp_menor_5_digitos(codigoPostal, fuente):
     if fuente in {"CSV"}:
         return False
     
-    if len(str(codigoPostal)) == 5:  # Usamos abs para asegurarnos de que funcione con números negativos
-        return False
-    else:
+    try:
+        codigo_str = str(codigoPostal).strip()
+        if len(codigo_str) == 5 and codigo_str.isdigit():
+            return False
+        return True
+    except:
         return True
 
 #Función para comprobar si el código postal se encuentra en 01001 a 52999
@@ -229,12 +232,11 @@ def cp_fuera_de_rango(codigoPostal, fuente):
         return False
 
     try:
-        if 1001 <= int(codigoPostal) <= 52999:
+        codigo_str = str(codigoPostal).strip()
+        if codigo_str.isdigit() and 1001 <= int(codigo_str) <= 52999:
             return False
-        else:
-            return True
+        return True
     except ValueError:
-        # Si el valor no es un número, no es válido
         return True
     
 #Función para comprobar si la dirección es vacía

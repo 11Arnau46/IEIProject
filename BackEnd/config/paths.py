@@ -12,7 +12,7 @@ def get_relative_path(*path_parts):
     return os.path.abspath(os.path.join(BASE_DIR, *path_parts))
 
 # Rutas completas con BASE_DIR (absolutas)
-INPUT_CSV_PATH = get_relative_path('Fuentes_de_datos', 'Demo', 'vcl.csv')
-INPUT_JSON_PATH = get_relative_path('Fuentes_de_datos', 'Demo', 'eus.json')
-INPUT_XML_PATH = get_relative_path('Fuentes_de_datos', 'Demo', 'cle.xml')
+INPUT_CSV_PATH = get_relative_path('Fuentes_de_datos', 'Pruebas', 'vcl.csv')
+INPUT_JSON_PATH = get_relative_path('Fuentes_de_datos', 'Pruebas', 'eus.json')
+INPUT_XML_PATH = get_relative_path('Fuentes_de_datos', 'Pruebas', 'cle.xml')
 

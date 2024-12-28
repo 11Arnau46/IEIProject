@@ -1,96 +1,70 @@
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = C√≥digo postal fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebasti√°n, motivo del error = Coordenadas fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = JSON, nombre = Puente de San Ant√≥n, Localidad = Bilbao, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y reparados: {fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebasti√°n, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y reparados: {fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo del error = C√≥digo postal sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda del c√≥digo postal}
+Registros con errores y reparados: {fuente = XML, nombre = Risco La Zorrera, Localidad = Raso (El), motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Finca de las Garoza, Localidad = MuÒogalindo, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = PeÒaguila, Localidad = MuÒogalindo, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Abrigo de las Cabras, Localidad = Ojos-Albos, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = PeÒa Mingubela, Localidad = Ojos-Albos, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Los Castillejos, Localidad = Sanchorreja, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Cueva de San GarcÌa, Localidad = Briongos de Cervera, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Cuevas del Montico, Localidad = Albaina, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Cuevas de LaÒo, Localidad = LaÒo, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Yacimiento de La UlaÒa, Localidad = Humada, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Dolmen Cubillejo, Localidad = Cubillejo, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Eremitorio Moz·rabe de Cueva AndrÈs, Localidad = Quintanar de la Sierra, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = NecrÛpolis Altomedieval de Cuyacabras, Localidad = Quintanar de la Sierra, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Yacimiento de Deobrigula, Localidad = Tardajos, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Cueva del Azar, Localidad = Orbaneja del Castillo, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Villa Romana de Los Casarejos, Localidad = San MartÌn de Losa, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Pintura Rupestre La PeÒa del Pozo Rocebros, Localidad = Morla de la Valderia, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Conjunto rupestre esquem·tico de Libr·n, Localidad = Libran, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y descartados: {fuente = XML, nombre = Yacimiento de La Corona de Corporales, Localidad = Corporales, motivo del error = Coordenadas fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = Conjunto rupestre de PeÒa PiÒera, Localidad = Vega de Espinareda, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y descartados: {fuente = XML, nombre = Iglesia Martirial de Marialba de la Ribera, Localidad = MarÌalba de la Ribera, motivo del error = Coordenadas fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = La Rueda, Localidad = Navarredonda de la Rinconada, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Cueva del TÌo Papas, Localidad = Valero, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Antiguas TenerÌas del Arrabal de San Segundo, Localidad = ¡vila, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y descartados: {fuente = XML, nombre = Villa Romana de ;Los Villares;, Localidad = Santerv·s del Burgo, motivo del error = Coordenadas fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = Abrigo del Este y del Oeste, Localidad = Ligos, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Villa romana de ;Los Quintanares;, Localidad = Rioseco de Soria, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Ruinas Ciclopeas, Localidad = Santa MarÌa de Huerta, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Castro del Buracote, Localidad = Fresno de la Carballeda, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Yacimiento del Abrigo del CastillÛn. Sta Eulalia de T·bara, Localidad = Santa Eulalia de T·bara, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = El castro del Cerco. Sejas de Aliste., Localidad = Sejas de Aliste, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Las Cogotas, Localidad = CardeÒosa, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y descartados: {fuente = XML, nombre = Calzada del Puerto del Pico, Localidad = Cuevas del Valle, motivo del error = Coordenadas fuera de rango}
+Registros con errores y descartados: {fuente = XML, nombre = El Prado de las Cruces, Localidad = Bernuy-Salinero, motivo del error = Coordenadas fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = El Castro del Raso, Localidad = Candeleda, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Pared de los Moros, Localidad = Niharra, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Cabeza de Navasangil, Localidad = Solosancho, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Conjunto dolmÈnico de la Lora, Localidad = Sargentes de la Lora, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Villa Romana de Ciella, Localidad = Valdeande, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = NecrÛpolis Altomedieval de Revenga, Localidad = Quintanar de la Sierra, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Clunia, Localidad = PeÒalba de Castro, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Yacimiento de Rauda, Localidad = Roa, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Villa romana de Santa Cruz, Localidad = BaÒos de Valdearados, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Despoblado de PeÒa Amaya, Localidad = Amaya, motivo del error = CÛdigo postal con menos de 5 digitos, operaciÛn realizada = Reparado mediante la adiciÛn de 0 a la izquierda}
+Registros con errores y reparados: {fuente = XML, nombre = Yacimiento ArqueolÛgico de Lancia, Localidad = Villasabariego, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Castro Ventosa, Localidad = Pieros, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y descartados: {fuente = XML, nombre = Castro de Chano. Centro de interpretaciÛn, Localidad = Chano, motivo del error = Coordenadas fuera de rango}
+Registros con errores y descartados: {fuente = XML, nombre = Campamento Pisoraca, Localidad = Herrera de Pisuerga, motivo del error = Coordenadas fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = Villa Romana ;La Tejada;, Localidad = Quintanilla de la Cueza, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Ermita rupestre de San MartÌn, Localidad = VillarÈn de Valdivia, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = La Velilla, Localidad = Osorno, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y descartados: {fuente = XML, nombre = Monte Bernorio, Localidad = Pomar de Valdivia, motivo del error = Coordenadas fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = Monte Cild·, Localidad = Olleros de Pisuerga, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Yacimiento ;El Castillo;, Localidad = Saldeana, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Dolmen de la Ermita de Galisancho, Localidad = Galisancho, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = El Cerro del Berrueco, Localidad = Tejado (El), motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Dolmen de Casa del Moro, Localidad = Muelledes, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Dolmen de TerriÒuelo, Localidad = Aldeavieja de Tormes, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = El Castro de IrueÒa, Localidad = Fuenteguinaldo, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Lerilla, Localidad = Zamarra, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Castro de Yecla de Yeltes, Localidad = Yecla de Yeltes, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Cueva de los Siete Altares, Localidad = Villaseca, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Cerro de la Virgen del Castillo, Localidad = Bernardos, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y descartados: {fuente = XML, nombre = Los Cinco CaÒos, Localidad = Coca, motivo del error = Coordenadas fuera de rango}
+Registros con errores y reparados: {fuente = XML, nombre = La villa romana de Santa LucÌa, Localidad = Aguilafuente, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
+Registros con errores y reparados: {fuente = XML, nombre = Uxama, Localidad = Osma, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
 
-N√∫mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = C√≥digo postal fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebasti√°n, motivo del error = Coordenadas fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = JSON, nombre = Puente de San Ant√≥n, Localidad = Bilbao, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y reparados: {fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebasti√°n, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y reparados: {fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo del error = C√≥digo postal sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda del c√≥digo postal}
-
-N√∫mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y reparados: {fuente = XML, nombre = Risco La Zorrera, Localidad = Raso (El), motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y descartados: {fuente = XML, nombre = Monasterio de Santa Mar√≠a de Retuerta, Localidad = Sard√≥n de Duero, motivo del error = Coordenadas sin valor}
-Registros con errores y reparados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = C√≥digo postal sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda del c√≥digo postal}
-Registros con errores y descartados: {fuente = XML, nombre = Iglesia parroquial de Valdesaz, Localidad = Valdesaz de los Oteros, motivo del error = C√≥digo postal fuera de rango}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Miranda y Casa de √ç√±igo Angulo, Localidad = Burgos, motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Blanca, Localidad = Medina del Campo, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y descartados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = XML, nombre = Cloacas Romanas, Localidad = Astorga, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-
-N√∫mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y reparados: {fuente = XML, nombre = Risco La Zorrera, Localidad = Raso (El), motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y descartados: {fuente = XML, nombre = Monasterio de Santa Mar√≠a de Retuerta, Localidad = Sard√≥n de Duero, motivo del error = Coordenadas sin valor}
-Registros con errores y reparados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = C√≥digo postal sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda del c√≥digo postal}
-Registros con errores y descartados: {fuente = XML, nombre = Iglesia parroquial de Valdesaz, Localidad = Valdesaz de los Oteros, motivo del error = C√≥digo postal fuera de rango}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Miranda y Casa de √ç√±igo Angulo, Localidad = Burgos, motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Blanca, Localidad = Medina del Campo, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y descartados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = XML, nombre = Cloacas Romanas, Localidad = Astorga, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-
-N√∫mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y reparados: {fuente = XML, nombre = Risco La Zorrera, Localidad = Raso (El), motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y descartados: {fuente = XML, nombre = Monasterio de Santa Mar√≠a de Retuerta, Localidad = Sard√≥n de Duero, motivo del error = Coordenadas sin valor}
-Registros con errores y reparados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = C√≥digo postal sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda del c√≥digo postal}
-Registros con errores y descartados: {fuente = XML, nombre = Iglesia parroquial de Valdesaz, Localidad = Valdesaz de los Oteros, motivo del error = C√≥digo postal fuera de rango}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Miranda y Casa de √ç√±igo Angulo, Localidad = Burgos, motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Blanca, Localidad = Medina del Campo, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y descartados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = XML, nombre = Cloacas Romanas, Localidad = Astorga, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-
-N√∫mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y reparados: {fuente = XML, nombre = Risco La Zorrera, Localidad = Raso (El), motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y descartados: {fuente = XML, nombre = Monasterio de Santa Mar√≠a de Retuerta, Localidad = Sard√≥n de Duero, motivo del error = Coordenadas sin valor}
-Registros con errores y reparados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = C√≥digo postal sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda del c√≥digo postal}
-Registros con errores y descartados: {fuente = XML, nombre = Iglesia parroquial de Valdesaz, Localidad = Valdesaz de los Oteros, motivo del error = C√≥digo postal fuera de rango}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Miranda y Casa de √ç√±igo Angulo, Localidad = Burgos, motivo del error = C√≥digo postal con menos de 5 digitos, operaci√≥n realizada = Reparado mediante la adici√≥n de 0 a la izquierda}
-Registros con errores y reparados: {fuente = XML, nombre = Casa Blanca, Localidad = Medina del Campo, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-Registros con errores y descartados: {fuente = XML, nombre = Castillo de √çscar, Localidad = √çscar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = XML, nombre = Cloacas Romanas, Localidad = Astorga, motivo del error = Direcci√≥n sin valor, operaci√≥n realizada = Reparado mediante la b√∫squeda de la direcci√≥n}
-
-N√∫mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y descartados: {fuente = CSV, nombre = Castillo y Murallas de Biar, Localidad = BIAR, motivo del error = Coordenadas sin valor}
-Registros con errores y descartados: {fuente = CSV, nombre = Castillo-Iglesia Parroquial de San Miguel Arc·ngel, Localidad = ALIGANTE, motivo del error = Provincia inv·lida}
-Registros con errores y reparado: {fuente = CSV, nombre = Poblado de la PeÒa Ajuer·, Localidad = CASTELLON, motivo del error = Provincia sin tilde, operaciÛn realizada = Reparado mediante la adiciÛn de la tilde}
-Registros con errores y descartados: {fuente = CSV, nombre = Poblado de la PeÒa Ajuer·, Localidad = AZU…BAR, motivo del error = Monumento duplicado}
-
-N˙mero de registros cargados correctamente : 13
---------------------------------------------------------------------------------
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = CÛdigo postal fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebasti·n, motivo del error = Coordenadas fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = JSON, nombre = Puente de San AntÛn, Localidad = Bilbao, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
-Registros con errores y reparados: {fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebasti·n, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
-Registros con errores y reparados: {fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo del error = CÛdigo postal sin valor, operaciÛn realizada = Reparado mediante la b˙squeda del cÛdigo postal}
-
-N˙mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = CÛdigo postal fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebasti·n, motivo del error = Coordenadas fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = JSON, nombre = Puente de San AntÛn, Localidad = Bilbao, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
-Registros con errores y reparados: {fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebasti·n, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
-Registros con errores y reparados: {fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo del error = CÛdigo postal sin valor, operaciÛn realizada = Reparado mediante la b˙squeda del cÛdigo postal}
-
-N˙mero de registros cargados correctamente : 12
---------------------------------------------------------------------------------
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = CÛdigo postal fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebasti·n, motivo del error = Coordenadas fuera de rango}
-Registros con errores y descartados: {fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo del error = Monumento duplicado}
-Registros con errores y reparados: {fuente = JSON, nombre = Puente de San AntÛn, Localidad = Bilbao, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
-Registros con errores y reparados: {fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebasti·n, motivo del error = DirecciÛn sin valor, operaciÛn realizada = Reparado mediante la b˙squeda de la direcciÛn}
-Registros con errores y reparados: {fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo del error = CÛdigo postal sin valor, operaciÛn realizada = Reparado mediante la b˙squeda del cÛdigo postal}
-
-N˙mero de registros cargados correctamente : 12
+N˙mero de registros cargados correctamente : 72
 --------------------------------------------------------------------------------

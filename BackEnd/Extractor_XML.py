@@ -13,7 +13,7 @@ def extraer_datos_xml(monumento, seen_monuments):
     nomMonumento = monumento.find('nombre').text if monumento.find('nombre') is not None else pd.NA
     tipoMonumento = get_tipo_monumento(monumento.find('tipoMonumento').text if monumento.find('tipoMonumento') is not None else pd.NA)
     direccion = monumento.find('calle').text if monumento.find('calle') is not None else pd.NA
-    codigo_postal = monumento.find('codigoPostal').text if monumento.find('codigoPostal') is not None else pd.NA
+    codigo_postal = str(monumento.find('codigoPostal').text) if monumento.find('codigoPostal') is not None else pd.NA
     coordenadas = monumento.find('coordenadas')
     longitud = coordenadas.find('longitud').text if coordenadas is not None and coordenadas.find('longitud') is not None else pd.NA
     latitud = coordenadas.find('latitud').text if coordenadas is not None and coordenadas.find('latitud') is not None else pd.NA
