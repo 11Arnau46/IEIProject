@@ -65,18 +65,25 @@ seen_monuments = set()
 
 # Extraer información de cada monumento del XML
 for monumento in root.findall('.//monumento'):
-    extracted_data = extraer_datos_xml(monumento, seen_monuments)
-    # Verificar si los datos extraídos no son None antes de continuar
+    extracted_data = extraer_datos_xml(monumento, seen_monuments)    # Verificar si los datos extraídos no son None antes de continuar
     if extracted_data is not None:
         for key, value in extracted_data.items():
             data[key].append(value)
-
 
 # Crear DataFrame con los datos extraídos
 df_result = pd.DataFrame(data)
 
 # Aplicar filtros estandarizados al DataFrame
 df_result = aplicar_correcciones(df_result)
+
+# Validar nuevamente después de las correcciones
+registros_validos = []
+for _, row in df_result.iterrows():
+    if aplicar_filtros("XML", row['nomMonumento'], row['nomProvincia'], row['nomLocalidad'], row['codigo_postal'], row['latitud'], row['longitud'], row['direccion'], set()):
+        registros_validos.append(row)
+
+# Crear nuevo DataFrame solo con los registros válidos
+df_result = pd.DataFrame(registros_validos)
 
 # Dividir los datos en aquellos con coordenadas y sin coordenadas
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'xmltojson')

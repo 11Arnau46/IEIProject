@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monumentos>
+<monumento>
+    <identificador>23977</identificador>
+    <nombre>Castro y Cisternas Romanas del Teso de la Mora</nombre>
+    <tipoMonumento>Yacimientos arqueológicos</tipoMonumento>
+    <identificadorBienInteresCultural>16773</identificadorBienInteresCultural>
+    <clasificacion>Yacimiento</clasificacion>
+    <tipoConstruccion>Castro</tipoConstruccion>
+    <codigoPostal>0</codigoPostal>
+    <Descripcion><![CDATA[
+<p>Destacan dos cisternas de gran tama&ntilde;o que, probablemente, sirvieron para abastecer a una peque&ntilde;a guarnici&oacute;n del ej&eacute;rcito romano apostado en las inmediaciones. Estos dos aljibes de &eacute;poca romana, que permit&iacute;an almacenar el agua de origen pluvial, tienen una capacidad de 400.000 metros c&uacute;bicos, son de planta rectangular y est&aacute;n coronados por una b&oacute;veda de ca&ntilde;&oacute;n. De la construcci&oacute;n se ha conservado todo menos las cubiertas. Son singulares y excepcionales en la Pen&iacute;nsula. Desde su descubrimiento ha sido un referente en todas las publicaciones y estudios relacionados con la hidr&aacute;ulica en la &eacute;poca romana.</p>
+<p>El lugar fue frecuentado desde la &eacute;poca calcol&iacute;tica a la Edad del Bronce, entre los a&ntilde;os 2000 y 800 a. C., constituy&eacute;ndose en un poblado de ocupaci&oacute;n permanente durante la Primera Edad del Hierro, datada del siglo VIII y V a. C., y albergando, a partir de la centuria siguiente, una ocupaci&oacute;n de las gentes vacceas. Se hallaba ya despoblado algo antes del cambio de era, tal vez debido al proceso de conquista romana en la Meseta norte. A la &eacute;poca romana altoimperial corresponder&iacute;an las estructuras hidr&aacute;ulicas romanas identificadas en el Teso de la Mora. Adicionalmente se han encontrado numerosos restos de poblaciones de la Edad de Hierro.</p>
+<p>Las cisternas del Teso de la Mora de Molacillos son las &uacute;nicas halladas hasta ahora fuera de contextos urbanos romanos, de ah&iacute; su importancia, ya que parece que son erigidas hacia el cambio de era y que se hallan abandonadas a mediados del siglo I a. C. Todo parece indicar que las cisternas se mantuvieron en perfecto uso solo durante unos 40 o 50 a&ntilde;os, desapareciendo cuando lo hicieron las necesidades que motivaron su construcci&oacute;n, es decir, una vez controlado el noroeste peninsular por Roma y ya retirados los contingentes militares de las v&iacute;as principales.</p>
+<p>La Junta de Castilla y Le&oacute;n llev&oacute; a cabo la limpieza, consolidaci&oacute;n y el cerramiento adem&aacute;s de la construcci&oacute;n de una cubierta e instalaci&oacute;n de paneles informativos que permiten interpretar unos yacimientos de especial importancia, pues s&oacute;lo se conocen otros dos con cierto paralelismo, uno en la ciudad romana de Uxama, en Soria, y otro en Andaluc&iacute;a.</p>
+<p>En febrero de 2021 fue aprobada la declaraci&oacute;n del castro y cisternas romanas del Teso de la Mora, en los t&eacute;rminos municipales de Molacillos, Torres del Carrizal y Benegiles, como Bien de Inter&eacute;s Cultural con categor&iacute;a de Zona Arqueol&oacute;gica. &Eacute;sta se encuentra situada al norte de la localidad de Molacillos, en su mayor parte en su t&eacute;rmino municipal, si bien una peque&ntilde;a parte del mismo se encuentra en los t&eacute;rminos municipales de Benegiles y Torres del Carrizal. La declaraci&oacute;n de la zona arqueol&oacute;gica afecta a una superficie de 118 hect&aacute;reas.</p>]]></Descripcion>
+    <horariosYTarifas><![CDATA[
+<h3>Horario</h3> <ul> Del 1 enero al 31 diciembre: <li>Todos los d&iacute;as: concertar visita (Concertar visita en los teléfonos 680 786 222 - 626 854 611 )</li></ul><h3>Tarifa</h3> Gratuito (Dar Donativo)<p><strong>Observaciones:</strong> Para ver la iglesia y las cisternas romanas, llamar a los teléfonos: 680 786 222 - 626 854 611
+ Dar donativo.</p><p>Este portal no se hace responsable de los posibles cambios en los horarios y tarifas reflejados</p>]]></horariosYTarifas>
+    <periodoHistorico>Edad del Hierro</periodoHistorico>
+    <periodoHistorico>Romano</periodoHistorico>
+    <poblacion>
+      <provincia>Zamora</provincia>
+      <municipio>Molacillos</municipio>
+      <localidad>Molacillos</localidad>
+    </poblacion>
+    <coordenadas>
+      <latitud>41.609233</latitud>
+      <longitud>-5.665926</longitud>
+    </coordenadas>
+    <web>https://www.jcyl.es/jcyl/patrimoniocultural/GuiaLugaresArqueologicos/zamora-2/02zamora/index.html</web>
+  </monumento>
   <monumento>
     <identificador>23941</identificador>
     <nombre>Risco La Zorrera</nombre>
@@ -413,7 +443,7 @@
     <identificadorBienInteresCultural>5560</identificadorBienInteresCultural>
     <clasificacion>Yacimiento</clasificacion>
     <tipoConstruccion>Arte rupestre</tipoConstruccion>
-    <codigoPostal>24450</codigoPostal>
+    <codigoPostal>24740</codigoPostal>
     <Descripcion><![CDATA[<p align="justify">Comprende varios grupos de pinturas, entre los que se encuentran contornos de la mano, &nbsp;figuras humanas, idealizaciones solares, cruciformes, animales, etc.</p>]]></Descripcion>
     <periodoHistorico>Postpaleolítico</periodoHistorico>
     <poblacion>
@@ -835,36 +865,7 @@ Espacio Cultural OPS: http://www.riosecodesoria.es/ops-espacio-cultural ;
       <longitud>-3.052969</longitud>
     </coordenadas>
   </monumento>
-  <monumento>
-    <identificador>23977</identificador>
-    <nombre>Castro y Cisternas Romanas del Teso de la Mora</nombre>
-    <tipoMonumento>Yacimientos arqueológicos</tipoMonumento>
-    <identificadorBienInteresCultural>16773</identificadorBienInteresCultural>
-    <clasificacion>Yacimiento</clasificacion>
-    <tipoConstruccion>Castro</tipoConstruccion>
-    <codigoPostal>49120</codigoPostal>
-    <Descripcion><![CDATA[
-<p>Destacan dos cisternas de gran tama&ntilde;o que, probablemente, sirvieron para abastecer a una peque&ntilde;a guarnici&oacute;n del ej&eacute;rcito romano apostado en las inmediaciones. Estos dos aljibes de &eacute;poca romana, que permit&iacute;an almacenar el agua de origen pluvial, tienen una capacidad de 400.000 metros c&uacute;bicos, son de planta rectangular y est&aacute;n coronados por una b&oacute;veda de ca&ntilde;&oacute;n. De la construcci&oacute;n se ha conservado todo menos las cubiertas. Son singulares y excepcionales en la Pen&iacute;nsula. Desde su descubrimiento ha sido un referente en todas las publicaciones y estudios relacionados con la hidr&aacute;ulica en la &eacute;poca romana.</p>
-<p>El lugar fue frecuentado desde la &eacute;poca calcol&iacute;tica a la Edad del Bronce, entre los a&ntilde;os 2000 y 800 a. C., constituy&eacute;ndose en un poblado de ocupaci&oacute;n permanente durante la Primera Edad del Hierro, datada del siglo VIII y V a. C., y albergando, a partir de la centuria siguiente, una ocupaci&oacute;n de las gentes vacceas. Se hallaba ya despoblado algo antes del cambio de era, tal vez debido al proceso de conquista romana en la Meseta norte. A la &eacute;poca romana altoimperial corresponder&iacute;an las estructuras hidr&aacute;ulicas romanas identificadas en el Teso de la Mora. Adicionalmente se han encontrado numerosos restos de poblaciones de la Edad de Hierro.</p>
-<p>Las cisternas del Teso de la Mora de Molacillos son las &uacute;nicas halladas hasta ahora fuera de contextos urbanos romanos, de ah&iacute; su importancia, ya que parece que son erigidas hacia el cambio de era y que se hallan abandonadas a mediados del siglo I a. C. Todo parece indicar que las cisternas se mantuvieron en perfecto uso solo durante unos 40 o 50 a&ntilde;os, desapareciendo cuando lo hicieron las necesidades que motivaron su construcci&oacute;n, es decir, una vez controlado el noroeste peninsular por Roma y ya retirados los contingentes militares de las v&iacute;as principales.</p>
-<p>La Junta de Castilla y Le&oacute;n llev&oacute; a cabo la limpieza, consolidaci&oacute;n y el cerramiento adem&aacute;s de la construcci&oacute;n de una cubierta e instalaci&oacute;n de paneles informativos que permiten interpretar unos yacimientos de especial importancia, pues s&oacute;lo se conocen otros dos con cierto paralelismo, uno en la ciudad romana de Uxama, en Soria, y otro en Andaluc&iacute;a.</p>
-<p>En febrero de 2021 fue aprobada la declaraci&oacute;n del castro y cisternas romanas del Teso de la Mora, en los t&eacute;rminos municipales de Molacillos, Torres del Carrizal y Benegiles, como Bien de Inter&eacute;s Cultural con categor&iacute;a de Zona Arqueol&oacute;gica. &Eacute;sta se encuentra situada al norte de la localidad de Molacillos, en su mayor parte en su t&eacute;rmino municipal, si bien una peque&ntilde;a parte del mismo se encuentra en los t&eacute;rminos municipales de Benegiles y Torres del Carrizal. La declaraci&oacute;n de la zona arqueol&oacute;gica afecta a una superficie de 118 hect&aacute;reas.</p>]]></Descripcion>
-    <horariosYTarifas><![CDATA[
-<h3>Horario</h3> <ul> Del 1 enero al 31 diciembre: <li>Todos los d&iacute;as: concertar visita (Concertar visita en los teléfonos 680 786 222 - 626 854 611 )</li></ul><h3>Tarifa</h3> Gratuito (Dar Donativo)<p><strong>Observaciones:</strong> Para ver la iglesia y las cisternas romanas, llamar a los teléfonos: 680 786 222 - 626 854 611
- Dar donativo.</p><p>Este portal no se hace responsable de los posibles cambios en los horarios y tarifas reflejados</p>]]></horariosYTarifas>
-    <periodoHistorico>Edad del Hierro</periodoHistorico>
-    <periodoHistorico>Romano</periodoHistorico>
-    <poblacion>
-      <provincia>Zamora</provincia>
-      <municipio>Molacillos</municipio>
-      <localidad>Molacillos</localidad>
-    </poblacion>
-    <coordenadas>
-      <latitud>41.609233</latitud>
-      <longitud>-5.665926</longitud>
-    </coordenadas>
-    <web>https://www.jcyl.es/jcyl/patrimoniocultural/GuiaLugaresArqueologicos/zamora-2/02zamora/index.html</web>
-  </monumento>
+  
   <monumento>
     <identificador>23978</identificador>
     <nombre>Castro del Buracote</nombre>
