@@ -8,7 +8,7 @@ class LocationFinder:
         self.json_path = json_path
 
     def get_location_info(self, lat, lon):
-        api_key = 'd5759aade0884056ba8c63a7fe5d9f2f' #'ced764935c23495db1e89a127ba65f36'
+        api_key = 'ced764935c23495db1e89a127ba65f36' #d5759aade0884056ba8c63a7fe5d9f2f
         url1 = f'https://api.opencagedata.com/geocode/v1/json?q={lat}%2C{lon}&key={api_key}'
 
         response1 = requests.get(url1)
@@ -21,7 +21,7 @@ class LocationFinder:
                 postal_code = components.get('postcode', 'N/A')
 
                 if postal_code == 'N/A':
-                    api2_key = '4f4f76e89cbe4f7c91e48c68dc4834d5' #3b3eb29261ae4a61bd9fc55c2e50f74d
+                    api2_key = '3b3eb29261ae4a61bd9fc55c2e50f74d' #4f4f76e89cbe4f7c91e48c68dc4834d5
                     url2 = f'https://api.geoapify.com/v1/geocode/reverse?lat={lat}&lon={lon}&apiKey={api2_key}'
                     response2 = requests.get(url2)
 
@@ -58,7 +58,7 @@ class LocationFinder:
                 if direccion_necesaria:
                     item['direccion'] = direction
                 if postal_code_necesario:
-                    item['codigo_postal'] = postal_code
+                    item['codigo_postal'] = 1
 
             results.append(item)
 

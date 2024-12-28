@@ -270,21 +270,9 @@ def limpiar_campo_duplicado(valor):
 
 #Función que añade un 0 a la izquierda del codigo postal si este tiene menos de 5 digitos
 def cp_añadir_cero_izquierda(codigoPostal):
-    try:
-        if pd.isna(codigoPostal) or codigoPostal in ['N/A', None, '', '0']:
-            return codigoPostal
-        
-        codigo_str = str(codigoPostal).strip()
-        if codigo_str.isdigit():
-            # Si tiene 4 dígitos, añadir el 0
-            if len(codigo_str) == 4:
-                return '0' + codigo_str
-            # Si tiene 5 dígitos, devolverlo tal cual
-            elif len(codigo_str) == 5:
-                return codigo_str
-        return codigoPostal
-    except:
-        return codigoPostal
+    if cp_menor_5_digitos(codigoPostal, "Relleno"):
+        return '0' + codigoPostal
+    return codigoPostal
 
 #Función que pone la primera letra de un string a mayuscula y el resto a minuscula, sirve para el nombre de localidad y provincia
 def capitalizar_string(texto):

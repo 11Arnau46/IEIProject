@@ -110,7 +110,7 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Localidad inválida}}")
         return False
     
-    # Verificar que la provincia esté bien escrita
+    # Verificar que la provincia esté bien escrita. Primero comprueba si todas las letras son iguales y luego comprueba si hay errores de acentuación. No se rechaza el monumento si hay error en la tilde ya que magicamente no se añade a la BD
     if provincia_sin_tilde(nomProvincia, fuente):
         # Comprobar que esté bien escrita
         if provincia_incorrecta(nomProvincia, fuente):
@@ -120,22 +120,23 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         logging.error(f"Registros con errores y reparado: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia sin tilde, operación realizada = Reparado mediante la adición de la tilde}}")
         return True
     
-    # Verificar que el codigo postal tenga valor y no sea 'N/A'
+    # Verificar que el codigo postal tenga valor y no sea 'N/A'. No se rechaza el monumento ya que luego se repara
     if cp_null(codigoPostal, fuente) or str(codigoPostal).upper() == 'N/A':
         logging.info(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal sin valor o N/A, operación realizada = Reparado mediante la búsqueda del código postal}}")
-        return True  # Permitimos que continúe para que LocationFinder pueda repararlo
+        return True  # Permitimos que continúe para que LocationFinder pueda repararlo ya que anteriormente se ha comprobado que existan las coordenadas.
 
-    # Verificar que el codigo postal tenga 5 dígitos
-    if cp_menor_5_digitos(codigoPostal, fuente):
-        logging.error(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
-        return True
-    
+        
     # Verificar que el codigo postal esté dentro del rango
     if cp_fuera_de_rango(codigoPostal, fuente):
         logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal fuera de rango}}")
         return False
     
-    # Verificar que la dirección tenga valor
+    # Verificar que el codigo postal tenga 5 dígitos. No se rechaza el monumento ya que luego se repara
+    if cp_menor_5_digitos(codigoPostal, fuente):
+        logging.error(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
+        return True
+    
+    # Verificar que la dirección tenga valor. No se rechaza el monumento ya que luego se repara
     if direccion_null(direccion, fuente):
         logging.info(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}}")
         return True
