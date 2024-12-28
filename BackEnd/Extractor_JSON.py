@@ -89,7 +89,7 @@ df_result = pd.DataFrame(data)
 # Aplica los filtros al DataFrame
 df_result = aplicar_correcciones(df_result)
 
-# Dividir los datos en aquellos con coordenadas y sin coordenadas
+# Dividir los datos en aquellos con coordenadas y sin coordenadas y filtrar monumentos repetidos 
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'jsontojson')
 
 # Get the root project directory

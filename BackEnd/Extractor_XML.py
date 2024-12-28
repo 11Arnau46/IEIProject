@@ -85,7 +85,7 @@ for _, row in df_result.iterrows():
 # Crear nuevo DataFrame solo con los registros válidos
 df_result = pd.DataFrame(registros_validos)
 
-# Dividir los datos en aquellos con coordenadas y sin coordenadas
+# Dividir los datos en aquellos con coordenadas y sin coordenadas y filtrar monumentos repetidos 
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'xmltojson')
 
 # Get the root project directory

@@ -78,7 +78,7 @@ df_result = pd.DataFrame(data)
 # Aplicar filtros estandarizados al DataFrame
 df_result = aplicar_correcciones(df_result)
 
-# Dividir los datos en aquellos con coordenadas y sin coordenadas
+# Dividir los datos en aquellos con coordenadas y sin coordenadas y filtrar monumentos repetidos 
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'csvtojson')
 
 # Get the root project directory
@@ -99,7 +99,7 @@ else:
     with open(ruta_json_entrada, "r", encoding="utf-8") as file:
         monumentos = json.load(file)
     
-    convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
+convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
 
-    # Procesar y guardar el archivo JSON
-    process_and_save_json(ruta_json_salida)
+# Procesar y guardar el archivo JSON
+process_and_save_json(ruta_json_salida)
