@@ -40,7 +40,7 @@ document.getElementById('cargar').addEventListener('click', async function () {
                 });
                 const result = await response.json();
                 console.log(`Response for ${fuente}:`, result);
-                resultadosDiv.innerHTML += `<p>${fuente}: ${result.message}</p>`;
+                //resultadosDiv.innerHTML += `<p>${fuente}: ${result.message}</p>`;
             } catch (error) {
                 console.error(`Error executing API for ${fuente}:`, error);
                 resultadosDiv.innerHTML += `<p>${fuente}: Error al ejecutar la API: ${error.message}</p>`;

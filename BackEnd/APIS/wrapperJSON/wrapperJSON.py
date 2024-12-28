@@ -81,7 +81,7 @@ class WrapperJSONExecute(Resource):
         try:
             with open(output_file_path, 'r', encoding='utf-8') as output_file:
                 output_data = output_file.read()
-            return Response(output_data, mimetype='application/json')
+            return Response(output_data, mimetype='application/json', status=201)
         except FileNotFoundError:
             return {"error": "Output file not found"}, 404
         except Exception as e:
