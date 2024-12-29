@@ -1,5 +1,151 @@
-Registros con errores y reparados: {fuente = XML, nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
-Registros con errores y reparados: {fuente = XML, nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}
+Número total de monumentos en el XML: 81
+Registro rechazado: {nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Código postal sin valor o N/A, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Risco La Zorrera, Localidad = Raso (El), motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Finca de las Garoza, Localidad = Muñogalindo, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Peñaguila, Localidad = Muñogalindo, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Abrigo de las Cabras, Localidad = Ojos-Albos, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Peña Mingubela, Localidad = Ojos-Albos, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Los Castillejos, Localidad = Sanchorreja, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Cueva de San García, Localidad = Briongos de Cervera, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Cuevas del Montico, Localidad = Albaina, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Cuevas de Laño, Localidad = Laño, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Yacimiento de La Ulaña, Localidad = Humada, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Dolmen Cubillejo, Localidad = Cubillejo, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Eremitorio Mozárabe de Cueva Andrés, Localidad = Quintanar de la Sierra, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Necrópolis Altomedieval de Cuyacabras, Localidad = Quintanar de la Sierra, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Yacimiento de Deobrigula, Localidad = Tardajos, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Cueva del Azar, Localidad = Orbaneja del Castillo, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Villa Romana de Los Casarejos, Localidad = San Martín de Losa, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Pintura Rupestre La Peña del Pozo Rocebros, Localidad = Morla de la Valderia, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Conjunto rupestre esquemático de Librán, Localidad = Libran, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro descartado: {nombre = Yacimiento de La Corona de Corporales, Localidad = Corporales, motivo del error = Coordenadas fuera de rango}
+Registro rechazado: {nombre = Conjunto rupestre de Peña Piñera, Localidad = Vega de Espinareda, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro descartado: {nombre = Iglesia Martirial de Marialba de la Ribera, Localidad = Maríalba de la Ribera, motivo del error = Coordenadas fuera de rango}
+Registro rechazado: {nombre = La Rueda, Localidad = Navarredonda de la Rinconada, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cueva del Tío Papas, Localidad = Valero, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Antiguas Tenerías del Arrabal de San Segundo, Localidad = Ávila, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro descartado: {nombre = Villa Romana de ;Los Villares;, Localidad = Santervás del Burgo, motivo del error = Coordenadas fuera de rango}
+Registro rechazado: {nombre = Abrigo del Este y del Oeste, Localidad = Ligos, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Villa romana de ;Los Quintanares;, Localidad = Rioseco de Soria, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Ruinas Ciclopeas, Localidad = Santa María de Huerta, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Castro del Buracote, Localidad = Fresno de la Carballeda, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento del Abrigo del Castillón. Sta Eulalia de Tábara, Localidad = Santa Eulalia de Tábara, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El castro del Cerco. Sejas de Aliste., Localidad = Sejas de Aliste, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Las Cogotas, Localidad = Cardeñosa, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro descartado: {nombre = Calzada del Puerto del Pico, Localidad = Cuevas del Valle, motivo del error = Coordenadas fuera de rango}
+Registro rechazado: {nombre = El Prado de las Cruces, Localidad = Avila, motivo del error = Provincia sin tilde, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El Castro del Raso, Localidad = Candeleda, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Pared de los Moros, Localidad = Niharra, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Cabeza de Navasangil, Localidad = Solosancho, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Conjunto dolménico de la Lora, Localidad = Sargentes de la Lora, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Villa Romana de Ciella, Localidad = Valdeande, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Necrópolis Altomedieval de Revenga, Localidad = Quintanar de la Sierra, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Clunia, Localidad = Peñalba de Castro, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Yacimiento de Rauda, Localidad = Roa, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Villa romana de Santa Cruz, Localidad = Baños de Valdearados, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Despoblado de Peña Amaya, Localidad = Amaya, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Yacimiento Arqueológico de Lancia, Localidad = Villasabariego, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Castro Ventosa, Localidad = Pieros, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro descartado: {nombre = Castro de Chano. Centro de interpretación, Localidad = Chano, motivo del error = Coordenadas fuera de rango}
+Registro descartado: {nombre = Campamento Pisoraca, Localidad = Herrera de Pisuerga, motivo del error = Coordenadas fuera de rango}
+Registro rechazado: {nombre = Villa Romana ;La Tejada;, Localidad = Quintanilla de la Cueza, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Ermita rupestre de San Martín, Localidad = Villarén de Valdivia, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = La Velilla, Localidad = Osorno, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro descartado: {nombre = Monte Bernorio, Localidad = Pomar de Valdivia, motivo del error = Coordenadas fuera de rango}
+Registro rechazado: {nombre = Monte Cildá, Localidad = Olleros de Pisuerga, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento ;El Castillo;, Localidad = Saldeana, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Dolmen de la Ermita de Galisancho, Localidad = Galisancho, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El Cerro del Berrueco, Localidad = Tejado (El), motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Dolmen de Casa del Moro, Localidad = Muelledes, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Dolmen de Terriñuelo, Localidad = Aldeavieja de Tormes, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El Castro de Irueña, Localidad = Fuenteguinaldo, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Lerilla, Localidad = Zamarra, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Castro de Yecla de Yeltes, Localidad = Yecla de Yeltes, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cueva de los Siete Altares, Localidad = Villaseca, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cerro de la Virgen del Castillo, Localidad = Bernardos, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro descartado: {nombre = Los Cinco Caños, Localidad = Coca, motivo del error = Coordenadas fuera de rango}
+Registro rechazado: {nombre = La villa romana de Santa Lucía, Localidad = Aguilafuente, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Uxama, Localidad = Osma, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro reparado: {nombre = Risco La Zorrera, Localidad = Raso (el), motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Finca de las Garoza, Localidad = Muñogalindo, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Peñaguila, Localidad = Muñogalindo, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Abrigo de las Cabras, Localidad = Ojos-albos, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Peña Mingubela, Localidad = Ojos-albos, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Los Castillejos, Localidad = Sanchorreja, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Cueva de San García, Localidad = Briongos de cervera, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Cuevas del Montico, Localidad = Albaina, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Cuevas de Laño, Localidad = Laño, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Yacimiento de La Ulaña, Localidad = Humada, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Dolmen Cubillejo, Localidad = Cubillejo, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Eremitorio Mozárabe de Cueva Andrés, Localidad = Quintanar de la sierra, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Necrópolis Altomedieval de Cuyacabras, Localidad = Quintanar de la sierra, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Yacimiento de Deobrigula, Localidad = Tardajos, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Cueva del Azar, Localidad = Orbaneja del castillo, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Villa Romana de Los Casarejos, Localidad = San martín de losa, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Antiguas Tenerías del Arrabal de San Segundo, Localidad = Ávila, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Las Cogotas, Localidad = Cardeñosa, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = El Prado de las Cruces, Localidad = Bernuy-salinero, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = El Castro del Raso, Localidad = Candeleda, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Pared de los Moros, Localidad = Niharra, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Cabeza de Navasangil, Localidad = Solosancho, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Conjunto dolménico de la Lora, Localidad = Sargentes de la lora, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Villa Romana de Ciella, Localidad = Valdeande, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Necrópolis Altomedieval de Revenga, Localidad = Quintanar de la sierra, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Clunia, Localidad = Peñalba de castro, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Yacimiento de Rauda, Localidad = Roa, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Villa romana de Santa Cruz, Localidad = Baños de valdearados, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro reparado: {nombre = Despoblado de Peña Amaya, Localidad = Amaya, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}
+Registro rechazado: {nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo del error = Código postal sin valor o N/A, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Peña Mingubela, Localidad = Ojos-albos, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Los Castillejos, Localidad = Sanchorreja, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cueva de San García, Localidad = Briongos de cervera, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cuevas del Montico, Localidad = Albaina, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cuevas de Laño, Localidad = Laño, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento de La Ulaña, Localidad = Humada, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Dolmen Cubillejo, Localidad = Cubillejo, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Eremitorio Mozárabe de Cueva Andrés, Localidad = Quintanar de la sierra, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Necrópolis Altomedieval de Cuyacabras, Localidad = Quintanar de la sierra, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento de Deobrigula, Localidad = Tardajos, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Pintura Rupestre La Peña del Pozo Rocebros, Localidad = Morla de la valderia, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Conjunto rupestre esquemático de Librán, Localidad = Libran, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Conjunto rupestre de Peña Piñera, Localidad = Vega de espinareda, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = La Rueda, Localidad = Navarredonda de la rinconada, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cueva del Tío Papas, Localidad = Valero, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Abrigo del Este y del Oeste, Localidad = Ligos, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Villa romana de ;Los Quintanares;, Localidad = Rioseco de soria, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Ruinas Ciclopeas, Localidad = Santa maría de huerta, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Castro del Buracote, Localidad = Fresno de la carballeda, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento del Abrigo del Castillón. Sta Eulalia de Tábara, Localidad = Santa eulalia de tábara, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El castro del Cerco. Sejas de Aliste., Localidad = Sejas de aliste, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Las Cogotas, Localidad = Cardeñosa, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El Prado de las Cruces, Localidad = Avila, motivo del error = Provincia sin tilde, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El Castro del Raso, Localidad = Candeleda, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Pared de los Moros, Localidad = Niharra, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cabeza de Navasangil, Localidad = Solosancho, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Conjunto dolménico de la Lora, Localidad = Sargentes de la lora, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Villa Romana de Ciella, Localidad = Valdeande, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Clunia, Localidad = Peñalba de castro, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento de Rauda, Localidad = Roa, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Villa romana de Santa Cruz, Localidad = Baños de valdearados, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Despoblado de Peña Amaya, Localidad = Amaya, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento Arqueológico de Lancia, Localidad = Villasabariego, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Castro Ventosa, Localidad = Pieros, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Villa Romana ;La Tejada;, Localidad = Quintanilla de la cueza, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Ermita rupestre de San Martín, Localidad = Villarén de valdivia, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = La Velilla, Localidad = Osorno, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Monte Cildá, Localidad = Olleros de pisuerga, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Yacimiento ;El Castillo;, Localidad = Saldeana, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Dolmen de la Ermita de Galisancho, Localidad = Galisancho, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El Cerro del Berrueco, Localidad = Tejado (el), motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Dolmen de Casa del Moro, Localidad = Muelledes, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Dolmen de Terriñuelo, Localidad = Aldeavieja de tormes, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = El Castro de Irueña, Localidad = Fuenteguinaldo, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Lerilla, Localidad = Zamarra, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Castro de Yecla de Yeltes, Localidad = Yecla de yeltes, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cueva de los Siete Altares, Localidad = Villaseca, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Cerro de la Virgen del Castillo, Localidad = Bernardos, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = La villa romana de Santa Lucía, Localidad = Aguilafuente, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
+Registro rechazado: {nombre = Uxama, Localidad = Osma, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}
 
-Número de registros cargados correctamente : 1
+Número de registro cargados correctamente : 73
 --------------------------------------------------------------------------------

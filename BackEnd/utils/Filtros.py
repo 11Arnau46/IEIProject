@@ -4,6 +4,7 @@ import os
 import pycountry
 import json
 import unidecode
+import logging
 
 #Filtros que por su naturaleza deben ser colocados uno por uno------------------------------------------------------------------------------
 
@@ -108,15 +109,13 @@ def coordenadas_null(latitud, longitud):
 
 # Función para validar si las coordenadas están dentro de los límites de WGS84. Si están fuera de rango devuelve True, en caso contrario devuelve False
 def coordenadas_fuera_de_rango(latitud, longitud, fuente):
-    #Dado que CSV no tiene coordenadas, no hace falta comprobar
-    if fuente in {"CSV"}:
-        return False
-    
     try:
         latitud = float(latitud)
         longitud = float(longitud)
-        # Verificar que la latitud esté entre -90 y 90 y que la longitud esté entre -180 y 180
-        if -90.0 <= latitud <= 90.0 and -180.0 <= longitud <= 180.0:
+        
+        if fuente == "XML" and 40.0 <= latitud <= 44.0 and -8.0 <= longitud <= -1.0:
+            return False
+        elif fuente == "JSON" and 42.0 <= latitud <= 44.0 and -3.0 <= longitud <= -1.0:
             return False
         else:
             return True
@@ -139,7 +138,6 @@ def validar_provincia_localidad(nombre, tipo="provincia"):
 
     nombre = nombre.strip().lower()  # Normalizar el nombre
     
-
     # Si el nombre contiene '/', lo consideramos siempre válido
     if '/' in nombre:
         return True
@@ -189,7 +187,7 @@ def provincia_incorrecta(provincia, fuente):
     provincia = unidecode.unidecode(provincia, "utf-8") # Eliminar tilde
 
     provincias_euskadi = ["vizcaya", "guipuzcoa", "alava", "gipuzkoa", "bizkaia"]
-    provincias_castilla_leon = ["avila", "burgos", "león", "palencia", "salamanca", "segovia", "soria", "valladolid", "zamora"]
+    provincias_castilla_leon = ["avila", "burgos", "leon", "palencia", "salamanca", "segovia", "soria", "valladolid", "zamora"]
     provincias_comunidad_valenciana = ["alicante", "castellon", "valencia"]
 
     if fuente in {"JSON"}:
@@ -205,26 +203,41 @@ def provincia_incorrecta(provincia, fuente):
 #Devuelve True en el caso de que la fuente sea JSON o XML y el codigo postal sea vacío y False en el caso de que tenga valor
 def cp_null(codigoPostal, fuente):
     if fuente in {"JSON", "XML"}:
-        return pd.isna(codigoPostal) or str(codigoPostal).strip() == ''
-    
+        # Si es NaN o string vacío
+        if pd.isna(codigoPostal) or str(codigoPostal).strip() == '':
+            return True
+        
+        # Si es un string de solo ceros (0, 00, 000, 0000, etc.)
+        codigo_str = str(codigoPostal).strip()
+        if codigo_str.isdigit() and int(codigo_str) == 0:
+            return True
+            
     return False
 
-#Función para comprobar si el codigo postal tiene menos de 5 dígitos
-#Devuelve True en el caso de que tenga menos de 5 dígitos y False en el caso de que tenga exactamente 5 dígitos
-def cp_menor_5_digitos(codigoPostal, fuente):
+#Función para comprobar si el codigo postal tiene 4 dígitos
+#Devuelve:
+# 0 -> si es CSV o tiene 5 dígitos (no hacer nada)
+# 1 -> si tiene exactamente 4 dígitos (añadir 0)
+# -1 -> si tiene menos de 4 dígitos (error)
+def cp_de_4_digitos(codigoPostal, fuente, nomMonumento, nomLocalidad):
     #Dado que CSV no tiene codigo postal, no hace falta comprobar
     if fuente in {"CSV"}:
-        return False
+        return 0
     
     try:
         codigo_str = str(codigoPostal).strip()
-        if len(codigo_str) == 5 and codigo_str.isdigit():
-            return False
-        return True
+        if not codigo_str.isdigit():
+            return -1
+        if len(codigo_str) == 5:
+            return 0
+        elif len(codigo_str) == 4:
+            return 1
+        else:
+            return -1
     except:
-        return True
+        return -1
 
-#Función para comprobar si el código postal se encuentra en 01001 a 52999
+#Función para comprobar si el código postal se encuentra en los rangos correctos según la comunidad
 #Devuelve False en el caso de que sea correcto y True en el caso de que sea incorrecto
 def cp_fuera_de_rango(codigoPostal, fuente):   
     #Dado que CSV no tiene codigo postal, no hace falta comprobar
@@ -233,8 +246,24 @@ def cp_fuera_de_rango(codigoPostal, fuente):
 
     try:
         codigo_str = str(codigoPostal).strip()
-        if codigo_str.isdigit() and 1001 <= int(codigo_str) <= 52999:
-            return False
+        if not codigo_str.isdigit():
+            return True
+            
+        cp = int(codigo_str)
+        if fuente == "XML":  # Castilla y León
+            return not (5000 <= cp <= 5999 or    # Ávila
+                       9000 <= cp <= 9999 or    # Burgos
+                       24000 <= cp <= 24999 or  # León
+                       34000 <= cp <= 34999 or  # Palencia
+                       37000 <= cp <= 37999 or  # Salamanca
+                       40000 <= cp <= 40999 or  # Segovia
+                       42000 <= cp <= 42999 or  # Soria
+                       47000 <= cp <= 47999 or  # Valladolid
+                       49000 <= cp <= 49999)    # Zamora
+        elif fuente == "JSON":  # País Vasco
+            return not (1000 <= cp <= 1999 or   # Álava
+                       20000 <= cp <= 20999 or  # Guipúzcoa
+                       48000 <= cp <= 48999)    # Vizcaya
         return True
     except ValueError:
         return True
@@ -242,7 +271,7 @@ def cp_fuera_de_rango(codigoPostal, fuente):
 #Función para comprobar si la dirección es vacía
 #Devuelve True en el caso de que no tenga valor y True en el caso de que sí tenga
 #Para la fuente de datos CSV siempre devuelve False ya que no tiene dirección antes de aplicar el filtro
-def direccion_null(direccion, fuente):   
+def direccion_null(direccion, fuente, pasadoPorLocationFinder=False):   
     if (pd.isna(direccion) or direccion in {''}) and fuente in {"JSON", "XML"}:
         return True
     
@@ -269,8 +298,9 @@ def limpiar_campo_duplicado(valor):
     return ' '.join(partes_unicas)
 
 #Función que añade un 0 a la izquierda del codigo postal si este tiene menos de 5 digitos
-def cp_añadir_cero_izquierda(codigoPostal):
-    if cp_menor_5_digitos(codigoPostal, "Relleno"):
+def cp_añadir_cero_izquierda(codigoPostal, nomMonumento, nomLocalidad):
+    if cp_de_4_digitos(codigoPostal, "Relleno", nomMonumento, nomLocalidad) == 1:
+        logging.info(f"Registro reparado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
         return '0' + codigoPostal
     return codigoPostal
 

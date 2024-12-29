@@ -49,6 +49,7 @@ print("Current working directory:", os.getcwd())
 tree = ET.parse(INPUT_XML_PATH)
 root = tree.getroot()
 
+
 # Diccionario para almacenar los datos extraídos
 data = { 
     'nomMonumento': [], 
@@ -63,8 +64,14 @@ data = {
 }
 seen_monuments = set()
 
+# Contar y mostrar el número de monumentos
+monumentos = root.findall('.//monumento')
+num_monumentos = len(monumentos)
+logging.info(f"Número total de monumentos en el XML: {num_monumentos}")
+print(f"Número total de monumentos en el XML: {num_monumentos}")
+
 # Extraer información de cada monumento del XML
-for monumento in root.findall('.//monumento'):
+for monumento in monumentos:
     extracted_data = extraer_datos_xml(monumento, seen_monuments)    # Verificar si los datos extraídos no son None antes de continuar
     if extracted_data is not None:
         for key, value in extracted_data.items():

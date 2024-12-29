@@ -1,6 +1,6 @@
 import os
 import json
-from .Filtros import capitalizar_string, clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_añadir_cero_izquierda, cp_fuera_de_rango, cp_menor_5_digitos, cp_null, direccion_null, limpiar_campo_duplicado, is_duplicate_monument, obtener_despues_del_slash, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
+from .Filtros import capitalizar_string, clean_coordinates, coordenadas_fuera_de_rango, coordenadas_null, cp_añadir_cero_izquierda, cp_fuera_de_rango, cp_de_4_digitos, cp_null, direccion_null, limpiar_campo_duplicado, is_duplicate_monument, obtener_despues_del_slash, provincia_incorrecta, provincia_sin_tilde, validar_provincia_localidad
 from .Location_Finder import LocationFinder
 from pathlib import Path
 import logging
@@ -34,12 +34,12 @@ def process_and_save_json(json_path):
     location_finder.save_results_to_json(results)
     print(f"Archivo final guardado en {json_path}.")
     
-    # Contar el número de registros cargados correctamente
+    # Contar el número de registro cargados correctamente
     num_records = len(results)
     total_records_added_correctly += num_records
     
     logging.info("")
-    logging.info(f"Número de registros cargados correctamente : {num_records}")
+    logging.info(f"Número de registro cargados correctamente : {num_records}")
     logging.info("--------------------------------------------------------------------------------")
 
 def aplicar_correcciones(df):
@@ -56,7 +56,6 @@ def aplicar_correcciones(df):
     filtros = {
         'latitud': clean_coordinates,
         'longitud': clean_coordinates,
-        'codigo_postal': cp_añadir_cero_izquierda,
         'nomLocalidad': [limpiar_campo_duplicado, obtener_despues_del_slash, capitalizar_string],
         'nomProvincia': [limpiar_campo_duplicado, obtener_despues_del_slash, capitalizar_string],
     }
@@ -71,9 +70,13 @@ def aplicar_correcciones(df):
             for filtro in filtros_a_aplicar:
                 df[columna] = df[columna].apply(filtro)
     
+    # Tratar el código postal de manera especial para poder pasar el nombre y localidad
+    if 'codigo_postal' in df.columns:
+        df['codigo_postal'] = df.apply(lambda row: cp_añadir_cero_izquierda(row['codigo_postal'], row['nomMonumento'], row['nomLocalidad']), axis=1)
+    
     return df
 
-def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPostal, latitud, longitud, direccion, seen_monuments):
+def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPostal, latitud, longitud, direccion, seen_monuments, pasadoPorLocationFinder = False):
     """
     Realiza las validaciones para los datos de cada monumento (duplicado, coordenadas, provincia, localidad).
     
@@ -93,59 +96,75 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
     """
     # Verificar si el monumento es duplicado
     if is_duplicate_monument(nomMonumento, seen_monuments):
-        logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Monumento duplicado}}")
+        logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Monumento duplicado}}")
         return False
 
     # Verificar que las coordenadas tengan valor
     if coordenadas_null(latitud, longitud):
-        logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Coordenadas sin valor}}")
+        logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Coordenadas sin valor}}")
         return False
 
     # Verificar que las coordenadas estén dentro del rango
-    if coordenadas_fuera_de_rango(latitud, longitud, fuente):
-        logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Coordenadas fuera de rango}}")
+    if fuente == "XML" or fuente == "JSON":
+        if coordenadas_fuera_de_rango(latitud, longitud, fuente):
+            logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Coordenadas fuera de rango}}")
+            return False
+    
+    if not validar_provincia_localidad(nomLocalidad, tipo="localidad"):
+        logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Localidad inválida}}")
         return False
 
-    if not validar_provincia_localidad(nomLocalidad, tipo="localidad"):
-        logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Localidad inválida}}")
+    # Verificar que la provincia esté bien escrita.
+    if provincia_incorrecta(nomProvincia, fuente):
+        logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia inválida}}")
         return False
     
-    # Verificar que la provincia esté bien escrita. Primero comprueba si todas las letras son iguales y luego comprueba si hay errores de acentuación. No se rechaza el monumento si hay error en la tilde ya que magicamente no se añade a la BD
+    
+    # Verificar que la provincia tiene las tildes correctas.
+    # Se deja continuar si no tiene tilde ya que se puede reparar en la siguiente etapa.
     if provincia_sin_tilde(nomProvincia, fuente):
-        # Comprobar que esté bien escrita
-        if provincia_incorrecta(nomProvincia, fuente):
-            logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia inválida}}")
-            return False
-        
-        logging.error(f"Registros con errores y reparado: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia sin tilde, operación realizada = Reparado mediante la adición de la tilde}}")
+        logging.info(f"Registro rechazado: {{nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo del error = Provincia sin tilde, operación realizada = Intentar reparar en la siguiente etapa}}")
         return True
     
-    # Verificar que el codigo postal tenga valor y no sea 'N/A'. No se rechaza el monumento ya que luego se repara
+    # Verificar que el codigo postal tenga valor y no sea 'N/A'.
+    # Se deja continuar si no tiene valor ya que se puede reparar en la siguiente etapa.
     if cp_null(codigoPostal, fuente) or str(codigoPostal).upper() == 'N/A':
-        logging.info(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal sin valor o N/A, operación realizada = Reparado mediante la búsqueda del código postal}}")
-        return True  # Permitimos que continúe para que LocationFinder pueda repararlo ya que anteriormente se ha comprobado que existan las coordenadas.
-
-        
+        if pasadoPorLocationFinder:
+            logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal sin valor o N/A}}, no se ha podido reparar")
+            return False
+        else:
+            logging.info(f"Registro rechazado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal sin valor o N/A, operación realizada = Intentar reparar en la siguiente etapa}}")
+            return True
+    
+    # Verificar que el codigo postal tenga 4 dígitos. 
+    # Si tiene 4 dígitos, se añade un 0 a la izquierda.
+    
+    if cp_de_4_digitos(codigoPostal, fuente, nomMonumento, nomLocalidad) == -1:
+        logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con menos de 4 digitos}}")
+        return False
+    
+    if cp_de_4_digitos(codigoPostal, fuente, nomMonumento, nomLocalidad) == 1:
+        logging.info(f"Registro rechazado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
+        return True
+    
     # Verificar que el codigo postal esté dentro del rango
     if cp_fuera_de_rango(codigoPostal, fuente):
-        logging.error(f"Registros con errores y descartados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal fuera de rango}}")
+        logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal fuera de rango}}")
         return False
     
-    # Verificar que el codigo postal tenga 5 dígitos. No se rechaza el monumento ya que luego se repara
-    if cp_menor_5_digitos(codigoPostal, fuente):
-        logging.error(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con menos de 5 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
-        return True
-    
     # Verificar que la dirección tenga valor. No se rechaza el monumento ya que luego se repara
-    if direccion_null(direccion, fuente):
-        logging.info(f"Registros con errores y reparados: {{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Dirección sin valor, operación realizada = Reparado mediante la búsqueda de la dirección}}")
-        return True
-
+    if direccion_null(direccion, fuente, pasadoPorLocationFinder):
+        if pasadoPorLocationFinder:
+            logging.error(f"Registro descartado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Dirección sin valor}}")
+            return False
+        else:
+            logging.info(f"Registro rechazado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Dirección sin valor, operación realizada = Intentar reparar en la siguiente etapa}}")
+            return True
     return True
 
 
 def get_total_records_added_correctly():
     """
-    Devuelve el número total de registros cargados correctamente.
+    Devuelve el número total de registro cargados correctamente.
     """
     return total_records_added_correctly
