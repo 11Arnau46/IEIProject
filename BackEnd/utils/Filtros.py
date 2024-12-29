@@ -219,7 +219,7 @@ def cp_null(codigoPostal, fuente):
 # 0 -> si es CSV o tiene 5 dígitos (no hacer nada)
 # 1 -> si tiene exactamente 4 dígitos (añadir 0)
 # -1 -> si tiene menos de 4 dígitos (error)
-def cp_de_4_digitos(codigoPostal, fuente, nomMonumento, nomLocalidad):
+def cp_de_4_digitos(codigoPostal, fuente):
     #Dado que CSV no tiene codigo postal, no hace falta comprobar
     if fuente in {"CSV"}:
         return 0
@@ -298,9 +298,8 @@ def limpiar_campo_duplicado(valor):
     return ' '.join(partes_unicas)
 
 #Función que añade un 0 a la izquierda del codigo postal si este tiene menos de 5 digitos
-def cp_añadir_cero_izquierda(codigoPostal, nomMonumento, nomLocalidad):
-    if cp_de_4_digitos(codigoPostal, "Relleno", nomMonumento, nomLocalidad) == 1:
-        logging.info(f"Registro reparado: {{nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo del error = Código postal con 4 digitos, operación realizada = Reparado mediante la adición de 0 a la izquierda}}")
+def cp_añadir_cero_izquierda(codigoPostal):
+    if cp_de_4_digitos(codigoPostal, "Relleno") == 1:
         return '0' + codigoPostal
     return codigoPostal
 

@@ -1,3 +1,12 @@
+import sys
+from utils.Otros import setup_loggers, set_data_source
+
+# Configurar la fuente de datos y los loggers
+if len(sys.argv) > 1:
+    data_source = sys.argv[1]
+    set_data_source(data_source)
+    setup_loggers(data_source)
+
 import os
 from config.paths import INPUT_JSON_PATH
 import pandas as pd
@@ -62,6 +71,9 @@ json_path = INPUT_JSON_PATH
 # Cargar los datos preservando los campos duplicados
 json_data = parse_json_with_duplicates(json_path)
 
+# Contar monumentos
+num_monumentos = len(json_data)
+
 # Diccionario para almacenar los datos extraídos
 data = { 
     'nomMonumento': [], 
@@ -98,8 +110,28 @@ root_dir = Path(__file__).resolve().parents[1]
 # Define the path to the output JSON file
 ruta_json_salida = root_dir / 'Resultados' / 'JSONtoJSON_con_coords.json'
 
-# Print the path for debugging purposes
-print(f"Path to output JSON: {ruta_json_salida}")
-
-# Guardar el resultado en un archivo JSON
+# Procesar y guardar el JSON
 process_and_save_json(ruta_json_salida)
+
+# Cargar los datos actualizados
+with open(ruta_json_salida, 'r', encoding='utf-8') as f:
+    datos_actualizados = json.load(f)
+
+# Crear nuevo DataFrame con los datos actualizados
+df_result = pd.DataFrame(datos_actualizados)
+
+# Segunda validación después de Location Finder
+registros_validos = []
+for _, row in df_result.iterrows():
+    if aplicar_filtros("JSON", row['nomMonumento'], row['nomProvincia'], row['nomLocalidad'], 
+                      row['codigo_postal'], row['latitud'], row['longitud'], row['direccion'], 
+                      set(), pasadoPorLocationFinder=True):
+        registros_validos.append(row)
+
+# Actualizar el DataFrame con solo los registros válidos
+df_result = pd.DataFrame(registros_validos)
+
+# Guardar los resultados finales validados
+df_result.to_json(ruta_json_salida, orient='records', force_ascii=False)
+
+log_statistics()

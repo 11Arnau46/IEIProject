@@ -1,3 +1,4 @@
+import sys
 import os
 import pandas as pd
 import xml.etree.ElementTree as ET
@@ -7,6 +8,36 @@ from pathlib import Path
 from utils.Location_Finder import LocationFinder
 from utils.Filtros import get_tipo_monumento, clean_coordinates, clean_html_text, procesar_datos
 from utils.Otros import *
+import logging
+import json
+
+# Configurar la fuente de datos y los loggers
+if len(sys.argv) > 1:
+    data_source = sys.argv[1]
+    set_data_source(data_source)
+    setup_loggers(data_source)
+
+# Leer el archivo XML
+tree = ET.parse(INPUT_XML_PATH)
+root = tree.getroot()
+
+# Contar monumentos
+monumentos = root.findall('.//monumento')
+num_monumentos = len(monumentos)
+
+# Diccionario para almacenar los datos extraídos
+data = { 
+    'nomMonumento': [], 
+    'tipoMonumento': [], 
+    'direccion': [], 
+    'codigo_postal': [], 
+    'longitud': [], 
+    'latitud': [], 
+    'descripcion': [], 
+    'nomLocalidad': [], 
+    'nomProvincia': [] 
+}
+seen_monuments = set()
 
 # Función para extraer los datos del XML
 def extraer_datos_xml(monumento, seen_monuments):
@@ -45,31 +76,6 @@ def extraer_datos_xml(monumento, seen_monuments):
 #os.chdir('/Users/arnau1146/IdeaProjects/IEIProject/BackEnd')
 print("Current working directory:", os.getcwd())
 
-# Leer el archivo XML
-tree = ET.parse(INPUT_XML_PATH)
-root = tree.getroot()
-
-
-# Diccionario para almacenar los datos extraídos
-data = { 
-    'nomMonumento': [], 
-    'tipoMonumento': [], 
-    'direccion': [], 
-    'codigo_postal': [], 
-    'longitud': [], 
-    'latitud': [], 
-    'descripcion': [], 
-    'nomLocalidad': [], 
-    'nomProvincia': [] 
-}
-seen_monuments = set()
-
-# Contar y mostrar el número de monumentos
-monumentos = root.findall('.//monumento')
-num_monumentos = len(monumentos)
-logging.info(f"Número total de monumentos en el XML: {num_monumentos}")
-print(f"Número total de monumentos en el XML: {num_monumentos}")
-
 # Extraer información de cada monumento del XML
 for monumento in monumentos:
     extracted_data = extraer_datos_xml(monumento, seen_monuments)    # Verificar si los datos extraídos no son None antes de continuar
@@ -82,15 +88,6 @@ df_result = pd.DataFrame(data)
 
 # Aplicar filtros estandarizados al DataFrame
 df_result = aplicar_correcciones(df_result)
-
-# Validar nuevamente después de las correcciones
-registros_validos = []
-for _, row in df_result.iterrows():
-    if aplicar_filtros("XML", row['nomMonumento'], row['nomProvincia'], row['nomLocalidad'], row['codigo_postal'], row['latitud'], row['longitud'], row['direccion'], set()):
-        registros_validos.append(row)
-
-# Crear nuevo DataFrame solo con los registros válidos
-df_result = pd.DataFrame(registros_validos)
 
 # Dividir los datos en aquellos con coordenadas y sin coordenadas y filtrar monumentos repetidos 
 df_con_coords, df_sin_coords = procesar_datos(df_result, 'xmltojson')
@@ -105,3 +102,26 @@ ruta_json_salida = root_dir / 'Resultados' / 'XMLtoJSON_con_coords.json'
 print(f"Path to output JSON: {ruta_json_salida}")
 
 process_and_save_json(ruta_json_salida)
+
+# Cargar los datos actualizados
+with open(ruta_json_salida, 'r', encoding='utf-8') as f:
+    datos_actualizados = json.load(f)
+
+# Crear nuevo DataFrame con los datos actualizados
+df_result = pd.DataFrame(datos_actualizados)
+
+# Segunda validación después de Location Finder
+registros_validos = []
+for _, row in df_result.iterrows():
+    if aplicar_filtros("XML", row['nomMonumento'], row['nomProvincia'], row['nomLocalidad'], 
+                      row['codigo_postal'], row['latitud'], row['longitud'], row['direccion'], 
+                      set(), pasadoPorLocationFinder=True):
+        registros_validos.append(row)
+
+# Actualizar el DataFrame con solo los registros válidos
+df_result = pd.DataFrame(registros_validos)
+
+# Guardar los resultados finales validados
+df_result.to_json(ruta_json_salida, orient='records', force_ascii=False)
+
+log_statistics()

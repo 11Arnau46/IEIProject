@@ -1,0 +1,61 @@
+Registro con errores y reparado:
+{nombre = Castro y Cisternas Romanas del Teso de la Mora, Localidad = Molacillos, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Risco La Zorrera, Localidad = Raso (El), motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Finca de las Garoza, Localidad = Muñogalindo, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Peñaguila, Localidad = Muñogalindo, motivo = Código postal sin valor o N/A, operación = Intentar reparar en la siguiente etapa}
+{nombre = Abrigo de las Cabras, Localidad = Ojos-Albos, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Peña Mingubela, Localidad = Ojos-Albos, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Los Castillejos, Localidad = Sanchorreja, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Cueva de San García, Localidad = Briongos de Cervera, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Cuevas del Montico, Localidad = Albaina, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Cuevas de Laño, Localidad = Laño, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Yacimiento de La Ulaña, Localidad = Humada, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Dolmen Cubillejo, Localidad = Cubillejo, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Eremitorio Mozárabe de Cueva Andrés, Localidad = Quintanar de la Sierra, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Necrópolis Altomedieval de Cuyacabras, Localidad = Quintanar de la Sierra, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Yacimiento de Deobrigula, Localidad = Tardajos, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Cueva del Azar, Localidad = Orbaneja del Castillo, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Villa Romana de Los Casarejos, Localidad = San Martín de Losa, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Pintura Rupestre La Peña del Pozo Rocebros, Localidad = Morla de la Valderia, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Conjunto rupestre esquemático de Librán, Localidad = Libran, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Conjunto rupestre de Peña Piñera, Localidad = Vega de Espinareda, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = La Rueda, Localidad = Navarredonda de la Rinconada, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Cueva del Tío Papas, Localidad = Valero, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Antiguas Tenerías del Arrabal de San Segundo, Localidad = Ávila, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Abrigo del Este y del Oeste, Localidad = Ligos, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Villa romana de ;Los Quintanares;, Localidad = Rioseco de Soria, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Ruinas Ciclopeas, Localidad = Santa María de Huerta, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Castro del Buracote, Localidad = Fresno de la Carballeda, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Yacimiento del Abrigo del Castillón. Sta Eulalia de Tábara, Localidad = Santa Eulalia de Tábara, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = El castro del Cerco. Sejas de Aliste., Localidad = Sejas de Aliste, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Las Cogotas, Localidad = Cardeñosa, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = El Prado de las Cruces, Localidad = Avila, motivo = Provincia sin tilde, operación = Intentar reparar en la siguiente etapa}
+{nombre = El Castro del Raso, Localidad = Candeleda, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Pared de los Moros, Localidad = Niharra, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Cabeza de Navasangil, Localidad = Solosancho, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Conjunto dolménico de la Lora, Localidad = Sargentes de la Lora, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Villa Romana de Ciella, Localidad = Valdeande, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Necrópolis Altomedieval de Revenga, Localidad = Quintanar de la Sierra, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Clunia, Localidad = Peñalba de Castro, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Yacimiento de Rauda, Localidad = Roa, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Villa romana de Santa Cruz, Localidad = Baños de Valdearados, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Despoblado de Peña Amaya, Localidad = Amaya, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}
+{nombre = Yacimiento Arqueológico de Lancia, Localidad = Villasabariego, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Castro Ventosa, Localidad = Pieros, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Villa Romana ;La Tejada;, Localidad = Quintanilla de la Cueza, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Ermita rupestre de San Martín, Localidad = Villarén de Valdivia, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = La Velilla, Localidad = Osorno, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Monte Cildá, Localidad = Olleros de Pisuerga, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Yacimiento ;El Castillo;, Localidad = Saldeana, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Dolmen de la Ermita de Galisancho, Localidad = Galisancho, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = El Cerro del Berrueco, Localidad = Tejado (El), motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Dolmen de Casa del Moro, Localidad = Muelledes, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Dolmen de Terriñuelo, Localidad = Aldeavieja de Tormes, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = El Castro de Irueña, Localidad = Fuenteguinaldo, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Lerilla, Localidad = Zamarra, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Castro de Yecla de Yeltes, Localidad = Yecla de Yeltes, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Cueva de los Siete Altares, Localidad = Villaseca, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Cerro de la Virgen del Castillo, Localidad = Bernardos, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = La villa romana de Santa Lucía, Localidad = Aguilafuente, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Uxama, Localidad = Osma, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = El Prado de las Cruces, Localidad = Avila, motivo = Provincia sin tilde, operación = Intentar reparar en la siguiente etapa}

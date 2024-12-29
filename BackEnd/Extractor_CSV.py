@@ -1,3 +1,4 @@
+import sys
 import os
 import pandas as pd
 import Coords_converter
@@ -8,6 +9,12 @@ from utils.Filtros import *
 from utils.Otros import *
 from utils.Conversores import convertir_coordenadas_utm
 from utils.Location_Finder import LocationFinder
+
+# Configurar la fuente de datos y los loggers
+if len(sys.argv) > 1:
+    data_source = sys.argv[1]
+    set_data_source(data_source)
+    setup_loggers(data_source)
 
 # Directorio actual
 print("Current working directory:", os.getcwd())
@@ -101,5 +108,27 @@ else:
     
 convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida)
 
-# Procesar y guardar el archivo JSON
 process_and_save_json(ruta_json_salida)
+
+# Cargar los datos actualizados
+with open(ruta_json_salida, 'r', encoding='utf-8') as f:
+    datos_actualizados = json.load(f)
+
+# Crear nuevo DataFrame con los datos actualizados
+df_result = pd.DataFrame(datos_actualizados)
+
+# Segunda validación después de Location Finder
+registros_validos = []
+for _, row in df_result.iterrows():
+    if aplicar_filtros("CSV", row['nomMonumento'], row['nomProvincia'], row['nomLocalidad'], 
+                      row['codigo_postal'], row['latitud'], row['longitud'], row['direccion'], 
+                      set(), pasadoPorLocationFinder=True):
+        registros_validos.append(row)
+
+# Actualizar el DataFrame con solo los registros válidos
+df_result = pd.DataFrame(registros_validos)
+
+# Guardar los resultados finales validados
+df_result.to_json(ruta_json_salida, orient='records', force_ascii=False)
+
+log_statistics()

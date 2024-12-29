@@ -3,6 +3,7 @@ import sys
 import subprocess
 from SQL.BDConnection import BDConnection
 from SQL.Json_Loader import cargar_datos
+from BackEnd.utils.Otros import set_data_source, setup_loggers
 
 def get_python_command():
     """Detecta qué comando de Python está disponible en el sistema"""
@@ -26,17 +27,17 @@ def ejecutar_extractor(tipo):
     if tipo == "csv":
         extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_CSV.py")
         result_file = os.path.join(current_dir, "Resultados", "CSVtoJSON_Corregido.json")
-        subprocess.run([python_cmd, extractor_script])
+        subprocess.run([python_cmd, extractor_script, tipo])
         return result_file
     elif tipo == "json":
         extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_JSON.py")
         result_file = os.path.join(current_dir, "Resultados", "JSONtoJSON_con_coords.json")
-        subprocess.run([python_cmd, extractor_script])
+        subprocess.run([python_cmd, extractor_script, tipo])
         return result_file
     elif tipo == "xml":
         extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_XML.py")
         result_file = os.path.join(current_dir, "Resultados", "XMLtoJSON_con_coords.json")
-        subprocess.run([python_cmd, extractor_script])
+        subprocess.run([python_cmd, extractor_script, tipo])
         return result_file
     else:
         raise ValueError("Tipo de extractor no válido. Use 'csv', 'json' o 'xml'.")
@@ -48,6 +49,12 @@ def main():
         return
 
     tipo_extractor = sys.argv[1]
+    
+    # Establecer la fuente de datos global
+    set_data_source(tipo_extractor)
+    
+    # Configurar los loggers
+    setup_loggers(tipo_extractor)
 
     try:
         # Ejecutar el extractor correspondiente
