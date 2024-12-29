@@ -33,9 +33,12 @@ def setup_loggers(source):
     set_data_source(source)  # Usar la función para establecer la fuente
     
     # Define las rutas para los diferentes logs
-    log_rechazados_path = root_dir / 'Resultados' / f'log-{data_source.lower()}' / f'log-rechazados-{data_source.lower()}.log'
-    log_reparados_path = root_dir / 'Resultados' / f'log-{data_source.lower()}' / f'log-reparados-{data_source.lower()}.log'
-    log_estadisticas_path = root_dir / 'Resultados' / f'log-{data_source.lower()}' / f'log-estadisticas-{data_source.lower()}.log'
+    log_dir = root_dir / 'Resultados' / f'log-{data_source.lower()}'
+    os.makedirs(log_dir, exist_ok=True)  # Crear el directorio si no existe
+
+    log_rechazados_path = log_dir / f'log-rechazados-{data_source.lower()}.log'
+    log_reparados_path = log_dir / f'log-reparados-{data_source.lower()}.log'
+    log_estadisticas_path = log_dir / f'log-estadisticas-{data_source.lower()}.log'
 
     # Configurar el logger para registros rechazados
     logger_rechazados = logging.getLogger(f'rechazados_{data_source}')
