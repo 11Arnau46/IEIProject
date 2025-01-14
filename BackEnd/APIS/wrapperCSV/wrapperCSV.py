@@ -61,16 +61,6 @@ class WrapperCSVExecute(Resource):
         #Execute the Wrapper_CSV.py
         process_csv()
         
-        # Execute the command with python3
-        try:
-            subprocess.run(["python3", main_py_path, "csv"], check=True)
-        except subprocess.CalledProcessError as e:
-            print(f"python3 failed with error: {e}, trying py command")
-            try:
-                subprocess.run(["py", main_py_path, "csv"], check=True)
-            except subprocess.CalledProcessError as e:
-                return {"error": f"Subprocess failed with error: {e}"}, 500
-        
         # Define the path to the output file
         output_file_path = root_dir / 'Resultados' / 'CSVtoJSON_Corregido.json'
         
