@@ -1,11 +1,16 @@
-from flask import Flask, Response
+import sys
+from pathlib import Path
+from flask import Flask, jsonify, request, send_from_directory, Response
 from flask_restful import Api, Resource
 from flask_swagger_ui import get_swaggerui_blueprint
-from pathlib import Path
+from flask_cors import CORS
+import logging
 import subprocess
 import os
 
 app = Flask(__name__)
+CORS(app)
+
 api = Api(app)
 
 # Swagger configuration
@@ -22,9 +27,11 @@ swaggerui_blueprint = get_swaggerui_blueprint(
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
 
-#todo: No usar rutas y subprocesos, usar funciones definidas que pueden ser exportadas y reutilizadas
 # Define the root project directory
 root_dir = Path(__file__).resolve().parents[3]
+sys.path.append(str(root_dir))
+
+from BackEnd.Wrapper_CSV import process_csv
 
 class WrapperCSVExecute(Resource):
     """
@@ -51,11 +58,8 @@ class WrapperCSVExecute(Resource):
         int
             HTTP status code 500 if the subprocess fails.
         """
-        # Define the relative path to main.py
-        main_py_path = root_dir / 'main.py'
-        
-        # Print the path to main.py for debugging purposes
-        print("Path to main.py:", main_py_path)
+        #Execute the Wrapper_CSV.py
+        process_csv()
         
         # Execute the command with python3
         try:
@@ -135,7 +139,7 @@ class WrapperCSVLog(Resource):
         int
             HTTP status code 200 if the file is read successfully, 404 if the file is not found, or 500 if another error occurs.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-summary.log'
+        log_file_path = root_dir / 'Resultados' / 'log-csv' /'log-estadisticas-csv.log'
         try:
             with open(log_file_path, 'r', encoding='utf-8') as log_file:
                 log_data = log_file.read()
@@ -159,7 +163,7 @@ class WrapperCSVLog(Resource):
         int
             HTTP status code 200 if the file is cleared successfully, or 500 if another error occurs.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-summary.log'
+        log_file_path = root_dir / 'Resultados' / 'log-csv' /'log-estadisticas-csv.log'
         try:
             open(log_file_path, 'w').close()
             return {"message": "Log file cleared successfully"}

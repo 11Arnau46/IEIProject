@@ -4,40 +4,26 @@ import subprocess
 from SQL.BDConnection import BDConnection
 from SQL.Json_Loader import cargar_datos
 from BackEnd.utils.Otros import set_data_source, setup_loggers
+from BackEnd.Wrapper_CSV import process_csv
+from BackEnd.Wrapper_JSON import process_json
+from BackEnd.Wrapper_XML import process_xml
 
-def get_python_command():
-    """Detecta qué comando de Python está disponible en el sistema"""
-    try:
-        # Intenta primero con 'python'
-        subprocess.run(["python", "--version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        return "python"
-    except FileNotFoundError:
-        try:
-            # Si 'python' no funciona, intenta con 'python3'
-            subprocess.run(["python3", "--version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            return "python3"
-        except FileNotFoundError:
-            raise RuntimeError("No se encontró ninguna instalación de Python válida")
 
 def ejecutar_extractor(tipo):
     # Get the directory of the current file
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    python_cmd = get_python_command()
     
     if tipo == "csv":
-        extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_CSV.py")
+        process_csv() 
         result_file = os.path.join(current_dir, "Resultados", "CSVtoJSON_Corregido.json")
-        subprocess.run([python_cmd, extractor_script, tipo])
         return result_file
     elif tipo == "json":
-        extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_JSON.py")
+        process_json()
         result_file = os.path.join(current_dir, "Resultados", "JSONtoJSON_con_coords.json")
-        subprocess.run([python_cmd, extractor_script, tipo])
         return result_file
     elif tipo == "xml":
-        extractor_script = os.path.join(current_dir, "BackEnd", "Extractor_XML.py")
+        process_xml()
         result_file = os.path.join(current_dir, "Resultados", "XMLtoJSON_con_coords.json")
-        subprocess.run([python_cmd, extractor_script, tipo])
         return result_file
     else:
         raise ValueError("Tipo de extractor no válido. Use 'csv', 'json' o 'xml'.")

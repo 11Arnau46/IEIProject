@@ -29,6 +29,10 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
 # Define the root project directory
 root_dir = Path(__file__).resolve().parents[3]
+sys.path.append(str(root_dir))
+
+from BackEnd.Wrapper_JSON import process_json
+
 
 class WrapperJSONExecute(Resource):
     """
@@ -55,21 +59,8 @@ class WrapperJSONExecute(Resource):
         int
             HTTP status code 500 if the subprocess fails.
         """
-        # Define the relative path to main.py
-        main_py_path = root_dir / 'main.py'
-        
-        # Print the path to main.py for debugging purposes
-        print("Path to main.py:", main_py_path)
-        
-        # Execute the command with python3
-        try:
-            subprocess.run(["python3", main_py_path, "json"], check=True)
-        except subprocess.CalledProcessError as e:
-            print(f"python3 failed with error: {e}, trying py command")
-            try:
-                subprocess.run(["py", main_py_path, "json"], check=True)
-            except subprocess.CalledProcessError as e:
-                return {"error": f"Subprocess failed with error: {e}"}, 500
+        # Execute the Wrapper_JSON.py 
+        process_json()
         
         # Define the path to the output file
         output_file_path = root_dir / 'Resultados' / 'JSONtoJSON_con_coords.json'
@@ -139,7 +130,7 @@ class WrapperJSONLog(Resource):
         int
             HTTP status code 200 if the file is read successfully, 404 if the file is not found, or 500 if another error occurs.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-summary.log'
+        log_file_path = root_dir / 'Resultados' / 'log-json'/ 'log-estadisticas-json.log'
         try:
             with open(log_file_path, 'r', encoding='utf-8') as log_file:
                 log_data = log_file.read()
@@ -163,7 +154,7 @@ class WrapperJSONLog(Resource):
         int
             HTTP status code 200 if the file is cleared successfully, or 500 if another error occurs.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-summary.log'
+        log_file_path = root_dir / 'Resultados' / 'log-json'/ 'log-estadisticas-json.log'
         try:
             open(log_file_path, 'w').close()
             return {"message": "Log file cleared successfully"}

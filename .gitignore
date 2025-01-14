@@ -20,3 +20,9 @@ SQL/__pycache__/BDConnection.cpython-310.pyc
 SQL/BDConnection.py
 SQL/BDConnection.py
 main.py
+Fuentes_de_datos/.DS_Store
+venv/.DS_Store
+BackEnd/__pycache__/Wrapper_CSV.cpython-312.pyc
+BackEnd/__pycache__/Wrapper_JSON.cpython-312.pyc
+BackEnd/__pycache__/Wrapper_XML.cpython-312.pyc
+/venv/

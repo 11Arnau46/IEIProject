@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import json
-import Coords_converter
+from BackEnd.utils.Coords_converter import CoordsConverter
 
 
 def convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida):
@@ -18,7 +18,7 @@ def convertir_coordenadas_utm(ruta_json_entrada, ruta_json_salida):
 
             try:
                 # Convertir las coordenadas UTM a latitud y longitud
-                lat, lon = Coords_converter.convert_utm(float(monumento["latitud"]), float(monumento["longitud"]))
+                lat, lon = CoordsConverter.convert_utm(float(monumento["latitud"]), float(monumento["longitud"]))
                 
                 if lat and lon:
                     monumento["latitud"] = lat
