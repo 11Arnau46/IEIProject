@@ -186,6 +186,8 @@ if __name__ == '__main__':
     print("Swagger UI: https://localhost:8000/swagger-ui")
     print("API Endpoint: https://localhost:8000/load")
     print("Documentación JSON: https://localhost:8000/static/swagger.json")
+    print("Endpoints de cargas:")
+    print("  → GET    https://localhost:8000/load/?types=csv,json,xml&api_key=")
     print("Endpoints de logs:")
     print("  → GET    https://localhost:8000/log/{wrapper}/{tipo}")
     print("  → DELETE https://localhost:8000/log/{wrapper}/{tipo}")
