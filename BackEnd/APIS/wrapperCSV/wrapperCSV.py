@@ -47,7 +47,7 @@ class WrapperCSVExecute(Resource):
         CSVtoJSON()
         
         # Define the path to the output file
-        output_file_path = root_dir / 'BackEnd' / 'CSVtoJSON.json'
+        output_file_path = root_dir / 'BackEnd' / 'Wrappers' / 'CSVtoJSON.json'
         
         # Print the path to the output file for debugging purposes
         print("Path to output file:", output_file_path)

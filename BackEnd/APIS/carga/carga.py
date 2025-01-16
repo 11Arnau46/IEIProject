@@ -20,6 +20,7 @@ from BackEnd.Extractores import Extractor_XML
 from BackEnd.Extractores import Extractor_CSV
 from BackEnd.Extractores import ExtractorXML
 from BackEnd.Extractores import ExtractorJSON
+from BackEnd.Extractores import ExtractorCSV
 from BackEnd.utils.SQL import SQL
 
 app = Flask(__name__)
@@ -121,7 +122,8 @@ class LoadData(Resource):
                 data = None
                 
                 if extractor_type == 'csv':
-                    data = Extractor_CSV.get_datos()
+                    ExtractorCSV.process_json()
+                    data = ExtractorCSV.get_datos()
                 elif extractor_type == 'json':
                     ExtractorJSON.process_json()
                     data = ExtractorJSON.get_datos()
