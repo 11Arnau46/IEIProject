@@ -4,7 +4,11 @@ from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
 import os
 import sys
+import logging
 from pathlib import Path
+
+# Configuración básica de logging
+logging.basicConfig(level=logging.DEBUG)
 
 # Define the root project directory
 root_dir = Path(__file__).resolve().parents[3]
@@ -49,22 +53,26 @@ API_KEY = os.getenv('API_KEY')
 def require_api_key(func):
     def wrapper(*args, **kwargs):
         key = request.args.get('api_key')
+        logging.debug(f"API Key received: {key}")
         if key and key == API_KEY:
             return func(*args, **kwargs)
         else:
-            return jsonify({"error": "Unauthorized"}), 401
+            logging.warning("Unauthorized API Key.")
+            return {"error": "Unauthorized"}, 401  # Return a dictionary directly
     return wrapper
 
 class LoadData(Resource):
     @require_api_key
     def post(self):
         try:
-            # Initialize the database
+            logging.debug("Initializing the database...")
             sql_instance = SQL()
             sql_instance.initialize_db()
 
-            # Get the extractor type from the request
+            logging.debug("Retrieving extractor type from the request...")
             extractor_type = request.args.get('type')
+            logging.debug(f"Extractor type received: {extractor_type}")
+
             if extractor_type == 'csv':
                 data = Extractor_CSV.get_datos()
             elif extractor_type == 'json':
@@ -72,17 +80,29 @@ class LoadData(Resource):
             elif extractor_type == 'xml':
                 data = Extractor_XML.get_datos()
             else:
-                return jsonify({"error": "Invalid extractor type"}), 400
+                logging.error("Invalid extractor type.")
+                return {"error": "Invalid extractor type"}, 400
 
-            # Load the data into the database
+            logging.debug(f"Data extracted: {data}")
+
+            # Ensure the data is JSON serializable
+            if not isinstance(data, (list, dict)):
+                logging.error("Extracted data is not JSON serializable.")
+                return {"error": "Extracted data is not JSON serializable"}, 500
+
+            logging.debug("Loading data into the database...")
             sql_instance.cargar_datos(data)
-            return jsonify({"message": "Database initialized and data loaded successfully"}), 200
+
+            logging.info("Data successfully loaded into the database.")
+            return {"message": "Database initialized and data loaded successfully"}, 200
+
         except Exception as e:
-            return jsonify({"error": f"An error occurred: {e}"}), 500
+            logging.error(f"An unexpected error occurred: {str(e)}")
+            return {"error": f"An error occurred: {e}"}, 500
 
 # Add the resources to the API
 api.add_resource(LoadData, '/load')
 
-# https://localhost:8000/swagger-ui/?api_key=FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY#/
+# Run the app
 if __name__ == '__main__':
     app.run(ssl_context=('cert.pem', 'key.pem'), debug=True, host='localhost', port=8000)
