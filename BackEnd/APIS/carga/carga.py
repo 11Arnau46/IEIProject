@@ -66,6 +66,8 @@ class LoadData(Resource):
 
             for extractor_type in extractor_types:
                 logging.debug(f"Processing extractor type: {extractor_type}")
+                data = None
+                
                 if extractor_type == 'csv':
                     data = Extractor_CSV.get_datos()
                 elif extractor_type == 'json':
@@ -76,14 +78,20 @@ class LoadData(Resource):
                     logging.error(f"Invalid extractor type: {extractor_type}")
                     return {"error": f"Invalid extractor type: {extractor_type}"}, 400
 
+                if data is None:
+                    error_msg = f"No se pudieron obtener datos del extractor {extractor_type}. Verifica que el servicio {extractor_type} esté funcionando."
+                    logging.error(error_msg)
+                    return {"error": error_msg}, 500
+
                 logging.debug(f"Data extracted for {extractor_type}: {data}")
                 sql_instance.cargar_datos(data)
 
             logging.info("Data successfully loaded into the database.")
             return {"message": "Database initialized and data loaded successfully"}, 200
         except Exception as e:
-            logging.error(f"An error occurred: {e}")
-            return {"error": f"An error occurred: {e}"}, 500
+            error_msg = f"An error occurred while processing {extractor_type if 'extractor_type' in locals() else 'unknown'} data: {str(e)}"
+            logging.error(error_msg)
+            return {"error": error_msg}, 500
 
 class WrapperLog(Resource):
     """
@@ -194,11 +202,13 @@ if __name__ == '__main__':
     print("Swagger UI: https://localhost:8000/swagger-ui")
     print("API Endpoint: https://localhost:8000/load")
     print("Documentación JSON: https://localhost:8000/static/swagger.json")
-    print("Endpoints de cargas:")
+    print("\nEndpoints de carga de datos:")
     print("  → GET    https://localhost:8000/load/?types=csv,json,xml&api_key=")
-    print("Endpoints de logs:")
-    print("  → GET    https://localhost:8000/log/{wrapper}/{tipo}")
-    print("  → DELETE https://localhost:8000/log/{wrapper}/{tipo}")
-    print("  → DELETE https://localhost:8000/log/{wrapper}")
+    print("\nEndpoints de gestión de logs:")
+    print("  → GET    https://localhost:8000/log/{formato}/{tipo}")
+    print("           formatos: csv, json, xml")
+    print("           tipos: reparados, rechazados, estadisticas")
+    print("  → DELETE https://localhost:8000/log/{formato}/{tipo}")
+    print("  → DELETE https://localhost:8000/log/{formato}")
     print("================================\n")
     app.run(ssl_context=(cert_path, key_path), debug=True, host='0.0.0.0', port=8000)
