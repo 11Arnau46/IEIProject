@@ -6,15 +6,16 @@ import os
 import sys
 from pathlib import Path
 
+from BackEnd.Extractores import Extractor_JSON
+from BackEnd.Extractores import Extractor_XML
+from BackEnd.Extractores import Extractor_CSV
 
 # Define the root project directory
 root_dir = Path(__file__).resolve().parents[3]
 sys.path.append(str(root_dir))
 
+
 from BackEnd.utils.SQL import SQL
-from BackEnd.Extractores.Extractor_CSV import *
-from BackEnd.Extractores.Extractor_JSON import *
-from BackEnd.Extractores.Extractor_XML import *
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
