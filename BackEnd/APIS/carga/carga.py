@@ -184,28 +184,68 @@ class WrapperLog(Resource):
             # Generar informe general
             report = self._generate_general_report(sources)
             
-            if tipo == "estadisticas":
-                response_text = "--------------------------------------------------------------------------------\n"
+            if tipo:
+                if tipo == "estadisticas":
+                    response_text = "--------------------------------------------------------------------------------\n"
+                    response_text += "ESTADÍSTICAS GENERALES (fuente = COMBINADO)\n"
+                    response_text += "--------------------------------------------------------------------------------\n"
+                    response_text += f"Total de datos procesados: {report['processed']}\n"
+                    response_text += f"Total de registros cargados correctamente: {report['loaded']}\n"
+                    response_text += f"Total de registros rechazados: {report['rejected']}\n"
+                    response_text += f"Total de registros reparados: {report['repaired']}\n"
+                    response_text += "--------------------------------------------------------------------------------\n"
+                    return Response(response_text, mimetype='text/plain')
+                elif tipo == "rechazados":
+                    response_text = "Registros con errores y rechazados:\n"
+                    response_text += "{Fuente de datos, nombre, Localidad, motivo del error}\n"
+                    response_text += "\n".join(report['details']['rechazados'])
+                    return Response(response_text, mimetype='text/plain')
+                elif tipo == "reparados":
+                    response_text = "Registros con errores y reparados:\n"
+                    response_text += "{Fuente de datos, nombre, Localidad, motivo del error, operación realizada}\n"
+                    response_text += "\n".join(report['details']['reparados'])
+                    return Response(response_text, mimetype='text/plain')
+            else:
+                # Generar informe completo con todos los detalles
+                response_text = "================================================================================\n"
+                response_text += "INFORME GENERAL COMPLETO\n"
+                response_text += "================================================================================\n\n"
+                
+                # Sección de estadísticas
+                response_text += "--------------------------------------------------------------------------------\n"
                 response_text += "ESTADÍSTICAS GENERALES (fuente = COMBINADO)\n"
                 response_text += "--------------------------------------------------------------------------------\n"
                 response_text += f"Total de datos procesados: {report['processed']}\n"
                 response_text += f"Total de registros cargados correctamente: {report['loaded']}\n"
                 response_text += f"Total de registros rechazados: {report['rejected']}\n"
                 response_text += f"Total de registros reparados: {report['repaired']}\n"
+                response_text += "--------------------------------------------------------------------------------\n\n"
+                
+                # Sección de rechazados
                 response_text += "--------------------------------------------------------------------------------\n"
-                return Response(response_text, mimetype='text/plain')
-            elif tipo == "rechazados":
-                response_text = "Registros con errores y rechazados:\n"
+                response_text += "REGISTROS RECHAZADOS\n"
+                response_text += "--------------------------------------------------------------------------------\n"
+                response_text += "Registros con errores y rechazados:\n"
                 response_text += "{Fuente de datos, nombre, Localidad, motivo del error}\n"
-                response_text += "\n".join(report['details']['rechazados'])
-                return Response(response_text, mimetype='text/plain')
-            elif tipo == "reparados":
-                response_text = "Registros con errores y reparados:\n"
+                if report['details']['rechazados']:
+                    response_text += "\n".join(report['details']['rechazados'])
+                else:
+                    response_text += "No hay registros rechazados.\n"
+                response_text += "\n--------------------------------------------------------------------------------\n\n"
+                
+                # Sección de reparados
+                response_text += "--------------------------------------------------------------------------------\n"
+                response_text += "REGISTROS REPARADOS\n"
+                response_text += "--------------------------------------------------------------------------------\n"
+                response_text += "Registros con errores y reparados:\n"
                 response_text += "{Fuente de datos, nombre, Localidad, motivo del error, operación realizada}\n"
-                response_text += "\n".join(report['details']['reparados'])
+                if report['details']['reparados']:
+                    response_text += "\n".join(report['details']['reparados'])
+                else:
+                    response_text += "No hay registros reparados.\n"
+                response_text += "\n--------------------------------------------------------------------------------\n"
+                
                 return Response(response_text, mimetype='text/plain')
-            else:
-                return jsonify(report)
 
         if tipo not in ["estadisticas", "rechazados", "reparados"]:
             return {"error": "Tipo de log no válido"}, 400
