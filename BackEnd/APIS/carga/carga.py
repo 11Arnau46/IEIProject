@@ -48,21 +48,9 @@ def swagger_json():
 
 # Read the API key from an environment variable
 API_KEY = os.getenv('API_KEY')
-
-# Authentication decorator
-def require_api_key(func):
-    def wrapper(*args, **kwargs):
-        key = request.args.get('api_key')
-        logging.debug(f"API Key received: {key}")
-        if key and key == API_KEY:
-            return func(*args, **kwargs)
-        else:
-            logging.warning("Unauthorized API Key.")
-            return {"error": "Unauthorized"}, 401  # Return a dictionary directly
-    return wrapper
+print(API_KEY)
 
 class LoadData(Resource):
-    @require_api_key
     def post(self):
         try:
             logging.debug("Initializing the database...")
