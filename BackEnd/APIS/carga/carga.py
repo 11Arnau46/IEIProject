@@ -74,6 +74,7 @@ class LoadData(Resource):
                 elif extractor_type == 'json':
                     data = Extractor_JSON.get_datos()
                 elif extractor_type == 'xml':
+                    ExtractorXML.process_json()
                     data = ExtractorXML.get_datos()
                 else:
                     logging.error(f"Invalid extractor type: {extractor_type}")
