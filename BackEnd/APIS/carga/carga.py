@@ -120,72 +120,99 @@ class WrapperLog(Resource):
         
         return None
 
+    def _generate_general_report(self, sources):
+        """
+        Genera un informe general combinando las estadísticas de múltiples fuentes.
+        """
+        total_stats = {
+            'processed': 0,
+            'loaded': 0,
+            'rejected': 0,
+            'repaired': 0,
+            'details': {
+                'rechazados': [],
+                'reparados': []
+            }
+        }
+
+        for source in sources:
+            if source not in ["xml", "json", "csv"]:
+                continue
+
+            # Procesar estadísticas
+            stats_path = root_dir / 'Resultados' / f'log-{source}' / f'log-estadisticas-{source}.log'
+            stats_content = self._read_log_file(stats_path)
+            if stats_content:
+                for line in stats_content.split('\n'):
+                    if "Total de datos procesados:" in line:
+                        total_stats['processed'] += int(line.split(':')[1].strip())
+                    elif "Total de registros cargados correctamente:" in line:
+                        total_stats['loaded'] += int(line.split(':')[1].strip())
+                    elif "Total de registros rechazados:" in line:
+                        total_stats['rejected'] += int(line.split(':')[1].strip())
+                    elif "Total de registros reparados:" in line:
+                        total_stats['repaired'] += int(line.split(':')[1].strip())
+
+            # Procesar rechazados
+            rejected_path = root_dir / 'Resultados' / f'log-{source}' / f'log-rechazados-{source}.log'
+            rejected_content = self._read_log_file(rejected_path)
+            if rejected_content:
+                total_stats['details']['rechazados'].extend(
+                    [line for line in rejected_content.split('\n') if line.strip()]
+                )
+
+            # Procesar reparados
+            repaired_path = root_dir / 'Resultados' / f'log-{source}' / f'log-reparados-{source}.log'
+            repaired_content = self._read_log_file(repaired_path)
+            if repaired_content:
+                total_stats['details']['reparados'].extend(
+                    [line for line in repaired_content.split('\n') if line.strip()]
+                )
+
+        return total_stats
+
     @require_api_key
     def get(self, wrapper, tipo=None):
         """
         Obtiene el contenido del archivo de log según el tipo especificado y el wrapper.
         """
+        if wrapper == "general":
+            sources = request.args.get('sources', '').split(',')
+            if not sources or '' in sources:
+                return {"error": "Debe especificar las fuentes de datos (sources=csv,json,xml)"}, 400
+
+            # Generar informe general
+            report = self._generate_general_report(sources)
+            
+            if tipo == "estadisticas":
+                response_text = "--------------------------------------------------------------------------------\n"
+                response_text += "ESTADÍSTICAS GENERALES (fuente = COMBINADO)\n"
+                response_text += "--------------------------------------------------------------------------------\n"
+                response_text += f"Total de datos procesados: {report['processed']}\n"
+                response_text += f"Total de registros cargados correctamente: {report['loaded']}\n"
+                response_text += f"Total de registros rechazados: {report['rejected']}\n"
+                response_text += f"Total de registros reparados: {report['repaired']}\n"
+                response_text += "--------------------------------------------------------------------------------\n"
+                return Response(response_text, mimetype='text/plain')
+            elif tipo == "rechazados":
+                response_text = "Registros con errores y rechazados:\n"
+                response_text += "{Fuente de datos, nombre, Localidad, motivo del error}\n"
+                response_text += "\n".join(report['details']['rechazados'])
+                return Response(response_text, mimetype='text/plain')
+            elif tipo == "reparados":
+                response_text = "Registros con errores y reparados:\n"
+                response_text += "{Fuente de datos, nombre, Localidad, motivo del error, operación realizada}\n"
+                response_text += "\n".join(report['details']['reparados'])
+                return Response(response_text, mimetype='text/plain')
+            else:
+                return jsonify(report)
+
         if tipo not in ["estadisticas", "rechazados", "reparados"]:
             return {"error": "Tipo de log no válido"}, 400
             
         if wrapper not in ["xml", "json", "csv", "general"]:
             return {"error": "Tipo de wrapper no válido"}, 400
 
-        if wrapper == "general":
-            # Obtener las fuentes de datos de los parámetros de la consulta
-            sources = request.args.get('sources', '').split(',')
-            if not sources or '' in sources:
-                return {"error": "Debe especificar las fuentes de datos (sources=csv,json,xml)"}, 400
-
-            combined_content = ""
-            total_processed = 0
-            total_loaded = 0
-            total_rejected = 0
-            total_repaired = 0
-            if tipo == "estadisticas":
-                combined_content = "--------------------------------------------------------------------------------\n"
-                combined_content += "ESTADÍSTICAS GENERALES (fuente = COMBINADO)\n"
-                combined_content += "--------------------------------------------------------------------------------\n"
-            elif tipo == "reparados":
-                combined_content = "Registros con errores y reparados:\n"
-                combined_content += "{Fuente de datos, nombre, Localidad, motivo del error, operación realizada}\n"
-            elif tipo == "rechazados":
-                combined_content = "Registros con errores y rechazados:\n"
-                combined_content += "{Fuente de datos, nombre, Localidad, motivo del error}\n"
-            for source in sources:
-                if source not in ["xml", "json", "csv"]:
-                    continue
-                
-                log_file_path = root_dir / 'Resultados' / f'log-{source}' / f'log-{tipo}-{source}.log'
-                content = self._read_log_file(log_file_path)
-                
-                if content:
-                    if tipo == "estadisticas":
-                        # Extraer números de las estadísticas
-                        for line in content.split('\n'):
-                            if "Total de datos procesados:" in line:
-                                total_processed += int(line.split(':')[1].strip())
-                            elif "Total de registros cargados correctamente:" in line:
-                                total_loaded += int(line.split(':')[1].strip())
-                            elif "Total de registros rechazados:" in line:
-                                total_rejected += int(line.split(':')[1].strip())
-                            elif "Total de registros reparados:" in line:
-                                total_repaired += int(line.split(':')[1].strip())
-                    else:
-                        # Para rechazados y reparados, añadir el contenido con un único salto de línea entre fuentes
-                        if content.strip():  # Solo añadir contenido si no está vacío
-                            if combined_content.endswith('\n'):
-                                combined_content += content.strip()
-                            else:
-                                combined_content += '\n' + content.strip()
-            if tipo == "estadisticas":
-                combined_content += f"Total de datos procesados: {total_processed}\n"
-                combined_content += f"Total de registros cargados correctamente: {total_loaded}\n"
-                combined_content += f"Total de registros rechazados: {total_rejected}\n"
-                combined_content += f"Total de registros reparados: {total_repaired}\n"
-                combined_content += "--------------------------------------------------------------------------------\n"
-            return Response(combined_content, mimetype='text/plain', status='200')
-        
         # Código original para logs individuales
         log_file_path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{tipo}-{wrapper}.log'
         content = self._read_log_file(log_file_path)
