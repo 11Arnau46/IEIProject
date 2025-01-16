@@ -77,14 +77,16 @@
                         "examples": {
                             "application/json": [
                                 {
-                                    "nombre": "Puente de Alcántara",
-                                    "tipo": "Puente",
-                                    "direccion": "Calle Puente, 1",
-                                    "localidad": "Toledo",
-                                    "codigo_postal": "45001",
-                                    "provincia": "Toledo",
-                                    "descripcion": "Un puente histórico sobre el río Tajo."
-                                }
+                                    "nombre_monumento": "Puente de Piedra de Zamora",
+                                    "tipo_monumento": "Puente",
+                                    "direccion": "Puente de Piedra",
+                                    "nombre_localidad": "Zamora",
+                                    "codigo_postal": "49028",
+                                    "nombre_provincia": "Zamora",
+                                    "descripcion": "Es uno de los cinco puentes que atraviesan el río Duero a su paso por Zamora. Durante siglos fue el único paso del río en la ciudad, comunicando los barrios del arrabal con el centro histórico de la ciudad. Al formar parte de la Vía de la Plata, fue un importante lugar de paso del río Duero para personas, mercancías y rebaños trashumantes. Fue terminado de construir a comienzos del siglo XIII y reformado posteriormente. Constituye uno de los símbolos de la ciudad. Formado por dieciséis arcos apuntados que cruzan una de las zonas más anchas del Duero a su paso por Zamora. En origen estaba almenado y poseía dos grandes torres defensivas en los extremos, siendo una prolongación de la muralla del tercer recinto que hasta allí llegaba. Poseía además una capilla anexa en la parte izquierda dedicada a la Virgen de la Guía, patrona de los caminantes, que hoy en día se encuentra en la Iglesia del Santo Sepulcro. Estos elementos fueron eliminados a principios del S.XX para facilitar el acceso de vehículos. Hoy en día el puente es peatonal, no permitiéndose el paso a vehículos.",
+                                    "latitud": 41.4998,
+                                    "longitud": -5.74812
+                                  }
                             ]
                         }
                     },
@@ -97,7 +99,7 @@
                         }
                     },
                     "404": {
-                        "description": "No se encontraron monumentos con los filtros especificados",
+                        "description": "No se encontraron monumentos para los filtros especificados.",
                         "examples": {
                             "application/json": {
                                 "error": "No se encontraron monumentos para los filtros especificados."
@@ -105,7 +107,7 @@
                         }
                     },
                     "500": {
-                        "description": "Error en el servidor al procesar la solicitud",
+                        "description": "Error interno del servidor. Intente más tarde.",
                         "examples": {
                             "application/json": {
                                 "error": "Error interno del servidor. Intente más tarde."
