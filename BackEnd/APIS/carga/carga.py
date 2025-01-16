@@ -362,6 +362,25 @@ class WrapperLog(Resource):
             except Exception as e:
                 return {"error": f"Error al eliminar los archivos de log: {e}"}, 500
 
+class DeleteTables(Resource):
+    @require_api_key
+    def delete(self):
+        """
+        Borra todas las tablas de la base de datos.
+        """
+        try:
+            sql_instance = SQL()
+            success, message = sql_instance.borrar_tablas()
+            
+            if success:
+                return {"message": message}, 200
+            else:
+                return {"error": message}, 500
+        except Exception as e:
+            error_msg = f"Error al borrar las tablas: {str(e)}"
+            logging.error(error_msg)
+            return {"error": error_msg}, 500
+
 # Swagger UI configuration
 SWAGGER_URL = '/swagger-ui'
 API_URL = '/static/swagger.json'
@@ -386,6 +405,7 @@ api.add_resource(LoadData, '/load')
 api.add_resource(WrapperLog, 
                 '/log/<string:wrapper>/<string:tipo>',
                 '/log/<string:wrapper>')
+api.add_resource(DeleteTables, '/borrar-tablas')
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)

@@ -33,6 +33,10 @@
             "description": "Endpoints related to data loading"
         },
         {
+            "name": "Base de Datos",
+            "description": "Endpoints para gestionar la base de datos"
+        },
+        {
             "name": "Log General",
             "description": "Endpoints para obtener logs combinados de múltiples fuentes"
         },
@@ -94,6 +98,36 @@
                     },
                     "500": {
                         "description": "Internal server error"
+                    }
+                }
+            }
+        },
+        "/borrar-tablas": {
+            "delete": {
+                "tags": [
+                    "Base de Datos"
+                ],
+                "summary": "Borrar todas las tablas de la base de datos",
+                "description": "Borra todas las tablas de la base de datos y las recrea vacías",
+                "parameters": [
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Todas las tablas han sido borradas exitosamente"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Error al borrar las tablas"
                     }
                 }
             }

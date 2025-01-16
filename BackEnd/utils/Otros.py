@@ -291,7 +291,7 @@ def log_statistics():
         logger_estadisticas.info(f"Número total de monumentos en el archivo: {sys.modules['__main__'].num_monumentos}")
     total_datos = total_records_added_correctly + total_records_rejected
     logger_estadisticas.info(f"Total de datos procesados: {total_datos}")
-    logger_estadisticas.info(f"Total de registros cargados correctamente: {total_records_added_correctly}")
+    logger_estadisticas.info(f"Total de registros cargados correctamente: {total_records_added_correctly - total_records_repaired}")
     logger_estadisticas.info(f"Total de registros rechazados: {total_records_rejected}")
     logger_estadisticas.info(f"Total de registros reparados: {total_records_repaired}")
     
