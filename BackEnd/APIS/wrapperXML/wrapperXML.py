@@ -1,5 +1,10 @@
 import sys
 from pathlib import Path
+
+# Define the root project directory and add it to Python path
+root_dir = Path(__file__).resolve().parents[3]
+sys.path.append(str(root_dir))
+
 from flask import Flask, jsonify, request, send_from_directory, Response
 from flask_restful import Api, Resource
 from flask_swagger_ui import get_swaggerui_blueprint
@@ -7,6 +12,8 @@ from flask_cors import CORS
 import logging
 import subprocess
 import os
+from BackEnd.utils.Otros import data_source
+from BackEnd.Wrappers.Wrapper_XML import process_xml
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -26,13 +33,6 @@ swaggerui_blueprint = get_swaggerui_blueprint(
 )
 
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
-
-# Define the root project directory
-root_dir = Path(__file__).resolve().parents[3]
-sys.path.append(str(root_dir))
-
-from BackEnd.Wrappers.Wrapper_XML import process_xml
-
 
 class WrapperXMLExecute(Resource):
     """
@@ -93,7 +93,7 @@ class WrapperXMLExecute(Resource):
         int
             HTTP status code 200 if the file is deleted successfully, 404 if the file is not found, or 500 if another error occurs.
         """
-        output_file_path = root_dir / 'Resultados' / 'XMLtoJSON_con_coords.'
+        output_file_path = root_dir / 'Resultados' / 'XMLtoJSON_con_coords.json'
         try:
             os.remove(output_file_path)
             return {"message": "Output file deleted successfully"}
@@ -133,6 +133,14 @@ class WrapperXMLLog(Resource):
         """
         Elimina el archivo de log según el tipo especificado.
         """
+        # Cerrar los handlers antes de eliminar
+        logger_name = f'estadisticas_{data_source}'
+        if logger_name in logging.root.manager.loggerDict:
+            logger = logging.getLogger(logger_name)
+            for handler in logger.handlers[:]:
+                handler.close()
+                logger.removeHandler(handler)
+
         if tipo == "estadisticas":
             log_file_path = root_dir / 'Resultados' / 'log-xml' / 'log-estadisticas-xml.log'
         elif tipo == "rechazados":
@@ -142,6 +150,16 @@ class WrapperXMLLog(Resource):
         elif tipo is None:
             # Eliminar todos los logs
             try:
+                # Cerrar todos los handlers
+                for log_type in ["estadisticas", "rechazados", "reparados"]:
+                    logger_name = f'{log_type}_{data_source}'
+                    if logger_name in logging.root.manager.loggerDict:
+                        logger = logging.getLogger(logger_name)
+                        for handler in logger.handlers[:]:
+                            handler.close()
+                            logger.removeHandler(handler)
+                
+                # Eliminar los archivos
                 for log_type in ["estadisticas", "rechazados", "reparados"]:
                     path = root_dir / 'Resultados' / 'log-xml' / f'log-{log_type}-xml.log'
                     if path.exists():
