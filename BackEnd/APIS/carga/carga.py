@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_restful import Api, Resource
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
@@ -6,15 +6,13 @@ import os
 import sys
 from pathlib import Path
 
-from BackEnd.Extractores import Extractor_JSON
-from BackEnd.Extractores import Extractor_XML
-from BackEnd.Extractores import Extractor_CSV
-
 # Define the root project directory
 root_dir = Path(__file__).resolve().parents[3]
 sys.path.append(str(root_dir))
 
-
+from BackEnd.Extractores import Extractor_JSON
+from BackEnd.Extractores import Extractor_XML
+from BackEnd.Extractores import Extractor_CSV
 from BackEnd.utils.SQL import SQL
 
 app = Flask(__name__)
@@ -39,6 +37,11 @@ swaggerui_blueprint = get_swaggerui_blueprint(
 
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
+# Serve the swagger.json file
+@app.route('/static/swagger.json')
+def swagger_json():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'swagger.json')
+
 # Read the API key from an environment variable
 API_KEY = os.getenv('API_KEY')
 
@@ -56,22 +59,23 @@ class LoadData(Resource):
     @require_api_key
     def post(self):
         try:
-            SQL.initialize_db()
+            # Initialize the database
+            sql_instance = SQL()
+            sql_instance.initialize_db()
 
             # Get the extractor type from the request
             extractor_type = request.args.get('type')
             if extractor_type == 'csv':
                 data = Extractor_CSV.get_datos()
-                SQL.cargar_datos(self,data)
             elif extractor_type == 'json':
                 data = Extractor_JSON.get_datos()
-                SQL.cargar_datos(self,data)
             elif extractor_type == 'xml':
                 data = Extractor_XML.get_datos()
-                SQL.cargar_datos(self,data)
             else:
                 return jsonify({"error": "Invalid extractor type"}), 400
 
+            # Load the data into the database
+            sql_instance.cargar_datos(data)
             return jsonify({"message": "Database initialized and data loaded successfully"}), 200
         except Exception as e:
             return jsonify({"error": f"An error occurred: {e}"}), 500
@@ -79,6 +83,6 @@ class LoadData(Resource):
 # Add the resources to the API
 api.add_resource(LoadData, '/load')
 
-# https://0.0.0.0:8000/swagger-ui/?api_key=FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY#/
+# https://localhost:8000/swagger-ui/?api_key=FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY#/
 if __name__ == '__main__':
     app.run(ssl_context=('cert.pem', 'key.pem'), debug=True, host='localhost', port=8000)
