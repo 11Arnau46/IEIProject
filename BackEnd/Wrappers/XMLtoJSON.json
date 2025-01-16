@@ -1,0 +1,342 @@
+{
+    "monumentos": {
+        "monumento": [
+            {
+                "identificador": "23941",
+                "nombre": "Risco La Zorrera",
+                "tipoMonumento": "Yacimientos arqueológicos",
+                "identificadorBienInteresCultural": "696",
+                "calle": "Risco La Zorrera",
+                "clasificacion": "Yacimiento",
+                "tipoConstruccion": "Arte rupestre",
+                "codigoPostal": "5489",
+                "Descripcion": "<p align=\"justify\">Descubierto en 1986 consta de dos paneles verticales y un tercero horizontal que cubre los anteriores. Pueden distinguirse tres fases de ejecuci&oacute;n, predominando en la primera los trazos de color rojo, en la segunda destaca una figura de forma humana, y la tercera incluye figuras animales y humanas alargadas.</p>\n<p align=\"justify\">Se ha interpretado como la representaci&oacute;n de un templo o altar. Est&aacute; protegido por una verja.</p>",
+                "periodoHistorico": [
+                    "Neolítico",
+                    "Edad del Hierro",
+                    "Edad del Bronce"
+                ],
+                "poblacion": {
+                    "provincia": "Ávila",
+                    "municipio": "Candeleda",
+                    "localidad": "Raso (El)"
+                },
+                "coordenadas": {
+                    "latitud": "40.170041",
+                    "longitud": "-5.339664"
+                }
+            },
+            {
+                "identificador": "23965",
+                "nombre": "Ruinas Romanas de San Julián de Valmuza",
+                "tipoMonumento": "Yacimientos arqueológicos",
+                "identificadorBienInteresCultural": "9108",
+                "calle": "Desvío a San Julian, Carretera Salamanca - Matilla de los Caños",
+                "clasificacion": "Yacimiento",
+                "tipoConstruccion": "Villa",
+                "codigoPostal": "37120",
+                "Descripcion": "<p>Conocida desde que Lord Wellington se asentara en la zona durante la Guerra de la Independencia, la villa fue declarada Monumento Hist&oacute;rico Art&iacute;stico en 1931.</p>\n<p>Entre 1984 y 1985 se hizo una campa&ntilde;a de excavaciones arqueol&oacute;gicas en las que se localiz&oacute; un edificio de planta cruciforme con hemiciclos terminados en herradura que conservan pavimentos y mosaicos con figuras humanas y animales, as&iacute; como estucos parietales. Otros hallazgos fueron columnas de m&aacute;rmol estriadas en espiral, vasijas de terra sigillata tard&iacute;a, monedas, un sarc&oacute;fago y una escultura ecuestre. Algunos de ellos se trasladaron al Museo de Salamanca. El yacimiento no es visitable, ya que se encuentra en una finca de propiedad privada.</p>",
+                "email": "ayuntamiento@ayto-doninos.com",
+                "periodoHistorico": "Romano",
+                "poblacion": {
+                    "provincia": "Salamanca",
+                    "municipio": "Doñinos de Salamanca",
+                    "localidad": "San Julian de Valmuza"
+                },
+                "telefono": "923 330 001",
+                "coordenadas": {
+                    "latitud": "40.9087729",
+                    "longitud": "-5.7787342"
+                },
+                "web": "https://ayto-doninos.com/el-municipio/nucleos-de-poblacion/"
+            },
+            {
+                "identificador": "25179",
+                "nombre": "Monasterio de Santa María de Retuerta",
+                "tipoMonumento": "Monasterios",
+                "identificadorBienInteresCultural": "15289",
+                "clasificacion": "Arquitectura Religiosa",
+                "tipoConstruccion": "Monasterio / Convento",
+                "codigoPostal": "47340",
+                "Descripcion": "<p align=\"justify\">Se construy&oacute; entre los siglos XII a XVIII, y se fund&oacute; en 1145. Es premostratense, benedictino y conserva &iacute;ntegramente su tipolog&iacute;a: iglesia, sala capitular, claustro, refectorio, dormitorio y hospeder&iacute;a.</p>\n<p align=\"justify\">Destacan sus &aacute;bsides rom&aacute;nicos, el claustro postherreriano del siglo XVI y la hospeder&iacute;a del XVIII.</p>\n<p>El monasterio est&aacute; completamente restaurado y en el se ubica un hotel con sus distintas dependencias.</p>",
+                "estiloPredominante": [
+                    "Románico",
+                    "Gótico"
+                ],
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Valladolid",
+                    "municipio": "Sardón de Duero",
+                    "localidad": "Sardón de Duero"
+                },
+                "telefono": "983 680 368",
+                "coordenadas": {
+                    "latitud": "41.616554",
+                    "longitud": null
+                },
+                "web": "https://www.abadia-retuerta.com/contacta"
+            },
+            {
+                "identificador": "25621",
+                "nombre": "Monasterio de Santa María",
+                "tipoMonumento": "Monasterios",
+                "identificadorBienInteresCultural": "11475",
+                "calle": "Coto de San Bernardo",
+                "clasificacion": "Arquitectura Religiosa",
+                "tipoConstruccion": "Monasterio / Convento",
+                "codigoPostal": "40237",
+                "Descripcion": "<p>Construcción de los siglos que van del XII al XVIII; un importante monasterio cisterciense, reformado. Gran parte del monasterio fue llevado a EEUU.</p><p>La Iglesia la forman una espadaña, dos capillas escalonadas, capiteles de temas florales y linterna gótica sobre el crucero. Altar central de piedra policromada y un retablo con bajorrelieves (Anunciación, Nacimiento y Adoración) similares al de Covarrubias, en Burgos.</p>",
+                "estiloPredominante": "Románico",
+                "horariosYTarifas": "<h3>Horario</h3> <ul><li>Mi&eacute;rcoles:  10:00 &ndash; 13:00</li><li>Cerrado: festivos</li></ul>",
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Segobia",
+                    "municipio": "Sacramenia",
+                    "localidad": "Sacramenia"
+                },
+                "coordenadas": {
+                    "latitud": "41.498766",
+                    "longitud": "-3.924441"
+                }
+            },
+            {
+                "identificador": "25303",
+                "nombre": "Castillo de Íscar",
+                "tipoMonumento": "Castillos",
+                "identificadorBienInteresCultural": "14698",
+                "calle": "Castillo, s/n",
+                "tipoConstruccion": "Castillo / Fortaleza / Atalaya",
+                "Descripcion": "<p>La parte más antigua que se conserva se corresponde con la traza y restos de muro que se adaptan al perímetro del cerro. Hacia el frente, que comunica este cerro con el páramo, se dispuso un foso y una torre, núcleo de la construcción actual. En el siglo XV se procedió al refuerzo de la torre, añadiéndose posteriomente distintos cuerpos alrededor de ésta.</p><p>Durante tiempos sufrió graves problemas de cimentación. Pedro de Zúñiga, segundo conde de Miranda del Castañar, es el promotor de las principales obras del castillo, colocando sus armas, Zúñiga y Avellaneda, y las de su mujer Catalina de Velasco y Mendoza.</p><p>Existe una anécdota sobre el castillo, la que cuenta cómo Alfonso XI acabó con la vida de un escudero del alcalde, Juan Martínez de Leyre, por negarse, desde lo alto de la torre, a darle albergue cuando cazaba por los alrededores.</p>",
+                "estiloPredominante": "Románico",
+                "horariosYTarifas": "<h3>Horario</h3> <ul><li>S&aacute;bados y domingos: concertar visita (Coordinar cita previa, tf: 696305757). Visitas guiadas:12:30</li><li>Cerrado: de lunes a viernes</li></ul><h3>Tarifa</h3> Las entradas individuales tarifa con la empresa concesionaria.<p><strong>Observaciones:</strong> Visitas de grupo: concertar con la oficina de turismo, tfno: 606688273</p><p>Este portal no se hace responsable de los posibles cambios en los horarios y tarifas reflejados</p>",
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Valladolid",
+                    "municipio": "Íscar",
+                    "localidad": "Íscar"
+                },
+                "telefono": "983 61 10 03",
+                "coordenadas": {
+                    "latitud": "41.365112",
+                    "longitud": "-4.537389"
+                }
+            },
+            {
+                "identificador": "25236",
+                "nombre": "Iglesia de San Juan",
+                "tipoMonumento": "Iglesias y Ermitas",
+                "identificadorBienInteresCultural": "8393",
+                "calle": "Pza. Mayor, s/n",
+                "clasificacion": "Arquitectura Religiosa",
+                "tipoConstruccion": "Iglesia",
+                "codigoPostal": "37800",
+                "Descripcion": "<p>Un templo con triple cabecera de traza románico mudéjar. Su interior, de tres naves separadas por dos formeros del siglo XV, acoge un verdadero museo de arte religioso.</p><p>Fue erigida a finales del siglo XII y principios del XIII, conservando de su traza original la cabecera y parte anterior de los muros laterales. La joya principal es el Apostolado en piedra policromada y estilo románico bizantino, que preside la capilla Mayor. Entre las obras destacan un Calvario del siglo XIII, un Crucifijo gótico o un lienzo de Cristo atado a la Columna atribuido a Morales.</p>",
+                "estiloPredominante": "Mudéjar",
+                "horariosYTarifas": "<h3>Horario</h3> <ul><li>De martes a domingo:  10:00 &ndash; 14:00 y  16:00 &ndash; 19:00</li><li>Cerrado: lunes</li></ul><h3>Tarifa</h3> 1 &euro; (Gratuita del 14 julio al 10 septiembre. )<p><strong>Observaciones:</strong> 24, 25, 31 diciembre y 1,6 enero: cerrado. \n5 de enero: cerrado por la tarde.  </p><p>Este portal no se hace responsable de los posibles cambios en los horarios y tarifas reflejados</p>",
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Salamanca",
+                    "municipio": "Alba de Tormes",
+                    "localidad": "Alba de Tormes"
+                },
+                "coordenadas": {
+                    "latitud": "40.827113",
+                    "longitud": "-5.514936"
+                }
+            },
+            {
+                "identificador": "25857",
+                "nombre": "Iglesia parroquial de Valdesaz",
+                "tipoMonumento": "Iglesias y Ermitas",
+                "identificadorBienInteresCultural": "5130",
+                "clasificacion": "Arquitectura Religiosa",
+                "tipoConstruccion": "Iglesia",
+                "codigoPostal": "64208",
+                "Descripcion": "<p>Iglesia del siglo XVI  es de planta cuadrada y se eleva sobre las naves, se cubre en el interior con una armadura mudéjar, octogonal para adaptarse al espacio. Es coetánea y muy valiosa, fue policromada y dorada poco después con temas renacentistas italianos.</p>",
+                "estiloPredominante": "Mudéjar",
+                "periodoHistorico": "Edad Moderna",
+                "poblacion": {
+                    "provincia": "León",
+                    "municipio": "Pajares de los Oteros",
+                    "localidad": "Valdesaz de los Oteros"
+                },
+                "coordenadas": {
+                    "latitud": "42.323431",
+                    "longitud": "-5.42709#"
+                }
+            },
+            {
+                "identificador": "26192",
+                "nombre": "Iglesia de San Miguel",
+                "tipoMonumento": "Iglesias y Ermitas",
+                "identificadorBienInteresCultural": "7614",
+                "calle": "Plaza de San Miguel",
+                "clasificacion": "Arquitectura Religiosa",
+                "tipoConstruccion": "Iglesia",
+                "codigoPostal": "34005",
+                "Descripcion": "<p>De comienzos del siglo XI y finalizada en el siglo XII, destaca en ella su &aacute;bside rom&aacute;nico&nbsp; en sus principios y un estilo global rom&aacute;nico &ndash; ojival, al igual que su torre calada del siglo XIII, mezcla religiosa y militar. Considerada lugar en el que se cas&oacute; el Cid Campeador.</p>\n<p>Bajo la torre se encuentra la portada principal, ya plenamente g&oacute;tica, con seis arquivoltas y figuras que contrastan con el altorrelieve rom&aacute;nico. <br /> En el interior, tres naves divididas por pilastras que sostienen las b&oacute;vedas de crucer&iacute;a.<br /> <br /> Joyas se consideran&nbsp; su Cristo del siglo XIV en el Presbiterio y los altares de los siglos XVII y XVIII, uno de ellos con una Piedad flamenca, en las capillas laterales y un fragmento de mural g&oacute;tico en el muro pr&oacute;ximo a la puerta lateral. Como se aprecia hablamos de una obra &uacute;nica, merecedora de una visita.&nbsp; &nbsp;</p>",
+                "estiloPredominante": "Románico",
+                "horariosYTarifas": "<h3>Tarifa</h3> Gratuito<p><strong>Observaciones:</strong> Visitas turísticas media hora antes y después de las misas.  Misas: Diario: 12:00 y 20:00; Domingo: 12:00, 13:00 y 20.00. Respetar horas de culto.</p><p>Este portal no se hace responsable de los posibles cambios en los horarios y tarifas reflejados</p>",
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Palencia",
+                    "municipio": "Palencia",
+                    "localidad": "Palencia"
+                },
+                "coordenadas": {
+                    "latitud": "42.007844",
+                    "longitud": "-4.534237"
+                }
+            },
+            {
+                "identificador": "25760",
+                "nombre": "Casa Miranda y Casa de Íñigo Angulo",
+                "tipoMonumento": "Palacios",
+                "identificadorBienInteresCultural": "1633",
+                "calle": "Calera, 25 (Museo de Burgos)",
+                "clasificacion": "Arquitectura Civil",
+                "tipoConstruccion": "Palacio",
+                "codigoPostal": "9002",
+                "Descripcion": "<p>Fue erigido a mediados del siglo XVI por don Francisco de Miranda, canónigo de Burgos. Posee un interesante patio plateresco y bellas portadas. Alberga el Museo de Burgos.</p><p>El cuerpo inferior está realizado en piedra, y el resto en ladrillo, flanqueando al conjunto unos cubos cilíndricos rematados por pináculos. La portada es renacentista, concebida a manera de arco triunfal, con medio punto, un par de columnas a cada lado, y motivos de bichas, medallones y detalles de tradición plateresca.</p>",
+                "estiloPredominante": "Renacentista",
+                "periodoHistorico": "Edad Moderna",
+                "poblacion": {
+                    "provincia": "Burgos",
+                    "municipio": "Burgos",
+                    "localidad": "Burgos"
+                },
+                "telefono": "947 265 875",
+                "coordenadas": {
+                    "latitud": "42.338545",
+                    "longitud": "-3.700035"
+                }
+            },
+            {
+                "identificador": "25762",
+                "nombre": "Casa Blanca",
+                "tipoMonumento": "Palacios",
+                "identificadorBienInteresCultural": "14761",
+                "clasificacion": "Arquitectura Civil",
+                "tipoConstruccion": "Palacio",
+                "codigoPostal": "47400",
+                "Descripcion": "<p>Finca de recreo de los Dueñas, también conocido como Casa Blanca. Tiene en su patio central unas impresionantes yeserías policromadas del siglo XVI. Fue construida por Rodrigo de Dueñas en las inmediaciones de Medina del Campo, a la manera de las villas de recreo suburbanas que por entonces se hacían en Italia o las que fueron características de los musulmanes en España, una tradición que siguió la nobleza española y de la que apenas se han conservado restos.</p>",
+                "estiloPredominante": "Renacentista",
+                "periodoHistorico": "Edad Moderna",
+                "poblacion": {
+                    "provincia": "Valladolid",
+                    "municipio": "Medina del Campo",
+                    "localidad": "Medina del Campo"
+                },
+                "coordenadas": {
+                    "latitud": "41.319169",
+                    "longitud": "-4.938024"
+                }
+            },
+            {
+                "identificador": "25213",
+                "nombre": "Puente de Piedra de Zamora",
+                "tipoMonumento": "Puentes",
+                "calle": "Puente de Piedra",
+                "clasificacion": "Arquitectura Civil",
+                "tipoConstruccion": "Puente",
+                "codigoPostal": "49028",
+                "Descripcion": "<p>Es uno de los cinco puentes que atraviesan el r&iacute;o Duero a su paso por Zamora. Durante siglos fue el &uacute;nico paso del r&iacute;o en la ciudad, comunicando los barrios del arrabal con el centro hist&oacute;rico de la ciudad. Al formar parte de la V&iacute;a de la Plata, fue un importante lugar de paso del r&iacute;o Duero para personas, mercanc&iacute;as y reba&ntilde;os trashumantes. Fue terminado de construir a comienzos del siglo XIII y reformado posteriormente. Constituye uno de los s&iacute;mbolos de la ciudad.</p>\n<p>Formado por diecis&eacute;is arcos apuntados que cruzan una de las zonas m&aacute;s anchas del Duero a su paso por Zamora. En origen estaba almenado y pose&iacute;a dos grandes torres defensivas en los extremos, siendo una prolongaci&oacute;n de la muralla del tercer recinto que hasta all&iacute; llegaba. Pose&iacute;a adem&aacute;s una capilla anexa en la parte izquierda dedicada a la Virgen de la Gu&iacute;a, patrona de los caminantes, que hoy en d&iacute;a se encuentra en la Iglesia del Santo Sepulcro. Estos elementos fueron eliminados a principios del S.XX para facilitar el acceso de veh&iacute;culos.</p>\n<p>Hoy en d&iacute;a el puente es peatonal, no permiti&eacute;ndose el paso a veh&iacute;culos.</p>",
+                "estiloPredominante": "Románico",
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Zamora",
+                    "municipio": "Zamora",
+                    "localidad": "Zamora"
+                },
+                "coordenadas": {
+                    "latitud": "41.499839",
+                    "longitud": "-5.748118"
+                }
+            },
+            {
+                "identificador": "25222",
+                "nombre": "Acueducto de Segovia",
+                "tipoMonumento": "Puentes",
+                "identificadorBienInteresCultural": "11669",
+                "calle": "Plaza del Azogüejo, 1",
+                "clasificacion": "Arquitectura Civil",
+                "tipoConstruccion": "Puente",
+                "codigoPostal": "40001",
+                "Descripcion": "<p align=\"justify\">Acueducto del siglo I, en la &eacute;poca de los flavios, y nerva o trajano. Sus 166 arcos de piedra gran&iacute;tica del Guadarrama est&aacute;n constituidos por sillares unidos sin ning&uacute;n tipo de argamasa mediante un ingenioso equilibrio de fuerzas. Tiene unos 15 kil&oacute;metros de longitud, de los que uno es de arquer&iacute;a y el resto canal subterr&aacute;neo.</p>\n<p align=\"justify\">Restaurado en los siglos XV y XIX, el primer tramo transcurre desde el Riofr&iacute;o o La Acebeda hasta el primer desarenador. La construcci&oacute;n es de granito y entre sus sillares no existe material de uni&oacute;n, manteniendo su equilibrio gracias a un perfecto estudio de empujes y peso de las piedras. Su punto m&aacute;s alto, en la plaza del Azoguejo, alcanza los 28 metros.</p>\n<p align=\"justify\">Existen dos hornacinas que proteg&iacute;an a dioses paganos, sustituidas por las im&aacute;genes de San Sebasti&aacute;n y de la Virgen.</p>\n<p align=\"justify\">Ha sido declarado Monumento Hist&oacute;rico Art&iacute;stico Internacional de la Ingenier&iacute;a Civil, por el ASCE (American Society of Civil Engineers) en 1999.</p>",
+                "periodoHistorico": "Romano",
+                "poblacion": {
+                    "provincia": "Segovia",
+                    "municipio": "Segovia",
+                    "localidad": "Segovia"
+                },
+                "telefono": "921 460334;(O.T)",
+                "coordenadas": {
+                    "latitud": "40.947991",
+                    "longitud": "-4.117791"
+                }
+            },
+            {
+                "identificador": "25303",
+                "nombre": "Castillo de Íscar",
+                "tipoMonumento": "Castillos",
+                "identificadorBienInteresCultural": "14698",
+                "calle": "Castillo, s/n",
+                "tipoConstruccion": "Castillo / Fortaleza / Atalaya",
+                "Descripcion": "<p>La parte más antigua que se conserva se corresponde con la traza y restos de muro que se adaptan al perímetro del cerro. Hacia el frente, que comunica este cerro con el páramo, se dispuso un foso y una torre, núcleo de la construcción actual. En el siglo XV se procedió al refuerzo de la torre, añadiéndose posteriomente distintos cuerpos alrededor de ésta.</p><p>Durante tiempos sufrió graves problemas de cimentación. Pedro de Zúñiga, segundo conde de Miranda del Castañar, es el promotor de las principales obras del castillo, colocando sus armas, Zúñiga y Avellaneda, y las de su mujer Catalina de Velasco y Mendoza.</p><p>Existe una anécdota sobre el castillo, la que cuenta cómo Alfonso XI acabó con la vida de un escudero del alcalde, Juan Martínez de Leyre, por negarse, desde lo alto de la torre, a darle albergue cuando cazaba por los alrededores.</p>",
+                "estiloPredominante": "Románico",
+                "horariosYTarifas": "<h3>Horario</h3> <ul><li>S&aacute;bados y domingos: concertar visita (Coordinar cita previa, tf: 696305757). Visitas guiadas:12:30</li><li>Cerrado: de lunes a viernes</li></ul><h3>Tarifa</h3> Las entradas individuales tarifa con la empresa concesionaria.<p><strong>Observaciones:</strong> Visitas de grupo: concertar con la oficina de turismo, tfno: 606688273</p><p>Este portal no se hace responsable de los posibles cambios en los horarios y tarifas reflejados</p>",
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Valladolid",
+                    "municipio": "Íscar",
+                    "localidad": "Íscar"
+                },
+                "telefono": "983 61 10 03",
+                "coordenadas": {
+                    "latitud": "41.365112",
+                    "longitud": "-4.537389"
+                }
+            },
+            {
+                "identificador": "26177",
+                "nombre": "Midrash del corral de Cayón",
+                "tipoMonumento": "Otros edificios",
+                "calle": "Plaza la Merced",
+                "clasificacion": "Arquitectura Civil",
+                "codigoPostal": "40003",
+                "Descripcion": "<p align=\"justify\">Escuela talm&uacute;dica situada en la Almuzara, que se construy&oacute; en un terreno perteneciente entonces a la Catedral de Segovia. Tambi&eacute;n se tiene noticia de la existencia de otra midrash en la segunda mitad del siglo XIV, que se ubicar&iacute;a en la actual calle de la Infanta Isabel.</p>",
+                "periodoHistorico": "Edad Media",
+                "poblacion": {
+                    "provincia": "Segovia",
+                    "municipio": "Segovia",
+                    "localidad": "Segovia"
+                },
+                "coordenadas": {
+                    "latitud": "40.951173",
+                    "longitud": "-4.126926"
+                }
+            },
+            {
+                "identificador": "26181",
+                "nombre": "Cloacas Romanas",
+                "tipoMonumento": "Otros edificios",
+                "clasificacion": "Arquitectura Civil",
+                "codigoPostal": "24700",
+                "Descripcion": "<p align=\"justify\">La red de saneamiento de la antigua Ast&uacute;rica es bien conocida y presenta buen estado de conservaci&oacute;n, de hecho, algunos de sus ramales contin&uacute;an en uso. La Ruta Romana incluye el paseo por el interior de una cloaca, perteneciente a la red principal del alcantarillado.</p>",
+                "email": "rutaromana@astorga.es",
+                "horariosYTarifas": "<p><strong>Observaciones:</strong> La visita forma parte de la Ruta Romana: http://www.asturica.com/aa_sp/laruta.html</p><p>Este portal no se hace responsable de los posibles cambios en los horarios y tarifas reflejados</p>",
+                "periodoHistorico": "Romano",
+                "poblacion": {
+                    "provincia": "León",
+                    "municipio": "Astorga",
+                    "localidad": "Astorga"
+                },
+                "coordenadas": {
+                    "latitud": "42.452992",
+                    "longitud": "-6.052759"
+                },
+                "web": "http://www.asturica.com/"
+            }
+        ]
+    }
+}
