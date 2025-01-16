@@ -60,16 +60,17 @@ class LoadData(Resource):
             # Get the extractor type from the request
             extractor_type = request.args.get('type')
             if extractor_type == 'csv':
-                data = get_csv_datos()
+                data = Extractor_CSV.get_datos()
+                SQL.cargar_datos(self,data)
             elif extractor_type == 'json':
-                data = get_json_datos()
+                data = Extractor_JSON.get_datos()
+                SQL.cargar_datos(self,data)
             elif extractor_type == 'xml':
-                data = get_xml_datos()
+                data = Extractor_XML.get_datos()
+                SQL.cargar_datos(self,data)
             else:
                 return jsonify({"error": "Invalid extractor type"}), 400
 
-            # Load the data into the database
-            SQL.cargar_datos(data)
             return jsonify({"message": "Database initialized and data loaded successfully"}), 200
         except Exception as e:
             return jsonify({"error": f"An error occurred: {e}"}), 500
