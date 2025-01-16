@@ -47,8 +47,19 @@ def swagger_json():
     return send_from_directory(os.path.join(app.root_path, 'static'), 'swagger.json')
 
 # Read the API key from an environment variable
-API_KEY = os.getenv('API_KEY')
-print(API_KEY)
+API_KEY = os.getenv('API_KEY', 'dev-key-1234')  # Valor por defecto para desarrollo
+
+# Authentication decorator
+def require_api_key(func):
+    def wrapper(*args, **kwargs):
+        key = request.args.get('api_key')
+        logging.debug(f"API Key received: {key}")
+        if key and key == API_KEY:
+            return func(*args, **kwargs)
+        else:
+            logging.warning("Unauthorized API Key.")
+            return {"error": "Unauthorized"}, 401  # Return a dictionary directly
+    return wrapper
 
 class LoadData(Resource):
     def post(self):
@@ -93,4 +104,13 @@ api.add_resource(LoadData, '/load')
 
 # Run the app
 if __name__ == '__main__':
-    app.run(ssl_context=('cert.pem', 'key.pem'), debug=True, host='localhost', port=8000)
+    cert_path = os.path.join(os.path.dirname(__file__), 'cert.pem')
+    key_path = os.path.join(os.path.dirname(__file__), 'key.pem')
+    print(f"Certificados en: {cert_path} y {key_path}")
+    print(f"Certificados existen: {os.path.exists(cert_path)} y {os.path.exists(key_path)}")
+    print("\n=== Rutas de acceso disponibles ===")
+    print("Swagger UI: https://localhost:8000/swagger-ui")
+    print("API Endpoint: https://localhost:8000/load")
+    print("Documentación JSON: https://localhost:8000/static/swagger.json")
+    print("================================\n")
+    app.run(ssl_context=(cert_path, key_path), debug=True, host='0.0.0.0', port=8000)
