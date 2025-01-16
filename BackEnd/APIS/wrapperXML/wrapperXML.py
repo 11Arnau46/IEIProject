@@ -13,6 +13,7 @@ import subprocess
 import os
 from BackEnd.utils.Otros import data_source
 from BackEnd.Wrappers.Wrapper_XML import process_xml
+from BackEnd.Wrappers.WrapperXML import XMLtoJSON
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
