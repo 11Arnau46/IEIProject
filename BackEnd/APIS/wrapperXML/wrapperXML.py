@@ -155,7 +155,7 @@ class WrapperXMLLog(Resource):
         int
             HTTP status code 200 if the file is cleared successfully, or 500 if another error occurs.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-summary.log'
+        log_file_path = root_dir / 'Resultados' / 'log-xml' / 'log-estadisticas-xml.log'
         try:
             open(log_file_path, 'w').close()
             return {"message": "Log file cleared successfully"}
