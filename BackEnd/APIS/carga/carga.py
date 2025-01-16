@@ -44,7 +44,7 @@ def require_api_key(func):
             return func(*args, **kwargs)
         else:
             logging.warning("Unauthorized API Key.")
-            return {"error": "Unauthorized"}, 401
+            return jsonify({"error": "Unauthorized"}), 401
     return wrapper
 
 class LoadData(Resource):
@@ -56,7 +56,12 @@ class LoadData(Resource):
             sql_instance.initialize_db()
 
             logging.debug("Retrieving extractor types from the request...")
-            extractor_types = request.args.getlist('types')
+            extractor_types = request.args.get('types')
+            if not extractor_types:
+                logging.error("No extractor types provided.")
+                return {"error": "No extractor types provided"}, 400
+
+            extractor_types = extractor_types.split(',')
             logging.debug(f"Extractor types received: {extractor_types}")
 
             for extractor_type in extractor_types:
