@@ -52,33 +52,46 @@ class WrapperJSONExecute(Resource):
             # Leer el archivo como texto primero para procesar manualmente las claves duplicadas
             with open(path, 'r', encoding='utf-8') as json_file:
                 content = json_file.read()
+                monuments = []
+                current_monument = []
+                in_monument = False
+                
                 # Dividir el contenido en líneas y procesar cada línea
                 lines = content.split('\n')
-                processed_data = []
-                current_item = {}
-                field_values = {}
-
                 for line in lines:
                     line = line.strip()
-                    if '"' in line and ':' in line:
+                    if line.startswith('{'):
+                        in_monument = True
+                        current_monument = []
+                    elif line.startswith('}'):
+                        if current_monument:
+                            # Procesar el monumento actual
+                            field_values = {}
+                            processed_monument = {}
+                            
+                            for field in current_monument:
+                                key = field['key']
+                                value = field['value']
+                                
+                                if key not in field_values:
+                                    # Primera aparición del campo
+                                    field_values[key] = value
+                                    processed_monument[key] = value
+                                elif not field_values[key] and value:
+                                    # Si el valor guardado está vacío y el nuevo tiene contenido
+                                    field_values[key] = value
+                                    processed_monument[key] = value
+                            
+                            monuments.append(processed_monument)
+                        in_monument = False
+                    elif in_monument and '"' in line and ':' in line:
                         # Extraer clave y valor
                         key = line.split('"')[1]
                         value = line.split(':')[1].strip().strip(',').strip('"')
-                        if key not in field_values:
-                            field_values[key] = value
-                            current_item[key] = value
-                        elif not field_values[key] and value:
-                            field_values[key] = value
-                            current_item[key] = value
-
-                    elif line == '}':
-                        if current_item:
-                            processed_data.append(current_item)
-                        current_item = {}
-                        field_values = {}
+                        current_monument.append({'key': key, 'value': value})
 
             # Convertir de nuevo a JSON con encoding UTF-8
-            response_data = json.dumps(processed_data, ensure_ascii=False)
+            response_data = json.dumps(monuments, ensure_ascii=False)
 
             # Asegurarse de que la respuesta también sea con UTF-8
             return Response(response_data, mimetype='application/json', status=200)
