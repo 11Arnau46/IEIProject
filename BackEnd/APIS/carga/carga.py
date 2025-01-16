@@ -128,9 +128,27 @@ class WrapperLog(Resource):
             return {"error": "Tipo de log no válido"}, 400
             
         if wrapper not in ["xml", "json", "csv"]:
+        if wrapper not in ["xml", "json", "csv"]:
             return {"error": "Tipo de wrapper no válido"}, 400
 
         log_file_path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{tipo}-{wrapper}.log'
+
+        # Lista de codificaciones a intentar
+        encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
+        
+        for encoding in encodings:
+            try:
+                with open(log_file_path, 'r', encoding=encoding) as log_file:
+                    log_data = log_file.read()
+                return Response(log_data, mimetype='text/plain', status='200')
+            except UnicodeDecodeError:
+                continue
+            except FileNotFoundError:
+                return {"error": f"Log de {tipo} no encontrado"}, 404
+            except Exception as e:
+                return {"error": f"Error al leer el log de {tipo}: {e}"}, 500
+        
+        return {"error": f"No se pudo leer el archivo con ninguna codificación"}, 500
 
         # Lista de codificaciones a intentar
         encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
@@ -227,6 +245,7 @@ if __name__ == '__main__':
     print("  → GET    https://localhost:8000/load/?types=csv,json,xml&api_key=")
     print("\nEndpoints de gestión de logs:")
     print("  → GET    https://localhost:8000/log/{formato}/{tipo}")
+    print("           formatos: csv, json, xml")
     print("           formatos: csv, json, xml")
     print("           tipos: reparados, rechazados, estadisticas")
     print("  → DELETE https://localhost:8000/log/{formato}/{tipo}")

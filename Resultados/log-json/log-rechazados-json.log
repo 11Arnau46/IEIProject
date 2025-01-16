@@ -1,3 +1,4 @@
-{fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebastián, motivo = Coordenadas fuera de rango}
-{fuente = JSON, nombre = Paseo de los Arquillos, Localidad = Vitoria-Gasteiz, motivo = Coordenadas fuera de rango}
-{fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo = Monumento duplicado}
+Registro con errores y rechazado:
+{nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebastián, motivo = Coordenadas fuera de rango}
+{nombre = Paseo de los Arquillos, Localidad = Vitoria-Gasteiz, motivo = Coordenadas fuera de rango}
+{nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo = Monumento duplicado}
