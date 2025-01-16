@@ -15,10 +15,14 @@ from BackEnd.utils.Otros import *
 
 def process_xml():
     # Configurar la fuente de datos y los loggers
-    if len(sys.argv) > 1:
-        data_source = sys.argv[1]
-        set_data_source(data_source)
-        setup_loggers(data_source)
+    #if len(sys.argv) > 1:
+    #    data_source = sys.argv[1]
+    #    set_data_source(data_source)
+    #    setup_loggers(data_source)
+
+    data_source = "xml"
+    set_data_source(data_source)
+    setup_loggers(data_source)
 
     # Leer el archivo XML
     tree = ET.parse(INPUT_XML_PATH)

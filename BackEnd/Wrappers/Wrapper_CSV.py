@@ -13,10 +13,14 @@ from BackEnd.utils.Coords_converter import CoordsConverter
 
 def process_csv():
     # Configurar la fuente de datos y los loggers
-    if len(sys.argv) > 1:
-        data_source = sys.argv[1]
-        set_data_source(data_source)
-        setup_loggers(data_source)
+    #if len(sys.argv) > 1:
+    #    data_source = sys.argv[1]
+    #    set_data_source(data_source)
+    #    setup_loggers(data_source)
+
+    data_source = "csv"
+    set_data_source(data_source)
+    setup_loggers(data_source)
 
     # Directorio actual
     print("Current working directory:", os.getcwd())

@@ -22,10 +22,14 @@ def parse_json_with_duplicates(file_path):
 
 def process_json():
     # Configurar la fuente de datos y los loggers
-    if len(sys.argv) > 1:
-        data_source = sys.argv[1]
-        set_data_source(data_source)
-        setup_loggers(data_source)
+    #if len(sys.argv) > 1:
+    #    data_source = sys.argv[1]
+    #    set_data_source(data_source)
+    #    setup_loggers(data_source)
+    
+    data_source = "json"
+    set_data_source(data_source)
+    setup_loggers(data_source)
 
     # Directorio actual
     print("Current working directory:", os.getcwd())

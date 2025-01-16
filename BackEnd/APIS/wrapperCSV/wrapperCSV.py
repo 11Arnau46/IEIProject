@@ -131,7 +131,7 @@ class WrapperCSVLog(Resource):
         """
         log_file_path = root_dir / 'Resultados' / 'log-csv' /'log-estadisticas-csv.log'
         try:
-            with open(log_file_path, 'r', encoding='utf-8') as log_file:
+            with open(log_file_path, 'r', encoding='latin-1') as log_file:
                 log_data = log_file.read()
             return Response(log_data, mimetype='text/plain', status='201')
         except FileNotFoundError:
