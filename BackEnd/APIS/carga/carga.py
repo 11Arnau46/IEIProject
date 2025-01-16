@@ -49,6 +49,56 @@ def require_api_key(func):
     return wrapper
 
 class LoadData(Resource):
+    def _generate_load_report(self, extractor_types):
+        """
+        Genera un informe después de cargar los datos.
+        """
+        wrapper_log = WrapperLog()
+        report = wrapper_log._generate_general_report(extractor_types)
+        
+        # Crear string de fuentes
+        fuentes = ", ".join(extractor_types).upper()
+        
+        response_text = "================================================================================\n"
+        response_text += "INFORME DE CARGA DE DATOS\n"
+        response_text += "================================================================================\n\n"
+        
+        # Sección de estadísticas
+        response_text += "--------------------------------------------------------------------------------\n"
+        response_text += f"ESTADÍSTICAS GENERALES (fuentes = {fuentes})\n"
+        response_text += "--------------------------------------------------------------------------------\n"
+        response_text += f"Total de datos procesados: {report['processed']}\n"
+        response_text += f"Total de registros cargados correctamente: {report['loaded']}\n"
+        response_text += f"Total de registros rechazados: {report['rejected']}\n"
+        response_text += f"Total de registros reparados: {report['repaired']}\n"
+        response_text += "--------------------------------------------------------------------------------\n\n"
+        
+        # Sección de rechazados
+        response_text += "--------------------------------------------------------------------------------\n"
+        response_text += "REGISTROS RECHAZADOS\n"
+        response_text += "--------------------------------------------------------------------------------\n"
+        response_text += "Registros con errores y rechazados:\n"
+        response_text += "{Fuente de datos, nombre, Localidad, motivo del error}\n"
+        if report['details']['rechazados']:
+            response_text += "\n".join(report['details']['rechazados'])
+        else:
+            response_text += "No hay registros rechazados.\n"
+        response_text += "\n--------------------------------------------------------------------------------\n\n"
+        
+        # Sección de reparados
+        response_text += "--------------------------------------------------------------------------------\n"
+        response_text += "REGISTROS REPARADOS\n"
+        response_text += "--------------------------------------------------------------------------------\n"
+        response_text += "Registros con errores y reparados:\n"
+        response_text += "{Fuente de datos, nombre, Localidad, motivo del error, operación realizada}\n"
+        if report['details']['reparados']:
+            response_text += "\n".join(report['details']['reparados'])
+        else:
+            response_text += "No hay registros reparados.\n"
+        response_text += "\n--------------------------------------------------------------------------------\n"
+        
+        return response_text
+
     @require_api_key
     def post(self):
         try:
@@ -89,7 +139,11 @@ class LoadData(Resource):
                 sql_instance.cargar_datos(data)
 
             logging.info("Data successfully loaded into the database.")
-            return {"message": "Database initialized and data loaded successfully"}, 200
+            
+            # Generar y devolver el informe
+            report_text = self._generate_load_report(extractor_types)
+            return Response(report_text, mimetype='text/plain', status='200')
+            
         except Exception as e:
             error_msg = f"An error occurred while processing {extractor_type if 'extractor_type' in locals() else 'unknown'} data: {str(e)}"
             logging.error(error_msg)
@@ -184,10 +238,13 @@ class WrapperLog(Resource):
             # Generar informe general
             report = self._generate_general_report(sources)
             
+            # Crear string de fuentes
+            fuentes = ", ".join(sources).upper()
+            
             if tipo:
                 if tipo == "estadisticas":
                     response_text = "--------------------------------------------------------------------------------\n"
-                    response_text += "ESTADÍSTICAS GENERALES (fuente = COMBINADO)\n"
+                    response_text += f"ESTADÍSTICAS GENERALES (fuentes = {fuentes})\n"
                     response_text += "--------------------------------------------------------------------------------\n"
                     response_text += f"Total de datos procesados: {report['processed']}\n"
                     response_text += f"Total de registros cargados correctamente: {report['loaded']}\n"
@@ -213,7 +270,7 @@ class WrapperLog(Resource):
                 
                 # Sección de estadísticas
                 response_text += "--------------------------------------------------------------------------------\n"
-                response_text += "ESTADÍSTICAS GENERALES (fuente = COMBINADO)\n"
+                response_text += f"ESTADÍSTICAS GENERALES (fuentes = {fuentes})\n"
                 response_text += "--------------------------------------------------------------------------------\n"
                 response_text += f"Total de datos procesados: {report['processed']}\n"
                 response_text += f"Total de registros cargados correctamente: {report['loaded']}\n"
