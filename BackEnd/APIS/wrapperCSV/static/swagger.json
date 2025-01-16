@@ -15,6 +15,10 @@
         {
             "name": "WrapperCSV",
             "description": "Endpoints para la transformación de datos de CSV a JSON"
+        },
+        {
+            "name": "WrapperCSV Logs",
+            "description": "Endpoints para la gestión de logs"
         }
     ],
     "paths": {
@@ -96,13 +100,13 @@
                 }
             }
         },
-        "/wrapperCSV/log": {
+        "/wrapperCSV/log/estadisticas": {
             "get": {
                 "tags": [
-                    "WrapperCSV"
+                    "WrapperCSV Logs"
                 ],
-                "summary": "Obtener contenido del archivo de log",
-                "description": "Endpoint para obtener el contenido del archivo de log.",
+                "summary": "Obtener log de estadísticas",
+                "description": "Endpoint para obtener el contenido del archivo de log de estadísticas.",
                 "responses": {
                     "200": {
                         "description": "Contenido del log obtenido exitosamente",
@@ -110,14 +114,14 @@
                             "type": "string"
                         },
                         "examples": {
-                            "text/plain": "Registros con errores y descartados: {fuente, nombre, Localidad, motivo del error}\nRegistros con errores y reparado: {fuente, nombre, Localidad, motivo del error, operación realizada}\n\nNúmero de registros cargados correctamente : NN\n"
+                            "text/plain": "Número de registros cargados correctamente : NN\n"
                         }
                     },
                     "404": {
                         "description": "Archivo de log no encontrado",
                         "examples": {
                             "application/json": {
-                                "error": "Log file not found"
+                                "error": "Log de estadísticas no encontrado"
                             }
                         }
                     },
@@ -125,7 +129,7 @@
                         "description": "Error interno del servidor",
                         "examples": {
                             "application/json": {
-                                "error": "An error occurred while reading the log file: <error_message>"
+                                "error": "Error al leer el log de estadísticas: <error_message>"
                             }
                         }
                     }
@@ -133,16 +137,16 @@
             },
             "delete": {
                 "tags": [
-                    "WrapperCSV"
+                    "WrapperCSV Logs"
                 ],
-                "summary": "Limpiar contenido del archivo de log",
-                "description": "Endpoint para limpiar el contenido del archivo de log.",
+                "summary": "Limpiar log de estadísticas",
+                "description": "Endpoint para limpiar el contenido del archivo de log de estadísticas.",
                 "responses": {
                     "200": {
                         "description": "Contenido del log limpiado exitosamente",
                         "examples": {
                             "application/json": {
-                                "message": "Log file cleared successfully"
+                                "message": "Log de estadísticas limpiado exitosamente"
                             }
                         }
                     },
@@ -150,7 +154,156 @@
                         "description": "Error interno del servidor",
                         "examples": {
                             "application/json": {
-                                "error": "An error occurred while clearing the log file: <error_message>"
+                                "error": "Error al limpiar el log de estadísticas: <error_message>"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/wrapperCSV/log/rechazados": {
+            "get": {
+                "tags": [
+                    "WrapperCSV Logs"
+                ],
+                "summary": "Obtener log de rechazados",
+                "description": "Endpoint para obtener el contenido del archivo de log de entradas rechazadas.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log obtenido exitosamente",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "text/plain": "Registros con errores y descartados: {fuente, nombre, Localidad, motivo del error}\n"
+                        }
+                    },
+                    "404": {
+                        "description": "Archivo de log no encontrado",
+                        "examples": {
+                            "application/json": {
+                                "error": "Log de rechazados no encontrado"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "Error al leer el log de rechazados: <error_message>"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "WrapperCSV Logs"
+                ],
+                "summary": "Limpiar log de rechazados",
+                "description": "Endpoint para limpiar el contenido del archivo de log de entradas rechazadas.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log limpiado exitosamente",
+                        "examples": {
+                            "application/json": {
+                                "message": "Log de rechazados limpiado exitosamente"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "Error al limpiar el log de rechazados: <error_message>"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/wrapperCSV/log/reparados": {
+            "get": {
+                "tags": [
+                    "WrapperCSV Logs"
+                ],
+                "summary": "Obtener log de reparados",
+                "description": "Endpoint para obtener el contenido del archivo de log de entradas reparadas.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log obtenido exitosamente",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "text/plain": "Registros con errores y reparados: {fuente, nombre, Localidad, motivo del error, operación realizada}\n"
+                        }
+                    },
+                    "404": {
+                        "description": "Archivo de log no encontrado",
+                        "examples": {
+                            "application/json": {
+                                "error": "Log de reparados no encontrado"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "Error al leer el log de reparados: <error_message>"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "WrapperCSV Logs"
+                ],
+                "summary": "Limpiar log de reparados",
+                "description": "Endpoint para limpiar el contenido del archivo de log de entradas reparadas.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log limpiado exitosamente",
+                        "examples": {
+                            "application/json": {
+                                "message": "Log de reparados limpiado exitosamente"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "Error al limpiar el log de reparados: <error_message>"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/wrapperCSV/log": {
+            "delete": {
+                "tags": [
+                    "WrapperCSV Logs"
+                ],
+                "summary": "Limpiar todos los logs",
+                "description": "Endpoint para limpiar el contenido de todos los archivos de log.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido de todos los logs limpiado exitosamente",
+                        "examples": {
+                            "application/json": {
+                                "message": "Todos los archivos de log han sido limpiados exitosamente"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno del servidor",
+                        "examples": {
+                            "application/json": {
+                                "error": "Error al limpiar los archivos de log: <error_message>"
                             }
                         }
                     }

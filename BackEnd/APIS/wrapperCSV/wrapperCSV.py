@@ -107,63 +107,165 @@ class WrapperCSVLog(Resource):
 
     Methods
     -------
-    get():
-        Retrieves the log file content.
+    get_estadisticas():
+        Retrieves the statistics log file content.
+    get_rechazados():
+        Retrieves the rejected entries log file content.
+    get_reparados():
+        Retrieves the repaired entries log file content.
+    delete_estadisticas():
+        Clears the statistics log file.
+    delete_rechazados():
+        Clears the rejected entries log file.
+    delete_reparados():
+        Clears the repaired entries log file.
     delete():
-        Clears the log file content.
+        Clears all log files.
     """
 
-    def get(self):
+    def get_estadisticas(self):
         """
-        Retrieves the log file content.
-
-        This method attempts to read the log file located in the 'Resultados' directory and returns its content. If the file
-        is not found, it returns a 404 error response. If any other error occurs, it returns a 500 error response.
-
-        Returns
-        -------
-        Response
-            A Flask Response object containing the log file content with a 'text/plain' MIME type.
-        dict
-            A dictionary containing an error message if the file is not found or another error occurs.
-        int
-            HTTP status code 200 if the file is read successfully, 404 if the file is not found, or 500 if another error occurs.
+        Retrieves the statistics log file content.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-csv' /'log-estadisticas-csv.log'
+        log_file_path = root_dir / 'Resultados' / 'log-csv' / 'log-estadisticas-csv.log'
         try:
-            with open(log_file_path, 'r', encoding='latin-1') as log_file:
+            with open(log_file_path, 'r', encoding='utf-8') as log_file:
                 log_data = log_file.read()
-            return Response(log_data, mimetype='text/plain', status='201')
+            return Response(log_data, mimetype='text/plain', status='200')
         except FileNotFoundError:
-            return {"error": "Log file not found"}, 404
+            return {"error": "Log de estadísticas no encontrado"}, 404
         except Exception as e:
-            return {"error": f"An error occurred while reading the log file: {e}"}, 500
+            return {"error": f"Error al leer el log de estadísticas: {e}"}, 500
+
+    def delete_estadisticas(self):
+        """
+        Clears the statistics log file.
+        """
+        log_file_path = root_dir / 'Resultados' / 'log-csv' / 'log-estadisticas-csv.log'
+        try:
+            if log_file_path.exists():
+                open(log_file_path, 'w').close()
+            return {"message": "Log de estadísticas limpiado exitosamente"}
+        except Exception as e:
+            return {"error": f"Error al limpiar el log de estadísticas: {e}"}, 500
+
+    def get_rechazados(self):
+        """
+        Retrieves the rejected entries log file content.
+        """
+        log_file_path = root_dir / 'Resultados' / 'log-csv' / 'log-rechazados-csv.log'
+        try:
+            with open(log_file_path, 'r', encoding='utf-8') as log_file:
+                log_data = log_file.read()
+            return Response(log_data, mimetype='text/plain', status='200')
+        except FileNotFoundError:
+            return {"error": "Log de rechazados no encontrado"}, 404
+        except Exception as e:
+            return {"error": f"Error al leer el log de rechazados: {e}"}, 500
+
+    def delete_rechazados(self):
+        """
+        Clears the rejected entries log file.
+        """
+        log_file_path = root_dir / 'Resultados' / 'log-csv' / 'log-rechazados-csv.log'
+        try:
+            if log_file_path.exists():
+                open(log_file_path, 'w').close()
+            return {"message": "Log de rechazados limpiado exitosamente"}
+        except Exception as e:
+            return {"error": f"Error al limpiar el log de rechazados: {e}"}, 500
+
+    def get_reparados(self):
+        """
+        Retrieves the repaired entries log file content.
+        """
+        log_file_path = root_dir / 'Resultados' / 'log-csv' / 'log-reparados-csv.log'
+        try:
+            with open(log_file_path, 'r', encoding='utf-8') as log_file:
+                log_data = log_file.read()
+            return Response(log_data, mimetype='text/plain', status='200')
+        except FileNotFoundError:
+            return {"error": "Log de reparados no encontrado"}, 404
+        except Exception as e:
+            return {"error": f"Error al leer el log de reparados: {e}"}, 500
+
+    def delete_reparados(self):
+        """
+        Clears the repaired entries log file.
+        """
+        log_file_path = root_dir / 'Resultados' / 'log-csv' / 'log-reparados-csv.log'
+        try:
+            if log_file_path.exists():
+                open(log_file_path, 'w').close()
+            return {"message": "Log de reparados limpiado exitosamente"}
+        except Exception as e:
+            return {"error": f"Error al limpiar el log de reparados: {e}"}, 500
 
     def delete(self):
         """
-        Clears the log file content.
-
-        This method attempts to clear the content of the log file located in the 'Resultados' directory. If any error occurs,
-        it returns a 500 error response.
-
-        Returns
-        -------
-        dict
-            A dictionary containing a success message if the file is cleared successfully, or an error message if another error occurs.
-        int
-            HTTP status code 200 if the file is cleared successfully, or 500 if another error occurs.
+        Clears all log files content.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-csv' /'log-estadisticas-csv.log'
+        log_files = [
+            root_dir / 'Resultados' / 'log-csv' / 'log-estadisticas-csv.log',
+            root_dir / 'Resultados' / 'log-csv' / 'log-rechazados-csv.log',
+            root_dir / 'Resultados' / 'log-csv' / 'log-reparados-csv.log'
+        ]
+        
         try:
-            open(log_file_path, 'w').close()
-            return {"message": "Log file cleared successfully"}
+            for log_file_path in log_files:
+                if log_file_path.exists():
+                    open(log_file_path, 'w').close()
+            return {"message": "Todos los archivos de log han sido limpiados exitosamente"}
         except Exception as e:
-            return {"error": f"An error occurred while clearing the log file: {e}"}, 500
+            return {"error": f"Error al limpiar los archivos de log: {e}"}, 500
 
 # Add the resources to the API
 api.add_resource(WrapperCSVExecute, '/wrapperCSV/execute')
-api.add_resource(WrapperCSVLog, '/wrapperCSV/log')
+
+# Add new endpoints for each log type
+class WrapperCSVLogEstadisticas(Resource):
+    def get(self):
+        return WrapperCSVLog().get_estadisticas()
+    def delete(self):
+        return WrapperCSVLog().delete_estadisticas()
+
+class WrapperCSVLogRechazados(Resource):
+    def get(self):
+        return WrapperCSVLog().get_rechazados()
+    def delete(self):
+        return WrapperCSVLog().delete_rechazados()
+
+class WrapperCSVLogReparados(Resource):
+    def get(self):
+        return WrapperCSVLog().get_reparados()
+    def delete(self):
+        return WrapperCSVLog().delete_reparados()
+
+class WrapperCSVLogClear(Resource):
+    def delete(self):
+        return WrapperCSVLog().delete()
+
+api.add_resource(WrapperCSVLogEstadisticas, '/wrapperCSV/log/estadisticas')
+api.add_resource(WrapperCSVLogRechazados, '/wrapperCSV/log/rechazados')
+api.add_resource(WrapperCSVLogReparados, '/wrapperCSV/log/reparados')
+api.add_resource(WrapperCSVLogClear, '/wrapperCSV/log')
 
 #http://localhost:8082/swagger-ui/
 if __name__ == '__main__':
+    print("\n" + "="*50)
+    print("API WrapperCSV iniciada exitosamente!")
+    print("="*50)
+    print("\nDocumentación disponible en:")
+    print("  → http://localhost:8080/swagger-ui")
+    print("\nEndpoints disponibles:")
+    print("  → POST   http://localhost:8080/wrapperCSV/execute")
+    print("  → GET    http://localhost:8080/wrapperCSV/log/estadisticas")
+    print("  → DELETE http://localhost:8080/wrapperCSV/log/estadisticas")
+    print("  → GET    http://localhost:8080/wrapperCSV/log/rechazados")
+    print("  → DELETE http://localhost:8080/wrapperCSV/log/rechazados")
+    print("  → GET    http://localhost:8080/wrapperCSV/log/reparados")
+    print("  → DELETE http://localhost:8080/wrapperCSV/log/reparados")
+    print("  → DELETE http://localhost:8080/wrapperCSV/log")
+    print("\nPresiona Ctrl+C para detener el servidor")
+    print("="*50 + "\n")
     app.run(debug=True, host='localhost', port=8080)
