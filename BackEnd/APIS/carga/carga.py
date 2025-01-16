@@ -61,7 +61,20 @@ def require_api_key(func):
             return {"error": "Unauthorized"}, 401  # Return a dictionary directly
     return wrapper
 
+# Authentication decorator
+def require_api_key(func):
+    def wrapper(*args, **kwargs):
+        key = request.args.get('api_key')
+        logging.debug(f"API Key received: {key}")
+        if key and key == API_KEY:
+            return func(*args, **kwargs)
+        else:
+            logging.warning("Unauthorized API Key.")
+            return {"error": "Unauthorized"}, 401  # Return a dictionary directly
+    return wrapper
+
 class LoadData(Resource):
+    @require_api_key
     def post(self):
         try:
             logging.debug("Initializing the database...")
