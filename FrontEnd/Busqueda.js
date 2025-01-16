@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   console.log("El archivo JavaScript se ha cargado correctamente.");
 
   const mapa = L.map("mapa").setView([40.4168, -3.7038], 6); // Centro de España
@@ -56,30 +56,59 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Función para mostrar sugerencias en los campos de texto
   function mostrarSugerencias(input, key, suggestionsId) {
-    const value = input.value.toLowerCase();
-    const suggestions = datos
-      .map((d) => d[key])
-      .filter(
-        (v, i, a) => a.indexOf(v) === i && v.toLowerCase().includes(value)
-      );
+    const value = input.value.trim().toLowerCase();
     const suggestionsList = document.getElementById(suggestionsId);
     suggestionsList.innerHTML = "";
 
-    // Muestra las sugerencias solo si hay texto ingresado
-    if (value.length > 0) {
-      suggestions.forEach((s) => {
-        const li = document.createElement("li");
-        li.textContent = s;
-        li.addEventListener("click", () => {
-          input.value = s;
-          suggestionsList.innerHTML = "";
-          ajustarEspacio(suggestionsList, input);
-        });
-        suggestionsList.appendChild(li);
-      });
+    if (value.length === 0) {
+      suggestionsList.style.display = "none";
+      return;
     }
-    ajustarEspacio(suggestionsList, input);
+
+    const uniqueSuggestions = [...new Set(datos.map((d) => d[key]))];
+
+    // Ordenar por prioridad
+    const suggestions = uniqueSuggestions
+      .map((s) => ({
+        text: s,
+        lower: s.toLowerCase(),
+        priority:
+          s.toLowerCase() === value
+            ? 1 // Coincidencia exacta
+            : s.toLowerCase().startsWith(value)
+            ? 2 // Empieza con el input
+            : s.toLowerCase().includes(value)
+            ? 3
+            : 4, // Contiene el input
+      }))
+      .filter((s) => s.priority < 4) // Excluir las que no coinciden en absoluto
+      .sort((a, b) => a.priority - b.priority || a.text.localeCompare(b.text));
+
+    if (suggestions.length === 0) {
+      suggestionsList.style.display = "none";
+      return;
+    }
+
+    suggestions.forEach(({ text }) => {
+      const li = document.createElement("li");
+      li.textContent = text;
+      li.addEventListener("click", () => {
+        input.value = text;
+        suggestionsList.innerHTML = "";
+        suggestionsList.style.display = "none";
+      });
+      suggestionsList.appendChild(li);
+    });
+
+    suggestionsList.style.display = "block";
   }
+
+  // Cerrar sugerencias cuando se pierde el foco
+  document.addEventListener("click", (e) => {
+    if (!e.target.matches("input, #" + suggestionsId + " li")) {
+      document.getElementById(suggestionsId).style.display = "none";
+    }
+  });
 
   // Función para obtener los datos desde la API
   async function obtenerDatosDesdeAPI(filtros) {
@@ -98,6 +127,56 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Mostrar todos los resultados en la tabla y el mapa
+  function mostrarResultados(resultados) {
+    const tabla = document
+      .getElementById("tabla-resultados")
+      .querySelector("tbody");
+    tabla.innerHTML = "";
+
+    limpiarMapa(); // Limpiar los marcadores previos
+
+    resultados.forEach((d) => {
+      const fila = `<tr>
+          <td>${d.nombre_monumento}</td>
+          <td>${d.tipo_monumento}</td>
+          <td>${d.direccion}</td>
+          <td>${d.nombre_localidad}</td>
+          <td>${d.codigo_postal}</td>
+          <td>${d.nombre_provincia}</td>
+          <td>${d.descripcion}</td>
+        </tr>`;
+      tabla.innerHTML += fila;
+
+      const marker = L.marker([d.latitud, d.longitud]).addTo(mapa);
+      marker.bindPopup(
+        `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
+      );
+      markers.push(marker);
+    });
+  }
+
+  datos = await obtenerDatosDesdeAPI();
+  await mostrarResultados(datos);
+
+  // Función para manejar el evento de cancelar
+  document.getElementById("cancelar").addEventListener("click", async () => {
+    // Limpiar los campos de filtro
+    localidadInput.value = "";
+    provinciaInput.value = "";
+    postalInput.value = "";
+    document.getElementById("tipo").value = "";
+
+    // Limpiar los resultados en la tabla y el mapa
+    limpiarMapa();
+
+    // Llamar a la función para mostrar todos los datos
+    await mostrarResultados(datos);
+
+    // Centrar el mapa en España
+    mapa.setView([40.4168, -3.7038], 6);
+  });
+
   // Función para manejar el evento de búsqueda
   buscarBtn.addEventListener("click", async () => {
     console.log("El archivo JavaScript se ha cargado correctamente.");
@@ -109,14 +188,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const codigoPostal = postalInput.value;
     const tipo = document.getElementById("tipo").value;
 
-    // Llamar a la API con los filtros
-    const resultados = await obtenerDatosDesdeAPI({
-      localidad,
-      provincia,
-      codigo_postal: codigoPostal,
-      tipo,
+    // Filtrar los resultados basados en los datos cargados
+    const resultados = datos.filter((d) => {
+      return (
+        (localidad
+          ? d.nombre_localidad.toLowerCase().includes(localidad)
+          : true) &&
+        (provincia
+          ? d.nombre_provincia.toLowerCase().includes(provincia)
+          : true) &&
+        (codigoPostal ? d.codigo_postal.includes(codigoPostal) : true) &&
+        (tipo ? d.tipo_monumento.toLowerCase().includes(tipo) : true)
+      );
     });
-    datos = resultados;
+
     // Mostrar los resultados en la tabla
     const tabla = document
       .getElementById("tabla-resultados")
