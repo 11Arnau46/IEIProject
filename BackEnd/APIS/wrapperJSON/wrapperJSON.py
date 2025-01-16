@@ -104,66 +104,85 @@ class WrapperJSONExecute(Resource):
 
 class WrapperJSONLog(Resource):
     """
-    WrapperJSONLog is a Flask-RESTful resource that handles the retrieval and deletion of log files.
-
-    Methods
-    -------
-    get():
-        Retrieves the log file content.
-    delete():
-        Clears the log file content.
+    WrapperJSONLog es un recurso Flask-RESTful que maneja la obtención y eliminación de archivos de log.
     """
-
-    def get(self):
+    
+    def get(self, tipo=None):
         """
-        Retrieves the log file content.
-
-        This method attempts to read the log file located in the 'Resultados' directory and returns its content. If the file
-        is not found, it returns a 404 error response. If any other error occurs, it returns a 500 error response.
-
-        Returns
-        -------
-        Response
-            A Flask Response object containing the log file content with a 'text/plain' MIME type.
-        dict
-            A dictionary containing an error message if the file is not found or another error occurs.
-        int
-            HTTP status code 200 if the file is read successfully, 404 if the file is not found, or 500 if another error occurs.
+        Obtiene el contenido del archivo de log según el tipo especificado.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-json'/ 'log-estadisticas-json.log'
+        if tipo == "estadisticas":
+            log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-estadisticas-json.log'
+        elif tipo == "rechazados":
+            log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-rechazados-json.log'
+        elif tipo == "reparados":
+            log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-reparados-json.log'
+        else:
+            return {"error": "Tipo de log no válido"}, 400
+
         try:
             with open(log_file_path, 'r', encoding='latin-1') as log_file:
                 log_data = log_file.read()
-            return Response(log_data, mimetype='text/plain')
+            return Response(log_data, mimetype='text/plain', status='200')
         except FileNotFoundError:
-            return {"error": "Log file not found"}, 404
+            return {"error": f"Log de {tipo} no encontrado"}, 404
         except Exception as e:
-            return {"error": f"An error occurred while reading the log file: {e}"}, 500
+            return {"error": f"Error al leer el log de {tipo}: {e}"}, 500
 
-    def delete(self):
+    def delete(self, tipo=None):
         """
-        Clears the log file content.
-
-        This method attempts to clear the content of the log file located in the 'Resultados' directory. If any error occurs,
-        it returns a 500 error response.
-
-        Returns
-        -------
-        dict
-            A dictionary containing a success message if the file is cleared successfully, or an error message if another error occurs.
-        int
-            HTTP status code 200 if the file is cleared successfully, or 500 if another error occurs.
+        Elimina el archivo de log según el tipo especificado.
         """
-        log_file_path = root_dir / 'Resultados' / 'log-json'/ 'log-estadisticas-json.log'
+        if tipo == "estadisticas":
+            log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-estadisticas-json.log'
+        elif tipo == "rechazados":
+            log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-rechazados-json.log'
+        elif tipo == "reparados":
+            log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-reparados-json.log'
+        elif tipo is None:
+            # Eliminar todos los logs
+            try:
+                for log_type in ["estadisticas", "rechazados", "reparados"]:
+                    path = root_dir / 'Resultados' / 'log-json' / f'log-{log_type}-json.log'
+                    if path.exists():
+                        os.remove(path)
+                return {"message": "Todos los archivos de log han sido eliminados exitosamente"}
+            except Exception as e:
+                return {"error": f"Error al eliminar los archivos de log: {e}"}, 500
+        else:
+            return {"error": "Tipo de log no válido"}, 400
+
         try:
-            open(log_file_path, 'w').close()
-            return {"message": "Log file cleared successfully"}
+            if log_file_path.exists():
+                os.remove(log_file_path)
+            return {"message": f"Log de {tipo} eliminado exitosamente"}
         except Exception as e:
-            return {"error": f"An error occurred while clearing the log file: {e}"}, 500
+            return {"error": f"Error al eliminar el log de {tipo}: {e}"}, 500
+
+# Añadir las rutas para los endpoints de log
+api.add_resource(WrapperJSONLog, 
+                '/wrapperJSON/log/<string:tipo>',
+                '/wrapperJSON/log',
+                endpoint='json_log')
 
 # Add the resources to the API
 api.add_resource(WrapperJSONExecute, '/wrapperJSON/execute')
-api.add_resource(WrapperJSONLog, '/wrapperJSON/log')
 
 if __name__ == '__main__':
+    print("\n" + "="*50)
+    print("API WrapperJSON iniciada exitosamente!")
+    print("="*50)
+    print("\nDocumentación disponible en:")
+    print("  → http://localhost:8082/swagger-ui")
+    print("\nEndpoints disponibles:")
+    print("  → POST   http://localhost:8082/wrapperJSON/execute")
+    print("  → GET    http://localhost:8082/wrapperJSON/log/estadisticas")
+    print("  → DELETE http://localhost:8082/wrapperJSON/log/estadisticas")
+    print("  → GET    http://localhost:8082/wrapperJSON/log/rechazados")
+    print("  → DELETE http://localhost:8082/wrapperJSON/log/rechazados")
+    print("  → GET    http://localhost:8082/wrapperJSON/log/reparados")
+    print("  → DELETE http://localhost:8082/wrapperJSON/log/reparados")
+    print("  → DELETE http://localhost:8082/wrapperJSON/log")
+    print("\nPresiona Ctrl+C para detener el servidor")
+    print("="*50 + "\n")
     app.run(debug=True, host='localhost', port=8082)

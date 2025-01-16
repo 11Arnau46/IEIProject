@@ -15,6 +15,10 @@
         {
             "name": "WrapperXML",
             "description": "Endpoints para la transformación de datos de XML"
+        },
+        {
+            "name": "WrapperXML Logs",
+            "description": "Endpoints para la gestión de logs"
         }
     ],
     "paths": {
@@ -27,38 +31,13 @@
                 "description": "Endpoint para ejecutar la transformación de datos a XML.",
                 "responses": {
                     "201": {
-                        "description": "Transformación de datos exitosa. Los resultados obtenidos son:",
-                        "examples": {
-                            "application/json": [
-                                {
-                                    "nomMonumento": "",
-                                    "tipoMonumento": "",
-                                    "direccion": "",
-                                    "codigo_postal": "",
-                                    "longitud": "",
-                                    "latitud": "",
-                                    "descripcion": "",
-                                    "nomLocalidad": "",
-                                    "nomProvincia": ""
-                                }
-                            ]
-                        }
+                        "description": "Transformación de datos exitosa"
                     },
                     "404": {
-                        "description": "Archivo de salida no encontrado",
-                        "examples": {
-                            "application/json": {
-                                "error": "Output file not found"
-                            }
-                        }
+                        "description": "Archivo de salida no encontrado"
                     },
                     "500": {
-                        "description": "Error interno del servidor",
-                        "examples": {
-                            "application/json": {
-                                "error": "Subprocess failed with error: <error_message>"
-                            }
-                        }
+                        "description": "Error interno del servidor"
                     }
                 }
             },
@@ -70,107 +49,135 @@
                 "description": "Endpoint para eliminar el archivo XML generado por la transformación.",
                 "responses": {
                     "200": {
-                        "description": "Archivo eliminado exitosamente",
-                        "examples": {
-                            "application/json": {
-                                "message": "Output file deleted successfully"
-                            }
-                        }
+                        "description": "Archivo eliminado exitosamente"
                     },
                     "404": {
-                        "description": "Archivo no encontrado",
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "error": {
-                                    "type": "string",
-                                    "example": "Resultado no encontrado."
-                                }
-                            }
-                        },
-                        "examples": {
-                            "application/json": {
-                                "error": "Resultado no encontrado."
-                            }
-                        }
+                        "description": "Archivo no encontrado"
                     },
                     "500": {
-                        "description": "Error interno del servidor",
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "error": {
-                                    "type": "string",
-                                    "example": "Error interno del servidor. Intente más tarde."
-                                }
-                            }
-                        },
-                        "examples": {
-                            "application/json": {
-                                "error": "Error interno del servidor. Intente más tarde."
-                            }
-                        }
+                        "description": "Error interno del servidor"
                     }
                 }
             }
         },
-        "/wrapperXML/log": {
+        "/wrapperXML/log/estadisticas": {
             "get": {
                 "tags": [
-                    "log"
+                    "WrapperXML Logs"
                 ],
-                "summary": "Obtener contenido del archivo de log",
-                "description": "Endpoint para obtener el contenido del archivo de log.",
+                "summary": "Obtener log de estadísticas",
+                "description": "Endpoint para obtener el contenido del archivo de log de estadísticas.",
                 "responses": {
                     "200": {
-                        "description": "Contenido del log obtenido exitosamente",
-                        "schema": {
-                            "type": "string"
-                        },
-                        "examples": {
-                            "text/plain": "Registros con errores y descartados: {fuente, nombre, Localidad, motivo del error}\nRegistros con errores y reparados: {fuente, nombre, Localidad, motivo del error, reparación}\n\nNúmero de registros cargados correctamente : NN\n"
-                        }
+                        "description": "Contenido del log obtenido exitosamente"
                     },
                     "404": {
-                        "description": "Archivo de log no encontrado",
-                        "examples": {
-                            "application/json": {
-                                "error": "Log file not found"
-                            }
-                        }
+                        "description": "Log de estadísticas no encontrado"
                     },
                     "500": {
-                        "description": "Error interno del servidor",
-                        "examples": {
-                            "application/json": {
-                                "error": "An error occurred while reading the log file: <error_message>"
-                            }
-                        }
+                        "description": "Error interno del servidor"
                     }
                 }
             },
             "delete": {
                 "tags": [
-                    "log"
+                    "WrapperXML Logs"
                 ],
-                "summary": "Limpiar contenido del archivo de log",
-                "description": "Endpoint para limpiar el contenido del archivo de log.",
+                "summary": "Limpiar log de estadísticas",
+                "description": "Endpoint para limpiar el contenido del archivo de log de estadísticas.",
                 "responses": {
                     "200": {
-                        "description": "Contenido del log limpiado exitosamente",
-                        "examples": {
-                            "application/json": {
-                                "message": "Log file cleared successfully"
-                            }
-                        }
+                        "description": "Log de estadísticas limpiado exitosamente"
                     },
                     "500": {
-                        "description": "Error interno del servidor",
-                        "examples": {
-                            "application/json": {
-                                "error": "An error occurred while clearing the log file: <error_message>"
-                            }
-                        }
+                        "description": "Error interno del servidor"
+                    }
+                }
+            }
+        },
+        "/wrapperXML/log/rechazados": {
+            "get": {
+                "tags": [
+                    "WrapperXML Logs"
+                ],
+                "summary": "Obtener log de rechazados",
+                "description": "Endpoint para obtener el contenido del archivo de log de entradas rechazadas.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log obtenido exitosamente"
+                    },
+                    "404": {
+                        "description": "Log de rechazados no encontrado"
+                    },
+                    "500": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "WrapperXML Logs"
+                ],
+                "summary": "Limpiar log de rechazados",
+                "description": "Endpoint para limpiar el contenido del archivo de log de entradas rechazadas.",
+                "responses": {
+                    "200": {
+                        "description": "Log de rechazados limpiado exitosamente"
+                    },
+                    "500": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            }
+        },
+        "/wrapperXML/log/reparados": {
+            "get": {
+                "tags": [
+                    "WrapperXML Logs"
+                ],
+                "summary": "Obtener log de reparados",
+                "description": "Endpoint para obtener el contenido del archivo de log de entradas reparadas.",
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log obtenido exitosamente"
+                    },
+                    "404": {
+                        "description": "Log de reparados no encontrado"
+                    },
+                    "500": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "WrapperXML Logs"
+                ],
+                "summary": "Limpiar log de reparados",
+                "description": "Endpoint para limpiar el contenido del archivo de log de entradas reparadas.",
+                "responses": {
+                    "200": {
+                        "description": "Log de reparados limpiado exitosamente"
+                    },
+                    "500": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            }
+        },
+        "/wrapperXML/log": {
+            "delete": {
+                "tags": [
+                    "WrapperXML Logs"
+                ],
+                "summary": "Limpiar todos los logs",
+                "description": "Endpoint para limpiar el contenido de todos los archivos de log.",
+                "responses": {
+                    "200": {
+                        "description": "Todos los archivos de log han sido limpiados exitosamente"
+                    },
+                    "500": {
+                        "description": "Error interno del servidor"
                     }
                 }
             }

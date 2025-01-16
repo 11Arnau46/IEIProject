@@ -17,10 +17,6 @@ SQL/__pycache__/BDConnection.cpython-312.pyc
 SQL/__pycache__/Json_Loader.cpython-312.pyc
 SQL/__pycache__/BDMap.cpython-312.pyc
 SQL/__pycache__/BDConnection.cpython-310.pyc
-SQL/BDConnection.py
-SQL/BDConnection.py
-main.py
-Fuentes_de_datos/.DS_Store
 venv/.DS_Store
 BackEnd/__pycache__/Wrapper_CSV.cpython-312.pyc
 BackEnd/__pycache__/Wrapper_JSON.cpython-312.pyc
@@ -33,3 +29,5 @@ BackEnd/Wrappers/__pycache__/Wrapper_CSV.cpython-312.pyc
 BackEnd/Wrappers/__pycache__/Wrapper_JSON.cpython-312.pyc
 BackEnd/Wrappers/__pycache__/Wrapper_XML.cpython-312.pyc
 BackEnd/utils/__pycache__/SQL.cpython-312.pyc
+*.pyc
+*.DS_Store

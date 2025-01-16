@@ -1,2 +1,3 @@
 Registro con errores y reparado:
-Registro con errores y reparado:
+{nombre = Poblado de la Peña Ajuerá, Localidad = CASTELLON, motivo = Provincia sin tilde, operación = Agregar la tilde}
+{nombre = Poblado de la Peña Ajuerá, Localidad = Castellon, motivo = Provincia sin tilde, operación = Agregar la tilde}
