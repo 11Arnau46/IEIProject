@@ -7,7 +7,7 @@ from BackEnd.utils.Otros import set_data_source, setup_loggers
 from BackEnd.Wrappers.Wrapper_CSV import process_csv
 from BackEnd.Wrappers.Wrapper_JSON import process_json
 from BackEnd.Wrappers.Wrapper_XML import process_xml
-from SQL.BDMap import Provincia, Localidad, Monumento, TipoMonumento
+from SQL.BDMap import Provincia, Localidad, Monumento, TipoMonumento, Base
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 
@@ -28,7 +28,23 @@ class SQL:
 
         # Crear una sesión de base de datos usando el engine con la base de datos seleccionada
         self.session = bd_connection.session  # Guardar la sesión como atributo de la clase
+        self.engine = engine_with_db  # Guardar el engine como atributo de la clase
     
+    def borrar_tablas(self):
+        """
+        Borra todas las tablas de la base de datos.
+        """
+        try:
+            # Eliminar todas las tablas
+            Base.metadata.drop_all(self.engine)
+            # Recrear las tablas vacías
+            Base.metadata.create_all(self.engine)
+            return True, "Todas las tablas han sido borradas exitosamente"
+        except SQLAlchemyError as e:
+            return False, f"Error al borrar las tablas: {str(e)}"
+        except Exception as e:
+            return False, f"Error inesperado: {str(e)}"
+
     def cargar_datos(self, data):
         session = self.session
         
