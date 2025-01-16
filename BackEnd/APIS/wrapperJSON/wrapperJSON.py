@@ -1,3 +1,4 @@
+import json
 import sys
 from pathlib import Path
 
@@ -39,28 +40,42 @@ class WrapperJSONExecute(Resource):
     WrapperJSONExecute is a Flask-RESTful resource that handles the execution of a data transformation script to JSON.
     """
 
-    def post(self):
-        """
-        Executes the main.py script with the 'json' argument using python3 or py command.
-        """
-        # Execute the Wrapper_JSON.py 
-        JSONtoJSON()
-        
-        # Define the path to the output file
-        output_file_path = root_dir / 'BackEnd' / 'Wrappers' / 'JSONtoJSON.json'
-        
-        # Print the path to the output file for debugging purposes
-        print("Path to output file:", output_file_path)
-        
-        # Read the output file and return its contents
+    def post(self):  
         try:
-            with open(output_file_path, 'r', encoding='utf-8') as output_file:
-                output_data = output_file.read()
-            return Response(output_data, mimetype='application/json', status=201)
+             # Ruta al archivo JSON que deseas devolver
+            root_dir = Path(__file__).resolve().parents[3]
+
+            # Define the path to the output JSON file
+            path = root_dir / 'Fuentes_de_datos' / 'Final' / 'eus.json'
+
+            # Leer el contenido del archivo JSON con el encoding adecuado
+            with open(path, 'r', encoding='utf-8') as json_file:
+                output_data = json.load(json_file)
+
+            # Función para eliminar claves duplicadas con valores vacíos
+            def remove_empty_duplicates(data):
+                for item in data:
+                    # Recorrer las claves del ítem
+                    keys_to_check = list(item.keys())
+                    for key in keys_to_check:
+                        # Si una clave tiene un valor vacío y ya existe una clave con ese nombre, eliminar la clave duplicada
+                        if item.get(key) == "":
+                            del item[key]
+                return data
+
+            output_data = remove_empty_duplicates(output_data)
+
+            # Convertir de nuevo a JSON con encoding UTF-8 y devolverlo sin cambios
+            response_data = json.dumps(output_data, ensure_ascii=False)
+
+            # Asegurarse de que la respuesta también sea con UTF-8
+            return Response(response_data, mimetype='application/json', status=200)
+
         except FileNotFoundError:
             return {"error": "Output file not found"}, 404
         except Exception as e:
             return {"error": f"An error occurred while reading the output file: {e}"}, 500
+    
 
     def delete(self):
         """
