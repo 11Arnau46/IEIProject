@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Función para agregar o quitar el espacio dependiendo de la visibilidad de las sugerencias
-  function ajustarEspacio(suggestionsList, formGroup) {
+  function ajustarEspacio(suggestionsList, input) {
+    const formGroup = input.closest(".form-group"); // Selecciona el contenedor del campo de entrada
     const form = document.querySelector(".form");
     if (suggestionsList.children.length > 0) {
       formGroup.classList.add("margin-bottom-100"); // Añadir espacio
@@ -49,25 +50,33 @@ document.addEventListener("DOMContentLoaded", () => {
         li.addEventListener("click", () => {
           input.value = s;
           suggestionsList.innerHTML = "";
-          ajustarEspacio(suggestionsList, formGroup);
+          ajustarEspacio(suggestionsList, input);
         });
         suggestionsList.appendChild(li);
       });
     }
-    ajustarEspacio(suggestionsList, formGroup);
+    ajustarEspacio(suggestionsList, input);
   }
 
-  // Cargar los datos JSON
-  fetch("../Resultados/JSONtoJSON_Corregido.json")
-    .then((response) => response.json()) // Convierte la respuesta a un objeto JSON
-    .then((data) => {
-      datos = data; // Asigna los datos cargados a la variable `datos`
-      console.log("Datos cargados:", datos); // Verifica que los datos se han cargado correctamente
-    })
-    .catch((error) => console.error("Error al cargar el JSON:", error));
+  // Función para obtener los datos desde la API
+  async function obtenerDatosDesdeAPI(filtros) {
+    try {
+      const queryParams = new URLSearchParams(filtros).toString();
+      const response = await fetch(
+        `http://localhost:5001/api/monumentos?${queryParams}`
+      );
+      if (!response.ok) {
+        throw new Error("Error al obtener los datos desde la API");
+      }
+      return await response.json();
+    } catch (error) {
+      console.error("Error al cargar los datos desde la API:", error);
+      return [];
+    }
+  }
 
   // Función para manejar el evento de búsqueda
-  buscarBtn.addEventListener("click", () => {
+  buscarBtn.addEventListener("click", async () => {
     console.log("El archivo JavaScript se ha cargado correctamente.");
     limpiarMapa();
 
@@ -77,16 +86,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const codigoPostal = postalInput.value;
     const tipo = document.getElementById("tipo").value;
 
-    // Filtrar los datos según los valores de los campos
-    const resultados = datos.filter((d) => {
-      return (
-        (!localidad || d.nomLocalidad.toLowerCase().includes(localidad)) &&
-        (!provincia || d.nomProvincia.toLowerCase().includes(provincia)) &&
-        (!codigoPostal || d.codigo_postal.includes(codigoPostal)) &&
-        (!tipo || d.tipoMonumento === tipo)
-      );
+    // Llamar a la API con los filtros
+    const resultados = await obtenerDatosDesdeAPI({
+      localidad,
+      provincia,
+      codigo_postal: codigoPostal,
+      tipo,
     });
-
+    datos = resultados;
     // Mostrar los resultados en la tabla
     const tabla = document
       .getElementById("tabla-resultados")
@@ -103,12 +110,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // Si no hay filtros, mostrar todos los datos y centrar el mapa en España
       datos.forEach((d) => {
         const fila = `<tr>
-                <td>${d.nomMonumento}</td>
-                <td>${d.tipoMonumento}</td>
+                <td>${d.nombre_monumento}</td>
+                <td>${d.tipo_monumento}</td>
                 <td>${d.direccion}</td>
-                <td>${d.nomLocalidad}</td>
+                <td>${d.nombre_localidad}</td>
                 <td>${d.codigo_postal}</td>
-                <td>${d.nomProvincia}</td>
+                <td>${d.nombre_provincia}</td>
                 <td>${d.descripcion}</td>
             </tr>`;
         tabla.innerHTML += fila;
@@ -126,19 +133,19 @@ document.addEventListener("DOMContentLoaded", () => {
       // Si hay filtros, mostrar los resultados filtrados
       resultados.forEach((d) => {
         const fila = `<tr>
-                <td>${d.nomMonumento}</td>
-                <td>${d.tipoMonumento}</td>
+                <td>${d.nombre_monumento}</td>
+                <td>${d.tipo_monumento}</td>
                 <td>${d.direccion}</td>
-                <td>${d.nomLocalidad}</td>
+                <td>${d.nombre_localidad}</td>
                 <td>${d.codigo_postal}</td>
-                <td>${d.nomProvincia}</td>
+                <td>${d.nombre_provincia}</td>
                 <td>${d.descripcion}</td>
             </tr>`;
         tabla.innerHTML += fila;
 
         const marker = L.marker([d.latitud, d.longitud]).addTo(mapa);
         marker.bindPopup(
-          `<strong>${d.nomMonumento}</strong><br>${d.direccion}`
+          `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
         );
         markers.push(marker);
       });
@@ -150,10 +157,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Mostrar sugerencias cuando el usuario escribe
   localidadInput.addEventListener("input", () =>
-    mostrarSugerencias(localidadInput, "nomLocalidad", "localidad-suggestions")
+    mostrarSugerencias(
+      localidadInput,
+      "nombre_localidad",
+      "localidad-suggestions"
+    )
   );
   provinciaInput.addEventListener("input", () =>
-    mostrarSugerencias(provinciaInput, "nomProvincia", "provincia-suggestions")
+    mostrarSugerencias(
+      provinciaInput,
+      "nombre_provincia",
+      "provincia-suggestions"
+    )
   );
   postalInput.addEventListener("input", () =>
     mostrarSugerencias(
