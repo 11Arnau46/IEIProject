@@ -8,13 +8,22 @@
     <!-- Leaflet.js CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
+<style>
+    /* Estilo para el botón activo */
+#busquedaBtn {
+    background-color: #ffffff;
+    text-decoration: underline; /* Subraya el texto */
+}
+</style>
 <body>
-<header class="header">
-    <h1>Buscador de Monumentos de Interés Cultural</h1>
-    <nav class="navigation">
-        <a href="Carga.html">Carga del Almacén de Datos</a>
+    <nav class="top-menu">
+        <span class="menu-title">Menú de Navegación: </span>
+        <a href="Carga.html" class="menu-button" id="cargaBtn">Ir a Carga de Datos</a>
+        <a href="Busqueda.html" class="menu-button" id="busquedaBtn">Busqueda de Monumentos</a>
     </nav>
-</header>
+    <header class="header">
+        <h1>Buscador de Monumentos de Interés Cultural</h1>
+    </header>
 
 <main class="container">
     <section class="main-content">

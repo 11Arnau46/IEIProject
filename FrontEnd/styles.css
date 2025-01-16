@@ -8,6 +8,33 @@ body {
     justify-content: center; /* Centra verticalmente */
     min-height: 100vh; /* Hace que el cuerpo tenga la altura completa de la ventana */
 }
+/* Estilo para el menú superior */
+.top-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 20px;
+    margin-bottom: 20px;  /* Separación con el header */
+    padding: 10px;
+    position: relative;
+}
+.menu-title {	
+    font-weight: bold;
+}
+.top-menu .menu-button {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #c9cac9;
+}
+
+/* Cambio de color cuando se pasa el ratón */
+.top-menu .menu-button:hover {
+    background-color: #b8cdf3;
+}
+
 
 .header {
     max-width: 1200px; /* Igual que .container */
