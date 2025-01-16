@@ -1,6 +1,7 @@
 import json
 import sys
 from pathlib import Path
+from collections import OrderedDict
 
 # Define the root project directory and add it to Python path
 root_dir = Path(__file__).resolve().parents[3]
@@ -42,31 +43,42 @@ class WrapperJSONExecute(Resource):
 
     def post(self):  
         try:
-             # Ruta al archivo JSON que deseas devolver
+            # Ruta al archivo JSON que deseas devolver
             root_dir = Path(__file__).resolve().parents[3]
 
             # Define the path to the output JSON file
             path = root_dir / 'Fuentes_de_datos' / 'Final' / 'eus.json'
 
-            # Leer el contenido del archivo JSON con el encoding adecuado
+            # Leer el archivo como texto primero para procesar manualmente las claves duplicadas
             with open(path, 'r', encoding='utf-8') as json_file:
-                output_data = json.load(json_file)
+                content = json_file.read()
+                # Dividir el contenido en líneas y procesar cada línea
+                lines = content.split('\n')
+                processed_data = []
+                current_item = {}
+                field_values = {}
 
-            # Función para eliminar claves duplicadas con valores vacíos
-            def remove_empty_duplicates(data):
-                for item in data:
-                    # Recorrer las claves del ítem
-                    keys_to_check = list(item.keys())
-                    for key in keys_to_check:
-                        # Si una clave tiene un valor vacío y ya existe una clave con ese nombre, eliminar la clave duplicada
-                        if item.get(key) == "":
-                            del item[key]
-                return data
+                for line in lines:
+                    line = line.strip()
+                    if '"' in line and ':' in line:
+                        # Extraer clave y valor
+                        key = line.split('"')[1]
+                        value = line.split(':')[1].strip().strip(',').strip('"')
+                        if key not in field_values:
+                            field_values[key] = value
+                            current_item[key] = value
+                        elif not field_values[key] and value:
+                            field_values[key] = value
+                            current_item[key] = value
 
-            output_data = remove_empty_duplicates(output_data)
+                    elif line == '}':
+                        if current_item:
+                            processed_data.append(current_item)
+                        current_item = {}
+                        field_values = {}
 
-            # Convertir de nuevo a JSON con encoding UTF-8 y devolverlo sin cambios
-            response_data = json.dumps(output_data, ensure_ascii=False)
+            # Convertir de nuevo a JSON con encoding UTF-8
+            response_data = json.dumps(processed_data, ensure_ascii=False)
 
             # Asegurarse de que la respuesta también sea con UTF-8
             return Response(response_data, mimetype='application/json', status=200)
@@ -75,7 +87,6 @@ class WrapperJSONExecute(Resource):
             return {"error": "Output file not found"}, 404
         except Exception as e:
             return {"error": f"An error occurred while reading the output file: {e}"}, 500
-    
 
     def delete(self):
         """
