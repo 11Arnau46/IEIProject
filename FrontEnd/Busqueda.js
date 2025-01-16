@@ -235,8 +235,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         markers.push(marker);
       });
 
-      // Centrar el mapa en España
-      mapa.setView([40.4168, -3.7038], 6);
+      // Centrar el mapa en todos los puntos
+      const bounds = markers.map((marker) => marker.getLatLng());
+      mapa.fitBounds(bounds); // Ajustar el zoom para mostrar todos los marcadores
     } else {
       // Si hay filtros, mostrar los resultados filtrados
       resultados.forEach((d) => {
@@ -258,8 +259,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         markers.push(marker);
       });
 
-      // Centrar el mapa en el primer resultado
-      mapa.setView([resultados[0].latitud, resultados[0].longitud], 10);
+      // Centrar el mapa en todos los puntos
+      const bounds = markers.map((marker) => marker.getLatLng());
+      mapa.fitBounds(bounds); // Ajustar el zoom para mostrar todos los marcadores
     }
   });
 

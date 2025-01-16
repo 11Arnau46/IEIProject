@@ -15,7 +15,7 @@ class BDConnection:
 
     def try_connection(self):
         """ Intenta crear una conexión probando diferentes contraseñas """
-        passwords = ['password', '1234', '123456']
+        passwords = ['root', 'password', '1234', '123456']
         
         for password in passwords:
             try:
