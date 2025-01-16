@@ -18,6 +18,7 @@ sys.path.append(str(root_dir))
 from BackEnd.Extractores import Extractor_JSON
 from BackEnd.Extractores import Extractor_XML
 from BackEnd.Extractores import Extractor_CSV
+from BackEnd.Extractores import ExtractorXML
 from BackEnd.utils.SQL import SQL
 
 app = Flask(__name__)
@@ -73,7 +74,7 @@ class LoadData(Resource):
                 elif extractor_type == 'json':
                     data = Extractor_JSON.get_datos()
                 elif extractor_type == 'xml':
-                    data = Extractor_XML.get_datos()
+                    data = ExtractorXML.get_datos()
                 else:
                     logging.error(f"Invalid extractor type: {extractor_type}")
                     return {"error": f"Invalid extractor type: {extractor_type}"}, 400
