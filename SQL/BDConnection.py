@@ -4,7 +4,11 @@ from sqlalchemy.exc import OperationalError
 from .BDMap import Base  # Importación relativa al paquete actual
 
 class BDConnection:
+<<<<<<< HEAD
     def __init__(self, usuario='root', contrasena='1234', host='127.0.0.1', puerto=3306, db_name='IEI'):
+=======
+    def __init__(self, usuario='root', contrasena='123456', host='127.0.0.1', puerto=3306, db_name='IEI'):
+>>>>>>> d5458aa (Logs integrados)
         self.usuario = usuario
         self.contrasena = contrasena
         self.host = host

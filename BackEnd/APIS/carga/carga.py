@@ -1,11 +1,15 @@
 import logging
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, send_from_directory, Response
 from flask_restful import Api, Resource
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
 import os
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Cargar variables de entorno
+load_dotenv()
 
 # Define the root project directory
 root_dir = Path(__file__).resolve().parents[3]
@@ -17,34 +21,19 @@ from BackEnd.Extractores import Extractor_CSV
 from BackEnd.utils.SQL import SQL
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# Configurar CORS para permitir todas las rutas y orígenes
+CORS(app, resources={
+    r"/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
 
 api = Api(app)
 
-# Execute for SSL Certificate creation in same folder as carga.py
-# openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
-
-# Swagger UI configuration
-SWAGGER_URL = '/swagger-ui'
-API_URL = '/static/swagger.json'  # Path to the Swagger JSON file
-
-swaggerui_blueprint = get_swaggerui_blueprint(
-    SWAGGER_URL,
-    API_URL,
-    config={
-        'app_name': "Carga API"
-    }
-)
-
-app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
-
-# Serve the swagger.json file
-@app.route('/static/swagger.json')
-def swagger_json():
-    return send_from_directory(os.path.join(app.root_path, 'static'), 'swagger.json')
-
-# Read the API key from an environment variable
-API_KEY = os.getenv('API_KEY', 'dev-key-1234')  # Default value for development
+# Read the API key from .env file
+API_KEY = os.getenv('API_KEY', 'FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY')
 
 # Authentication decorator
 def require_api_key(func):
@@ -55,7 +44,7 @@ def require_api_key(func):
             return func(*args, **kwargs)
         else:
             logging.warning("Unauthorized API Key.")
-            return {"error": "Unauthorized"}, 401  # Return a dictionary directly
+            return {"error": "Unauthorized"}, 401
     return wrapper
 
 class LoadData(Resource):
@@ -63,7 +52,6 @@ class LoadData(Resource):
     def post(self):
         try:
             logging.debug("Initializing the database...")
-            # Initialize the database
             sql_instance = SQL()
             sql_instance.initialize_db()
 
@@ -84,13 +72,6 @@ class LoadData(Resource):
                     return {"error": f"Invalid extractor type: {extractor_type}"}, 400
 
                 logging.debug(f"Data extracted for {extractor_type}: {data}")
-
-                # Ensure the data is JSON serializable
-                if not isinstance(data, (list, dict)):
-                    logging.error("Extracted data is not JSON serializable.")
-                    return {"error": "Extracted data is not JSON serializable"}, 500
-
-                logging.debug("Loading data into the database...")
                 sql_instance.cargar_datos(data)
 
             logging.info("Data successfully loaded into the database.")
@@ -99,10 +80,97 @@ class LoadData(Resource):
             logging.error(f"An error occurred: {e}")
             return {"error": f"An error occurred: {e}"}, 500
 
+class WrapperLog(Resource):
+    """
+    WrapperLog es un recurso Flask-RESTful que maneja la obtención y eliminación de archivos de log.
+    """
+    
+    @require_api_key
+    def get(self, wrapper, tipo=None):
+        """
+        Obtiene el contenido del archivo de log según el tipo especificado y el wrapper.
+        """
+        if tipo not in ["estadisticas", "rechazados", "reparados"]:
+            return {"error": "Tipo de log no válido"}, 400
+            
+        if wrapper not in ["xml", "json", "csv"]:
+            return {"error": "Tipo de wrapper no válido"}, 400
+
+        log_file_path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{tipo}-{wrapper}.log'
+
+        try:
+            with open(log_file_path, 'r', encoding='latin-1') as log_file:
+                log_data = log_file.read()
+            return Response(log_data, mimetype='text/plain', status='200')
+        except FileNotFoundError:
+            return {"error": f"Log de {tipo} no encontrado"}, 404
+        except Exception as e:
+            return {"error": f"Error al leer el log de {tipo}: {e}"}, 500
+
+    @require_api_key
+    def delete(self, wrapper, tipo=None):
+        """
+        Elimina el archivo de log según el tipo especificado y el wrapper.
+        """
+        if wrapper not in ["xml", "json", "csv"]:
+            return {"error": "Tipo de wrapper no válido"}, 400
+
+        # Cerrar los handlers antes de eliminar
+        for log_type in ["estadisticas", "rechazados", "reparados"]:
+            logger_name = f'{log_type}_{wrapper.upper()}'
+            if logger_name in logging.root.manager.loggerDict:
+                logger = logging.getLogger(logger_name)
+                for handler in logger.handlers[:]:
+                    handler.close()
+                    logger.removeHandler(handler)
+
+        if tipo:
+            if tipo not in ["estadisticas", "rechazados", "reparados"]:
+                return {"error": "Tipo de log no válido"}, 400
+                
+            log_file_path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{tipo}-{wrapper}.log'
+            try:
+                if log_file_path.exists():
+                    os.remove(log_file_path)
+                return {"message": f"Log de {tipo} eliminado exitosamente"}
+            except Exception as e:
+                return {"error": f"Error al eliminar el log de {tipo}: {e}"}, 500
+        else:
+            # Eliminar todos los logs del wrapper
+            try:
+                for log_type in ["estadisticas", "rechazados", "reparados"]:
+                    path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{log_type}-{wrapper}.log'
+                    if path.exists():
+                        os.remove(path)
+                return {"message": "Todos los archivos de log han sido eliminados exitosamente"}
+            except Exception as e:
+                return {"error": f"Error al eliminar los archivos de log: {e}"}, 500
+
+# Swagger UI configuration
+SWAGGER_URL = '/swagger-ui'
+API_URL = '/static/swagger.json'
+
+swaggerui_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "Carga API"
+    }
+)
+
+app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
+
+# Serve the swagger.json file
+@app.route('/static/swagger.json')
+def swagger_json():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'swagger.json')
+
 # Add the resources to the API
 api.add_resource(LoadData, '/load')
+api.add_resource(WrapperLog, 
+                '/log/<string:wrapper>/<string:tipo>',
+                '/log/<string:wrapper>')
 
-# https://localhost:8000/swagger-ui/?api_key=FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY#/
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     cert_path = os.path.join(os.path.dirname(__file__), 'cert.pem')
@@ -113,5 +181,9 @@ if __name__ == '__main__':
     print("Swagger UI: https://localhost:8000/swagger-ui")
     print("API Endpoint: https://localhost:8000/load")
     print("Documentación JSON: https://localhost:8000/static/swagger.json")
+    print("Endpoints de logs:")
+    print("  → GET    https://localhost:8000/log/{wrapper}/{tipo}")
+    print("  → DELETE https://localhost:8000/log/{wrapper}/{tipo}")
+    print("  → DELETE https://localhost:8000/log/{wrapper}")
     print("================================\n")
     app.run(ssl_context=(cert_path, key_path), debug=True, host='0.0.0.0', port=8000)

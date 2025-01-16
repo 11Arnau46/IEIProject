@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "API documentation for Carga",
+        "description": "API documentation for Carga. Use API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
         "version": "1.0.0",
         "title": "Carga API",
         "termsOfService": "http://swagger.io/terms/",
@@ -9,12 +9,40 @@
             "email": "agarmar6@etsfinf.upv.es"
         }
     },
-    "host": "0.0.0.0:8000",
+    "host": "localhost:8000",
     "basePath": "/",
+    "schemes": [
+        "https"
+    ],
+    "securityDefinitions": {
+        "api_key": {
+            "type": "apiKey",
+            "name": "api_key",
+            "in": "query",
+            "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+        }
+    },
+    "security": [
+        {
+            "api_key": []
+        }
+    ],
     "tags": [
         {
             "name": "Carga",
             "description": "Endpoints related to data loading"
+        },
+        {
+            "name": "Log CSV",
+            "description": "Endpoints para gestionar los logs del wrapper CSV"
+        },
+        {
+            "name": "Log XML",
+            "description": "Endpoints para gestionar los logs del wrapper XML"
+        },
+        {
+            "name": "Log JSON",
+            "description": "Endpoints para gestionar los logs del wrapper JSON"
         }
     ],
     "paths": {
@@ -40,50 +68,403 @@
                                 "xml"
                             ]
                         }
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "Database initialized and data loaded successfully",
-                        "examples": {
-                            "application/json": {
-                                "message": "Database initialized and data loaded successfully"
-                            }
-                        }
+                        "description": "Database initialized and data loaded successfully"
                     },
                     "400": {
-                        "description": "Invalid extractor type",
-                        "examples": {
-                            "application/json": {
-                                "error": "Invalid extractor type"
-                            }
-                        }
+                        "description": "Invalid extractor type"
                     },
                     "401": {
-                        "description": "Unauthorized",
-                        "examples": {
-                            "application/json": {
-                                "error": "Unauthorized"
-                            }
-                        }
+                        "description": "Unauthorized"
                     },
                     "500": {
-                        "description": "Internal server error",
-                        "examples": {
-                            "application/json": {
-                                "error": "An error occurred: <error_message>"
-                            }
-                        }
+                        "description": "Internal server error"
                     }
                 }
             }
-        }
-    },
-    "securityDefinitions": {
-        "api_key": {
-            "type": "apiKey",
-            "name": "api_key",
-            "in": "query"
+        },
+        "/log/csv/{tipo}": {
+            "get": {
+                "tags": [
+                    "Log CSV"
+                ],
+                "summary": "Obtener log específico del wrapper CSV",
+                "description": "Obtiene el contenido de un archivo de log específico del wrapper CSV",
+                "parameters": [
+                    {
+                        "name": "tipo",
+                        "in": "path",
+                        "description": "Tipo de log (estadisticas, rechazados, reparados)",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "estadisticas",
+                            "rechazados",
+                            "reparados"
+                        ]
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log"
+                    },
+                    "400": {
+                        "description": "Tipo de log no válido"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Log no encontrado"
+                    },
+                    "500": {
+                        "description": "Error al leer el log"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Log CSV"
+                ],
+                "summary": "Eliminar log específico del wrapper CSV",
+                "description": "Elimina un archivo de log específico del wrapper CSV",
+                "parameters": [
+                    {
+                        "name": "tipo",
+                        "in": "path",
+                        "description": "Tipo de log (estadisticas, rechazados, reparados)",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "estadisticas",
+                            "rechazados",
+                            "reparados"
+                        ]
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Log eliminado exitosamente"
+                    },
+                    "400": {
+                        "description": "Tipo de log no válido"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Log no encontrado"
+                    },
+                    "500": {
+                        "description": "Error al eliminar el log"
+                    }
+                }
+            }
+        },
+        "/log/xml/{tipo}": {
+            "get": {
+                "tags": [
+                    "Log XML"
+                ],
+                "summary": "Obtener log específico del wrapper XML",
+                "description": "Obtiene el contenido de un archivo de log específico del wrapper XML",
+                "parameters": [
+                    {
+                        "name": "tipo",
+                        "in": "path",
+                        "description": "Tipo de log (estadisticas, rechazados, reparados)",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "estadisticas",
+                            "rechazados",
+                            "reparados"
+                        ]
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log"
+                    },
+                    "400": {
+                        "description": "Tipo de log no válido"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Log no encontrado"
+                    },
+                    "500": {
+                        "description": "Error al leer el log"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Log XML"
+                ],
+                "summary": "Eliminar log específico del wrapper XML",
+                "description": "Elimina un archivo de log específico del wrapper XML",
+                "parameters": [
+                    {
+                        "name": "tipo",
+                        "in": "path",
+                        "description": "Tipo de log (estadisticas, rechazados, reparados)",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "estadisticas",
+                            "rechazados",
+                            "reparados"
+                        ]
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Log eliminado exitosamente"
+                    },
+                    "400": {
+                        "description": "Tipo de log no válido"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Log no encontrado"
+                    },
+                    "500": {
+                        "description": "Error al eliminar el log"
+                    }
+                }
+            }
+        },
+        "/log/json/{tipo}": {
+            "get": {
+                "tags": [
+                    "Log JSON"
+                ],
+                "summary": "Obtener log específico del wrapper JSON",
+                "description": "Obtiene el contenido de un archivo de log específico del wrapper JSON",
+                "parameters": [
+                    {
+                        "name": "tipo",
+                        "in": "path",
+                        "description": "Tipo de log (estadisticas, rechazados, reparados)",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "estadisticas",
+                            "rechazados",
+                            "reparados"
+                        ]
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Contenido del log"
+                    },
+                    "400": {
+                        "description": "Tipo de log no válido"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Log no encontrado"
+                    },
+                    "500": {
+                        "description": "Error al leer el log"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Log JSON"
+                ],
+                "summary": "Eliminar log específico del wrapper JSON",
+                "description": "Elimina un archivo de log específico del wrapper JSON",
+                "parameters": [
+                    {
+                        "name": "tipo",
+                        "in": "path",
+                        "description": "Tipo de log (estadisticas, rechazados, reparados)",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "estadisticas",
+                            "rechazados",
+                            "reparados"
+                        ]
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Log eliminado exitosamente"
+                    },
+                    "400": {
+                        "description": "Tipo de log no válido"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Log no encontrado"
+                    },
+                    "500": {
+                        "description": "Error al eliminar el log"
+                    }
+                }
+            }
+        },
+        "/log/csv": {
+            "delete": {
+                "tags": [
+                    "Log CSV"
+                ],
+                "summary": "Eliminar todos los logs del wrapper CSV",
+                "description": "Elimina todos los archivos de log del wrapper CSV",
+                "parameters": [
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Todos los logs eliminados exitosamente"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Error al eliminar los logs"
+                    }
+                }
+            }
+        },
+        "/log/xml": {
+            "delete": {
+                "tags": [
+                    "Log XML"
+                ],
+                "summary": "Eliminar todos los logs del wrapper XML",
+                "description": "Elimina todos los archivos de log del wrapper XML",
+                "parameters": [
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Todos los logs eliminados exitosamente"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Error al eliminar los logs"
+                    }
+                }
+            }
+        },
+        "/log/json": {
+            "delete": {
+                "tags": [
+                    "Log JSON"
+                ],
+                "summary": "Eliminar todos los logs del wrapper JSON",
+                "description": "Elimina todos los archivos de log del wrapper JSON",
+                "parameters": [
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
+                        "required": true,
+                        "type": "string",
+                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Todos los logs eliminados exitosamente"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Error al eliminar los logs"
+                    }
+                }
+            }
         }
     }
 }
