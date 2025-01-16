@@ -18,7 +18,7 @@ class SQL:
 
         # Inicializar la base de datos
         engine_with_db = bd_connection.init_db()  # Aquí se obtiene el engine conectado a 'IEI'
-     
+    
         if engine_with_db is None:
             print("Error al inicializar la base de datos. Terminando el proceso.")
             return

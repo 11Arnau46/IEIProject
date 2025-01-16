@@ -3,6 +3,18 @@ from flask_restful import Api, Resource
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
 import os
+import sys
+from pathlib import Path
+
+
+# Define the root project directory
+root_dir = Path(__file__).resolve().parents[3]
+sys.path.append(str(root_dir))
+
+from BackEnd.utils.SQL import SQL
+from BackEnd.Extractores.Extractor_CSV import *
+from BackEnd.Extractores.Extractor_JSON import *
+from BackEnd.Extractores.Extractor_XML import *
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -28,7 +40,6 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
 # Read the API key from an environment variable
 API_KEY = os.getenv('API_KEY')
-#https://localhost:5000/swagger-ui?api_key=FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY
 
 # Authentication decorator
 def require_api_key(func):
@@ -40,38 +51,32 @@ def require_api_key(func):
             return jsonify({"error": "Unauthorized"}), 401
     return wrapper
 
-class CargaExecute(Resource):
+class LoadData(Resource):
     @require_api_key
     def post(self):
-        # Implement the logic to execute the data load
-        return jsonify({"message": "Data load successful"})
+        try:
+            SQL.initialize_db()
 
-    @require_api_key
-    def get(self):
-        # Implement the logic to get the load results
-        return jsonify({"log-summary": "Load results fetched successfully"})
+            # Get the extractor type from the request
+            extractor_type = request.args.get('type')
+            if extractor_type == 'csv':
+                data = get_csv_datos()
+            elif extractor_type == 'json':
+                data = get_json_datos()
+            elif extractor_type == 'xml':
+                data = get_xml_datos()
+            else:
+                return jsonify({"error": "Invalid extractor type"}), 400
 
-    @require_api_key
-    def put(self):
-        # Implement the logic to clear the load results
-        return jsonify({"message": "Load results cleared successfully"})
-
-class CargaLog(Resource):
-    @require_api_key
-    def get(self):
-        # Implement the logic to get the log file content
-        return jsonify({"log": "Log file content here..."})
-
-    @require_api_key
-    def delete(self):
-        # Implement the logic to clear the log file content
-        return jsonify({"message": "Log file content cleared successfully"})
+            # Load the data into the database
+            SQL.cargar_datos(data)
+            return jsonify({"message": "Database initialized and data loaded successfully"}), 200
+        except Exception as e:
+            return jsonify({"error": f"An error occurred: {e}"}), 500
 
 # Add the resources to the API
-api.add_resource(CargaExecute, '/carga')
-api.add_resource(CargaLog, '/carga/log')
+api.add_resource(LoadData, '/load')
 
-
-# https://0.0.0.0:5000/swagger-ui/?api_key=FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY#/
+# https://0.0.0.0:8000/swagger-ui/?api_key=FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY#/
 if __name__ == '__main__':
-    app.run(ssl_context=('cert.pem', 'key.pem'), debug=True, host='0.0.0,0', port=5000)
+    app.run(ssl_context=('cert.pem', 'key.pem'), debug=True, host='localhost', port=8000)

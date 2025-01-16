@@ -26,3 +26,10 @@ BackEnd/__pycache__/Wrapper_CSV.cpython-312.pyc
 BackEnd/__pycache__/Wrapper_JSON.cpython-312.pyc
 BackEnd/__pycache__/Wrapper_XML.cpython-312.pyc
 /venv/
+BackEnd/Extractores/__pycache__/Extractor_CSV.cpython-312.pyc
+BackEnd/Extractores/__pycache__/Extractor_JSON.cpython-312.pyc
+BackEnd/Extractores/__pycache__/Extractor_XML.cpython-312.pyc
+BackEnd/Wrappers/__pycache__/Wrapper_CSV.cpython-312.pyc
+BackEnd/Wrappers/__pycache__/Wrapper_JSON.cpython-312.pyc
+BackEnd/Wrappers/__pycache__/Wrapper_XML.cpython-312.pyc
+BackEnd/utils/__pycache__/SQL.cpython-312.pyc

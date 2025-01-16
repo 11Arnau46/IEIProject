@@ -6,10 +6,10 @@
         "title": "Carga API",
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
-            "email": "you@example.com"
+            "email": "agarmar6@etsfinf.upv.es"
         }
     },
-    "host": "localhost:5000",
+    "host": "localhost:8000",
     "basePath": "/",
     "tags": [
         {
@@ -18,24 +18,49 @@
         }
     ],
     "paths": {
-        "/carga": {
+        "/load": {
             "post": {
                 "tags": [
                     "Carga"
                 ],
-                "summary": "Execute data load",
-                "description": "Endpoint to execute the connection to the database and load the specified files.\n\n**Postman Instructions:**\n- **Method:** POST\n- **URL:** http://localhost:5000/carga?file=csv,json,xml\n- **Headers:** None\n- **Body:** None",
-                "security": [
+                "summary": "Load data into the database",
+                "description": "Endpoint to initialize the database and load data using the specified extractor type (csv, json, xml).",
+                "parameters": [
                     {
-                        "api_key": []
+                        "name": "type",
+                        "in": "query",
+                        "description": "The type of extractor to use (csv, json, xml)",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "csv",
+                            "json",
+                            "xml"
+                        ]
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "Data load successful",
+                        "description": "Database initialized and data loaded successfully",
                         "examples": {
                             "application/json": {
-                                "message": "Data load successful"
+                                "message": "Database initialized and data loaded successfully"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid extractor type",
+                        "examples": {
+                            "application/json": {
+                                "error": "Invalid extractor type"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "examples": {
+                            "application/json": {
+                                "error": "Unauthorized"
                             }
                         }
                     },
@@ -43,159 +68,7 @@
                         "description": "Internal server error",
                         "examples": {
                             "application/json": {
-                                "error": "Internal server error"
-                            }
-                        }
-                    }
-                }
-            },
-            "get": {
-                "tags": [
-                    "Log"
-                ],
-                "summary": "Get api call register log",
-                "description": "Endpoint to get the api register of loads.\n\n**Postman Instructions:**\n- **Method:** GET\n- **URL:** http://localhost:5000/carga\n- **Headers:** None\n- **Body:** None",
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Load results fetched successfully",
-                        "schema": {
-                            "type": "string"
-                        },
-                        "examples": {
-                            "application/json": {
-                                "log-summary": "Load results fetched successfully"
-                            }
-                        }
-                    },
-                    "404": {
-                        "description": "Load results not found",
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "error": {
-                                    "type": "string",
-                                    "example": "Load results not found"
-                                }
-                            }
-                        },
-                        "examples": {
-                            "application/json": {
-                                "error": "Load results not found"
-                            }
-                        }
-                    }
-                }
-            },
-            "put": {
-                "tags": [
-                    "Carga"
-                ],
-                "summary": "Clear load results",
-                "description": "Endpoint to clear the load results.\n\n**Postman Instructions:**\n- **Method:** PUT\n- **URL:** http://localhost:5000/carga\n- **Headers:** None\n- **Body:** None",
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Load results cleared successfully",
-                        "examples": {
-                            "application/json": {
-                                "message": "Load results cleared successfully"
-                            }
-                        }
-                    },
-                    "404": {
-                        "description": "Load results not found",
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "error": {
-                                    "type": "string",
-                                    "example": "Load results not found"
-                                }
-                            }
-                        },
-                        "examples": {
-                            "application/json": {
-                                "error": "Load results not found"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/carga/log": {
-            "get": {
-                "tags": [
-                    "Log"
-                ],
-                "summary": "Get log file content",
-                "description": "Endpoint to get the content of the log file.",
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Log file content fetched successfully",
-                        "schema": {
-                            "type": "string"
-                        },
-                        "examples": {
-                            "text/plain": "Log file content here..."
-                        }
-                    },
-                    "404": {
-                        "description": "Log file not found",
-                        "examples": {
-                            "application/json": {
-                                "error": "Log file not found"
-                            }
-                        }
-                    },
-                    "500": {
-                        "description": "Internal server error",
-                        "examples": {
-                            "application/json": {
-                                "error": "An error occurred while reading the log file: <error_message>"
-                            }
-                        }
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "Log"
-                ],
-                "summary": "Clear log file content",
-                "description": "Endpoint to clear the content of the log file.",
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Log file content cleared successfully",
-                        "examples": {
-                            "application/json": {
-                                "message": "Log file content cleared successfully"
-                            }
-                        }
-                    },
-                    "500": {
-                        "description": "Internal server error",
-                        "examples": {
-                            "application/json": {
-                                "error": "An error occurred while clearing the log file: <error_message>"
+                                "error": "An error occurred: <error_message>"
                             }
                         }
                     }
