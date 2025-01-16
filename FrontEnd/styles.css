@@ -242,3 +242,20 @@ button {
 .margin-bottom-100 {
     margin-bottom: 100px;
 }
+
+
+/* Estilo para el cuadro de resultados */
+#resultados-container {
+    margin-top: 20px;
+}
+#resultados-titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#resultados {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 100px;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+}

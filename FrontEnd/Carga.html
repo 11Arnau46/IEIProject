@@ -26,7 +26,7 @@
     </header>
 
     <main class="container">
-        <form class="form" id="cargaForm">
+        <form class="form" id="cargaForm" >
             <fieldset>
                 <legend>Seleccione fuente:</legend>
                 <label><input type="checkbox" name="fuente" value="castilla"> Castilla y León</label>
@@ -36,11 +36,14 @@
             </fieldset>
             <div class="buttons">
                 <button type="button" id="cancelar">Cancelar</button>
-                <button type="button" id="cargar">Cargar</button>
+                <button type="submit" id="cargar">Cargar</button>
                 <button type="button" id="borrar">Borrar Almacén de Datos</button>
             </div>
         </form>
-        <div id="resultados"></div>
+        <div id="resultados-container">
+            <p id="resultados-titulo">Resultados de la Carga:</p>
+            <div id="resultados"></div>
+        </div>
     </main>
 
     <!-- Link to the external JavaScript file -->
