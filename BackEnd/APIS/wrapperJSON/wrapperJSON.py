@@ -131,7 +131,7 @@ class WrapperJSONLog(Resource):
 
     def delete(self, tipo=None):
         """
-        Limpia el archivo de log según el tipo especificado.
+        Elimina el archivo de log según el tipo especificado.
         """
         if tipo == "estadisticas":
             log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-estadisticas-json.log'
@@ -140,24 +140,24 @@ class WrapperJSONLog(Resource):
         elif tipo == "reparados":
             log_file_path = root_dir / 'Resultados' / 'log-json' / 'log-reparados-json.log'
         elif tipo is None:
-            # Limpiar todos los logs
+            # Eliminar todos los logs
             try:
                 for log_type in ["estadisticas", "rechazados", "reparados"]:
                     path = root_dir / 'Resultados' / 'log-json' / f'log-{log_type}-json.log'
                     if path.exists():
-                        open(path, 'w').close()
-                return {"message": "Todos los archivos de log han sido limpiados exitosamente"}
+                        os.remove(path)
+                return {"message": "Todos los archivos de log han sido eliminados exitosamente"}
             except Exception as e:
-                return {"error": f"Error al limpiar los archivos de log: {e}"}, 500
+                return {"error": f"Error al eliminar los archivos de log: {e}"}, 500
         else:
             return {"error": "Tipo de log no válido"}, 400
 
         try:
             if log_file_path.exists():
-                open(log_file_path, 'w').close()
-            return {"message": f"Log de {tipo} limpiado exitosamente"}
+                os.remove(log_file_path)
+            return {"message": f"Log de {tipo} eliminado exitosamente"}
         except Exception as e:
-            return {"error": f"Error al limpiar el log de {tipo}: {e}"}, 500
+            return {"error": f"Error al eliminar el log de {tipo}: {e}"}, 500
 
 # Añadir las rutas para los endpoints de log
 api.add_resource(WrapperJSONLog, 

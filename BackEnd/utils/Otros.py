@@ -284,6 +284,8 @@ def log_statistics():
     """
     Registra las estadísticas generales en el archivo de log.
     """
+    global total_records_added_correctly, total_records_rejected, total_records_repaired
+    
     logger_estadisticas = logging.getLogger(f'estadisticas_{data_source}')
     logger_estadisticas.info("--------------------------------------------------------------------------------")
     logger_estadisticas.info("ESTADÍSTICAS GENERALES")
@@ -296,3 +298,8 @@ def log_statistics():
     logger_estadisticas.info(f"Total de registros rechazados: {total_records_rejected}")
     logger_estadisticas.info(f"Total de registros reparados: {total_records_repaired}")
     logger_estadisticas.info("--------------------------------------------------------------------------------")
+    
+    # Reiniciar contadores
+    total_records_added_correctly = 0
+    total_records_rejected = 0
+    total_records_repaired = 0
