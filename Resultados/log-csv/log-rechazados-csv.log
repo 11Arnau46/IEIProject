@@ -1,16 +1,4 @@
 Registro con errores y rechazado:
-{nombre = Campana de Sant Joanet de Mosquera de la parroquia de la Natividad de María de Alcalalí, Localidad = ALCALALÍ, motivo = Coordenadas sin valor}
-{nombre = Campana Santa María de la ermita del Mas de Barxell de Alcoi, Localidad = ALCOI, motivo = Coordenadas sin valor}
-{nombre = Colección Ulkes de orfebrería antigua, Localidad = ALACANT, motivo = Coordenadas sin valor}
-{nombre = Murallas de Alicante, Localidad = ALACANT, motivo = Coordenadas sin valor}
-{nombre = Murallas de Tabarca, Localidad = ALACANT, motivo = Coordenadas sin valor}
-{nombre = Torre Atalaya, Localidad = BENEIXAMA, motivo = Monumento duplicado}
-{nombre = Campana la Tercera de la parroquia de la Asunción de Biar, Localidad = BIAR, motivo = Coordenadas sin valor}
-{nombre = Torre Soto, Localidad = Alacant, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{nombre = Torre Tres Olivos, Fabián o Guisot, Localidad = Alacant, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{nombre = Torre Villa García, Localidad = Alacant, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{nombre = Torre Rizo (Desaparecida), Localidad = Alacant, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{nombre = Castillo de San Fernando, Localidad = Alacant, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{nombre = Torre Negret, Localidad = Beneixama, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{nombre = Torre Morales o Escaletes, Localidad = Benidorm, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-r o N/A, no se ha podido reparar}
+{nombre = Castillo y Murallas de Biar, Localidad = BIAR, motivo = Coordenadas sin valor}
+{nombre = Poblado de la Peña Ajuerá, Localidad = AZUÉBAR, motivo = Monumento duplicado}
+{nombre = Molino Fortificado Torre Gausa, Localidad = VALLADOLID, motivo = Provincia inválida}

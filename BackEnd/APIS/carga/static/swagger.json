@@ -9,7 +9,7 @@
             "email": "agarmar6@etsfinf.upv.es"
         }
     },
-    "host": "localhost:8000",
+    "host": "0.0.0.0:8000",
     "basePath": "/",
     "tags": [
         {
@@ -24,19 +24,22 @@
                     "Carga"
                 ],
                 "summary": "Load data into the database",
-                "description": "Endpoint to initialize the database and load data using the specified extractor type (csv, json, xml).",
+                "description": "Endpoint to initialize the database and load data using the specified extractor types (csv, json, xml).",
                 "parameters": [
                     {
-                        "name": "type",
+                        "name": "types",
                         "in": "query",
-                        "description": "The type of extractor to use (csv, json, xml)",
+                        "description": "The types of extractors to use (csv, json, xml)",
                         "required": true,
-                        "type": "string",
-                        "enum": [
-                            "csv",
-                            "json",
-                            "xml"
-                        ]
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "enum": [
+                                "csv",
+                                "json",
+                                "xml"
+                            ]
+                        }
                     }
                 ],
                 "responses": {
@@ -72,12 +75,7 @@
                             }
                         }
                     }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
+                }
             }
         }
     },
