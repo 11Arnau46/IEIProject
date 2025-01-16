@@ -7,6 +7,9 @@ from BackEnd.utils.Otros import set_data_source, setup_loggers
 from BackEnd.Wrappers.Wrapper_CSV import process_csv
 from BackEnd.Wrappers.Wrapper_JSON import process_json
 from BackEnd.Wrappers.Wrapper_XML import process_xml
+from SQL.BDMap import Provincia, Localidad, Monumento, TipoMonumento
+from sqlalchemy.orm import Session
+from sqlalchemy.exc import SQLAlchemyError
 
 class SQL:
     def __init__(self):
@@ -26,7 +29,7 @@ class SQL:
         # Crear una sesión de base de datos usando el engine con la base de datos seleccionada
         self.session = bd_connection.session  # Guardar la sesión como atributo de la clase
     
-    def cargar_datos(data):
+    def cargar_datos(self, data):
         session = self.session
         
         for item in data:
