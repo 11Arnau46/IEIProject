@@ -108,16 +108,15 @@ class WrapperLog(Resource):
         for encoding in encodings:
             try:
                 with open(log_file_path, 'r', encoding=encoding) as log_file:
-                    log_data = log_file.read()
-                return Response(log_data, mimetype='text/plain', status='200')
+                    return log_file.read()
             except UnicodeDecodeError:
                 continue
             except FileNotFoundError:
-                return {"error": "Log no encontrado"}, 404
+                return None
             except Exception as e:
-                return {"error": f"Error al leer el log: {e}"}, 500
+                return None
         
-        return {"error": "No se pudo leer el archivo con ninguna codificación"}, 500
+        return None
 
     @require_api_key
     def get(self, wrapper, tipo=None):
@@ -184,6 +183,7 @@ class WrapperLog(Resource):
                 combined_content += f"Total de registros reparados: {total_repaired}\n"
                 combined_content += "--------------------------------------------------------------------------------\n"
             return Response(combined_content, mimetype='text/plain', status='200')
+        
         # Código original para logs individuales
         log_file_path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{tipo}-{wrapper}.log'
         content = self._read_log_file(log_file_path)
