@@ -52,6 +52,7 @@ body {
 /* Estilo para los encabezados */
 #tabla-resultados th {
     background-color: #f4f4f4;
+    cursor: pointer;
 }
 
 /* Ajuste de la columna de descripción */

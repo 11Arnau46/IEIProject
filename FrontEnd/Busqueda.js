@@ -20,6 +20,29 @@ document.addEventListener("DOMContentLoaded", () => {
     markers = [];
   }
 
+  // Función para ordenar la tabla por una columna
+  function ordenarTabla(columna, orden) {
+    const tabla = document
+      .getElementById("tabla-resultados")
+      .querySelector("tbody");
+    const filas = Array.from(tabla.rows);
+
+    filas.sort((filaA, filaB) => {
+      const textoA = filaA.cells[columna].textContent.trim().toLowerCase();
+      const textoB = filaB.cells[columna].textContent.trim().toLowerCase();
+
+      if (textoA < textoB) {
+        return orden === "asc" ? -1 : 1;
+      }
+      if (textoA > textoB) {
+        return orden === "asc" ? 1 : -1;
+      }
+      return 0;
+    });
+
+    filas.forEach((fila) => tabla.appendChild(fila));
+  }
+
   // Función para agregar o quitar el espacio dependiendo de la visibilidad de las sugerencias
   function ajustarEspacio(suggestionsList, input) {
     const formGroup = input.closest(".form-group"); // Selecciona el contenedor del campo de entrada
@@ -177,4 +200,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "codigo-postal-suggestions"
     )
   );
+  // Añadir funcionalidad de ordenación en las cabeceras de la tabla
+  const headers = document.querySelectorAll("#tabla-resultados th");
+  headers.forEach((header, index) => {
+    let orden = "asc"; // Orden inicial
+    header.addEventListener("click", () => {
+      ordenarTabla(index, orden);
+      orden = orden === "asc" ? "desc" : "asc";
+    });
+  });
 });
