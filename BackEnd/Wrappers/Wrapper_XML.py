@@ -96,7 +96,7 @@ def process_xml():
     df_con_coords, df_sin_coords = procesar_datos(df_result, 'xmltojson')
 
     # Get the root project directory
-    root_dir = Path(__file__).resolve().parents[1]
+    root_dir = Path(__file__).resolve().parents[2]
 
     # Define the path to the output JSON file
     ruta_json_salida = root_dir / 'Resultados' / 'XMLtoJSON_con_coords.json'

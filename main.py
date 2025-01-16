@@ -4,12 +4,12 @@ import subprocess
 from SQL.BDConnection import BDConnection
 from SQL.Json_Loader import cargar_datos
 from BackEnd.utils.Otros import set_data_source, setup_loggers
-from BackEnd.Wrapper_CSV import process_csv
-from BackEnd.Wrapper_JSON import process_json
-from BackEnd.Wrapper_XML import process_xml
+from BackEnd.Wrappers.Wrapper_CSV import process_csv
+from BackEnd.Wrappers.Wrapper_JSON import process_json
+from BackEnd.Wrappers.Wrapper_XML import process_xml
 
 
-def ejecutar_extractor(tipo):
+def ejecutar_wrapper(tipo):
     # Get the directory of the current file
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
@@ -30,21 +30,21 @@ def ejecutar_extractor(tipo):
     
 def main():
     if len(sys.argv) != 2:
-        print("Uso: python main.py <tipo_extractor>")
+        print("Uso: python main.py <tipo_wrapper>")
         print("Tipos válidos: csv, json, xml")
         return
 
-    tipo_extractor = sys.argv[1]
+    tipo_wrapper = sys.argv[1]
     
     # Establecer la fuente de datos global
-    set_data_source(tipo_extractor)
+    set_data_source(tipo_wrapper)
     
     # Configurar los loggers
-    setup_loggers(tipo_extractor)
+    setup_loggers(tipo_wrapper)
 
     try:
         # Ejecutar el extractor correspondiente
-        json_path = ejecutar_extractor(tipo_extractor)
+        json_path = ejecutar_wrapper(tipo_wrapper)
 
         # Crear la instancia de BDConnection
         bd_connection = BDConnection()

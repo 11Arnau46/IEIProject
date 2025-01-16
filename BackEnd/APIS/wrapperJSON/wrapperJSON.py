@@ -31,7 +31,7 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 root_dir = Path(__file__).resolve().parents[3]
 sys.path.append(str(root_dir))
 
-from BackEnd.Wrapper_JSON import process_json
+from BackEnd.Wrappers.Wrapper_JSON import process_json
 
 
 class WrapperJSONExecute(Resource):

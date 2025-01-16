@@ -31,7 +31,7 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 root_dir = Path(__file__).resolve().parents[3]
 sys.path.append(str(root_dir))
 
-from BackEnd.Wrapper_CSV import process_csv
+from BackEnd.Wrappers.Wrapper_CSV import process_csv
 
 class WrapperCSVExecute(Resource):
     """
