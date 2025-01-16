@@ -33,3 +33,4 @@ BackEnd/Wrappers/__pycache__/Wrapper_CSV.cpython-312.pyc
 BackEnd/Wrappers/__pycache__/Wrapper_JSON.cpython-312.pyc
 BackEnd/Wrappers/__pycache__/Wrapper_XML.cpython-312.pyc
 BackEnd/utils/__pycache__/SQL.cpython-312.pyc
+SQL/BDConnection.py
