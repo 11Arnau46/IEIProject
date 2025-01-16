@@ -1,6 +1,6 @@
 Registro con errores y reparado:
-{nombre = Risco La Zorrera, Localidad = Raso (El), motivo = C贸digo postal con menos de 5 digitos, operaci贸n = Reparado mediante la adici贸n de 0 a la izquierda}
-{nombre = Castillo de 脥scar, Localidad = 脥scar, motivo = C贸digo postal sin valor o N/A, operaci贸n = B煤squeda del c贸digo postal con Location Finder}
-{nombre = Casa Miranda y Casa de 脥帽igo Angulo, Localidad = Burgos, motivo = C贸digo postal con menos de 5 digitos, operaci贸n = Reparado mediante la adici贸n de 0 a la izquierda}
-{nombre = Casa Blanca, Localidad = Medina del Campo, motivo = Direcci贸n sin valor, operaci贸n = B煤squeda de la direcci贸n con Location Finder}
-{nombre = Cloacas Romanas, Localidad = Astorga, motivo = Direcci贸n sin valor, operaci贸n = B煤squeda de la direcci贸n con Location Finder}
+{nombre = Risco La Zorrera, Localidad = Raso (El), motivo = C骴igo postal con menos de 5 digitos, operaci髇 = Reparado mediante la adici髇 de 0 a la izquierda}
+{nombre = Castillo de 蛃car, Localidad = 蛃car, motivo = C骴igo postal sin valor o N/A, operaci髇 = B鷖queda del c骴igo postal con Location Finder}
+{nombre = Casa Miranda y Casa de 婉igo Angulo, Localidad = Burgos, motivo = C骴igo postal con menos de 5 digitos, operaci髇 = Reparado mediante la adici髇 de 0 a la izquierda}
+{nombre = Casa Blanca, Localidad = Medina del Campo, motivo = Direcci髇 sin valor, operaci髇 = B鷖queda de la direcci髇 con Location Finder}
+{nombre = Cloacas Romanas, Localidad = Astorga, motivo = Direcci髇 sin valor, operaci髇 = B鷖queda de la direcci髇 con Location Finder}
