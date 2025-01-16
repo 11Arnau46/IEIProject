@@ -36,7 +36,7 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 class GetDataFromDB(Resource):
     def get(self):
         bd_connection = BDConnection()
-        bd_connection.init_db()  # Ensure the session is initialized
+        bd_connection.init_db("busqueda")  # Ensure the session is initialized
         session = bd_connection.session
 
         if session is None:
@@ -48,22 +48,35 @@ class GetDataFromDB(Resource):
         provincia = request.args.get('provincia')
         tipo = request.args.get('tipo')
 
-        # Base query
-        query = "SELECT * FROM monumento WHERE 1=1"
+        query = """
+        SELECT 
+            monumento.nombre AS nombre_monumento,
+            monumento.tipo AS tipo_monumento,
+            monumento.direccion AS direccion,
+            localidad.nombre AS nombre_localidad,
+            monumento.codigo_postal AS codigo_postal,
+            provincia.nombre AS nombre_provincia,
+            monumento.descripcion AS descripcion,
+            monumento.latitud AS latitud,
+            monumento.longitud AS longitud
+        FROM monumento
+        JOIN localidad ON monumento.en_localidad = localidad.id
+        JOIN provincia ON localidad.en_provincia = provincia.id
+        WHERE 1=1
+        """
         params = {}
 
-        # Build the query dynamically based on provided parameters
         if localidad:
-            query += " AND localidad = :localidad"
+            query += " AND localidad.nombre = :localidad"
             params['localidad'] = localidad
         if codigo_postal:
-            query += " AND codigo_postal = :codigo_postal"
+            query += " AND monumento.codigo_postal = :codigo_postal"
             params['codigo_postal'] = codigo_postal
         if provincia:
-            query += " AND provincia = :provincia"
+            query += " AND provincia.nombre = :provincia"
             params['provincia'] = provincia
         if tipo:
-            query += " AND tipo = :tipo"
+            query += " AND monumento.tipo = :tipo"
             params['tipo'] = tipo
 
         try:
@@ -82,14 +95,25 @@ class GetDataFromDB(Resource):
             if not data:
                 return {"error": "No se encontraron monumentos para los filtros especificados."}, 404
 
-            # Convert RowMapping to dictionary before returning as JSON
-            result = [dict(row) for row in data]
+            # Convert RowMapping to dictionary
+            result = [
+                {
+                    "nombre_monumento": row["nombre_monumento"],
+                    "tipo_monumento": row["tipo_monumento"],
+                    "direccion": row["direccion"],
+                    "nombre_localidad": row["nombre_localidad"],
+                    "codigo_postal": row["codigo_postal"],
+                    "nombre_provincia": row["nombre_provincia"],
+                    "descripcion": row["descripcion"],
+                    "latitud": row["latitud"],
+                    "longitud": row["longitud"]
+                }
+                for row in data
+            ]
             print(f"Query result: {result}")
-            json_data = jsonify(result)
-            print(f"Returning data: {json_data}")
 
-            # Return results as JSON using jsonify (this is the correct usage)
-            return Response(result, mimetype='application/json'), 200
+            # Return results directly
+            return result, 200
         except SQLAlchemyError as e:
             print(f"SQLAlchemyError: {e}")
             bd_connection.close()
@@ -98,6 +122,7 @@ class GetDataFromDB(Resource):
             print(f"Unexpected Error: {e}")
             bd_connection.close()
             return {"error": "Error inesperado. Intente más tarde."}, 500
+
 
 
 # Add the resource to the API

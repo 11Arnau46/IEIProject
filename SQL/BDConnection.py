@@ -4,7 +4,7 @@ from sqlalchemy.exc import OperationalError
 from .BDMap import Base  # Importación relativa al paquete actual
 
 class BDConnection:
-    def __init__(self, usuario='root', contrasena='password', host='127.0.0.1', puerto=3306, db_name='IEI'):
+    def __init__(self, usuario='root', contrasena='1234', host='127.0.0.1', puerto=3306, db_name='IEI'):
         self.usuario = usuario
         self.contrasena = contrasena
         self.host = host
@@ -44,32 +44,48 @@ class BDConnection:
             print(f"Error al intentar conectar con la base de datos: {e}")
             raise
 
-    def init_db(self):
+    def init_db(self, accion):
         """ Inicializa la base de datos y crea las tablas si es necesario """
-        try:
-            # Primero, eliminar la base de datos si existe
-            self.drop_database_if_exists()
-            
-            # Luego, crear la base de datos
-            self.create_database_if_not_exists()
+        if accion == "carga":
+            try:
+                # Primero, eliminar la base de datos si existe
+                self.drop_database_if_exists()
+                
+                # Luego, crear la base de datos
+                self.create_database_if_not_exists()
 
-            # Ahora creamos el motor conectado a la base de datos
-            self.engine = self.create_engine_with_db()
+                # Ahora creamos el motor conectado a la base de datos
+                self.engine = self.create_engine_with_db()
 
-            # Crear las tablas
-            Base.metadata.create_all(self.engine)
-            print("Tablas creadas exitosamente.")
-            
-            # Crear la sesión
-            Session = sessionmaker(bind=self.engine)
-            self.session = Session()
-            
-            return self.engine  # Devolver el motor para usar en otros lugares
+                # Crear las tablas
+                Base.metadata.create_all(self.engine)
+                print("Tablas creadas exitosamente.")
+                
+                # Crear la sesión
+                Session = sessionmaker(bind=self.engine)
+                self.session = Session()
+                
+                return self.engine  # Devolver el motor para usar en otros lugares
 
-        except Exception as e:
-            print(f"Error al inicializar la base de datos: {e}")
-            return None
+            except Exception as e:
+                print(f"Error al inicializar la base de datos: {e}")
+                return None
     
+        if accion == "busqueda":
+            try:
+                # Ahora creamos el motor conectado a la base de datos
+                self.engine = self.create_engine_with_db()
+                
+                # Crear la sesión
+                Session = sessionmaker(bind=self.engine)
+                self.session = Session()
+                
+                return self.engine  # Devolver el motor para usar en otros lugares
+
+            except Exception as e:
+                print(f"Error al inicializar la base de datos: {e}")
+                return None
+        
     def close(self):
         """ Cerrar la sesión si existe """
         if self.session:
@@ -79,7 +95,7 @@ class BDConnection:
 # Uso de la clase BDConnection
 if __name__ == "__main__":
     bd_connection = BDConnection()
-    engine = bd_connection.init_db()
+    engine = bd_connection.init_db("carga")
     
     if engine:
         print("Conexión y base de datos inicializada correctamente.")
