@@ -54,6 +54,12 @@ body {
     background-color: #f4f4f4;
     cursor: pointer;
 }
+#tabla-resultados thead {
+    position: sticky;
+    top: 0; /* Esto fija los encabezados en la parte superior */
+    background-color: #fff; /* Fondo blanco para que el texto sea legible sobre el contenido que se desplaza */
+    z-index: 1; /* Asegura que el encabezado esté encima del contenido de la tabla */
+  }
 
 /* Ajuste de la columna de descripción */
 #tabla-resultados td:nth-child(7) {
