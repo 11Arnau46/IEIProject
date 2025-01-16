@@ -1,3 +1,4 @@
-{fuente = JSON, nombre = Puente de San Antón, Localidad = Bilbao, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
-{fuente = JSON, nombre = Peine del Viento, Localidad = Donostia / San Sebastián, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
-{fuente = JSON, nombre = Castillo de Portilla, Localidad = Zambrana, motivo = Código postal sin valor o N/A, operación = Búsqueda del código postal con Location Finder}
+Registro con errores y reparado:
+{nombre = Puente de San Antón, Localidad = Bilbao, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Peine del Viento, Localidad = Donostia / San Sebastián, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}
+{nombre = Castillo de Portilla, Localidad = Zambrana, motivo = Código postal sin valor o N/A, operación = Búsqueda del código postal con Location Finder}
