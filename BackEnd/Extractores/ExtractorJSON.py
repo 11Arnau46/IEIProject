@@ -3,6 +3,7 @@ import os
 import pandas as pd
 import json
 from pathlib import Path
+import requests
 
 # Define the root project directory and add it to Python path
 root_dir = Path(__file__).resolve().parents[2]
@@ -15,6 +16,49 @@ from BackEnd.utils.Conversores import convertir_coordenadas_utm
 from BackEnd.utils.Location_Finder import LocationFinder
 from BackEnd.utils.Coords_converter import CoordsConverter
 
+
+def get_datos():
+    # Obtener la ruta del directorio raíz y actual
+    CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+    BASE_DIR = os.path.dirname(os.path.dirname(CURRENT_DIR))
+
+    # Crear la ruta completa hacia el archivo JSON procesado
+    path = os.path.abspath(os.path.join(BASE_DIR, 'Resultados', 'JSONtoJSON_con_coords.json'))
+
+    # Leer el archivo JSON con la codificación utf-8
+    with open(path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    return data
+
+def get_datos_fuente():
+    """
+    Hace una solicitud a la API y guarda la respuesta como un objeto JSON.
+
+    Retorna:
+        dict: Los datos procesados como un diccionario Python.
+    """
+    api_url = "http://localhost:8081/wrapperJSON/execute"
+
+    try:
+        # Realizar la solicitud a la API
+        response = requests.post(api_url)
+
+        # Verificar si la respuesta es exitosa
+        response.raise_for_status()
+
+        # Procesar el contenido de la respuesta como JSON
+        data = response.json()
+
+        # Retornar el objeto JSON procesado
+        return data
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error en la solicitud a la API: {e}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Error al procesar la respuesta como JSON: {e}")
+        return None
 
 # Función para cargar el archivo JSON y preservar claves duplicadas
 def parse_json_with_duplicates(file_path):
