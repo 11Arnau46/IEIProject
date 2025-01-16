@@ -33,10 +33,6 @@
             "description": "Endpoints related to data loading"
         },
         {
-            "name": "Log General",
-            "description": "Endpoints para obtener logs combinados de múltiples fuentes"
-        },
-        {
             "name": "Log CSV",
             "description": "Endpoints para gestionar los logs del wrapper CSV"
         },
@@ -94,70 +90,6 @@
                     },
                     "500": {
                         "description": "Internal server error"
-                    }
-                }
-            }
-        },
-        "/log/general/{tipo}": {
-            "get": {
-                "tags": [
-                    "Log General"
-                ],
-                "summary": "Obtener log combinado de múltiples fuentes",
-                "description": "Obtiene un log combinado de las fuentes especificadas. Para estadísticas suma los totales, para rechazados y reparados concatena los logs.",
-                "parameters": [
-                    {
-                        "name": "tipo",
-                        "in": "path",
-                        "description": "Tipo de log (estadisticas, rechazados, reparados)",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "estadisticas",
-                            "rechazados",
-                            "reparados"
-                        ]
-                    },
-                    {
-                        "name": "sources",
-                        "in": "query",
-                        "description": "Fuentes de datos a combinar",
-                        "required": true,
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "enum": [
-                                "csv",
-                                "json",
-                                "xml"
-                            ]
-                        },
-                        "collectionFormat": "csv"
-                    },
-                    {
-                        "name": "api_key",
-                        "in": "query",
-                        "description": "API Key: FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY",
-                        "required": true,
-                        "type": "string",
-                        "default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Log combinado obtenido exitosamente"
-                    },
-                    "400": {
-                        "description": "Tipo de log no válido o fuentes no especificadas"
-                    },
-                    "401": {
-                        "description": "Unauthorized"
-                    },
-                    "404": {
-                        "description": "Logs no encontrados"
-                    },
-                    "500": {
-                        "description": "Error al leer los logs"
                     }
                 }
             }

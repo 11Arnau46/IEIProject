@@ -98,21 +98,6 @@ class WrapperLog(Resource):
     WrapperLog es un recurso Flask-RESTful que maneja la obtención y eliminación de archivos de log.
     """
     
-    def _read_log_file(self, log_file_path):
-        """
-        Lee un archivo de log con diferentes codificaciones.
-        """
-        encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
-        for encoding in encodings:
-            try:
-                with open(log_file_path, 'r', encoding=encoding) as log_file:
-                    return log_file.read()
-            except UnicodeDecodeError:
-                continue
-            except FileNotFoundError:
-                return None
-        return None
-
     @require_api_key
     def get(self, wrapper, tipo=None):
         """
@@ -121,76 +106,27 @@ class WrapperLog(Resource):
         if tipo not in ["estadisticas", "rechazados", "reparados"]:
             return {"error": "Tipo de log no válido"}, 400
             
-        if wrapper not in ["xml", "json", "csv", "general"]:
+        if wrapper not in ["xml", "json", "csv"]:
             return {"error": "Tipo de wrapper no válido"}, 400
 
-        if wrapper == "general":
-            # Obtener las fuentes de datos de los parámetros de la consulta
-            sources = request.args.get('sources', '').split(',')
-            if not sources or '' in sources:
-                return {"error": "Debe especificar las fuentes de datos (sources=csv,json,xml)"}, 400
-
-            combined_content = ""
-            total_processed = 0
-            total_loaded = 0
-            total_rejected = 0
-            total_repaired = 0
-
-            if tipo == "estadisticas":
-                combined_content = "--------------------------------------------------------------------------------\n"
-                combined_content += "ESTADÍSTICAS GENERALES (fuente = COMBINADO)\n"
-                combined_content += "--------------------------------------------------------------------------------\n"
-            elif tipo == "reparados":
-                combined_content = "Registros con errores y reparados:\n"
-                combined_content += "{Fuente de datos, nombre, Localidad, motivo del error, operación realizada}\n"
-            elif tipo == "rechazados":
-                combined_content = "Registros con errores y rechazados:\n"
-                combined_content += "{Fuente de datos, nombre, Localidad, motivo del error}\n"
-
-            for source in sources:
-                if source not in ["xml", "json", "csv"]:
-                    continue
-                
-                log_file_path = root_dir / 'Resultados' / f'log-{source}' / f'log-{tipo}-{source}.log'
-                content = self._read_log_file(log_file_path)
-                
-                if content:
-                    if tipo == "estadisticas":
-                        # Extraer números de las estadísticas
-                        for line in content.split('\n'):
-                            if "Total de datos procesados:" in line:
-                                total_processed += int(line.split(':')[1].strip())
-                            elif "Total de registros cargados correctamente:" in line:
-                                total_loaded += int(line.split(':')[1].strip())
-                            elif "Total de registros rechazados:" in line:
-                                total_rejected += int(line.split(':')[1].strip())
-                            elif "Total de registros reparados:" in line:
-                                total_repaired += int(line.split(':')[1].strip())
-                    else:
-                        # Para rechazados y reparados, añadir el contenido con un único salto de línea entre fuentes
-                        if content.strip():  # Solo añadir contenido si no está vacío
-                            if combined_content.endswith('\n'):
-                                combined_content += content.strip()
-                            else:
-                                combined_content += '\n' + content.strip()
-
-            if tipo == "estadisticas":
-                combined_content += f"Total de datos procesados: {total_processed}\n"
-                combined_content += f"Total de registros cargados correctamente: {total_loaded}\n"
-                combined_content += f"Total de registros rechazados: {total_rejected}\n"
-                combined_content += f"Total de registros reparados: {total_repaired}\n"
-                combined_content += "--------------------------------------------------------------------------------\n"
-
-            return Response(combined_content, mimetype='text/plain', status='200')
-
-        # Código original para logs individuales
         log_file_path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{tipo}-{wrapper}.log'
-        content = self._read_log_file(log_file_path)
+
+        # Lista de codificaciones a intentar
+        encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
         
-        if content is None:
-            return {"error": f"Log de {tipo} no encontrado"}, 404
-            
-        return Response(content, mimetype='text/plain', status='200')
+        for encoding in encodings:
+            try:
+                with open(log_file_path, 'r', encoding=encoding) as log_file:
+                    log_data = log_file.read()
+                return Response(log_data, mimetype='text/plain', status='200')
+            except UnicodeDecodeError:
+                continue
+            except FileNotFoundError:
+                return {"error": f"Log de {tipo} no encontrado"}, 404
+            except Exception as e:
+                return {"error": f"Error al leer el log de {tipo}: {e}"}, 500
+        
+        return {"error": f"No se pudo leer el archivo con ninguna codificación"}, 500
 
     @require_api_key
     def delete(self, wrapper, tipo=None):
@@ -270,9 +206,8 @@ if __name__ == '__main__':
     print("  → GET    https://localhost:8000/load/?types=csv,json,xml&api_key=")
     print("\nEndpoints de gestión de logs:")
     print("  → GET    https://localhost:8000/log/{formato}/{tipo}")
-    print("           formatos: csv, json, xml, general")
+    print("           formatos: csv, json, xml")
     print("           tipos: reparados, rechazados, estadisticas")
-    print("           Para el formato general, añadir ?sources=csv,json,xml")
     print("  → DELETE https://localhost:8000/log/{formato}/{tipo}")
     print("  → DELETE https://localhost:8000/log/{formato}")
     print("================================\n")
