@@ -1,24 +1,22 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "API para la transformación de datos de XML",
+        "description": "API documentation for WrapperXML",
         "version": "1.0.0",
         "title": "WrapperXML API",
-        "termsOfService": "http://swagger.io/terms/",
         "contact": {
-            "email": "agarmar6@etsinf.upv.es"
+            "email": "agarmar6@etsfinf.upv.es"
         }
     },
     "host": "localhost:8081",
     "basePath": "/",
+    "schemes": [
+        "http"
+    ],
     "tags": [
         {
             "name": "WrapperXML",
-            "description": "Endpoints para la transformación de datos de XML"
-        },
-        {
-            "name": "WrapperXML Logs",
-            "description": "Endpoints para la gestión de logs"
+            "description": "Endpoints para la transformación de datos XML"
         }
     ],
     "paths": {
@@ -27,11 +25,11 @@
                 "tags": [
                     "WrapperXML"
                 ],
-                "summary": "Ejecutar transformación de datos a XML",
-                "description": "Endpoint para ejecutar la transformación de datos a XML.",
+                "summary": "Ejecutar transformación de datos XML",
+                "description": "Ejecuta el proceso de transformación de datos XML y devuelve el resultado",
                 "responses": {
                     "201": {
-                        "description": "Transformación de datos exitosa"
+                        "description": "Transformación exitosa"
                     },
                     "404": {
                         "description": "Archivo de salida no encontrado"
@@ -45,136 +43,14 @@
                 "tags": [
                     "WrapperXML"
                 ],
-                "summary": "Eliminar archivo XML generado",
-                "description": "Endpoint para eliminar el archivo XML generado por la transformación.",
+                "summary": "Eliminar archivo de salida XML",
+                "description": "Elimina el archivo de salida generado por la transformación XML",
                 "responses": {
                     "200": {
                         "description": "Archivo eliminado exitosamente"
                     },
                     "404": {
                         "description": "Archivo no encontrado"
-                    },
-                    "500": {
-                        "description": "Error interno del servidor"
-                    }
-                }
-            }
-        },
-        "/wrapperXML/log/estadisticas": {
-            "get": {
-                "tags": [
-                    "WrapperXML Logs"
-                ],
-                "summary": "Obtener log de estadísticas",
-                "description": "Endpoint para obtener el contenido del archivo de log de estadísticas.",
-                "responses": {
-                    "200": {
-                        "description": "Contenido del log obtenido exitosamente"
-                    },
-                    "404": {
-                        "description": "Log de estadísticas no encontrado"
-                    },
-                    "500": {
-                        "description": "Error interno del servidor"
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "WrapperXML Logs"
-                ],
-                "summary": "Limpiar log de estadísticas",
-                "description": "Endpoint para limpiar el contenido del archivo de log de estadísticas.",
-                "responses": {
-                    "200": {
-                        "description": "Log de estadísticas limpiado exitosamente"
-                    },
-                    "500": {
-                        "description": "Error interno del servidor"
-                    }
-                }
-            }
-        },
-        "/wrapperXML/log/rechazados": {
-            "get": {
-                "tags": [
-                    "WrapperXML Logs"
-                ],
-                "summary": "Obtener log de rechazados",
-                "description": "Endpoint para obtener el contenido del archivo de log de entradas rechazadas.",
-                "responses": {
-                    "200": {
-                        "description": "Contenido del log obtenido exitosamente"
-                    },
-                    "404": {
-                        "description": "Log de rechazados no encontrado"
-                    },
-                    "500": {
-                        "description": "Error interno del servidor"
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "WrapperXML Logs"
-                ],
-                "summary": "Limpiar log de rechazados",
-                "description": "Endpoint para limpiar el contenido del archivo de log de entradas rechazadas.",
-                "responses": {
-                    "200": {
-                        "description": "Log de rechazados limpiado exitosamente"
-                    },
-                    "500": {
-                        "description": "Error interno del servidor"
-                    }
-                }
-            }
-        },
-        "/wrapperXML/log/reparados": {
-            "get": {
-                "tags": [
-                    "WrapperXML Logs"
-                ],
-                "summary": "Obtener log de reparados",
-                "description": "Endpoint para obtener el contenido del archivo de log de entradas reparadas.",
-                "responses": {
-                    "200": {
-                        "description": "Contenido del log obtenido exitosamente"
-                    },
-                    "404": {
-                        "description": "Log de reparados no encontrado"
-                    },
-                    "500": {
-                        "description": "Error interno del servidor"
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "WrapperXML Logs"
-                ],
-                "summary": "Limpiar log de reparados",
-                "description": "Endpoint para limpiar el contenido del archivo de log de entradas reparadas.",
-                "responses": {
-                    "200": {
-                        "description": "Log de reparados limpiado exitosamente"
-                    },
-                    "500": {
-                        "description": "Error interno del servidor"
-                    }
-                }
-            }
-        },
-        "/wrapperXML/log": {
-            "delete": {
-                "tags": [
-                    "WrapperXML Logs"
-                ],
-                "summary": "Limpiar todos los logs",
-                "description": "Endpoint para limpiar el contenido de todos los archivos de log.",
-                "responses": {
-                    "200": {
-                        "description": "Todos los archivos de log han sido limpiados exitosamente"
                     },
                     "500": {
                         "description": "Error interno del servidor"

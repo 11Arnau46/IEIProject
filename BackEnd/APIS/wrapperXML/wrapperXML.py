@@ -9,7 +9,6 @@ from flask import Flask, jsonify, request, send_from_directory, Response
 from flask_restful import Api, Resource
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
-import logging
 import subprocess
 import os
 from BackEnd.utils.Otros import data_source

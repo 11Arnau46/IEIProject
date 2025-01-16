@@ -103,14 +103,22 @@ class WrapperLog(Resource):
 
         log_file_path = root_dir / 'Resultados' / f'log-{wrapper}' / f'log-{tipo}-{wrapper}.log'
 
-        try:
-            with open(log_file_path, 'r', encoding='latin-1') as log_file:
-                log_data = log_file.read()
-            return Response(log_data, mimetype='text/plain', status='200')
-        except FileNotFoundError:
-            return {"error": f"Log de {tipo} no encontrado"}, 404
-        except Exception as e:
-            return {"error": f"Error al leer el log de {tipo}: {e}"}, 500
+        # Lista de codificaciones a intentar
+        encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
+        
+        for encoding in encodings:
+            try:
+                with open(log_file_path, 'r', encoding=encoding) as log_file:
+                    log_data = log_file.read()
+                return Response(log_data, mimetype='text/plain', status='200')
+            except UnicodeDecodeError:
+                continue
+            except FileNotFoundError:
+                return {"error": f"Log de {tipo} no encontrado"}, 404
+            except Exception as e:
+                return {"error": f"Error al leer el log de {tipo}: {e}"}, 500
+        
+        return {"error": f"No se pudo leer el archivo con ninguna codificación"}, 500
 
     @require_api_key
     def delete(self, wrapper, tipo=None):
