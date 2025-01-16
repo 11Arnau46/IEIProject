@@ -98,6 +98,27 @@ class WrapperLog(Resource):
     WrapperLog es un recurso Flask-RESTful que maneja la obtención y eliminación de archivos de log.
     """
     
+    def _read_log_file(self, log_file_path):
+        """
+        Lee un archivo de log con diferentes codificaciones y maneja los errores apropiadamente.
+        """
+        # Lista de codificaciones a intentar
+        encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
+        
+        for encoding in encodings:
+            try:
+                with open(log_file_path, 'r', encoding=encoding) as log_file:
+                    log_data = log_file.read()
+                return Response(log_data, mimetype='text/plain', status='200')
+            except UnicodeDecodeError:
+                continue
+            except FileNotFoundError:
+                return {"error": "Log no encontrado"}, 404
+            except Exception as e:
+                return {"error": f"Error al leer el log: {e}"}, 500
+        
+        return {"error": "No se pudo leer el archivo con ninguna codificación"}, 500
+
     @require_api_key
     def get(self, wrapper, tipo=None):
         """
