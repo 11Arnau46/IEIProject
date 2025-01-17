@@ -1,118 +1,105 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "API para la búsqueda de monumentos",
+        "description": "API documentation for Búsqueda",
         "version": "1.0.0",
         "title": "Búsqueda API",
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
-            "email": "agarmar6@etsinf.upv.es"
+            "email": "agarmar6@etsfinf.upv.es"
         }
     },
-    "host": "localhost:5001",
+    "host": "localhost:8001",
     "basePath": "/",
-    "tags": [
+    "schemes": [
+        "https"
+    ],
+    "securityDefinitions": {
+        "api_key": {
+            "type": "apiKey",
+            "name": "api_key",
+            "in": "query",
+            "x-default": "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY"
+        }
+    },
+    "security": [
         {
-            "name": "Monumentos",
-            "description": "Endpoints para la búsqueda de monumentos"
+            "api_key": []
         }
     ],
     "paths": {
-        "/api/monumentos": {
+        "/buscar": {
             "get": {
                 "tags": [
-                    "Monumentos"
+                    "Búsqueda"
                 ],
-                "summary": "Obtener todos los monumentos o filtrar por distintos criterios",
-                "description": "Endpoint para obtener todos los monumentos o filtrar por localidad, código postal, provincia, tipo, o una combinación de estos filtros. También soporta paginación.",
+                "summary": "Buscar monumentos",
+                "description": "Busca monumentos según los criterios especificados",
                 "parameters": [
                     {
-                        "name": "localidad",
+                        "name": "nombre",
                         "in": "query",
-                        "description": "Nombre de la localidad para filtrar",
+                        "description": "Nombre del monumento",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "codigo_postal",
+                        "name": "localidad",
                         "in": "query",
-                        "description": "Código postal para filtrar",
+                        "description": "Localidad del monumento",
                         "required": false,
                         "type": "string"
                     },
                     {
                         "name": "provincia",
                         "in": "query",
-                        "description": "Nombre de la provincia para filtrar",
+                        "description": "Provincia del monumento",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "tipo",
+                        "name": "tipo_monumento",
                         "in": "query",
-                        "description": "Tipo de monumento para filtrar",
+                        "description": "Tipo de monumento",
                         "required": false,
                         "type": "string"
-                    },
-                    {
-                        "name": "page",
-                        "in": "query",
-                        "description": "Número de página para paginación",
-                        "required": false,
-                        "type": "integer",
-                        "format": "int32"
-                    },
-                    {
-                        "name": "limit",
-                        "in": "query",
-                        "description": "Número de resultados por página",
-                        "required": false,
-                        "type": "integer",
-                        "format": "int32"
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "Listado de monumentos en formato JSON",
-                        "examples": {
-                            "application/json": [
-                                {
-                                    "nombre_monumento": "Puente de Piedra de Zamora",
-                                    "tipo_monumento": "Puente",
-                                    "direccion": "Puente de Piedra",
-                                    "nombre_localidad": "Zamora",
-                                    "codigo_postal": "49028",
-                                    "nombre_provincia": "Zamora",
-                                    "descripcion": "Es uno de los cinco puentes que atraviesan el río Duero a su paso por Zamora. Durante siglos fue el único paso del río en la ciudad, comunicando los barrios del arrabal con el centro histórico de la ciudad. Al formar parte de la Vía de la Plata, fue un importante lugar de paso del río Duero para personas, mercancías y rebaños trashumantes. Fue terminado de construir a comienzos del siglo XIII y reformado posteriormente. Constituye uno de los símbolos de la ciudad. Formado por dieciséis arcos apuntados que cruzan una de las zonas más anchas del Duero a su paso por Zamora. En origen estaba almenado y poseía dos grandes torres defensivas en los extremos, siendo una prolongación de la muralla del tercer recinto que hasta allí llegaba. Poseía además una capilla anexa en la parte izquierda dedicada a la Virgen de la Guía, patrona de los caminantes, que hoy en día se encuentra en la Iglesia del Santo Sepulcro. Estos elementos fueron eliminados a principios del S.XX para facilitar el acceso de vehículos. Hoy en día el puente es peatonal, no permitiéndose el paso a vehículos.",
-                                    "latitud": 41.4998,
-                                    "longitud": -5.74812
-                                  }
-                            ]
-                        }
-                    },
-                    "400": {
-                        "description": "Parámetros inválidos en la solicitud",
-                        "examples": {
-                            "application/json": {
-                                "error": "Parámetros inválidos."
+                        "description": "Búsqueda exitosa",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "nombre": {
+                                        "type": "string"
+                                    },
+                                    "localidad": {
+                                        "type": "string"
+                                    },
+                                    "provincia": {
+                                        "type": "string"
+                                    },
+                                    "tipo_monumento": {
+                                        "type": "string"
+                                    },
+                                    "latitud": {
+                                        "type": "number"
+                                    },
+                                    "longitud": {
+                                        "type": "number"
+                                    }
+                                }
                             }
                         }
                     },
-                    "404": {
-                        "description": "No se encontraron monumentos para los filtros especificados.",
-                        "examples": {
-                            "application/json": {
-                                "error": "No se encontraron monumentos para los filtros especificados."
-                            }
-                        }
+                    "401": {
+                        "description": "Unauthorized"
                     },
                     "500": {
-                        "description": "Error interno del servidor. Intente más tarde.",
-                        "examples": {
-                            "application/json": {
-                                "error": "Error interno del servidor. Intente más tarde."
-                            }
-                        }
+                        "description": "Error en la búsqueda"
                     }
                 }
             }
