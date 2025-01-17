@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }).addTo(mapa);
 
   let markers = [];
+  let redMarkers = [];
   let datos = []; // Variable para almacenar los datos cargados
   const localidadInput = document.getElementById("localidad");
   const provinciaInput = document.getElementById("provincia");
@@ -174,6 +175,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   buscarBtn.addEventListener("click", async () => {
     console.log("El archivo JavaScript se ha cargado correctamente.");
 
+    // Limpiar los pines rojos de la búsqueda anterior
+    redMarkers.forEach((marker) => marker.remove());
+    redMarkers = [];
+
     // Obtener los valores de los campos del formulario
     const localidad = localidadInput.value.toLowerCase();
     const provincia = provinciaInput.value.toLowerCase();
@@ -218,6 +223,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
       // Si hay filtros, mostrar los resultados filtrados
       await mostrarResultados(resultados);
+
+      // Mostrar los pines en rojo para los resultados filtrados
+      const redIcon = L.icon({
+        iconUrl: "red-pin.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+      });
+
+      resultados.forEach((d) => {
+        const marker = L.marker([d.latitud, d.longitud], {
+          icon: redIcon,
+        }).addTo(mapa);
+        marker.bindPopup(
+          `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
+        );
+        redMarkers.push(marker);
+      });
     }
   });
 
