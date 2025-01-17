@@ -3,6 +3,7 @@ import json
 import sys
 import os
 from pathlib import Path
+from BackEnd.config.paths import INPUT_CSV_PATH
 
 def CSVtoJSON():
     # Obtener la ruta del directorio raíz y actual
@@ -10,14 +11,13 @@ def CSVtoJSON():
     BASE_DIR = os.path.dirname(os.path.dirname(CURRENT_DIR))
 
     # Crear la ruta completa hacia "Fuente_de_datos/Final/vcl.csv"
-    path = os.path.abspath(os.path.join(BASE_DIR, 'Fuentes_de_datos', 'Final', 'vcl.csv'))
-    path2 = os.path.abspath(os.path.join(BASE_DIR, 'BackEnd', 'Wrappers', 'CSVtoJSON.json'))
+    path_archivo_gen = os.path.abspath(os.path.join(BASE_DIR, 'BackEnd', 'Wrappers', 'CSVtoJSON.json'))
 
     # Leer el archivo CSV con la codificación utf-8 y delimitador ';'
-    with open(path, 'r', encoding='utf-8') as csv_file:
+    with open(INPUT_CSV_PATH, 'r', encoding='utf-8') as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter=';')  # Usar ';' como delimitador
         data = list(csv_reader)  # Convertir el lector a lista de diccionarios
 
     # Escribir el archivo JSON sin escapar caracteres no ASCII
-    with open(path2, 'w', encoding='utf-8') as json_file:
+    with open(path_archivo_gen, 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, indent=4, ensure_ascii=False)
