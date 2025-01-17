@@ -230,14 +230,14 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
 
     # Verificar que la provincia esté bien escrita.
     if provincia_incorrecta(nomProvincia, fuente):
-        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo = Provincia inválida}}")
+        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Provincia inválida}}")
         total_records_rejected += 1
         return False
     
     # Verificar que la provincia tiene las tildes correctas.
     # Se deja continuar si no tiene tilde ya que se puede reparar en la siguiente etapa.
     if provincia_sin_tilde(nomProvincia, fuente):
-        logger_reparados.info(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomProvincia}, motivo = Provincia sin tilde, operación = Agregar la tilde}}")
+        logger_reparados.info(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Provincia sin tilde, operación = Agregar la tilde}}")
         total_records_repaired += 1
         return True
     
