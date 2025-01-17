@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const provinciaInput = document.getElementById("provincia");
   const postalInput = document.getElementById("codigo_postal");
   const buscarBtn = document.getElementById("buscar");
-
+  const tipoSelect = document.getElementById("tipo");
   // Función para limpiar los marcadores del mapa
   function limpiarMapa() {
     markers.forEach((marker) => marker.remove());
@@ -190,6 +190,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Filtrar los resultados basados en los datos cargados
     const resultados = datos.filter((d) => {
+      // Depurar ambos valores comparados
+      console.log("Valor del tipo:", tipo.toLowerCase());
+      console.log("Valor de tipo_monumento:", d.tipo_monumento.toLowerCase());
+
       return (
         (localidad
           ? d.nombre_localidad.toLowerCase().includes(localidad)
@@ -198,7 +202,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           ? d.nombre_provincia.toLowerCase().includes(provincia)
           : true) &&
         (codigoPostal ? d.codigo_postal.includes(codigoPostal) : true) &&
-        (tipo ? d.tipo_monumento.toLowerCase().includes(tipo) : true)
+        (tipo && tipo.toLowerCase()
+          ? d.tipo_monumento.toLowerCase().includes(tipo.toLowerCase())
+          : true)
       );
     });
 
@@ -230,7 +236,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const marker = L.marker([d.latitud, d.longitud]).addTo(mapa);
         marker.bindPopup(
-          `<strong>${d.nomMonumento}</strong><br>${d.direccion}`
+          `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
         );
         markers.push(marker);
       });
