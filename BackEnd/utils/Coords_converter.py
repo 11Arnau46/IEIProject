@@ -50,8 +50,14 @@ class CoordsConverter:
     @staticmethod
     def convert_utm(latitud, longitud):
         opciones = Options()
-        opciones.add_argument("--headless")  # Habilita el modo headless (sin interfaz gráfica)
-
+        # Configurar opciones para modo headless y pantalla completa
+        opciones.add_argument("--headless=new")  # Modo headless moderno
+        opciones.add_argument("--window-size=1920,1080")
+        opciones.add_argument("--start-maximized")
+        opciones.add_argument("--disable-gpu")
+        # Configuraciones adicionales para mejor rendimiento en headless
+        opciones.add_argument("--no-sandbox")
+        opciones.add_argument("--disable-dev-shm-usage")
         # Inicializa el navegador con las opciones configuradas
         driver = webdriver.Chrome(options=opciones)  # Asegúrate de que 'chromedriver' esté en tu PATH
         driver.get("https://www.ign.es/web/calculadora-geodesica")
@@ -70,7 +76,7 @@ class CoordsConverter:
         actions = ActionChains(driver)
         actions.move_to_element(radio_button).click().perform()
 
-        #time.sleep(3)
+        time.sleep(10)
 
         # Encuentra el campo x metros e introduce el valor de latitud
         driver.find_element(By.ID, "datacoord1").clear()
@@ -84,14 +90,14 @@ class CoordsConverter:
         driver.find_element(By.ID, "trd_calc").click()
 
         # Espera un momento para que se procese la conversión
-        time.sleep(3)
+        time.sleep(10)
 
         # Obtiene la latitud y longitud en grados
         lat = driver.find_element(By.ID, "txt_etrs89_latgd").get_attribute("value")
         lon = driver.find_element(By.ID, "txt_etrs89_longd").get_attribute("value")
 
-        #print(lat)
-        #print(lon)
+        print(lat)
+        print(lon)
 
         # Cierra el navegador
         driver.quit()
