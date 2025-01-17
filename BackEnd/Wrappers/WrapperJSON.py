@@ -48,8 +48,14 @@ def JSONtoJSON():
             elif in_monument and '"' in line and ':' in line:
                 # Extraer clave y valor
                 key = line.split('"')[1]
-                value = line.split(':')[1].strip().strip(',').strip('"')
-                current_monument.append({'key': key, 'value': value})
+                # Manejar URLs y otros valores
+                parts = line.split(':', 1)  # Dividir solo en la primera ocurrencia de ':'
+                if len(parts) > 1:
+                    value = parts[1].strip().strip(',').strip('"')
+                    # Si el valor empieza con 'http' o 'https', asegurarse de mantener los ':'
+                    if value.strip().lower().startswith(('http', 'https')):
+                        value = value.replace('"', '')  # Eliminar comillas extras si las hay
+                    current_monument.append({'key': key, 'value': value})
 
     # Guardar el resultado en un archivo JSON
     with open(output_path, 'w', encoding='utf-8') as output_file:
