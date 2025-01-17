@@ -1,15 +1,3 @@
-{fuente = CSV, nombre = Castillo y Murallas de Biar, Localidad = BIAR, motivo = Coordenadas sin valor}
-{fuente = CSV, nombre = Poblado de la Peña Ajuerá, Localidad = AZUÉBAR, motivo = Monumento duplicado}
-{fuente = CSV, nombre = Molino Fortificado Torre Gausa, Localidad = SAGUNT, motivo = Provincia inválida}
-{fuente = CSV, nombre = Illeta dels Banyets, Localidad = Campello (el), motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Palacio Condal y Monasterio de la Virgen del Milagro, Localidad = Cocentaina, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Yacimiento romano Illeta del Portichol, Localidad = Xàbia, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Castillo-Iglesia Parroquial de San Miguel Arcángel, Localidad = Murla, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Recinto Amurallado de Almazora, Localidad = Almassora, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Cartuja de la Vall de Christ, Localidad = Altura, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Yacimiento fenicio de Vinarratgell, Localidad = Borriana, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Torre Campanario El Fadrí, Localidad = Castelló de la plana, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Escudo de los Júdici de Acharte Blanes, Localidad = Alzira, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Torre Muza, Localidad = Benifaió, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Iglesia Parroquial de San Miguel Arcángel, Localidad = Benigànim, motivo = Código postal sin valor o N/A, no se ha podido reparar}
-{fuente = CSV, nombre = Restos Arqueológicos de la Alquería islámica de Bofilla y su Torre, Localidad = Bétera, motivo = Código postal sin valor o N/A, no se ha podido reparar}
+{fuente = Comunidad Valenciana, nombre = Castillo y Murallas de Biar, Localidad = BIAR, motivo = Coordenadas sin valor}
+{fuente = Comunidad Valenciana, nombre = Poblado de la Peña Ajuerá, Localidad = AZUÉBAR, motivo = Monumento duplicado}
+{fuente = Comunidad Valenciana, nombre = Molino Fortificado Torre Gausa, Localidad = SAGUNT, motivo = Provincia inválida}

@@ -182,12 +182,33 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
     logger_rechazados = logging.getLogger(f'rechazados_{fuente}')
     logger_reparados = logging.getLogger(f'reparados_{fuente}')
     
+    # Primera validación: verificar si el monumento ya existe en la base de datos
+    try:
+        from SQL.BDConnection import BDConnection
+        bd_connection = BDConnection()
+        bd_connection.init_db("carga")
+        existing_monuments = bd_connection.get_existing_monuments()
+        bd_connection.close()
+
+        # Comparar con los monumentos existentes
+        for monument in existing_monuments:
+            if monument.nombre.lower() == nomMonumento.lower():
+                log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Monumento ya existe en la base de datos")
+                total_records_rejected += 1
+                return False
+    except Exception as e:
+        print(f"Error al verificar duplicados en la base de datos: {str(e)}")
+
+    # Segunda validación: verificar si el monumento está duplicado en la carga actual
+    if nomMonumento in seen_monuments:
+        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Monumento duplicado en la carga actual")
+        total_records_rejected += 1
+        return False
+    
+    seen_monuments.add(nomMonumento)
+
     # Si estamos en la segunda validación después de Location Finder, solo validamos sin escribir logs
     if pasadoPorLocationFinder:
-        # Verificar si el monumento es duplicado
-        if is_duplicate_monument(nomMonumento, seen_monuments):
-            return False
-
         # Verificar que las coordenadas tengan valor
         if coordenadas_null(latitud, longitud):
             return False
@@ -229,12 +250,6 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         return True
 
     # Primera validación - escribir logs normalmente
-    # Verificar si el monumento es duplicado
-    if is_duplicate_monument(nomMonumento, seen_monuments):
-        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Monumento duplicado")
-        total_records_rejected += 1
-        return False
-
     # Verificar que las coordenadas tengan valor
     if coordenadas_null(latitud, longitud):
         log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Coordenadas sin valor")
@@ -322,3 +337,31 @@ def log_statistics():
     total_records_added_correctly = 0
     total_records_rejected = 0
     total_records_repaired = 0
+
+def is_duplicate_monument(nomMonumento, seen_monuments):
+    """
+    Verifica si un monumento está duplicado, ya sea en la lista actual o en la base de datos.
+    """
+    from SQL.BDConnection import BDConnection
+
+    # Verificar si está en la lista actual de monumentos vistos
+    if nomMonumento in seen_monuments:
+        return True
+
+    # Verificar si existe en la base de datos
+    try:
+        bd_connection = BDConnection()
+        bd_connection.init_db("carga")
+        existing_monuments = bd_connection.get_existing_monuments()
+        bd_connection.close()
+
+        # Comparar con los monumentos existentes
+        for monument in existing_monuments:
+            if monument.nombre.lower() == nomMonumento.lower():
+                return True
+    except Exception as e:
+        print(f"Error al verificar duplicados en la base de datos: {str(e)}")
+
+    # Si no está duplicado, agregarlo a la lista de vistos
+    seen_monuments.add(nomMonumento)
+    return False

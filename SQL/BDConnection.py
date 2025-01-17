@@ -38,26 +38,20 @@ class BDConnection:
                 raise Exception("No se pudo conectar con ninguna de las contraseñas disponibles")
             
             if accion == "carga":
-                print("\nCreando base de datos...")
-                # Primero, eliminar la base de datos si existe
+                print("\nConectando a la base de datos...")
+                # Crear la base de datos si no existe
                 engine_no_db = self.create_engine_without_db()
-                with engine_no_db.connect() as conn:
-                    conn.execute(text(f"DROP DATABASE IF EXISTS {self.db_name}"))
-                    conn.commit()
-                    print(f"Base de datos {self.db_name} eliminada si existía")
-                
-                # Luego, crear la base de datos
                 with engine_no_db.connect() as conn:
                     conn.execute(text(f"CREATE DATABASE IF NOT EXISTS {self.db_name}"))
                     conn.commit()
-                    print(f"Base de datos {self.db_name} creada")
+                    print(f"Base de datos {self.db_name} creada si no existía")
 
                 # Ahora creamos el motor conectado a la base de datos
                 self.engine = self.create_engine_with_db()
 
-                # Crear las tablas
+                # Crear las tablas si no existen
                 Base.metadata.create_all(self.engine)
-                print("Tablas creadas exitosamente")
+                print("Tablas creadas si no existían")
                 
             elif accion == "busqueda":
                 print("\nConectando a la base de datos existente...")
@@ -87,6 +81,13 @@ class BDConnection:
         if self.session:
             self.session.close()
             print("Sesión cerrada correctamente")
+
+    def get_existing_monuments(self):
+        """ Obtiene todos los monumentos existentes en la base de datos """
+        from .BDMap import Monumento
+        if self.session:
+            return self.session.query(Monumento).all()
+        return []
 
 # Uso de la clase BDConnection
 if __name__ == "__main__":

@@ -1,2 +1,15 @@
-{fuente = JSON, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebastián, motivo = Coordenadas fuera de rango}
-{fuente = JSON, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo = Monumento duplicado}
+{fuente = Euskadi, nombre = Ermita de La Antigua - Santa María de Zumarraga, Localidad = Zumarraga, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Torre de Doña Otxanda, Localidad = Vitoria-Gasteiz, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Fuerte de Guadalupe, Localidad = Hondarribia, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Catedral del Buen Pastor, Localidad = Donostia / San Sebastián, motivo = Coordenadas fuera de rango}
+{fuente = Euskadi, nombre = Paseo de los Arquillos, Localidad = Vitoria-Gasteiz, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Monasterio de Zenarruza, Localidad = Ziortza-Bolibar, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Puente de San Antón, Localidad = Bilbao, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Teatro Arriaga, Localidad = Bilbao, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Plaza de la Constitución, Localidad = Donostia / San Sebastián, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Peine del Viento, Localidad = Donostia / San Sebastián, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Ermita de Santa Águeda, Localidad = Antzuola, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Puente de Trespuentes, Localidad = Iruña Oka/Iruña de Oca, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Molino de Zamakola, Localidad = Dima, motivo = Monumento ya existe en la base de datos}
+{fuente = Euskadi, nombre = Castillo de Portilla, Localidad = Zambrana, motivo = Monumento ya existe en la base de datos}
