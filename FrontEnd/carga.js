@@ -90,15 +90,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Primera llamada a la API (Cargar datos)
       try {
-        // Mostrar mensaje de carga iniciada con tiempos estimados
+        // Calcular fuentes seleccionadas
+        let fuentesSeleccionadas = [];
+
+        if (selectedSources.includes("castilla")) {
+          fuentesSeleccionadas.push("Castilla y León (5 segundos)");
+        }
+        if (selectedSources.includes("euskadi")) {
+          fuentesSeleccionadas.push("Euskadi (5 segundos)");
+        }
+        if (selectedSources.includes("valenciana")) {
+          fuentesSeleccionadas.push("Comunitat Valenciana (3-4 minutos)");
+        }
+
+        // Mostrar mensaje inicial
         resultados.innerHTML = `
           <p style="color:green;">La carga de datos se ha iniciado correctamente. Los resultados se pueden consultar en los logs.</p>
-          <p style="margin-top: 15px;">Para el caso de prueba se estima una duración de:<br>
-          5 segundos para Castilla y León<br>
-          5 segundos para Euskadi<br>
-          3-4 minutos para Comunitat Valenciana</p>
+          <p style="margin-top: 15px;">Fuentes seleccionadas:<br>
+          ${fuentesSeleccionadas.map(f => `→ ${f}`).join('<br>')}
+          </p>
           <p style="color:gray; font-style: italic;">La duración puede variar dependiendo de la velocidad de su internet :(</p>
         `;
+
         sessionStorage.setItem("resultados", resultados.innerHTML);
 
         // Realizar la llamada a la API sin esperar respuesta
@@ -204,6 +217,83 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error("Error al obtener los logs:", error);
       resultados.innerHTML = `<p style="color:red;">Error al obtener los logs generales.</p>`;
+    }
+  });
+
+  // Evento para el botón "Eliminar Logs"
+  const borrarLogsBtn = document.getElementById("borrarLogs");
+  borrarLogsBtn.addEventListener("click", async function () {
+    // Obtener las fuentes seleccionadas
+    const selectedSources = checkboxes
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value);
+
+    if (seleccionarTodas.checked) {
+      selectedSources.push("castilla", "valenciana", "euskadi");
+    }
+
+    if (selectedSources.length === 0) {
+      resultados.innerHTML =
+        '<p style="color:red;">Por favor, selecciona al menos una fuente.</p>';
+      return;
+    }
+
+    // Convertir las fuentes seleccionadas a sus tipos correspondientes
+    let contentTypes = [];
+    if (selectedSources.includes("castilla")) contentTypes.push("xml");
+    if (selectedSources.includes("valenciana")) contentTypes.push("csv");
+    if (selectedSources.includes("euskadi")) contentTypes.push("json");
+
+    if (contentTypes.length === 0) {
+      resultados.innerHTML =
+        '<p style="color:red;">Por favor, selecciona un tipo de extractor válido.</p>';
+      return;
+    }
+
+    try {
+      // Realizar las llamadas DELETE para cada tipo de log
+      const deletePromises = contentTypes.map(tipo =>
+        fetch(
+          `https://localhost:8000/log/${tipo}?api_key=${apiKey}`,
+          {
+            method: "DELETE",
+            headers: {
+              Authorization: `Bearer ${apiKey}`,
+            },
+          }
+        )
+      );
+
+      // Esperar a que todas las llamadas se completen
+      const responses = await Promise.all(deletePromises);
+      const results = responses.map(response => response.ok);
+
+      // Crear mensaje con las fuentes eliminadas
+      const fuentesEliminadas = [];
+      if (selectedSources.includes("castilla")) fuentesEliminadas.push("Castilla y León");
+      if (selectedSources.includes("valenciana")) fuentesEliminadas.push("Comunitat Valenciana");
+      if (selectedSources.includes("euskadi")) fuentesEliminadas.push("Euskadi");
+
+      // Verificar si todas las eliminaciones fueron exitosas
+      if (results.every((result) => result)) {
+        resultados.innerHTML = `
+          <p style="color:green;">Se han eliminado correctamente todos los logs de las siguientes fuentes:</p>
+          <ul style="color:green; margin-top: 10px;">
+            ${fuentesEliminadas.map(fuente => `<li>→ ${fuente}</li>`).join('')}
+          </ul>
+        `;
+      } else {
+        resultados.innerHTML = `
+          <p style="color:red;">Hubo un error al eliminar algunos logs.</p>
+          <p style="color:red;">Fuentes seleccionadas:</p>
+          <ul style="color:red; margin-top: 5px;">
+            ${fuentesEliminadas.map(fuente => `<li>→ ${fuente}</li>`).join('')}
+          </ul>
+        `;
+      }
+    } catch (error) {
+      console.error("Error al eliminar los logs:", error);
+      resultados.innerHTML = '<p style="color:red;">Error al eliminar los logs.</p>';
     }
   });
 });
