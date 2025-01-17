@@ -17,14 +17,22 @@ from BackEnd.utils.Otros import data_source
 from BackEnd.Wrappers.Wrapper_JSON import process_json
 from BackEnd.Wrappers.WrapperJSON import JSONtoJSON
 
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# Inicializar Flask con la ruta correcta para archivos estáticos
+static_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
+app = Flask(__name__, static_url_path='', static_folder=static_folder)
+
+# Configurar CORS
+CORS(app, resources={
+    r"/static/*": {"origins": "*"},
+    r"/swagger-ui/*": {"origins": "*"},
+    r"/wrapperJSON/*": {"origins": "*"}
+})
 
 api = Api(app)
 
 # Swagger UI configuration
 SWAGGER_URL = '/swagger-ui'
-API_URL = '/static/swagger.json'  # Path to the Swagger JSON file
+API_URL = '/swagger.json'
 
 swaggerui_blueprint = get_swaggerui_blueprint(
     SWAGGER_URL,
@@ -36,6 +44,10 @@ swaggerui_blueprint = get_swaggerui_blueprint(
 
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
+@app.route('/swagger.json')
+def serve_swagger():
+    return send_from_directory(static_folder, 'swagger.json')
+
 class WrapperJSONExecute(Resource):
     """
     WrapperJSONExecute is a Flask-RESTful resource that handles the execution of a data transformation script to JSON.
@@ -43,63 +55,21 @@ class WrapperJSONExecute(Resource):
 
     def post(self):  
         try:
-            # Ruta al archivo JSON que deseas devolver
-            root_dir = Path(__file__).resolve().parents[3]
+            # Procesar el JSON usando la función del wrapper
+            JSONtoJSON()
 
-            # Define the path to the output JSON file
-            path = root_dir / 'Fuentes_de_datos' / 'Final' / 'eus.json'
+            # Leer el archivo JSONtoJSON.json generado
+            output_file_path = os.path.join(root_dir, 'BackEnd', 'Wrappers', 'JSONtoJSON.json')
+            with open(output_file_path, 'r', encoding='utf-8') as f:
+                json_content = json.load(f)
 
-            # Leer el archivo como texto primero para procesar manualmente las claves duplicadas
-            with open(path, 'r', encoding='utf-8') as json_file:
-                content = json_file.read()
-                monuments = []
-                current_monument = []
-                in_monument = False
-                
-                # Dividir el contenido en líneas y procesar cada línea
-                lines = content.split('\n')
-                for line in lines:
-                    line = line.strip()
-                    if line.startswith('{'):
-                        in_monument = True
-                        current_monument = []
-                    elif line.startswith('}'):
-                        if current_monument:
-                            # Procesar el monumento actual
-                            field_values = {}
-                            processed_monument = {}
-                            
-                            for field in current_monument:
-                                key = field['key']
-                                value = field['value']
-                                
-                                if key not in field_values:
-                                    # Primera aparición del campo
-                                    field_values[key] = value
-                                    processed_monument[key] = value
-                                elif not field_values[key] and value:
-                                    # Si el valor guardado está vacío y el nuevo tiene contenido
-                                    field_values[key] = value
-                                    processed_monument[key] = value
-                            
-                            monuments.append(processed_monument)
-                        in_monument = False
-                    elif in_monument and '"' in line and ':' in line:
-                        # Extraer clave y valor
-                        key = line.split('"')[1]
-                        value = line.split(':')[1].strip().strip(',').strip('"')
-                        current_monument.append({'key': key, 'value': value})
-
-            # Convertir de nuevo a JSON con encoding UTF-8
-            response_data = json.dumps(monuments, ensure_ascii=False)
-
-            # Asegurarse de que la respuesta también sea con UTF-8
-            return Response(response_data, mimetype='application/json', status=200)
+            # Devolver el contenido del archivo
+            return jsonify(json_content)
 
         except FileNotFoundError:
             return {"error": "Output file not found"}, 404
         except Exception as e:
-            return {"error": f"An error occurred while reading the output file: {e}"}, 500
+            return {"error": f"An error occurred while processing the file: {e}"}, 500
 
     def delete(self):
         """

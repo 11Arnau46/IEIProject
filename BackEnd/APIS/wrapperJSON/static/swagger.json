@@ -26,10 +26,19 @@
                     "WrapperJSON"
                 ],
                 "summary": "Ejecutar transformación de datos JSON",
-                "description": "Ejecuta el proceso de transformación de datos JSON y devuelve el resultado",
+                "description": "Ejecuta el proceso de transformación de datos JSON y devuelve el contenido del archivo JSONtoJSON.json generado",
+                "produces": [
+                    "application/json"
+                ],
                 "responses": {
-                    "201": {
-                        "description": "Transformación exitosa"
+                    "200": {
+                        "description": "Transformación exitosa",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "object"
+                            }
+                        }
                     },
                     "404": {
                         "description": "Archivo de salida no encontrado"
@@ -44,7 +53,7 @@
                     "WrapperJSON"
                 ],
                 "summary": "Eliminar archivo de salida JSON",
-                "description": "Elimina el archivo de salida generado por la transformación JSON",
+                "description": "Elimina el archivo JSONtoJSON.json generado por la transformación",
                 "responses": {
                     "200": {
                         "description": "Archivo eliminado exitosamente"
