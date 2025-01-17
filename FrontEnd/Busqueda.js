@@ -14,11 +14,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const postalInput = document.getElementById("codigo_postal");
   const buscarBtn = document.getElementById("buscar");
   const tipoSelect = document.getElementById("tipo");
-  // Función para limpiar los marcadores del mapa
-  function limpiarMapa() {
-    markers.forEach((marker) => marker.remove());
-    markers = [];
-  }
 
   // Función para ordenar la tabla por una columna
   function ordenarTabla(columna, orden) {
@@ -134,8 +129,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       .querySelector("tbody");
     tabla.innerHTML = "";
 
-    limpiarMapa(); // Limpiar los marcadores previos
-
     resultados.forEach((d) => {
       const fila = `<tr>
           <td>${d.nombre_monumento}</td>
@@ -147,7 +140,12 @@ document.addEventListener("DOMContentLoaded", async () => {
           <td>${d.descripcion}</td>
         </tr>`;
       tabla.innerHTML += fila;
+    });
+  }
 
+  // Mostrar todos los pines en el mapa
+  function mostrarPines(resultados) {
+    resultados.forEach((d) => {
       const marker = L.marker([d.latitud, d.longitud]).addTo(mapa);
       marker.bindPopup(
         `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
@@ -158,6 +156,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   datos = await obtenerDatosDesdeAPI();
   await mostrarResultados(datos);
+  mostrarPines(datos);
 
   // Función para manejar el evento de cancelar
   document.getElementById("cancelar").addEventListener("click", async () => {
@@ -167,20 +166,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     postalInput.value = "";
     document.getElementById("tipo").value = "";
 
-    // Limpiar los resultados en la tabla y el mapa
-    limpiarMapa();
-
-    // Llamar a la función para mostrar todos los datos
+    // Limpiar los resultados en la tabla
     await mostrarResultados(datos);
-
-    // Centrar el mapa en España
-    mapa.setView([40.4168, -3.7038], 6);
   });
 
   // Función para manejar el evento de búsqueda
   buscarBtn.addEventListener("click", async () => {
     console.log("El archivo JavaScript se ha cargado correctamente.");
-    limpiarMapa();
 
     // Obtener los valores de los campos del formulario
     const localidad = localidadInput.value.toLowerCase();
@@ -221,53 +213,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       !codigoPostal &&
       !tipo
     ) {
-      // Si no hay filtros, mostrar todos los datos y centrar el mapa en España
-      datos.forEach((d) => {
-        const fila = `<tr>
-                <td>${d.nombre_monumento}</td>
-                <td>${d.tipo_monumento}</td>
-                <td>${d.direccion}</td>
-                <td>${d.nombre_localidad}</td>
-                <td>${d.codigo_postal}</td>
-                <td>${d.nombre_provincia}</td>
-                <td>${d.descripcion}</td>
-            </tr>`;
-        tabla.innerHTML += fila;
-
-        const marker = L.marker([d.latitud, d.longitud]).addTo(mapa);
-        marker.bindPopup(
-          `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
-        );
-        markers.push(marker);
-      });
-
-      // Centrar el mapa en todos los puntos
-      const bounds = markers.map((marker) => marker.getLatLng());
-      mapa.fitBounds(bounds); // Ajustar el zoom para mostrar todos los marcadores
+      // Si no hay filtros, mostrar todos los datos
+      await mostrarResultados(datos);
     } else {
       // Si hay filtros, mostrar los resultados filtrados
-      resultados.forEach((d) => {
-        const fila = `<tr>
-                <td>${d.nombre_monumento}</td>
-                <td>${d.tipo_monumento}</td>
-                <td>${d.direccion}</td>
-                <td>${d.nombre_localidad}</td>
-                <td>${d.codigo_postal}</td>
-                <td>${d.nombre_provincia}</td>
-                <td>${d.descripcion}</td>
-            </tr>`;
-        tabla.innerHTML += fila;
-
-        const marker = L.marker([d.latitud, d.longitud]).addTo(mapa);
-        marker.bindPopup(
-          `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
-        );
-        markers.push(marker);
-      });
-
-      // Centrar el mapa en todos los puntos
-      const bounds = markers.map((marker) => marker.getLatLng());
-      mapa.fitBounds(bounds); // Ajustar el zoom para mostrar todos los marcadores
+      await mostrarResultados(resultados);
     }
   });
 
