@@ -41,6 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
     sessionStorage.removeItem("resultados"); // Eliminar resultados guardados
   });
 
+  // Función para manejar el timeout
+  function fetchWithTimeout(url, options, timeout) {
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Tiempo de espera excedido")), timeout)
+    );
+    const fetchPromise = fetch(url, options);
+    return Promise.race([fetchPromise, timeoutPromise]); // La primera que resuelva se toma
+  }
+
   // Evento para el botón "Cargar"
   document
     .getElementById("cargaForm")
@@ -82,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Primera llamada a la API (Cargar datos)
       let data1 = null; // Inicializar la variable fuera del bloque try
       try {
-        const response1 = await fetch(
+        const response1 = await fetchWithTimeout(
           `https://localhost:8000/load?types=${contentTypes.join(
             ","
           )}&api_key=${apiKey}`,
@@ -92,18 +101,36 @@ document.addEventListener("DOMContentLoaded", function () {
               "Content-Type": "application/json",
               Authorization: `Bearer ${apiKey}`,
             },
-          }
+          },
+          5000 // Tiempo de espera de 5 segundos
         );
-        data1 = await response1.json();
+        data1 = await response1.text();
         resultados.innerHTML = `<p style="color:green;">${
           data1.message || "Carga exitosa"
         }</p>`;
         sessionStorage.setItem("resultados", resultados.innerHTML);
-        const data1 = await response1.text();
         console.log("Estadísticas recibidas:", data1);
         resultados.innerHTML += `<p style="color:blue;">${data1}</p>`;
       } catch (error) {
         console.error("Error en la carga de datos:", error);
+        resultados.innerHTML =
+          '<p style="color:red;">Hubo un error al cargar los datos. ' +
+          (error.message === "Tiempo de espera excedido"
+            ? "El servidor no respondió a tiempo."
+            : error.message) +
+          "</p>";
+        sessionStorage.setItem("resultados", resultados.innerHTML); // Guardar el contenido incluso si hay error
+      }
+
+      // Mostrar resultados adicionales
+      if (data1) {
+        try {
+          const additionalData = await response1.text();
+          resultados.innerHTML += `<p style="color:blue;">${additionalData}</p>`;
+          sessionStorage.setItem("resultados", resultados.innerHTML); // Guardar el contenido final
+        } catch (error) {
+          console.error("Error al obtener datos adicionales:", error);
+        }
       }
     });
 
@@ -129,6 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const errorData = await response.json();
         resultados.innerHTML = `<p style="color:red;">${errorData.error}</p>`;
       }
+      sessionStorage.removeItem("resultados"); // Eliminar los resultados guardados después de borrar los datos
     } catch (error) {
       console.error("Error al borrar los datos:", error);
       resultados.innerHTML = `<p style="color:red;">Error al borrar los datos.</p>`;
