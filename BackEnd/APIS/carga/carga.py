@@ -297,7 +297,7 @@ class WrapperLog(Resource):
                 response_text += "\n"
                 
                 # Sección de reparados
-                response_text += "DETALLE DE REGISTROS REPARADOS\n"
+                response_text += "\nDETALLE DE REGISTROS REPARADOS\n"
                 response_text += "--------------------------------------------------------------------------------\n"
                 if report['details']['reparados']:
                     response_text += "\n".join(report['details']['reparados'])
