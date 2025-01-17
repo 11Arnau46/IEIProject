@@ -89,9 +89,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Primera llamada a la API (Cargar datos)
-      let data1 = null; // Inicializar la variable fuera del bloque try
       try {
-        const response1 = await fetchWithTimeout(
+        // Mostrar mensaje de carga iniciada con tiempos estimados
+        resultados.innerHTML = `
+          <p style="color:green;">La carga de datos se ha iniciado correctamente. Los resultados se pueden consultar en los logs.</p>
+          <p style="margin-top: 15px;">Para el caso de prueba se estima una duración de:<br>
+          5 segundos para Castilla y León<br>
+          5 segundos para Euskadi<br>
+          3-4 minutos para Comunitat Valenciana</p>
+          <p style="color:gray; font-style: italic;">La duración puede variar dependiendo de la velocidad de su internet :(</p>
+        `;
+        sessionStorage.setItem("resultados", resultados.innerHTML);
+
+        // Realizar la llamada a la API sin esperar respuesta
+        fetch(
           `https://localhost:8000/load?types=${contentTypes.join(
             ","
           )}&api_key=${apiKey}`,
@@ -101,36 +112,13 @@ document.addEventListener("DOMContentLoaded", function () {
               "Content-Type": "application/json",
               Authorization: `Bearer ${apiKey}`,
             },
-          },
-          5000 // Tiempo de espera de 5 segundos
+          }
         );
-        data1 = await response1.text();
-        resultados.innerHTML = `<p style="color:green;">${
-          data1.message || "Carga exitosa"
-        }</p>`;
-        sessionStorage.setItem("resultados", resultados.innerHTML);
-        console.log("Estadísticas recibidas:", data1);
-        resultados.innerHTML += `<p style="color:blue;">${data1}</p>`;
       } catch (error) {
-        console.error("Error en la carga de datos:", error);
+        console.error("Error al iniciar la carga de datos:", error);
         resultados.innerHTML =
-          '<p style="color:red;">Hubo un error al cargar los datos. ' +
-          (error.message === "Tiempo de espera excedido"
-            ? "El servidor no respondió a tiempo."
-            : error.message) +
-          "</p>";
-        sessionStorage.setItem("resultados", resultados.innerHTML); // Guardar el contenido incluso si hay error
-      }
-
-      // Mostrar resultados adicionales
-      if (data1) {
-        try {
-          const additionalData = await response1.text();
-          resultados.innerHTML += `<p style="color:blue;">${additionalData}</p>`;
-          sessionStorage.setItem("resultados", resultados.innerHTML); // Guardar el contenido final
-        } catch (error) {
-          console.error("Error al obtener datos adicionales:", error);
-        }
+          '<p style="color:red;">Hubo un error al iniciar la carga de datos.</p>';
+        sessionStorage.setItem("resultados", resultados.innerHTML);
       }
     });
 
@@ -160,6 +148,62 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error("Error al borrar los datos:", error);
       resultados.innerHTML = `<p style="color:red;">Error al borrar los datos.</p>`;
+    }
+  });
+
+  // Evento para el botón "Mostrar Logs Generales"
+  const mostrarLogsBtn = document.getElementById("mostrarLogs");
+  mostrarLogsBtn.addEventListener("click", async function () {
+    // Obtener las fuentes seleccionadas
+    const selectedSources = checkboxes
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value);
+
+    if (seleccionarTodas.checked) {
+      selectedSources.push("castilla", "valenciana", "euskadi");
+    }
+
+    if (selectedSources.length === 0) {
+      resultados.innerHTML =
+        '<p style="color:red;">Por favor, selecciona al menos una fuente.</p>';
+      return;
+    }
+
+    // Convertir las fuentes seleccionadas a sus tipos correspondientes
+    let contentTypes = [];
+    if (selectedSources.includes("castilla")) contentTypes.push("xml");
+    if (selectedSources.includes("valenciana")) contentTypes.push("csv");
+    if (selectedSources.includes("euskadi")) contentTypes.push("json");
+
+    if (contentTypes.length === 0) {
+      resultados.innerHTML =
+        '<p style="color:red;">Por favor, selecciona un tipo de extractor válido.</p>';
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `https://localhost:8000/log/general?sources=${contentTypes.join(",")}&api_key=${apiKey}`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+          },
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.text();
+        // Reemplazar los saltos de línea con <br> para mostrar correctamente en HTML
+        const formattedData = data.replace(/\n/g, "<br>");
+        resultados.innerHTML = `<pre style="text-align: left; white-space: pre-wrap;">${formattedData}</pre>`;
+      } else {
+        const errorData = await response.json();
+        resultados.innerHTML = `<p style="color:red;">${errorData.error}</p>`;
+      }
+    } catch (error) {
+      console.error("Error al obtener los logs:", error);
+      resultados.innerHTML = `<p style="color:red;">Error al obtener los logs generales.</p>`;
     }
   });
 });

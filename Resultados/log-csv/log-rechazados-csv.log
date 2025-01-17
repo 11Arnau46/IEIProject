@@ -1,0 +1,3 @@
+{fuente = CSV, nombre = Castillo y Murallas de Biar, Localidad = BIAR, motivo = Coordenadas sin valor}
+{fuente = CSV, nombre = Poblado de la Peña Ajuerá, Localidad = AZUÉBAR, motivo = Monumento duplicado}
+{fuente = CSV, nombre = Molino Fortificado Torre Gausa, Localidad = VALLADOLID, motivo = Provincia inválida}
