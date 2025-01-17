@@ -269,42 +269,41 @@ class WrapperLog(Resource):
             else:
                 # Generar informe completo con todos los detalles
                 response_text = "================================================================================\n"
-                response_text += "INFORME GENERAL COMPLETO\n"
+                response_text += "                             INFORME GENERAL COMPLETO                           \n"
                 response_text += "================================================================================\n\n"
                 
-                # Sección de estadísticas
+                # Información de las fuentes procesadas
+                response_text += "FUENTES DE DATOS PROCESADAS\n"
                 response_text += "--------------------------------------------------------------------------------\n"
-                response_text += f"ESTADÍSTICAS GENERALES (fuentes = {fuentes})\n"
+                for source in sources:
+                    response_text += f"→ {source.upper()}\n"
+                response_text += "\n"
+                
+                # Sección de estadísticas generales
+                response_text += "RESUMEN GENERAL DE PROCESAMIENTO\n"
                 response_text += "--------------------------------------------------------------------------------\n"
                 response_text += f"Total de datos procesados: {report['processed']}\n"
                 response_text += f"Total de registros cargados correctamente: {report['loaded']}\n"
                 response_text += f"Total de registros rechazados: {report['rejected']}\n"
-                response_text += f"Total de registros reparados: {report['repaired']}\n"
-                response_text += "--------------------------------------------------------------------------------\n\n"
+                response_text += f"Total de registros reparados: {report['repaired']}\n\n"
                 
                 # Sección de rechazados
+                response_text += "DETALLE DE REGISTROS RECHAZADOS\n"
                 response_text += "--------------------------------------------------------------------------------\n"
-                response_text += "REGISTROS RECHAZADOS\n"
-                response_text += "--------------------------------------------------------------------------------\n"
-                response_text += "Registros con errores y rechazados:\n"
-                response_text += "{Fuente de datos, nombre, Localidad, motivo del error}\n"
                 if report['details']['rechazados']:
                     response_text += "\n".join(report['details']['rechazados'])
                 else:
                     response_text += "No hay registros rechazados.\n"
-                response_text += "\n--------------------------------------------------------------------------------\n\n"
+                response_text += "\n"
                 
                 # Sección de reparados
+                response_text += "DETALLE DE REGISTROS REPARADOS\n"
                 response_text += "--------------------------------------------------------------------------------\n"
-                response_text += "REGISTROS REPARADOS\n"
-                response_text += "--------------------------------------------------------------------------------\n"
-                response_text += "Registros con errores y reparados:\n"
-                response_text += "{Fuente de datos, nombre, Localidad, motivo del error, operación realizada}\n"
                 if report['details']['reparados']:
                     response_text += "\n".join(report['details']['reparados'])
                 else:
                     response_text += "No hay registros reparados.\n"
-                response_text += "\n--------------------------------------------------------------------------------\n"
+                response_text += "\n================================================================================\n"
                 
                 return Response(response_text, mimetype='text/plain')
 
@@ -322,6 +321,32 @@ class WrapperLog(Resource):
             return {"error": f"Log de {tipo} no encontrado"}, 404
             
         return Response(content, mimetype='text/plain', status='200')
+
+    def _get_source_stats(self, source):
+        """
+        Obtiene las estadísticas específicas de una fuente de datos.
+        """
+        stats_path = root_dir / 'Resultados' / f'log-{source}' / f'log-estadisticas-{source}.log'
+        stats = {
+            'processed': 0,
+            'loaded': 0,
+            'rejected': 0,
+            'repaired': 0
+        }
+        
+        content = self._read_log_file(stats_path)
+        if content:
+            for line in content.split('\n'):
+                if "Total de datos procesados:" in line:
+                    stats['processed'] = int(line.split(':')[1].strip())
+                elif "Total de registros cargados correctamente:" in line:
+                    stats['loaded'] = int(line.split(':')[1].strip())
+                elif "Total de registros rechazados:" in line:
+                    stats['rejected'] = int(line.split(':')[1].strip())
+                elif "Total de registros reparados:" in line:
+                    stats['repaired'] = int(line.split(':')[1].strip())
+        
+        return stats
 
     @require_api_key
     def delete(self, wrapper, tipo=None):
