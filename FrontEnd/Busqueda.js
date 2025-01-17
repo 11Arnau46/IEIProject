@@ -169,6 +169,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Limpiar los resultados en la tabla
     await mostrarResultados(datos);
+
+    // Limpiar los pines rojos del mapa
+    redMarkers.forEach((marker) => marker.remove());
+    redMarkers = [];
   });
 
   // Función para manejar el evento de búsqueda
@@ -199,7 +203,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           ? d.nombre_provincia.toLowerCase().includes(provincia)
           : true) &&
         (codigoPostal ? d.codigo_postal.includes(codigoPostal) : true) &&
-        (tipo && tipo.toLowerCase()
+        (tipo && tipo.toLowerCase() !== "todos"
           ? d.tipo_monumento.toLowerCase().includes(tipo.toLowerCase())
           : true)
       );
@@ -224,23 +228,25 @@ document.addEventListener("DOMContentLoaded", async () => {
       // Si hay filtros, mostrar los resultados filtrados
       await mostrarResultados(resultados);
 
-      // Mostrar los pines en rojo para los resultados filtrados
-      const redIcon = L.icon({
-        iconUrl: "red-pin.png",
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-      });
+      // Mostrar los pines en rojo para los resultados filtrados si el tipo no es "Todos"
+      if (tipo.toLowerCase() !== "todos") {
+        const redIcon = L.icon({
+          iconUrl: "red-pin.png",
+          iconSize: [25, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34],
+        });
 
-      resultados.forEach((d) => {
-        const marker = L.marker([d.latitud, d.longitud], {
-          icon: redIcon,
-        }).addTo(mapa);
-        marker.bindPopup(
-          `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
-        );
-        redMarkers.push(marker);
-      });
+        resultados.forEach((d) => {
+          const marker = L.marker([d.latitud, d.longitud], {
+            icon: redIcon,
+          }).addTo(mapa);
+          marker.bindPopup(
+            `<strong>${d.nombre_monumento}</strong><br>${d.direccion}`
+          );
+          redMarkers.push(marker);
+        });
+      }
     }
   });
 
