@@ -94,47 +94,44 @@ document.addEventListener("DOMContentLoaded", function () {
             },
           }
         );
-
-        console.log("Respuesta de la API de carga:", response1);
-
-        if (!response1.ok) {
-          throw new Error("Error en la carga de datos.");
-        }
-
         data1 = await response1.json();
         resultados.innerHTML = `<p style="color:green;">${
           data1.message || "Carga exitosa"
         }</p>`;
+        sessionStorage.setItem("resultados", resultados.innerHTML);
+        const data1 = await response1.text();
+        console.log("Estadísticas recibidas:", data1);
+        resultados.innerHTML += `<p style="color:blue;">${data1}</p>`;
       } catch (error) {
         console.error("Error en la carga de datos:", error);
       }
-      // Continuar con la siguiente llamada a la API (Obtener estadísticas) sin importar si la primera falló
-      try {
-        const response2 = await fetch(
-          `https://localhost:8000/log/general/estadisticas?sources=${contentTypes.join(
-            ","
-          )}&api_key=${apiKey}`,
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${apiKey}`,
-            },
-          }
-        );
-
-        console.log("Respuesta de la API de estadísticas:", response2);
-
-        if (!response2.ok) {
-          throw new Error("Error obteniendo las estadísticas.");
-        }
-
-        const data2 = await response2.text();
-        console.log("Estadísticas recibidas:", data2);
-        resultados.innerHTML += `<p style="color:blue;">${data2}</p>`;
-      } catch (error) {
-        console.error("Error en la obtención de estadísticas:", error);
-        resultados.innerHTML += `<p style="color:red;">${error.message}</p>`;
-      }
     });
+
+  // Evento para el botón "Borrar Almacén de Datos"
+  const apiKey = "FUpP6o1K026VbhSuRBF0ehkKjqc5pztig_tTpn1tBeY";
+  const borrarBtn = document.getElementById("borrar");
+  borrarBtn.addEventListener("click", async function () {
+    try {
+      const response = await fetch(
+        `https://localhost:8000/borrar-tablas?&api_key=${apiKey}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${apiKey}`, // API Key
+          },
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        resultados.innerHTML = `<p style="color:green;">${data.message}</p>`;
+      } else {
+        const errorData = await response.json();
+        resultados.innerHTML = `<p style="color:red;">${errorData.error}</p>`;
+      }
+    } catch (error) {
+      console.error("Error al borrar los datos:", error);
+      resultados.innerHTML = `<p style="color:red;">Error al borrar los datos.</p>`;
+    }
+  });
 });
