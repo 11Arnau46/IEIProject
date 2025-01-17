@@ -193,6 +193,13 @@ class WrapperLog(Resource):
             }
         }
 
+        # Diccionario para mapear tipos a nombres de comunidades
+        source_names = {
+            'xml': 'Castilla y León',
+            'csv': 'Comunidad Valenciana',
+            'json': 'Euskadi'
+        }
+
         for source in sources:
             if source not in ["xml", "json", "csv"]:
                 continue
@@ -211,21 +218,22 @@ class WrapperLog(Resource):
                     elif "Total de registros reparados:" in line:
                         total_stats['repaired'] += int(line.split(':')[1].strip())
 
-            # Procesar rechazados
-            rejected_path = root_dir / 'Resultados' / f'log-{source}' / f'log-rechazados-{source}.log'
-            rejected_content = self._read_log_file(rejected_path)
-            if rejected_content:
-                total_stats['details']['rechazados'].extend(
-                    [line for line in rejected_content.split('\n') if line.strip()]
-                )
-
-            # Procesar reparados
-            repaired_path = root_dir / 'Resultados' / f'log-{source}' / f'log-reparados-{source}.log'
-            repaired_content = self._read_log_file(repaired_path)
-            if repaired_content:
-                total_stats['details']['reparados'].extend(
-                    [line for line in repaired_content.split('\n') if line.strip()]
-                )
+            # Procesar rechazados y reparados
+            for log_type in ['rechazados', 'reparados']:
+                log_path = root_dir / 'Resultados' / f'log-{source}' / f'log-{log_type}-{source}.log'
+                content = self._read_log_file(log_path)
+                if content:
+                    # Reemplazar el tipo por el nombre de la comunidad en cada línea
+                    lines = content.split('\n')
+                    processed_lines = []
+                    for line in lines:
+                        if line.strip():
+                            # Reemplazar el tipo por el nombre de la comunidad
+                            for tipo, nombre in source_names.items():
+                                if tipo.upper() in line:
+                                    line = line.replace(tipo.upper(), nombre)
+                            processed_lines.append(line)
+                    total_stats['details'][log_type].extend(processed_lines)
 
         return total_stats
 
@@ -242,8 +250,19 @@ class WrapperLog(Resource):
             # Generar informe general
             report = self._generate_general_report(sources)
             
-            # Crear string de fuentes
-            fuentes = ", ".join(sources).upper()
+            # Mapear tipos a nombres de comunidades
+            source_names = {
+                'xml': 'Castilla y León',
+                'csv': 'Comunidad Valenciana',
+                'json': 'Euskadi'
+            }
+            
+            # Crear string de fuentes con nombres de comunidades
+            fuentes = []
+            for source in sources:
+                if source in source_names:
+                    fuentes.append(source_names[source])
+            fuentes = ", ".join(fuentes)
             
             if tipo:
                 if tipo == "estadisticas":
@@ -276,7 +295,8 @@ class WrapperLog(Resource):
                 response_text += "FUENTES DE DATOS PROCESADAS\n"
                 response_text += "--------------------------------------------------------------------------------\n"
                 for source in sources:
-                    response_text += f"→ {source.upper()}\n"
+                    if source in source_names:
+                        response_text += f"→ {source_names[source]}\n"
                 response_text += "\n"
                 
                 # Sección de estadísticas generales
