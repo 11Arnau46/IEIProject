@@ -147,6 +147,31 @@ def borrar_linea_log(fuente, nomMonumento, nomLocalidad, mensaje_a_borrar):
             if not f"nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = {mensaje_a_borrar}" in line:
                 file.write(line)
 
+def get_community_name(source):
+    """
+    Obtiene el nombre de la comunidad según la fuente de datos.
+    """
+    source_names = {
+        'XML': 'Castilla y León',
+        'CSV': 'Comunidad Valenciana',
+        'JSON': 'Euskadi'
+    }
+    return source_names.get(source, source)
+
+def log_error(logger, fuente, nomMonumento, nomLocalidad, motivo):
+    """
+    Función auxiliar para generar logs de error con el nombre correcto de la comunidad.
+    """
+    community_name = get_community_name(fuente)
+    logger.error(f"{{fuente = {community_name}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = {motivo}}}")
+
+def log_repair(logger, fuente, nomMonumento, nomLocalidad, motivo, operacion):
+    """
+    Función auxiliar para generar logs de reparación con el nombre correcto de la comunidad.
+    """
+    community_name = get_community_name(fuente)
+    logger.info(f"{{fuente = {community_name}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = {motivo}, operación = {operacion}}}")
+
 def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPostal, latitud, longitud, direccion, seen_monuments, pasadoPorLocationFinder = False):
     """
     Realiza las validaciones para los datos de cada monumento (duplicado, coordenadas, provincia, localidad).
@@ -186,7 +211,7 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         # Verificar código postal
         if cp_null(codigoPostal, fuente) or str(codigoPostal).upper() == 'N/A':
             borrar_linea_log(fuente, nomMonumento, nomLocalidad, "Código postal sin valor")
-            logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Código postal sin valor o N/A, no se ha podido reparar}}")
+            log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Código postal sin valor o N/A, no se ha podido reparar")
             total_records_rejected += 1
             total_records_repaired -= 1
             total_records_added_correctly -= 1
@@ -195,7 +220,7 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
         # Verificar dirección
         if direccion_null(direccion, fuente, pasadoPorLocationFinder):
             borrar_linea_log(fuente, nomMonumento, nomLocalidad, "Dirección sin valor")
-            logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Dirección sin valor}}")
+            log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Dirección sin valor")
             total_records_rejected += 1
             total_records_repaired -= 1
             total_records_added_correctly -= 1
@@ -206,71 +231,69 @@ def aplicar_filtros(fuente, nomMonumento, nomProvincia, nomLocalidad, codigoPost
     # Primera validación - escribir logs normalmente
     # Verificar si el monumento es duplicado
     if is_duplicate_monument(nomMonumento, seen_monuments):
-        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Monumento duplicado}}")
+        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Monumento duplicado")
         total_records_rejected += 1
         return False
 
     # Verificar que las coordenadas tengan valor
     if coordenadas_null(latitud, longitud):
-        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Coordenadas sin valor}}")
+        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Coordenadas sin valor")
         total_records_rejected += 1
         return False
 
     # Verificar que las coordenadas estén dentro del rango
     if fuente == "XML" or fuente == "JSON":
         if coordenadas_fuera_de_rango(latitud, longitud, fuente):
-            logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Coordenadas fuera de rango}}")
+            log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Coordenadas fuera de rango")
             total_records_rejected += 1
             return False
     
     if not validar_provincia_localidad(nomLocalidad, tipo="localidad"):
-        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Localidad inválida}}")
+        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Localidad inválida")
         total_records_rejected += 1
         return False
 
-    # Verificar que la provincia esté bien escrita.
+    # Verificar que la provincia esté bien escrita
     if provincia_incorrecta(nomProvincia, fuente):
-        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Provincia inválida}}")
+        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Provincia inválida")
         total_records_rejected += 1
         return False
     
-    # Verificar que la provincia tiene las tildes correctas.
-    # Se deja continuar si no tiene tilde ya que se puede reparar en la siguiente etapa.
+    # Verificar que la provincia tiene las tildes correctas
     if provincia_sin_tilde(nomProvincia, fuente):
-        logger_reparados.info(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Provincia sin tilde, operación = Agregar la tilde}}")
+        log_repair(logger_reparados, fuente, nomMonumento, nomLocalidad, "Provincia sin tilde", "Agregar la tilde")
         total_records_repaired += 1
         return True
     
-    # Verificar que el codigo postal tenga valor y no sea 'N/A'.
-    # Se deja continuar si no tiene valor ya que se puede reparar en la siguiente etapa.
+    # Verificar código postal
     if cp_null(codigoPostal, fuente) or str(codigoPostal).upper() == 'N/A':
-        logger_reparados.info(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Código postal sin valor o N/A, operación = Búsqueda del código postal con Location Finder}}")
+        log_repair(logger_reparados, fuente, nomMonumento, nomLocalidad, "Código postal sin valor o N/A", "Búsqueda del código postal con Location Finder")
         total_records_repaired += 1
         return True
     
-    # Verificar que el codigo postal tenga 4 dígitos. 
-    # Si tiene 4 dígitos, se añade un 0 a la izquierda.
+    # Verificar que el código postal tenga 4 dígitos
     if cp_de_4_digitos(codigoPostal, fuente) == -1:
-        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Código postal con menos de 4 digitos}}")
+        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Código postal con menos de 4 digitos")
         total_records_rejected += 1
         return False
     
     if cp_de_4_digitos(codigoPostal, fuente) == 1:
-        logger_reparados.info(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Código postal con menos de 5 digitos, operación = Reparado mediante la adición de 0 a la izquierda}}")
+        log_repair(logger_reparados, fuente, nomMonumento, nomLocalidad, "Código postal con menos de 5 digitos", "Reparado mediante la adición de 0 a la izquierda")
         total_records_repaired += 1
         return True
     
-    # Verificar que el codigo postal esté dentro del rango
+    # Verificar que el código postal esté dentro del rango
     if cp_fuera_de_rango(codigoPostal, fuente):
-        logger_rechazados.error(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Código postal fuera de rango}}")
+        log_error(logger_rechazados, fuente, nomMonumento, nomLocalidad, "Código postal fuera de rango")
         total_records_rejected += 1
         return False
     
-    # Verificar que la dirección tenga valor. No se rechaza el monumento ya que luego se repara
+    # Verificar dirección
     if direccion_null(direccion, fuente, pasadoPorLocationFinder):
-        logger_reparados.info(f"{{fuente = {fuente}, nombre = {nomMonumento}, Localidad = {nomLocalidad}, motivo = Dirección sin valor, operación = Búsqueda de la dirección con Location Finder}}")
+        log_repair(logger_reparados, fuente, nomMonumento, nomLocalidad, "Dirección sin valor", "Búsqueda de la dirección con Location Finder")
         total_records_repaired += 1
         return True
+
     return True
 
 
