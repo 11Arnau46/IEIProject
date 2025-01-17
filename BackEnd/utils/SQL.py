@@ -69,8 +69,10 @@ class SQL:
                     session.add(localidad)
                     session.flush()  # Forzar ID de localidad antes de usarla en monumento
 
+
                 # Asignar el tipo de monumento usando el Enum
                 tipo_monumento = TipoMonumento[item["tipoMonumento"]] if item["tipoMonumento"] in TipoMonumento.__members__ else TipoMonumento.Otros
+
 
                 # Crear el monumento
                 monumento = Monumento(

@@ -89,14 +89,17 @@ def process_json():
         direccion = next((addr for addr in address_list if addr.strip()), pd.NA)
         tipoMonumento = get_tipo_monumento(nomMonumento) if nomMonumento is not pd.NA else pd.NA
         codigo_postal = monumento_dict.get('postalCode', pd.NA)
-        latlong = monumento_dict.get('latitudelongitude', '').split(',')
+        #latlong = monumento_dict.get('latitudelongitude', '').split(',')
 
-        if len(latlong) == 2:
-            latitud = latlong[0]
-            longitud = latlong[1]
-        else:
-            latitud = monumento_dict.get('latwgs84', pd.NA)
-            longitud = monumento_dict.get('lonwgs84', pd.NA)
+        latitud = monumento_dict.get('latwgs84', pd.NA)
+        longitud = monumento_dict.get('lonwgs84', pd.NA)
+
+        #if len(latlong) == 2:
+        #    latitud = latlong[0]
+        #    longitud = latlong[1]
+        #else:
+        #    latitud = monumento_dict.get('latwgs84', pd.NA)
+        #    longitud = monumento_dict.get('lonwgs84', pd.NA)
 
         descripcion = monumento_dict.get('documentDescription', pd.NA)
         nomLocalidad = monumento_dict.get('municipality', pd.NA)
